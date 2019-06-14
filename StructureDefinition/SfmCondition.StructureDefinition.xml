@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="8cc13ed4-4487-434c-966e-8b416ee936fe" />
+  <meta>
+    <versionId value="10" />
+    <lastUpdated value="2018-10-03T16:23:15.961+00:00" />
+  </meta>
+  <url value="http://ehelse.no/fhir/StructureDefinition/SfmCondition" />
+  <name value="SfmCondition" />
+  <status value="draft" />
+  <date value="2019-05-15" />
+  <fhirVersion value="4.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Condition" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Condition" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Condition">
+      <path value="Condition" />
+      <comment value="SFM will only interpret code, subject and abatementDateTime field. If any information in other atributes, SFM will not process them. If abatementDateTime is passed, then SFM will not present it to the user." />
+    </element>
+    <element id="Condition.identifier">
+      <path value="Condition.identifier" />
+      <definition value="Used to identify the EHR uid for the condition." />
+    </element>
+    <element id="Condition.clinicalStatus">
+      <path value="Condition.clinicalStatus" />
+      <definition value="The clinical status of the condition. Used by SFM." />
+    </element>
+    <element id="Condition.category">
+      <path value="Condition.category" />
+      <max value="1" />
+    </element>
+    <element id="Condition.code">
+      <path value="Condition.code" />
+      <definition value="Identification of the condition, problem or diagnosis. The code should be ICPC2 or ICD10 code. No other code will be recognized by SFM." />
+      <min value="1" />
+    </element>
+    <element id="Condition.bodySite">
+      <path value="Condition.bodySite" />
+      <max value="1" />
+    </element>
+    <element id="Condition.subject">
+      <path value="Condition.subject" />
+      <definition value="Indicates the patient who the condition record is associated with." />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/no-basis-Patient" />
+      </type>
+    </element>
+    <element id="Condition.onset[x]:onsetDateTime">
+      <path value="Condition.onsetDateTime" />
+      <sliceName value="onsetDateTime" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="Condition.abatement[x]:abatementDateTime">
+      <path value="Condition.abatementDateTime" />
+      <sliceName value="abatementDateTime" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="Condition.evidence">
+      <path value="Condition.evidence" />
+      <max value="1" />
+    </element>
+    <element id="Condition.note">
+      <path value="Condition.note" />
+      <max value="1" />
+    </element>
+  </differential>
+</StructureDefinition>
