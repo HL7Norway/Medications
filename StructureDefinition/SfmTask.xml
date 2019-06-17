@@ -23,7 +23,7 @@
     </element>
     <element id="Task.identifier">
       <path value="Task.identifier" />
-      <definition value="The business identifier for this task. SFM creates the identifier that should be used when refering the task. " />
+      <definition value="The business identifier for this task. SFM creates the identifier that should be used when refering the task." />
       <min value="1" />
       <max value="1" />
     </element>
@@ -61,7 +61,7 @@
     </element>
     <element id="Task.intent">
       <path value="Task.intent" />
-      <definition value="SFM will use proposal and order bependent on criticality." />
+      <definition value="SFM will only use &quot;order&quot;." />
     </element>
     <element id="Task.code">
       <path value="Task.code" />
@@ -73,15 +73,12 @@
       <min value="1" />
     </element>
     <element id="Task.code.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
       <path value="Task.code.coding.display" />
       <min value="1" />
     </element>
     <element id="Task.description">
       <path value="Task.description" />
-      <definition value="Includes the text that should be shown to the user within the work list. " />
+      <definition value="Includes the text that should be shown to the user within the work list." />
       <min value="1" />
     </element>
     <element id="Task.focus">
@@ -93,16 +90,24 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehelse.no/fhir/StructureDefinition/no-basis-Patient" />
-        <aggregation value="bundled" />
       </type>
     </element>
     <element id="Task.encounter">
       <path value="Task.encounter" />
       <max value="0" />
     </element>
+    <element id="Task.executionPeriod">
+      <path value="Task.executionPeriod" />
+      <max value="0" />
+    </element>
     <element id="Task.requester">
       <path value="Task.requester" />
       <max value="0" />
+    </element>
+    <element id="Task.performerType">
+      <path value="Task.performerType" />
+      <min value="1" />
+      <max value="1" />
     </element>
     <element id="Task.owner">
       <path value="Task.owner" />
@@ -110,7 +115,6 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehelse.no/fhir/StructureDefinition/NoBasisPractitioner" />
-        <aggregation value="bundled" />
       </type>
     </element>
     <element id="Task.location">
@@ -142,9 +146,6 @@
       <max value="0" />
     </element>
     <element id="Task.input">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
-        <valueString value="Parameter" />
-      </extension>
       <path value="Task.input" />
       <max value="0" />
     </element>
