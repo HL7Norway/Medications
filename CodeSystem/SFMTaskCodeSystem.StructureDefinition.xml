@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://ehelse.no/fhir/CodeSystem/SFMTaskTypeCodeSystem" />
+  <name value="SFMTaskTypeCodeSystem" />
+  <status value="draft" />
+  <fhirVersion value="4.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="CodeSystem" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/CodeSystem" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="CodeSystem.copyright">
+      <path value="CodeSystem.copyright" />
+      <comment value="Systems are not required to have markdown support, so the text should be readable without markdown processing. The markdown syntax is GFM - see https://github.github.com/gfm/&#xD;&#xA; Sometimes, the copyright differs between the code system and the codes that are included. The copyright statement should clearly differentiate between these when required.&#xD;&#xA; Sometimes, the copyright differs between the code system and the codes that are included. The copyright statement should clearly differentiate between these when required.&#xD;&#xA; Sometimes, the copyright differs between the code system and the codes that are included. The copyright statement should clearly differentiate between these when required." />
+    </element>
+    <element id="CodeSystem.content">
+      <path value="CodeSystem.content" />
+      <code>
+        <code value="1" />
+        <display value="Godkjenn LIB" />
+      </code>
+      <code>
+        <code value="2" />
+        <display value="Godkjenn LIB" />
+      </code>
+      <code>
+        <code value="3" />
+        <display value="Godkjenn kladd" />
+      </code>
+      <code>
+        <code value="4" />
+        <display value="Send klargjort melding" />
+      </code>
+      <code>
+        <code value="5" />
+        <display value="Intervensjon" />
+      </code>
+      <code>
+        <code value="6" />
+        <display value="Spørsmål fra apotek" />
+      </code>
+      <code>
+        <code value="7" />
+        <display value="PLL kommentar" />
+      </code>
+      <code>
+        <code value="8" />
+        <display value="Endring på multidosepasient" />
+      </code>
+      <code>
+        <code value="9" />
+        <display value="Ny multidosepakking" />
+      </code>
+      <code>
+        <code value="10" />
+        <display value="Endring på pasient" />
+      </code>
+      <code>
+        <code value="11" />
+        <display value="Nytt varsel fra FEST" />
+      </code>
+      <code>
+        <code value="12" />
+        <display value="SFM har blitt oppdatert" />
+      </code>
+      <code>
+        <code value="13" />
+        <display value="SFM planlegger nedetid" />
+      </code>
+      <code>
+        <code value="14" />
+        <display value="Feil ved sending til RF" />
+      </code>
+      <code>
+        <code value="15" />
+        <display value="Utleveringsmelding på papirresept" />
+      </code>
+      <code>
+        <code value="16" />
+        <display value="Mottatt svar på Helfosøknad" />
+      </code>
+      <code>
+        <code value="17" />
+        <display value="Mottatt svar på søknad til SLV" />
+      </code>
+      <code>
+        <code value="18" />
+        <display value="Melding til PLO" />
+      </code>
+      <code>
+        <code value="19" />
+        <display value="Endring i legemiddelreaksjon" />
+      </code>
+      <code>
+        <code value="20" />
+        <display value="Ny MD lege påmeldt" />
+      </code>
+      <code>
+        <code value="21" />
+        <display value="Revurderingsdato" />
+      </code>
+      <code>
+        <code value="22" />
+        <display value="Endring i PID" />
+      </code>
+      <code>
+        <code value="23" />
+        <display value="Endring i HPR" />
+      </code>
+      <fixedCode value="complete" />
+    </element>
+  </differential>
+</StructureDefinition>

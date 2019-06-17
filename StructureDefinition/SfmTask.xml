@@ -68,6 +68,10 @@
       <definition value="Examples of task types are:&#xD;&#xA;- GodkjennKladd&#xD;&#xA;- EndringMDPakking" />
       <min value="1" />
     </element>
+    <element id="Task.code.coding.system">
+      <path value="Task.code.coding.system" />
+      <fixedUri value="http://ehelse.no/fhir/CodeSystem/SFMTaskTypeCodeSystem" />
+    </element>
     <element id="Task.code.coding.code">
       <path value="Task.code.coding.code" />
       <min value="1" />
