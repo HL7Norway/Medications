@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="8cc13ed4-4487-434c-966e-8b416ee936fe" />
+  <id value="sfm-Condition" />
   <meta>
     <versionId value="10" />
     <lastUpdated value="2018-10-03T16:23:15.961+00:00" />
   </meta>
-  <url value="http://ehelse.no/fhir/StructureDefinition/SfmCondition" />
+  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-Condition" />
   <name value="SfmCondition" />
+  <title value="sfm-Condition" />
   <status value="draft" />
   <date value="2019-05-15" />
   <fhirVersion value="4.0.0" />
@@ -46,7 +47,7 @@
       <definition value="Indicates the patient who the condition record is associated with." />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/no-basis-Patient" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Patient" />
       </type>
     </element>
     <element id="Condition.onset[x]:onsetDateTime">
