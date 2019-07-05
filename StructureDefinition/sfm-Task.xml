@@ -10,6 +10,7 @@
   <title value="sfm-Task" />
   <status value="draft" />
   <date value="2019-07-01" />
+  <description value="sfm-Task is derived from Task." />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
   <abstract value="false" />
