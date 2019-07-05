@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="sfm-administrering" />
+  <meta>
+    <versionId value="4" />
+    <lastUpdated value="2018-10-03T14:00:48.887+00:00" />
+  </meta>
+  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-administrering" />
+  <version value="2.0" />
+  <name value="SfmAdministrering" />
+  <title value="sfm-administrering" />
+  <status value="draft" />
+  <date value="2019-07-01" />
+  <description value="Describes detailed information about how a prescription should be administered." />
+  <fhirVersion value="4.0.0" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="MedicationStatement" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:administeringForskrivning">
+      <path value="Extension.extension" />
+      <sliceName value="administeringForskrivning" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:AdministeringForskrivning.extension">
+      <path value="Extension.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:administeringForskrivning.extension:admVed">
+      <path value="Extension.extension.extension" />
+      <sliceName value="admVed" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:administeringForskrivning.extension:admVed.value[x]:valueCodeableConcept">
+      <path value="Extension.extension.extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.extension:administeringForskrivning.extension:admVed.value[x]:valueCodeableConcept.coding.system">
+      <path value="Extension.extension.extension.valueCodeableConcept.coding.system" />
+      <min value="1" />
+      <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.9074" />
+    </element>
+    <element id="Extension.extension:administeringForskrivning.extension:admVed.value[x]:valueCodeableConcept.coding.code">
+      <path value="Extension.extension.extension.valueCodeableConcept.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:administeringForskrivning.extension:admVed.value[x]:valueCodeableConcept.coding.display">
+      <path value="Extension.extension.extension.valueCodeableConcept.coding.display" />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:administeringForskrivning.extension:admMate">
+      <path value="Extension.extension.extension" />
+      <sliceName value="admMate" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:administeringForskrivning.extension:admMate.value[x]:valueCodeableConcept">
+      <path value="Extension.extension.extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.extension:administeringForskrivning.extension:admMate.value[x]:valueCodeableConcept.coding.system">
+      <path value="Extension.extension.extension.valueCodeableConcept.coding.system" />
+      <min value="1" />
+      <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.9075" />
+    </element>
+    <element id="Extension.extension:administeringForskrivning.extension:admMate.value[x]:valueCodeableConcept.coding.code">
+      <path value="Extension.extension.extension.valueCodeableConcept.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:administeringForskrivning.extension:admMate.value[x]:valueCodeableConcept.coding.display">
+      <path value="Extension.extension.extension.valueCodeableConcept.coding.display" />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:administeringForskrivning.extension:admEtterSkjema">
+      <path value="Extension.extension.extension" />
+      <sliceName value="admEtterSkjema" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:administeringForskrivning.extension:admEtterSkjema.value[x]:valueString">
+      <path value="Extension.extension.extension.valueString" />
+      <sliceName value="valueString" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:administeringForskrivning.extension:admSkjema">
+      <path value="Extension.extension.extension" />
+      <sliceName value="admSkjema" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:administeringForskrivning.extension:admSkjema.value[x]:valueString">
+      <path value="Extension.extension.extension.valueString" />
+      <sliceName value="valueString" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:administeringForskrivning.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <max value="0" />
+    </element>
+    <element id="Extension.extension:admAv">
+      <path value="Extension.extension" />
+      <sliceName value="admAv" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:admAv.value[x]:valueCodeableConcept">
+      <path value="Extension.extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.extension:admAv.value[x]:valueCodeableConcept.coding.system">
+      <path value="Extension.extension.valueCodeableConcept.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:admAv.value[x]:valueCodeableConcept.coding.code">
+      <path value="Extension.extension.valueCodeableConcept.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:admAv.value[x]:valueCodeableConcept.coding.display">
+      <path value="Extension.extension.valueCodeableConcept.coding.display" />
+      <min value="1" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

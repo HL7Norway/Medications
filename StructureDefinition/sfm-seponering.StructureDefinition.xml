@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="sfm-seponering" />
+  <meta>
+    <versionId value="2" />
+    <lastUpdated value="2018-10-03T14:02:15.733+00:00" />
+  </meta>
+  <url value="http://eheles.no/fhir/StructureDefinition/sfm-seponering" />
+  <name value="SfmSeponering" />
+  <title value="sfm-seponering" />
+  <status value="active" />
+  <date value="2019-07-01" />
+  <fhirVersion value="4.0.0" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="MedicationStatement" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:tidspunkt">
+      <path value="Extension.extension" />
+      <sliceName value="tidspunkt" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:tidspunkt.value[x]:valueDateTime">
+      <path value="Extension.extension.valueDateTime" />
+      <sliceName value="valueDateTime" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="Extension.extension:arsak">
+      <path value="Extension.extension" />
+      <sliceName value="arsak" />
+    </element>
+    <element id="Extension.extension:arsak.value[x]:valueCodeableConcept">
+      <path value="Extension.extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.extension:arsak.value[x]:valueCodeableConcept.coding.system">
+      <path value="Extension.extension.valueCodeableConcept.coding.system" />
+      <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.7494" />
+    </element>
+    <element id="Extension.extension:merknad">
+      <path value="Extension.extension" />
+      <sliceName value="merknad" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:merknad.value[x]:valueString">
+      <path value="Extension.extension.valueString" />
+      <sliceName value="valueString" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

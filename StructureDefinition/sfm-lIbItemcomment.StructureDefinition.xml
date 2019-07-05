@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="sfm-libitemcomment" />
+  <meta>
+    <versionId value="3" />
+    <lastUpdated value="2018-10-03T14:01:39.262+00:00" />
+  </meta>
+  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-libitemcomment" />
+  <version value="2.0" />
+  <name value="SfmLIbItemComment" />
+  <title value="sfm-libitemcomment" />
+  <status value="draft" />
+  <date value="2019-07-01" />
+  <fhirVersion value="4.0.0" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="MedicationStatement" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:type">
+      <path value="Extension.extension" />
+      <sliceName value="type" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:type.value[x]:valueCodeableConcept">
+      <path value="Extension.extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.extension:type.value[x]:valueCodeableConcept.coding.system">
+      <path value="Extension.extension.valueCodeableConcept.coding.system" />
+      <min value="1" />
+      <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.7495" />
+    </element>
+    <element id="Extension.extension:type.value[x]:valueCodeableConcept.coding.code">
+      <path value="Extension.extension.valueCodeableConcept.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:type.value[x]:valueCodeableConcept.coding.display">
+      <path value="Extension.extension.valueCodeableConcept.coding.display" />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:merknad">
+      <path value="Extension.extension" />
+      <sliceName value="merknad" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:merknad.value[x]:valueString">
+      <path value="Extension.extension.valueString" />
+      <sliceName value="valueString" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:Id">
+      <path value="Extension.extension" />
+      <sliceName value="Id" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:Id.value[x]:valueString">
+      <path value="Extension.extension.valueString" />
+      <sliceName value="valueString" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:registeredby">
+      <path value="Extension.extension" />
+      <sliceName value="registeredby" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:registeredby.value[x]:valueString">
+      <path value="Extension.extension.valueString" />
+      <sliceName value="valueString" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:receiver">
+      <path value="Extension.extension" />
+      <sliceName value="receiver" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:receiver.value[x]:valueString">
+      <path value="Extension.extension.valueString" />
+      <sliceName value="valueString" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:response">
+      <path value="Extension.extension" />
+      <sliceName value="response" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:response.extension">
+      <path value="Extension.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:response.extension:Id">
+      <path value="Extension.extension.extension" />
+      <sliceName value="Id" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:response.extension:Id.value[x]:valueString">
+      <path value="Extension.extension.extension.valueString" />
+      <sliceName value="valueString" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:response.extension:responder">
+      <path value="Extension.extension.extension" />
+      <sliceName value="responder" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:response.extension:responder.value[x]:valueString">
+      <path value="Extension.extension.extension.valueString" />
+      <sliceName value="valueString" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:response.extension:svar">
+      <path value="Extension.extension.extension" />
+      <sliceName value="svar" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:response.extension:svar.value[x]:valueString">
+      <path value="Extension.extension.extension.valueString" />
+      <sliceName value="valueString" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:response.extension:type">
+      <path value="Extension.extension.extension" />
+      <sliceName value="type" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:response.extension:type.value[x]:valueCodeableConcept">
+      <path value="Extension.extension.extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.extension:response.extension:type.value[x]:valueCodeableConcept.coding.system">
+      <path value="Extension.extension.extension.valueCodeableConcept.coding.system" />
+      <min value="1" />
+      <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.7493" />
+    </element>
+    <element id="Extension.extension:response.extension:type.value[x]:valueCodeableConcept.coding.code">
+      <path value="Extension.extension.extension.valueCodeableConcept.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:response.extension:type.value[x]:valueCodeableConcept.coding.display">
+      <path value="Extension.extension.extension.valueCodeableConcept.coding.display" />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:response.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <max value="0" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="sfm-deliverysummary" />
+  <meta>
+    <versionId value="3" />
+    <lastUpdated value="2018-10-03T14:01:56.071+00:00" />
+  </meta>
+  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-deliverysummary" />
+  <version value="2.0" />
+  <name value="SFMDeliverySummary" />
+  <title value="sfm-deliverysummary" />
+  <status value="draft" />
+  <date value="2019-07-01" />
+  <fhirVersion value="4.0.0" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="MedicationStatement" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:varenummer">
+      <path value="Extension.extension" />
+      <sliceName value="varenummer" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:varenummer.value[x]:valueString">
+      <path value="Extension.extension.valueString" />
+      <sliceName value="valueString" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:varenavn">
+      <path value="Extension.extension" />
+      <sliceName value="varenavn" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:varenavn.value[x]:valueString">
+      <path value="Extension.extension.valueString" />
+      <sliceName value="valueString" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:pakningsstr">
+      <path value="Extension.extension" />
+      <sliceName value="pakningsstr" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:pakningsstr.value[x]:valueQuantity">
+      <path value="Extension.extension.valueQuantity" />
+      <sliceName value="valueQuantity" />
+      <type>
+        <code value="Quantity" />
+      </type>
+    </element>
+    <element id="Extension.extension:antallpkntotalt">
+      <path value="Extension.extension" />
+      <sliceName value="antallpkntotalt" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:antallpkntotalt.value[x]:valueDecimal">
+      <path value="Extension.extension.valueDecimal" />
+      <sliceName value="valueDecimal" />
+      <type>
+        <code value="decimal" />
+      </type>
+    </element>
+    <element id="Extension.extension:antallpknsiste">
+      <path value="Extension.extension" />
+      <sliceName value="antallpknsiste" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:antallpknsiste.value[x]:valueDecimal">
+      <path value="Extension.extension.valueDecimal" />
+      <sliceName value="valueDecimal" />
+      <type>
+        <code value="decimal" />
+      </type>
+    </element>
+    <element id="Extension.extension:sistutlevert">
+      <path value="Extension.extension" />
+      <sliceName value="sistutlevert" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:sistutlevert.value[x]:valueDateTime">
+      <path value="Extension.extension.valueDateTime" />
+      <sliceName value="valueDateTime" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>
