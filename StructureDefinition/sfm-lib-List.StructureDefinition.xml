@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://example.org/fhir/StructureDefinition/sfm-lib-List" />
+  <version value="1.0" />
+  <name value="SfmLibList" />
+  <title value="sfm-lib-list" />
+  <status value="draft" />
+  <description value="LIB items and related warnings for selected patient in a given period." />
+  <fhirVersion value="4.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="List" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/List" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="List.extension">
+      <path value="List.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="List.extension:metadata">
+      <path value="List.extension" />
+      <sliceName value="metadata" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://example.org/fhir/StructureDefinition/lib-list-meta-data" />
+      </type>
+    </element>
+    <element id="List.title">
+      <path value="List.title" />
+      <max value="0" />
+    </element>
+    <element id="List.code">
+      <path value="List.code" />
+      <short value="List of prescriptions" />
+      <fixedCodeableConcept>
+        <text value="medications" />
+      </fixedCodeableConcept>
+    </element>
+    <element id="List.subject">
+      <path value="List.subject" />
+      <max value="0" />
+    </element>
+    <element id="List.date">
+      <path value="List.date" />
+      <min value="1" />
+    </element>
+    <element id="List.source">
+      <path value="List.source" />
+      <max value="0" />
+    </element>
+    <element id="List.entry.item">
+      <path value="List.entry.item" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-MedicationStatement" />
+        <aggregation value="bundled" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
