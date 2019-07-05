@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-Medication" />
+  <version value="2.0" />
+  <name value="SfmMedication" />
+  <title value="sfm-Medication" />
+  <status value="draft" />
+  <date value="2019-07-05" />
+  <description value="SFM Medication derived from no-basis-Medication." />
+  <fhirVersion value="4.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Medication" />
+  <baseDefinition value="http://hl7.no/fhir/StructureDefinition/no-basis-Medication" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Medication.extension">
+      <path value="Medication.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Medication.extension:medicationdetails">
+      <path value="Medication.extension" />
+      <sliceName value="medicationdetails" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-medicationdetails" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

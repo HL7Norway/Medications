@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="sfm-medicationdetails" />
+  <meta>
+    <versionId value="2" />
+    <lastUpdated value="2018-10-03T13:57:49.176+00:00" />
+  </meta>
+  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-medicationdetails" />
+  <version value="2.0" />
+  <name value="SfmMedicationDetails" />
+  <title value="sfm-medicationdetails" />
+  <status value="draft" />
+  <experimental value="false" />
+  <date value="2019-07-01" />
+  <fhirVersion value="4.0.0" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Medication" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="FEST details not covered in Medication" />
+      <definition value="This extention provide information that are represented in the national database FEST. In many cases these are relevant to present to the user." />
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:svartTrekant">
+      <path value="Extension.extension" />
+      <sliceName value="svartTrekant" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:svartTrekant.value[x]:valueBoolean">
+      <path value="Extension.extension.valueBoolean" />
+      <sliceName value="valueBoolean" />
+      <type>
+        <code value="boolean" />
+      </type>
+    </element>
+    <element id="Extension.extension:blandingsveske">
+      <path value="Extension.extension" />
+      <sliceName value="blandingsveske" />
+    </element>
+    <element id="Extension.extension:blandingsveske.value[x]:valueBoolean">
+      <path value="Extension.extension.valueBoolean" />
+      <sliceName value="valueBoolean" />
+      <type>
+        <code value="boolean" />
+      </type>
+    </element>
+    <element id="Extension.extension:administrasjonsvei">
+      <path value="Extension.extension" />
+      <sliceName value="administrasjonsvei" />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:administrasjonsvei.value[x]:valueCodeableConcept">
+      <path value="Extension.extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.extension:kanKnuses">
+      <path value="Extension.extension" />
+      <sliceName value="kanKnuses" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:kanKnuses.value[x]:valueCodeableConcept">
+      <path value="Extension.extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.extension:kanApnes">
+      <path value="Extension.extension" />
+      <sliceName value="kanApnes" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:kanApnes.value[x]:valueCodeableConcept">
+      <path value="Extension.extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.extension:deling">
+      <path value="Extension.extension" />
+      <sliceName value="deling" />
+    </element>
+    <element id="Extension.extension:deling.value[x]:valueCodeableConcept">
+      <path value="Extension.extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.extension:smak">
+      <path value="Extension.extension" />
+      <sliceName value="smak" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:smak.value[x]:valueCodeableConcept">
+      <path value="Extension.extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.extension:varseltrekant">
+      <path value="Extension.extension" />
+      <sliceName value="varseltrekant" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:varseltrekant.value[x]:valueBoolean">
+      <path value="Extension.extension.valueBoolean" />
+      <sliceName value="valueBoolean" />
+      <type>
+        <code value="boolean" />
+      </type>
+    </element>
+    <element id="Extension.extension:vaksinestandard">
+      <path value="Extension.extension" />
+      <sliceName value="vaksinestandard" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:vaksinestandard.value[x]:valueCodeableConcept">
+      <path value="Extension.extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.extension:produsent">
+      <path value="Extension.extension" />
+      <sliceName value="produsent" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:produsent.value[x]:valueString">
+      <path value="Extension.extension.valueString" />
+      <sliceName value="valueString" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:varenavn">
+      <path value="Extension.extension" />
+      <sliceName value="varenavn" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:varenavn.value[x]:valueString">
+      <path value="Extension.extension.valueString" />
+      <sliceName value="valueString" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

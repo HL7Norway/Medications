@@ -5,11 +5,11 @@
     <versionId value="4" />
     <lastUpdated value="2018-10-03T16:02:04.672+00:00" />
   </meta>
-  <url value="http://hl7.no/fhir/StructureDefinition/sfm-Task" />
+  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-Task" />
   <name value="SfmTask" />
   <title value="sfm-Task" />
   <status value="draft" />
-  <date value="2019-06-03" />
+  <date value="2019-07-01" />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
   <abstract value="false" />

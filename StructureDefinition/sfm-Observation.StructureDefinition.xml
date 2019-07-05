@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="sfm-Observation" />
+  <meta>
+    <versionId value="5" />
+    <lastUpdated value="2018-10-03T16:33:40.291+00:00" />
+  </meta>
+  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-Observation" />
+  <name value="SfmObservation" />
+  <title value="sfm-Observation" />
+  <status value="draft" />
+  <date value="2019-07-01" />
+  <fhirVersion value="4.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation">
+      <path value="Observation" />
+      <comment value="Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  SFM is processing status, code, subject and value field." />
+    </element>
+    <element id="Observation.identifier">
+      <path value="Observation.identifier" />
+      <definition value="A unique identifier assigned to this observation. EHR identifer." />
+    </element>
+    <element id="Observation.basedOn">
+      <path value="Observation.basedOn" />
+      <max value="0" />
+    </element>
+    <element id="Observation.code">
+      <path value="Observation.code" />
+      <definition value="Describes what was observed. SFM is using the Norwegian coding for lab results." />
+    </element>
+    <element id="Observation.subject">
+      <path value="Observation.subject" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Patient" />
+      </type>
+    </element>
+    <element id="Observation.issued">
+      <path value="Observation.issued" />
+      <max value="0" />
+    </element>
+    <element id="Observation.performer">
+      <path value="Observation.performer" />
+      <max value="0" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+      </type>
+    </element>
+    <element id="Observation.dataAbsentReason">
+      <path value="Observation.dataAbsentReason" />
+      <max value="0" />
+    </element>
+    <element id="Observation.specimen">
+      <path value="Observation.specimen" />
+      <max value="0" />
+    </element>
+    <element id="Observation.referenceRange">
+      <path value="Observation.referenceRange" />
+      <definition value="Guidance on how to interpret the value by comparison to a normal or recommended range. Used in SFM." />
+    </element>
+  </differential>
+</StructureDefinition>
