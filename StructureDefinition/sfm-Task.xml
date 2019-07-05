@@ -120,7 +120,7 @@
       <definition value="Individual or organization currently responsible for task execution." />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/NoBasisPractitioner" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner" />
       </type>
     </element>
     <element id="Task.location">
