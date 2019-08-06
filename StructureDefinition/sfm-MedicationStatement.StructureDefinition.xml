@@ -93,22 +93,6 @@
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-deliverysummary" />
       </type>
     </element>
-    <element id="MedicationStatement.extension:actor">
-      <path value="MedicationStatement.extension" />
-      <sliceName value="actor" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-actor" />
-      </type>
-    </element>
-    <element id="MedicationStatement.extension:medisinskevarsel">
-      <path value="MedicationStatement.extension" />
-      <sliceName value="medisinskevarsel" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-varsel" />
-      </type>
-    </element>
     <element id="MedicationStatement.identifier">
       <path value="MedicationStatement.identifier" />
       <slicing>

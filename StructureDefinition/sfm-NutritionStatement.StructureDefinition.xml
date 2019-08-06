@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2018-09-05T11:35:51.829+00:00" />
+  </meta>
+  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-NutritionStatement" />
+  <name value="SfmNutritionStatement" />
+  <title value="sfm-NutritionStatement" />
+  <status value="draft" />
+  <date value="2018-09-05T11:35:52.541+00:00" />
+  <description value="SFM NutritionStatement derived from Medication." />
+  <fhirVersion value="4.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="MedicationStatement" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicationStatement" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="MedicationStatement.medication[x]:medicationReference">
+      <path value="MedicationStatement.medicationReference" />
+      <sliceName value="medicationReference" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Nutrition" />
+        <aggregation value="bundled" />
+      </type>
+    </element>
+    <element id="MedicationStatement.dosage">
+      <path value="MedicationStatement.dosage" />
+      <max value="1" />
+    </element>
+  </differential>
+</StructureDefinition>

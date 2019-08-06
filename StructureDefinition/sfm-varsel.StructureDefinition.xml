@@ -11,13 +11,13 @@
   <title value="sfm-varsel" />
   <status value="draft" />
   <date value="2019-07-05" />
-  <description value="Medical warning handling documentation. " />
+  <description value="Medical warning handling documentation." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
   <abstract value="false" />
   <context>
     <type value="element" />
-    <expression value="MedicationStatement" />
+    <expression value="List" />
   </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
@@ -51,7 +51,6 @@
       <path value="Extension.extension.extension" />
       <sliceName value="reference" />
       <min value="1" />
-      <max value="1" />
     </element>
     <element id="Extension.extension:doublePrescription.extension:reference.value[x]:valueReference">
       <path value="Extension.extension.extension.valueReference" />
@@ -60,16 +59,26 @@
         <code value="Reference" />
       </type>
     </element>
-    <element id="Extension.extension:doublePrescription.extension:begrunnelse">
+    <element id="Extension.extension:doublePrescription.extension:reason">
       <path value="Extension.extension.extension" />
-      <sliceName value="begrunnelse" />
+      <sliceName value="reason" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:doublePrescription.extension:begrunnelse.value[x]:valueString">
+    <element id="Extension.extension:doublePrescription.extension:reason.value[x]:valueString">
       <path value="Extension.extension.extension.valueString" />
       <sliceName value="valueString" />
       <type>
         <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:doublePrescription.extension:codedreason">
+      <path value="Extension.extension.extension" />
+      <sliceName value="codedreason" />
+    </element>
+    <element id="Extension.extension:doublePrescription.extension:codedreason.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
       </type>
     </element>
     <element id="Extension.extension:doublePrescription.value[x]">
@@ -94,7 +103,6 @@
       <path value="Extension.extension.extension" />
       <sliceName value="reference" />
       <min value="1" />
-      <max value="1" />
     </element>
     <element id="Extension.extension:interaction.extension:reference.value[x]:valueReference">
       <path value="Extension.extension.extension.valueReference" />
@@ -103,16 +111,26 @@
         <code value="Reference" />
       </type>
     </element>
-    <element id="Extension.extension:interaction.extension:begrunnelse">
+    <element id="Extension.extension:interaction.extension:reason">
       <path value="Extension.extension.extension" />
-      <sliceName value="begrunnelse" />
+      <sliceName value="reason" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:interaction.extension:begrunnelse.value[x]:valueString">
+    <element id="Extension.extension:interaction.extension:reason.value[x]:valueString">
       <path value="Extension.extension.extension.valueString" />
       <sliceName value="valueString" />
       <type>
         <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:interaction.extension:codedreason">
+      <path value="Extension.extension.extension" />
+      <sliceName value="codedreason" />
+    </element>
+    <element id="Extension.extension:interaction.extension:codedreason.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
       </type>
     </element>
     <element id="Extension.extension:interaction.value[x]">
@@ -146,10 +164,25 @@
         <code value="Reference" />
       </type>
     </element>
-    <element id="Extension.extension:allergyIntollerance.extension:begrunnelse">
+    <element id="Extension.extension:allergyIntollerance.extension:reason">
       <path value="Extension.extension.extension" />
-      <sliceName value="begrunnelse" />
-      <max value="1" />
+      <sliceName value="reason" />
+    </element>
+    <element id="Extension.extension:allergyIntollerance.extension:reason.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:allergyIntollerance.extension:codedreason">
+      <path value="Extension.extension.extension" />
+      <sliceName value="codedreason" />
+    </element>
+    <element id="Extension.extension:allergyIntollerance.extension:codedreason.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
     </element>
     <element id="Extension.extension:allergyIntollerance.value[x]">
       <path value="Extension.extension.value[x]" />

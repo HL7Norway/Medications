@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="sfm-patientrelation" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2018-10-26T04:57:34.381+00:00" />
+  </meta>
+  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-patientrelation" />
+  <version value="2.0" />
+  <name value="SfmPatientRelation" />
+  <title value="sfm-patientrelation" />
+  <status value="draft" />
+  <date value="2019-07-01" />
+  <fhirVersion value="4.0.0" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Basic" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:practionerRelation">
+      <path value="Extension.extension" />
+      <sliceName value="practionerRelation" />
+    </element>
+    <element id="Extension.extension:PractionerRelation.extension">
+      <path value="Extension.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:practionerRelation.extension:roleType">
+      <path value="Extension.extension.extension" />
+      <sliceName value="roleType" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:practionerRelation.extension:practitioner">
+      <path value="Extension.extension.extension" />
+      <sliceName value="practitioner" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:practionerRelation.extension:practitioner.value[x]:valueReference">
+      <path value="Extension.extension.extension.valueReference" />
+      <sliceName value="valueReference" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="no-basis-Practitioner" />
+        <aggregation value="bundled" />
+      </type>
+    </element>
+    <element id="Extension.extension:practionerRelation.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <max value="0" />
+    </element>
+    <element id="Extension.extension:organisationRelation">
+      <path value="Extension.extension" />
+      <sliceName value="organisationRelation" />
+    </element>
+    <element id="Extension.extension:OrganisationRelation.extension">
+      <path value="Extension.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:organisationRelation.extension:roleType">
+      <path value="Extension.extension.extension" />
+      <sliceName value="roleType" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:organisationRelation.extension:roleType.value[x]:valueCodeableConcept">
+      <path value="Extension.extension.extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.extension:organisationRelation.extension:organisation">
+      <path value="Extension.extension.extension" />
+      <sliceName value="organisation" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:organisationRelation.extension:organisation.value[x]:valueReference">
+      <path value="Extension.extension.extension.valueReference" />
+      <sliceName value="valueReference" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="no-basis-Organization" />
+        <aggregation value="bundled" />
+      </type>
+    </element>
+    <element id="Extension.extension:organisationRelation.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <max value="0" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

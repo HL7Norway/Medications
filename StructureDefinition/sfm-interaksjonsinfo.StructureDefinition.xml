@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="sfm-interaksjonsinfo" />
+  <meta>
+    <versionId value="3" />
+    <lastUpdated value="2018-10-03T14:01:05.923+00:00" />
+  </meta>
+  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-interaksjonsinfo" />
+  <name value="SfmInteraksjonsinfo" />
+  <title value="sfm-interaksjonsinfo" />
+  <status value="draft" />
+  <date value="2019-07-01" />
+  <fhirVersion value="4.0.0" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="extension" />
+    <expression value="MedicationStatement" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:interaksjonmed">
+      <path value="Extension.extension" />
+      <sliceName value="interaksjonmed" />
+    </element>
+    <element id="Extension.extension:interaksjonmed.value[x]:valueReference">
+      <path value="Extension.extension.valueReference" />
+      <sliceName value="valueReference" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://ehelse.no/StructureDefinition/SFM-MedicationStatement" />
+      </type>
+    </element>
+    <element id="Extension.extension:interaksjonsId">
+      <path value="Extension.extension" />
+      <sliceName value="interaksjonsId" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

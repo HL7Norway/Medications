@@ -14,25 +14,6 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
-    <element id="Extension">
-      <path value="Extension" />
-      <short value="Optional Extensions Element" />
-      <definition value="Optional Extension Element - found in all resources." />
-      <base>
-        <path value="Extension" />
-      </base>
-      <constraint>
-        <key value="ext-1" />
-        <severity value="error" />
-        <human value="Must have either extensions or value[x], not both" />
-        <expression value="extension.exists() != value.exists()" />
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
       <slicing>
@@ -118,6 +99,61 @@
       <type>
         <code value="Period" />
       </type>
+    </element>
+    <element id="Extension.extension:medicationreview">
+      <path value="Extension.extension" />
+      <sliceName value="medicationreview" />
+    </element>
+    <element id="Extension.extension:medicationreview.extension">
+      <path value="Extension.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:medicationreview.extension:timestamp">
+      <path value="Extension.extension.extension" />
+      <sliceName value="timestamp" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:medicationreview.extension:timestamp.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="Extension.extension:medicationreview.extension:performedby">
+      <path value="Extension.extension.extension" />
+      <sliceName value="performedby" />
+      <short value="HPR number" />
+      <definition value="HPR number of caregiver that was responsible for medication review. " />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:medicationreview.extension:performedby.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:medicationreview.extension:comment">
+      <path value="Extension.extension.extension" />
+      <sliceName value="comment" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:medicationreview.extension:comment.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:medicationreview.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <max value="0" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
