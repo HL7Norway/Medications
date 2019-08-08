@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-Magistrell-Medication" />
+  <name value="SfmMagistrellMedication" />
+  <status value="draft" />
+  <fhirVersion value="4.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Medication" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Medication" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Medication.extension">
+      <path value="Medication.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Medication.extension:prescriptiongroup">
+      <path value="Medication.extension" />
+      <sliceName value="prescriptiongroup" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-prescriptiongroup" />
+      </type>
+    </element>
+    <element id="Medication.extension:name">
+      <path value="Medication.extension" />
+      <sliceName value="name" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://example.org/fhir/StructureDefinition/sfm-name" />
+      </type>
+    </element>
+    <element id="Medication.extension:packing">
+      <path value="Medication.extension" />
+      <sliceName value="packing" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://example.org/fhir/StructureDefinition/sfm-packing" />
+      </type>
+    </element>
+    <element id="Medication.extension:recipe">
+      <path value="Medication.extension" />
+      <sliceName value="recipe" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://example.org/fhir/StructureDefinition/sfm-recipe" />
+      </type>
+    </element>
+    <element id="Medication.code.coding.system">
+      <path value="Medication.code.coding.system" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.75" />
+    </element>
+    <element id="Medication.manufacturer">
+      <path value="Medication.manufacturer" />
+      <max value="0" />
+    </element>
+    <element id="Medication.form">
+      <path value="Medication.form" />
+      <min value="1" />
+    </element>
+    <element id="Medication.form.coding.system">
+      <path value="Medication.form.coding.system" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7448" />
+    </element>
+    <element id="Medication.amount">
+      <path value="Medication.amount" />
+      <min value="1" />
+    </element>
+    <element id="Medication.ingredient.item[x]">
+      <path value="Medication.ingredient.item[x]" />
+      <type>
+        <code value="Reference" />
+        <aggregation value="bundled" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

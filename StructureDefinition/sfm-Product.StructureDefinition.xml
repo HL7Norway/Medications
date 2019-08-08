@@ -4,11 +4,10 @@
     <lastUpdated value="2018-09-05T11:35:34.192+00:00" />
   </meta>
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-Nutrition" />
-  <version value="2.0" />
   <name value="SfmProduct" />
   <title value="sfm-Product" />
   <status value="draft" />
-  <date value="2019-08-06" />
+  <date value="2018-09-05T11:35:34.854+00:00" />
   <description value="SFM Product derived from Medication." />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
@@ -34,7 +33,7 @@
     </element>
     <element id="Medication.code.coding:varenummer.system">
       <path value="Medication.code.coding.system" />
-      <fixedUri value="http://ehelse.no/fhir/CodeSystem/FEST" />
+      <fixedUri value="http://ehelse.no/varenummer" />
     </element>
     <element id="Medication.code.coding:varenummer.code">
       <path value="Medication.code.coding.code" />
@@ -52,7 +51,7 @@
     </element>
     <element id="Medication.form.coding.system">
       <path value="Medication.form.coding.system" />
-      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7448" />
+      <fixedUri value="http://ehelse.no/7448" />
     </element>
   </differential>
 </StructureDefinition>

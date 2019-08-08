@@ -155,7 +155,17 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Medication" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Magistrell-Medication" />
         <aggregation value="bundled" />
+      </type>
+    </element>
+    <element id="MedicationStatement.medicationReference:medicationReference">
+      <path value="MedicationStatement.medicationReference" />
+      <sliceName value="medicationReference" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Medication" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Magistrell-Medication" />
       </type>
     </element>
     <element id="MedicationStatement.context">
