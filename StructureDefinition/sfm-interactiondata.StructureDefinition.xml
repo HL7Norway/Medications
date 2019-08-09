@@ -7,7 +7,7 @@
   <title value="sfm-interactiondata" />
   <status value="draft" />
   <date value="2019-08-07" />
-  <description value="Data describing the interaction between two or more medications. " />
+  <description value="Data describing the interaction between two or more medications." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -19,22 +19,6 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
-    <element id="Extension">
-      <path value="Extension" />
-      <short value="Optional Extensions Element" />
-      <definition value="Optional Extension Element - found in all resources." />
-      <constraint>
-        <key value="ext-1" />
-        <severity value="error" />
-        <human value="Must have either extensions or value[x], not both" />
-        <expression value="extension.exists() != value.exists()" />
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
       <slicing>
@@ -48,12 +32,18 @@
     <element id="Extension.extension:relevance">
       <path value="Extension.extension" />
       <sliceName value="relevance" />
+      <min value="1" />
+      <max value="1" />
     </element>
     <element id="Extension.extension:relevance.value[x]">
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="CodeableConcept" />
       </type>
+    </element>
+    <element id="Extension.extension:relevance.value[x].coding.system">
+      <path value="Extension.extension.value[x].coding.system" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7483" />
     </element>
     <element id="Extension.extension:situationcriterium">
       <path value="Extension.extension" />
@@ -68,6 +58,8 @@
     <element id="Extension.extension:clinicalconsequence">
       <path value="Extension.extension" />
       <sliceName value="clinicalconsequence" />
+      <min value="1" />
+      <max value="1" />
     </element>
     <element id="Extension.extension:clinicalconsequence.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -88,12 +80,18 @@
     <element id="Extension.extension:source">
       <path value="Extension.extension" />
       <sliceName value="source" />
+      <min value="1" />
+      <max value="1" />
     </element>
     <element id="Extension.extension:source.value[x]">
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="CodeableConcept" />
       </type>
+    </element>
+    <element id="Extension.extension:source.value[x].coding.system">
+      <path value="Extension.extension.value[x].coding.system" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7485" />
     </element>
     <element id="Extension.extension:handling">
       <path value="Extension.extension" />
@@ -114,6 +112,10 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+    </element>
+    <element id="Extension.extension:displayrule.value[x].coding.system">
+      <path value="Extension.extension.value[x].coding.system" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7442" />
     </element>
     <element id="Extension.extension:reference">
       <path value="Extension.extension" />
@@ -156,6 +158,7 @@
     <element id="Extension.extension:substancegroup">
       <path value="Extension.extension" />
       <sliceName value="substancegroup" />
+      <min value="1" />
     </element>
     <element id="Extension.extension:substancegroup.extension">
       <path value="Extension.extension.extension" />
@@ -172,10 +175,16 @@
       <sliceName value="name" />
       <max value="1" />
     </element>
+    <element id="Extension.extension:substancegroup.extension:name.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
     <element id="Extension.extension:substancegroup.extension:substance">
       <path value="Extension.extension.extension" />
       <sliceName value="substance" />
-      <min value="2" />
+      <min value="1" />
     </element>
     <element id="Extension.extension:substancegroup.extension:substance.extension">
       <path value="Extension.extension.extension.extension" />
@@ -187,20 +196,38 @@
         <rules value="open" />
       </slicing>
     </element>
+    <element id="Extension.extension:substancegroup.extension:substance.extension:atc">
+      <path value="Extension.extension.extension.extension" />
+      <sliceName value="atc" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:substancegroup.extension:substance.extension:atc.value[x]">
+      <path value="Extension.extension.extension.extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
     <element id="Extension.extension:substancegroup.extension:substance.extension:substance">
       <path value="Extension.extension.extension.extension" />
       <sliceName value="substance" />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:substancegroup.extension:substance.extension:atc">
-      <path value="Extension.extension.extension.extension" />
-      <sliceName value="atc" />
-      <max value="1" />
+    <element id="Extension.extension:substancegroup.extension:substance.extension:substance.value[x]">
+      <path value="Extension.extension.extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
     </element>
     <element id="Extension.extension:substancegroup.extension:substance.extension:refsubstance">
       <path value="Extension.extension.extension.extension" />
       <sliceName value="refsubstance" />
+    </element>
+    <element id="Extension.extension:substancegroup.extension:substance.extension:refsubstance.value[x]">
+      <path value="Extension.extension.extension.extension.value[x]" />
+      <type>
+        <code value="Reference" />
+      </type>
     </element>
     <element id="Extension.extension:substancegroup.extension:substance.value[x]">
       <path value="Extension.extension.extension.value[x]" />
