@@ -10,6 +10,26 @@
   <baseDefinition value="http://hl7.no/fhir/StructureDefinition/no-basis-Organization" />
   <derivation value="constraint" />
   <differential>
+    <element id="Organization.extension">
+      <path value="Organization.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Organization.extension:epjinfo">
+      <path value="Organization.extension" />
+      <sliceName value="epjinfo" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-epjinfo" />
+      </type>
+    </element>
     <element id="Organization.identifier">
       <path value="Organization.identifier" />
       <min value="1" />
@@ -19,6 +39,10 @@
       <sliceName value="ENH" />
       <min value="1" />
       <max value="1" />
+    </element>
+    <element id="Organization.name">
+      <path value="Organization.name" />
+      <min value="1" />
     </element>
     <element id="Organization.telecom">
       <path value="Organization.telecom" />

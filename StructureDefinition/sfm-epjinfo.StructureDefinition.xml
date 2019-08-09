@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="sfm-epjinfo" />
+  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-epjinfo" />
+  <version value="1.0" />
+  <name value="SfmEpjInfo" />
+  <status value="draft" />
+  <date value="2019-08-09" />
+  <fhirVersion value="4.0.0" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Organization" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Optional Extensions Element" />
+      <definition value="Optional Extension Element - found in all resources." />
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:systeminfo">
+      <path value="Extension.extension" />
+      <sliceName value="systeminfo" />
+    </element>
+    <element id="Extension.extension:systeminfo.extension">
+      <path value="Extension.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:systeminfo.extension:systemcode">
+      <path value="Extension.extension.extension" />
+      <sliceName value="systemcode" />
+    </element>
+    <element id="Extension.extension:systeminfo.extension:systemcode.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:systeminfo.extension:systemname">
+      <path value="Extension.extension.extension" />
+      <sliceName value="systemname" />
+    </element>
+    <element id="Extension.extension:systeminfo.extension:systemname.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:systeminfo.extension:version">
+      <path value="Extension.extension.extension" />
+      <sliceName value="version" />
+    </element>
+    <element id="Extension.extension:systeminfo.extension:version.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:systeminfo.extension:updatetime">
+      <path value="Extension.extension.extension" />
+      <sliceName value="updatetime" />
+    </element>
+    <element id="Extension.extension:systeminfo.extension:updatetime.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="Extension.extension:systeminfo.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <max value="0" />
+    </element>
+    <element id="Extension.extension:operationsuplierinfo">
+      <path value="Extension.extension" />
+      <sliceName value="operationsuplierinfo" />
+    </element>
+    <element id="Extension.extension:operationsuplierinfo.extension">
+      <path value="Extension.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:operationsuplierinfo.extension:servicevendorname">
+      <path value="Extension.extension.extension" />
+      <sliceName value="servicevendorname" />
+    </element>
+    <element id="Extension.extension:operationsuplierinfo.extension:servicevendorname.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:operationsuplierinfo.extension:contactname">
+      <path value="Extension.extension.extension" />
+      <sliceName value="contactname" />
+    </element>
+    <element id="Extension.extension:operationsuplierinfo.extension:contactname.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:operationsuplierinfo.extension:contactmail">
+      <path value="Extension.extension.extension" />
+      <sliceName value="contactmail" />
+    </element>
+    <element id="Extension.extension:operationsuplierinfo.extension:contactmail.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:operationsuplierinfo.extension:contactphone">
+      <path value="Extension.extension.extension" />
+      <sliceName value="contactphone" />
+    </element>
+    <element id="Extension.extension:operationsuplierinfo.extension:contactphone.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:operationsuplierinfo.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <max value="0" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>
