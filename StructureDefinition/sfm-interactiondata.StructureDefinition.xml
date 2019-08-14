@@ -207,6 +207,10 @@
         <code value="CodeableConcept" />
       </type>
     </element>
+    <element id="Extension.extension:substancegroup.extension:substance.extension:atc.value[x].coding.system">
+      <path value="Extension.extension.extension.extension.value[x].coding.system" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7180" />
+    </element>
     <element id="Extension.extension:substancegroup.extension:substance.extension:substance">
       <path value="Extension.extension.extension.extension" />
       <sliceName value="substance" />

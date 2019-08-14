@@ -33,13 +33,6 @@
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-interactiondata" />
       </type>
     </element>
-    <element id="Basic.extension:interacationdata.extension:substancegroup.extension:substance.extension:atc.value[x]">
-      <path value="Basic.extension.extension.extension.extension.value[x]" />
-      <type>
-        <code value="CodeableConcept" />
-        <profile value="http://www.whocc.no/atc" />
-      </type>
-    </element>
     <element id="Basic.code">
       <path value="Basic.code" />
       <slicing>
