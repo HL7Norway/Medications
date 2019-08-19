@@ -10,7 +10,7 @@
   <name value="SfmMedicationStatement" />
   <title value="sfm-MedicationStatement" />
   <status value="draft" />
-  <date value="2019-07-01" />
+  <date value="2019-08-19" />
   <description value="SFM MedicationStatement derived from no-basis-MedicationStatement" />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
@@ -159,7 +159,7 @@
         <aggregation value="bundled" />
       </type>
     </element>
-    <element id="MedicationStatement.medicationReference:medicationReference">
+    <element id="MedicationStatement.medication[x]:medicationReference">
       <path value="MedicationStatement.medicationReference" />
       <sliceName value="medicationReference" />
       <type>
