@@ -26,7 +26,7 @@
     <element id="Extension">
       <path value="Extension" />
       <short value="Medical warnings" />
-      <definition value="Medical warnings related to given LIB list and justification of why treatement still valid. " />
+      <definition value="Medical warnings related to given LIB list and justification of why treatement still valid." />
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
@@ -72,7 +72,7 @@
       <path value="Extension.extension.extension" />
       <sliceName value="reason" />
       <short value="Textual reason" />
-      <definition value="Reason for contiuning treatement with similar drugs. " />
+      <definition value="Reason for contiuning treatement with similar drugs." />
       <max value="1" />
     </element>
     <element id="Extension.extension:doublePrescription.extension:reason.value[x]:valueString">
@@ -86,7 +86,7 @@
       <path value="Extension.extension.extension" />
       <sliceName value="codedreason" />
       <short value="coded reason" />
-      <definition value="Coded reason for contuing treatment with simiar drugs. " />
+      <definition value="Coded reason for contuing treatment with simiar drugs." />
     </element>
     <element id="Extension.extension:doublePrescription.extension:codedreason.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -122,6 +122,8 @@
       <sliceName value="valueReference" />
       <type>
         <code value="Reference" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Interaction" />
+        <aggregation value="bundled" />
       </type>
     </element>
     <element id="Extension.extension:interaction.extension:reason">
