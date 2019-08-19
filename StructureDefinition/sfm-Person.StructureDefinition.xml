@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sfm-Person" />
-  <url value="http://example.org/fhir/StructureDefinition/sfm-Person" />
+  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-Person" />
   <version value="1.0" />
   <name value="SfmPerson" />
   <title value="sfm-Person" />
   <status value="draft" />
   <date value="2019-08-19" />
+  <description value="Used in SFM to write non medical users. Derived from no-basis-Person." />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
   <abstract value="false" />
