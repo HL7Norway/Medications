@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="sfm-Organization" />
   <url value="http://example.org/fhir/StructureDefinition/sfm-Organization" />
+  <version value="1.0" />
   <name value="SfmOrganization" />
+  <title value="sfm-Organization" />
   <status value="draft" />
+  <date value="2019-08-19" />
+  <description value="Derived from no-basis-Organization. Extended with EPJ vendor and service provider. " />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
   <abstract value="false" />
@@ -23,7 +28,6 @@
     <element id="Organization.extension:epjinfo">
       <path value="Organization.extension" />
       <sliceName value="epjinfo" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
