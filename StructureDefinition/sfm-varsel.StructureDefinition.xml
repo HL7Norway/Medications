@@ -115,6 +115,8 @@
     <element id="Extension.extension:interaction.extension:reference">
       <path value="Extension.extension.extension" />
       <sliceName value="reference" />
+      <short value="Reference to MedicationStatement" />
+      <definition value="Reference to medicationstatement that is part of the interaction identified. " />
       <min value="1" />
     </element>
     <element id="Extension.extension:interaction.extension:reference.value[x]:valueReference">
@@ -122,13 +124,14 @@
       <sliceName value="valueReference" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Interaction" />
-        <aggregation value="bundled" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-MedicationStatement" />
       </type>
     </element>
     <element id="Extension.extension:interaction.extension:reason">
       <path value="Extension.extension.extension" />
       <sliceName value="reason" />
+      <short value="Reason for continue with medication" />
+      <definition value="Textual reason for using medication despit interaction warning. " />
       <max value="1" />
     </element>
     <element id="Extension.extension:interaction.extension:reason.value[x]:valueString">
@@ -141,6 +144,8 @@
     <element id="Extension.extension:interaction.extension:codedreason">
       <path value="Extension.extension.extension" />
       <sliceName value="codedreason" />
+      <short value="coded reason for contiuing with medication" />
+      <definition value="A coded reason for continuing with medication despit interaction warning. " />
     </element>
     <element id="Extension.extension:interaction.extension:codedreason.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -151,6 +156,8 @@
     <element id="Extension.extension:interaction.extension:interactiondata">
       <path value="Extension.extension.extension" />
       <sliceName value="interactiondata" />
+      <short value="Information about the interaction identified" />
+      <definition value="Referance to interaction information that is warned about. Information is bundled. " />
     </element>
     <element id="Extension.extension:interaction.extension:interactiondata.value[x]">
       <path value="Extension.extension.extension.value[x]" />
