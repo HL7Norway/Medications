@@ -306,6 +306,10 @@
       <path value="MedicationStatement.dosage.patientInstruction" />
       <max value="0" />
     </element>
+    <element id="MedicationStatement.dosage:structureddosing.timing.code.coding.system">
+      <path value="MedicationStatement.dosage.timing.code.coding.system" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.8325" />
+    </element>
     <element id="MedicationStatement.dosage:structureddosing.asNeeded[x]">
       <path value="MedicationStatement.dosage.asNeeded[x]" />
       <max value="0" />
