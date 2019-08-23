@@ -35,6 +35,23 @@
       <path value="Observation.code" />
       <definition value="Describes what was observed. SFM is using the Norwegian coding for lab results." />
     </element>
+    <element id="Observation.code.coding">
+      <path value="Observation.code.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Observation.code.coding.system">
+      <path value="Observation.code.coding.system" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7280" />
+    </element>
+    <element id="Observation.code.coding.code">
+      <path value="Observation.code.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Observation.code.coding.display">
+      <path value="Observation.code.coding.display" />
+      <min value="1" />
+    </element>
     <element id="Observation.subject">
       <path value="Observation.subject" />
       <min value="1" />

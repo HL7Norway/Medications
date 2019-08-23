@@ -15,6 +15,13 @@
   <baseDefinition value="http://hl7.no/fhir/StructureDefinition/no-basis-Patient" />
   <derivation value="constraint" />
   <differential>
+    <element id="Patient.identifier">
+      <path value="Patient.identifier" />
+      <slicing>
+        <rules value="closed" />
+      </slicing>
+      <min value="1" />
+    </element>
     <element id="Patient.identifier:FHN">
       <path value="Patient.identifier" />
       <sliceName value="FHN" />
@@ -24,6 +31,20 @@
       <path value="Patient.identifier" />
       <sliceName value="HNR" />
       <max value="0" />
+    </element>
+    <element id="Patient.identifier:xxxid">
+      <path value="Patient.identifier" />
+      <sliceName value="xxxid" />
+      <max value="1" />
+    </element>
+    <element id="Patient.identifier:xxxid.system">
+      <path value="Patient.identifier.system" />
+      <min value="1" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.4.14" />
+    </element>
+    <element id="Patient.identifier:xxxid.value">
+      <path value="Patient.identifier.value" />
+      <min value="1" />
     </element>
     <element id="Patient.active">
       <path value="Patient.active" />

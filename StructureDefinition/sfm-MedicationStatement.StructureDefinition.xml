@@ -306,6 +306,15 @@
       <path value="MedicationStatement.dosage.patientInstruction" />
       <max value="0" />
     </element>
+    <element id="MedicationStatement.dosage:structureddosing.timing.event">
+      <path value="MedicationStatement.dosage.timing.event" />
+      <definition value="May be combined with code. If code is given then only the date should be used. If code is not provided then timestampe should be used to identify exact time for medication. " />
+    </element>
+    <element id="MedicationStatement.dosage:structureddosing.timing.code">
+      <path value="MedicationStatement.dosage.timing.code" />
+      <short value="Norwegian code system used" />
+      <definition value="If provided it should " />
+    </element>
     <element id="MedicationStatement.dosage:structureddosing.timing.code.coding.system">
       <path value="MedicationStatement.dosage.timing.code.coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.8325" />

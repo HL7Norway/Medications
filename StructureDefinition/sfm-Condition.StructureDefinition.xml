@@ -31,6 +31,23 @@
       <path value="Condition.clinicalStatus" />
       <definition value="The clinical status of the condition. Used by SFM." />
     </element>
+    <element id="Condition.verificationStatus">
+      <path value="Condition.verificationStatus" />
+      <min value="1" />
+    </element>
+    <element id="Condition.verificationStatus.coding">
+      <path value="Condition.verificationStatus.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Condition.verificationStatus.coding.code">
+      <path value="Condition.verificationStatus.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Condition.verificationStatus.coding.display">
+      <path value="Condition.verificationStatus.coding.display" />
+      <min value="1" />
+    </element>
     <element id="Condition.category">
       <path value="Condition.category" />
       <max value="1" />
@@ -38,6 +55,23 @@
     <element id="Condition.code">
       <path value="Condition.code" />
       <definition value="Identification of the condition, problem or diagnosis. The code should be ICPC2 or ICD10 code. No other code will be recognized by SFM." />
+      <min value="1" />
+    </element>
+    <element id="Condition.code.coding">
+      <path value="Condition.code.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Condition.code.coding.system">
+      <path value="Condition.code.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Condition.code.coding.code">
+      <path value="Condition.code.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Condition.code.coding.display">
+      <path value="Condition.code.coding.display" />
       <min value="1" />
     </element>
     <element id="Condition.bodySite">
