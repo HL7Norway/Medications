@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="sfm-varsel" />
+  <id value="sfm-warning" />
   <meta>
     <versionId value="4" />
     <lastUpdated value="2018-10-03T14:01:22.414+00:00" />
   </meta>
-  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-varsel" />
+  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-warning" />
   <version value="2.0" />
-  <name value="SfmVarsel" />
-  <title value="sfm-varsel" />
+  <name value="SfmWarning" />
+  <title value="sfm-Warning" />
   <status value="draft" />
   <date value="2019-07-05" />
   <description value="Medical warning handling documentation." />
@@ -116,7 +116,7 @@
       <path value="Extension.extension.extension" />
       <sliceName value="reference" />
       <short value="Reference to MedicationStatement" />
-      <definition value="Reference to medicationstatement that is part of the interaction identified. " />
+      <definition value="Reference to medicationstatement that is part of the interaction identified." />
       <min value="1" />
     </element>
     <element id="Extension.extension:interaction.extension:reference.value[x]:valueReference">
@@ -131,7 +131,7 @@
       <path value="Extension.extension.extension" />
       <sliceName value="reason" />
       <short value="Reason for continue with medication" />
-      <definition value="Textual reason for using medication despit interaction warning. " />
+      <definition value="Textual reason for using medication despit interaction warning." />
       <max value="1" />
     </element>
     <element id="Extension.extension:interaction.extension:reason.value[x]:valueString">
@@ -145,7 +145,7 @@
       <path value="Extension.extension.extension" />
       <sliceName value="codedreason" />
       <short value="coded reason for contiuing with medication" />
-      <definition value="A coded reason for continuing with medication despit interaction warning. " />
+      <definition value="A coded reason for continuing with medication despit interaction warning." />
     </element>
     <element id="Extension.extension:interaction.extension:codedreason.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -157,7 +157,7 @@
       <path value="Extension.extension.extension" />
       <sliceName value="interactiondata" />
       <short value="Information about the interaction identified" />
-      <definition value="Referance to interaction information that is warned about. Information is bundled. " />
+      <definition value="Referance to interaction information that is warned about. Information is bundled." />
     </element>
     <element id="Extension.extension:interaction.extension:interactiondata.value[x]">
       <path value="Extension.extension.extension.value[x]" />

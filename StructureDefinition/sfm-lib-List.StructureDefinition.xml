@@ -24,20 +24,6 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="List.extension:warnings">
-      <path value="List.extension" />
-      <sliceName value="warnings" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-varsel" />
-      </type>
-    </element>
-    <element id="List.extension:warnings.extension:doublePrescription">
-      <path value="List.extension.extension" />
-      <sliceName value="doublePrescription" />
-      <max value="1" />
-    </element>
     <element id="List.extension:actor">
       <path value="List.extension" />
       <sliceName value="actor" />
@@ -52,6 +38,14 @@
       <type>
         <code value="Extension" />
         <profile value="http://example.org/fhir/StructureDefinition/sfm-lib-list-meta-data" />
+      </type>
+    </element>
+    <element id="List.extension:warnings">
+      <path value="List.extension" />
+      <sliceName value="warnings" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-warning" />
       </type>
     </element>
     <element id="List.title">
