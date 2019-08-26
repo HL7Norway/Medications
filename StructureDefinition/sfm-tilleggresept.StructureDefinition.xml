@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="sfm-tilleggresept" />
+  <id value="sfm-reseptamendment" />
   <meta>
     <versionId value="10" />
     <lastUpdated value="2018-10-03T13:59:51.379+00:00" />
   </meta>
-  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-tileggresept" />
+  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-reseptamendment" />
   <version value="2.0" />
-  <name value="SfmTilleggResept" />
-  <title value="sfm-tilleggresept" />
+  <name value="SfmReseptamendment" />
+  <title value="sfm-reseptamendment" />
   <status value="draft" />
-  <date value="2019-07-01" />
+  <date value="2019-08-26" />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -32,30 +32,30 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Extension.extension:reseptdato">
+    <element id="Extension.extension:reseptdate">
       <path value="Extension.extension" />
-      <sliceName value="reseptdato" />
+      <sliceName value="reseptdate" />
       <short value="Date the resept was signed" />
       <definition value="." />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:reseptdato.value[x]:valueDate">
+    <element id="Extension.extension:reseptdate.value[x]:valueDate">
       <path value="Extension.extension.valueDate" />
       <sliceName value="valueDate" />
       <type>
         <code value="date" />
       </type>
     </element>
-    <element id="Extension.extension:reseptUtloper">
+    <element id="Extension.extension:expirationdate">
       <path value="Extension.extension" />
-      <sliceName value="reseptUtloper" />
+      <sliceName value="expirationdate" />
       <short value="Last date the pharmacy can deliver" />
       <definition value="." />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:reseptUtloper.value[x]:valueDate">
+    <element id="Extension.extension:expirationdate.value[x]:valueDate">
       <path value="Extension.extension.valueDate" />
       <sliceName value="valueDate" />
       <type>
@@ -77,124 +77,124 @@
         <code value="dateTime" />
       </type>
     </element>
-    <element id="Extension.extension:verneplikt">
+    <element id="Extension.extension:conscription">
       <path value="Extension.extension" />
-      <sliceName value="verneplikt" />
+      <sliceName value="conscription" />
       <short value="Concriptive soldier" />
       <definition value="Boolean that identify if the patient is a soldier." />
       <max value="1" />
     </element>
-    <element id="Extension.extension:verneplikt.value[x]:valueBoolean">
+    <element id="Extension.extension:conscription.value[x]:valueBoolean">
       <path value="Extension.extension.valueBoolean" />
       <sliceName value="valueBoolean" />
       <type>
         <code value="boolean" />
       </type>
     </element>
-    <element id="Extension.extension:sokIndvRef">
+    <element id="Extension.extension:helfoapplication">
       <path value="Extension.extension" />
-      <sliceName value="sokIndvRef" />
+      <sliceName value="helfoapplication" />
       <short value="Individuel application to Helfo" />
       <definition value="Request to Helfo for medication cost refund" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:sokIndvRef.value[x]:valueBoolean">
+    <element id="Extension.extension:helfoapplication.value[x]:valueBoolean">
       <path value="Extension.extension.valueBoolean" />
       <sliceName value="valueBoolean" />
       <type>
         <code value="boolean" />
       </type>
     </element>
-    <element id="Extension.extension:frikort">
+    <element id="Extension.extension:freecard">
       <path value="Extension.extension" />
-      <sliceName value="frikort" />
+      <sliceName value="freecard" />
       <short value="Refund card" />
       <definition value="Registration that the patient get all expences refunded by the gouverment." />
       <max value="1" />
     </element>
-    <element id="Extension.extension:frikort.value[x]:valueBoolean">
+    <element id="Extension.extension:freecard.value[x]:valueBoolean">
       <path value="Extension.extension.valueBoolean" />
       <sliceName value="valueBoolean" />
       <type>
         <code value="boolean" />
       </type>
     </element>
-    <element id="Extension.extension:vergeinnsynsres">
+    <element id="Extension.extension:guardiantransparencyreservation">
       <path value="Extension.extension" />
-      <sliceName value="vergeinnsynsres" />
+      <sliceName value="guardiantransparencyreservation" />
       <short value="Guardian transperecy reservation" />
       <definition value="boolean that states that the patients guardian should not have access to the resept." />
       <max value="1" />
     </element>
-    <element id="Extension.extension:vergeinnsynsres.value[x]:valueBoolean">
+    <element id="Extension.extension:guardiantransparencyreservation.value[x]:valueBoolean">
       <path value="Extension.extension.valueBoolean" />
       <sliceName value="valueBoolean" />
       <type>
         <code value="boolean" />
       </type>
     </element>
-    <element id="Extension.extension:tilEgenPraksis">
+    <element id="Extension.extension:ownpractice">
       <path value="Extension.extension" />
-      <sliceName value="tilEgenPraksis" />
+      <sliceName value="ownpractice" />
       <short value="Identify that the medication is for use in own organisation" />
       <definition value="." />
       <max value="1" />
     </element>
-    <element id="Extension.extension:tilEgenPraksis.value[x]:valueBoolean">
+    <element id="Extension.extension:ownpractice.value[x]:valueBoolean">
       <path value="Extension.extension.valueBoolean" />
       <sliceName value="valueBoolean" />
       <type>
         <code value="boolean" />
       </type>
     </element>
-    <element id="Extension.extension:legensNavn">
+    <element id="Extension.extension:indoctorsname">
       <path value="Extension.extension" />
-      <sliceName value="legensNavn" />
+      <sliceName value="indoctorsname" />
       <short value="Resept in doctors name" />
       <definition value="mechansims to keep the patient name secret to the pharmacy." />
       <max value="1" />
     </element>
-    <element id="Extension.extension:legensNavn.value[x]:valueBoolean">
+    <element id="Extension.extension:indoctorsname.value[x]:valueBoolean">
       <path value="Extension.extension.valueBoolean" />
       <sliceName value="valueBoolean" />
       <type>
         <code value="boolean" />
       </type>
     </element>
-    <element id="Extension.extension:refNum">
+    <element id="Extension.extension:refnum">
       <path value="Extension.extension" />
-      <sliceName value="refNum" />
+      <sliceName value="refnum" />
       <short value="Reference number" />
       <definition value="Used when the resept is locked or when patient do not have norwegian legal identity." />
       <max value="1" />
     </element>
-    <element id="Extension.extension:refNum.value[x]:valueString">
+    <element id="Extension.extension:refnum.value[x]:valueString">
       <path value="Extension.extension.valueString" />
       <sliceName value="valueString" />
       <type>
         <code value="string" />
       </type>
     </element>
-    <element id="Extension.extension:spesialitet">
+    <element id="Extension.extension:speciality">
       <path value="Extension.extension" />
-      <sliceName value="spesialitet" />
+      <sliceName value="speciality" />
       <short value="Speciality" />
       <definition value="Speciality that the doctor hold." />
     </element>
-    <element id="Extension.extension:spesialitet.value[x]:valueCodeableConcept">
+    <element id="Extension.extension:speciality.value[x]:valueCodeableConcept">
       <path value="Extension.extension.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
-    <element id="Extension.extension:spesialitet.value[x]:valueCodeableConcept.coding.system">
+    <element id="Extension.extension:speciality.value[x]:valueCodeableConcept.coding.system">
       <path value="Extension.extension.valueCodeableConcept.coding.system" />
       <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.7428" />
     </element>
-    <element id="Extension.extension:ekspanmod">
+    <element id="Extension.extension:dispatchrequest">
       <path value="Extension.extension" />
-      <sliceName value="ekspanmod" />
+      <sliceName value="dispatchrequest" />
       <short value="Request for delivery to patient" />
       <definition value="Request to a single pharmacy to prepare (or send) the medication to the patient." />
       <max value="1" />
@@ -209,114 +209,114 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Extension.extension:ekspanmod.extension:vilkar">
+    <element id="Extension.extension:dispatchrequest.extension:condition">
       <path value="Extension.extension.extension" />
-      <sliceName value="vilkar" />
+      <sliceName value="condition" />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:ekspanmod.extension:vilkar.value[x]:valueBoolean">
+    <element id="Extension.extension:dispatchrequest.extension:condition.value[x]:valueBoolean">
       <path value="Extension.extension.extension.valueBoolean" />
       <sliceName value="valueBoolean" />
       <type>
         <code value="boolean" />
       </type>
     </element>
-    <element id="Extension.extension:ekspanmod.extension:metodeEkp">
+    <element id="Extension.extension:dispatchrequest.extension:metod">
       <path value="Extension.extension.extension" />
-      <sliceName value="metodeEkp" />
+      <sliceName value="metod" />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:ekspanmod.extension:metodeEkp.value[x]:valueCodeableConcept">
+    <element id="Extension.extension:dispatchrequest.extension:metod.value[x]:valueCodeableConcept">
       <path value="Extension.extension.extension.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
-    <element id="Extension.extension:ekspanmod.extension:metodeEkp.value[x]:valueCodeableConcept.coding.system">
+    <element id="Extension.extension:dispatchrequest.extension:metod.value[x]:valueCodeableConcept.coding.system">
       <path value="Extension.extension.extension.valueCodeableConcept.coding.system" />
       <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.7404" />
     </element>
-    <element id="Extension.extension:ekspanmod.extension:metodeEkp.value[x]:valueCodeableConcept.coding.code">
+    <element id="Extension.extension:dispatchrequest.extension:metod.value[x]:valueCodeableConcept.coding.code">
       <path value="Extension.extension.extension.valueCodeableConcept.coding.code" />
       <min value="1" />
     </element>
-    <element id="Extension.extension:ekspanmod.extension:metodeEkp.value[x]:valueCodeableConcept.coding.display">
+    <element id="Extension.extension:dispatchrequest.extension:metod.value[x]:valueCodeableConcept.coding.display">
       <path value="Extension.extension.extension.valueCodeableConcept.coding.display" />
       <min value="1" />
     </element>
-    <element id="Extension.extension:ekspanmod.extension:utleverer">
+    <element id="Extension.extension:dispatchrequest.extension:organization">
       <path value="Extension.extension.extension" />
-      <sliceName value="utleverer" />
+      <sliceName value="organization" />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:ekspanmod.extension:utleverer.value[x]:valueString">
+    <element id="Extension.extension:dispatchrequest.extension:organization.value[x]:valueString">
       <path value="Extension.extension.extension.valueString" />
       <sliceName value="valueString" />
       <type>
         <code value="string" />
       </type>
     </element>
-    <element id="Extension.extension:ekspanmod.extension:kontaktperson">
+    <element id="Extension.extension:dispatchrequest.extension:contactperson">
       <path value="Extension.extension.extension" />
-      <sliceName value="kontaktperson" />
+      <sliceName value="contactperson" />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:ekspanmod.extension:kontaktperson.value[x]:valueString">
+    <element id="Extension.extension:dispatchrequest.extension:contactperson.value[x]:valueString">
       <path value="Extension.extension.extension.valueString" />
       <sliceName value="valueString" />
       <type>
         <code value="string" />
       </type>
     </element>
-    <element id="Extension.extension:ekspanmod.extension:merknad">
+    <element id="Extension.extension:dispatchrequest.extension:note">
       <path value="Extension.extension.extension" />
-      <sliceName value="merknad" />
+      <sliceName value="note" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:ekspanmod.extension:merknad.value[x]:valueString">
+    <element id="Extension.extension:dispatchrequest.extension:note.value[x]:valueString">
       <path value="Extension.extension.extension.valueString" />
       <sliceName value="valueString" />
       <type>
         <code value="string" />
       </type>
     </element>
-    <element id="Extension.extension:ekspanmod.extension:orgNumUtlev">
+    <element id="Extension.extension:dispatchrequest.extension:orgnum">
       <path value="Extension.extension.extension" />
-      <sliceName value="orgNumUtlev" />
+      <sliceName value="orgnum" />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:ekspanmod.extension:orgNumUtlev.value[x]:valueString">
+    <element id="Extension.extension:dispatchrequest.extension:orgnum.value[x]:valueString">
       <path value="Extension.extension.extension.valueString" />
       <sliceName value="valueString" />
       <type>
         <code value="string" />
       </type>
     </element>
-    <element id="Extension.extension:ekspanmod.extension:utlevererNavn">
+    <element id="Extension.extension:dispatchrequest.extension:orgname">
       <path value="Extension.extension.extension" />
-      <sliceName value="utlevererNavn" />
+      <sliceName value="orgname" />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:ekspanmod.extension:utlevererNavn.value[x]:valueString">
+    <element id="Extension.extension:dispatchrequest.extension:orgname.value[x]:valueString">
       <path value="Extension.extension.extension.valueString" />
       <sliceName value="valueString" />
       <type>
         <code value="string" />
       </type>
     </element>
-    <element id="Extension.extension:ekspanmod.extension:address">
+    <element id="Extension.extension:dispatchrequest.extension:address">
       <path value="Extension.extension.extension" />
       <sliceName value="address" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:ekspanmod.extension:address.value[x]:valueReference">
+    <element id="Extension.extension:dispatchrequest.extension:address.value[x]:valueReference">
       <path value="Extension.extension.extension.valueReference" />
       <sliceName value="valueReference" />
       <type>
@@ -325,146 +325,146 @@
         <aggregation value="bundled" />
       </type>
     </element>
-    <element id="Extension.extension:ekspanmod.value[x]">
+    <element id="Extension.extension:dispatchrequest.value[x]">
       <path value="Extension.extension.value[x]" />
       <max value="0" />
     </element>
-    <element id="Extension.extension:tidlisgeUtlev">
+    <element id="Extension.extension:earliestdispence">
       <path value="Extension.extension" />
-      <sliceName value="tidlisgeUtlev" />
+      <sliceName value="earliestdispence" />
       <short value="Earliest delivery" />
       <definition value="The first date the doctor want the pharmacy to deliver the medication to the patient." />
       <max value="1" />
     </element>
-    <element id="Extension.extension:tidlisgeUtlev.value[x]:valueDate">
+    <element id="Extension.extension:earliestdispence.value[x]:valueDate">
       <path value="Extension.extension.valueDate" />
       <sliceName value="valueDate" />
       <type>
         <code value="date" />
       </type>
     </element>
-    <element id="Extension.extension:utskrevetSykehus">
+    <element id="Extension.extension:dischargedhospital">
       <path value="Extension.extension" />
-      <sliceName value="utskrevetSykehus" />
+      <sliceName value="dischargedhospital" />
       <short value="Discharged from hosptital" />
       <definition value="." />
       <max value="1" />
     </element>
-    <element id="Extension.extension:utskrevetSykehus.value[x]:valueBoolean">
+    <element id="Extension.extension:dischargedhospital.value[x]:valueBoolean">
       <path value="Extension.extension.valueBoolean" />
       <sliceName value="valueBoolean" />
       <type>
         <code value="boolean" />
       </type>
     </element>
-    <element id="Extension.extension:lastResept">
+    <element id="Extension.extension:lockedresept">
       <path value="Extension.extension" />
-      <sliceName value="lastResept" />
+      <sliceName value="lockedresept" />
       <short value="Locked resept" />
       <definition value="." />
       <max value="1" />
     </element>
-    <element id="Extension.extension:lastResept.value[x]:valueBoolean">
+    <element id="Extension.extension:lockedresept.value[x]:valueBoolean">
       <path value="Extension.extension.valueBoolean" />
       <sliceName value="valueBoolean" />
       <type>
         <code value="boolean" />
       </type>
     </element>
-    <element id="Extension.extension:varegruppekode">
+    <element id="Extension.extension:itemgroup">
       <path value="Extension.extension" />
-      <sliceName value="varegruppekode" />
+      <sliceName value="itemgroup" />
       <short value="Type of resept" />
       <definition value="Identify what type of resept it is. Medication, Nutrition support etc." />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:varegruppekode.value[x]:valueCodeableConcept">
+    <element id="Extension.extension:itemgroup.value[x]:valueCodeableConcept">
       <path value="Extension.extension.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
-    <element id="Extension.extension:varegruppekode.value[x]:valueCodeableConcept.coding.system">
+    <element id="Extension.extension:itemgroup.value[x]:valueCodeableConcept.coding.system">
       <path value="Extension.extension.valueCodeableConcept.coding.system" />
       <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.7402" />
     </element>
-    <element id="Extension.extension:antallPakn">
+    <element id="Extension.extension:numberofpackages">
       <path value="Extension.extension" />
-      <sliceName value="antallPakn" />
+      <sliceName value="numberofpackages" />
       <short value="Number of packages" />
       <definition value="." />
       <max value="1" />
     </element>
-    <element id="Extension.extension:antallPakn.value[x]:valueDecimal">
+    <element id="Extension.extension:numberofpackages.value[x]:valueDecimal">
       <path value="Extension.extension.valueDecimal" />
       <sliceName value="valueDecimal" />
       <type>
         <code value="decimal" />
       </type>
     </element>
-    <element id="Extension.extension:refusjonshjemmel">
+    <element id="Extension.extension:reimbursmentparagraph">
       <path value="Extension.extension" />
-      <sliceName value="refusjonshjemmel" />
+      <sliceName value="reimbursmentparagraph" />
       <short value="Refund paragraph" />
       <definition value="." />
       <max value="1" />
     </element>
-    <element id="Extension.extension:refusjonshjemmel.value[x]:valueCodeableConcept">
+    <element id="Extension.extension:reimbursmentparagraph.value[x]:valueCodeableConcept">
       <path value="Extension.extension.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
-    <element id="Extension.extension:refusjonshjemmel.value[x]:valueCodeableConcept.coding.system">
+    <element id="Extension.extension:reimbursmentparagraph.value[x]:valueCodeableConcept.coding.system">
       <path value="Extension.extension.valueCodeableConcept.coding.system" />
       <min value="1" />
       <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.7427" />
     </element>
-    <element id="Extension.extension:refusjonshjemmel.value[x]:valueCodeableConcept.coding.code">
+    <element id="Extension.extension:reimbursmentparagraph.value[x]:valueCodeableConcept.coding.code">
       <path value="Extension.extension.valueCodeableConcept.coding.code" />
       <min value="1" />
     </element>
-    <element id="Extension.extension:refusjonshjemmel.value[x]:valueCodeableConcept.coding.display">
+    <element id="Extension.extension:reimbursmentparagraph.value[x]:valueCodeableConcept.coding.display">
       <path value="Extension.extension.valueCodeableConcept.coding.display" />
       <min value="1" />
     </element>
-    <element id="Extension.extension:refusjonskode">
+    <element id="Extension.extension:reimbursementcode">
       <path value="Extension.extension" />
-      <sliceName value="refusjonskode" />
+      <sliceName value="reimbursementcode" />
       <short value="Refund code" />
       <definition value=".Accepted coding systems: 7110, 7170, 7434, 7435." />
       <max value="1" />
     </element>
-    <element id="Extension.extension:refusjonskode.value[x]:valueCodeableConcept">
+    <element id="Extension.extension:reimbursementcode.value[x]:valueCodeableConcept">
       <path value="Extension.extension.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
-    <element id="Extension.extension:refusjonskode.value[x]:valueCodeableConcept.coding.system">
+    <element id="Extension.extension:reimbursementcode.value[x]:valueCodeableConcept.coding.system">
       <path value="Extension.extension.valueCodeableConcept.coding.system" />
       <min value="1" />
     </element>
-    <element id="Extension.extension:refusjonskode.value[x]:valueCodeableConcept.coding.code">
+    <element id="Extension.extension:reimbursementcode.value[x]:valueCodeableConcept.coding.code">
       <path value="Extension.extension.valueCodeableConcept.coding.code" />
       <min value="1" />
     </element>
-    <element id="Extension.extension:refusjonskode.value[x]:valueCodeableConcept.coding.display">
+    <element id="Extension.extension:reimbursementcode.value[x]:valueCodeableConcept.coding.display">
       <path value="Extension.extension.valueCodeableConcept.coding.display" />
       <min value="1" />
     </element>
-    <element id="Extension.extension:komLegemAdm">
+    <element id="Extension.extension:plomedicationmanagement">
       <path value="Extension.extension" />
-      <sliceName value="komLegemAdm" />
+      <sliceName value="plomedicationmanagement" />
       <short value="Patient treated by the municipal" />
       <definition value="." />
       <max value="1" />
     </element>
-    <element id="Extension.extension:komLegemAdm.value[x]:valueString">
+    <element id="Extension.extension:plomedicationmanagement.value[x]:valueString">
       <path value="Extension.extension.valueString" />
       <sliceName value="valueString" />
       <type>
@@ -486,14 +486,14 @@
         <code value="integer" />
       </type>
     </element>
-    <element id="Extension.extension:mengde">
+    <element id="Extension.extension:amount">
       <path value="Extension.extension" />
-      <sliceName value="mengde" />
+      <sliceName value="amount" />
       <short value="Amount of drug prescribed" />
       <definition value="identifies the number of tablets or amount of liquid that should be delivered to the patient for each REIT." />
       <max value="1" />
     </element>
-    <element id="Extension.extension:mengde.value[x]:valueQuantity">
+    <element id="Extension.extension:amount.value[x]:valueQuantity">
       <path value="Extension.extension.valueQuantity" />
       <sliceName value="valueQuantity" />
       <type>
@@ -501,25 +501,25 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/SimpleQuantity" />
       </type>
     </element>
-    <element id="Extension.extension:mengde.value[x]:valueQuantity.value">
+    <element id="Extension.extension:amount.value[x]:valueQuantity.value">
       <path value="Extension.extension.valueQuantity.value" />
       <min value="1" />
     </element>
-    <element id="Extension.extension:mengde.value[x]:valueQuantity.system">
+    <element id="Extension.extension:amount.value[x]:valueQuantity.system">
       <path value="Extension.extension.valueQuantity.system" />
       <min value="1" />
       <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.7452" />
     </element>
-    <element id="Extension.extension:mengde.value[x]:valueQuantity.code">
+    <element id="Extension.extension:amount.value[x]:valueQuantity.code">
       <path value="Extension.extension.valueQuantity.code" />
       <min value="1" />
     </element>
-    <element id="Extension.extension:bruksveiledning">
+    <element id="Extension.extension:dssn">
       <path value="Extension.extension" />
-      <sliceName value="bruksveiledning" />
+      <sliceName value="dssn" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:bruksveiledning.value[x]:valueString">
+    <element id="Extension.extension:dssn.value[x]:valueString">
       <path value="Extension.extension.valueString" />
       <sliceName value="valueString" />
       <type>
@@ -543,12 +543,12 @@
       <path value="Extension.extension.valueCodeableConcept.coding.system" />
       <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.7408" />
     </element>
-    <element id="Extension.extension:merknad">
+    <element id="Extension.extension:note">
       <path value="Extension.extension" />
-      <sliceName value="merknad" />
+      <sliceName value="note" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:merknad.value[x]:valueString">
+    <element id="Extension.extension:note.value[x]:valueString">
       <path value="Extension.extension.valueString" />
       <sliceName value="valueString" />
       <type>

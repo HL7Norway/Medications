@@ -38,131 +38,131 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Extension.extension:svartTrekant">
+    <element id="Extension.extension:blacktriangle">
       <path value="Extension.extension" />
-      <sliceName value="svartTrekant" />
+      <sliceName value="blacktriangle" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:svartTrekant.value[x]:valueBoolean">
+    <element id="Extension.extension:blacktriangle.value[x]:valueBoolean">
       <path value="Extension.extension.valueBoolean" />
       <sliceName value="valueBoolean" />
       <type>
         <code value="boolean" />
       </type>
     </element>
-    <element id="Extension.extension:blandingsveske">
+    <element id="Extension.extension:mixingliquid">
       <path value="Extension.extension" />
-      <sliceName value="blandingsveske" />
+      <sliceName value="mixingliquid" />
     </element>
-    <element id="Extension.extension:blandingsveske.value[x]:valueBoolean">
+    <element id="Extension.extension:mixingliquid.value[x]:valueBoolean">
       <path value="Extension.extension.valueBoolean" />
       <sliceName value="valueBoolean" />
       <type>
         <code value="boolean" />
       </type>
     </element>
-    <element id="Extension.extension:administrasjonsvei">
+    <element id="Extension.extension:administrationway">
       <path value="Extension.extension" />
-      <sliceName value="administrasjonsvei" />
+      <sliceName value="administrationway" />
       <min value="1" />
     </element>
-    <element id="Extension.extension:administrasjonsvei.value[x]:valueCodeableConcept">
+    <element id="Extension.extension:administrationway.value[x]:valueCodeableConcept">
       <path value="Extension.extension.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
-    <element id="Extension.extension:kanKnuses">
+    <element id="Extension.extension:maycrush">
       <path value="Extension.extension" />
-      <sliceName value="kanKnuses" />
+      <sliceName value="maycrush" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:kanKnuses.value[x]:valueCodeableConcept">
+    <element id="Extension.extension:maycrush.value[x]:valueCodeableConcept">
       <path value="Extension.extension.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
-    <element id="Extension.extension:kanApnes">
+    <element id="Extension.extension:mayopen">
       <path value="Extension.extension" />
-      <sliceName value="kanApnes" />
+      <sliceName value="mayopen" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:kanApnes.value[x]:valueCodeableConcept">
+    <element id="Extension.extension:mayopen.value[x]:valueCodeableConcept">
       <path value="Extension.extension.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
-    <element id="Extension.extension:deling">
+    <element id="Extension.extension:devidable">
       <path value="Extension.extension" />
-      <sliceName value="deling" />
+      <sliceName value="devidable" />
     </element>
-    <element id="Extension.extension:deling.value[x]:valueCodeableConcept">
+    <element id="Extension.extension:devidable.value[x]:valueCodeableConcept">
       <path value="Extension.extension.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
-    <element id="Extension.extension:smak">
+    <element id="Extension.extension:taste">
       <path value="Extension.extension" />
-      <sliceName value="smak" />
+      <sliceName value="taste" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:smak.value[x]:valueCodeableConcept">
+    <element id="Extension.extension:taste.value[x]:valueCodeableConcept">
       <path value="Extension.extension.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
-    <element id="Extension.extension:varseltrekant">
+    <element id="Extension.extension:warningtriangle">
       <path value="Extension.extension" />
-      <sliceName value="varseltrekant" />
+      <sliceName value="warningtriangle" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:varseltrekant.value[x]:valueBoolean">
+    <element id="Extension.extension:warningtriangle.value[x]:valueBoolean">
       <path value="Extension.extension.valueBoolean" />
       <sliceName value="valueBoolean" />
       <type>
         <code value="boolean" />
       </type>
     </element>
-    <element id="Extension.extension:vaksinestandard">
+    <element id="Extension.extension:vaccinationstandard">
       <path value="Extension.extension" />
-      <sliceName value="vaksinestandard" />
+      <sliceName value="vaccinationstandard" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:vaksinestandard.value[x]:valueCodeableConcept">
+    <element id="Extension.extension:vaccinationstandard.value[x]:valueCodeableConcept">
       <path value="Extension.extension.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
-    <element id="Extension.extension:produsent">
+    <element id="Extension.extension:producer">
       <path value="Extension.extension" />
-      <sliceName value="produsent" />
+      <sliceName value="producer" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:produsent.value[x]:valueString">
+    <element id="Extension.extension:producer.value[x]:valueString">
       <path value="Extension.extension.valueString" />
       <sliceName value="valueString" />
       <type>
         <code value="string" />
       </type>
     </element>
-    <element id="Extension.extension:varenavn">
+    <element id="Extension.extension:name">
       <path value="Extension.extension" />
-      <sliceName value="varenavn" />
+      <sliceName value="name" />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:varenavn.value[x]:valueString">
+    <element id="Extension.extension:name.value[x]:valueString">
       <path value="Extension.extension.valueString" />
       <sliceName value="valueString" />
       <type>

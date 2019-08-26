@@ -7,7 +7,7 @@
   <title value="sfm-packing" />
   <status value="draft" />
   <date value="2019-08-07" />
-  <description value="Extention to describe what packing a magistrell medication have. " />
+  <description value="Extention to describe what packing a magistrell medication have." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -23,20 +23,6 @@
       <path value="Extension" />
       <short value="Packing information" />
       <definition value="Information of how the medication is packed." />
-      <base>
-        <path value="Extension" />
-      </base>
-      <constraint>
-        <key value="ext-1" />
-        <severity value="error" />
-        <human value="Must have either extensions or value[x], not both" />
-        <expression value="extension.exists() != value.exists()" />
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
@@ -57,6 +43,10 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+    </element>
+    <element id="Extension.extension:packingcoded.value[x].coding.system">
+      <path value="Extension.extension.value[x].coding.system" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7452" />
     </element>
     <element id="Extension.extension:pumptype">
       <path value="Extension.extension" />
