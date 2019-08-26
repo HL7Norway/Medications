@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://example.org/fhir/StructureDefinition/lib-list-meta-data" />
+  <url value="http://example.org/fhir/StructureDefinition/sfm-lib-list-meta-data" />
   <version value="1.0" />
-  <name value="LibListMetaData" />
-  <title value="lib-list-meta-data" />
+  <name value="SfmLibListMetaData" />
+  <title value="sfm-lib-list-meta-data" />
   <status value="draft" />
   <date value="2019-08-26" />
   <description value="Meta data about the LIB list that is presented." />
@@ -21,7 +21,7 @@
     <element id="Extension">
       <path value="Extension" />
       <short value="Meta data about the LIB" />
-      <definition value="Information that describes the LIB. " />
+      <definition value="Information that describes the LIB." />
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
@@ -37,7 +37,7 @@
       <path value="Extension.extension" />
       <sliceName value="aprovementstatus" />
       <short value="Information about the LIB is aproved" />
-      <definition value="Gives the status for the LIB. What kind of aprovement is given. " />
+      <definition value="Gives the status for the LIB. What kind of aprovement is given." />
       <min value="1" />
       <max value="1" />
     </element>
@@ -55,7 +55,7 @@
       <path value="Extension.extension.extension" />
       <sliceName value="aproved" />
       <short value="Aprovementinformation" />
-      <definition value="Identifies what status the aprovement has. " />
+      <definition value="Identifies what status the aprovement has." />
       <min value="1" />
       <max value="1" />
     </element>
@@ -69,7 +69,7 @@
       <path value="Extension.extension.extension" />
       <sliceName value="signedby" />
       <short value="Practitioner that aporved" />
-      <definition value="Identifier of person that signed the list. " />
+      <definition value="Identifier of person that signed the list." />
       <max value="1" />
     </element>
     <element id="Extension.extension:aprovementstatus.extension:signedby.value[x]">
@@ -99,7 +99,7 @@
       <path value="Extension.extension" />
       <sliceName value="purpuse" />
       <short value="Identifies purpose of the list" />
-      <definition value="What kind of list was requested by EPJ. " />
+      <definition value="What kind of list was requested by EPJ." />
       <min value="1" />
       <max value="1" />
     </element>
@@ -113,7 +113,7 @@
       <path value="Extension.extension" />
       <sliceName value="period" />
       <short value="Period the list is showing" />
-      <definition value="Period is presented when a period is requested. It is not shown when &quot;current&quot; list is requested. " />
+      <definition value="Period is presented when a period is requested. It is not shown when &quot;current&quot; list is requested." />
       <max value="1" />
     </element>
     <element id="Extension.extension:period.value[x]">
@@ -126,7 +126,7 @@
       <path value="Extension.extension" />
       <sliceName value="medicationreview" />
       <short value="Last medication review performed" />
-      <definition value="Information about last medication reivew that was performed. " />
+      <definition value="Information about last medication reivew that was performed." />
       <max value="1" />
     </element>
     <element id="Extension.extension:medicationreview.extension">

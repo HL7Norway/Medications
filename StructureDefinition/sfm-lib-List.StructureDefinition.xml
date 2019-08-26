@@ -24,16 +24,6 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="List.extension:metadata">
-      <path value="List.extension" />
-      <sliceName value="metadata" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://example.org/fhir/StructureDefinition/lib-list-meta-data" />
-      </type>
-    </element>
     <element id="List.extension:warnings">
       <path value="List.extension" />
       <sliceName value="warnings" />
@@ -54,6 +44,14 @@
       <type>
         <code value="Extension" />
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-actor" />
+      </type>
+    </element>
+    <element id="List.extension:metaData">
+      <path value="List.extension" />
+      <sliceName value="metaData" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://example.org/fhir/StructureDefinition/sfm-lib-list-meta-data" />
       </type>
     </element>
     <element id="List.title">
