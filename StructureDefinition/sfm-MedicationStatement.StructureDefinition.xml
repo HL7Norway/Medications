@@ -29,14 +29,6 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="MedicationStatement.extension:seponeringsinformasjon">
-      <path value="MedicationStatement.extension" />
-      <sliceName value="seponeringsinformasjon" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://eheles.no/fhir/StructureDefinition/sfm-seponering" />
-      </type>
-    </element>
     <element id="MedicationStatement.extension:reseptinfo">
       <path value="MedicationStatement.extension" />
       <sliceName value="reseptinfo" />
@@ -53,30 +45,6 @@
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-regInfo" />
       </type>
     </element>
-    <element id="MedicationStatement.extension:generiskbytte">
-      <path value="MedicationStatement.extension" />
-      <sliceName value="generiskbytte" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-generiskbytte" />
-      </type>
-    </element>
-    <element id="MedicationStatement.extension:administreringsdetaljer">
-      <path value="MedicationStatement.extension" />
-      <sliceName value="administreringsdetaljer" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-administrering" />
-      </type>
-    </element>
-    <element id="MedicationStatement.extension:prescriptiontype">
-      <path value="MedicationStatement.extension" />
-      <sliceName value="prescriptiontype" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-prescriptiontype" />
-      </type>
-    </element>
     <element id="MedicationStatement.extension:comment">
       <path value="MedicationStatement.extension" />
       <sliceName value="comment" />
@@ -91,6 +59,32 @@
       <type>
         <code value="Extension" />
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-deliverysummary" />
+      </type>
+    </element>
+    <element id="MedicationStatement.extension:genericSubstitution">
+      <path value="MedicationStatement.extension" />
+      <sliceName value="genericSubstitution" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-generic-substitution" />
+      </type>
+    </element>
+    <element id="MedicationStatement.extension:discontinuationinformation">
+      <path value="MedicationStatement.extension" />
+      <sliceName value="discontinuationinformation" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://eheles.no/fhir/StructureDefinition/sfm-discontinuation" />
+      </type>
+    </element>
+    <element id="MedicationStatement.extension:administrationdetails">
+      <path value="MedicationStatement.extension" />
+      <sliceName value="administrationdetails" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-administration" />
       </type>
     </element>
     <element id="MedicationStatement.identifier">
@@ -308,12 +302,12 @@
     </element>
     <element id="MedicationStatement.dosage:structureddosing.timing.event">
       <path value="MedicationStatement.dosage.timing.event" />
-      <definition value="May be combined with code. If code is given then only the date should be used. If code is not provided then timestampe should be used to identify exact time for medication. " />
+      <definition value="May be combined with code. If code is given then only the date should be used. If code is not provided then timestampe should be used to identify exact time for medication." />
     </element>
     <element id="MedicationStatement.dosage:structureddosing.timing.code">
       <path value="MedicationStatement.dosage.timing.code" />
       <short value="Norwegian code system used" />
-      <definition value="If provided it should " />
+      <definition value="If provided it should" />
     </element>
     <element id="MedicationStatement.dosage:structureddosing.timing.code.coding.system">
       <path value="MedicationStatement.dosage.timing.code.coding.system" />

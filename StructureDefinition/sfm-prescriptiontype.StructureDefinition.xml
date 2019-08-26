@@ -24,6 +24,7 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
+      <short value="Type of prescription" />
       <max value="1" />
     </element>
     <element id="Extension.value[x]">

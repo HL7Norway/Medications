@@ -35,6 +35,8 @@
     <element id="Extension.extension:type">
       <path value="Extension.extension" />
       <sliceName value="type" />
+      <short value="Type of action that the user performed" />
+      <definition value="defines what the user did related to the statement." />
       <min value="1" />
       <max value="1" />
     </element>
@@ -60,6 +62,8 @@
     <element id="Extension.extension:helseperson">
       <path value="Extension.extension" />
       <sliceName value="helseperson" />
+      <short value="A person with rights to perform actions" />
+      <definition value="The person responsible for the action regarding status of the medication statement. " />
       <min value="1" />
       <max value="1" />
     </element>
@@ -76,6 +80,8 @@
     <element id="Extension.extension:timestamp">
       <path value="Extension.extension" />
       <sliceName value="timestamp" />
+      <short value="Time of the registration" />
+      <definition value="The time when the action registered within SFM. " />
       <min value="1" />
       <max value="1" />
     </element>

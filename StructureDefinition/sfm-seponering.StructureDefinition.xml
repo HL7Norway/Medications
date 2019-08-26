@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="sfm-seponering" />
+  <id value="sfm-discontinuation" />
   <meta>
     <versionId value="2" />
     <lastUpdated value="2018-10-03T14:02:15.733+00:00" />
   </meta>
-  <url value="http://eheles.no/fhir/StructureDefinition/sfm-seponering" />
-  <name value="SfmSeponering" />
-  <title value="sfm-seponering" />
+  <url value="http://eheles.no/fhir/StructureDefinition/sfm-discontinuation" />
+  <version value="1.0" />
+  <name value="SfmDiscontinuation" />
+  <title value="sfm-discontinuation" />
   <status value="active" />
-  <date value="2019-07-01" />
+  <date value="2019-08-26" />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -31,40 +32,48 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Extension.extension:tidspunkt">
+    <element id="Extension.extension:timedate">
       <path value="Extension.extension" />
-      <sliceName value="tidspunkt" />
+      <sliceName value="timedate" />
+      <short value="Time when dicontinuation should take place" />
+      <definition value="The exact time when the treatement should be stoped. " />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:tidspunkt.value[x]:valueDateTime">
+    <element id="Extension.extension:timedate.value[x]:valueDateTime">
       <path value="Extension.extension.valueDateTime" />
       <sliceName value="valueDateTime" />
       <type>
         <code value="dateTime" />
       </type>
     </element>
-    <element id="Extension.extension:arsak">
+    <element id="Extension.extension:reason">
       <path value="Extension.extension" />
-      <sliceName value="arsak" />
+      <sliceName value="reason" />
+      <short value="Reasons for discontinuation" />
+      <definition value="Coded reason why the treatment should discontinue. " />
+      <min value="1" />
+      <max value="1" />
     </element>
-    <element id="Extension.extension:arsak.value[x]:valueCodeableConcept">
+    <element id="Extension.extension:reason.value[x]:valueCodeableConcept">
       <path value="Extension.extension.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
-    <element id="Extension.extension:arsak.value[x]:valueCodeableConcept.coding.system">
+    <element id="Extension.extension:reason.value[x]:valueCodeableConcept.coding.system">
       <path value="Extension.extension.valueCodeableConcept.coding.system" />
       <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.7494" />
     </element>
-    <element id="Extension.extension:merknad">
+    <element id="Extension.extension:note">
       <path value="Extension.extension" />
-      <sliceName value="merknad" />
+      <sliceName value="note" />
+      <short value="textual note abouth discontinuation" />
+      <definition value="optional for user to set why the treatment should stop. " />
       <max value="1" />
     </element>
-    <element id="Extension.extension:merknad.value[x]:valueString">
+    <element id="Extension.extension:note.value[x]:valueString">
       <path value="Extension.extension.valueString" />
       <sliceName value="valueString" />
       <type>

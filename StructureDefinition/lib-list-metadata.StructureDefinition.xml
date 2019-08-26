@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="http://example.org/fhir/StructureDefinition/lib-list-meta-data" />
+  <version value="1.0" />
   <name value="LibListMetaData" />
+  <title value="lib-list-meta-data" />
   <status value="draft" />
+  <date value="2019-08-26" />
+  <description value="Meta data about the LIB list that is presented." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -14,6 +18,11 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Meta data about the LIB" />
+      <definition value="Information that describes the LIB. " />
+    </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
       <slicing>
@@ -27,6 +36,8 @@
     <element id="Extension.extension:aprovementstatus">
       <path value="Extension.extension" />
       <sliceName value="aprovementstatus" />
+      <short value="Information about the LIB is aproved" />
+      <definition value="Gives the status for the LIB. What kind of aprovement is given. " />
       <min value="1" />
       <max value="1" />
     </element>
@@ -43,6 +54,8 @@
     <element id="Extension.extension:aprovementstatus.extension:aproved">
       <path value="Extension.extension.extension" />
       <sliceName value="aproved" />
+      <short value="Aprovementinformation" />
+      <definition value="Identifies what status the aprovement has. " />
       <min value="1" />
       <max value="1" />
     </element>
@@ -55,6 +68,9 @@
     <element id="Extension.extension:aprovementstatus.extension:signedby">
       <path value="Extension.extension.extension" />
       <sliceName value="signedby" />
+      <short value="Practitioner that aporved" />
+      <definition value="Identifier of person that signed the list. " />
+      <max value="1" />
     </element>
     <element id="Extension.extension:aprovementstatus.extension:signedby.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -69,6 +85,8 @@
     <element id="Extension.extension:generalcomment">
       <path value="Extension.extension" />
       <sliceName value="generalcomment" />
+      <short value="Comment about the LIB list" />
+      <definition value="General comment about the LIB list." />
       <max value="1" />
     </element>
     <element id="Extension.extension:generalcomment.value[x]">
@@ -80,6 +98,8 @@
     <element id="Extension.extension:purpuse">
       <path value="Extension.extension" />
       <sliceName value="purpuse" />
+      <short value="Identifies purpose of the list" />
+      <definition value="What kind of list was requested by EPJ. " />
       <min value="1" />
       <max value="1" />
     </element>
@@ -92,6 +112,8 @@
     <element id="Extension.extension:period">
       <path value="Extension.extension" />
       <sliceName value="period" />
+      <short value="Period the list is showing" />
+      <definition value="Period is presented when a period is requested. It is not shown when &quot;current&quot; list is requested. " />
       <max value="1" />
     </element>
     <element id="Extension.extension:period.value[x]">
@@ -103,6 +125,9 @@
     <element id="Extension.extension:medicationreview">
       <path value="Extension.extension" />
       <sliceName value="medicationreview" />
+      <short value="Last medication review performed" />
+      <definition value="Information about last medication reivew that was performed. " />
+      <max value="1" />
     </element>
     <element id="Extension.extension:medicationreview.extension">
       <path value="Extension.extension.extension" />
@@ -130,7 +155,7 @@
       <path value="Extension.extension.extension" />
       <sliceName value="performedby" />
       <short value="HPR number" />
-      <definition value="HPR number of caregiver that was responsible for medication review. " />
+      <definition value="HPR number of caregiver that was responsible for medication review." />
       <min value="1" />
       <max value="1" />
     </element>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="sfm-generiskbytte" />
+  <id value="sfm-generic-substitution" />
   <meta>
     <versionId value="4" />
     <lastUpdated value="2018-10-03T13:59:33.022+00:00" />
   </meta>
-  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-generiskbytte" />
+  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-generic-substitution" />
   <version value="2.0" />
-  <name value="SfmGeneriskBytte" />
-  <title value="sfm-generiskbytte" />
+  <name value="SfmGenericSubstitution" />
+  <title value="sfm-generic-substitution" />
   <status value="draft" />
   <date value="2019-07-01" />
   <fhirVersion value="4.0.0" />
@@ -32,24 +32,28 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Extension.extension:generiskBytteIkkeTillat">
+    <element id="Extension.extension:genericSubstitutionAccepted">
       <path value="Extension.extension" />
-      <sliceName value="generiskBytteIkkeTillat" />
+      <sliceName value="genericSubstitutionAccepted" />
+      <short value="Identifies if prescribed product can be substituted" />
+      <definition value="If value is true, then the prescribed brand, form and strenght should be used. " />
       <max value="1" />
     </element>
-    <element id="Extension.extension:generiskBytteIkkeTillat.value[x]:valueBoolean">
+    <element id="Extension.extension:genericSubstitutionAccepted.value[x]:valueBoolean">
       <path value="Extension.extension.valueBoolean" />
       <sliceName value="valueBoolean" />
       <type>
         <code value="boolean" />
       </type>
     </element>
-    <element id="Extension.extension:grunn">
+    <element id="Extension.extension:reason">
       <path value="Extension.extension" />
-      <sliceName value="grunn" />
+      <sliceName value="reason" />
+      <short value="Reason for no substitution" />
+      <definition value="The prescribers reason for not accepting generic substitution of the medication. " />
       <max value="1" />
     </element>
-    <element id="Extension.extension:grunn.value[x]:valueString">
+    <element id="Extension.extension:reason.value[x]:valueString">
       <path value="Extension.extension.valueString" />
       <sliceName value="valueString" />
       <type>
