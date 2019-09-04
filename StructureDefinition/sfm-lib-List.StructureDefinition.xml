@@ -6,7 +6,7 @@
   <name value="SfmLibList" />
   <title value="sfm-lib-List" />
   <status value="draft" />
-  <date value="2019-08-07" />
+  <date value="2019-09-04" />
   <description value="LIB items and related warnings for selected patient in a given period." />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
