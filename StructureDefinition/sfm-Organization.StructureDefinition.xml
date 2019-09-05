@@ -7,7 +7,7 @@
   <title value="sfm-Organization" />
   <status value="draft" />
   <date value="2019-08-19" />
-  <description value="Derived from no-basis-Organization. Extended with EPJ vendor and service provider. " />
+  <description value="Derived from no-basis-Organization. Extended with EPJ vendor and service provider." />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
   <abstract value="false" />
@@ -43,6 +43,20 @@
       <sliceName value="ENH" />
       <min value="1" />
       <max value="1" />
+    </element>
+    <element id="Organization.identifier:HERid">
+      <path value="Organization.identifier" />
+      <sliceName value="HERid" />
+      <max value="1" />
+    </element>
+    <element id="Organization.identifier:HERid.system">
+      <path value="Organization.identifier.system" />
+      <min value="1" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.2.103" />
+    </element>
+    <element id="Organization.identifier:HERid.value">
+      <path value="Organization.identifier.value" />
+      <min value="1" />
     </element>
     <element id="Organization.name">
       <path value="Organization.name" />
