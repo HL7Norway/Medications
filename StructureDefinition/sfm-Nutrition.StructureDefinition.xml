@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="sfm-Nutrition" />
   <meta>
     <lastUpdated value="2018-09-05T11:35:34.192+00:00" />
   </meta>
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-Nutrition" />
-  <name value="SfmProduct" />
-  <title value="sfm-Product" />
+  <name value="SfmNutrition" />
+  <title value="sfm-Nutrition" />
   <status value="draft" />
   <date value="2018-09-05T11:35:34.854+00:00" />
   <description value="SFM Product derived from Medication." />
