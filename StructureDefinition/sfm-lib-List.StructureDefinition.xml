@@ -78,6 +78,7 @@
         <code value="Reference" />
         <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-MedicationStatement" />
         <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-AllergyIntolerance" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-NutritionStatement" />
         <aggregation value="bundled" />
       </type>
     </element>
