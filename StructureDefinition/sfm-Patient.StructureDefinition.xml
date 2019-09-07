@@ -35,6 +35,7 @@
     <element id="Patient.identifier:xxxid">
       <path value="Patient.identifier" />
       <sliceName value="xxxid" />
+      <definition value="An identifier for this patient. Should be at Fødselsnummer, D-nummer or locally assigned xxxid" />
       <max value="1" />
     </element>
     <element id="Patient.identifier:xxxid.system">
@@ -58,6 +59,10 @@
     <element id="Patient.address">
       <path value="Patient.address" />
       <min value="1" />
+    </element>
+    <element id="Patient.link.type">
+      <path value="Patient.link.type" />
+      <definition value="The type of link between this patient resource and another patient resource. Only link type replaces is supported in SFM." />
     </element>
   </differential>
 </StructureDefinition>
