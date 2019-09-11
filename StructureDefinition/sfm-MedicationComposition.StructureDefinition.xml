@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="sfm-MedicationComposition" />
+  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-MedicationComposition" />
+  <version value="1.0" />
+  <name value="SfmMedicationComposition" />
+  <status value="draft" />
+  <description value="Bundle for use in SFM API for aggregated medication and prescription info" />
+  <fhirVersion value="4.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Composition" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Composition">
+      <path value="Composition" />
+      <short value="Norwegian Composition for PLL and Prescriptions" />
+      <definition value=" Norwegian Composition for PLL and Prescriptions. A composition for aggregated information provided by SFM to systems consuming the API Basis. The Composition is a result of lookup to national systems for prescription (Reseptformidleren) and medication history from Kjernejounal. The composition is also used for submitting updates to the nationals systems. The PLL (short for Pasientens LegemiddelListe : Patient medication list) is supported by separate identifier in sfmMedicationStatement." />
+    </element>
+    <element id="Composition.section">
+      <path value="Composition.section" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="code.coding.code" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <short value="Medication list" />
+      <definition value="This section contains medication" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Composition.section:sectionPLL">
+      <path value="Composition.section" />
+      <sliceName value="sectionPLL" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Composition.section:sectionMedication">
+      <path value="Composition.section" />
+      <sliceName value="sectionMedication" />
+      <short value="Medication section" />
+      <definition value="This section contains the medication info representation in national systems" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:sectionMedication.entry">
+      <path value="Composition.section.entry" />
+      <short value="A reference to sfm-MedicationStatemen" />
+      <definition value="Medication entries in the MedicationComposition" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-MedicationStatement" />
+        <aggregation value="referenced" />
+        <aggregation value="bundled" />
+      </type>
+    </element>
+    <element id="Composition.section:sectionAllergies">
+      <path value="Composition.section" />
+      <sliceName value="sectionAllergies" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Composition.section:sectionNutrition">
+      <path value="Composition.section" />
+      <sliceName value="sectionNutrition" />
+      <max value="1" />
+    </element>
+    <element id="Composition.section:sectionOtherPrescriptions">
+      <path value="Composition.section" />
+      <sliceName value="sectionOtherPrescriptions" />
+      <max value="1" />
+    </element>
+    <element id="Composition.section:sectionDispense">
+      <path value="Composition.section" />
+      <sliceName value="sectionDispense" />
+      <max value="1" />
+    </element>
+  </differential>
+</StructureDefinition>
