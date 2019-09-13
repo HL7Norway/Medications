@@ -6,7 +6,7 @@
         <lastUpdated value="2019-09-13T00:00:00.000+00:00" />
     </meta>
     <url value="http://ehelse.no/fhir/CodeSystem/sfm-task-types" />
-    <version value="1.0.0" />
+    <version value="1.1.0" />
     <name value="sfm-task-types.codesystem" />
     <status value="draft" />
     <date value="2019-09-13T00:00:00.000+00:00" />
@@ -35,7 +35,6 @@
       <concept>
         <code value="6" />
         <display value="Spørsmål fra apotek" />
-      </code>
       </concept>
       <concept>
         <code value="7" />
