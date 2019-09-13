@@ -16,7 +16,7 @@
     <element id="Composition">
       <path value="Composition" />
       <short value="Norwegian Composition for PLL and Prescriptions" />
-      <definition value=" Norwegian Composition for PLL and Prescriptions. A composition for aggregated information provided by SFM to systems consuming the API Basis. The Composition is a result of lookup to national systems for prescription (Reseptformidleren) and medication history from Kjernejounal. The composition is also used for submitting updates to the nationals systems. The PLL (short for Pasientens LegemiddelListe : Patient medication list) is supported by separate identifier in sfmMedicationStatement." />
+      <definition value="Norwegian Composition for PLL and Prescriptions. A composition for aggregated information provided by SFM to systems consuming the API Basis. The Composition is a result of lookup to national systems for prescription (Reseptformidleren) and medication history from Kjernejounal. The composition is also used for submitting updates to the nationals systems. The PLL (short for Pasientens LegemiddelListe : Patient medication list) is supported by separate identifier in sfmMedicationStatement." />
     </element>
     <element id="Composition.section">
       <path value="Composition.section" />
@@ -35,12 +35,21 @@
     <element id="Composition.section:sectionPLL">
       <path value="Composition.section" />
       <sliceName value="sectionPLL" />
+      <code>
+        <system value="http://ehelse.no/fhir/CodeSystem/sfm-section-types" />
+        <code value="sectionPLL" />
+      </code>
       <min value="1" />
       <max value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.section:sectionMedication">
       <path value="Composition.section" />
       <sliceName value="sectionMedication" />
+      <code>
+        <system value="http://ehelse.no/fhir/CodeSystem/sfm-section-types" />
+        <code value="sectionMedication" />
+      </code>
       <short value="Medication section" />
       <definition value="This section contains the medication info representation in national systems" />
       <min value="1" />
@@ -53,7 +62,7 @@
       <definition value="Medication entries in the MedicationComposition" />
       <type>
         <code value="Reference" />
-        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-MedicationStatement" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-MedicationStatement" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
@@ -61,23 +70,33 @@
     <element id="Composition.section:sectionAllergies">
       <path value="Composition.section" />
       <sliceName value="sectionAllergies" />
+      <code>
+        <system value="http://ehelse.no/fhir/CodeSystem/sfm-section-types" />
+        <code value="sectionAllergies" />
+      </code>
       <min value="1" />
       <max value="1" />
-    </element>
-    <element id="Composition.section:sectionNutrition">
-      <path value="Composition.section" />
-      <sliceName value="sectionNutrition" />
-      <max value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.section:sectionOtherPrescriptions">
       <path value="Composition.section" />
       <sliceName value="sectionOtherPrescriptions" />
+      <code>
+        <system value="http://ehelse.no/fhir/CodeSystem/sfm-section-types" />
+        <code value="sectionOtherPrescriptions" />
+      </code>
       <max value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.section:sectionDispense">
       <path value="Composition.section" />
       <sliceName value="sectionDispense" />
+      <code>
+        <system value="http://ehelse.no/fhir/CodeSystem/sfm-section-types" />
+        <code value="sectionDispense" />
+      </code>
       <max value="1" />
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>
