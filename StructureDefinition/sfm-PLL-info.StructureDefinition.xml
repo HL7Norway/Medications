@@ -30,7 +30,7 @@
       <sliceName value="metadataPLL" />
       <type>
         <code value="Extension" />
-        <profile value="http://example.org/fhir/StructureDefinition/sfm-pllInformation" />
+        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-pllInformation" />
       </type>
     </element>
     <element id="Basic.code.coding.system">
