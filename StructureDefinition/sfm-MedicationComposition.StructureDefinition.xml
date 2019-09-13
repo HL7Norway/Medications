@@ -88,6 +88,15 @@
       <max value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="Composition.section:sectionPLL.entry">
+      <path value="Composition.section.entry" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-PLL-info" />
+        <aggregation value="referenced" />
+        <aggregation value="bundled" />
+      </type>
+    </element>
     <element id="Composition.section:sectionMedication">
       <path value="Composition.section" />
       <sliceName value="sectionMedication" />
