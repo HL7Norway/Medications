@@ -10,7 +10,7 @@
     <name value="sfm-section-types.valueset" />
     <status value="draft" />
     <date value="2019-09-13T00:00:00.000+00:00" />
-    <publisher value="Skatteetaten" />
+    <publisher value="Direktoratet for e-helse" />
     <compose>
         <include>
             <system value="http://ehelse.no/fhir/CodeSystem/sfm-section-types" />
