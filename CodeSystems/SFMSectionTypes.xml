@@ -6,11 +6,11 @@
         <lastUpdated value="2019-09-13T00:00:00.000+00:00" />
     </meta>
     <url value="http://ehelse.no/fhir/CodeSystem/sfm-section-types" />
-    <version value="5.0.0" />
+    <version value="1.0.0" />
     <name value="sfm-section-types.codesystem" />
     <status value="draft" />
     <date value="2019-09-13T00:00:00.000+00:00" />
-    <publisher value="nhn.no" />
+    <publisher value="Direktoratet for e-helse" />
     <content value="complete" />
     <concept>
         <code value="sectionMedication" />
@@ -23,10 +23,6 @@
     <concept>
         <code value="sectionAllergies" />
         <display value="Section containg allergies from KI/Kjernejournal" />
-    </concept>
-    <concept>
-        <code value="sectionNutrition" />
-        <display value="section containing nutrition information based on prescriptions" />
     </concept>
     <concept>
         <code value="sectionOtherPrescriptions" />
