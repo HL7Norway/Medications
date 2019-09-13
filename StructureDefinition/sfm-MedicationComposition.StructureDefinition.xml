@@ -18,6 +18,51 @@
       <short value="Norwegian Composition for PLL and Prescriptions" />
       <definition value="Norwegian Composition for PLL and Prescriptions. A composition for aggregated information provided by SFM to systems consuming the API Basis. The Composition is a result of lookup to national systems for prescription (Reseptformidleren) and medication history from Kjernejounal. The composition is also used for submitting updates to the nationals systems. The PLL (short for Pasientens LegemiddelListe : Patient medication list) is supported by separate identifier in sfmMedicationStatement." />
     </element>
+    <element id="Composition.subject">
+      <path value="Composition.subject" />
+      <short value="Identification of the patient" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Patient" />
+        <aggregation value="bundled" />
+      </type>
+    </element>
+    <element id="Composition.attester">
+      <path value="Composition.attester" />
+      <slicing>
+        <discriminator>
+          <type value="profile" />
+          <path value="party.reference" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <definition value="When submitting this composition: One for the Practitioner and one for the organisation" />
+      <max value="2" />
+    </element>
+    <element id="Composition.attester:sliceAttesterPractitioner">
+      <path value="Composition.attester" />
+      <sliceName value="sliceAttesterPractitioner" />
+      <max value="2" />
+    </element>
+    <element id="Composition.attester:sliceAttesterPractitioner.party">
+      <path value="Composition.attester.party" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner" />
+      </type>
+    </element>
+    <element id="Composition.attester:sliceAttesterOrganisation">
+      <path value="Composition.attester" />
+      <sliceName value="sliceAttesterOrganisation" />
+      <max value="2" />
+    </element>
+    <element id="Composition.attester:sliceAttesterOrganisation.party">
+      <path value="Composition.attester.party" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Organization" />
+      </type>
+    </element>
     <element id="Composition.section">
       <path value="Composition.section" />
       <slicing>
