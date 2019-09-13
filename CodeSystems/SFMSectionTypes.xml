@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem>
+    <id value="sfm-section-types.codesystem" />
+    <meta>
+        <versionId value="1" />
+        <lastUpdated value="2019-09-13T00:00:00.000+00:00" />
+    </meta>
+    <url value="http://ehelse.no/fhir/CodeSystem/sfm-section-types" />
+    <version value="5.0.0" />
+    <name value="sfm-section-types.codesystem" />
+    <status value="draft" />
+    <date value="2019-09-13T00:00:00.000+00:00" />
+    <publisher value="nhn.no" />
+    <content value="complete" />
+    <concept>
+        <code value="sectionMedication" />
+        <display value="Section Containing medication statements" />
+    </concept>
+    <concept>
+        <code value="sectionPLL" />
+        <display value="Section containing PLL specific info an optionally information on Multidose relations" />
+    </concept>
+    <concept>
+        <code value="sectionAllergies" />
+        <display value="Section containg allergies from KI/Kjernejournal" />
+    </concept>
+    <concept>
+        <code value="sectionNutrition" />
+        <display value="section containing nutrition information based on prescriptions" />
+    </concept>
+    <concept>
+        <code value="sectionOtherPrescriptions" />
+        <display value="section containing prescription on non-medical items, for reimbursement handling" />
+    </concept>
+    <concept>
+        <code value="sectionDispense" />
+        <display value="section containing information on dispense of items from phamacy or banda" />
+    </concept>
+</CodeSystem>
