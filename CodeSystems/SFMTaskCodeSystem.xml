@@ -13,141 +13,96 @@
     <publisher value="Direktoratet for e-helse" />
     <content value="complete" />
       <concept>
-      <code>
         <code value="1" />
         <display value="Godkjenn LIB" />
-      </code>
       </concept>
       <concept>
-      <code>
         <code value="2" />
-        <display value="Godkjenn LIB" />
-      </code>
+        <display value="Dobbeltsigner LIB" />
       </concept>
       <concept>
-      <code>
         <code value="3" />
         <display value="Godkjenn kladd" />
-      </code>
       </concept>
       <concept>
-      <code>
         <code value="4" />
         <display value="Send klargjort melding" />
-      </code>
       </concept>
       <concept>
-      <code>
         <code value="5" />
         <display value="Intervensjon" />
-      </code>
       </concept>
       <concept>
-      <code>
         <code value="6" />
         <display value="Spørsmål fra apotek" />
       </code>
       </concept>
       <concept>
-      <code>
         <code value="7" />
         <display value="PLL kommentar" />
-      </code>
       </concept>
       <concept>
-      <code>
         <code value="8" />
         <display value="Endring på multidosepasient" />
-      </code>
       </concept>
       <concept>
-      <code>
         <code value="9" />
         <display value="Ny multidosepakking" />
-      </code>
       </concept>
       <concept>
-      <code>
         <code value="10" />
         <display value="Endring på pasient" />
-      </code>
       </concept>
       <concept>
-      <code>
         <code value="11" />
         <display value="Nytt varsel fra FEST" />
-      </code>
       </concept>
       <concept>
-      <code>
         <code value="12" />
         <display value="SFM har blitt oppdatert" />
-      </code>
       </concept>
       <concept>
-      <code>
         <code value="13" />
         <display value="SFM planlegger nedetid" />
-      </code>
       </concept>
       <concept>
-      <code>
         <code value="14" />
         <display value="Feil ved sending til RF" />
-      </code>
       </concept>
       <concept>
-      <code>
         <code value="15" />
         <display value="Utleveringsmelding på papirresept" />
-      </code>
       </concept>
       <concept>
-      <code>
         <code value="16" />
         <display value="Mottatt svar på Helfosøknad" />
-      </code>
       </concept>
       <concept>
-      <code>
         <code value="17" />
         <display value="Mottatt svar på søknad til SLV" />
-      </code>
       </concept>
       <concept>
-      <code>
         <code value="18" />
         <display value="Melding til PLO" />
-      </code>
       </concept>
       <concept>
-      <code>
         <code value="19" />
         <display value="Endring i legemiddelreaksjon" />
-      </code>
       </concept>
       <concept>
-      <code>
         <code value="20" />
         <display value="Ny MD lege påmeldt" />
-      </code>
       </concept>
       <concept>
-      <code>
         <code value="21" />
         <display value="Revurderingsdato" />
-      </code>
       </concept>
       <concept>
-      <code>
         <code value="22" />
         <display value="Endring i PID" />
-      </code>
       </concept>
       <concept>
-      <code>
         <code value="23" />
         <display value="Endring i HPR" />
-      </code>
       </concept>
 </CodeSystem>
