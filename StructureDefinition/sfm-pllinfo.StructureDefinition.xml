@@ -36,12 +36,24 @@
         <profile value="http://ehelse.no/fhir/StructureDefinition/SfmSubstitue" />
       </type>
     </element>
+    <element id="Basic.extension:substitute.value[x]">
+      <path value="Basic.extension.value[x]" />
+      <type>
+        <code value="boolean" />
+      </type>
+    </element>
     <element id="Basic.extension:generalComment">
       <path value="Basic.extension" />
       <sliceName value="generalComment" />
       <type>
         <code value="Extension" />
         <profile value="http://ehelse.no/fhir/StructureDefinition/SfmGeneralComment" />
+      </type>
+    </element>
+    <element id="Basic.extension:generalComment.value[x]">
+      <path value="Basic.extension.value[x]" />
+      <type>
+        <code value="string" />
       </type>
     </element>
     <element id="Basic.extension:patientRelations">

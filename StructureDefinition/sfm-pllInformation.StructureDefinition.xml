@@ -19,25 +19,6 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
-    <element id="Extension">
-      <path value="Extension" />
-      <short value="Optional Extensions Element" />
-      <definition value="Optional Extension Element - found in all resources." />
-      <base>
-        <path value="Extension" />
-      </base>
-      <constraint>
-        <key value="ext-1" />
-        <severity value="error" />
-        <human value="Must have either extensions or value[x], not both" />
-        <expression value="extension.exists() != value.exists()" />
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
       <slicing>
@@ -52,6 +33,14 @@
       <path value="Extension.extension" />
       <sliceName value="relatedparties" />
     </element>
+    <element id="Extension.extension:relatedparties.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-actor" />
+        <aggregation value="bundled" />
+      </type>
+    </element>
     <element id="Extension.extension:deliveryinformation">
       <path value="Extension.extension" />
       <sliceName value="deliveryinformation" />
@@ -60,9 +49,25 @@
       <path value="Extension.extension" />
       <sliceName value="text" />
     </element>
+    <element id="Extension.extension:text.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
     <element id="Extension.extension:substitute">
       <path value="Extension.extension" />
       <sliceName value="substitute" />
+    </element>
+    <element id="Extension.extension:substitute.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="boolean" />
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-pllInformation" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
