@@ -10,7 +10,8 @@
   <name value="SfmReseptamendment" />
   <title value="sfm-reseptamendment" />
   <status value="draft" />
-  <date value="2019-08-26" />
+  <date value="2019-09-15" />
+  <description value="Information required in Norwegian e-resept (electronic prescription)." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
   <abstract value="false" />
