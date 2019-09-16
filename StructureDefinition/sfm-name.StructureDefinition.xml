@@ -6,7 +6,7 @@
   <name value="SfmName" />
   <title value="sfm-name" />
   <status value="draft" />
-  <date value="2019-08-07" />
+  <date value="2019-09-16" />
   <description value="Name of a magistrell medication" />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
@@ -23,20 +23,10 @@
       <path value="Extension" />
       <short value="Medication name" />
       <definition value="Name of the medication created at pharmacy" />
-      <base>
-        <path value="Extension" />
-      </base>
-      <constraint>
-        <key value="ext-1" />
-        <severity value="error" />
-        <human value="Must have either extensions or value[x], not both" />
-        <expression value="extension.exists() != value.exists()" />
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-name" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

@@ -6,7 +6,7 @@
   <name value="SfmPacking" />
   <title value="sfm-packing" />
   <status value="draft" />
-  <date value="2019-08-07" />
+  <date value="2019-09-16" />
   <description value="Extention to describe what packing a magistrell medication have." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
@@ -57,6 +57,10 @@
       <type>
         <code value="string" />
       </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-packing" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

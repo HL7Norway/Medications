@@ -6,8 +6,8 @@
   <name value="SfmRecipe" />
   <title value="sfm-recipe" />
   <status value="draft" />
-  <date value="2019-08-07" />
-  <description value="Extention for Magistrell medication. Used to describe how to make the Medication (recipe). " />
+  <date value="2019-09-16" />
+  <description value="Extention for Magistrell medication. Used to describe how to make the Medication (recipe)." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -23,20 +23,10 @@
       <path value="Extension" />
       <short value="Textual description of recipe" />
       <definition value="Recipe for creating a medication in pharmacy." />
-      <base>
-        <path value="Extension" />
-      </base>
-      <constraint>
-        <key value="ext-1" />
-        <severity value="error" />
-        <human value="Must have either extensions or value[x], not both" />
-        <expression value="extension.exists() != value.exists()" />
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-recipe" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
