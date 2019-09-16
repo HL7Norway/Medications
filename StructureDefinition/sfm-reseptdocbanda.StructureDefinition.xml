@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="sfm-reseptdocbanda" />
+  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-reseptdocbanda" />
+  <version value="1.0" />
+  <name value="SfmReseptdocbanda" />
+  <title value="sfm-reseptdocbanda" />
+  <status value="draft" />
+  <date value="2019-09-16" />
+  <description value="Prescription details for nutrition and supporting products. " />
+  <fhirVersion value="4.0.0" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Basic" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:productgroup">
+      <path value="Extension.extension" />
+      <sliceName value="productgroup" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:productgroup.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="productgroup" />
+    </element>
+    <element id="Extension.extension:productgroup.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="urn:oid:2.16.578.1.12.4.1.1.7403" />
+      </type>
+    </element>
+    <element id="Extension.extension:productnumber">
+      <path value="Extension.extension" />
+      <sliceName value="productnumber" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:productnumber.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="productnumber" />
+    </element>
+    <element id="Extension.extension:productnumber.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-reseptdocbanda" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

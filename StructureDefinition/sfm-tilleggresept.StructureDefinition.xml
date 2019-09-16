@@ -19,6 +19,10 @@
     <type value="element" />
     <expression value="MedicationStatement" />
   </context>
+  <context>
+    <type value="element" />
+    <expression value="Basic" />
+  </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
@@ -827,7 +831,7 @@
       <path value="Extension.extension" />
       <sliceName value="note" />
       <short value="Note from prescriber to pharmacy" />
-      <definition value="Textual information that prescriber has provided for the pharmacy, in order to support the dispence. " />
+      <definition value="Textual information that prescriber has provided for the pharmacy, in order to support the dispence." />
       <max value="1" />
     </element>
     <element id="Extension.extension:note.value[x]">
@@ -850,7 +854,7 @@
       <path value="Extension.extension" />
       <sliceName value="dispencesummary" />
       <short value="Delivery summary from RF" />
-      <definition value="Information provided from RF. Summary of what has been dispenced on the prescription (resept). " />
+      <definition value="Information provided from RF. Summary of what has been dispenced on the prescription (resept)." />
     </element>
     <element id="Extension.extension:dispencesummary.extension">
       <path value="Extension.extension.extension" />
@@ -968,7 +972,7 @@
       <path value="Extension.extension" />
       <sliceName value="statusaction" />
       <short value="Action information for SFM" />
-      <definition value="Instruction from EPJ to SFM regarding what should be done about prescription (resept). " />
+      <definition value="Instruction from EPJ to SFM regarding what should be done about prescription (resept)." />
       <max value="1" />
     </element>
     <element id="Extension.extension:statusaction.extension">
