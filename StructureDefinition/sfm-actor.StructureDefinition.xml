@@ -64,22 +64,9 @@
         <code value="CodeableConcept" />
       </type>
     </element>
-    <element id="Extension.extension:role.value[x]:valueCodeableConcept.coding">
-      <path value="Extension.extension.valueCodeableConcept.coding" />
-      <max value="1" />
-    </element>
     <element id="Extension.extension:role.value[x]:valueCodeableConcept.coding.system">
       <path value="Extension.extension.valueCodeableConcept.coding.system" />
-      <min value="1" />
       <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.7490" />
-    </element>
-    <element id="Extension.extension:role.value[x]:valueCodeableConcept.coding.code">
-      <path value="Extension.extension.valueCodeableConcept.coding.code" />
-      <min value="1" />
-    </element>
-    <element id="Extension.extension:role.value[x]:valueCodeableConcept.coding.display">
-      <path value="Extension.extension.valueCodeableConcept.coding.display" />
-      <min value="1" />
     </element>
     <element id="Extension.extension:practioner">
       <path value="Extension.extension" />
