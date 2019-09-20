@@ -57,6 +57,7 @@
         </discriminator>
         <rules value="closed" />
       </slicing>
+      <min value="1" />
     </element>
     <element id="Extension.extension:role.value[x]:valueCodeableConcept">
       <path value="Extension.extension.valueCodeableConcept" />
@@ -93,6 +94,7 @@
           <path value="$this" />
         </discriminator>
       </slicing>
+      <min value="1" />
     </element>
     <element id="Extension.extension:practioner.value[x]:valueReference">
       <path value="Extension.extension.valueReference" />
