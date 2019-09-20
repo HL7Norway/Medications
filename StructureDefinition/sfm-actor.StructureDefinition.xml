@@ -10,7 +10,7 @@
   <name value="SfmActor" />
   <title value="sfm-actor" />
   <status value="draft" />
-  <date value="2019-07-01" />
+  <date value="2019-09-20" />
   <description value="An actor describes an relation between a patiend and an healthcare provider." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
@@ -45,6 +45,7 @@
     <element id="Extension.extension:role">
       <path value="Extension.extension" />
       <sliceName value="role" />
+      <min value="1" />
       <max value="1" />
     </element>
     <element id="Extension.extension:role.value[x]">
@@ -69,9 +70,14 @@
       <path value="Extension.extension.valueCodeableConcept.coding.system" />
       <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.7490" />
     </element>
+    <element id="Extension.extension:role.value[x]:test">
+      <path value="Extension.extension.value[x]" />
+      <sliceName value="test" />
+    </element>
     <element id="Extension.extension:practioner">
       <path value="Extension.extension" />
       <sliceName value="practioner" />
+      <min value="1" />
       <max value="1" />
     </element>
     <element id="Extension.extension:practioner.value[x]">
@@ -92,6 +98,10 @@
         <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner" />
         <aggregation value="bundled" />
       </type>
+    </element>
+    <element id="Extension.extension:practioner.value[x]:test2">
+      <path value="Extension.extension.value[x]" />
+      <sliceName value="test2" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
