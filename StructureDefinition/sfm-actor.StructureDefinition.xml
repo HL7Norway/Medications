@@ -86,6 +86,7 @@
     <element id="Extension.extension:practioner.value[x]:valueReference">
       <path value="Extension.extension.valueReference" />
       <sliceName value="valueReference" />
+      <min value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner" />
