@@ -37,6 +37,8 @@
     <element id="Extension.extension:packingcoded">
       <path value="Extension.extension" />
       <sliceName value="packingcoded" />
+      <short value="Code identified how medication is packed" />
+      <definition value="Using coding system 7448 to identify how medication is packed." />
     </element>
     <element id="Extension.extension:packingcoded.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -51,6 +53,8 @@
     <element id="Extension.extension:pumptype">
       <path value="Extension.extension" />
       <sliceName value="pumptype" />
+      <short value="Information about type of pump" />
+      <definition value="Relevant when magistrell prescription need to identify pump type used. " />
     </element>
     <element id="Extension.extension:pumptype.value[x]">
       <path value="Extension.extension.value[x]" />

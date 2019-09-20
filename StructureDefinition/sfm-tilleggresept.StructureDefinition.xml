@@ -30,7 +30,7 @@
     <element id="Extension">
       <path value="Extension" />
       <short value="Norwegian resept information" />
-      <definition value="Ifnormation that is relevant for Norwegian e-prescription. " />
+      <definition value="Ifnormation that is relevant for Norwegian e-prescription." />
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
@@ -57,6 +57,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:reseptdate.value[x]:valueDate">
@@ -81,6 +82,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:expirationdate.value[x]:valueDate">
@@ -105,6 +107,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:festUpdate.value[x]:valueDateTime">
@@ -128,6 +131,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:conscription.value[x]:valueBoolean">
@@ -151,6 +155,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:helfoapplication.value[x]:valueBoolean">
@@ -174,6 +179,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:freecard.value[x]:valueBoolean">
@@ -197,6 +203,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:guardiantransparencyreservation.value[x]:valueBoolean">
@@ -220,6 +227,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:ownpractice.value[x]:valueBoolean">
@@ -243,6 +251,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:indoctorsname.value[x]:valueBoolean">
@@ -266,6 +275,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:refnum.value[x]:valueString">
@@ -288,6 +298,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:speciality.value[x]:valueCodeableConcept">
@@ -331,6 +342,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:dispatchrequest.extension:condition.value[x]:valueBoolean">
@@ -353,6 +365,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:dispatchrequest.extension:metod.value[x]:valueCodeableConcept">
@@ -387,6 +400,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:dispatchrequest.extension:organization.value[x]:valueString">
@@ -409,6 +423,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:dispatchrequest.extension:contactperson.value[x]:valueString">
@@ -430,6 +445,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:dispatchrequest.extension:note.value[x]:valueString">
@@ -452,6 +468,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:dispatchrequest.extension:orgnum.value[x]:valueString">
@@ -474,6 +491,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:dispatchrequest.extension:orgname.value[x]:valueString">
@@ -495,6 +513,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:dispatchrequest.extension:address.value[x]:valueReference">
@@ -524,6 +543,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:earliestdispence.value[x]:valueDate">
@@ -547,6 +567,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:dischargedhospital.value[x]:valueBoolean">
@@ -570,6 +591,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:lockedresept.value[x]:valueBoolean">
@@ -622,6 +644,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:numberofpackages.value[x]:valueDecimal">
@@ -645,6 +668,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:reimbursmentparagraph.value[x]:valueCodeableConcept">
@@ -681,6 +705,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:reimbursementcode.value[x]:valueCodeableConcept">
@@ -716,6 +741,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:plomedicationmanagement.value[x]:valueString">
@@ -740,6 +766,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:reit.value[x]:valueInteger">
@@ -763,6 +790,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:amount.value[x]:valueQuantity">
@@ -798,6 +826,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:dssn.value[x]:valueString">
@@ -820,6 +849,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:rfstatus.value[x]:valueCodeableConcept">
@@ -847,6 +877,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:note.value[x]:valueString">

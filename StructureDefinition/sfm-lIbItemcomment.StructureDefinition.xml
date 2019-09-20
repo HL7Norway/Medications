@@ -22,6 +22,11 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Comments related to PLL" />
+      <definition value="Comments and response as trensfered within M25 messages. " />
+    </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
       <slicing>
@@ -35,36 +40,58 @@
     <element id="Extension.extension:type">
       <path value="Extension.extension" />
       <sliceName value="type" />
+      <short value="Type of comment" />
+      <definition value="Identifies what kind of comment it is, and implicit if it is an MD comment or general PLL comment. " />
       <min value="1" />
       <max value="1" />
     </element>
+    <element id="Extension.extension:type.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Extension.extension:type.value[x]:valueCodeableConcept">
-      <path value="Extension.extension.valueCodeableConcept" />
+      <path value="Extension.extension.value[x]" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
     <element id="Extension.extension:type.value[x]:valueCodeableConcept.coding.system">
-      <path value="Extension.extension.valueCodeableConcept.coding.system" />
+      <path value="Extension.extension.value[x].coding.system" />
       <min value="1" />
       <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.7495" />
     </element>
     <element id="Extension.extension:type.value[x]:valueCodeableConcept.coding.code">
-      <path value="Extension.extension.valueCodeableConcept.coding.code" />
+      <path value="Extension.extension.value[x].coding.code" />
       <min value="1" />
     </element>
     <element id="Extension.extension:type.value[x]:valueCodeableConcept.coding.display">
-      <path value="Extension.extension.valueCodeableConcept.coding.display" />
+      <path value="Extension.extension.value[x].coding.display" />
       <min value="1" />
     </element>
     <element id="Extension.extension:merknad">
       <path value="Extension.extension" />
       <sliceName value="merknad" />
+      <short value="Textual comment" />
+      <definition value="Textual information related to the coded information. " />
       <max value="1" />
     </element>
+    <element id="Extension.extension:merknad.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Extension.extension:merknad.value[x]:valueString">
-      <path value="Extension.extension.valueString" />
+      <path value="Extension.extension.value[x]" />
       <sliceName value="valueString" />
       <type>
         <code value="string" />
@@ -73,10 +100,21 @@
     <element id="Extension.extension:Id">
       <path value="Extension.extension" />
       <sliceName value="Id" />
+      <short value="Id of the comment" />
+      <definition value="Id that unique identifies the comment. " />
       <max value="1" />
     </element>
+    <element id="Extension.extension:Id.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Extension.extension:Id.value[x]:valueString">
-      <path value="Extension.extension.valueString" />
+      <path value="Extension.extension.value[x]" />
       <sliceName value="valueString" />
       <type>
         <code value="string" />
@@ -85,11 +123,22 @@
     <element id="Extension.extension:registeredby">
       <path value="Extension.extension" />
       <sliceName value="registeredby" />
+      <short value="User that has registered the comment" />
+      <definition value="User or organisation that has registered the comment. " />
       <min value="1" />
       <max value="1" />
     </element>
+    <element id="Extension.extension:registeredby.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Extension.extension:registeredby.value[x]:valueString">
-      <path value="Extension.extension.valueString" />
+      <path value="Extension.extension.value[x]" />
       <sliceName value="valueString" />
       <type>
         <code value="string" />
@@ -98,10 +147,21 @@
     <element id="Extension.extension:receiver">
       <path value="Extension.extension" />
       <sliceName value="receiver" />
+      <short value="user that should respond to comment" />
+      <definition value="Identifies a user that should respond to the comment. " />
       <max value="1" />
     </element>
+    <element id="Extension.extension:receiver.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Extension.extension:receiver.value[x]:valueString">
-      <path value="Extension.extension.valueString" />
+      <path value="Extension.extension.value[x]" />
       <sliceName value="valueString" />
       <type>
         <code value="string" />
@@ -110,6 +170,8 @@
     <element id="Extension.extension:response">
       <path value="Extension.extension" />
       <sliceName value="response" />
+      <short value="response to the comment" />
+      <definition value="Response from doctor or pharmacy. " />
       <max value="1" />
     </element>
     <element id="Extension.extension:response.extension">
@@ -125,10 +187,21 @@
     <element id="Extension.extension:response.extension:Id">
       <path value="Extension.extension.extension" />
       <sliceName value="Id" />
+      <short value="Id of the response" />
+      <definition value="Response unique identifier." />
       <max value="1" />
     </element>
+    <element id="Extension.extension:response.extension:Id.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Extension.extension:response.extension:Id.value[x]:valueString">
-      <path value="Extension.extension.extension.valueString" />
+      <path value="Extension.extension.extension.value[x]" />
       <sliceName value="valueString" />
       <type>
         <code value="string" />
@@ -137,10 +210,21 @@
     <element id="Extension.extension:response.extension:responder">
       <path value="Extension.extension.extension" />
       <sliceName value="responder" />
+      <short value="User that has responded to the comemnt" />
+      <definition value="Using HPR or Her-id to identify user. " />
       <max value="1" />
     </element>
+    <element id="Extension.extension:response.extension:responder.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Extension.extension:response.extension:responder.value[x]:valueString">
-      <path value="Extension.extension.extension.valueString" />
+      <path value="Extension.extension.extension.value[x]" />
       <sliceName value="valueString" />
       <type>
         <code value="string" />
@@ -149,10 +233,21 @@
     <element id="Extension.extension:response.extension:svar">
       <path value="Extension.extension.extension" />
       <sliceName value="svar" />
+      <short value="textual response" />
+      <definition value="textual response to the comment." />
       <max value="1" />
     </element>
+    <element id="Extension.extension:response.extension:svar.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Extension.extension:response.extension:svar.value[x]:valueString">
-      <path value="Extension.extension.extension.valueString" />
+      <path value="Extension.extension.extension.value[x]" />
       <sliceName value="valueString" />
       <type>
         <code value="string" />
@@ -161,32 +256,47 @@
     <element id="Extension.extension:response.extension:type">
       <path value="Extension.extension.extension" />
       <sliceName value="type" />
+      <short value="coded response" />
+      <definition value="coded response to the comment. " />
       <min value="1" />
       <max value="1" />
     </element>
+    <element id="Extension.extension:response.extension:type.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Extension.extension:response.extension:type.value[x]:valueCodeableConcept">
-      <path value="Extension.extension.extension.valueCodeableConcept" />
+      <path value="Extension.extension.extension.value[x]" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
     <element id="Extension.extension:response.extension:type.value[x]:valueCodeableConcept.coding.system">
-      <path value="Extension.extension.extension.valueCodeableConcept.coding.system" />
+      <path value="Extension.extension.extension.value[x].coding.system" />
       <min value="1" />
       <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.7493" />
     </element>
     <element id="Extension.extension:response.extension:type.value[x]:valueCodeableConcept.coding.code">
-      <path value="Extension.extension.extension.valueCodeableConcept.coding.code" />
+      <path value="Extension.extension.extension.value[x].coding.code" />
       <min value="1" />
     </element>
     <element id="Extension.extension:response.extension:type.value[x]:valueCodeableConcept.coding.display">
-      <path value="Extension.extension.extension.valueCodeableConcept.coding.display" />
+      <path value="Extension.extension.extension.value[x].coding.display" />
       <min value="1" />
     </element>
     <element id="Extension.extension:response.value[x]">
       <path value="Extension.extension.value[x]" />
       <max value="0" />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-libitemcomment" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

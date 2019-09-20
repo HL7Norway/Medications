@@ -26,7 +26,7 @@
     <element id="Extension">
       <path value="Extension" />
       <short value="FEST details not covered in Medication" />
-      <definition value="This extention provide information that are represented in the national database FEST. In many cases these are relevant to present to the user." />
+      <definition value="This extention provide information that are represented in the national database FEST. In many cases these are relevant to present to the user.&#xD;&#xA;&#xD;&#xA;See FEST documentation for information about the differnt attributes. " />
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
@@ -43,8 +43,17 @@
       <sliceName value="blacktriangle" />
       <max value="1" />
     </element>
+    <element id="Extension.extension:blacktriangle.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Extension.extension:blacktriangle.value[x]:valueBoolean">
-      <path value="Extension.extension.valueBoolean" />
+      <path value="Extension.extension.value[x]" />
       <sliceName value="valueBoolean" />
       <type>
         <code value="boolean" />
@@ -54,8 +63,17 @@
       <path value="Extension.extension" />
       <sliceName value="mixingliquid" />
     </element>
+    <element id="Extension.extension:mixingliquid.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Extension.extension:mixingliquid.value[x]:valueBoolean">
-      <path value="Extension.extension.valueBoolean" />
+      <path value="Extension.extension.value[x]" />
       <sliceName value="valueBoolean" />
       <type>
         <code value="boolean" />
@@ -66,8 +84,17 @@
       <sliceName value="administrationway" />
       <min value="1" />
     </element>
+    <element id="Extension.extension:administrationway.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Extension.extension:administrationway.value[x]:valueCodeableConcept">
-      <path value="Extension.extension.valueCodeableConcept" />
+      <path value="Extension.extension.value[x]" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
@@ -78,8 +105,17 @@
       <sliceName value="maycrush" />
       <max value="1" />
     </element>
+    <element id="Extension.extension:maycrush.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Extension.extension:maycrush.value[x]:valueCodeableConcept">
-      <path value="Extension.extension.valueCodeableConcept" />
+      <path value="Extension.extension.value[x]" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
@@ -90,8 +126,17 @@
       <sliceName value="mayopen" />
       <max value="1" />
     </element>
+    <element id="Extension.extension:mayopen.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Extension.extension:mayopen.value[x]:valueCodeableConcept">
-      <path value="Extension.extension.valueCodeableConcept" />
+      <path value="Extension.extension.value[x]" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
@@ -101,8 +146,17 @@
       <path value="Extension.extension" />
       <sliceName value="devidable" />
     </element>
+    <element id="Extension.extension:devidable.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Extension.extension:devidable.value[x]:valueCodeableConcept">
-      <path value="Extension.extension.valueCodeableConcept" />
+      <path value="Extension.extension.value[x]" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
@@ -113,8 +167,17 @@
       <sliceName value="taste" />
       <max value="1" />
     </element>
+    <element id="Extension.extension:taste.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Extension.extension:taste.value[x]:valueCodeableConcept">
-      <path value="Extension.extension.valueCodeableConcept" />
+      <path value="Extension.extension.value[x]" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
@@ -125,8 +188,17 @@
       <sliceName value="warningtriangle" />
       <max value="1" />
     </element>
+    <element id="Extension.extension:warningtriangle.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Extension.extension:warningtriangle.value[x]:valueBoolean">
-      <path value="Extension.extension.valueBoolean" />
+      <path value="Extension.extension.value[x]" />
       <sliceName value="valueBoolean" />
       <type>
         <code value="boolean" />
@@ -137,8 +209,17 @@
       <sliceName value="vaccinationstandard" />
       <max value="1" />
     </element>
+    <element id="Extension.extension:vaccinationstandard.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Extension.extension:vaccinationstandard.value[x]:valueCodeableConcept">
-      <path value="Extension.extension.valueCodeableConcept" />
+      <path value="Extension.extension.value[x]" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
@@ -149,8 +230,17 @@
       <sliceName value="producer" />
       <max value="1" />
     </element>
+    <element id="Extension.extension:producer.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Extension.extension:producer.value[x]:valueString">
-      <path value="Extension.extension.valueString" />
+      <path value="Extension.extension.value[x]" />
       <sliceName value="valueString" />
       <type>
         <code value="string" />
@@ -162,12 +252,25 @@
       <min value="1" />
       <max value="1" />
     </element>
+    <element id="Extension.extension:name.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Extension.extension:name.value[x]:valueString">
-      <path value="Extension.extension.valueString" />
+      <path value="Extension.extension.value[x]" />
       <sliceName value="valueString" />
       <type>
         <code value="string" />
       </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-medicationdetails" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
