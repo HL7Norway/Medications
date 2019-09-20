@@ -58,6 +58,15 @@
       <sliceName value="SfmMedicationComposition" />
       <short value="First entry is a SfmMedicationComposition" />
       <definition value="First entry in Bundle of type &quot;document&quot; is always a Composition" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Bundle.entry:SfmMedicationComposition.resource">
+      <path value="Bundle.entry.resource" />
+      <type>
+        <code value="Resource" />
+        <profile value="sfmMedicationComposition" />
+      </type>
     </element>
   </differential>
 </StructureDefinition>
