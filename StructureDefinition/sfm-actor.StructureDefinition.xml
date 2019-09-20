@@ -111,6 +111,10 @@
         <aggregation value="bundled" />
       </type>
     </element>
+    <element id="Extension.extension:practioner.value[x]:valueReference.reference">
+      <path value="Extension.extension.valueReference.reference" />
+      <min value="1" />
+    </element>
     <element id="Extension.url">
       <path value="Extension.url" />
       <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-actor" />
