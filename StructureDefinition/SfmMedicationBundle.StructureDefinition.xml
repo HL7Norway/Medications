@@ -65,7 +65,7 @@
       <path value="Bundle.entry.resource" />
       <type>
         <code value="Resource" />
-        <profile value="sfmMedicationComposition" />
+        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-MedicationComposition" />
       </type>
     </element>
   </differential>
