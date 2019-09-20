@@ -59,23 +59,24 @@
       </slicing>
     </element>
     <element id="Extension.extension:role.value[x]:valueCodeableConcept">
-      <path value="Extension.extension.value[x]" />
+      <path value="Extension.extension.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
+      <min value="1" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
     <element id="Extension.extension:role.value[x]:valueCodeableConcept.coding.system">
-      <path value="Extension.extension.value[x].coding.system" />
+      <path value="Extension.extension.valueCodeableConcept.coding.system" />
       <min value="1" />
       <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.7490" />
     </element>
     <element id="Extension.extension:role.value[x]:valueCodeableConcept.coding.code">
-      <path value="Extension.extension.value[x].coding.code" />
+      <path value="Extension.extension.valueCodeableConcept.coding.code" />
       <min value="1" />
     </element>
     <element id="Extension.extension:role.value[x]:valueCodeableConcept.coding.display">
-      <path value="Extension.extension.value[x].coding.display" />
+      <path value="Extension.extension.valueCodeableConcept.coding.display" />
       <min value="1" />
     </element>
     <element id="Extension.extension:practioner">
@@ -94,8 +95,9 @@
       </slicing>
     </element>
     <element id="Extension.extension:practioner.value[x]:valueReference">
-      <path value="Extension.extension.value[x]" />
+      <path value="Extension.extension.valueReference" />
       <sliceName value="valueReference" />
+      <min value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner" />
