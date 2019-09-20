@@ -31,6 +31,8 @@
       <path value="Extension" />
       <short value="Identifies roles and actors related to patient" />
       <definition value="Identifies a practitioner and its role related to a patient. " />
+      <min value="1" />
+      <max value="1" />
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
