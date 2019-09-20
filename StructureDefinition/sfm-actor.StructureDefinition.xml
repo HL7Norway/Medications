@@ -70,10 +70,6 @@
       <path value="Extension.extension.valueCodeableConcept.coding.system" />
       <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.7490" />
     </element>
-    <element id="Extension.extension:role.value[x]:test">
-      <path value="Extension.extension.value[x]" />
-      <sliceName value="test" />
-    </element>
     <element id="Extension.extension:practioner">
       <path value="Extension.extension" />
       <sliceName value="practioner" />
@@ -87,6 +83,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:practioner.value[x]:valueReference">
@@ -98,10 +95,6 @@
         <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner" />
         <aggregation value="bundled" />
       </type>
-    </element>
-    <element id="Extension.extension:practioner.value[x]:test2">
-      <path value="Extension.extension.value[x]" />
-      <sliceName value="test2" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
