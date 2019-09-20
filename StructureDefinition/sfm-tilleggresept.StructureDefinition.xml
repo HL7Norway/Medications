@@ -589,6 +589,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:itemgroup.value[x]:valueCodeableConcept">
@@ -985,23 +986,6 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Extension.extension:statusaction.extension:code">
-      <path value="Extension.extension.extension" />
-      <sliceName value="code" />
-      <min value="1" />
-      <max value="1" />
-    </element>
-    <element id="Extension.extension:statusaction.extension:code.url">
-      <path value="Extension.extension.extension.url" />
-      <fixedString value="code" />
-    </element>
-    <element id="Extension.extension:statusaction.extension:code.value[x]">
-      <path value="Extension.extension.extension.value[x]" />
-      <type>
-        <code value="CodeableConcept" />
-        <profile value="urn:oid:2.16.578.1.12.4.1.1.7500" />
-      </type>
-    </element>
     <element id="Extension.extension:statusaction.extension:recallId">
       <path value="Extension.extension.extension" />
       <sliceName value="recallId" />
@@ -1020,6 +1004,7 @@
     <element id="Extension.extension:statusaction.extension:text">
       <path value="Extension.extension.extension" />
       <sliceName value="text" />
+      <max value="1" />
     </element>
     <element id="Extension.extension:statusaction.extension:text.url">
       <path value="Extension.extension.extension.url" />
@@ -1030,6 +1015,40 @@
       <type>
         <code value="string" />
       </type>
+    </element>
+    <element id="Extension.extension:statusaction.extension:recallcode">
+      <path value="Extension.extension.extension" />
+      <sliceName value="recallcode" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:statusaction.extension:recallcode.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedString value="recallcode" />
+    </element>
+    <element id="Extension.extension:statusaction.extension:recallcode.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.extension:statusaction.extension:recallcode.value[x]:valueCodeableConcept">
+      <path value="Extension.extension.extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.extension:statusaction.extension:recallcode.value[x]:valueCodeableConcept.coding.system">
+      <path value="Extension.extension.extension.valueCodeableConcept.coding.system" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7500" />
     </element>
     <element id="Extension.extension:statusaction.url">
       <path value="Extension.extension.url" />
