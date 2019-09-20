@@ -67,6 +67,11 @@
         <code value="CodeableConcept" />
       </type>
     </element>
+    <element id="Extension.extension:role.value[x]:valueCodeableConcept.coding">
+      <path value="Extension.extension.valueCodeableConcept.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
     <element id="Extension.extension:role.value[x]:valueCodeableConcept.coding.system">
       <path value="Extension.extension.valueCodeableConcept.coding.system" />
       <min value="1" />
