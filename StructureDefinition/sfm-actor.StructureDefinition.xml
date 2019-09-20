@@ -31,8 +31,6 @@
       <path value="Extension" />
       <short value="Identifies roles and actors related to patient" />
       <definition value="Identifies a practitioner and its role related to a patient. " />
-      <min value="1" />
-      <max value="1" />
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
@@ -47,7 +45,6 @@
     <element id="Extension.extension:role">
       <path value="Extension.extension" />
       <sliceName value="role" />
-      <min value="1" />
       <max value="1" />
     </element>
     <element id="Extension.extension:role.value[x]">
@@ -59,19 +56,16 @@
         </discriminator>
         <rules value="closed" />
       </slicing>
-      <min value="1" />
     </element>
     <element id="Extension.extension:role.value[x]:valueCodeableConcept">
       <path value="Extension.extension.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
-      <min value="1" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
     <element id="Extension.extension:role.value[x]:valueCodeableConcept.coding">
       <path value="Extension.extension.valueCodeableConcept.coding" />
-      <min value="1" />
       <max value="1" />
     </element>
     <element id="Extension.extension:role.value[x]:valueCodeableConcept.coding.system">
@@ -90,7 +84,6 @@
     <element id="Extension.extension:practioner">
       <path value="Extension.extension" />
       <sliceName value="practioner" />
-      <min value="1" />
       <max value="1" />
     </element>
     <element id="Extension.extension:practioner.value[x]">
@@ -101,21 +94,15 @@
           <path value="$this" />
         </discriminator>
       </slicing>
-      <min value="1" />
     </element>
     <element id="Extension.extension:practioner.value[x]:valueReference">
       <path value="Extension.extension.valueReference" />
       <sliceName value="valueReference" />
-      <min value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner" />
         <aggregation value="bundled" />
       </type>
-    </element>
-    <element id="Extension.extension:practioner.value[x]:valueReference.reference">
-      <path value="Extension.extension.valueReference.reference" />
-      <min value="1" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
