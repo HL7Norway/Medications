@@ -17,22 +17,6 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
-    <element id="Extension">
-      <path value="Extension" />
-      <short value="Optional Extensions Element" />
-      <definition value="Optional Extension Element - found in all resources." />
-      <constraint>
-        <key value="ext-1" />
-        <severity value="error" />
-        <human value="Must have either extensions or value[x], not both" />
-        <expression value="extension.exists() != value.exists()" />
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
       <slicing>
@@ -46,6 +30,7 @@
     <element id="Extension.extension:systeminfo">
       <path value="Extension.extension" />
       <sliceName value="systeminfo" />
+      <min value="1" />
     </element>
     <element id="Extension.extension:systeminfo.extension">
       <path value="Extension.extension.extension" />
@@ -104,6 +89,8 @@
     <element id="Extension.extension:operationsuplierinfo">
       <path value="Extension.extension" />
       <sliceName value="operationsuplierinfo" />
+      <min value="1" />
+      <max value="1" />
     </element>
     <element id="Extension.extension:operationsuplierinfo.extension">
       <path value="Extension.extension.extension" />
@@ -158,6 +145,10 @@
     <element id="Extension.extension:operationsuplierinfo.value[x]">
       <path value="Extension.extension.value[x]" />
       <max value="0" />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-epjinfo" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
