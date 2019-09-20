@@ -22,6 +22,11 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Summary of what has been dispenced" />
+      <definition value="Information about what have been dispenced on identfied prescription (resept). " />
+    </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
       <slicing>
@@ -35,10 +40,21 @@
     <element id="Extension.extension:varenummer">
       <path value="Extension.extension" />
       <sliceName value="varenummer" />
+      <short value="Nordic identifier of product" />
+      <definition value="Product number as registered on a package. " />
       <max value="1" />
     </element>
+    <element id="Extension.extension:varenummer.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Extension.extension:varenummer.value[x]:valueString">
-      <path value="Extension.extension.valueString" />
+      <path value="Extension.extension.value[x]" />
       <sliceName value="valueString" />
       <type>
         <code value="string" />
@@ -47,11 +63,22 @@
     <element id="Extension.extension:varenavn">
       <path value="Extension.extension" />
       <sliceName value="varenavn" />
+      <short value="Name as stated on package" />
+      <definition value="Name of product as defiend in FEST. " />
       <min value="1" />
       <max value="1" />
     </element>
+    <element id="Extension.extension:varenavn.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Extension.extension:varenavn.value[x]:valueString">
-      <path value="Extension.extension.valueString" />
+      <path value="Extension.extension.value[x]" />
       <sliceName value="valueString" />
       <type>
         <code value="string" />
@@ -60,10 +87,21 @@
     <element id="Extension.extension:pakningsstr">
       <path value="Extension.extension" />
       <sliceName value="pakningsstr" />
+      <short value="Size of package" />
+      <definition value="Number of units within the package. " />
       <max value="1" />
     </element>
+    <element id="Extension.extension:pakningsstr.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Extension.extension:pakningsstr.value[x]:valueQuantity">
-      <path value="Extension.extension.valueQuantity" />
+      <path value="Extension.extension.value[x]" />
       <sliceName value="valueQuantity" />
       <type>
         <code value="Quantity" />
@@ -72,11 +110,22 @@
     <element id="Extension.extension:antallpkntotalt">
       <path value="Extension.extension" />
       <sliceName value="antallpkntotalt" />
+      <short value="Total number of packages dispenced to patient" />
+      <definition value="Total number o packages dispenced to patient. " />
       <min value="1" />
       <max value="1" />
     </element>
+    <element id="Extension.extension:antallpkntotalt.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Extension.extension:antallpkntotalt.value[x]:valueDecimal">
-      <path value="Extension.extension.valueDecimal" />
+      <path value="Extension.extension.value[x]" />
       <sliceName value="valueDecimal" />
       <type>
         <code value="decimal" />
@@ -85,11 +134,22 @@
     <element id="Extension.extension:antallpknsiste">
       <path value="Extension.extension" />
       <sliceName value="antallpknsiste" />
+      <short value="No package dispenced last delivery" />
+      <definition value="Number of packages dispenced on last deliverey to patient. " />
       <min value="1" />
       <max value="1" />
     </element>
+    <element id="Extension.extension:antallpknsiste.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Extension.extension:antallpknsiste.value[x]:valueDecimal">
-      <path value="Extension.extension.valueDecimal" />
+      <path value="Extension.extension.value[x]" />
       <sliceName value="valueDecimal" />
       <type>
         <code value="decimal" />
@@ -98,15 +158,30 @@
     <element id="Extension.extension:sistutlevert">
       <path value="Extension.extension" />
       <sliceName value="sistutlevert" />
+      <short value="Time when last dispenced" />
+      <definition value="Date and time when last dispence took place. " />
       <min value="1" />
       <max value="1" />
     </element>
+    <element id="Extension.extension:sistutlevert.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Extension.extension:sistutlevert.value[x]:valueDateTime">
-      <path value="Extension.extension.valueDateTime" />
+      <path value="Extension.extension.value[x]" />
       <sliceName value="valueDateTime" />
       <type>
         <code value="dateTime" />
       </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-deliverysummary" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

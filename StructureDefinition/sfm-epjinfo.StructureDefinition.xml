@@ -17,6 +17,11 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Information about EPJ and vendor" />
+      <definition value="Information that need to be transfered to RF in order to keep track of vendors and serviceproviders. " />
+    </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
       <slicing>
@@ -30,6 +35,8 @@
     <element id="Extension.extension:systeminfo">
       <path value="Extension.extension" />
       <sliceName value="systeminfo" />
+      <short value="Information about EPJ system" />
+      <definition value="Information about what EPJ system that is used." />
       <min value="1" />
     </element>
     <element id="Extension.extension:systeminfo.extension">
@@ -89,6 +96,8 @@
     <element id="Extension.extension:operationsuplierinfo">
       <path value="Extension.extension" />
       <sliceName value="operationsuplierinfo" />
+      <short value="Information about service provider" />
+      <definition value="Information about who is the main provider of service on systems. " />
       <min value="1" />
       <max value="1" />
     </element>

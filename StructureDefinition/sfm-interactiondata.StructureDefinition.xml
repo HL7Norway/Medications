@@ -19,6 +19,11 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Interactiondata " />
+      <definition value="Interactiondata based on information from FEST." />
+    </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
       <slicing>
@@ -32,6 +37,8 @@
     <element id="Extension.extension:relevance">
       <path value="Extension.extension" />
       <sliceName value="relevance" />
+      <short value="Relevance of interaction" />
+      <definition value="Coded values that identifies how critical the interaction is. " />
       <min value="1" />
       <max value="1" />
     </element>
@@ -48,6 +55,8 @@
     <element id="Extension.extension:situationcriterium">
       <path value="Extension.extension" />
       <sliceName value="situationcriterium" />
+      <short value="Describes when the warning is relevant" />
+      <definition value="Textual description telling when interaction is relevant. " />
     </element>
     <element id="Extension.extension:situationcriterium.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -58,6 +67,8 @@
     <element id="Extension.extension:clinicalconsequence">
       <path value="Extension.extension" />
       <sliceName value="clinicalconsequence" />
+      <short value="Conseques of not taking action" />
+      <definition value="Describes what actions should be taken and consequeses of not taking action. " />
       <min value="1" />
       <max value="1" />
     </element>
@@ -70,6 +81,8 @@
     <element id="Extension.extension:interactionmechanism">
       <path value="Extension.extension" />
       <sliceName value="interactionmechanism" />
+      <short value="What leads to interaction" />
+      <definition value="Describes what are the mechanisms that lead to interaction." />
     </element>
     <element id="Extension.extension:interactionmechanism.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -80,6 +93,8 @@
     <element id="Extension.extension:source">
       <path value="Extension.extension" />
       <sliceName value="source" />
+      <short value="Source used to identify interaction" />
+      <definition value="What source that docuements the interaction problem. " />
       <min value="1" />
       <max value="1" />
     </element>
@@ -96,6 +111,8 @@
     <element id="Extension.extension:handling">
       <path value="Extension.extension" />
       <sliceName value="handling" />
+      <short value="Actions that should be taken" />
+      <definition value="Describes how to handle the interaction." />
     </element>
     <element id="Extension.extension:handling.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -106,6 +123,8 @@
     <element id="Extension.extension:displayrule">
       <path value="Extension.extension" />
       <sliceName value="displayrule" />
+      <short value="Rule for showing to user" />
+      <definition value="Identifes when to present to user and what kind of user. " />
     </element>
     <element id="Extension.extension:displayrule.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -120,6 +139,8 @@
     <element id="Extension.extension:reference">
       <path value="Extension.extension" />
       <sliceName value="reference" />
+      <short value="References to background information" />
+      <definition value="References to documentation of the interaction. " />
     </element>
     <element id="Extension.extension:reference.extension">
       <path value="Extension.extension.extension" />
@@ -158,6 +179,8 @@
     <element id="Extension.extension:substancegroup">
       <path value="Extension.extension" />
       <sliceName value="substancegroup" />
+      <short value="identifies substances that interact" />
+      <definition value="substances that are identified to interact. " />
       <min value="1" />
     </element>
     <element id="Extension.extension:substancegroup.extension">
@@ -240,6 +263,10 @@
     <element id="Extension.extension:substancegroup.value[x]">
       <path value="Extension.extension.value[x]" />
       <max value="0" />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-interactiondata" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

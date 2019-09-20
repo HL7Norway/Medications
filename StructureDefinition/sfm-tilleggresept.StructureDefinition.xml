@@ -27,6 +27,11 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Norwegian resept information" />
+      <definition value="Ifnormation that is relevant for Norwegian e-prescription. " />
+    </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
       <slicing>
@@ -1040,14 +1045,14 @@
       </type>
     </element>
     <element id="Extension.extension:statusaction.extension:recallcode.value[x]:valueCodeableConcept">
-      <path value="Extension.extension.extension.valueCodeableConcept" />
+      <path value="Extension.extension.extension.value[x]" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
     <element id="Extension.extension:statusaction.extension:recallcode.value[x]:valueCodeableConcept.coding.system">
-      <path value="Extension.extension.extension.valueCodeableConcept.coding.system" />
+      <path value="Extension.extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7500" />
     </element>
     <element id="Extension.extension:statusaction.url">
