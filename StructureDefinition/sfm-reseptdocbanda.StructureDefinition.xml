@@ -7,7 +7,7 @@
   <title value="sfm-reseptdocbanda" />
   <status value="draft" />
   <date value="2019-09-16" />
-  <description value="Prescription details for nutrition and supporting products. " />
+  <description value="Prescription details for nutrition and supporting products." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -41,10 +41,14 @@
     </element>
     <element id="Extension.extension:productgroup.value[x]">
       <path value="Extension.extension.value[x]" />
+      <min value="1" />
       <type>
         <code value="CodeableConcept" />
-        <profile value="urn:oid:2.16.578.1.12.4.1.1.7403" />
       </type>
+    </element>
+    <element id="Extension.extension:productgroup.value[x].coding.system">
+      <path value="Extension.extension.value[x].coding.system" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7403" />
     </element>
     <element id="Extension.extension:productnumber">
       <path value="Extension.extension" />
