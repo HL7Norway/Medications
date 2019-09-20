@@ -60,6 +60,7 @@
     <element id="Extension.extension:role.value[x]:valueCodeableConcept">
       <path value="Extension.extension.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
+      <min value="1" />
       <type>
         <code value="CodeableConcept" />
       </type>
