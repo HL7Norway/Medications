@@ -25,7 +25,7 @@
     <element id="Extension">
       <path value="Extension" />
       <short value="Summary of what has been dispenced" />
-      <definition value="Information about what have been dispenced on identfied prescription (resept). " />
+      <definition value="Information about what have been dispenced on identfied prescription (resept)." />
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
@@ -41,7 +41,7 @@
       <path value="Extension.extension" />
       <sliceName value="varenummer" />
       <short value="Nordic identifier of product" />
-      <definition value="Product number as registered on a package. " />
+      <definition value="Product number as registered on a package." />
       <max value="1" />
     </element>
     <element id="Extension.extension:varenummer.value[x]">
@@ -51,6 +51,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:varenummer.value[x]:valueString">
@@ -64,7 +65,7 @@
       <path value="Extension.extension" />
       <sliceName value="varenavn" />
       <short value="Name as stated on package" />
-      <definition value="Name of product as defiend in FEST. " />
+      <definition value="Name of product as defiend in FEST." />
       <min value="1" />
       <max value="1" />
     </element>
@@ -75,6 +76,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:varenavn.value[x]:valueString">
@@ -88,7 +90,7 @@
       <path value="Extension.extension" />
       <sliceName value="pakningsstr" />
       <short value="Size of package" />
-      <definition value="Number of units within the package. " />
+      <definition value="Number of units within the package." />
       <max value="1" />
     </element>
     <element id="Extension.extension:pakningsstr.value[x]">
@@ -98,6 +100,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:pakningsstr.value[x]:valueQuantity">
@@ -111,7 +114,7 @@
       <path value="Extension.extension" />
       <sliceName value="antallpkntotalt" />
       <short value="Total number of packages dispenced to patient" />
-      <definition value="Total number o packages dispenced to patient. " />
+      <definition value="Total number o packages dispenced to patient." />
       <min value="1" />
       <max value="1" />
     </element>
@@ -122,6 +125,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:antallpkntotalt.value[x]:valueDecimal">
@@ -135,7 +139,7 @@
       <path value="Extension.extension" />
       <sliceName value="antallpknsiste" />
       <short value="No package dispenced last delivery" />
-      <definition value="Number of packages dispenced on last deliverey to patient. " />
+      <definition value="Number of packages dispenced on last deliverey to patient." />
       <min value="1" />
       <max value="1" />
     </element>
@@ -146,6 +150,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:antallpknsiste.value[x]:valueDecimal">
@@ -159,7 +164,7 @@
       <path value="Extension.extension" />
       <sliceName value="sistutlevert" />
       <short value="Time when last dispenced" />
-      <definition value="Date and time when last dispence took place. " />
+      <definition value="Date and time when last dispence took place." />
       <min value="1" />
       <max value="1" />
     </element>
@@ -170,6 +175,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:sistutlevert.value[x]:valueDateTime">
