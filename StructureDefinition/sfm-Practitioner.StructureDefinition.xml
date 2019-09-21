@@ -15,6 +15,10 @@
   <baseDefinition value="http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner" />
   <derivation value="constraint" />
   <differential>
+    <element id="Practitioner.identifier">
+      <path value="Practitioner.identifier" />
+      <min value="1" />
+    </element>
     <element id="Practitioner.identifier:HPR">
       <path value="Practitioner.identifier" />
       <sliceName value="HPR" />
