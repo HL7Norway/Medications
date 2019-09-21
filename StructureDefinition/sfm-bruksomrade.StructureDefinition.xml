@@ -25,8 +25,8 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="Bruksomrade" />
-      <definition value="Bruksomrade for use in Norwegian Medical statement" />
+      <short value="Area of use" />
+      <definition value="The application area for the medicationstatement. " />
       <max value="1" />
     </element>
     <element id="Extension.extension">
@@ -38,34 +38,6 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-    </element>
-    <element id="Extension.extension:text">
-      <path value="Extension.extension" />
-      <sliceName value="text" />
-    </element>
-    <element id="Extension.extension:text.url">
-      <path value="Extension.extension.url" />
-      <fixedString value="text" />
-    </element>
-    <element id="Extension.extension:text.value[x]">
-      <path value="Extension.extension.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="closed" />
-      </slicing>
-      <type>
-        <code value="string" />
-      </type>
-    </element>
-    <element id="Extension.extension:text.value[x]:valueString">
-      <path value="Extension.extension.valueString" />
-      <sliceName value="valueString" />
-      <type>
-        <code value="string" />
-      </type>
     </element>
     <element id="Extension.extension:codedvalue">
       <path value="Extension.extension" />
@@ -95,6 +67,33 @@
     <element id="Extension.extension:codedvalue.value[x]:valueCodeableConcept.coding.system">
       <path value="Extension.extension.valueCodeableConcept.coding.system" />
       <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.7488" />
+    </element>
+    <element id="Extension.extension:text">
+      <path value="Extension.extension" />
+      <sliceName value="text" />
+      <short value="Textual information about application" />
+      <definition value="Text" />
+    </element>
+    <element id="Extension.extension:text.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="text" />
+    </element>
+    <element id="Extension.extension:text.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:text.value[x]:valueString">
+      <path value="Extension.extension.valueString" />
+      <sliceName value="valueString" />
+      <type>
+        <code value="string" />
+      </type>
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
