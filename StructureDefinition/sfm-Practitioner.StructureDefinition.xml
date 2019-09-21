@@ -15,10 +15,6 @@
   <baseDefinition value="http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner" />
   <derivation value="constraint" />
   <differential>
-    <element id="Practitioner.identifier">
-      <path value="Practitioner.identifier" />
-      <min value="1" />
-    </element>
     <element id="Practitioner.identifier:HPR">
       <path value="Practitioner.identifier" />
       <sliceName value="HPR" />
@@ -40,6 +36,60 @@
     <element id="Practitioner.name.given">
       <path value="Practitioner.name.given" />
       <min value="1" />
+    </element>
+    <element id="Practitioner.address.extension:propertyinformation">
+      <path value="Practitioner.address.extension" />
+      <sliceName value="propertyinformation" />
+    </element>
+    <element id="Practitioner.address.extension:propertyinformation.extension:cadastralUnitNumber">
+      <path value="Practitioner.address.extension.extension" />
+      <sliceName value="cadastralUnitNumber" />
+    </element>
+    <element id="Practitioner.address.extension:propertyinformation.extension:cadastralUnitNumber.value[x]">
+      <path value="Practitioner.address.extension.extension.value[x]" />
+      <slicing>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Practitioner.address.extension:propertyinformation.extension:propertyUnitNumber">
+      <path value="Practitioner.address.extension.extension" />
+      <sliceName value="propertyUnitNumber" />
+    </element>
+    <element id="Practitioner.address.extension:propertyinformation.extension:propertyUnitNumber.value[x]">
+      <path value="Practitioner.address.extension.extension.value[x]" />
+      <slicing>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Practitioner.address.extension:propertyinformation.extension:leaseholdNumber">
+      <path value="Practitioner.address.extension.extension" />
+      <sliceName value="leaseholdNumber" />
+    </element>
+    <element id="Practitioner.address.extension:propertyinformation.extension:leaseholdNumber.value[x]">
+      <path value="Practitioner.address.extension.extension.value[x]" />
+      <slicing>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Practitioner.address.extension:propertyinformation.extension:condominiumUnitNumber">
+      <path value="Practitioner.address.extension.extension" />
+      <sliceName value="condominiumUnitNumber" />
+    </element>
+    <element id="Practitioner.address.extension:propertyinformation.extension:condominiumUnitNumber.value[x]">
+      <path value="Practitioner.address.extension.extension.value[x]" />
+      <slicing>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Practitioner.address.extension:propertyinformation.extension:municipality">
+      <path value="Practitioner.address.extension.extension" />
+      <sliceName value="municipality" />
+    </element>
+    <element id="Practitioner.address.extension:propertyinformation.extension:municipality.value[x]">
+      <path value="Practitioner.address.extension.extension.value[x]" />
+      <slicing>
+        <rules value="open" />
+      </slicing>
     </element>
   </differential>
 </StructureDefinition>
