@@ -4,8 +4,10 @@
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-epjinfo" />
   <version value="1.0" />
   <name value="SfmEpjInfo" />
+  <title value="sfm-epjinfo" />
   <status value="draft" />
-  <date value="2019-08-09" />
+  <date value="2019-09-21" />
+  <description value="Info about the epj system" />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -20,7 +22,7 @@
     <element id="Extension">
       <path value="Extension" />
       <short value="Information about EPJ and vendor" />
-      <definition value="Information that need to be transfered to RF in order to keep track of vendors and serviceproviders. " />
+      <definition value="Information that need to be transfered to RF in order to keep track of vendors and serviceproviders." />
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
@@ -97,7 +99,7 @@
       <path value="Extension.extension" />
       <sliceName value="operationsuplierinfo" />
       <short value="Information about service provider" />
-      <definition value="Information about who is the main provider of service on systems. " />
+      <definition value="Information about who is the main provider of service on systems." />
       <min value="1" />
       <max value="1" />
     </element>
