@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="sfm-bruk" />
+  <id value="sfm-use" />
   <meta>
     <versionId value="3" />
     <lastUpdated value="2018-10-03T14:00:29.422+00:00" />
   </meta>
-  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-bruk" />
-  <version value="2.0" />
-  <name value="SfmBruk" />
-  <title value="sfm-bruk" />
+  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-use" />
+  <version value="2.1" />
+  <name value="SfmUse" />
+  <title value="sfm-use" />
   <status value="draft" />
-  <date value="2019-07-01" />
+  <date value="2019-09-21" />
   <description value="Describes regularity of use." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
@@ -23,6 +23,10 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-use" />
+    </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
       <type>

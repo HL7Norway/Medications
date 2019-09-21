@@ -37,36 +37,6 @@
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-regInfo" />
       </type>
     </element>
-    <element id="MedicationStatement.extension:reginfo.extension:type">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="type" />
-    </element>
-    <element id="MedicationStatement.extension:reginfo.extension:type.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:reginfo.extension:helseperson">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="helseperson" />
-    </element>
-    <element id="MedicationStatement.extension:reginfo.extension:helseperson.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:reginfo.extension:timestamp">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="timestamp" />
-    </element>
-    <element id="MedicationStatement.extension:reginfo.extension:timestamp.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
     <element id="MedicationStatement.extension:comment">
       <path value="MedicationStatement.extension" />
       <sliceName value="comment" />
@@ -74,100 +44,6 @@
         <code value="Extension" />
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-libitemcomment" />
       </type>
-    </element>
-    <element id="MedicationStatement.extension:comment.extension:type">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="type" />
-    </element>
-    <element id="MedicationStatement.extension:comment.extension:type.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:comment.extension:merknad">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="merknad" />
-    </element>
-    <element id="MedicationStatement.extension:comment.extension:merknad.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:comment.extension:Id">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="Id" />
-    </element>
-    <element id="MedicationStatement.extension:comment.extension:Id.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:comment.extension:registeredby">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="registeredby" />
-    </element>
-    <element id="MedicationStatement.extension:comment.extension:registeredby.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:comment.extension:receiver">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="receiver" />
-    </element>
-    <element id="MedicationStatement.extension:comment.extension:receiver.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:comment.extension:response">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="response" />
-    </element>
-    <element id="MedicationStatement.extension:comment.extension:response.extension:Id">
-      <path value="MedicationStatement.extension.extension.extension" />
-      <sliceName value="Id" />
-    </element>
-    <element id="MedicationStatement.extension:comment.extension:response.extension:Id.value[x]">
-      <path value="MedicationStatement.extension.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:comment.extension:response.extension:responder">
-      <path value="MedicationStatement.extension.extension.extension" />
-      <sliceName value="responder" />
-    </element>
-    <element id="MedicationStatement.extension:comment.extension:response.extension:responder.value[x]">
-      <path value="MedicationStatement.extension.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:comment.extension:response.extension:svar">
-      <path value="MedicationStatement.extension.extension.extension" />
-      <sliceName value="svar" />
-    </element>
-    <element id="MedicationStatement.extension:comment.extension:response.extension:svar.value[x]">
-      <path value="MedicationStatement.extension.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:comment.extension:response.extension:type">
-      <path value="MedicationStatement.extension.extension.extension" />
-      <sliceName value="type" />
-    </element>
-    <element id="MedicationStatement.extension:comment.extension:response.extension:type.value[x]">
-      <path value="MedicationStatement.extension.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
     </element>
     <element id="MedicationStatement.extension:deliverysummary">
       <path value="MedicationStatement.extension" />
@@ -177,66 +53,6 @@
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-deliverysummary" />
       </type>
     </element>
-    <element id="MedicationStatement.extension:deliverysummary.extension:varenummer">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="varenummer" />
-    </element>
-    <element id="MedicationStatement.extension:deliverysummary.extension:varenummer.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:deliverysummary.extension:varenavn">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="varenavn" />
-    </element>
-    <element id="MedicationStatement.extension:deliverysummary.extension:varenavn.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:deliverysummary.extension:pakningsstr">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="pakningsstr" />
-    </element>
-    <element id="MedicationStatement.extension:deliverysummary.extension:pakningsstr.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:deliverysummary.extension:antallpkntotalt">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="antallpkntotalt" />
-    </element>
-    <element id="MedicationStatement.extension:deliverysummary.extension:antallpkntotalt.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:deliverysummary.extension:antallpknsiste">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="antallpknsiste" />
-    </element>
-    <element id="MedicationStatement.extension:deliverysummary.extension:antallpknsiste.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:deliverysummary.extension:sistutlevert">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="sistutlevert" />
-    </element>
-    <element id="MedicationStatement.extension:deliverysummary.extension:sistutlevert.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
     <element id="MedicationStatement.extension:genericSubstitution">
       <path value="MedicationStatement.extension" />
       <sliceName value="genericSubstitution" />
@@ -245,26 +61,6 @@
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-generic-substitution" />
       </type>
     </element>
-    <element id="MedicationStatement.extension:genericSubstitution.extension:genericSubstitutionAccepted">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="genericSubstitutionAccepted" />
-    </element>
-    <element id="MedicationStatement.extension:genericSubstitution.extension:genericSubstitutionAccepted.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:genericSubstitution.extension:reason">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="reason" />
-    </element>
-    <element id="MedicationStatement.extension:genericSubstitution.extension:reason.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
     <element id="MedicationStatement.extension:discontinuationinformation">
       <path value="MedicationStatement.extension" />
       <sliceName value="discontinuationinformation" />
@@ -272,36 +68,6 @@
         <code value="Extension" />
         <profile value="http://eheles.no/fhir/StructureDefinition/sfm-discontinuation" />
       </type>
-    </element>
-    <element id="MedicationStatement.extension:discontinuationinformation.extension:timedate">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="timedate" />
-    </element>
-    <element id="MedicationStatement.extension:discontinuationinformation.extension:timedate.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:discontinuationinformation.extension:reason">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="reason" />
-    </element>
-    <element id="MedicationStatement.extension:discontinuationinformation.extension:reason.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:discontinuationinformation.extension:note">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="note" />
-    </element>
-    <element id="MedicationStatement.extension:discontinuationinformation.extension:note.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
     </element>
     <element id="MedicationStatement.extension:administrationdetails">
       <path value="MedicationStatement.extension" />
@@ -312,60 +78,6 @@
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-administration" />
       </type>
     </element>
-    <element id="MedicationStatement.extension:administrationdetails.extension:administrationofmedication">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="administrationofmedication" />
-    </element>
-    <element id="MedicationStatement.extension:administrationdetails.extension:administrationofmedication.extension:admByWhom">
-      <path value="MedicationStatement.extension.extension.extension" />
-      <sliceName value="admByWhom" />
-    </element>
-    <element id="MedicationStatement.extension:administrationdetails.extension:administrationofmedication.extension:admByWhom.value[x]">
-      <path value="MedicationStatement.extension.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:administrationdetails.extension:administrationofmedication.extension:admWay">
-      <path value="MedicationStatement.extension.extension.extension" />
-      <sliceName value="admWay" />
-    </element>
-    <element id="MedicationStatement.extension:administrationdetails.extension:administrationofmedication.extension:admWay.value[x]">
-      <path value="MedicationStatement.extension.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:administrationdetails.extension:administrationofmedication.extension:admBySchema">
-      <path value="MedicationStatement.extension.extension.extension" />
-      <sliceName value="admBySchema" />
-    </element>
-    <element id="MedicationStatement.extension:administrationdetails.extension:administrationofmedication.extension:admBySchema.value[x]">
-      <path value="MedicationStatement.extension.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:administrationdetails.extension:administrationofmedication.extension:admSchema">
-      <path value="MedicationStatement.extension.extension.extension" />
-      <sliceName value="admSchema" />
-    </element>
-    <element id="MedicationStatement.extension:administrationdetails.extension:administrationofmedication.extension:admSchema.value[x]">
-      <path value="MedicationStatement.extension.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:administrationdetails.extension:admBy">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="admBy" />
-    </element>
-    <element id="MedicationStatement.extension:administrationdetails.extension:admBy.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
     <element id="MedicationStatement.extension:reseptInfo">
       <path value="MedicationStatement.extension" />
       <sliceName value="reseptInfo" />
@@ -373,320 +85,6 @@
         <code value="Extension" />
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-reseptamendment" />
       </type>
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:reseptdate">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="reseptdate" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:reseptdate.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:expirationdate">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="expirationdate" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:expirationdate.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:festUpdate">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="festUpdate" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:festUpdate.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:conscription">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="conscription" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:conscription.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:helfoapplication">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="helfoapplication" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:helfoapplication.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:freecard">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="freecard" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:freecard.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:guardiantransparencyreservation">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="guardiantransparencyreservation" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:guardiantransparencyreservation.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:ownpractice">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="ownpractice" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:ownpractice.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:indoctorsname">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="indoctorsname" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:indoctorsname.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:refnum">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="refnum" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:refnum.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:speciality">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="speciality" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:speciality.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:dispatchrequest">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="dispatchrequest" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:dispatchrequest.extension:condition">
-      <path value="MedicationStatement.extension.extension.extension" />
-      <sliceName value="condition" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:dispatchrequest.extension:condition.value[x]">
-      <path value="MedicationStatement.extension.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:dispatchrequest.extension:metod">
-      <path value="MedicationStatement.extension.extension.extension" />
-      <sliceName value="metod" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:dispatchrequest.extension:metod.value[x]">
-      <path value="MedicationStatement.extension.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:dispatchrequest.extension:organization">
-      <path value="MedicationStatement.extension.extension.extension" />
-      <sliceName value="organization" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:dispatchrequest.extension:organization.value[x]">
-      <path value="MedicationStatement.extension.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:dispatchrequest.extension:contactperson">
-      <path value="MedicationStatement.extension.extension.extension" />
-      <sliceName value="contactperson" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:dispatchrequest.extension:contactperson.value[x]">
-      <path value="MedicationStatement.extension.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:dispatchrequest.extension:note">
-      <path value="MedicationStatement.extension.extension.extension" />
-      <sliceName value="note" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:dispatchrequest.extension:note.value[x]">
-      <path value="MedicationStatement.extension.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:dispatchrequest.extension:orgnum">
-      <path value="MedicationStatement.extension.extension.extension" />
-      <sliceName value="orgnum" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:dispatchrequest.extension:orgnum.value[x]">
-      <path value="MedicationStatement.extension.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:dispatchrequest.extension:orgname">
-      <path value="MedicationStatement.extension.extension.extension" />
-      <sliceName value="orgname" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:dispatchrequest.extension:orgname.value[x]">
-      <path value="MedicationStatement.extension.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:dispatchrequest.extension:address">
-      <path value="MedicationStatement.extension.extension.extension" />
-      <sliceName value="address" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:dispatchrequest.extension:address.value[x]">
-      <path value="MedicationStatement.extension.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:earliestdispence">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="earliestdispence" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:earliestdispence.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:dischargedhospital">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="dischargedhospital" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:dischargedhospital.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:lockedresept">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="lockedresept" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:lockedresept.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:numberofpackages">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="numberofpackages" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:numberofpackages.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:reimbursmentparagraph">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="reimbursmentparagraph" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:reimbursmentparagraph.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:reimbursementcode">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="reimbursementcode" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:reimbursementcode.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:plomedicationmanagement">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="plomedicationmanagement" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:plomedicationmanagement.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:reit">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="reit" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:reit.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:amount">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="amount" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:amount.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:dssn">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="dssn" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:dssn.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:rfstatus">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="rfstatus" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:rfstatus.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:note">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="note" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:note.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
     </element>
     <element id="MedicationStatement.identifier">
       <path value="MedicationStatement.identifier" />
@@ -747,9 +145,6 @@
     </element>
     <element id="MedicationStatement.medication[x]">
       <path value="MedicationStatement.medication[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Medication" />
@@ -833,20 +228,14 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="MedicationStatement.dosage.extension:bruksomrade">
+    <element id="MedicationStatement.dosage.extension:applicationarea">
       <path value="MedicationStatement.dosage.extension" />
-      <sliceName value="bruksomrade" />
+      <sliceName value="applicationarea" />
       <min value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-bruksomrade" />
+        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-applicationarea" />
       </type>
-    </element>
-    <element id="MedicationStatement.dosage.extension:bruksomrade.value[x]">
-      <path value="MedicationStatement.dosage.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
     </element>
     <element id="MedicationStatement.dosage.extension:shortdosage">
       <path value="MedicationStatement.dosage.extension" />
@@ -854,7 +243,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://ehelse.no/fhir/StructureDefinition/SfmKortdose" />
+        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-shortdosage" />
       </type>
     </element>
     <element id="MedicationStatement.dosage.extension:typeofuse">
@@ -864,7 +253,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-bruk" />
+        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-use" />
       </type>
     </element>
     <element id="MedicationStatement.dosage.text">

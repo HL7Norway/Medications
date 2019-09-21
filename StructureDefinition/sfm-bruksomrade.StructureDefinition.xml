@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="sfm-bruksomrade" />
+  <id value="sfm-applicationarea" />
   <meta>
     <versionId value="3" />
     <lastUpdated value="2018-10-03T13:58:39.289+00:00" />
   </meta>
-  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-bruksomrade" />
-  <version value="2.0" />
-  <name value="SfmBruksomrade" />
-  <title value="sfm-bruksomrade" />
+  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-applicationarea" />
+  <version value="2.1" />
+  <name value="SfmApplicationArea" />
+  <title value="sfm-applicationarea" />
   <status value="draft" />
-  <date value="2019-07-01" />
+  <date value="2019-09-21" />
+  <description value="Indicates what the medication is applied for. Information to the patient. " />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -62,12 +63,22 @@
       <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.7488" />
     </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-applicationarea" />
+    </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
       <max value="0" />
     </element>
     <element id="Extension.value[x]:valueString">
-      <path value="Extension.valueString" />
+      <path value="Extension.value[x]" />
       <sliceName value="valueString" />
       <type>
         <code value="string" />
