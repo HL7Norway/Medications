@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="sfm-applicationarea" />
-  <meta>
-    <versionId value="3" />
-    <lastUpdated value="2018-10-03T13:58:39.289+00:00" />
-  </meta>
-  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-applicationarea" />
-  <version value="2.1" />
+  <id value="sfm-application-area" />
+  <url value="http://example.org/fhir/StructureDefinition/sfm-application-area" />
+  <version value="2.0" />
   <name value="SfmApplicationArea" />
-  <title value="sfm-applicationarea" />
+  <title value="sfm-application-area" />
   <status value="draft" />
   <date value="2019-09-21" />
-  <description value="Indicates what the medication is applied for. Information to the patient. " />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -23,12 +18,6 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
-    <element id="Extension">
-      <path value="Extension" />
-      <short value="Area of use" />
-      <definition value="The application area for the medicationstatement. " />
-      <max value="1" />
-    </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
       <slicing>
@@ -39,16 +28,15 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Extension.extension:codedvalue">
+    <element id="Extension.extension:coded">
       <path value="Extension.extension" />
-      <sliceName value="codedvalue" />
-      <max value="1" />
+      <sliceName value="coded" />
     </element>
-    <element id="Extension.extension:codedvalue.url">
+    <element id="Extension.extension:coded.url">
       <path value="Extension.extension.url" />
-      <fixedString value="codedvalue" />
+      <fixedString value="coded" />
     </element>
-    <element id="Extension.extension:codedvalue.value[x]">
+    <element id="Extension.extension:coded.value[x]">
       <path value="Extension.extension.value[x]" />
       <slicing>
         <discriminator>
@@ -58,24 +46,20 @@
         <rules value="closed" />
       </slicing>
     </element>
-    <element id="Extension.extension:codedvalue.value[x]:valueCodeableConcept">
+    <element id="Extension.extension:coded.value[x]:valueCodeableConcept">
       <path value="Extension.extension.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
-    <element id="Extension.extension:codedvalue.value[x]:valueCodeableConcept.coding.system">
+    <element id="Extension.extension:coded.value[x]:valueCodeableConcept.coding.system">
       <path value="Extension.extension.valueCodeableConcept.coding.system" />
-      <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.7488" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7488" />
     </element>
     <element id="Extension.extension:text">
       <path value="Extension.extension" />
       <sliceName value="text" />
-      <short value="Textual information about application" />
-      <definition value="Text" />
-      <min value="1" />
-      <max value="1" />
     </element>
     <element id="Extension.extension:text.url">
       <path value="Extension.extension.url" />
@@ -94,31 +78,17 @@
     <element id="Extension.extension:text.value[x]:valueString">
       <path value="Extension.extension.valueString" />
       <sliceName value="valueString" />
-      <min value="1" />
       <type>
         <code value="string" />
       </type>
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-applicationarea" />
+      <fixedString value="http://example.org/fhir/StructureDefinition/sfm-application-area" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-      </slicing>
       <max value="0" />
-    </element>
-    <element id="Extension.value[x]:valueString">
-      <path value="Extension.value[x]" />
-      <sliceName value="valueString" />
-      <type>
-        <code value="string" />
-      </type>
     </element>
   </differential>
 </StructureDefinition>
