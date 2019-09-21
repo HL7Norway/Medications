@@ -42,7 +42,6 @@
     <element id="Extension.extension:codedvalue">
       <path value="Extension.extension" />
       <sliceName value="codedvalue" />
-      <min value="1" />
       <max value="1" />
     </element>
     <element id="Extension.extension:codedvalue.url">
@@ -95,6 +94,7 @@
     <element id="Extension.extension:text.value[x]:valueString">
       <path value="Extension.extension.valueString" />
       <sliceName value="valueString" />
+      <min value="1" />
       <type>
         <code value="string" />
       </type>
