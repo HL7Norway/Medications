@@ -25,7 +25,7 @@
     <element id="Extension">
       <path value="Extension" />
       <short value="Comments related to PLL" />
-      <definition value="Comments and response as trensfered within M25 messages. " />
+      <definition value="Comments and response as trensfered within M25 messages." />
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
@@ -41,7 +41,7 @@
       <path value="Extension.extension" />
       <sliceName value="type" />
       <short value="Type of comment" />
-      <definition value="Identifies what kind of comment it is, and implicit if it is an MD comment or general PLL comment. " />
+      <definition value="Identifies what kind of comment it is, and implicit if it is an MD comment or general PLL comment." />
       <min value="1" />
       <max value="1" />
     </element>
@@ -52,6 +52,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:type.value[x]:valueCodeableConcept">
@@ -78,7 +79,7 @@
       <path value="Extension.extension" />
       <sliceName value="merknad" />
       <short value="Textual comment" />
-      <definition value="Textual information related to the coded information. " />
+      <definition value="Textual information related to the coded information." />
       <max value="1" />
     </element>
     <element id="Extension.extension:merknad.value[x]">
@@ -88,6 +89,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:merknad.value[x]:valueString">
@@ -101,7 +103,7 @@
       <path value="Extension.extension" />
       <sliceName value="Id" />
       <short value="Id of the comment" />
-      <definition value="Id that unique identifies the comment. " />
+      <definition value="Id that unique identifies the comment." />
       <max value="1" />
     </element>
     <element id="Extension.extension:Id.value[x]">
@@ -111,6 +113,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:Id.value[x]:valueString">
@@ -124,7 +127,7 @@
       <path value="Extension.extension" />
       <sliceName value="registeredby" />
       <short value="User that has registered the comment" />
-      <definition value="User or organisation that has registered the comment. " />
+      <definition value="User or organisation that has registered the comment." />
       <min value="1" />
       <max value="1" />
     </element>
@@ -135,6 +138,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:registeredby.value[x]:valueString">
@@ -148,7 +152,7 @@
       <path value="Extension.extension" />
       <sliceName value="receiver" />
       <short value="user that should respond to comment" />
-      <definition value="Identifies a user that should respond to the comment. " />
+      <definition value="Identifies a user that should respond to the comment." />
       <max value="1" />
     </element>
     <element id="Extension.extension:receiver.value[x]">
@@ -158,6 +162,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:receiver.value[x]:valueString">
@@ -171,7 +176,7 @@
       <path value="Extension.extension" />
       <sliceName value="response" />
       <short value="response to the comment" />
-      <definition value="Response from doctor or pharmacy. " />
+      <definition value="Response from doctor or pharmacy." />
       <max value="1" />
     </element>
     <element id="Extension.extension:response.extension">
@@ -198,6 +203,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:response.extension:Id.value[x]:valueString">
@@ -211,7 +217,7 @@
       <path value="Extension.extension.extension" />
       <sliceName value="responder" />
       <short value="User that has responded to the comemnt" />
-      <definition value="Using HPR or Her-id to identify user. " />
+      <definition value="Using HPR or Her-id to identify user." />
       <max value="1" />
     </element>
     <element id="Extension.extension:response.extension:responder.value[x]">
@@ -221,6 +227,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:response.extension:responder.value[x]:valueString">
@@ -244,6 +251,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:response.extension:svar.value[x]:valueString">
@@ -257,7 +265,7 @@
       <path value="Extension.extension.extension" />
       <sliceName value="type" />
       <short value="coded response" />
-      <definition value="coded response to the comment. " />
+      <definition value="coded response to the comment." />
       <min value="1" />
       <max value="1" />
     </element>
@@ -268,6 +276,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:response.extension:type.value[x]:valueCodeableConcept">
