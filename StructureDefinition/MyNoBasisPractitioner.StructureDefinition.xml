@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="sfm-Practitioner" />
-  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-Practitioner" />
+  <id value="MyNoBasisPractitioner" />
+  <url value="http://example.org/fhir/StructureDefinition/MyNoBasisPractitioner" />
   <version value="1.0" />
-  <name value="SfmPractitioner" />
-  <title value="sfm-Practitioner" />
+  <name value="MyNoBasisPractitioner" />
+  <title value="MyNoBasisPractitioner" />
   <status value="draft" />
-  <date value="2019-08-19" />
-  <description value="Sfm sprofile based on no-basis-Practioner" />
+  <date value="2019-09-21" />
+  <description value="Test" />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
   <abstract value="false" />
@@ -15,32 +15,6 @@
   <baseDefinition value="http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner" />
   <derivation value="constraint" />
   <differential>
-    <element id="Practitioner.identifier">
-      <path value="Practitioner.identifier" />
-      <min value="1" />
-    </element>
-    <element id="Practitioner.identifier:HPR">
-      <path value="Practitioner.identifier" />
-      <sliceName value="HPR" />
-      <max value="1" />
-    </element>
-    <element id="Practitioner.active">
-      <path value="Practitioner.active" />
-      <min value="1" />
-    </element>
-    <element id="Practitioner.name">
-      <path value="Practitioner.name" />
-      <min value="1" />
-      <max value="1" />
-    </element>
-    <element id="Practitioner.name.family">
-      <path value="Practitioner.name.family" />
-      <min value="1" />
-    </element>
-    <element id="Practitioner.name.given">
-      <path value="Practitioner.name.given" />
-      <min value="1" />
-    </element>
     <element id="Practitioner.address.extension:propertyinformation">
       <path value="Practitioner.address.extension" />
       <sliceName value="propertyinformation" />
@@ -52,7 +26,7 @@
     <element id="Practitioner.address.extension:propertyinformation.extension:cadastralUnitNumber.value[x]">
       <path value="Practitioner.address.extension.extension.value[x]" />
       <slicing>
-        <rules value="closed" />
+        <rules value="open" />
       </slicing>
     </element>
     <element id="Practitioner.address.extension:propertyinformation.extension:propertyUnitNumber">
@@ -62,7 +36,7 @@
     <element id="Practitioner.address.extension:propertyinformation.extension:propertyUnitNumber.value[x]">
       <path value="Practitioner.address.extension.extension.value[x]" />
       <slicing>
-        <rules value="closed" />
+        <rules value="open" />
       </slicing>
     </element>
     <element id="Practitioner.address.extension:propertyinformation.extension:leaseholdNumber">
@@ -72,7 +46,7 @@
     <element id="Practitioner.address.extension:propertyinformation.extension:leaseholdNumber.value[x]">
       <path value="Practitioner.address.extension.extension.value[x]" />
       <slicing>
-        <rules value="closed" />
+        <rules value="open" />
       </slicing>
     </element>
     <element id="Practitioner.address.extension:propertyinformation.extension:condominiumUnitNumber">
@@ -82,7 +56,7 @@
     <element id="Practitioner.address.extension:propertyinformation.extension:condominiumUnitNumber.value[x]">
       <path value="Practitioner.address.extension.extension.value[x]" />
       <slicing>
-        <rules value="closed" />
+        <rules value="open" />
       </slicing>
     </element>
     <element id="Practitioner.address.extension:propertyinformation.extension:municipality">
@@ -92,42 +66,12 @@
     <element id="Practitioner.address.extension:propertyinformation.extension:municipality.value[x]">
       <path value="Practitioner.address.extension.extension.value[x]" />
       <slicing>
-        <rules value="closed" />
+        <rules value="open" />
       </slicing>
     </element>
-    <element id="Practitioner.address.extension:official">
-      <path value="Practitioner.address.extension" />
-      <sliceName value="official" />
-    </element>
-    <element id="Practitioner.address.extension:official.value[x]">
-      <path value="Practitioner.address.extension.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="closed" />
-      </slicing>
-    </element>
-    <element id="Practitioner.address.extension:urbanDistrict">
-      <path value="Practitioner.address.extension" />
-      <sliceName value="urbanDistrict" />
-    </element>
-    <element id="Practitioner.address.extension:urbanDistrict.value[x]">
-      <path value="Practitioner.address.extension.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="closed" />
-      </slicing>
-    </element>
-    <element id="Practitioner.qualification.code">
-      <path value="Practitioner.qualification.code" />
-      <slicing>
-        <rules value="closed" />
-      </slicing>
+    <element id="Practitioner.address.use">
+      <path value="Practitioner.address.use" />
+      <max value="0" />
     </element>
   </differential>
 </StructureDefinition>
