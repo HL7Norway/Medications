@@ -212,7 +212,7 @@
       <path value="MedicationStatement.dosage" />
       <slicing>
         <description value="Structured possible repeating information" />
-        <rules value="open" />
+        <rules value="closed" />
       </slicing>
       <definition value="Need changes" />
       <min value="1" />
