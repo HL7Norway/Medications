@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSystem>
+    <id value="sfm-performer-roles.codesystem" />
+    <meta>
+        <versionId value="1" />
+        <lastUpdated value="2019-09-13T00:00:00.000+00:00" />
+    </meta>
+    <url value="http://ehelse.no/fhir/CodeSystem/sfm-performer-roles" />
+    <version value="1.0.0" />
+    <name value="sfm-performer-roles.codesystem" />
+    <status value="draft" />
+    <date value="2019-09-13T00:00:00.000+00:00" />
+    <publisher value="Direktoratet for e-helse" />
+    <content value="complete" />
+      <concept>
+        <code value="1" />
+        <display value="Forskrevet av" />
+      </concept>
+      <concept>
+        <code value="2" />
+        <display value="Instituert av" />
+      </concept>
+      <concept>
+        <code value="3" />
+        <display value="Seponert av" />
+      </concept>
+      <concept>
+        <code value="4" />
+        <display value="Ordinert av" />
+      </concept>
+      <concept>
+        <code value="5" />
+        <display value="Registrert av" />
+      </concept>
+      <concept>
+        <code value="6" />
+        <display value="Signert av" />
+      </concept>
+      <concept>
+        <code value="7" />
+        <display value="Dobbeltsignert av" />
+      </concept>
+      <concept>
+        <code value="8" />
+        <display value="Godkjent av" />
+      </concept>
+</CodeSystem>
