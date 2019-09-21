@@ -42,6 +42,7 @@
     <element id="Extension.extension:codedvalue">
       <path value="Extension.extension" />
       <sliceName value="codedvalue" />
+      <max value="1" />
     </element>
     <element id="Extension.extension:codedvalue.url">
       <path value="Extension.extension.url" />
@@ -73,6 +74,7 @@
       <sliceName value="text" />
       <short value="Textual information about application" />
       <definition value="Text" />
+      <max value="1" />
     </element>
     <element id="Extension.extension:text.url">
       <path value="Extension.extension.url" />
