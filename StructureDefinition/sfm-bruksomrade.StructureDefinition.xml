@@ -42,6 +42,7 @@
     <element id="Extension.extension:codedvalue">
       <path value="Extension.extension" />
       <sliceName value="codedvalue" />
+      <min value="1" />
       <max value="1" />
     </element>
     <element id="Extension.extension:codedvalue.url">
