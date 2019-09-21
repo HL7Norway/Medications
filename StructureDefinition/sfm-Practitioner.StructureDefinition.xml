@@ -52,7 +52,7 @@
     <element id="Practitioner.address.extension:propertyinformation.extension:cadastralUnitNumber.value[x]">
       <path value="Practitioner.address.extension.extension.value[x]" />
       <slicing>
-        <rules value="open" />
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Practitioner.address.extension:propertyinformation.extension:propertyUnitNumber">
@@ -62,7 +62,7 @@
     <element id="Practitioner.address.extension:propertyinformation.extension:propertyUnitNumber.value[x]">
       <path value="Practitioner.address.extension.extension.value[x]" />
       <slicing>
-        <rules value="open" />
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Practitioner.address.extension:propertyinformation.extension:leaseholdNumber">
@@ -72,7 +72,7 @@
     <element id="Practitioner.address.extension:propertyinformation.extension:leaseholdNumber.value[x]">
       <path value="Practitioner.address.extension.extension.value[x]" />
       <slicing>
-        <rules value="open" />
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Practitioner.address.extension:propertyinformation.extension:condominiumUnitNumber">
@@ -82,7 +82,7 @@
     <element id="Practitioner.address.extension:propertyinformation.extension:condominiumUnitNumber.value[x]">
       <path value="Practitioner.address.extension.extension.value[x]" />
       <slicing>
-        <rules value="open" />
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Practitioner.address.extension:propertyinformation.extension:municipality">
@@ -92,7 +92,35 @@
     <element id="Practitioner.address.extension:propertyinformation.extension:municipality.value[x]">
       <path value="Practitioner.address.extension.extension.value[x]" />
       <slicing>
-        <rules value="open" />
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Practitioner.address.extension:official">
+      <path value="Practitioner.address.extension" />
+      <sliceName value="official" />
+    </element>
+    <element id="Practitioner.address.extension:official.value[x]">
+      <path value="Practitioner.address.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Practitioner.address.extension:urbanDistrict">
+      <path value="Practitioner.address.extension" />
+      <sliceName value="urbanDistrict" />
+    </element>
+    <element id="Practitioner.address.extension:urbanDistrict.value[x]">
+      <path value="Practitioner.address.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
   </differential>
