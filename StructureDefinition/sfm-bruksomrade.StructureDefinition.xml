@@ -75,6 +75,7 @@
       <sliceName value="text" />
       <short value="Textual information about application" />
       <definition value="Text" />
+      <min value="1" />
       <max value="1" />
     </element>
     <element id="Extension.extension:text.url">
