@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sfm-Patient" />
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-Patient" />
-  <version value="1.0" />
+  <version value="2.0" />
   <name value="SfmPatient" />
   <title value="sfm-Patient" />
   <status value="draft" />
-  <date value="2019-08-19" />
+  <date value="2019-09-23" />
   <description value="Patient to be used in SFM. It is based on no-basis-Patient." />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
@@ -15,6 +15,30 @@
   <baseDefinition value="http://hl7.no/fhir/StructureDefinition/no-basis-Patient" />
   <derivation value="constraint" />
   <differential>
+    <element id="Patient.extension:citizenship">
+      <path value="Patient.extension" />
+      <sliceName value="citizenship" />
+    </element>
+    <element id="Patient.extension:citizenship.extension:code">
+      <path value="Patient.extension.extension" />
+      <sliceName value="code" />
+    </element>
+    <element id="Patient.extension:citizenship.extension:code.value[x]">
+      <path value="Patient.extension.extension.value[x]" />
+      <slicing>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Patient.extension:citizenship.extension:period">
+      <path value="Patient.extension.extension" />
+      <sliceName value="period" />
+    </element>
+    <element id="Patient.extension:citizenship.extension:period.value[x]">
+      <path value="Patient.extension.extension.value[x]" />
+      <slicing>
+        <rules value="open" />
+      </slicing>
+    </element>
     <element id="Patient.identifier">
       <path value="Patient.identifier" />
       <slicing>
@@ -36,6 +60,7 @@
       <path value="Patient.identifier" />
       <sliceName value="xxxid" />
       <definition value="An identifier for this patient. Should be at Fødselsnummer, D-nummer or locally assigned xxxid" />
+      <min value="1" />
       <max value="1" />
     </element>
     <element id="Patient.identifier:xxxid.system">
@@ -59,6 +84,114 @@
     <element id="Patient.address">
       <path value="Patient.address" />
       <min value="1" />
+    </element>
+    <element id="Patient.address.extension:propertyinformation">
+      <path value="Patient.address.extension" />
+      <sliceName value="propertyinformation" />
+    </element>
+    <element id="Patient.address.extension:propertyinformation.extension:cadastralUnitNumber">
+      <path value="Patient.address.extension.extension" />
+      <sliceName value="cadastralUnitNumber" />
+    </element>
+    <element id="Patient.address.extension:propertyinformation.extension:cadastralUnitNumber.value[x]">
+      <path value="Patient.address.extension.extension.value[x]" />
+      <slicing>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Patient.address.extension:propertyinformation.extension:propertyUnitNumber">
+      <path value="Patient.address.extension.extension" />
+      <sliceName value="propertyUnitNumber" />
+    </element>
+    <element id="Patient.address.extension:propertyinformation.extension:propertyUnitNumber.value[x]">
+      <path value="Patient.address.extension.extension.value[x]" />
+      <slicing>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Patient.address.extension:propertyinformation.extension:leaseholdNumber">
+      <path value="Patient.address.extension.extension" />
+      <sliceName value="leaseholdNumber" />
+    </element>
+    <element id="Patient.address.extension:propertyinformation.extension:leaseholdNumber.value[x]">
+      <path value="Patient.address.extension.extension.value[x]" />
+      <slicing>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Patient.address.extension:propertyinformation.extension:condominiumUnitNumber">
+      <path value="Patient.address.extension.extension" />
+      <sliceName value="condominiumUnitNumber" />
+    </element>
+    <element id="Patient.address.extension:propertyinformation.extension:condominiumUnitNumber.value[x]">
+      <path value="Patient.address.extension.extension.value[x]" />
+      <slicing>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Patient.address.extension:propertyinformation.extension:municipality">
+      <path value="Patient.address.extension.extension" />
+      <sliceName value="municipality" />
+    </element>
+    <element id="Patient.address.extension:propertyinformation.extension:municipality.value[x]">
+      <path value="Patient.address.extension.extension.value[x]" />
+      <slicing>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Patient.contact.address.extension:propertyinformation">
+      <path value="Patient.contact.address.extension" />
+      <sliceName value="propertyinformation" />
+    </element>
+    <element id="Patient.contact.address.extension:propertyinformation.extension:cadastralUnitNumber">
+      <path value="Patient.contact.address.extension.extension" />
+      <sliceName value="cadastralUnitNumber" />
+    </element>
+    <element id="Patient.contact.address.extension:propertyinformation.extension:cadastralUnitNumber.value[x]">
+      <path value="Patient.contact.address.extension.extension.value[x]" />
+      <slicing>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Patient.contact.address.extension:propertyinformation.extension:propertyUnitNumber">
+      <path value="Patient.contact.address.extension.extension" />
+      <sliceName value="propertyUnitNumber" />
+    </element>
+    <element id="Patient.contact.address.extension:propertyinformation.extension:propertyUnitNumber.value[x]">
+      <path value="Patient.contact.address.extension.extension.value[x]" />
+      <slicing>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Patient.contact.address.extension:propertyinformation.extension:leaseholdNumber">
+      <path value="Patient.contact.address.extension.extension" />
+      <sliceName value="leaseholdNumber" />
+    </element>
+    <element id="Patient.contact.address.extension:propertyinformation.extension:leaseholdNumber.value[x]">
+      <path value="Patient.contact.address.extension.extension.value[x]" />
+      <slicing>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Patient.contact.address.extension:propertyinformation.extension:condominiumUnitNumber">
+      <path value="Patient.contact.address.extension.extension" />
+      <sliceName value="condominiumUnitNumber" />
+    </element>
+    <element id="Patient.contact.address.extension:propertyinformation.extension:condominiumUnitNumber.value[x]">
+      <path value="Patient.contact.address.extension.extension.value[x]" />
+      <slicing>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Patient.contact.address.extension:propertyinformation.extension:municipality">
+      <path value="Patient.contact.address.extension.extension" />
+      <sliceName value="municipality" />
+    </element>
+    <element id="Patient.contact.address.extension:propertyinformation.extension:municipality.value[x]">
+      <path value="Patient.contact.address.extension.extension.value[x]" />
+      <slicing>
+        <rules value="open" />
+      </slicing>
     </element>
     <element id="Patient.link.type">
       <path value="Patient.link.type" />
