@@ -152,6 +152,15 @@
         <aggregation value="bundled" />
       </type>
     </element>
+    <element id="MedicationStatement.medication[x]:medicationReference">
+      <path value="MedicationStatement.medicationReference" />
+      <sliceName value="medicationReference" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-Magistrell-Medication" />
+        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-Medication" />
+      </type>
+    </element>
     <element id="MedicationStatement.context">
       <path value="MedicationStatement.context" />
       <definition value="The encounter or episode of care that establishes the context for this MedicationStatement. Not used by SFM." />
