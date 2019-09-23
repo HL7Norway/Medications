@@ -216,7 +216,6 @@
       </slicing>
       <definition value="Need changes" />
       <min value="1" />
-      <max value="1" />
     </element>
     <element id="MedicationStatement.dosage.extension">
       <path value="MedicationStatement.dosage.extension" />
