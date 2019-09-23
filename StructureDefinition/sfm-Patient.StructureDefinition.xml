@@ -44,7 +44,6 @@
       <slicing>
         <rules value="closed" />
       </slicing>
-      <min value="1" />
     </element>
     <element id="Patient.identifier:FHN">
       <path value="Patient.identifier" />
@@ -60,7 +59,6 @@
       <path value="Patient.identifier" />
       <sliceName value="xxxid" />
       <definition value="An identifier for this patient. Should be at Fødselsnummer, D-nummer or locally assigned xxxid" />
-      <min value="1" />
       <max value="1" />
     </element>
     <element id="Patient.identifier:xxxid.system">
