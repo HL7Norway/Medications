@@ -37,36 +37,6 @@
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-regInfo" />
       </type>
     </element>
-    <element id="MedicationStatement.extension:reginfo.extension:type">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="type" />
-    </element>
-    <element id="MedicationStatement.extension:reginfo.extension:type.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:reginfo.extension:helseperson">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="helseperson" />
-    </element>
-    <element id="MedicationStatement.extension:reginfo.extension:helseperson.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:reginfo.extension:timestamp">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="timestamp" />
-    </element>
-    <element id="MedicationStatement.extension:reginfo.extension:timestamp.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
     <element id="MedicationStatement.extension:comment">
       <path value="MedicationStatement.extension" />
       <sliceName value="comment" />
@@ -91,26 +61,6 @@
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-generic-substitution" />
       </type>
     </element>
-    <element id="MedicationStatement.extension:genericSubstitution.extension:genericSubstitutionAccepted">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="genericSubstitutionAccepted" />
-    </element>
-    <element id="MedicationStatement.extension:genericSubstitution.extension:genericSubstitutionAccepted.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:genericSubstitution.extension:reason">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="reason" />
-    </element>
-    <element id="MedicationStatement.extension:genericSubstitution.extension:reason.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
     <element id="MedicationStatement.extension:discontinuationinformation">
       <path value="MedicationStatement.extension" />
       <sliceName value="discontinuationinformation" />
@@ -118,36 +68,6 @@
         <code value="Extension" />
         <profile value="http://eheles.no/fhir/StructureDefinition/sfm-discontinuation" />
       </type>
-    </element>
-    <element id="MedicationStatement.extension:discontinuationinformation.extension:timedate">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="timedate" />
-    </element>
-    <element id="MedicationStatement.extension:discontinuationinformation.extension:timedate.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:discontinuationinformation.extension:reason">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="reason" />
-    </element>
-    <element id="MedicationStatement.extension:discontinuationinformation.extension:reason.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:discontinuationinformation.extension:note">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="note" />
-    </element>
-    <element id="MedicationStatement.extension:discontinuationinformation.extension:note.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
     </element>
     <element id="MedicationStatement.extension:administrationdetails">
       <path value="MedicationStatement.extension" />
@@ -157,60 +77,6 @@
         <code value="Extension" />
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-administration" />
       </type>
-    </element>
-    <element id="MedicationStatement.extension:administrationdetails.extension:administrationofmedication">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="administrationofmedication" />
-    </element>
-    <element id="MedicationStatement.extension:administrationdetails.extension:administrationofmedication.extension:admByWhom">
-      <path value="MedicationStatement.extension.extension.extension" />
-      <sliceName value="admByWhom" />
-    </element>
-    <element id="MedicationStatement.extension:administrationdetails.extension:administrationofmedication.extension:admByWhom.value[x]">
-      <path value="MedicationStatement.extension.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:administrationdetails.extension:administrationofmedication.extension:admWay">
-      <path value="MedicationStatement.extension.extension.extension" />
-      <sliceName value="admWay" />
-    </element>
-    <element id="MedicationStatement.extension:administrationdetails.extension:administrationofmedication.extension:admWay.value[x]">
-      <path value="MedicationStatement.extension.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:administrationdetails.extension:administrationofmedication.extension:admBySchema">
-      <path value="MedicationStatement.extension.extension.extension" />
-      <sliceName value="admBySchema" />
-    </element>
-    <element id="MedicationStatement.extension:administrationdetails.extension:administrationofmedication.extension:admBySchema.value[x]">
-      <path value="MedicationStatement.extension.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:administrationdetails.extension:administrationofmedication.extension:admSchema">
-      <path value="MedicationStatement.extension.extension.extension" />
-      <sliceName value="admSchema" />
-    </element>
-    <element id="MedicationStatement.extension:administrationdetails.extension:administrationofmedication.extension:admSchema.value[x]">
-      <path value="MedicationStatement.extension.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:administrationdetails.extension:admBy">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="admBy" />
-    </element>
-    <element id="MedicationStatement.extension:administrationdetails.extension:admBy.value[x]">
-      <path value="MedicationStatement.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
     </element>
     <element id="MedicationStatement.extension:reseptInfo">
       <path value="MedicationStatement.extension" />
@@ -284,15 +150,6 @@
         <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Medication" />
         <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Magistrell-Medication" />
         <aggregation value="bundled" />
-      </type>
-    </element>
-    <element id="MedicationStatement.medication[x]:medicationReference">
-      <path value="MedicationStatement.medication[x]" />
-      <sliceName value="medicationReference" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Medication" />
-        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Magistrell-Medication" />
       </type>
     </element>
     <element id="MedicationStatement.context">
