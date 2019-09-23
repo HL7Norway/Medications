@@ -44,6 +44,7 @@
       <slicing>
         <rules value="closed" />
       </slicing>
+      <min value="1" />
     </element>
     <element id="Patient.identifier:FHN">
       <path value="Patient.identifier" />
