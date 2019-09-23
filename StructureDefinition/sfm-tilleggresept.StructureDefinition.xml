@@ -1094,6 +1094,250 @@
       <path value="Extension.extension.value[x]" />
       <max value="0" />
     </element>
+    <element id="Extension.extension:ereseptdosing">
+      <path value="Extension.extension" />
+      <sliceName value="ereseptdosing" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension">
+      <path value="Extension.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:starttime">
+      <path value="Extension.extension.extension" />
+      <sliceName value="starttime" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:starttime.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedString value="starttime" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:endtime">
+      <path value="Extension.extension.extension" />
+      <sliceName value="endtime" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:endtime.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedString value="endtime" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:dosingrule">
+      <path value="Extension.extension.extension" />
+      <sliceName value="dosingrule" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:dosingrule.extension">
+      <path value="Extension.extension.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:dosingrule.extension:dosebasedon">
+      <path value="Extension.extension.extension.extension" />
+      <sliceName value="dosebasedon" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:dosingrule.extension:dosebasedon.url">
+      <path value="Extension.extension.extension.extension.url" />
+      <fixedString value="dosebasedon" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:dosingrule.extension:text">
+      <path value="Extension.extension.extension.extension" />
+      <sliceName value="text" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:dosingrule.extension:text.url">
+      <path value="Extension.extension.extension.extension.url" />
+      <fixedString value="text" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:dosingrule.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedString value="dosingrule" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:dosingrule.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <max value="0" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage">
+      <path value="Extension.extension.extension" />
+      <sliceName value="repeatingdosage" />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension">
+      <path value="Extension.extension.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:amount">
+      <path value="Extension.extension.extension.extension" />
+      <sliceName value="amount" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:amount.url">
+      <path value="Extension.extension.extension.extension.url" />
+      <fixedString value="amount" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:interval">
+      <path value="Extension.extension.extension.extension" />
+      <sliceName value="interval" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:interval.url">
+      <path value="Extension.extension.extension.extension.url" />
+      <fixedString value="interval" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:infusionspeed">
+      <path value="Extension.extension.extension.extension" />
+      <sliceName value="infusionspeed" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:infusionspeed.extension">
+      <path value="Extension.extension.extension.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:infusionspeed.extension:volum">
+      <path value="Extension.extension.extension.extension.extension" />
+      <sliceName value="volum" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:infusionspeed.extension:volum.url">
+      <path value="Extension.extension.extension.extension.extension.url" />
+      <fixedString value="volum" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:infusionspeed.extension:timeunit">
+      <path value="Extension.extension.extension.extension.extension" />
+      <sliceName value="timeunit" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:infusionspeed.extension:timeunit.url">
+      <path value="Extension.extension.extension.extension.extension.url" />
+      <fixedString value="timeunit" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:infusionspeed.url">
+      <path value="Extension.extension.extension.extension.url" />
+      <fixedString value="infusionspeed" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:infusionspeed.value[x]">
+      <path value="Extension.extension.extension.extension.value[x]" />
+      <max value="0" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:time">
+      <path value="Extension.extension.extension.extension" />
+      <sliceName value="time" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:time.url">
+      <path value="Extension.extension.extension.extension.url" />
+      <fixedString value="time" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:timerange">
+      <path value="Extension.extension.extension.extension" />
+      <sliceName value="timerange" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:timerange.url">
+      <path value="Extension.extension.extension.extension.url" />
+      <fixedString value="timerange" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:accurate">
+      <path value="Extension.extension.extension.extension" />
+      <sliceName value="accurate" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:accurate.url">
+      <path value="Extension.extension.extension.extension.url" />
+      <fixedString value="accurate" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence">
+      <path value="Extension.extension.extension.extension" />
+      <sliceName value="dosingsequence" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence.extension">
+      <path value="Extension.extension.extension.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence.extension:weekdays">
+      <path value="Extension.extension.extension.extension.extension" />
+      <sliceName value="weekdays" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence.extension:weekdays.url">
+      <path value="Extension.extension.extension.extension.extension.url" />
+      <fixedString value="weekdays" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence.extension:dayson">
+      <path value="Extension.extension.extension.extension.extension" />
+      <sliceName value="dayson" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence.extension:dayson.url">
+      <path value="Extension.extension.extension.extension.extension.url" />
+      <fixedString value="dayson" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence.extension:daysoff">
+      <path value="Extension.extension.extension.extension.extension" />
+      <sliceName value="daysoff" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence.extension:daysoff.url">
+      <path value="Extension.extension.extension.extension.extension.url" />
+      <fixedString value="daysoff" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence.url">
+      <path value="Extension.extension.extension.extension.url" />
+      <fixedString value="dosingsequence" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence.value[x]">
+      <path value="Extension.extension.extension.extension.value[x]" />
+      <max value="0" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedString value="repeatingdosage" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <max value="0" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="ereseptdosing" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <max value="0" />
+    </element>
     <element id="Extension.url">
       <path value="Extension.url" />
       <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-reseptamendment" />
