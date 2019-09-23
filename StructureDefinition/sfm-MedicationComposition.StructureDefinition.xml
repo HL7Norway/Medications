@@ -75,21 +75,23 @@
       <short value="Medication list" />
       <definition value="This section contains medication" />
       <min value="1" />
-      <max value="1" />
     </element>
-    <element id="Composition.section:sectionPLL">
+    <element id="Composition.section:sectionPLLinfo">
       <path value="Composition.section" />
-      <sliceName value="sectionPLL" />
+      <sliceName value="sectionPLLinfo" />
       <code>
         <system value="http://ehelse.no/fhir/CodeSystem/sfm-section-types" />
         <code value="sectionPLL" />
       </code>
+      <short value="toplevel info from PLL" />
+      <definition value="Contains information on special practitioner roles and delivery information for multidose patients" />
       <min value="1" />
       <max value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Composition.section:sectionPLL.entry">
+    <element id="Composition.section:sectionPLLinfo.entry">
       <path value="Composition.section.entry" />
+      <max value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-PLL-info" />
@@ -121,6 +123,27 @@
         <aggregation value="bundled" />
       </type>
     </element>
+    <element id="Composition.section:sectionOtherPrescriptions">
+      <path value="Composition.section" />
+      <sliceName value="sectionOtherPrescriptions" />
+      <code>
+        <system value="http://ehelse.no/fhir/CodeSystem/sfm-section-types" />
+        <code value="sectionOtherPrescriptions" />
+      </code>
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:sectionOtherPrescriptions.entry">
+      <path value="Composition.section.entry" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-BandaProduct" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-NutritionStatement" />
+        <aggregation value="referenced" />
+        <aggregation value="bundled" />
+      </type>
+    </element>
     <element id="Composition.section:sectionAllergies">
       <path value="Composition.section" />
       <sliceName value="sectionAllergies" />
@@ -132,15 +155,12 @@
       <max value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Composition.section:sectionOtherPrescriptions">
-      <path value="Composition.section" />
-      <sliceName value="sectionOtherPrescriptions" />
-      <code>
-        <system value="http://ehelse.no/fhir/CodeSystem/sfm-section-types" />
-        <code value="sectionOtherPrescriptions" />
-      </code>
-      <max value="1" />
-      <mustSupport value="true" />
+    <element id="Composition.section:sectionAllergies.entry">
+      <path value="Composition.section.entry" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-AllergyIntolerance" />
+      </type>
     </element>
     <element id="Composition.section:sectionDispense">
       <path value="Composition.section" />
