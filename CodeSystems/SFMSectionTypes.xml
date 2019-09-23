@@ -20,6 +20,10 @@
         <code value="sectionPLL" />
         <display value="Section containing PLL specific info an optionally information on Multidose relations" />
     </concept>
+        <concept>
+        <code value="sectionPLLinfo" />
+        <display value="Section containing PLL specific info an optionally information on Multidose relations" />
+    </concept>
     <concept>
         <code value="sectionAllergies" />
         <display value="Section containg allergies from KI/Kjernejournal" />
