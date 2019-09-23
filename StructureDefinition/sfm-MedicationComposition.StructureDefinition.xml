@@ -172,5 +172,12 @@
       <max value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="Composition.section:sectionDispense.entry">
+      <path value="Composition.section.entry" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-MedicationDispense" />
+      </type>
+    </element>
   </differential>
 </StructureDefinition>
