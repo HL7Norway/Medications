@@ -15,6 +15,66 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicationDispense" />
   <derivation value="constraint" />
   <differential>
+    <element id="MedicationDispense.extension">
+      <path value="MedicationDispense.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="MedicationDispense.extension:dispenceinfo">
+      <path value="MedicationDispense.extension" />
+      <sliceName value="dispenceinfo" />
+      <short value="Information about the dispence" />
+      <definition value="Information from Norwegian e-resept about the dispence." />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://example.org/fhir/StructureDefinition/sfm-dispenceinfo" />
+      </type>
+    </element>
+    <element id="MedicationDispense.extension:dispenceinfo.extension:refparagraph">
+      <path value="MedicationDispense.extension.extension" />
+      <sliceName value="refparagraph" />
+    </element>
+    <element id="MedicationDispense.extension:dispenceinfo.extension:refparagraph.value[x]">
+      <path value="MedicationDispense.extension.extension.value[x]" />
+      <slicing>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="MedicationDispense.extension:dispenceinfo.extension:refcode">
+      <path value="MedicationDispense.extension.extension" />
+      <sliceName value="refcode" />
+    </element>
+    <element id="MedicationDispense.extension:dispenceinfo.extension:refcode.value[x]">
+      <path value="MedicationDispense.extension.extension.value[x]" />
+      <slicing>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="MedicationDispense.extension:dispenceinfo.extension:refcode.value[x]:valueCodeableConcept">
+      <path value="MedicationDispense.extension.extension.value[x]" />
+      <sliceName value="valueCodeableConcept" />
+    </element>
+    <element id="MedicationDispense.extension:dispenceinfo.extension:refcode.value[x]:valueCodeableConcept.coding">
+      <path value="MedicationDispense.extension.extension.value[x].coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="MedicationDispense.status">
+      <path value="MedicationDispense.status" />
+      <definition value="A code specifying the state of the set of dispense events.&#xD;&#xA;&#xD;&#xA;SFM will allways use &quot;completed&quot; since it is confirmed by pharmacy." />
+    </element>
     <element id="MedicationDispense.medication[x]">
       <path value="MedicationDispense.medication[x]" />
       <type>
@@ -23,6 +83,43 @@
         <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Magistrell-Medication" />
         <aggregation value="bundled" />
       </type>
+    </element>
+    <element id="MedicationDispense.authorizingPrescription">
+      <path value="MedicationDispense.authorizingPrescription" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationRequest" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-MedicationStatement" />
+      </type>
+    </element>
+    <element id="MedicationDispense.substitution.extension">
+      <path value="MedicationDispense.substitution.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="MedicationDispense.substitution.extension:substitutiondetails">
+      <path value="MedicationDispense.substitution.extension" />
+      <sliceName value="substitutiondetails" />
+      <short value="details related to substitution" />
+      <definition value="Informaiton from norwegian dispence." />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://example.org/fhir/StructureDefinition/sfm-substitutioninfo" />
+      </type>
+    </element>
+    <element id="MedicationDispense.substitution.type.coding.system">
+      <path value="MedicationDispense.substitution.type.coding.system" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7413" />
+    </element>
+    <element id="MedicationDispense.substitution.reason.coding.system">
+      <path value="MedicationDispense.substitution.reason.coding.system" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7412" />
     </element>
   </differential>
 </StructureDefinition>
