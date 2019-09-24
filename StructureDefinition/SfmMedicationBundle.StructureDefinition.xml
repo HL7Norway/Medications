@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://example.org/fhir/StructureDefinition/SfmMedicationBundle" />
+  <id value="sfm-MedicationBundle" />
+  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-MedicationBundle" />
+  <version value="1.0" />
   <name value="SfmMedicationBundle" />
+  <title value="sfm-MedicationBundle" />
   <status value="draft" />
+  <date value="2019-09-24" />
+  <description value="Profile on Bundle for use as container for medications and prescription data in SFM API Basis" />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="v2" />

@@ -4,7 +4,9 @@
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-MedicationComposition" />
   <version value="1.0" />
   <name value="SfmMedicationComposition" />
+  <title value="sfm-MedicationComposition" />
   <status value="draft" />
+  <date value="2019-09-24" />
   <description value="Bundle for use in SFM API for aggregated medication and prescription info" />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
