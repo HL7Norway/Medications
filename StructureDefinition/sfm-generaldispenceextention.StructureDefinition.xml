@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="sfm-generaldispenceextention" />
+  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-generaldispenceextention" />
+  <version value="1.0" />
+  <name value="SfmGeneraldispenceextention" />
+  <title value="sfm-generaldispenceextention" />
+  <status value="draft" />
+  <date value="2019-09-25" />
+  <description value="Information about banda dispence" />
+  <fhirVersion value="4.0.0" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Basic" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:product">
+      <path value="Extension.extension" />
+      <sliceName value="product" />
+      <short value="Product number" />
+      <definition value="Product number given by FEST." />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:product.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="product" />
+    </element>
+    <element id="Extension.extension:product.value[x]:varenummer">
+      <path value="Extension.extension.value[x]" />
+      <sliceName value="varenummer" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:text">
+      <path value="Extension.extension" />
+      <sliceName value="text" />
+      <short value="Usage instructions" />
+      <definition value="Information about how to use the delivered product." />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:text.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="text" />
+    </element>
+    <element id="Extension.extension:text.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:productgroup">
+      <path value="Extension.extension" />
+      <sliceName value="productgroup" />
+      <short value="Group the product is registered in" />
+      <definition value="Refunding group that the product is registered in." />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:productgroup.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="productgroup" />
+    </element>
+    <element id="Extension.extension:productgroup.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:productgroup.value[x]:valueCodeableConcept">
+      <path value="Extension.extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.extension:productgroup.value[x]:valueCodeableConcept.coding.system">
+      <path value="Extension.extension.valueCodeableConcept.coding.system" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7403" />
+    </element>
+    <element id="Extension.extension:performer">
+      <path value="Extension.extension" />
+      <sliceName value="performer" />
+      <short value="Who has dispenced the product" />
+      <definition value="Pharmacy or bandage shop dispensing the product. " />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:performer.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="performer" />
+    </element>
+    <element id="Extension.extension:performer.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-generaldispenceextention" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

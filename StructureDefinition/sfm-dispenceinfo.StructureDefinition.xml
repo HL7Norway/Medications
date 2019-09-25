@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sfm-dispenceinfo" />
-  <url value="http://example.org/fhir/StructureDefinition/sfm-dispenceinfo" />
+  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-dispenceinfo" />
   <version value="1.0" />
   <name value="SfmDispenceinfo" />
   <title value="sfm-dispenceinfo" />
@@ -19,6 +19,10 @@
   <context>
     <type value="element" />
     <expression value="MedicationDispense" />
+  </context>
+  <context>
+    <type value="element" />
+    <expression value="Basic" />
   </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
@@ -209,7 +213,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedString value="http://example.org/fhir/StructureDefinition/sfm-dispenceinfo" />
+      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-dispenceinfo" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

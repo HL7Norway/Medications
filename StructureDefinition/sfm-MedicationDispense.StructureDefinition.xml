@@ -25,42 +25,41 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="MedicationDispense.extension:dispenceinfo">
+    <element id="MedicationDispense.extension:dispenceInfo">
       <path value="MedicationDispense.extension" />
-      <sliceName value="dispenceinfo" />
-      <short value="Information about the dispence" />
-      <definition value="Information from Norwegian e-resept about the dispence." />
+      <sliceName value="dispenceInfo" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://example.org/fhir/StructureDefinition/sfm-dispenceinfo" />
+        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-dispenceinfo" />
       </type>
     </element>
-    <element id="MedicationDispense.extension:dispenceinfo.extension:refparagraph">
+    <element id="MedicationDispense.extension:dispenceInfo.extension:refparagraph">
       <path value="MedicationDispense.extension.extension" />
       <sliceName value="refparagraph" />
     </element>
-    <element id="MedicationDispense.extension:dispenceinfo.extension:refparagraph.value[x]">
+    <element id="MedicationDispense.extension:dispenceInfo.extension:refparagraph.value[x]">
       <path value="MedicationDispense.extension.extension.value[x]" />
       <slicing>
         <rules value="open" />
       </slicing>
     </element>
-    <element id="MedicationDispense.extension:dispenceinfo.extension:refcode">
+    <element id="MedicationDispense.extension:dispenceInfo.extension:refcode">
       <path value="MedicationDispense.extension.extension" />
       <sliceName value="refcode" />
     </element>
-    <element id="MedicationDispense.extension:dispenceinfo.extension:refcode.value[x]">
+    <element id="MedicationDispense.extension:dispenceInfo.extension:refcode.value[x]">
       <path value="MedicationDispense.extension.extension.value[x]" />
       <slicing>
         <rules value="open" />
       </slicing>
     </element>
-    <element id="MedicationDispense.extension:dispenceinfo.extension:refcode.value[x]:valueCodeableConcept">
+    <element id="MedicationDispense.extension:dispenceInfo.extension:refcode.value[x]:valueCodeableConcept">
       <path value="MedicationDispense.extension.extension.value[x]" />
       <sliceName value="valueCodeableConcept" />
     </element>
-    <element id="MedicationDispense.extension:dispenceinfo.extension:refcode.value[x]:valueCodeableConcept.coding">
+    <element id="MedicationDispense.extension:dispenceInfo.extension:refcode.value[x]:valueCodeableConcept.coding">
       <path value="MedicationDispense.extension.extension.value[x].coding" />
       <slicing>
         <discriminator>
@@ -70,6 +69,14 @@
         <rules value="open" />
       </slicing>
       <min value="1" />
+    </element>
+    <element id="MedicationDispense.identifier">
+      <path value="MedicationDispense.identifier" />
+      <definition value="Identifiers associated with this Medication Dispense that are defined by business processes and/or used to refer to it when a direct URL reference to the resource itself is not appropriate. They are business identifiers assigned to this resource by the performer or other systems and remain constant as the resource is updated and propagates from server to server.&#xD;&#xA;&#xD;&#xA;M10-id will be communicated as identifier. " />
+    </element>
+    <element id="MedicationDispense.identifier.value">
+      <path value="MedicationDispense.identifier.value" />
+      <definition value="The portion of the identifier typically relevant to the user and which is unique within the context of the system.&#xD;&#xA;&#xD;&#xA;" />
     </element>
     <element id="MedicationDispense.status">
       <path value="MedicationDispense.status" />
@@ -102,15 +109,14 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="MedicationDispense.substitution.extension:substitutiondetails">
+    <element id="MedicationDispense.substitution.extension:substitutionInfo">
       <path value="MedicationDispense.substitution.extension" />
-      <sliceName value="substitutiondetails" />
-      <short value="details related to substitution" />
-      <definition value="Informaiton from norwegian dispence." />
+      <sliceName value="substitutionInfo" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://example.org/fhir/StructureDefinition/sfm-substitutioninfo" />
+        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-substitutioninfo" />
       </type>
     </element>
     <element id="MedicationDispense.substitution.type.coding.system">
