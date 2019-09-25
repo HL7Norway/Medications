@@ -7,7 +7,7 @@
   <title value="sfm-GeneralDispense" />
   <status value="draft" />
   <date value="2019-09-25" />
-  <description value="Dispence for nutrition and material. " />
+  <description value="Dispence for nutrition and material." />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
@@ -38,7 +38,6 @@
     <element id="Basic.extension:substitutioninfo">
       <path value="Basic.extension" />
       <sliceName value="substitutioninfo" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -55,41 +54,10 @@
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-dispenseinfo" />
       </type>
     </element>
-    <element id="Basic.extension:dispenseinfo.extension:refparagraph">
-      <path value="Basic.extension.extension" />
-      <sliceName value="refparagraph" />
-    </element>
-    <element id="Basic.extension:dispenseinfo.extension:refparagraph.value[x]">
-      <path value="Basic.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
     <element id="Basic.extension:dispenseinfo.extension:refcode">
       <path value="Basic.extension.extension" />
       <sliceName value="refcode" />
       <max value="0" />
-    </element>
-    <element id="Basic.extension:dispenseinfo.extension:refcode.value[x]">
-      <path value="Basic.extension.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Basic.extension:dispenseinfo.extension:refcode.value[x]:valueCodeableConcept">
-      <path value="Basic.extension.extension.value[x]" />
-      <sliceName value="valueCodeableConcept" />
-    </element>
-    <element id="Basic.extension:dispenseinfo.extension:refcode.value[x]:valueCodeableConcept.coding">
-      <path value="Basic.extension.extension.value[x].coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
     </element>
     <element id="Basic.extension:generaldispenseinfo">
       <path value="Basic.extension" />
@@ -111,7 +79,7 @@
     </element>
     <element id="Basic.identifier">
       <path value="Basic.identifier" />
-      <definition value="Identifier assigned to the resource for business purposes, outside the context of FHIR.&#xD;&#xA;&#xD;&#xA;M10-id will be communcated as identifier. " />
+      <definition value="Identifier assigned to the resource for business purposes, outside the context of FHIR.&#xD;&#xA;&#xD;&#xA;M10-id will be communcated as identifier." />
     </element>
     <element id="Basic.code.coding.system">
       <path value="Basic.code.coding.system" />

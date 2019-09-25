@@ -46,9 +46,19 @@
       <path value="Extension.extension.url" />
       <fixedString value="product" />
     </element>
-    <element id="Extension.extension:product.value[x]:varenummer">
+    <element id="Extension.extension:product.value[x]">
       <path value="Extension.extension.value[x]" />
-      <sliceName value="varenummer" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:product.value[x]:valueString">
+      <path value="Extension.extension.value[x]" />
+      <sliceName value="valueString" />
       <type>
         <code value="string" />
       </type>
@@ -64,8 +74,9 @@
       <path value="Extension.extension.url" />
       <fixedString value="text" />
     </element>
-    <element id="Extension.extension:text.value[x]">
+    <element id="Extension.extension:text.value[x]:text">
       <path value="Extension.extension.value[x]" />
+      <sliceName value="text" />
       <type>
         <code value="string" />
       </type>
@@ -93,21 +104,21 @@
       </slicing>
     </element>
     <element id="Extension.extension:productgroup.value[x]:valueCodeableConcept">
-      <path value="Extension.extension.valueCodeableConcept" />
+      <path value="Extension.extension.value[x]" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
     <element id="Extension.extension:productgroup.value[x]:valueCodeableConcept.coding.system">
-      <path value="Extension.extension.valueCodeableConcept.coding.system" />
+      <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7403" />
     </element>
     <element id="Extension.extension:performer">
       <path value="Extension.extension" />
       <sliceName value="performer" />
       <short value="Who has dispenced the product" />
-      <definition value="Pharmacy or bandage shop dispensing the product. " />
+      <definition value="Pharmacy or bandage shop dispensing the product." />
       <min value="1" />
       <max value="1" />
     </element>
