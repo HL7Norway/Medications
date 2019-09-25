@@ -18,11 +18,11 @@
     </concept>
     <concept>
         <code value="sectionPLL" />
-        <display value="Section containing PLL specific info an optionally information on Multidose relations" />
+        <display value="Section containing PLL the entries in PLL (liboppføring)" />
     </concept>
         <concept>
         <code value="sectionPLLinfo" />
-        <display value="Section containing PLL specific info an optionally information on Multidose relations" />
+        <display value="Section containing PLL specific info and optionally information on Multidose relations" />
     </concept>
     <concept>
         <code value="sectionAllergies" />
@@ -35,5 +35,9 @@
     <concept>
         <code value="sectionDispense" />
         <display value="section containing information on dispense of items from phamacy or banda" />
+    </concept>
+    <concept>
+        <code value="sectionResponse" />
+        <display value="section containing information on response to applications" />
     </concept>
 </CodeSystem>
