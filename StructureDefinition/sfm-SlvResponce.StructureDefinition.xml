@@ -49,15 +49,15 @@
       <path value="Basic.code" />
       <fixedCodeableConcept>
         <coding>
-          <system value="http://ehelse.no/fhir/CodeSystem/sfm-message-type" />
-          <code value="M15" />
-          <display value="Svar fra SLV" />
+          <system value="urn:oid:2.16.578.1.12.4.1.1.8279" />
+          <code value="ERM15" />
+          <display value="Søknadssvar fra Legemiddelverket" />
         </coding>
       </fixedCodeableConcept>
-      <binding>
-        <strength value="required" />
-        <valueSet value="http://ehelse.no/fhir/CodeSystem/sfm-message-type" />
-      </binding>
+    </element>
+    <element id="Basic.code.coding.system">
+      <path value="Basic.code.coding.system" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.8279" />
     </element>
   </differential>
 </StructureDefinition>

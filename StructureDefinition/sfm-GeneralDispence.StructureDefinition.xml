@@ -81,9 +81,26 @@
       <path value="Basic.identifier" />
       <definition value="Identifier assigned to the resource for business purposes, outside the context of FHIR.&#xD;&#xA;&#xD;&#xA;M10-id will be communcated as identifier." />
     </element>
+    <element id="Basic.code">
+      <path value="Basic.code" />
+      <fixedCodeableConcept>
+        <coding>
+          <system value="urn:oid:2.16.578.1.12.4.1.1.8279" />
+          <code value="ERM6" />
+        </coding>
+        <coding>
+          <system value="urn:oid:2.16.578.1.12.4.1.1.8279" />
+          <code value="ERM8" />
+        </coding>
+      </fixedCodeableConcept>
+      <binding>
+        <strength value="required" />
+        <valueSet value="urn:oid:2.16.578.1.12.4.1.1.8279" />
+      </binding>
+    </element>
     <element id="Basic.code.coding.system">
       <path value="Basic.code.coding.system" />
-      <fixedUri value="http://hl7.org/fhir/ValueSet/medicationdispense-status|4.0.0" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.8279" />
     </element>
   </differential>
 </StructureDefinition>
