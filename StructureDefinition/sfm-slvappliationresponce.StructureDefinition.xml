@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="sfm-slvappliationresponce" />
-  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-slvappliationresponce" />
+  <id value="sfm-slvappliationresponse" />
+  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-slvappliationresponse" />
   <version value="1.0" />
-  <name value="SfmSlvappliationresponce" />
-  <title value="sfm-slvappliationresponce" />
+  <name value="SfmSlvappliationresponse" />
+  <title value="sfm-slvappliationresponse" />
   <status value="draft" />
   <date value="2019-09-25" />
-  <description value="Content of the responce from SLV" />
+  <description value="Content of the response from SLV" />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
@@ -93,7 +93,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-slvappliationresponce" />
+      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-slvappliationresponse" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

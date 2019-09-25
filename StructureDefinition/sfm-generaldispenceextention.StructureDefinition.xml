@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="sfm-generaldispenceextention" />
-  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-generaldispenceextention" />
+  <id value="sfm-generaldispenseextention" />
+  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-generaldispenseextention" />
   <version value="1.0" />
-  <name value="SfmGeneraldispenceextention" />
-  <title value="sfm-generaldispenceextention" />
+  <name value="SfmGeneraldispenseextention" />
+  <title value="sfm-generaldispenseextention" />
   <status value="draft" />
   <date value="2019-09-25" />
-  <description value="Information about banda dispence" />
+  <description value="Information about banda dispense" />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
@@ -123,7 +123,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-generaldispenceextention" />
+      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-generaldispenseextention" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

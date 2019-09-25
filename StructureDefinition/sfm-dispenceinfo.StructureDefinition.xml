@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="sfm-dispenceinfo" />
-  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-dispenceinfo" />
+  <id value="sfm-dispenseinfo" />
+  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-dispenseinfo" />
   <version value="1.0" />
-  <name value="SfmDispenceinfo" />
-  <title value="sfm-dispenceinfo" />
+  <name value="SfmDispenseinfo" />
+  <title value="sfm-dispenseinfo" />
   <status value="draft" />
   <date value="2019-09-24" />
-  <description value="Information from norwegian dispence message. " />
+  <description value="Information from norwegian dispense message. " />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
@@ -213,7 +213,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-dispenceinfo" />
+      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-dispenseinfo" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

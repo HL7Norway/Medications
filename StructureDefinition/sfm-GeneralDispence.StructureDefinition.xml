@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-GeneralDispence" />
-  <name value="SfmGeneralDispence" />
+  <id value="sfm-GeneralDispense" />
+  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-GeneralDispense" />
+  <version value="1.0" />
+  <name value="SfmGeneralDispense" />
+  <title value="sfm-GeneralDispense" />
   <status value="draft" />
+  <date value="2019-09-25" />
+  <description value="Dispence for nutrition and material. " />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
@@ -30,61 +35,52 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Basic.extension:generaldispenceinfo">
+    <element id="Basic.extension:substitutioninfo">
       <path value="Basic.extension" />
-      <sliceName value="generaldispenceinfo" />
+      <sliceName value="substitutioninfo" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-substitutioninfo" />
+      </type>
+    </element>
+    <element id="Basic.extension:dispenseinfo">
+      <path value="Basic.extension" />
+      <sliceName value="dispenseinfo" />
       <min value="1" />
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-generaldispenceextention" />
+        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-dispenseinfo" />
       </type>
     </element>
-    <element id="Basic.extension:generaldispenceinfo.extension:product">
-      <path value="Basic.extension.extension" />
-      <sliceName value="product" />
-    </element>
-    <element id="Basic.extension:generaldispenceinfo.extension:product.value[x]:valueString">
-      <path value="Basic.extension.extension.value[x]" />
-      <sliceName value="valueString" />
-    </element>
-    <element id="Basic.extension:dispenceinfo">
-      <path value="Basic.extension" />
-      <sliceName value="dispenceinfo" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-dispenceinfo" />
-      </type>
-    </element>
-    <element id="Basic.extension:dispenceinfo.extension:refparagraph">
+    <element id="Basic.extension:dispenseinfo.extension:refparagraph">
       <path value="Basic.extension.extension" />
       <sliceName value="refparagraph" />
-      <min value="1" />
     </element>
-    <element id="Basic.extension:dispenceinfo.extension:refparagraph.value[x]">
+    <element id="Basic.extension:dispenseinfo.extension:refparagraph.value[x]">
       <path value="Basic.extension.extension.value[x]" />
       <slicing>
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Basic.extension:dispenceinfo.extension:refcode">
+    <element id="Basic.extension:dispenseinfo.extension:refcode">
       <path value="Basic.extension.extension" />
       <sliceName value="refcode" />
       <max value="0" />
     </element>
-    <element id="Basic.extension:dispenceinfo.extension:refcode.value[x]">
+    <element id="Basic.extension:dispenseinfo.extension:refcode.value[x]">
       <path value="Basic.extension.extension.value[x]" />
       <slicing>
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Basic.extension:dispenceinfo.extension:refcode.value[x]:valueCodeableConcept">
+    <element id="Basic.extension:dispenseinfo.extension:refcode.value[x]:valueCodeableConcept">
       <path value="Basic.extension.extension.value[x]" />
       <sliceName value="valueCodeableConcept" />
     </element>
-    <element id="Basic.extension:dispenceinfo.extension:refcode.value[x]:valueCodeableConcept.coding">
+    <element id="Basic.extension:dispenseinfo.extension:refcode.value[x]:valueCodeableConcept.coding">
       <path value="Basic.extension.extension.value[x].coding" />
       <slicing>
         <discriminator>
@@ -95,15 +91,23 @@
       </slicing>
       <min value="1" />
     </element>
-    <element id="Basic.extension:substitutioninfo">
+    <element id="Basic.extension:generaldispenseinfo">
       <path value="Basic.extension" />
-      <sliceName value="substitutioninfo" />
-      <min value="0" />
+      <sliceName value="generaldispenseinfo" />
+      <min value="1" />
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-substitutioninfo" />
+        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-generaldispenseextention" />
       </type>
+    </element>
+    <element id="Basic.extension:generaldispenseinfo.extension:product">
+      <path value="Basic.extension.extension" />
+      <sliceName value="product" />
+    </element>
+    <element id="Basic.extension:generaldispenseinfo.extension:product.value[x]:valueString">
+      <path value="Basic.extension.extension.value[x]" />
+      <sliceName value="valueString" />
     </element>
     <element id="Basic.identifier">
       <path value="Basic.identifier" />
