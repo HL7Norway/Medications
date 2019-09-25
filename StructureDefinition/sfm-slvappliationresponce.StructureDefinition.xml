@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="sfm-slvappliationresponce" />
+  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-slvappliationresponce" />
+  <version value="1.0" />
+  <name value="SfmSlvappliationresponce" />
+  <title value="sfm-slvappliationresponce" />
+  <status value="draft" />
+  <date value="2019-09-25" />
+  <description value="Content of the responce from SLV" />
+  <fhirVersion value="4.0.0" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Basic" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:reseptid">
+      <path value="Extension.extension" />
+      <sliceName value="reseptid" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:reseptid.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="reseptid" />
+    </element>
+    <element id="Extension.extension:reseptid.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:granted">
+      <path value="Extension.extension" />
+      <sliceName value="granted" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:granted.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="granted" />
+    </element>
+    <element id="Extension.extension:granted.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="boolean" />
+      </type>
+    </element>
+    <element id="Extension.extension:text">
+      <path value="Extension.extension" />
+      <sliceName value="text" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:text.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="text" />
+    </element>
+    <element id="Extension.extension:caseworker">
+      <path value="Extension.extension" />
+      <sliceName value="caseworker" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:caseworker.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="caseworker" />
+    </element>
+    <element id="Extension.extension:caseworker.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-slvappliationresponce" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

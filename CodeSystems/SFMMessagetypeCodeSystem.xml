@@ -24,4 +24,8 @@
         <code value="M25.3" />
         <display value="Multidose utleveringsmelding" />
       </concept>
+      <concept>
+        <code value="M15" />
+        <display value="Svar fra SLV" />
+      </concept>
 </CodeSystem>
