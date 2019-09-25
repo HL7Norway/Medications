@@ -8,6 +8,7 @@
   <status value="draft" />
   <date value="2019-09-24" />
   <description value="Bundle for use in SFM API for aggregated medication and prescription info" />
+  <purpose value="The purpose of this profile is to define the structure of the SfmMedicationBundle." />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
   <abstract value="false" />
@@ -19,6 +20,7 @@
       <path value="Composition" />
       <short value="Norwegian Composition for PLL and Prescriptions" />
       <definition value="Norwegian Composition for PLL and Prescriptions. A composition for aggregated information provided by SFM to systems consuming the API Basis. The Composition is a result of lookup to national systems for prescription (Reseptformidleren) and medication history from Kjernejounal. The composition is also used for submitting updates to the nationals systems. The PLL (short for Pasientens LegemiddelListe : Patient medication list) is supported by separate identifier in sfmMedicationStatement." />
+      <comment value="The Composition refers to some sfm specific profiles, and other norwegian basis profiles (no-basis). This may change over time untill final specification is published in advance of initial production release of SFM API Basis " />
     </element>
     <element id="Composition.subject">
       <path value="Composition.subject" />
@@ -38,7 +40,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <definition value="When submitting this composition: One for the Practitioner and one for the organisation" />
+      <definition value="When submitting this composition to SFM: One for the Practitioner and one for the organisation" />
       <max value="2" />
     </element>
     <element id="Composition.attester:sliceAttesterPractitioner">
@@ -75,7 +77,7 @@
         <rules value="open" />
       </slicing>
       <short value="Medication list" />
-      <definition value="This section contains medication" />
+      <definition value="This defined sections of this Composition are defined as slices" />
       <min value="1" />
     </element>
     <element id="Composition.section:sectionPLLinfo">
@@ -132,6 +134,7 @@
         <system value="http://ehelse.no/fhir/CodeSystem/sfm-section-types" />
         <code value="sectionOtherPrescriptions" />
       </code>
+      <definition value="This section contains the non-medicinal prescriptions for the patient" />
       <min value="1" />
       <max value="1" />
       <mustSupport value="true" />
@@ -153,6 +156,7 @@
         <system value="http://ehelse.no/fhir/CodeSystem/sfm-section-types" />
         <code value="sectionAllergies" />
       </code>
+      <definition value="A list of known allergies for the particular patient. " />
       <min value="1" />
       <max value="1" />
       <mustSupport value="true" />
@@ -171,6 +175,8 @@
         <system value="http://ehelse.no/fhir/CodeSystem/sfm-section-types" />
         <code value="sectionDispense" />
       </code>
+      <short value="Dispense information from Pharamcy and Bandasjist" />
+      <definition value="Dispense information for the patient. Only present when reading the resouce from SFM." />
       <max value="1" />
       <mustSupport value="true" />
     </element>
@@ -179,6 +185,27 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-MedicationDispense" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-GeneralDispense" />
+      </type>
+    </element>
+    <element id="Composition.section:sliceResponse">
+      <path value="Composition.section" />
+      <sliceName value="sliceResponse" />
+      <code>
+        <system value=" http://ehelse.no/fhir/CodeSystem/sfm-section-types" />
+        <code value="sectionResponse" />
+      </code>
+      <short value="Section for respons to applications" />
+      <definition value="This section holds the responses to SLV applications." />
+      <max value="1" />
+    </element>
+    <element id="Composition.section:sliceResponse.entry">
+      <path value="Composition.section.entry" />
+      <short value="Application responses" />
+      <definition value="Entry will refere a sfm-SlvResponse" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-SlvResponse" />
       </type>
     </element>
   </differential>
