@@ -41,11 +41,5 @@
       <path value="Practitioner.name.given" />
       <min value="1" />
     </element>
-    <element id="Practitioner.qualification.code">
-      <path value="Practitioner.qualification.code" />
-      <slicing>
-        <rules value="closed" />
-      </slicing>
-    </element>
   </differential>
 </StructureDefinition>
