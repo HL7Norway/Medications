@@ -49,6 +49,10 @@
       <definition value="." />
       <max value="1" />
     </element>
+    <element id="Extension.extension:reseptdate.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="reseptdate" />
+    </element>
     <element id="Extension.extension:reseptdate.value[x]">
       <path value="Extension.extension.value[x]" />
       <slicing>
@@ -72,6 +76,10 @@
       <short value="Last date the pharmacy can deliver" />
       <definition value="." />
       <max value="1" />
+    </element>
+    <element id="Extension.extension:expirationdate.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="expirationdate" />
     </element>
     <element id="Extension.extension:expirationdate.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -98,6 +106,10 @@
       <min value="1" />
       <max value="1" />
     </element>
+    <element id="Extension.extension:festUpdate.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="festUpdate" />
+    </element>
     <element id="Extension.extension:festUpdate.value[x]">
       <path value="Extension.extension.value[x]" />
       <slicing>
@@ -121,6 +133,10 @@
       <short value="Concriptive soldier" />
       <definition value="Boolean that identify if the patient is a soldier." />
       <max value="1" />
+    </element>
+    <element id="Extension.extension:conscription.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="conscription" />
     </element>
     <element id="Extension.extension:conscription.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -146,6 +162,10 @@
       <definition value="Request to Helfo for medication cost refund" />
       <max value="1" />
     </element>
+    <element id="Extension.extension:helfoapplication.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="helfoapplication" />
+    </element>
     <element id="Extension.extension:helfoapplication.value[x]">
       <path value="Extension.extension.value[x]" />
       <slicing>
@@ -169,6 +189,10 @@
       <short value="Refund card" />
       <definition value="Registration that the patient get all expences refunded by the gouverment." />
       <max value="1" />
+    </element>
+    <element id="Extension.extension:freecard.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="freecard" />
     </element>
     <element id="Extension.extension:freecard.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -194,6 +218,10 @@
       <definition value="boolean that states that the patients guardian should not have access to the resept." />
       <max value="1" />
     </element>
+    <element id="Extension.extension:guardiantransparencyreservation.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="guardiantransparencyreservation" />
+    </element>
     <element id="Extension.extension:guardiantransparencyreservation.value[x]">
       <path value="Extension.extension.value[x]" />
       <slicing>
@@ -217,6 +245,10 @@
       <short value="Identify that the medication is for use in own organisation" />
       <definition value="." />
       <max value="1" />
+    </element>
+    <element id="Extension.extension:ownpractice.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="ownpractice" />
     </element>
     <element id="Extension.extension:ownpractice.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -242,6 +274,10 @@
       <definition value="mechansims to keep the patient name secret to the pharmacy." />
       <max value="1" />
     </element>
+    <element id="Extension.extension:indoctorsname.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="indoctorsname" />
+    </element>
     <element id="Extension.extension:indoctorsname.value[x]">
       <path value="Extension.extension.value[x]" />
       <slicing>
@@ -266,6 +302,10 @@
       <definition value="Used when the resept is locked or when patient do not have norwegian legal identity." />
       <max value="1" />
     </element>
+    <element id="Extension.extension:refnum.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="refnum" />
+    </element>
     <element id="Extension.extension:refnum.value[x]">
       <path value="Extension.extension.value[x]" />
       <slicing>
@@ -288,6 +328,10 @@
       <sliceName value="speciality" />
       <short value="Speciality" />
       <definition value="Speciality that the doctor hold." />
+    </element>
+    <element id="Extension.extension:speciality.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="speciality" />
     </element>
     <element id="Extension.extension:speciality.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -333,6 +377,10 @@
       <min value="1" />
       <max value="1" />
     </element>
+    <element id="Extension.extension:dispatchrequest.extension:condition.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedString value="condition" />
+    </element>
     <element id="Extension.extension:dispatchrequest.extension:condition.value[x]">
       <path value="Extension.extension.extension.value[x]" />
       <slicing>
@@ -355,6 +403,10 @@
       <sliceName value="metod" />
       <min value="1" />
       <max value="1" />
+    </element>
+    <element id="Extension.extension:dispatchrequest.extension:metod.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedString value="metod" />
     </element>
     <element id="Extension.extension:dispatchrequest.extension:metod.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -391,6 +443,10 @@
       <min value="1" />
       <max value="1" />
     </element>
+    <element id="Extension.extension:dispatchrequest.extension:organization.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedString value="organization" />
+    </element>
     <element id="Extension.extension:dispatchrequest.extension:organization.value[x]">
       <path value="Extension.extension.extension.value[x]" />
       <slicing>
@@ -414,6 +470,10 @@
       <min value="1" />
       <max value="1" />
     </element>
+    <element id="Extension.extension:dispatchrequest.extension:contactperson.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedString value="contactperson" />
+    </element>
     <element id="Extension.extension:dispatchrequest.extension:contactperson.value[x]">
       <path value="Extension.extension.extension.value[x]" />
       <slicing>
@@ -435,6 +495,10 @@
       <path value="Extension.extension.extension" />
       <sliceName value="note" />
       <max value="1" />
+    </element>
+    <element id="Extension.extension:dispatchrequest.extension:note.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedString value="note" />
     </element>
     <element id="Extension.extension:dispatchrequest.extension:note.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -459,6 +523,10 @@
       <min value="1" />
       <max value="1" />
     </element>
+    <element id="Extension.extension:dispatchrequest.extension:orgnum.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedString value="orgnum" />
+    </element>
     <element id="Extension.extension:dispatchrequest.extension:orgnum.value[x]">
       <path value="Extension.extension.extension.value[x]" />
       <slicing>
@@ -482,6 +550,10 @@
       <min value="1" />
       <max value="1" />
     </element>
+    <element id="Extension.extension:dispatchrequest.extension:orgname.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedString value="orgname" />
+    </element>
     <element id="Extension.extension:dispatchrequest.extension:orgname.value[x]">
       <path value="Extension.extension.extension.value[x]" />
       <slicing>
@@ -504,6 +576,10 @@
       <sliceName value="address" />
       <max value="1" />
     </element>
+    <element id="Extension.extension:dispatchrequest.extension:address.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedString value="address" />
+    </element>
     <element id="Extension.extension:dispatchrequest.extension:address.value[x]">
       <path value="Extension.extension.extension.value[x]" />
       <slicing>
@@ -523,6 +599,10 @@
         <aggregation value="bundled" />
       </type>
     </element>
+    <element id="Extension.extension:dispatchrequest.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="dispatchrequest" />
+    </element>
     <element id="Extension.extension:dispatchrequest.value[x]">
       <path value="Extension.extension.value[x]" />
       <max value="0" />
@@ -533,6 +613,10 @@
       <short value="Earliest delivery" />
       <definition value="The first date the doctor want the pharmacy to deliver the medication to the patient." />
       <max value="1" />
+    </element>
+    <element id="Extension.extension:earliestdispence.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="earliestdispence" />
     </element>
     <element id="Extension.extension:earliestdispence.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -558,6 +642,10 @@
       <definition value="." />
       <max value="1" />
     </element>
+    <element id="Extension.extension:dischargedhospital.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="dischargedhospital" />
+    </element>
     <element id="Extension.extension:dischargedhospital.value[x]">
       <path value="Extension.extension.value[x]" />
       <slicing>
@@ -581,6 +669,10 @@
       <short value="Locked resept" />
       <definition value="." />
       <max value="1" />
+    </element>
+    <element id="Extension.extension:lockedresept.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="lockedresept" />
     </element>
     <element id="Extension.extension:lockedresept.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -606,6 +698,10 @@
       <definition value="Identify what type of resept it is. Medication, Nutrition support etc." />
       <min value="1" />
       <max value="1" />
+    </element>
+    <element id="Extension.extension:itemgroup.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="itemgroup" />
     </element>
     <element id="Extension.extension:itemgroup.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -635,6 +731,10 @@
       <definition value="." />
       <max value="1" />
     </element>
+    <element id="Extension.extension:numberofpackages.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="numberofpackages" />
+    </element>
     <element id="Extension.extension:numberofpackages.value[x]">
       <path value="Extension.extension.value[x]" />
       <slicing>
@@ -658,6 +758,10 @@
       <short value="Refund paragraph" />
       <definition value="." />
       <max value="1" />
+    </element>
+    <element id="Extension.extension:reimbursmentparagraph.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="reimbursmentparagraph" />
     </element>
     <element id="Extension.extension:reimbursmentparagraph.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -696,6 +800,10 @@
       <definition value=".Accepted coding systems: 7110, 7170, 7434, 7435." />
       <max value="1" />
     </element>
+    <element id="Extension.extension:reimbursementcode.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="reimbursementcode" />
+    </element>
     <element id="Extension.extension:reimbursementcode.value[x]">
       <path value="Extension.extension.value[x]" />
       <slicing>
@@ -732,6 +840,10 @@
       <definition value="." />
       <max value="1" />
     </element>
+    <element id="Extension.extension:plomedicationmanagement.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="plomedicationmanagement" />
+    </element>
     <element id="Extension.extension:plomedicationmanagement.value[x]">
       <path value="Extension.extension.value[x]" />
       <slicing>
@@ -756,6 +868,10 @@
       <definition value="." />
       <max value="1" />
     </element>
+    <element id="Extension.extension:reit.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="reit" />
+    </element>
     <element id="Extension.extension:reit.value[x]">
       <path value="Extension.extension.value[x]" />
       <slicing>
@@ -779,6 +895,10 @@
       <short value="Amount of drug prescribed" />
       <definition value="identifies the number of tablets or amount of liquid that should be delivered to the patient for each REIT." />
       <max value="1" />
+    </element>
+    <element id="Extension.extension:amount.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="amount" />
     </element>
     <element id="Extension.extension:amount.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -816,6 +936,10 @@
       <sliceName value="dssn" />
       <max value="1" />
     </element>
+    <element id="Extension.extension:dssn.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="dssn" />
+    </element>
     <element id="Extension.extension:dssn.value[x]">
       <path value="Extension.extension.value[x]" />
       <slicing>
@@ -838,6 +962,10 @@
       <sliceName value="rfstatus" />
       <short value="Identifies if in RF and status in RF" />
       <max value="1" />
+    </element>
+    <element id="Extension.extension:rfstatus.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="rfstatus" />
     </element>
     <element id="Extension.extension:rfstatus.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -866,6 +994,10 @@
       <short value="Note from prescriber to pharmacy" />
       <definition value="Textual information that prescriber has provided for the pharmacy, in order to support the dispence." />
       <max value="1" />
+    </element>
+    <element id="Extension.extension:note.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="note" />
     </element>
     <element id="Extension.extension:note.value[x]">
       <path value="Extension.extension.value[x]" />
