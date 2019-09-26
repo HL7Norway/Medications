@@ -54,6 +54,12 @@
     <element id="Extension.extension:systeminfo.extension:systemcode">
       <path value="Extension.extension.extension" />
       <sliceName value="systemcode" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:systeminfo.extension:systemcode.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedString value="systemcode" />
     </element>
     <element id="Extension.extension:systeminfo.extension:systemcode.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -64,6 +70,12 @@
     <element id="Extension.extension:systeminfo.extension:systemname">
       <path value="Extension.extension.extension" />
       <sliceName value="systemname" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:systeminfo.extension:systemname.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedString value="systemname" />
     </element>
     <element id="Extension.extension:systeminfo.extension:systemname.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -74,6 +86,12 @@
     <element id="Extension.extension:systeminfo.extension:version">
       <path value="Extension.extension.extension" />
       <sliceName value="version" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:systeminfo.extension:version.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedString value="version" />
     </element>
     <element id="Extension.extension:systeminfo.extension:version.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -84,6 +102,12 @@
     <element id="Extension.extension:systeminfo.extension:updatetime">
       <path value="Extension.extension.extension" />
       <sliceName value="updatetime" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:systeminfo.extension:updatetime.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedString value="updatetime" />
     </element>
     <element id="Extension.extension:systeminfo.extension:updatetime.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -100,7 +124,6 @@
       <sliceName value="operationsuplierinfo" />
       <short value="Information about service provider" />
       <definition value="Information about who is the main provider of service on systems." />
-      <min value="1" />
       <max value="1" />
     </element>
     <element id="Extension.extension:operationsuplierinfo.extension">
@@ -116,6 +139,12 @@
     <element id="Extension.extension:operationsuplierinfo.extension:servicevendorname">
       <path value="Extension.extension.extension" />
       <sliceName value="servicevendorname" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:operationsuplierinfo.extension:servicevendorname.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedString value="servicevendorname" />
     </element>
     <element id="Extension.extension:operationsuplierinfo.extension:servicevendorname.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -126,6 +155,11 @@
     <element id="Extension.extension:operationsuplierinfo.extension:contactname">
       <path value="Extension.extension.extension" />
       <sliceName value="contactname" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:operationsuplierinfo.extension:contactname.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedString value="contactname" />
     </element>
     <element id="Extension.extension:operationsuplierinfo.extension:contactname.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -133,11 +167,17 @@
         <code value="string" />
       </type>
     </element>
-    <element id="Extension.extension:operationsuplierinfo.extension:contactmail">
+    <element id="Extension.extension:operationsuplierinfo.extension:contactemail">
       <path value="Extension.extension.extension" />
-      <sliceName value="contactmail" />
+      <sliceName value="contactemail" />
+      <min value="1" />
+      <max value="1" />
     </element>
-    <element id="Extension.extension:operationsuplierinfo.extension:contactmail.value[x]">
+    <element id="Extension.extension:operationsuplierinfo.extension:contactemail.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedString value="contactemail" />
+    </element>
+    <element id="Extension.extension:operationsuplierinfo.extension:contactemail.value[x]">
       <path value="Extension.extension.extension.value[x]" />
       <type>
         <code value="string" />
@@ -146,6 +186,12 @@
     <element id="Extension.extension:operationsuplierinfo.extension:contactphone">
       <path value="Extension.extension.extension" />
       <sliceName value="contactphone" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:operationsuplierinfo.extension:contactphone.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedString value="contactphone" />
     </element>
     <element id="Extension.extension:operationsuplierinfo.extension:contactphone.value[x]">
       <path value="Extension.extension.extension.value[x]" />
