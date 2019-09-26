@@ -47,7 +47,6 @@
       <sliceName value="reseptdate" />
       <short value="Date the resept was signed" />
       <definition value="." />
-      <min value="1" />
       <max value="1" />
     </element>
     <element id="Extension.extension:reseptdate.value[x]">
@@ -72,7 +71,6 @@
       <sliceName value="expirationdate" />
       <short value="Last date the pharmacy can deliver" />
       <definition value="." />
-      <min value="1" />
       <max value="1" />
     </element>
     <element id="Extension.extension:expirationdate.value[x]">
@@ -756,7 +754,6 @@
       <sliceName value="reit" />
       <short value="Number of deliveries" />
       <definition value="." />
-      <min value="1" />
       <max value="1" />
     </element>
     <element id="Extension.extension:reit.value[x]">
@@ -1005,14 +1002,14 @@
       <path value="Extension.extension.value[x]" />
       <max value="0" />
     </element>
-    <element id="Extension.extension:statusaction">
+    <element id="Extension.extension:recallinfo">
       <path value="Extension.extension" />
-      <sliceName value="statusaction" />
+      <sliceName value="recallinfo" />
       <short value="Action information for SFM" />
       <definition value="Instruction from EPJ to SFM regarding what should be done about prescription (resept)." />
       <max value="1" />
     </element>
-    <element id="Extension.extension:statusaction.extension">
+    <element id="Extension.extension:recallinfo.extension">
       <path value="Extension.extension.extension" />
       <slicing>
         <discriminator>
@@ -1022,47 +1019,47 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Extension.extension:statusaction.extension:recallId">
+    <element id="Extension.extension:recallinfo.extension:recallId">
       <path value="Extension.extension.extension" />
       <sliceName value="recallId" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:statusaction.extension:recallId.url">
+    <element id="Extension.extension:recallinfo.extension:recallId.url">
       <path value="Extension.extension.extension.url" />
       <fixedString value="recallId" />
     </element>
-    <element id="Extension.extension:statusaction.extension:recallId.value[x]">
+    <element id="Extension.extension:recallinfo.extension:recallId.value[x]">
       <path value="Extension.extension.extension.value[x]" />
       <type>
         <code value="string" />
       </type>
     </element>
-    <element id="Extension.extension:statusaction.extension:text">
+    <element id="Extension.extension:recallinfo.extension:text">
       <path value="Extension.extension.extension" />
       <sliceName value="text" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:statusaction.extension:text.url">
+    <element id="Extension.extension:recallinfo.extension:text.url">
       <path value="Extension.extension.extension.url" />
       <fixedString value="text" />
     </element>
-    <element id="Extension.extension:statusaction.extension:text.value[x]">
+    <element id="Extension.extension:recallinfo.extension:text.value[x]">
       <path value="Extension.extension.extension.value[x]" />
       <type>
         <code value="string" />
       </type>
     </element>
-    <element id="Extension.extension:statusaction.extension:recallcode">
+    <element id="Extension.extension:recallinfo.extension:recallcode">
       <path value="Extension.extension.extension" />
       <sliceName value="recallcode" />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:statusaction.extension:recallcode.url">
+    <element id="Extension.extension:recallinfo.extension:recallcode.url">
       <path value="Extension.extension.extension.url" />
       <fixedString value="recallcode" />
     </element>
-    <element id="Extension.extension:statusaction.extension:recallcode.value[x]">
+    <element id="Extension.extension:recallinfo.extension:recallcode.value[x]">
       <path value="Extension.extension.extension.value[x]" />
       <slicing>
         <discriminator>
@@ -1075,22 +1072,22 @@
         <code value="CodeableConcept" />
       </type>
     </element>
-    <element id="Extension.extension:statusaction.extension:recallcode.value[x]:valueCodeableConcept">
+    <element id="Extension.extension:recallinfo.extension:recallcode.value[x]:valueCodeableConcept">
       <path value="Extension.extension.extension.value[x]" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
-    <element id="Extension.extension:statusaction.extension:recallcode.value[x]:valueCodeableConcept.coding.system">
+    <element id="Extension.extension:recallinfo.extension:recallcode.value[x]:valueCodeableConcept.coding.system">
       <path value="Extension.extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7500" />
     </element>
-    <element id="Extension.extension:statusaction.url">
+    <element id="Extension.extension:recallinfo.url">
       <path value="Extension.extension.url" />
-      <fixedString value="statusaction" />
+      <fixedString value="recallinfo" />
     </element>
-    <element id="Extension.extension:statusaction.value[x]">
+    <element id="Extension.extension:recallinfo.value[x]">
       <path value="Extension.extension.value[x]" />
       <max value="0" />
     </element>
@@ -1337,6 +1334,21 @@
     <element id="Extension.extension:ereseptdosing.value[x]">
       <path value="Extension.extension.value[x]" />
       <max value="0" />
+    </element>
+    <element id="Extension.extension:createeresept">
+      <path value="Extension.extension" />
+      <sliceName value="createeresept" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:createeresept.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="createeresept" />
+    </element>
+    <element id="Extension.extension:createeresept.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="boolean" />
+      </type>
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
