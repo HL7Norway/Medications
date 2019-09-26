@@ -44,6 +44,10 @@
       <definition value="Product number as registered on a package." />
       <max value="1" />
     </element>
+    <element id="Extension.extension:varenummer.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="varenummer" />
+    </element>
     <element id="Extension.extension:varenummer.value[x]">
       <path value="Extension.extension.value[x]" />
       <slicing>
@@ -69,6 +73,10 @@
       <min value="1" />
       <max value="1" />
     </element>
+    <element id="Extension.extension:varenavn.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="varenavn" />
+    </element>
     <element id="Extension.extension:varenavn.value[x]">
       <path value="Extension.extension.value[x]" />
       <slicing>
@@ -92,6 +100,10 @@
       <short value="Size of package" />
       <definition value="Number of units within the package." />
       <max value="1" />
+    </element>
+    <element id="Extension.extension:pakningsstr.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="pakningsstr" />
     </element>
     <element id="Extension.extension:pakningsstr.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -118,6 +130,10 @@
       <min value="1" />
       <max value="1" />
     </element>
+    <element id="Extension.extension:antallpkntotalt.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="antallpkntotalt" />
+    </element>
     <element id="Extension.extension:antallpkntotalt.value[x]">
       <path value="Extension.extension.value[x]" />
       <slicing>
@@ -143,6 +159,10 @@
       <min value="1" />
       <max value="1" />
     </element>
+    <element id="Extension.extension:antallpknsiste.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="antallpknsiste" />
+    </element>
     <element id="Extension.extension:antallpknsiste.value[x]">
       <path value="Extension.extension.value[x]" />
       <slicing>
@@ -167,6 +187,10 @@
       <definition value="Date and time when last dispence took place." />
       <min value="1" />
       <max value="1" />
+    </element>
+    <element id="Extension.extension:sistutlevert.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="sistutlevert" />
     </element>
     <element id="Extension.extension:sistutlevert.value[x]">
       <path value="Extension.extension.value[x]" />

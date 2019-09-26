@@ -43,6 +43,10 @@
       <sliceName value="blacktriangle" />
       <max value="1" />
     </element>
+    <element id="Extension.extension:blacktriangle.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="blacktriangle" />
+    </element>
     <element id="Extension.extension:blacktriangle.value[x]">
       <path value="Extension.extension.value[x]" />
       <slicing>
@@ -63,6 +67,10 @@
     <element id="Extension.extension:mixingliquid">
       <path value="Extension.extension" />
       <sliceName value="mixingliquid" />
+    </element>
+    <element id="Extension.extension:mixingliquid.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="mixingliquid" />
     </element>
     <element id="Extension.extension:mixingliquid.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -86,6 +94,10 @@
       <sliceName value="administrationway" />
       <min value="1" />
     </element>
+    <element id="Extension.extension:administrationway.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="administrationway" />
+    </element>
     <element id="Extension.extension:administrationway.value[x]">
       <path value="Extension.extension.value[x]" />
       <slicing>
@@ -107,6 +119,10 @@
       <path value="Extension.extension" />
       <sliceName value="maycrush" />
       <max value="1" />
+    </element>
+    <element id="Extension.extension:maycrush.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="maycrush" />
     </element>
     <element id="Extension.extension:maycrush.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -130,6 +146,10 @@
       <sliceName value="mayopen" />
       <max value="1" />
     </element>
+    <element id="Extension.extension:mayopen.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="mayopen" />
+    </element>
     <element id="Extension.extension:mayopen.value[x]">
       <path value="Extension.extension.value[x]" />
       <slicing>
@@ -151,6 +171,10 @@
       <path value="Extension.extension" />
       <sliceName value="devidable" />
     </element>
+    <element id="Extension.extension:devidable.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="devidable" />
+    </element>
     <element id="Extension.extension:devidable.value[x]">
       <path value="Extension.extension.value[x]" />
       <slicing>
@@ -168,12 +192,16 @@
         <code value="CodeableConcept" />
       </type>
     </element>
-    <element id="Extension.extension:taste">
+    <element id="Extension.extension:taste1">
       <path value="Extension.extension" />
-      <sliceName value="taste" />
+      <sliceName value="taste1" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:taste.value[x]">
+    <element id="Extension.extension:taste1.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="taste1" />
+    </element>
+    <element id="Extension.extension:taste1.value[x]">
       <path value="Extension.extension.value[x]" />
       <slicing>
         <discriminator>
@@ -183,7 +211,7 @@
         <rules value="closed" />
       </slicing>
     </element>
-    <element id="Extension.extension:taste.value[x]:valueCodeableConcept">
+    <element id="Extension.extension:taste1.value[x]:valueCodeableConcept">
       <path value="Extension.extension.value[x]" />
       <sliceName value="valueCodeableConcept" />
       <type>
@@ -194,6 +222,10 @@
       <path value="Extension.extension" />
       <sliceName value="warningtriangle" />
       <max value="1" />
+    </element>
+    <element id="Extension.extension:warningtriangle.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="warningtriangle" />
     </element>
     <element id="Extension.extension:warningtriangle.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -217,6 +249,10 @@
       <sliceName value="vaccinationstandard" />
       <max value="1" />
     </element>
+    <element id="Extension.extension:vaccinationstandard.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="vaccinationstandard" />
+    </element>
     <element id="Extension.extension:vaccinationstandard.value[x]">
       <path value="Extension.extension.value[x]" />
       <slicing>
@@ -238,6 +274,10 @@
       <path value="Extension.extension" />
       <sliceName value="producer" />
       <max value="1" />
+    </element>
+    <element id="Extension.extension:producer.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="producer" />
     </element>
     <element id="Extension.extension:producer.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -261,6 +301,10 @@
       <sliceName value="name" />
       <min value="1" />
       <max value="1" />
+    </element>
+    <element id="Extension.extension:name.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="name" />
     </element>
     <element id="Extension.extension:name.value[x]">
       <path value="Extension.extension.value[x]" />

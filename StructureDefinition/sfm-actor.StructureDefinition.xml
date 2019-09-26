@@ -30,7 +30,7 @@
     <element id="Extension">
       <path value="Extension" />
       <short value="Identifies roles and actors related to patient" />
-      <definition value="Identifies a practitioner and its role related to a patient. " />
+      <definition value="Identifies a practitioner and its role related to a patient." />
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
@@ -48,6 +48,10 @@
       <min value="1" />
       <max value="1" />
     </element>
+    <element id="Extension.extension:role.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="role" />
+    </element>
     <element id="Extension.extension:role.value[x]">
       <path value="Extension.extension.value[x]" />
       <slicing>
@@ -59,7 +63,7 @@
       </slicing>
     </element>
     <element id="Extension.extension:role.value[x]:valueCodeableConcept">
-      <path value="Extension.extension.valueCodeableConcept" />
+      <path value="Extension.extension.value[x]" />
       <sliceName value="valueCodeableConcept" />
       <min value="1" />
       <type>
@@ -67,7 +71,7 @@
       </type>
     </element>
     <element id="Extension.extension:role.value[x]:valueCodeableConcept.coding.system">
-      <path value="Extension.extension.valueCodeableConcept.coding.system" />
+      <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.7490" />
     </element>
     <element id="Extension.extension:practioner">
@@ -75,6 +79,10 @@
       <sliceName value="practioner" />
       <min value="1" />
       <max value="1" />
+    </element>
+    <element id="Extension.extension:practioner.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="practioner" />
     </element>
     <element id="Extension.extension:practioner.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -87,7 +95,7 @@
       </slicing>
     </element>
     <element id="Extension.extension:practioner.value[x]:valueReference">
-      <path value="Extension.extension.valueReference" />
+      <path value="Extension.extension.value[x]" />
       <sliceName value="valueReference" />
       <min value="1" />
       <type>

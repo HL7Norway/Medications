@@ -7,7 +7,7 @@
   <title value="sfm-dispenseinfo" />
   <status value="draft" />
   <date value="2019-09-24" />
-  <description value="Information from norwegian dispense message. " />
+  <description value="Information from norwegian dispense message." />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
@@ -136,15 +136,24 @@
       <path value="Extension.extension.url" />
       <fixedString value="refparagraph" />
     </element>
+    <element id="Extension.extension:refparagraph.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Extension.extension:refparagraph.value[x]:valueCodeableConcept">
-      <path value="Extension.extension.valueCodeableConcept" />
+      <path value="Extension.extension.value[x]" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
     <element id="Extension.extension:refparagraph.value[x]:valueCodeableConcept.coding.system">
-      <path value="Extension.extension.valueCodeableConcept.coding.system" />
+      <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7427" />
     </element>
     <element id="Extension.extension:refcode">
@@ -156,15 +165,24 @@
       <path value="Extension.extension.url" />
       <fixedString value="refcode" />
     </element>
+    <element id="Extension.extension:refcode.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Extension.extension:refcode.value[x]:valueCodeableConcept">
-      <path value="Extension.extension.valueCodeableConcept" />
+      <path value="Extension.extension.value[x]" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
     <element id="Extension.extension:refcode.value[x]:valueCodeableConcept.coding">
-      <path value="Extension.extension.valueCodeableConcept.coding" />
+      <path value="Extension.extension.value[x].coding" />
       <slicing>
         <discriminator>
           <type value="value" />
@@ -176,39 +194,39 @@
       <max value="1" />
     </element>
     <element id="Extension.extension:refcode.value[x]:valueCodeableConcept.coding:icpc2">
-      <path value="Extension.extension.valueCodeableConcept.coding" />
+      <path value="Extension.extension.value[x].coding" />
       <sliceName value="icpc2" />
       <max value="1" />
     </element>
     <element id="Extension.extension:refcode.value[x]:valueCodeableConcept.coding:icpc2.system">
-      <path value="Extension.extension.valueCodeableConcept.coding.system" />
+      <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7170" />
     </element>
     <element id="Extension.extension:refcode.value[x]:valueCodeableConcept.coding:icd10">
-      <path value="Extension.extension.valueCodeableConcept.coding" />
+      <path value="Extension.extension.value[x].coding" />
       <sliceName value="icd10" />
       <max value="1" />
     </element>
     <element id="Extension.extension:refcode.value[x]:valueCodeableConcept.coding:icd10.system">
-      <path value="Extension.extension.valueCodeableConcept.coding.system" />
+      <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7110" />
     </element>
     <element id="Extension.extension:refcode.value[x]:valueCodeableConcept.coding:icpc2ext">
-      <path value="Extension.extension.valueCodeableConcept.coding" />
+      <path value="Extension.extension.value[x].coding" />
       <sliceName value="icpc2ext" />
       <max value="1" />
     </element>
     <element id="Extension.extension:refcode.value[x]:valueCodeableConcept.coding:icpc2ext.system">
-      <path value="Extension.extension.valueCodeableConcept.coding.system" />
+      <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7434" />
     </element>
     <element id="Extension.extension:refcode.value[x]:valueCodeableConcept.coding:icd10ext">
-      <path value="Extension.extension.valueCodeableConcept.coding" />
+      <path value="Extension.extension.value[x].coding" />
       <sliceName value="icd10ext" />
       <max value="1" />
     </element>
     <element id="Extension.extension:refcode.value[x]:valueCodeableConcept.coding:icd10ext.system">
-      <path value="Extension.extension.valueCodeableConcept.coding.system" />
+      <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7435" />
     </element>
     <element id="Extension.url">

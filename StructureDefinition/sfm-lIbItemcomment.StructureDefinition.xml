@@ -45,6 +45,10 @@
       <min value="1" />
       <max value="1" />
     </element>
+    <element id="Extension.extension:type.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="type" />
+    </element>
     <element id="Extension.extension:type.value[x]">
       <path value="Extension.extension.value[x]" />
       <slicing>
@@ -82,6 +86,10 @@
       <definition value="Textual information related to the coded information." />
       <max value="1" />
     </element>
+    <element id="Extension.extension:merknad.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="merknad" />
+    </element>
     <element id="Extension.extension:merknad.value[x]">
       <path value="Extension.extension.value[x]" />
       <slicing>
@@ -105,6 +113,10 @@
       <short value="Id of the comment" />
       <definition value="Id that unique identifies the comment." />
       <max value="1" />
+    </element>
+    <element id="Extension.extension:Id.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="Id" />
     </element>
     <element id="Extension.extension:Id.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -131,6 +143,10 @@
       <min value="1" />
       <max value="1" />
     </element>
+    <element id="Extension.extension:registeredby.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="registeredby" />
+    </element>
     <element id="Extension.extension:registeredby.value[x]">
       <path value="Extension.extension.value[x]" />
       <slicing>
@@ -154,6 +170,10 @@
       <short value="user that should respond to comment" />
       <definition value="Identifies a user that should respond to the comment." />
       <max value="1" />
+    </element>
+    <element id="Extension.extension:receiver.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="receiver" />
     </element>
     <element id="Extension.extension:receiver.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -179,7 +199,7 @@
       <definition value="Response from doctor or pharmacy." />
       <max value="1" />
     </element>
-    <element id="Extension.extension:response.extension">
+    <element id="Extension.extension:response1.extension">
       <path value="Extension.extension.extension" />
       <slicing>
         <discriminator>
@@ -195,6 +215,10 @@
       <short value="Id of the response" />
       <definition value="Response unique identifier." />
       <max value="1" />
+    </element>
+    <element id="Extension.extension:response.extension:Id.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedString value="Id" />
     </element>
     <element id="Extension.extension:response.extension:Id.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -220,6 +244,10 @@
       <definition value="Using HPR or Her-id to identify user." />
       <max value="1" />
     </element>
+    <element id="Extension.extension:response.extension:responder.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedString value="responder" />
+    </element>
     <element id="Extension.extension:response.extension:responder.value[x]">
       <path value="Extension.extension.extension.value[x]" />
       <slicing>
@@ -243,6 +271,10 @@
       <short value="textual response" />
       <definition value="textual response to the comment." />
       <max value="1" />
+    </element>
+    <element id="Extension.extension:response.extension:svar.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedString value="svar" />
     </element>
     <element id="Extension.extension:response.extension:svar.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -268,6 +300,10 @@
       <definition value="coded response to the comment." />
       <min value="1" />
       <max value="1" />
+    </element>
+    <element id="Extension.extension:response.extension:type.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedString value="type" />
     </element>
     <element id="Extension.extension:response.extension:type.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -298,6 +334,10 @@
     <element id="Extension.extension:response.extension:type.value[x]:valueCodeableConcept.coding.display">
       <path value="Extension.extension.extension.value[x].coding.display" />
       <min value="1" />
+    </element>
+    <element id="Extension.extension:response.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="response" />
     </element>
     <element id="Extension.extension:response.value[x]">
       <path value="Extension.extension.value[x]" />

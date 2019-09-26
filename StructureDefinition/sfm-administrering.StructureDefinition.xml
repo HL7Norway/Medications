@@ -38,7 +38,7 @@
       <sliceName value="administrationofmedication" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:administeringForskrivning.extension">
+    <element id="Extension.extension:administrationofmedication1.extension">
       <path value="Extension.extension.extension" />
       <slicing>
         <discriminator>
@@ -52,54 +52,80 @@
       <path value="Extension.extension.extension" />
       <sliceName value="admByWhom" />
       <short value="Who is administrating the medication" />
-      <definition value="Identifies role or patient itselv to adminisration of medication. " />
+      <definition value="Identifies role or patient itselv to adminisration of medication." />
       <max value="1" />
     </element>
+    <element id="Extension.extension:administrationofmedication.extension:admByWhom.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedString value="admByWhom" />
+    </element>
+    <element id="Extension.extension:administrationofmedication.extension:admByWhom.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Extension.extension:administrationofmedication.extension:admByWhom.value[x]:valueCodeableConcept">
-      <path value="Extension.extension.extension.valueCodeableConcept" />
+      <path value="Extension.extension.extension.value[x]" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
     <element id="Extension.extension:administrationofmedication.extension:admByWhom.value[x]:valueCodeableConcept.coding.system">
-      <path value="Extension.extension.extension.valueCodeableConcept.coding.system" />
+      <path value="Extension.extension.extension.value[x].coding.system" />
       <min value="1" />
       <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.9074" />
     </element>
     <element id="Extension.extension:administrationofmedication.extension:admByWhom.value[x]:valueCodeableConcept.coding.code">
-      <path value="Extension.extension.extension.valueCodeableConcept.coding.code" />
+      <path value="Extension.extension.extension.value[x].coding.code" />
       <min value="1" />
     </element>
     <element id="Extension.extension:administrationofmedication.extension:admByWhom.value[x]:valueCodeableConcept.coding.display">
-      <path value="Extension.extension.extension.valueCodeableConcept.coding.display" />
+      <path value="Extension.extension.extension.value[x].coding.display" />
       <min value="1" />
     </element>
     <element id="Extension.extension:administrationofmedication.extension:admWay">
       <path value="Extension.extension.extension" />
       <sliceName value="admWay" />
       <short value="how the medication should be taken" />
-      <definition value="Identifies the way the drug should be administrated. " />
+      <definition value="Identifies the way the drug should be administrated." />
       <max value="1" />
     </element>
+    <element id="Extension.extension:administrationofmedication.extension:admWay.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedString value="admWay" />
+    </element>
+    <element id="Extension.extension:administrationofmedication.extension:admWay.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Extension.extension:administrationofmedication.extension:admWay.value[x]:valueCodeableConcept">
-      <path value="Extension.extension.extension.valueCodeableConcept" />
+      <path value="Extension.extension.extension.value[x]" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
     <element id="Extension.extension:administrationofmedication.extension:admWay.value[x]:valueCodeableConcept.coding.system">
-      <path value="Extension.extension.extension.valueCodeableConcept.coding.system" />
+      <path value="Extension.extension.extension.value[x].coding.system" />
       <min value="1" />
       <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.9075" />
     </element>
     <element id="Extension.extension:administrationofmedication.extension:admWay.value[x]:valueCodeableConcept.coding.code">
-      <path value="Extension.extension.extension.valueCodeableConcept.coding.code" />
+      <path value="Extension.extension.extension.value[x].coding.code" />
       <min value="1" />
     </element>
     <element id="Extension.extension:administrationofmedication.extension:admWay.value[x]:valueCodeableConcept.coding.display">
-      <path value="Extension.extension.extension.valueCodeableConcept.coding.display" />
+      <path value="Extension.extension.extension.value[x].coding.display" />
       <min value="1" />
     </element>
     <element id="Extension.extension:administrationofmedication.extension:admBySchema">
@@ -109,8 +135,21 @@
       <definition value="schema administration." />
       <max value="1" />
     </element>
+    <element id="Extension.extension:administrationofmedication.extension:admBySchema.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedString value="admBySchema" />
+    </element>
+    <element id="Extension.extension:administrationofmedication.extension:admBySchema.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Extension.extension:administrationofmedication.extension:admBySchema.value[x]:valueString">
-      <path value="Extension.extension.extension.valueString" />
+      <path value="Extension.extension.extension.value[x]" />
       <sliceName value="valueString" />
       <type>
         <code value="string" />
@@ -120,15 +159,32 @@
       <path value="Extension.extension.extension" />
       <sliceName value="admSchema" />
       <short value="Schema to administrate after" />
-      <definition value="Identify the schema to follow when administrating after schema. " />
+      <definition value="Identify the schema to follow when administrating after schema." />
       <max value="1" />
     </element>
+    <element id="Extension.extension:administrationofmedication.extension:admSchema.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedString value="admSchema" />
+    </element>
+    <element id="Extension.extension:administrationofmedication.extension:admSchema.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Extension.extension:administrationofmedication.extension:admSchema.value[x]:valueString">
-      <path value="Extension.extension.extension.valueString" />
+      <path value="Extension.extension.extension.value[x]" />
       <sliceName value="valueString" />
       <type>
         <code value="string" />
       </type>
+    </element>
+    <element id="Extension.extension:administrationofmedication.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="administrationofmedication" />
     </element>
     <element id="Extension.extension:administrationofmedication.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -138,27 +194,44 @@
       <path value="Extension.extension" />
       <sliceName value="admBy" />
       <short value="How the medication should be adminstrated" />
-      <definition value="Identifies how the and by whom the medication is administrated. " />
+      <definition value="Identifies how the and by whom the medication is administrated." />
       <max value="1" />
     </element>
+    <element id="Extension.extension:admBy.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="admBy" />
+    </element>
+    <element id="Extension.extension:admBy.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Extension.extension:admBy.value[x]:valueCodeableConcept">
-      <path value="Extension.extension.valueCodeableConcept" />
+      <path value="Extension.extension.value[x]" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
     <element id="Extension.extension:admBy.value[x]:valueCodeableConcept.coding.system">
-      <path value="Extension.extension.valueCodeableConcept.coding.system" />
+      <path value="Extension.extension.value[x].coding.system" />
       <min value="1" />
     </element>
     <element id="Extension.extension:admBy.value[x]:valueCodeableConcept.coding.code">
-      <path value="Extension.extension.valueCodeableConcept.coding.code" />
+      <path value="Extension.extension.value[x].coding.code" />
       <min value="1" />
     </element>
     <element id="Extension.extension:admBy.value[x]:valueCodeableConcept.coding.display">
-      <path value="Extension.extension.valueCodeableConcept.coding.display" />
+      <path value="Extension.extension.value[x].coding.display" />
       <min value="1" />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-administration" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

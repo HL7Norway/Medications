@@ -36,12 +36,25 @@
       <path value="Extension.extension" />
       <sliceName value="timedate" />
       <short value="Time when dicontinuation should take place" />
-      <definition value="The exact time when the treatement should be stoped. " />
+      <definition value="The exact time when the treatement should be stoped." />
       <min value="1" />
       <max value="1" />
     </element>
+    <element id="Extension.extension:timedate.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="timedate" />
+    </element>
+    <element id="Extension.extension:timedate.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Extension.extension:timedate.value[x]:valueDateTime">
-      <path value="Extension.extension.valueDateTime" />
+      <path value="Extension.extension.value[x]" />
       <sliceName value="valueDateTime" />
       <type>
         <code value="dateTime" />
@@ -51,34 +64,64 @@
       <path value="Extension.extension" />
       <sliceName value="reason" />
       <short value="Reasons for discontinuation" />
-      <definition value="Coded reason why the treatment should discontinue. " />
+      <definition value="Coded reason why the treatment should discontinue." />
       <min value="1" />
       <max value="1" />
     </element>
+    <element id="Extension.extension:reason.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="reason" />
+    </element>
+    <element id="Extension.extension:reason.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Extension.extension:reason.value[x]:valueCodeableConcept">
-      <path value="Extension.extension.valueCodeableConcept" />
+      <path value="Extension.extension.value[x]" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
     <element id="Extension.extension:reason.value[x]:valueCodeableConcept.coding.system">
-      <path value="Extension.extension.valueCodeableConcept.coding.system" />
+      <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.7494" />
     </element>
     <element id="Extension.extension:note">
       <path value="Extension.extension" />
       <sliceName value="note" />
       <short value="textual note abouth discontinuation" />
-      <definition value="optional for user to set why the treatment should stop. " />
+      <definition value="optional for user to set why the treatment should stop." />
       <max value="1" />
     </element>
+    <element id="Extension.extension:note.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="note" />
+    </element>
+    <element id="Extension.extension:note.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Extension.extension:note.value[x]:valueString">
-      <path value="Extension.extension.valueString" />
+      <path value="Extension.extension.value[x]" />
       <sliceName value="valueString" />
       <type>
         <code value="string" />
       </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedString value="http://eheles.no/fhir/StructureDefinition/sfm-discontinuation" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

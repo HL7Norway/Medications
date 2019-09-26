@@ -42,7 +42,7 @@
       <path value="Extension.extension" />
       <sliceName value="conferencedpatient" />
       <short value="Asked patient about substitution is ok" />
-      <definition value="Identified if the patient was requested about the substitution. " />
+      <definition value="Identified if the patient was requested about the substitution." />
       <max value="1" />
     </element>
     <element id="Extension.extension:conferencedpatient.url">

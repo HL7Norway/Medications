@@ -33,6 +33,10 @@
       <path value="Extension.extension" />
       <sliceName value="relatedparties" />
     </element>
+    <element id="Extension.extension:relatedparties.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="relatedparties" />
+    </element>
     <element id="Extension.extension:relatedparties.value[x]">
       <path value="Extension.extension.value[x]" />
       <type>
@@ -45,9 +49,17 @@
       <path value="Extension.extension" />
       <sliceName value="deliveryinformation" />
     </element>
+    <element id="Extension.extension:deliveryinformation.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="deliveryinformation" />
+    </element>
     <element id="Extension.extension:text">
       <path value="Extension.extension" />
       <sliceName value="text" />
+    </element>
+    <element id="Extension.extension:text.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="text" />
     </element>
     <element id="Extension.extension:text.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -58,6 +70,10 @@
     <element id="Extension.extension:substitute">
       <path value="Extension.extension" />
       <sliceName value="substitute" />
+    </element>
+    <element id="Extension.extension:substitute.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="substitute" />
     </element>
     <element id="Extension.extension:substitute.value[x]">
       <path value="Extension.extension.value[x]" />

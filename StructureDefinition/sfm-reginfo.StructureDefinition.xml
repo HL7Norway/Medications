@@ -40,14 +40,24 @@
       <min value="1" />
       <max value="1" />
     </element>
+    <element id="Extension.extension:type.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="type" />
+    </element>
     <element id="Extension.extension:type.value[x]">
       <path value="Extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
     <element id="Extension.extension:type.value[x]:valueCodeableConcept">
-      <path value="Extension.extension.valueCodeableConcept" />
+      <path value="Extension.extension.value[x]" />
       <sliceName value="valueCodeableConcept" />
       <short value="Forskriver|Instituert av|Seponert av|Registrert av|Dobbeltsignert av|Godkjent av" />
       <min value="1" />
@@ -56,19 +66,32 @@
       </type>
     </element>
     <element id="Extension.extension:type.value[x]:valueCodeableConcept.coding.system">
-      <path value="Extension.extension.valueCodeableConcept.coding.system" />
+      <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7490" />
     </element>
     <element id="Extension.extension:helseperson">
       <path value="Extension.extension" />
       <sliceName value="helseperson" />
       <short value="A person with rights to perform actions" />
-      <definition value="The person responsible for the action regarding status of the medication statement. " />
+      <definition value="The person responsible for the action regarding status of the medication statement." />
       <min value="1" />
       <max value="1" />
     </element>
+    <element id="Extension.extension:helseperson.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="helseperson" />
+    </element>
+    <element id="Extension.extension:helseperson.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Extension.extension:helseperson.value[x]:valueReference">
-      <path value="Extension.extension.valueReference" />
+      <path value="Extension.extension.value[x]" />
       <sliceName value="valueReference" />
       <min value="1" />
       <type>
@@ -81,16 +104,33 @@
       <path value="Extension.extension" />
       <sliceName value="timestamp" />
       <short value="Time of the registration" />
-      <definition value="The time when the action registered within SFM. " />
+      <definition value="The time when the action registered within SFM." />
       <min value="1" />
       <max value="1" />
     </element>
+    <element id="Extension.extension:timestamp.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="timestamp" />
+    </element>
+    <element id="Extension.extension:timestamp.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Extension.extension:timestamp.value[x]:valueDateTime">
-      <path value="Extension.extension.valueDateTime" />
+      <path value="Extension.extension.value[x]" />
       <sliceName value="valueDateTime" />
       <type>
         <code value="dateTime" />
       </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-regInfo" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

@@ -27,30 +27,40 @@
       <short value="Type of prescription" />
       <max value="1" />
     </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-prescriptiontype" />
+    </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
     <element id="Extension.value[x]:valueCodeableConcept">
-      <path value="Extension.valueCodeableConcept" />
+      <path value="Extension.value[x]" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
     <element id="Extension.value[x]:valueCodeableConcept.coding.system">
-      <path value="Extension.valueCodeableConcept.coding.system" />
+      <path value="Extension.value[x].coding.system" />
       <min value="1" />
       <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.7404" />
     </element>
     <element id="Extension.value[x]:valueCodeableConcept.coding.code">
-      <path value="Extension.valueCodeableConcept.coding.code" />
+      <path value="Extension.value[x].coding.code" />
       <min value="1" />
     </element>
     <element id="Extension.value[x]:valueCodeableConcept.coding.display">
-      <path value="Extension.valueCodeableConcept.coding.display" />
+      <path value="Extension.value[x].coding.display" />
       <min value="1" />
     </element>
   </differential>

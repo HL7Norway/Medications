@@ -47,14 +47,14 @@
       </slicing>
     </element>
     <element id="Extension.extension:coded.value[x]:valueCodeableConcept">
-      <path value="Extension.extension.valueCodeableConcept" />
+      <path value="Extension.extension.value[x]" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
     <element id="Extension.extension:coded.value[x]:valueCodeableConcept.coding.system">
-      <path value="Extension.extension.valueCodeableConcept.coding.system" />
+      <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7488" />
     </element>
     <element id="Extension.extension:text">
@@ -76,7 +76,7 @@
       </slicing>
     </element>
     <element id="Extension.extension:text.value[x]:valueString">
-      <path value="Extension.extension.valueString" />
+      <path value="Extension.extension.value[x]" />
       <sliceName value="valueString" />
       <type>
         <code value="string" />

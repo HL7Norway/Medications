@@ -36,11 +36,24 @@
       <path value="Extension.extension" />
       <sliceName value="genericSubstitutionAccepted" />
       <short value="Identifies if prescribed product can be substituted" />
-      <definition value="If value is true, then the prescribed brand, form and strenght should be used. " />
+      <definition value="If value is true, then the prescribed brand, form and strenght should be used." />
       <max value="1" />
     </element>
+    <element id="Extension.extension:genericSubstitutionAccepted.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="genericSubstitutionAccepted" />
+    </element>
+    <element id="Extension.extension:genericSubstitutionAccepted.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Extension.extension:genericSubstitutionAccepted.value[x]:valueBoolean">
-      <path value="Extension.extension.valueBoolean" />
+      <path value="Extension.extension.value[x]" />
       <sliceName value="valueBoolean" />
       <type>
         <code value="boolean" />
@@ -50,15 +63,32 @@
       <path value="Extension.extension" />
       <sliceName value="reason" />
       <short value="Reason for no substitution" />
-      <definition value="The prescribers reason for not accepting generic substitution of the medication. " />
+      <definition value="The prescribers reason for not accepting generic substitution of the medication." />
       <max value="1" />
     </element>
+    <element id="Extension.extension:reason.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="reason" />
+    </element>
+    <element id="Extension.extension:reason.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Extension.extension:reason.value[x]:valueString">
-      <path value="Extension.extension.valueString" />
+      <path value="Extension.extension.value[x]" />
       <sliceName value="valueString" />
       <type>
         <code value="string" />
       </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-generic-substitution" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
