@@ -93,12 +93,6 @@
       <path value="Extension.extension.extension.url" />
       <fixedString value="admWay" />
     </element>
-    <element id="Extension.extension:administrationofmedication.extension:admWay.value[x]">
-      <path value="Extension.extension.extension.value[x]" />
-      <type>
-        <code value="CodeableConcept" />
-      </type>
-    </element>
     <element id="Extension.extension:administrationofmedication.extension:admWay.value[x]:valueCodeableConcept">
       <path value="Extension.extension.extension.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
