@@ -38,7 +38,7 @@
       <sliceName value="administrationofmedication" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:administrationofmedication1.extension">
+    <element id="Extension.extension:administrationofmedication.extension">
       <path value="Extension.extension.extension" />
       <slicing>
         <discriminator>
@@ -66,6 +66,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:administrationofmedication.extension:admByWhom.value[x]:valueCodeableConcept">
@@ -106,6 +107,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:administrationofmedication.extension:admWay.value[x]:valueCodeableConcept">
@@ -146,6 +148,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:administrationofmedication.extension:admBySchema.value[x]:valueString">
@@ -173,6 +176,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:administrationofmedication.extension:admSchema.value[x]:valueString">
@@ -208,6 +212,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Extension.extension:admBy.value[x]:valueCodeableConcept">
