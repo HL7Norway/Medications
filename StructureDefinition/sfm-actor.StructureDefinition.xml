@@ -42,35 +42,23 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Extension.extension:role1">
+    <element id="Extension.extension:role">
       <path value="Extension.extension" />
-      <sliceName value="role1" />
+      <sliceName value="role" />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:role1.url">
+    <element id="Extension.extension:role.url">
       <path value="Extension.extension.url" />
-      <fixedString value="role1" />
+      <fixedString value="role" />
     </element>
-    <element id="Extension.extension:role1.value[x]">
+    <element id="Extension.extension:role.value[x]">
       <path value="Extension.extension.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="closed" />
-      </slicing>
-    </element>
-    <element id="Extension.extension:role1.value[x]:valueCodeableConcept">
-      <path value="Extension.extension.value[x]" />
-      <sliceName value="valueCodeableConcept" />
-      <min value="1" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
-    <element id="Extension.extension:role1.value[x]:valueCodeableConcept.coding.system">
+    <element id="Extension.extension:role.value[x].coding.system">
       <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.7490" />
     </element>
@@ -86,22 +74,9 @@
     </element>
     <element id="Extension.extension:practioner.value[x]">
       <path value="Extension.extension.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="closed" />
-      </slicing>
-    </element>
-    <element id="Extension.extension:practioner.value[x]:valueReference">
-      <path value="Extension.extension.value[x]" />
-      <sliceName value="valueReference" />
-      <min value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner" />
-        <aggregation value="bundled" />
       </type>
     </element>
     <element id="Extension.url">
