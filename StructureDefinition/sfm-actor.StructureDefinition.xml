@@ -42,17 +42,17 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Extension.extension:role">
+    <element id="Extension.extension:role1">
       <path value="Extension.extension" />
-      <sliceName value="role" />
+      <sliceName value="role1" />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:role.url">
+    <element id="Extension.extension:role1.url">
       <path value="Extension.extension.url" />
-      <fixedString value="role" />
+      <fixedString value="role1" />
     </element>
-    <element id="Extension.extension:role.value[x]">
+    <element id="Extension.extension:role1.value[x]">
       <path value="Extension.extension.value[x]" />
       <slicing>
         <discriminator>
@@ -62,7 +62,7 @@
         <rules value="closed" />
       </slicing>
     </element>
-    <element id="Extension.extension:role.value[x]:valueCodeableConcept">
+    <element id="Extension.extension:role1.value[x]:valueCodeableConcept">
       <path value="Extension.extension.value[x]" />
       <sliceName value="valueCodeableConcept" />
       <min value="1" />
@@ -70,7 +70,7 @@
         <code value="CodeableConcept" />
       </type>
     </element>
-    <element id="Extension.extension:role.value[x]:valueCodeableConcept.coding.system">
+    <element id="Extension.extension:role1.value[x]:valueCodeableConcept.coding.system">
       <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.7490" />
     </element>

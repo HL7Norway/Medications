@@ -38,7 +38,7 @@
       <path value="Extension.extension" />
       <sliceName value="packingcoded" />
       <short value="Code identified how medication is packed" />
-      <definition value="Using coding system 7448 to identify how medication is packed." />
+      <definition value="Using coding system 7452 to identify how medication is packed." />
     </element>
     <element id="Extension.extension:packingcoded.url">
       <path value="Extension.extension.url" />
@@ -73,6 +73,10 @@
     <element id="Extension.url">
       <path value="Extension.url" />
       <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-packing" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
     </element>
   </differential>
 </StructureDefinition>
