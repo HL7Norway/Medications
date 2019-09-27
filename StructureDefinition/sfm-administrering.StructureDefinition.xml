@@ -110,19 +110,26 @@
         </discriminator>
         <rules value="closed" />
       </slicing>
+      <min value="1" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
     <element id="Extension.extension:administrationofmedication.extension:admWay.value[x]:valueCodeableConcept">
-      <path value="Extension.extension.extension.value[x]" />
+      <path value="Extension.extension.extension.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
+      <min value="1" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
+    <element id="Extension.extension:administrationofmedication.extension:admWay.value[x]:valueCodeableConcept.coding">
+      <path value="Extension.extension.extension.valueCodeableConcept.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
     <element id="Extension.extension:administrationofmedication.extension:admWay.value[x]:valueCodeableConcept.coding.system">
-      <path value="Extension.extension.extension.value[x].coding.system" />
+      <path value="Extension.extension.extension.valueCodeableConcept.coding.system" />
       <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.9075" />
     </element>
     <element id="Extension.extension:administrationofmedication.extension:admBySchema">
