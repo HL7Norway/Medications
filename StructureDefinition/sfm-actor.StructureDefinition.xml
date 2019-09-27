@@ -77,6 +77,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner" />
+        <aggregation value="bundled" />
       </type>
     </element>
     <element id="Extension.url">
