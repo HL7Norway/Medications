@@ -50,17 +50,6 @@
     </element>
     <element id="Extension.extension:varenummer.value[x]">
       <path value="Extension.extension.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="closed" />
-      </slicing>
-    </element>
-    <element id="Extension.extension:varenummer.value[x]:valueString">
-      <path value="Extension.extension.value[x]" />
-      <sliceName value="valueString" />
       <type>
         <code value="string" />
       </type>
@@ -79,17 +68,6 @@
     </element>
     <element id="Extension.extension:varenavn.value[x]">
       <path value="Extension.extension.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="closed" />
-      </slicing>
-    </element>
-    <element id="Extension.extension:varenavn.value[x]:valueString">
-      <path value="Extension.extension.value[x]" />
-      <sliceName value="valueString" />
       <type>
         <code value="string" />
       </type>
@@ -107,17 +85,6 @@
     </element>
     <element id="Extension.extension:pakningsstr.value[x]">
       <path value="Extension.extension.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="closed" />
-      </slicing>
-    </element>
-    <element id="Extension.extension:pakningsstr.value[x]:valueQuantity">
-      <path value="Extension.extension.value[x]" />
-      <sliceName value="valueQuantity" />
       <type>
         <code value="Quantity" />
       </type>
@@ -136,17 +103,6 @@
     </element>
     <element id="Extension.extension:antallpkntotalt.value[x]">
       <path value="Extension.extension.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="closed" />
-      </slicing>
-    </element>
-    <element id="Extension.extension:antallpkntotalt.value[x]:valueDecimal">
-      <path value="Extension.extension.value[x]" />
-      <sliceName value="valueDecimal" />
       <type>
         <code value="decimal" />
       </type>
@@ -165,17 +121,6 @@
     </element>
     <element id="Extension.extension:antallpknsiste.value[x]">
       <path value="Extension.extension.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="closed" />
-      </slicing>
-    </element>
-    <element id="Extension.extension:antallpknsiste.value[x]:valueDecimal">
-      <path value="Extension.extension.value[x]" />
-      <sliceName value="valueDecimal" />
       <type>
         <code value="decimal" />
       </type>
@@ -194,17 +139,6 @@
     </element>
     <element id="Extension.extension:sistutlevert.value[x]">
       <path value="Extension.extension.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="closed" />
-      </slicing>
-    </element>
-    <element id="Extension.extension:sistutlevert.value[x]:valueDateTime">
-      <path value="Extension.extension.value[x]" />
-      <sliceName value="valueDateTime" />
       <type>
         <code value="dateTime" />
       </type>
