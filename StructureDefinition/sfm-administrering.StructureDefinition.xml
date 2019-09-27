@@ -52,7 +52,7 @@
       <path value="Extension.extension.extension" />
       <sliceName value="admByWhom" />
       <short value="Who is administrating the medication" />
-      <definition value="Identifies role or patient itselv to adminisration of medication.&#xD;&#xA;&#xD;&#xA;" />
+      <definition value="Identifies role or patient itselv to adminisration of medication." />
       <max value="1" />
     </element>
     <element id="Extension.extension:administrationofmedication.extension:admByWhom.url">
@@ -61,26 +61,32 @@
     </element>
     <element id="Extension.extension:administrationofmedication.extension:admByWhom.value[x]">
       <path value="Extension.extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
     <element id="Extension.extension:administrationofmedication.extension:admByWhom.value[x]:valueCodeableConcept">
-      <path value="Extension.extension.extension.valueCodeableConcept" />
+      <path value="Extension.extension.extension.value[x]" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
     <element id="Extension.extension:administrationofmedication.extension:admByWhom.value[x]:valueCodeableConcept.coding.system">
-      <path value="Extension.extension.extension.valueCodeableConcept.coding.system" />
+      <path value="Extension.extension.extension.value[x].coding.system" />
       <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.9074" />
     </element>
     <element id="Extension.extension:administrationofmedication.extension:admWay">
       <path value="Extension.extension.extension" />
       <sliceName value="admWay" />
       <short value="how the medication should be taken" />
-      <definition value="Identifies the way the drug should be administrated.&#xD;&#xA;&#xD;&#xA;urn:uid:2.16.578.1.12.4.1.1.9075" />
+      <definition value="Identifies the way the drug should be administrated.&#xD;&#xA;&#xD;&#xA;" />
       <max value="1" />
     </element>
     <element id="Extension.extension:administrationofmedication.extension:admWay.url">
@@ -92,6 +98,17 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+    </element>
+    <element id="Extension.extension:administrationofmedication.extension:admWay.value[x]:valueCodeableConcept">
+      <path value="Extension.extension.extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.extension:administrationofmedication.extension:admWay.value[x]:valueCodeableConcept.coding.system">
+      <path value="Extension.extension.extension.valueCodeableConcept.coding.system" />
+      <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.9075" />
     </element>
     <element id="Extension.extension:administrationofmedication.extension:admBySchema">
       <path value="Extension.extension.extension" />
