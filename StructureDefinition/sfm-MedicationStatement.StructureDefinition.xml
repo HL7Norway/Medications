@@ -176,6 +176,10 @@
     <element id="MedicationStatement.reasonCode">
       <path value="MedicationStatement.reasonCode" />
       <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="coding.system" />
+        </discriminator>
         <rules value="openAtEnd" />
       </slicing>
       <definition value="A reason for why the medication is being/was taken. Only ICPC2 and ICD10 diagnoses are recognized by SFM." />
