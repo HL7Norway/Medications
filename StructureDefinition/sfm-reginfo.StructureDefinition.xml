@@ -46,26 +46,11 @@
     </element>
     <element id="Extension.extension:type.value[x]">
       <path value="Extension.extension.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-      </slicing>
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
-    <element id="Extension.extension:type.value[x]:valueCodeableConcept">
-      <path value="Extension.extension.value[x]" />
-      <sliceName value="valueCodeableConcept" />
-      <short value="Forskriver|Instituert av|Seponert av|Registrert av|Dobbeltsignert av|Godkjent av" />
-      <min value="1" />
-      <type>
-        <code value="CodeableConcept" />
-      </type>
-    </element>
-    <element id="Extension.extension:type.value[x]:valueCodeableConcept.coding.system">
+    <element id="Extension.extension:type.value[x].coding.system">
       <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7490" />
     </element>
@@ -83,17 +68,6 @@
     </element>
     <element id="Extension.extension:helseperson.value[x]">
       <path value="Extension.extension.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-      </slicing>
-    </element>
-    <element id="Extension.extension:helseperson.value[x]:valueReference">
-      <path value="Extension.extension.value[x]" />
-      <sliceName value="valueReference" />
-      <min value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="https://ehelse.no/StructureDefinition/sfm-Practitioner" />
@@ -114,16 +88,6 @@
     </element>
     <element id="Extension.extension:timestamp.value[x]">
       <path value="Extension.extension.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-      </slicing>
-    </element>
-    <element id="Extension.extension:timestamp.value[x]:valueDateTime">
-      <path value="Extension.extension.value[x]" />
-      <sliceName value="valueDateTime" />
       <type>
         <code value="dateTime" />
       </type>

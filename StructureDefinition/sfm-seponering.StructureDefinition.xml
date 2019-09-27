@@ -46,16 +46,6 @@
     </element>
     <element id="Extension.extension:timedate.value[x]">
       <path value="Extension.extension.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-      </slicing>
-    </element>
-    <element id="Extension.extension:timedate.value[x]:valueDateTime">
-      <path value="Extension.extension.value[x]" />
-      <sliceName value="valueDateTime" />
       <type>
         <code value="dateTime" />
       </type>
@@ -74,21 +64,11 @@
     </element>
     <element id="Extension.extension:reason.value[x]">
       <path value="Extension.extension.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-      </slicing>
-    </element>
-    <element id="Extension.extension:reason.value[x]:valueCodeableConcept">
-      <path value="Extension.extension.value[x]" />
-      <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
-    <element id="Extension.extension:reason.value[x]:valueCodeableConcept.coding.system">
+    <element id="Extension.extension:reason.value[x].coding.system">
       <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.7494" />
     </element>
@@ -105,16 +85,6 @@
     </element>
     <element id="Extension.extension:note.value[x]">
       <path value="Extension.extension.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-      </slicing>
-    </element>
-    <element id="Extension.extension:note.value[x]:valueString">
-      <path value="Extension.extension.value[x]" />
-      <sliceName value="valueString" />
       <type>
         <code value="string" />
       </type>

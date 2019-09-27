@@ -35,50 +35,7 @@
     <element id="Extension.extension:practionerRelation">
       <path value="Extension.extension" />
       <sliceName value="practionerRelation" />
-    </element>
-    <element id="Extension.extension:practionerRelation1.extension">
-      <path value="Extension.extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Extension.extension:practionerRelation.extension:roleType">
-      <path value="Extension.extension.extension" />
-      <sliceName value="roleType" />
-      <min value="1" />
       <max value="1" />
-    </element>
-    <element id="Extension.extension:practionerRelation.extension:practitioner">
-      <path value="Extension.extension.extension" />
-      <sliceName value="practitioner" />
-      <min value="1" />
-      <max value="1" />
-    </element>
-    <element id="Extension.extension:practionerRelation.extension:practitioner.url">
-      <path value="Extension.extension.extension.url" />
-      <fixedString value="practitioner" />
-    </element>
-    <element id="Extension.extension:practionerRelation.extension:practitioner.value[x]">
-      <path value="Extension.extension.extension.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-      </slicing>
-    </element>
-    <element id="Extension.extension:practionerRelation.extension:practitioner.value[x]:valueReference">
-      <path value="Extension.extension.extension.value[x]" />
-      <sliceName value="valueReference" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="no-basis-Practitioner" />
-        <aggregation value="bundled" />
-      </type>
     </element>
     <element id="Extension.extension:practionerRelation.url">
       <path value="Extension.extension.url" />
@@ -86,75 +43,16 @@
     </element>
     <element id="Extension.extension:practionerRelation.value[x]">
       <path value="Extension.extension.value[x]" />
-      <max value="0" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="no-basis-Practitioner" />
+        <aggregation value="bundled" />
+      </type>
     </element>
     <element id="Extension.extension:organisationRelation">
       <path value="Extension.extension" />
       <sliceName value="organisationRelation" />
-    </element>
-    <element id="Extension.extension:organisationRelation1.extension">
-      <path value="Extension.extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Extension.extension:organisationRelation.extension:roleType">
-      <path value="Extension.extension.extension" />
-      <sliceName value="roleType" />
-      <min value="1" />
       <max value="1" />
-    </element>
-    <element id="Extension.extension:organisationRelation.extension:roleType.url">
-      <path value="Extension.extension.extension.url" />
-      <fixedString value="roleType" />
-    </element>
-    <element id="Extension.extension:organisationRelation.extension:roleType.value[x]">
-      <path value="Extension.extension.extension.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-      </slicing>
-    </element>
-    <element id="Extension.extension:organisationRelation.extension:roleType.value[x]:valueCodeableConcept">
-      <path value="Extension.extension.extension.value[x]" />
-      <sliceName value="valueCodeableConcept" />
-      <type>
-        <code value="CodeableConcept" />
-      </type>
-    </element>
-    <element id="Extension.extension:organisationRelation.extension:organisation">
-      <path value="Extension.extension.extension" />
-      <sliceName value="organisation" />
-      <min value="1" />
-      <max value="1" />
-    </element>
-    <element id="Extension.extension:organisationRelation.extension:organisation.url">
-      <path value="Extension.extension.extension.url" />
-      <fixedString value="organisation" />
-    </element>
-    <element id="Extension.extension:organisationRelation.extension:organisation.value[x]">
-      <path value="Extension.extension.extension.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-      </slicing>
-    </element>
-    <element id="Extension.extension:organisationRelation.extension:organisation.value[x]:valueReference">
-      <path value="Extension.extension.extension.value[x]" />
-      <sliceName value="valueReference" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="no-basis-Organization" />
-        <aggregation value="bundled" />
-      </type>
     </element>
     <element id="Extension.extension:organisationRelation.url">
       <path value="Extension.extension.url" />
@@ -162,7 +60,31 @@
     </element>
     <element id="Extension.extension:organisationRelation.value[x]">
       <path value="Extension.extension.value[x]" />
-      <max value="0" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="no-basis-Organization" />
+        <aggregation value="bundled" />
+      </type>
+    </element>
+    <element id="Extension.extension:relationtype">
+      <path value="Extension.extension" />
+      <sliceName value="relationtype" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:relationtype.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="relationtype" />
+    </element>
+    <element id="Extension.extension:relationtype.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.extension:relationtype.value[x].coding.system">
+      <path value="Extension.extension.value[x].coding.system" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7490" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />

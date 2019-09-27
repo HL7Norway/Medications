@@ -75,6 +75,12 @@
       <path value="Extension.extension.url" />
       <fixedString value="text" />
     </element>
+    <element id="Extension.extension:text.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
     <element id="Extension.extension:caseworker">
       <path value="Extension.extension" />
       <sliceName value="caseworker" />
