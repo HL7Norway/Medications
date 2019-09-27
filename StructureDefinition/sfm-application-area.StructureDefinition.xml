@@ -31,6 +31,7 @@
     <element id="Extension.extension:coded">
       <path value="Extension.extension" />
       <sliceName value="coded" />
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.&#xD;&#xA;&#xD;&#xA;urn:oid:2.16.578.1.12.4.1.1.7488" />
     </element>
     <element id="Extension.extension:coded.url">
       <path value="Extension.extension.url" />
@@ -38,22 +39,11 @@
     </element>
     <element id="Extension.extension:coded.value[x]">
       <path value="Extension.extension.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="closed" />
-      </slicing>
-    </element>
-    <element id="Extension.extension:coded.value[x]:valueCodeableConcept">
-      <path value="Extension.extension.value[x]" />
-      <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
-    <element id="Extension.extension:coded.value[x]:valueCodeableConcept.coding.system">
+    <element id="Extension.extension:coded.value[x].coding.system">
       <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7488" />
     </element>
@@ -67,17 +57,6 @@
     </element>
     <element id="Extension.extension:text.value[x]">
       <path value="Extension.extension.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="closed" />
-      </slicing>
-    </element>
-    <element id="Extension.extension:text.value[x]:valueString">
-      <path value="Extension.extension.value[x]" />
-      <sliceName value="valueString" />
       <type>
         <code value="string" />
       </type>
