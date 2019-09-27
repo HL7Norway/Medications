@@ -153,7 +153,7 @@
       </type>
     </element>
     <element id="MedicationStatement.medication[x]:medicationReference">
-      <path value="MedicationStatement.medicationReference" />
+      <path value="MedicationStatement.medication[x]" />
       <sliceName value="medicationReference" />
       <type>
         <code value="Reference" />
@@ -172,10 +172,6 @@
     <element id="MedicationStatement.dateAsserted">
       <path value="MedicationStatement.dateAsserted" />
       <definition value="The date when the medication statement was asserted by the information source. Not in use in SFM." />
-    </element>
-    <element id="MedicationStatement.derivedFrom">
-      <path value="MedicationStatement.derivedFrom" />
-      <definition value="Allows linking the MedicationStatement to the underlying MedicationRequest, or to other information that supports or is used to derive the MedicationStatement. Not used in SFM." />
     </element>
     <element id="MedicationStatement.reasonCode">
       <path value="MedicationStatement.reasonCode" />
@@ -210,10 +206,6 @@
     </element>
     <element id="MedicationStatement.dosage">
       <path value="MedicationStatement.dosage" />
-      <slicing>
-        <description value="Structured possible repeating information" />
-        <rules value="open" />
-      </slicing>
       <definition value="Need changes" />
       <min value="1" />
     </element>
@@ -288,39 +280,6 @@
       </type>
     </element>
     <element id="MedicationStatement.dosage.asNeeded[x]">
-      <path value="MedicationStatement.dosage.asNeeded[x]" />
-      <max value="0" />
-    </element>
-    <element id="MedicationStatement.dosage:structureddosing">
-      <path value="MedicationStatement.dosage" />
-      <sliceName value="structureddosing" />
-    </element>
-    <element id="MedicationStatement.dosage:structureddosing.text">
-      <path value="MedicationStatement.dosage.text" />
-      <max value="0" />
-    </element>
-    <element id="MedicationStatement.dosage:structureddosing.additionalInstruction">
-      <path value="MedicationStatement.dosage.additionalInstruction" />
-      <max value="0" />
-    </element>
-    <element id="MedicationStatement.dosage:structureddosing.patientInstruction">
-      <path value="MedicationStatement.dosage.patientInstruction" />
-      <max value="0" />
-    </element>
-    <element id="MedicationStatement.dosage:structureddosing.timing.event">
-      <path value="MedicationStatement.dosage.timing.event" />
-      <definition value="May be combined with code. If code is given then only the date should be used. If code is not provided then timestampe should be used to identify exact time for medication." />
-    </element>
-    <element id="MedicationStatement.dosage:structureddosing.timing.code">
-      <path value="MedicationStatement.dosage.timing.code" />
-      <short value="Norwegian code system used" />
-      <definition value="If provided it should" />
-    </element>
-    <element id="MedicationStatement.dosage:structureddosing.timing.code.coding.system">
-      <path value="MedicationStatement.dosage.timing.code.coding.system" />
-      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.8325" />
-    </element>
-    <element id="MedicationStatement.dosage:structureddosing.asNeeded[x]">
       <path value="MedicationStatement.dosage.asNeeded[x]" />
       <max value="0" />
     </element>
