@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="sfm-recalldetails" />
+  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-recalldetails" />
+  <version value="1.0" />
+  <name value="SfmRecalldetails" />
+  <title value="sfm-recalldetails" />
+  <status value="draft" />
+  <date value="2019-09-28" />
+  <description value="Details from M7 message." />
+  <fhirVersion value="4.0.0" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Basic" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:prescriptionId">
+      <path value="Extension.extension" />
+      <sliceName value="prescriptionId" />
+      <short value="Id on M1 that is recalled" />
+      <definition value="The Id identifies the M1 that has been recalled from RF." />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:prescriptionId.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="prescriptionId" />
+    </element>
+    <element id="Extension.extension:prescriptionId.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:merknad">
+      <path value="Extension.extension" />
+      <sliceName value="merknad" />
+      <short value="Textual information about the recall" />
+      <definition value="Text that responsible doctor has added when recalling the M1." />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:merknad.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="merknad" />
+    </element>
+    <element id="Extension.extension:merknad.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:reason">
+      <path value="Extension.extension" />
+      <sliceName value="reason" />
+      <short value="Information about the recall reason" />
+      <definition value="Identifies why the recall was done. " />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:reason.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="reason" />
+    </element>
+    <element id="Extension.extension:reason.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.extension:reason.value[x].coding.system">
+      <path value="Extension.extension.value[x].coding.system" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7500" />
+    </element>
+    <element id="Extension.extension:newprescriptionId">
+      <path value="Extension.extension" />
+      <sliceName value="newprescriptionId" />
+      <short value="Pointer to new resept prescribed" />
+      <definition value="If the prescription has been renewed, then the prescription Id of the new prescription is idenfified here. " />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:newprescriptionId.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="newprescriptionId" />
+    </element>
+    <element id="Extension.extension:newprescriptionId.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:performed">
+      <path value="Extension.extension" />
+      <sliceName value="performed" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:performed.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="performed" />
+    </element>
+    <element id="Extension.extension:performed.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-recalldetails" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>
