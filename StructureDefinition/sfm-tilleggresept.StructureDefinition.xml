@@ -817,6 +817,8 @@
     <element id="Extension.extension:ereseptdosing">
       <path value="Extension.extension" />
       <sliceName value="ereseptdosing" />
+      <short value="Dosing as given by e-resept" />
+      <definition value="The e-resept documentation identifies how the e-resesept dosing should be used." />
     </element>
     <element id="Extension.extension:ereseptdosing.extension">
       <path value="Extension.extension.extension" />
@@ -831,24 +833,42 @@
     <element id="Extension.extension:ereseptdosing.extension:starttime">
       <path value="Extension.extension.extension" />
       <sliceName value="starttime" />
+      <short value="The time a dosing period starts" />
+      <definition value="The time a dosing period starts" />
       <max value="1" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:starttime.url">
       <path value="Extension.extension.extension.url" />
       <fixedString value="starttime" />
     </element>
+    <element id="Extension.extension:ereseptdosing.extension:starttime.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
     <element id="Extension.extension:ereseptdosing.extension:endtime">
       <path value="Extension.extension.extension" />
       <sliceName value="endtime" />
+      <short value="The time a dosing period ends" />
+      <definition value="The time a dosing period ends" />
       <max value="1" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:endtime.url">
       <path value="Extension.extension.extension.url" />
       <fixedString value="endtime" />
     </element>
+    <element id="Extension.extension:ereseptdosing.extension:endtime.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
     <element id="Extension.extension:ereseptdosing.extension:dosingrule">
       <path value="Extension.extension.extension" />
       <sliceName value="dosingrule" />
+      <short value="Rule related to dosing" />
+      <definition value="Rule related to dosing" />
       <max value="1" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:dosingrule.extension">
@@ -864,12 +884,25 @@
     <element id="Extension.extension:ereseptdosing.extension:dosingrule.extension:dosebasedon">
       <path value="Extension.extension.extension.extension" />
       <sliceName value="dosebasedon" />
+      <short value="Coding identifying what dose is based on" />
+      <definition value="Coding identifying what dose is based on" />
       <min value="1" />
       <max value="1" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:dosingrule.extension:dosebasedon.url">
       <path value="Extension.extension.extension.extension.url" />
       <fixedString value="dosebasedon" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:dosingrule.extension:dosebasedon.value[x]">
+      <path value="Extension.extension.extension.extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <fixedCodeableConcept>
+        <coding>
+          <system value="urn:oid:2.16.578.1.12.4.1.1.9080" />
+        </coding>
+      </fixedCodeableConcept>
     </element>
     <element id="Extension.extension:ereseptdosing.extension:dosingrule.extension:text">
       <path value="Extension.extension.extension.extension" />
@@ -879,6 +912,12 @@
     <element id="Extension.extension:ereseptdosing.extension:dosingrule.extension:text.url">
       <path value="Extension.extension.extension.extension.url" />
       <fixedString value="text" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:dosingrule.extension:text.value[x]">
+      <path value="Extension.extension.extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
     </element>
     <element id="Extension.extension:ereseptdosing.extension:dosingrule.url">
       <path value="Extension.extension.extension.url" />
@@ -913,6 +952,12 @@
       <path value="Extension.extension.extension.extension.url" />
       <fixedString value="amount" />
     </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:amount.value[x]">
+      <path value="Extension.extension.extension.extension.value[x]" />
+      <type>
+        <code value="Quantity" />
+      </type>
+    </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:interval">
       <path value="Extension.extension.extension.extension" />
       <sliceName value="interval" />
@@ -921,6 +966,17 @@
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:interval.url">
       <path value="Extension.extension.extension.extension.url" />
       <fixedString value="interval" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:interval.value[x]">
+      <path value="Extension.extension.extension.extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <fixedCodeableConcept>
+        <coding>
+          <system value="urn:oid:2.16.578.1.12.4.1.1.9088" />
+        </coding>
+      </fixedCodeableConcept>
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:infusionspeed">
       <path value="Extension.extension.extension.extension" />
@@ -947,6 +1003,12 @@
       <path value="Extension.extension.extension.extension.extension.url" />
       <fixedString value="volum" />
     </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:infusionspeed.extension:volum.value[x]">
+      <path value="Extension.extension.extension.extension.extension.value[x]" />
+      <type>
+        <code value="Quantity" />
+      </type>
+    </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:infusionspeed.extension:timeunit">
       <path value="Extension.extension.extension.extension.extension" />
       <sliceName value="timeunit" />
@@ -956,6 +1018,17 @@
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:infusionspeed.extension:timeunit.url">
       <path value="Extension.extension.extension.extension.extension.url" />
       <fixedString value="timeunit" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:infusionspeed.extension:timeunit.value[x]">
+      <path value="Extension.extension.extension.extension.extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <fixedCodeableConcept>
+        <coding>
+          <system value="urn:oid:2.16.578.1.12.4.1.1.9088" />
+        </coding>
+      </fixedCodeableConcept>
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:infusionspeed.url">
       <path value="Extension.extension.extension.extension.url" />
@@ -974,6 +1047,12 @@
       <path value="Extension.extension.extension.extension.url" />
       <fixedString value="time" />
     </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:time.value[x]">
+      <path value="Extension.extension.extension.extension.value[x]" />
+      <type>
+        <code value="time" />
+      </type>
+    </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:timerange">
       <path value="Extension.extension.extension.extension" />
       <sliceName value="timerange" />
@@ -982,6 +1061,17 @@
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:timerange.url">
       <path value="Extension.extension.extension.extension.url" />
       <fixedString value="timerange" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:timerange.value[x]">
+      <path value="Extension.extension.extension.extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <fixedCodeableConcept>
+        <coding>
+          <system value="urn:oid:2.16.578.1.12.4.1.1.8325" />
+        </coding>
+      </fixedCodeableConcept>
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:accurate">
       <path value="Extension.extension.extension.extension" />
@@ -992,6 +1082,12 @@
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:accurate.url">
       <path value="Extension.extension.extension.extension.url" />
       <fixedString value="accurate" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:accurate.value[x]">
+      <path value="Extension.extension.extension.extension.value[x]" />
+      <type>
+        <code value="boolean" />
+      </type>
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence">
       <path value="Extension.extension.extension.extension" />
@@ -1016,6 +1112,17 @@
       <path value="Extension.extension.extension.extension.extension.url" />
       <fixedString value="weekdays" />
     </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence.extension:weekdays.value[x]">
+      <path value="Extension.extension.extension.extension.extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <fixedCodeableConcept>
+        <coding>
+          <system value="urn:oid:2.16.578.1.12.4.1.1.9082" />
+        </coding>
+      </fixedCodeableConcept>
+    </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence.extension:dayson">
       <path value="Extension.extension.extension.extension.extension" />
       <sliceName value="dayson" />
@@ -1025,6 +1132,12 @@
       <path value="Extension.extension.extension.extension.extension.url" />
       <fixedString value="dayson" />
     </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence.extension:dayson.value[x]">
+      <path value="Extension.extension.extension.extension.extension.value[x]" />
+      <type>
+        <code value="integer" />
+      </type>
+    </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence.extension:daysoff">
       <path value="Extension.extension.extension.extension.extension" />
       <sliceName value="daysoff" />
@@ -1033,6 +1146,12 @@
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence.extension:daysoff.url">
       <path value="Extension.extension.extension.extension.extension.url" />
       <fixedString value="daysoff" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence.extension:daysoff.value[x]">
+      <path value="Extension.extension.extension.extension.extension.value[x]" />
+      <type>
+        <code value="integer" />
+      </type>
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence.url">
       <path value="Extension.extension.extension.extension.url" />

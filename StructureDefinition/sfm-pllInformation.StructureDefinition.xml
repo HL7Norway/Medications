@@ -49,9 +49,140 @@
       <path value="Extension.extension" />
       <sliceName value="deliveryinformation" />
     </element>
+    <element id="Extension.extension:deliveryinformation.extension">
+      <path value="Extension.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:deliveryinformation.extension:prescriptionId">
+      <path value="Extension.extension.extension" />
+      <sliceName value="prescriptionId" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:deliveryinformation.extension:prescriptionId.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedString value="prescriptionId" />
+    </element>
+    <element id="Extension.extension:deliveryinformation.extension:prescriptionId.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-MedicationStatement" />
+      </type>
+    </element>
+    <element id="Extension.extension:deliveryinformation.extension:refM10">
+      <path value="Extension.extension.extension" />
+      <sliceName value="refM10" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:deliveryinformation.extension:refM10.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedString value="refM10" />
+    </element>
+    <element id="Extension.extension:deliveryinformation.extension:refM10.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:deliveryinformation.extension:repacking">
+      <path value="Extension.extension.extension" />
+      <sliceName value="repacking" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:deliveryinformation.extension:repacking.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedString value="repacking" />
+    </element>
+    <element id="Extension.extension:deliveryinformation.extension:repacking.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <fixedCodeableConcept>
+        <coding>
+          <system value="urn:oid:2.16.578.1.12.4.1.1.7492" />
+        </coding>
+      </fixedCodeableConcept>
+    </element>
+    <element id="Extension.extension:deliveryinformation.extension:datefirstdose">
+      <path value="Extension.extension.extension" />
+      <sliceName value="datefirstdose" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:deliveryinformation.extension:datefirstdose.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedString value="datefirstdose" />
+    </element>
+    <element id="Extension.extension:deliveryinformation.extension:datefirstdose.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="Extension.extension:deliveryinformation.extension:datelastdose">
+      <path value="Extension.extension.extension" />
+      <sliceName value="datelastdose" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:deliveryinformation.extension:datelastdose.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedString value="datelastdose" />
+    </element>
+    <element id="Extension.extension:deliveryinformation.extension:datelastdose.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="Extension.extension:deliveryinformation.extension:pictureref">
+      <path value="Extension.extension.extension" />
+      <sliceName value="pictureref" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:deliveryinformation.extension:pictureref.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedString value="pictureref" />
+    </element>
+    <element id="Extension.extension:deliveryinformation.extension:pictureref.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="url" />
+      </type>
+    </element>
+    <element id="Extension.extension:deliveryinformation.extension:deliverydoc">
+      <path value="Extension.extension.extension" />
+      <sliceName value="deliverydoc" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:deliveryinformation.extension:deliverydoc.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedString value="deliverydoc" />
+    </element>
+    <element id="Extension.extension:deliveryinformation.extension:deliverydoc.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-MedicationDispense" />
+        <aggregation value="bundled" />
+      </type>
+    </element>
     <element id="Extension.extension:deliveryinformation.url">
       <path value="Extension.extension.url" />
       <fixedString value="deliveryinformation" />
+    </element>
+    <element id="Extension.extension:deliveryinformation.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <max value="0" />
     </element>
     <element id="Extension.extension:text">
       <path value="Extension.extension" />
