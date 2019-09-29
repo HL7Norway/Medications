@@ -175,11 +175,8 @@
     </element>
     <element id="MedicationStatement.dosage">
       <path value="MedicationStatement.dosage" />
-      <slicing>
-        <description value="First slice includes the textual information. other slices includes single dose description." />
-        <rules value="open" />
-      </slicing>
-      <definition value="Need changes" />
+      <short value="Details of how medication should be taken" />
+      <definition value="If more than one dosage instance is registered, then the first instance in the sequence includes general information of the dosage and the following includes exact details for a single dose. " />
       <min value="1" />
     </element>
     <element id="MedicationStatement.dosage.extension">
@@ -195,7 +192,9 @@
     <element id="MedicationStatement.dosage.extension:applicationarea">
       <path value="MedicationStatement.dosage.extension" />
       <sliceName value="applicationarea" />
-      <min value="1" />
+      <short value="Describes why medication is needed" />
+      <definition value="Should allways be included in the first instance of dosage, and not in the following instances. " />
+      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://example.org/fhir/StructureDefinition/sfm-application-area" />
@@ -204,6 +203,7 @@
     <element id="MedicationStatement.dosage.extension:shortdosage">
       <path value="MedicationStatement.dosage.extension" />
       <sliceName value="shortdosage" />
+      <definition value="Coded short dosage as defined in FEST. Should only be included in the first instance of dosage. " />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -213,38 +213,45 @@
     <element id="MedicationStatement.dosage.extension:typeofuse">
       <path value="MedicationStatement.dosage.extension" />
       <sliceName value="typeofuse" />
-      <min value="1" />
+      <short value="Type of use" />
+      <definition value="Descirbes if the medication is continous, cure or as needed. Should only be included in first instance of dosage. " />
       <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-use" />
       </type>
     </element>
+    <element id="MedicationStatement.dosage.sequence">
+      <path value="MedicationStatement.dosage.sequence" />
+      <definition value="Indicates the order in which the dosage instructions should be applied or interpreted. " />
+      <min value="1" />
+    </element>
+    <element id="MedicationStatement.dosage.text">
+      <path value="MedicationStatement.dosage.text" />
+      <definition value="Free text dosage instructions e.g. SIG. Should allways be included in the first instance of dosage, and not in the following instances. " />
+    </element>
     <element id="MedicationStatement.dosage.additionalInstruction">
       <path value="MedicationStatement.dosage.additionalInstruction" />
       <definition value="Supplemental instruction - e.g. &quot;with meals&quot;. Forholdsregel ved inntak." />
     </element>
+    <element id="MedicationStatement.dosage.additionalInstruction.coding.system">
+      <path value="MedicationStatement.dosage.additionalInstruction.coding.system" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7479" />
+    </element>
     <element id="MedicationStatement.dosage.timing.event">
       <path value="MedicationStatement.dosage.timing.event" />
+      <definition value="Identifies specific times when the event occurs. If code is provided, then code identifies time of day. If not, time should be folloew as in this attribute. " />
       <max value="1" />
     </element>
+    <element id="MedicationStatement.dosage.timing.repeat">
+      <path value="MedicationStatement.dosage.timing.repeat" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.dosage.timing.code.coding.system">
+      <path value="MedicationStatement.dosage.timing.code.coding.system" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.8325" />
+    </element>
     <element id="MedicationStatement.dosage.asNeeded[x]">
-      <path value="MedicationStatement.dosage.asNeeded[x]" />
-      <max value="0" />
-    </element>
-    <element id="MedicationStatement.dosage:singledose">
-      <path value="MedicationStatement.dosage" />
-      <sliceName value="singledose" />
-    </element>
-    <element id="MedicationStatement.dosage:singledose.text">
-      <path value="MedicationStatement.dosage.text" />
-      <max value="0" />
-    </element>
-    <element id="MedicationStatement.dosage:singledose.patientInstruction">
-      <path value="MedicationStatement.dosage.patientInstruction" />
-      <max value="0" />
-    </element>
-    <element id="MedicationStatement.dosage:singledose.asNeeded[x]">
       <path value="MedicationStatement.dosage.asNeeded[x]" />
       <max value="0" />
     </element>
