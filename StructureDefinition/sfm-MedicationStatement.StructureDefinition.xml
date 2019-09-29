@@ -19,6 +19,16 @@
   <baseDefinition value="http://hl7.no/fhir/StructureDefinition/no-basis-MedicationStatement" />
   <derivation value="constraint" />
   <differential>
+    <element id="MedicationStatement.extension">
+      <path value="MedicationStatement.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
     <element id="MedicationStatement.extension:reginfo">
       <path value="MedicationStatement.extension" />
       <sliceName value="reginfo" />
@@ -76,54 +86,6 @@
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-reseptamendment" />
       </type>
     </element>
-    <element id="MedicationStatement.identifier">
-      <path value="MedicationStatement.identifier" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="type.text" />
-        </discriminator>
-        <rules value="openAtEnd" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.identifier:treatmentId">
-      <path value="MedicationStatement.identifier" />
-      <sliceName value="treatmentId" />
-      <short value="treatment identifier" />
-      <definition value="Unique identifier for the treatment. The idenitifer is unique. Identifies the MedicationStatement in SFM." />
-      <max value="1" />
-    </element>
-    <element id="MedicationStatement.identifier:treatmentId.value">
-      <path value="MedicationStatement.identifier.value" />
-      <min value="1" />
-    </element>
-    <element id="MedicationStatement.identifier:reseptid">
-      <path value="MedicationStatement.identifier" />
-      <sliceName value="reseptid" />
-      <short value="reference to related prescription document" />
-      <definition value="Prescription document guid. Identifies the MedicationStatement in Norwegian e-resept." />
-      <max value="1" />
-    </element>
-    <element id="MedicationStatement.identifier:reseptid.use">
-      <path value="MedicationStatement.identifier.use" />
-      <max value="0" />
-    </element>
-    <element id="MedicationStatement.identifier:reseptid.type">
-      <path value="MedicationStatement.identifier.type" />
-      <max value="0" />
-    </element>
-    <element id="MedicationStatement.identifier:reseptid.system">
-      <path value="MedicationStatement.identifier.system" />
-      <max value="0" />
-    </element>
-    <element id="MedicationStatement.identifier:reseptid.period">
-      <path value="MedicationStatement.identifier.period" />
-      <max value="0" />
-    </element>
-    <element id="MedicationStatement.identifier:reseptid.assigner">
-      <path value="MedicationStatement.identifier.assigner" />
-      <max value="0" />
-    </element>
     <element id="MedicationStatement.basedOn">
       <path value="MedicationStatement.basedOn" />
       <definition value="A plan, proposal or order that is fulfilled in whole or in part by this event. Not used by SFM." />
@@ -134,7 +96,7 @@
       <definition value="A larger event of which this particular event is a component or step. Not used by SFM." />
     </element>
     <element id="MedicationStatement.medication[x]:medicationReference">
-      <path value="MedicationStatement.medicationReference" />
+      <path value="MedicationStatement.medication[x]" />
       <sliceName value="medicationReference" />
       <type>
         <code value="Reference" />
