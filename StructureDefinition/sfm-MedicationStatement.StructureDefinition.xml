@@ -143,24 +143,6 @@
       <path value="MedicationStatement.partOf" />
       <definition value="A larger event of which this particular event is a component or step. Not used by SFM." />
     </element>
-    <element id="MedicationStatement.medication[x]">
-      <path value="MedicationStatement.medication[x]" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Medication" />
-        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Magistrell-Medication" />
-        <aggregation value="bundled" />
-      </type>
-    </element>
-    <element id="MedicationStatement.medication[x]:medicationReference">
-      <path value="MedicationStatement.medication[x]" />
-      <sliceName value="medicationReference" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Medication" />
-        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Magistrell-Medication" />
-      </type>
-    </element>
     <element id="MedicationStatement.context">
       <path value="MedicationStatement.context" />
       <definition value="The encounter or episode of care that establishes the context for this MedicationStatement. Not used by SFM." />
