@@ -19,16 +19,6 @@
   <baseDefinition value="http://hl7.no/fhir/StructureDefinition/no-basis-MedicationStatement" />
   <derivation value="constraint" />
   <differential>
-    <element id="MedicationStatement.extension">
-      <path value="MedicationStatement.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
     <element id="MedicationStatement.extension:reginfo">
       <path value="MedicationStatement.extension" />
       <sliceName value="reginfo" />
@@ -142,6 +132,15 @@
     <element id="MedicationStatement.partOf">
       <path value="MedicationStatement.partOf" />
       <definition value="A larger event of which this particular event is a component or step. Not used by SFM." />
+    </element>
+    <element id="MedicationStatement.medication[x]:medicationReference">
+      <path value="MedicationStatement.medicationReference" />
+      <sliceName value="medicationReference" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Medication" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Magistrell-Medication" />
+      </type>
     </element>
     <element id="MedicationStatement.context">
       <path value="MedicationStatement.context" />
