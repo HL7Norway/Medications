@@ -10,7 +10,7 @@
   <name value="SfmMedicationStatement" />
   <title value="sfm-MedicationStatement" />
   <status value="draft" />
-  <date value="2019-09-21" />
+  <date value="2019-09-29" />
   <description value="SFM MedicationStatement derived from no-basis-MedicationStatement" />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
@@ -176,10 +176,6 @@
     <element id="MedicationStatement.reasonCode">
       <path value="MedicationStatement.reasonCode" />
       <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="coding.system" />
-        </discriminator>
         <rules value="openAtEnd" />
       </slicing>
       <definition value="A reason for why the medication is being/was taken. Only ICPC2 and ICD10 diagnoses are recognized by SFM." />
