@@ -247,17 +247,9 @@
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-use" />
       </type>
     </element>
-    <element id="MedicationStatement.dosage.text">
-      <path value="MedicationStatement.dosage.text" />
-      <min value="1" />
-    </element>
     <element id="MedicationStatement.dosage.additionalInstruction">
       <path value="MedicationStatement.dosage.additionalInstruction" />
       <definition value="Supplemental instruction - e.g. &quot;with meals&quot;. Forholdsregel ved inntak." />
-    </element>
-    <element id="MedicationStatement.dosage.patientInstruction">
-      <path value="MedicationStatement.dosage.patientInstruction" />
-      <max value="0" />
     </element>
     <element id="MedicationStatement.dosage.timing.event">
       <path value="MedicationStatement.dosage.timing.event" />
