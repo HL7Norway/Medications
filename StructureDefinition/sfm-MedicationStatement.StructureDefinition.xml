@@ -175,8 +175,12 @@
     </element>
     <element id="MedicationStatement.dosage">
       <path value="MedicationStatement.dosage" />
+      <slicing>
+        <description value="First slice includes the textual information. other slices includes single dose description." />
+        <rules value="open" />
+      </slicing>
       <definition value="Need changes" />
-      <max value="1" />
+      <min value="1" />
     </element>
     <element id="MedicationStatement.dosage.extension">
       <path value="MedicationStatement.dosage.extension" />
@@ -225,6 +229,22 @@
       <max value="1" />
     </element>
     <element id="MedicationStatement.dosage.asNeeded[x]">
+      <path value="MedicationStatement.dosage.asNeeded[x]" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.dosage:singledose">
+      <path value="MedicationStatement.dosage" />
+      <sliceName value="singledose" />
+    </element>
+    <element id="MedicationStatement.dosage:singledose.text">
+      <path value="MedicationStatement.dosage.text" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.dosage:singledose.patientInstruction">
+      <path value="MedicationStatement.dosage.patientInstruction" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.dosage:singledose.asNeeded[x]">
       <path value="MedicationStatement.dosage.asNeeded[x]" />
       <max value="0" />
     </element>
