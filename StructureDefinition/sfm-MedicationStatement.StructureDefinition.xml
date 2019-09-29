@@ -86,6 +86,54 @@
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-reseptamendment" />
       </type>
     </element>
+    <element id="MedicationStatement.identifier">
+      <path value="MedicationStatement.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="type.text" />
+        </discriminator>
+        <rules value="openAtEnd" />
+      </slicing>
+    </element>
+    <element id="MedicationStatement.identifier:treatmentId">
+      <path value="MedicationStatement.identifier" />
+      <sliceName value="treatmentId" />
+      <short value="treatment identifier" />
+      <definition value="Unique identifier for the treatment. The idenitifer is unique. Identifies the MedicationStatement in SFM." />
+      <max value="1" />
+    </element>
+    <element id="MedicationStatement.identifier:treatmentId.value">
+      <path value="MedicationStatement.identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="MedicationStatement.identifier:reseptid">
+      <path value="MedicationStatement.identifier" />
+      <sliceName value="reseptid" />
+      <short value="reference to related prescription document" />
+      <definition value="Prescription document guid. Identifies the MedicationStatement in Norwegian e-resept." />
+      <max value="1" />
+    </element>
+    <element id="MedicationStatement.identifier:reseptid.use">
+      <path value="MedicationStatement.identifier.use" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.identifier:reseptid.type">
+      <path value="MedicationStatement.identifier.type" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.identifier:reseptid.system">
+      <path value="MedicationStatement.identifier.system" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.identifier:reseptid.period">
+      <path value="MedicationStatement.identifier.period" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.identifier:reseptid.assigner">
+      <path value="MedicationStatement.identifier.assigner" />
+      <max value="0" />
+    </element>
     <element id="MedicationStatement.basedOn">
       <path value="MedicationStatement.basedOn" />
       <definition value="A plan, proposal or order that is fulfilled in whole or in part by this event. Not used by SFM." />
@@ -115,37 +163,6 @@
     <element id="MedicationStatement.dateAsserted">
       <path value="MedicationStatement.dateAsserted" />
       <definition value="The date when the medication statement was asserted by the information source. Not in use in SFM." />
-    </element>
-    <element id="MedicationStatement.reasonCode">
-      <path value="MedicationStatement.reasonCode" />
-      <slicing>
-        <rules value="openAtEnd" />
-      </slicing>
-      <definition value="A reason for why the medication is being/was taken. Only ICPC2 and ICD10 diagnoses are recognized by SFM." />
-    </element>
-    <element id="MedicationStatement.reasonCode:ICPC2B">
-      <path value="MedicationStatement.reasonCode" />
-      <sliceName value="ICPC2B" />
-      <max value="1" />
-    </element>
-    <element id="MedicationStatement.reasonCode:ICPC2B.coding.system">
-      <path value="MedicationStatement.reasonCode.coding.system" />
-      <min value="1" />
-      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7171" />
-    </element>
-    <element id="MedicationStatement.reasonCode:ICPC2B.coding.code">
-      <path value="MedicationStatement.reasonCode.coding.code" />
-      <min value="1" />
-    </element>
-    <element id="MedicationStatement.reasonCode:ICPC2B.coding.display">
-      <path value="MedicationStatement.reasonCode.coding.display" />
-      <min value="1" />
-    </element>
-    <element id="MedicationStatement.reasonReference">
-      <path value="MedicationStatement.reasonReference" />
-      <short value="Condition why the medication is being/was taken" />
-      <definition value="Condition why the medication is being/was taken." />
-      <max value="0" />
     </element>
     <element id="MedicationStatement.dosage">
       <path value="MedicationStatement.dosage" />
