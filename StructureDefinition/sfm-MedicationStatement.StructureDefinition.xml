@@ -263,22 +263,6 @@
       <path value="MedicationStatement.dosage.timing.event" />
       <max value="1" />
     </element>
-    <element id="MedicationStatement.dosage.timing.repeat.bounds[x]">
-      <path value="MedicationStatement.dosage.timing.repeat.bounds[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-      </slicing>
-    </element>
-    <element id="MedicationStatement.dosage.timing.repeat.bounds[x]:boundsPeriod">
-      <path value="MedicationStatement.dosage.timing.repeat.bounds[x]" />
-      <sliceName value="boundsPeriod" />
-      <type>
-        <code value="Period" />
-      </type>
-    </element>
     <element id="MedicationStatement.dosage.asNeeded[x]">
       <path value="MedicationStatement.dosage.asNeeded[x]" />
       <max value="0" />
