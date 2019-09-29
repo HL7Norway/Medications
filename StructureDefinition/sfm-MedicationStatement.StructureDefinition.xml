@@ -164,6 +164,15 @@
       <path value="MedicationStatement.dateAsserted" />
       <definition value="The date when the medication statement was asserted by the information source. Not in use in SFM." />
     </element>
+    <element id="MedicationStatement.reasonCode:ICPC2B">
+      <path value="MedicationStatement.reasonCode" />
+      <sliceName value="ICPC2B" />
+      <max value="1" />
+    </element>
+    <element id="MedicationStatement.reasonCode:ICPC2B.coding.system">
+      <path value="MedicationStatement.reasonCode.coding.system" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7171" />
+    </element>
     <element id="MedicationStatement.dosage">
       <path value="MedicationStatement.dosage" />
       <definition value="Need changes" />
