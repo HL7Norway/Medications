@@ -25,13 +25,20 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-use" />
+      <fixedUri value="http://ehelse.no/fhir/StructureDefinition/sfm-use" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
       <type>
         <code value="CodeableConcept" />
       </type>
+    </element>
+    <element id="Extension.value[x].coding">
+      <path value="Extension.value[x].coding" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="urn:uid:2.16.578.1.12.4.1.1.9101" />
+      </binding>
     </element>
     <element id="Extension.value[x].coding.system">
       <path value="Extension.value[x].coding.system" />
