@@ -62,6 +62,14 @@
       <path value="Organization.identifier.value" />
       <min value="1" />
     </element>
+    <element id="Organization.type">
+      <path value="Organization.type" />
+      <definition value="The kind(s) of organization that this is. Local codesystem is used. " />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="http://ehelse.no/fhir/CodeSystem/sfm-type-of-organization" />
+      </binding>
+    </element>
     <element id="Organization.type.coding.system">
       <path value="Organization.type.coding.system" />
       <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-type-of-organization" />
