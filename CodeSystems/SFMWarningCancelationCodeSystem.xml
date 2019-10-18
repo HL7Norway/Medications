@@ -14,7 +14,7 @@
     <content value="complete" />
       <concept>
         <code value="1" />
-        <display value="Dosetilpasning" />
+        <display value="Dosejustering" />
       </concept>
       <concept>
         <code value="2" />
@@ -22,30 +22,26 @@
       </concept>
 	  <concept>
         <code value="3" />
-        <display value="Jusetert doseringstidspunkt" />
+        <display value="Seponering" />
       </concept>
 	  <concept>
         <code value="4" />
-        <display value="Tilleggsmedisinering" />
-      </concept>
-	  <concept>
-        <code value="5" />
-        <display value="Oppnå ønsket dosering" />
-      </concept>
-	  <concept>
-        <code value="6" />
-        <display value="Informert pasient om bivirkninger" />
-      </concept>
-	  <concept>
-        <code value="7" />
-        <display value="Ingen handling tatt" />
-      </concept>
-	  <concept>
-        <code value="8" />
         <display value="Oppstartsdosering" />
       </concept>
 	  <concept>
-        <code value="9" />
-        <display value="Økt dose ved behov" />
+        <code value="5" />
+        <display value="Forskjellige legemiddelegenskaper" />
+      </concept>
+	  <concept>
+        <code value="6" />
+        <display value="Ikke relevant" />
+      </concept>
+	  <concept>
+        <code value="7" />
+        <display value="Vurdert - ikke aktuelt" />
+      </concept>
+	  <concept>
+        <code value="8" />
+        <display value="Annet" />
       </concept>
 </CodeSystem>

@@ -42,7 +42,7 @@
     </element>
     <element id="Extension.extension:type.url">
       <path value="Extension.extension.url" />
-      <fixedString value="type" />
+      <fixedUri value="type" />
     </element>
     <element id="Extension.extension:type.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -50,9 +50,16 @@
         <code value="CodeableConcept" />
       </type>
     </element>
+    <element id="Extension.extension:type.value[x].coding">
+      <path value="Extension.extension.value[x].coding" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="http://ehelse.no/fhir/CodeSystem/sfm-performer-roles" />
+      </binding>
+    </element>
     <element id="Extension.extension:type.value[x].coding.system">
       <path value="Extension.extension.value[x].coding.system" />
-      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7490" />
+      <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-performer-roles" />
     </element>
     <element id="Extension.extension:helseperson">
       <path value="Extension.extension" />
@@ -64,7 +71,7 @@
     </element>
     <element id="Extension.extension:helseperson.url">
       <path value="Extension.extension.url" />
-      <fixedString value="helseperson" />
+      <fixedUri value="helseperson" />
     </element>
     <element id="Extension.extension:helseperson.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -84,7 +91,7 @@
     </element>
     <element id="Extension.extension:timestamp.url">
       <path value="Extension.extension.url" />
-      <fixedString value="timestamp" />
+      <fixedUri value="timestamp" />
     </element>
     <element id="Extension.extension:timestamp.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -94,7 +101,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-regInfo" />
+      <fixedUri value="http://ehelse.no/fhir/StructureDefinition/sfm-regInfo" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

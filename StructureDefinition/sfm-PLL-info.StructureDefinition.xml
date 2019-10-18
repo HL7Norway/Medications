@@ -33,6 +33,13 @@
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-pllInformation" />
       </type>
     </element>
+    <element id="Basic.code.coding">
+      <path value="Basic.code.coding" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="http://ehelse.no/fhir/CodeSystem/sfm-message-type" />
+      </binding>
+    </element>
     <element id="Basic.code.coding.system">
       <path value="Basic.code.coding.system" />
       <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-message-type" />

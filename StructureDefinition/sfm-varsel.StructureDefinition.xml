@@ -44,7 +44,7 @@
       <short value="Double prescription" />
       <definition value="Information about two or more medications that are similar." />
     </element>
-    <element id="Extension.extension:doublePrescription1.extension">
+    <element id="Extension.extension:doublePrescription.extension">
       <path value="Extension.extension.extension" />
       <slicing>
         <discriminator>
@@ -63,7 +63,7 @@
     </element>
     <element id="Extension.extension:doublePrescription.extension:reference.url">
       <path value="Extension.extension.extension.url" />
-      <fixedString value="reference" />
+      <fixedUri value="reference" />
     </element>
     <element id="Extension.extension:doublePrescription.extension:reference.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -91,7 +91,7 @@
     </element>
     <element id="Extension.extension:doublePrescription.extension:reason.url">
       <path value="Extension.extension.extension.url" />
-      <fixedString value="reason" />
+      <fixedUri value="reason" />
     </element>
     <element id="Extension.extension:doublePrescription.extension:reason.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -118,7 +118,7 @@
     </element>
     <element id="Extension.extension:doublePrescription.extension:codedreason.url">
       <path value="Extension.extension.extension.url" />
-      <fixedString value="codedreason" />
+      <fixedUri value="codedreason" />
     </element>
     <element id="Extension.extension:doublePrescription.extension:codedreason.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -134,19 +134,23 @@
       </type>
     </element>
     <element id="Extension.extension:doublePrescription.extension:codedreason.value[x]:valueCodeableConcept">
-      <path value="Extension.extension.extension.value[x]" />
+      <path value="Extension.extension.extension.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
       </type>
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="http://ehelse.no/fhir/CodeSystem/sfm-warning-cancelation-code|" />
+      </binding>
     </element>
     <element id="Extension.extension:doublePrescription.extension:codedreason.value[x]:valueCodeableConcept.coding.system">
-      <path value="Extension.extension.extension.value[x].coding.system" />
+      <path value="Extension.extension.extension.valueCodeableConcept.coding.system" />
       <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-warning-cancelation-code" />
     </element>
     <element id="Extension.extension:doublePrescription.url">
       <path value="Extension.extension.url" />
-      <fixedString value="doublePrescription" />
+      <fixedUri value="doublePrescription" />
     </element>
     <element id="Extension.extension:doublePrescription.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -158,7 +162,7 @@
       <short value="Interaction information" />
       <definition value="Information about interaction between two or more medicationstatements." />
     </element>
-    <element id="Extension.extension:interaction1.extension">
+    <element id="Extension.extension:interaction.extension">
       <path value="Extension.extension.extension" />
       <slicing>
         <discriminator>
@@ -177,7 +181,7 @@
     </element>
     <element id="Extension.extension:interaction.extension:reference.url">
       <path value="Extension.extension.extension.url" />
-      <fixedString value="reference" />
+      <fixedUri value="reference" />
     </element>
     <element id="Extension.extension:interaction.extension:reference.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -206,7 +210,7 @@
     </element>
     <element id="Extension.extension:interaction.extension:reason.url">
       <path value="Extension.extension.extension.url" />
-      <fixedString value="reason" />
+      <fixedUri value="reason" />
     </element>
     <element id="Extension.extension:interaction.extension:reason.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -233,7 +237,7 @@
     </element>
     <element id="Extension.extension:interaction.extension:codedreason.url">
       <path value="Extension.extension.extension.url" />
-      <fixedString value="codedreason" />
+      <fixedUri value="codedreason" />
     </element>
     <element id="Extension.extension:interaction.extension:codedreason.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -248,15 +252,23 @@
         <code value="CodeableConcept" />
       </type>
     </element>
+    <element id="Extension.extension:interaction.extension:codedreason.value[x].coding.system">
+      <path value="Extension.extension.extension.value[x].coding.system" />
+      <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-warning-cancelation-code" />
+    </element>
     <element id="Extension.extension:interaction.extension:codedreason.value[x]:valueCodeableConcept">
-      <path value="Extension.extension.extension.value[x]" />
+      <path value="Extension.extension.extension.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
       </type>
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="http://ehelse.no/fhir/CodeSystem/sfm-warning-cancelation-code" />
+      </binding>
     </element>
     <element id="Extension.extension:interaction.extension:codedreason.value[x]:valueCodeableConcept.coding.system">
-      <path value="Extension.extension.extension.value[x].coding.system" />
+      <path value="Extension.extension.extension.valueCodeableConcept.coding.system" />
       <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-warning-cancelation-code" />
     </element>
     <element id="Extension.extension:interaction.extension:interactiondata">
@@ -267,7 +279,7 @@
     </element>
     <element id="Extension.extension:interaction.extension:interactiondata.url">
       <path value="Extension.extension.extension.url" />
-      <fixedString value="interactiondata" />
+      <fixedUri value="interactiondata" />
     </element>
     <element id="Extension.extension:interaction.extension:interactiondata.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -295,7 +307,7 @@
     </element>
     <element id="Extension.extension:interaction.url">
       <path value="Extension.extension.url" />
-      <fixedString value="interaction" />
+      <fixedUri value="interaction" />
     </element>
     <element id="Extension.extension:interaction.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -307,7 +319,7 @@
       <short value="Identified allergy intollerance" />
       <definition value="Allergy intollerance identified related to medicalstatement." />
     </element>
-    <element id="Extension.extension:allergyIntollerance1.extension">
+    <element id="Extension.extension:allergyIntollerance.extension">
       <path value="Extension.extension.extension" />
       <slicing>
         <discriminator>
@@ -327,7 +339,7 @@
     </element>
     <element id="Extension.extension:allergyIntollerance.extension:reference.url">
       <path value="Extension.extension.extension.url" />
-      <fixedString value="reference" />
+      <fixedUri value="reference" />
     </element>
     <element id="Extension.extension:allergyIntollerance.extension:reference.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -354,7 +366,7 @@
     </element>
     <element id="Extension.extension:allergyIntollerance.extension:reason.url">
       <path value="Extension.extension.extension.url" />
-      <fixedString value="reason" />
+      <fixedUri value="reason" />
     </element>
     <element id="Extension.extension:allergyIntollerance.extension:reason.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -384,7 +396,7 @@
     </element>
     <element id="Extension.extension:allergyIntollerance.extension:codedreason.url">
       <path value="Extension.extension.extension.url" />
-      <fixedString value="codedreason" />
+      <fixedUri value="codedreason" />
     </element>
     <element id="Extension.extension:allergyIntollerance.extension:codedreason.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -400,19 +412,23 @@
       </type>
     </element>
     <element id="Extension.extension:allergyIntollerance.extension:codedreason.value[x]:valueCodeableConcept">
-      <path value="Extension.extension.extension.value[x]" />
+      <path value="Extension.extension.extension.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
       </type>
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="http://ehelse.no/fhir/CodeSystem/sfm-warning-cancelation-code" />
+      </binding>
     </element>
     <element id="Extension.extension:allergyIntollerance.extension:codedreason.value[x]:valueCodeableConcept.coding.system">
-      <path value="Extension.extension.extension.value[x].coding.system" />
+      <path value="Extension.extension.extension.valueCodeableConcept.coding.system" />
       <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-warning-cancelation-code" />
     </element>
     <element id="Extension.extension:allergyIntollerance.url">
       <path value="Extension.extension.url" />
-      <fixedString value="allergyIntollerance" />
+      <fixedUri value="allergyIntollerance" />
     </element>
     <element id="Extension.extension:allergyIntollerance.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -420,7 +436,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-warning" />
+      <fixedUri value="http://ehelse.no/fhir/StructureDefinition/sfm-warning" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
