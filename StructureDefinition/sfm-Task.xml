@@ -69,6 +69,10 @@
       <path value="Task.code" />
       <definition value="Examples of task types are:&#xD;&#xA;- GodkjennKladd&#xD;&#xA;- EndringMDPakking" />
       <min value="1" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="http://ehelse.no/fhir/CodeSystem/sfm-task-types" />
+      </binding>
     </element>
     <element id="Task.code.coding.system">
       <path value="Task.code.coding.system" />
