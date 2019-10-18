@@ -72,7 +72,7 @@
     </element>
     <element id="Task.code.coding.system">
       <path value="Task.code.coding.system" />
-      <fixedUri value="http://ehelse.no/fhir/CodeSystem/SFMTaskTypeCodeSystem" />
+      <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-task-types" />
     </element>
     <element id="Task.code.coding.code">
       <path value="Task.code.coding.code" />

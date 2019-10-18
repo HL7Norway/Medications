@@ -29,7 +29,7 @@
       <path value="Organization.extension" />
       <sliceName value="epjinfo" />
       <short value="Information about epj system" />
-      <definition value="information should only be included when providing top node organisation. " />
+      <definition value="information should only be included when providing top node organisation." />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -50,7 +50,7 @@
       <path value="Organization.identifier" />
       <sliceName value="HERid" />
       <short value="Identifies the id of the communication part." />
-      <definition value="Identifies the her-id for a top node organistion. When providing organisation units below the top node, partOf should be included in the resource. " />
+      <definition value="Identifies the her-id for a top node organistion. When providing organisation units below the top node, partOf should be included in the resource." />
       <max value="1" />
     </element>
     <element id="Organization.identifier:HERid.system">
@@ -62,9 +62,13 @@
       <path value="Organization.identifier.value" />
       <min value="1" />
     </element>
+    <element id="Organization.type.coding.system">
+      <path value="Organization.type.coding.system" />
+      <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-type-of-organization" />
+    </element>
     <element id="Organization.name">
       <path value="Organization.name" />
-      <definition value="A name associated with the organization or organisation unit. " />
+      <definition value="A name associated with the organization or organisation unit." />
       <min value="1" />
     </element>
     <element id="Organization.telecom">
@@ -79,7 +83,7 @@
     </element>
     <element id="Organization.partOf">
       <path value="Organization.partOf" />
-      <definition value="The organization of which this organization forms a part. If partOf is identified, then HERid shuold not be provided. " />
+      <definition value="The organization of which this organization forms a part. If partOf is identified, then HERid shuold not be provided." />
     </element>
   </differential>
 </StructureDefinition>
