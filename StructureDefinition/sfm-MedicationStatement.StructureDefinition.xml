@@ -147,6 +147,14 @@
       <path value="MedicationStatement.partOf" />
       <definition value="A larger event of which this particular event is a component or step. Not used by SFM." />
     </element>
+    <element id="MedicationStatement.medication[x]">
+      <path value="MedicationStatement.medication[x]" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-Medication" />
+        <aggregation value="bundled" />
+      </type>
+    </element>
     <element id="MedicationStatement.medication[x]:medicationReference">
       <path value="MedicationStatement.medication[x]" />
       <sliceName value="medicationReference" />
@@ -181,6 +189,7 @@
       <path value="MedicationStatement.dosage" />
       <short value="Details of how medication should be taken" />
       <definition value="If more than one dosage instance is registered, then the first instance in the sequence includes general information of the dosage and the following includes exact details for a single dose." />
+      <min value="1" />
     </element>
     <element id="MedicationStatement.dosage.extension">
       <path value="MedicationStatement.dosage.extension" />
