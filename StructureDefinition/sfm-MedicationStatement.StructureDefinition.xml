@@ -181,7 +181,6 @@
       <path value="MedicationStatement.dosage" />
       <short value="Details of how medication should be taken" />
       <definition value="If more than one dosage instance is registered, then the first instance in the sequence includes general information of the dosage and the following includes exact details for a single dose." />
-      <min value="1" />
     </element>
     <element id="MedicationStatement.dosage.extension">
       <path value="MedicationStatement.dosage.extension" />
