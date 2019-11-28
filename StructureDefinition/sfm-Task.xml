@@ -114,10 +114,6 @@
       <path value="Task.requester" />
       <max value="0" />
     </element>
-    <element id="Task.performerType">
-      <path value="Task.performerType" />
-      <max value="1" />
-    </element>
     <element id="Task.owner">
       <path value="Task.owner" />
       <definition value="Individual or organization currently responsible for task execution." />
