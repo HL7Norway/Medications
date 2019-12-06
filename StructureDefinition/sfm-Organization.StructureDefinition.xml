@@ -64,7 +64,7 @@
     </element>
     <element id="Organization.type">
       <path value="Organization.type" />
-      <definition value="The kind(s) of organization that this is. Local codesystem is used. " />
+      <definition value="The kind(s) of organization that this is. Local codesystem is used." />
       <binding>
         <strength value="extensible" />
         <valueSet value="http://ehelse.no/fhir/CodeSystem/sfm-type-of-organization" />
@@ -78,11 +78,6 @@
       <path value="Organization.name" />
       <definition value="A name associated with the organization or organisation unit." />
       <min value="1" />
-    </element>
-    <element id="Organization.telecom">
-      <path value="Organization.telecom" />
-      <min value="1" />
-      <max value="1" />
     </element>
     <element id="Organization.address">
       <path value="Organization.address" />
