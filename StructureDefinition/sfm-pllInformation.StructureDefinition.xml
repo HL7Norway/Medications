@@ -35,7 +35,7 @@
     </element>
     <element id="Extension.extension:relatedparties.url">
       <path value="Extension.extension.url" />
-      <fixedString value="relatedparties" />
+      <fixedUri value="relatedparties" />
     </element>
     <element id="Extension.extension:relatedparties.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -67,7 +67,7 @@
     </element>
     <element id="Extension.extension:deliveryinformation.extension:prescriptionId.url">
       <path value="Extension.extension.extension.url" />
-      <fixedString value="prescriptionId" />
+      <fixedUri value="prescriptionId" />
     </element>
     <element id="Extension.extension:deliveryinformation.extension:prescriptionId.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -83,7 +83,7 @@
     </element>
     <element id="Extension.extension:deliveryinformation.extension:refM10.url">
       <path value="Extension.extension.extension.url" />
-      <fixedString value="refM10" />
+      <fixedUri value="refM10" />
     </element>
     <element id="Extension.extension:deliveryinformation.extension:refM10.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -98,7 +98,7 @@
     </element>
     <element id="Extension.extension:deliveryinformation.extension:repacking.url">
       <path value="Extension.extension.extension.url" />
-      <fixedString value="repacking" />
+      <fixedUri value="repacking" />
     </element>
     <element id="Extension.extension:deliveryinformation.extension:repacking.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -119,7 +119,7 @@
     </element>
     <element id="Extension.extension:deliveryinformation.extension:datefirstdose.url">
       <path value="Extension.extension.extension.url" />
-      <fixedString value="datefirstdose" />
+      <fixedUri value="datefirstdose" />
     </element>
     <element id="Extension.extension:deliveryinformation.extension:datefirstdose.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -135,7 +135,7 @@
     </element>
     <element id="Extension.extension:deliveryinformation.extension:datelastdose.url">
       <path value="Extension.extension.extension.url" />
-      <fixedString value="datelastdose" />
+      <fixedUri value="datelastdose" />
     </element>
     <element id="Extension.extension:deliveryinformation.extension:datelastdose.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -150,7 +150,7 @@
     </element>
     <element id="Extension.extension:deliveryinformation.extension:pictureref.url">
       <path value="Extension.extension.extension.url" />
-      <fixedString value="pictureref" />
+      <fixedUri value="pictureref" />
     </element>
     <element id="Extension.extension:deliveryinformation.extension:pictureref.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -166,7 +166,7 @@
     </element>
     <element id="Extension.extension:deliveryinformation.extension:deliverydoc.url">
       <path value="Extension.extension.extension.url" />
-      <fixedString value="deliverydoc" />
+      <fixedUri value="deliverydoc" />
     </element>
     <element id="Extension.extension:deliveryinformation.extension:deliverydoc.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -178,7 +178,7 @@
     </element>
     <element id="Extension.extension:deliveryinformation.url">
       <path value="Extension.extension.url" />
-      <fixedString value="deliveryinformation" />
+      <fixedUri value="deliveryinformation" />
     </element>
     <element id="Extension.extension:deliveryinformation.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -190,7 +190,7 @@
     </element>
     <element id="Extension.extension:text.url">
       <path value="Extension.extension.url" />
-      <fixedString value="text" />
+      <fixedUri value="text" />
     </element>
     <element id="Extension.extension:text.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -204,7 +204,7 @@
     </element>
     <element id="Extension.extension:substitute.url">
       <path value="Extension.extension.url" />
-      <fixedString value="substitute" />
+      <fixedUri value="substitute" />
     </element>
     <element id="Extension.extension:substitute.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -212,9 +212,24 @@
         <code value="boolean" />
       </type>
     </element>
+    <element id="Extension.extension:createPLL">
+      <path value="Extension.extension" />
+      <sliceName value="createPLL" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:createPLL.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="createPLL" />
+    </element>
+    <element id="Extension.extension:createPLL.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="boolean" />
+      </type>
+    </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-pllInformation" />
+      <fixedUri value="http://ehelse.no/fhir/StructureDefinition/sfm-pllInformation" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
