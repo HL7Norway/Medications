@@ -134,7 +134,7 @@
       </type>
     </element>
     <element id="Extension.extension:doublePrescription.extension:codedreason.value[x]:valueCodeableConcept">
-      <path value="Extension.extension.extension.valueCodeableConcept" />
+      <path value="Extension.extension.extension.value[x]" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
@@ -145,7 +145,7 @@
       </binding>
     </element>
     <element id="Extension.extension:doublePrescription.extension:codedreason.value[x]:valueCodeableConcept.coding.system">
-      <path value="Extension.extension.extension.valueCodeableConcept.coding.system" />
+      <path value="Extension.extension.extension.value[x].coding.system" />
       <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-warning-cancelation-code" />
     </element>
     <element id="Extension.extension:doublePrescription.url">
@@ -257,7 +257,7 @@
       <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-warning-cancelation-code" />
     </element>
     <element id="Extension.extension:interaction.extension:codedreason.value[x]:valueCodeableConcept">
-      <path value="Extension.extension.extension.valueCodeableConcept" />
+      <path value="Extension.extension.extension.value[x]" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
@@ -268,7 +268,7 @@
       </binding>
     </element>
     <element id="Extension.extension:interaction.extension:codedreason.value[x]:valueCodeableConcept.coding.system">
-      <path value="Extension.extension.extension.valueCodeableConcept.coding.system" />
+      <path value="Extension.extension.extension.value[x].coding.system" />
       <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-warning-cancelation-code" />
     </element>
     <element id="Extension.extension:interaction.extension:interactiondata">
@@ -283,26 +283,10 @@
     </element>
     <element id="Extension.extension:interaction.extension:interactiondata.value[x]">
       <path value="Extension.extension.extension.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="closed" />
-      </slicing>
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Interaction" />
-        <aggregation value="bundled" />
-      </type>
-    </element>
-    <element id="Extension.extension:interaction.extension:interactiondata.value[x]:valueReference">
-      <path value="Extension.extension.extension.value[x]" />
-      <sliceName value="valueReference" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Interaction" />
-        <aggregation value="bundled" />
+        <aggregation value="contained" />
       </type>
     </element>
     <element id="Extension.extension:interaction.url">
@@ -412,7 +396,7 @@
       </type>
     </element>
     <element id="Extension.extension:allergyIntollerance.extension:codedreason.value[x]:valueCodeableConcept">
-      <path value="Extension.extension.extension.valueCodeableConcept" />
+      <path value="Extension.extension.extension.value[x]" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
@@ -423,7 +407,7 @@
       </binding>
     </element>
     <element id="Extension.extension:allergyIntollerance.extension:codedreason.value[x]:valueCodeableConcept.coding.system">
-      <path value="Extension.extension.extension.valueCodeableConcept.coding.system" />
+      <path value="Extension.extension.extension.value[x].coding.system" />
       <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-warning-cancelation-code" />
     </element>
     <element id="Extension.extension:allergyIntollerance.url">
