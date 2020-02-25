@@ -6,11 +6,11 @@
     <lastUpdated value="2018-10-03T13:58:11.827+00:00" />
   </meta>
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-MedicationStatement" />
-  <version value="2.1" />
+  <version value="2.2" />
   <name value="SfmMedicationStatement" />
   <title value="sfm-MedicationStatement" />
   <status value="draft" />
-  <date value="2019-09-29" />
+  <date value="2020-02-25" />
   <description value="SFM MedicationStatement derived from no-basis-MedicationStatement" />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
@@ -19,10 +19,6 @@
   <baseDefinition value="http://hl7.no/fhir/StructureDefinition/no-basis-MedicationStatement" />
   <derivation value="constraint" />
   <differential>
-    <element id="MedicationStatement">
-      <path value="MedicationStatement" />
-      <comment value="When interpreting a medicationStatement, the value of the status and NotTaken needed to be considered:&#xD;MedicationStatement.status + MedicationStatement.wasNotTaken&#xD;Status=Active + NotTaken=T = Not currently taking&#xD;Status=Completed + NotTaken=T = Not taken in the past&#xD;Status=Intended + NotTaken=T = No intention of taking&#xD;Status=Active + NotTaken=F = Taking, but not as prescribed&#xD;Status=Active + NotTaken=F = Taking&#xD;Status=Intended +NotTaken= F = Will be taking (not started)&#xD;Status=Completed + NotTaken=F = Taken in past&#xD;Status=In Error + NotTaken=N/A = In Error.&#xD;&#xA;" />
-    </element>
     <element id="MedicationStatement.extension">
       <path value="MedicationStatement.extension" />
       <slicing>
@@ -142,13 +138,39 @@
       <path value="MedicationStatement.basedOn" />
       <definition value="A plan, proposal or order that is fulfilled in whole or in part by this event. Not used by SFM." />
       <max value="1" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-MedicationStatement" />
+        <aggregation value="contained" />
+      </type>
+    </element>
+    <element id="MedicationStatement.basedOn.identifier">
+      <path value="MedicationStatement.basedOn.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="type.text" />
+        </discriminator>
+        <ordered value="true" />
+        <rules value="openAtEnd" />
+      </slicing>
+    </element>
+    <element id="MedicationStatement.basedOn.reasonCode">
+      <path value="MedicationStatement.basedOn.reasonCode" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="coding.system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
     </element>
     <element id="MedicationStatement.partOf">
       <path value="MedicationStatement.partOf" />
       <definition value="A larger event of which this particular event is a component or step. Not used by SFM." />
     </element>
     <element id="MedicationStatement.medication[x]:medicationReference">
-      <path value="MedicationStatement.medicationReference" />
+      <path value="MedicationStatement.medication[x]" />
       <sliceName value="medicationReference" />
       <type>
         <code value="Reference" />

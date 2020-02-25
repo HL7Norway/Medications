@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSystem>
+    <id value="sfm-medicationstatement-registration-status.codesystem" />
+    <meta>
+        <versionId value="1" />
+        <lastUpdated value="2019-09-13T00:00:00.000+00:00" />
+    </meta>
+    <url value="http://ehelse.no/fhir/CodeSystem/sfm-medicationstatement-registration-status" />
+    <version value="1.0.0" />
+    <name value="sfm-medicationstatement-registration-status.codesystem" />
+    <status value="draft" />
+    <date value="2020-02-25T00:00:00.000+00:00" />
+    <publisher value="Direktoratet for e-helse" />
+    <content value="complete" />
+      <concept>
+        <code value="1" />
+        <display value="Kladd" />
+      </concept>
+      <concept>
+        <code value="2" />
+        <display value="Dobbeltsignert" />
+      </concept>
+      <concept>
+        <code value="3" />
+        <display value="Godkjent" />
+      </concept>
+</CodeSystem>
