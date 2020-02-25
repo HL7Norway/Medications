@@ -140,7 +140,10 @@
       <max value="1" />
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/MedicationStatement" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationRequest" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-MedicationStatement" />
       </type>
     </element>
     <element id="MedicationStatement.partOf">
