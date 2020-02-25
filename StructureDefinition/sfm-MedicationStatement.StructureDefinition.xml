@@ -138,32 +138,6 @@
       <path value="MedicationStatement.basedOn" />
       <definition value="A plan, proposal or order that is fulfilled in whole or in part by this event. Not used by SFM." />
       <max value="1" />
-      <type>
-        <code value="Reference" />
-        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-MedicationStatement" />
-        <aggregation value="contained" />
-      </type>
-    </element>
-    <element id="MedicationStatement.basedOn.identifier">
-      <path value="MedicationStatement.basedOn.identifier" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="type.text" />
-        </discriminator>
-        <ordered value="true" />
-        <rules value="openAtEnd" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.basedOn.reasonCode">
-      <path value="MedicationStatement.basedOn.reasonCode" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="coding.system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
     </element>
     <element id="MedicationStatement.partOf">
       <path value="MedicationStatement.partOf" />
