@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSystem>
+    <id value="sfm-type-of-warning.codesystem" />
+    <meta>
+        <versionId value="1" />
+        <lastUpdated value="2020-03-05T00:00:00.000+00:00" />
+    </meta>
+    <url value="http://ehelse.no/fhir/CodeSystem/sfm-type-of-warning-code" />
+    <version value="1.0.0" />
+    <name value="sfm-type-of-warning.codesystem" />
+    <status value="draft" />
+    <date value="2020-03-05T00:00:00.000+00:00" />
+    <publisher value="Direktoratet for e-helse" />
+    <content value="complete" />
+      <concept>
+        <code value="1" />
+        <display value="Dobbeltforskrivning" />
+      </concept>
+      <concept>
+        <code value="2" />
+        <display value="Interaksjon" />
+      </concept>
+	  <concept>
+        <code value="3" />
+        <display value="Legemiddelreaksjon" />
+      </concept>
+	  <concept>
+        <code value="4" />
+        <display value="Laboratorie-måling" />
+      </concept>
+</CodeSystem>

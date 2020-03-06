@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="sfm-DetectedIssue" />
+  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-DetectedIssue" />
+  <version value="1.0" />
+  <name value="SfmDetectedIssue" />
+  <title value="SFM-DetectedIssue" />
+  <status value="draft" />
+  <date value="2020-03-05" />
+  <description value="Resource to communicate warnings and other issues that has been handeled and communicated within PLL. " />
+  <fhirVersion value="4.0.0" />
+  <mapping>
+    <identity value="workflow" />
+    <uri value="http://hl7.org/fhir/workflow" />
+    <name value="Workflow Pattern" />
+  </mapping>
+  <mapping>
+    <identity value="v2" />
+    <uri value="http://hl7.org/v2" />
+    <name value="HL7 v2 Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="DetectedIssue" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/DetectedIssue" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="DetectedIssue.code">
+      <path value="DetectedIssue.code" />
+      <max value="0" />
+    </element>
+    <element id="DetectedIssue.severity">
+      <path value="DetectedIssue.severity" />
+      <max value="0" />
+    </element>
+    <element id="DetectedIssue.patient">
+      <path value="DetectedIssue.patient" />
+      <max value="0" />
+    </element>
+    <element id="DetectedIssue.identified[x]">
+      <path value="DetectedIssue.identified[x]" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="DetectedIssue.implicated">
+      <path value="DetectedIssue.implicated" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-MedicationStatement" />
+      </type>
+    </element>
+    <element id="DetectedIssue.evidence">
+      <path value="DetectedIssue.evidence" />
+      <max value="1" />
+    </element>
+    <element id="DetectedIssue.evidence.code">
+      <path value="DetectedIssue.evidence.code" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="http://ehelse.no/fhir/CodeSystem/sfm-type-of-warning-code" />
+      </binding>
+    </element>
+    <element id="DetectedIssue.evidence.code.coding.system">
+      <path value="DetectedIssue.evidence.code.coding.system" />
+      <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-type-of-warning-code" />
+    </element>
+    <element id="DetectedIssue.evidence.detail.reference">
+      <path value="DetectedIssue.evidence.detail.reference" />
+      <short value="Referance to registered drug reaction" />
+      <definition value="Used when drug reaction is the source of evidence. " />
+    </element>
+    <element id="DetectedIssue.evidence.detail.identifier">
+      <path value="DetectedIssue.evidence.detail.identifier" />
+      <short value="Identifies interaction that is evidence" />
+      <definition value="Used for interactions and identies the FEST id of the interaction. " />
+    </element>
+    <element id="DetectedIssue.detail">
+      <path value="DetectedIssue.detail" />
+      <max value="0" />
+    </element>
+    <element id="DetectedIssue.reference">
+      <path value="DetectedIssue.reference" />
+      <max value="0" />
+    </element>
+    <element id="DetectedIssue.mitigation.action.coding">
+      <path value="DetectedIssue.mitigation.action.coding" />
+      <max value="1" />
+    </element>
+    <element id="DetectedIssue.mitigation.action.coding.system">
+      <path value="DetectedIssue.mitigation.action.coding.system" />
+      <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-warning-cancelation-code" />
+    </element>
+    <element id="DetectedIssue.mitigation.author">
+      <path value="DetectedIssue.mitigation.author" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-PractitionerRole" />
+        <aggregation value="contained" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
