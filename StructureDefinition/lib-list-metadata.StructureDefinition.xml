@@ -33,15 +33,15 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Extension.extension:aprovementstatus">
+    <element id="Extension.extension:approvalstatus">
       <path value="Extension.extension" />
-      <sliceName value="aprovementstatus" />
+      <sliceName value="approvalstatus" />
       <short value="Information about the LIB is aproved" />
       <definition value="Gives the status for the LIB. What kind of aprovement is given." />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:aprovementstatus1.extension">
+    <element id="Extension.extension:aprovementstatus.extension">
       <path value="Extension.extension.extension" />
       <slicing>
         <discriminator>
@@ -51,7 +51,7 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Extension.extension:aprovementstatus.extension:aproved">
+    <element id="Extension.extension:approvalstatus.extension:aproved">
       <path value="Extension.extension.extension" />
       <sliceName value="aproved" />
       <short value="Aprovementinformation" />
@@ -59,71 +59,71 @@
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:aprovementstatus.extension:aproved.url">
+    <element id="Extension.extension:approvalstatus.extension:aproved.url">
       <path value="Extension.extension.extension.url" />
-      <fixedString value="aproved" />
+      <fixedUri value="aproved" />
     </element>
-    <element id="Extension.extension:aprovementstatus.extension:aproved.value[x]">
+    <element id="Extension.extension:approvalstatus.extension:aproved.value[x]">
       <path value="Extension.extension.extension.value[x]" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
-    <element id="Extension.extension:aprovementstatus.extension:signedby">
+    <element id="Extension.extension:approvalstatus.extension:signedby">
       <path value="Extension.extension.extension" />
       <sliceName value="signedby" />
       <short value="Practitioner that aporved" />
       <definition value="Identifier of person that signed the list." />
       <max value="1" />
     </element>
-    <element id="Extension.extension:aprovementstatus.extension:signedby.url">
+    <element id="Extension.extension:approvalstatus.extension:signedby.url">
       <path value="Extension.extension.extension.url" />
-      <fixedString value="signedby" />
+      <fixedUri value="signedby" />
     </element>
-    <element id="Extension.extension:aprovementstatus.extension:signedby.value[x]">
+    <element id="Extension.extension:approvalstatus.extension:signedby.value[x]">
       <path value="Extension.extension.extension.value[x]" />
       <type>
         <code value="string" />
       </type>
     </element>
-    <element id="Extension.extension:aprovementstatus.url">
+    <element id="Extension.extension:approvalstatus.url">
       <path value="Extension.extension.url" />
-      <fixedString value="aprovementstatus" />
+      <fixedUri value="approvalstatus" />
     </element>
-    <element id="Extension.extension:aprovementstatus.value[x]">
+    <element id="Extension.extension:approvalstatus.value[x]">
       <path value="Extension.extension.value[x]" />
       <max value="0" />
     </element>
-    <element id="Extension.extension:generalcomment1">
+    <element id="Extension.extension:generalcomment">
       <path value="Extension.extension" />
-      <sliceName value="generalcomment1" />
+      <sliceName value="generalcomment" />
       <short value="Comment about the LIB list" />
       <definition value="General comment about the LIB list." />
       <max value="1" />
     </element>
-    <element id="Extension.extension:generalcomment1.url">
+    <element id="Extension.extension:generalcomment.url">
       <path value="Extension.extension.url" />
-      <fixedString value="generalcomment1" />
+      <fixedUri value="generalcomment" />
     </element>
-    <element id="Extension.extension:generalcomment1.value[x]">
+    <element id="Extension.extension:generalcomment.value[x]">
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="string" />
       </type>
     </element>
-    <element id="Extension.extension:purpuse">
+    <element id="Extension.extension:purpose">
       <path value="Extension.extension" />
-      <sliceName value="purpuse" />
+      <sliceName value="purpose" />
       <short value="Identifies purpose of the list" />
       <definition value="What kind of list was requested by EPJ." />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:purpuse.url">
+    <element id="Extension.extension:purpose.url">
       <path value="Extension.extension.url" />
-      <fixedString value="purpuse" />
+      <fixedUri value="purpose" />
     </element>
-    <element id="Extension.extension:purpuse.value[x]">
+    <element id="Extension.extension:purpose.value[x]">
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="CodeableConcept" />
@@ -138,7 +138,7 @@
     </element>
     <element id="Extension.extension:period.url">
       <path value="Extension.extension.url" />
-      <fixedString value="period" />
+      <fixedUri value="period" />
     </element>
     <element id="Extension.extension:period.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -153,7 +153,7 @@
       <definition value="Information about last medication reivew that was performed." />
       <max value="1" />
     </element>
-    <element id="Extension.extension:medicationreview1.extension">
+    <element id="Extension.extension:medicationreview.extension">
       <path value="Extension.extension.extension" />
       <slicing>
         <discriminator>
@@ -171,7 +171,7 @@
     </element>
     <element id="Extension.extension:medicationreview.extension:timestamp.url">
       <path value="Extension.extension.extension.url" />
-      <fixedString value="timestamp" />
+      <fixedUri value="timestamp" />
     </element>
     <element id="Extension.extension:medicationreview.extension:timestamp.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -189,7 +189,7 @@
     </element>
     <element id="Extension.extension:medicationreview.extension:performedby.url">
       <path value="Extension.extension.extension.url" />
-      <fixedString value="performedby" />
+      <fixedUri value="performedby" />
     </element>
     <element id="Extension.extension:medicationreview.extension:performedby.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -204,7 +204,7 @@
     </element>
     <element id="Extension.extension:medicationreview.extension:comment.url">
       <path value="Extension.extension.extension.url" />
-      <fixedString value="comment" />
+      <fixedUri value="comment" />
     </element>
     <element id="Extension.extension:medicationreview.extension:comment.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -214,7 +214,7 @@
     </element>
     <element id="Extension.extension:medicationreview.url">
       <path value="Extension.extension.url" />
-      <fixedString value="medicationreview" />
+      <fixedUri value="medicationreview" />
     </element>
     <element id="Extension.extension:medicationreview.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -222,7 +222,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedString value="http://example.org/fhir/StructureDefinition/sfm-lib-list-meta-data" />
+      <fixedUri value="http://example.org/fhir/StructureDefinition/sfm-lib-list-meta-data" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
