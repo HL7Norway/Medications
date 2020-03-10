@@ -6,10 +6,11 @@
     <lastUpdated value="2018-10-03T16:02:04.672+00:00" />
   </meta>
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-Task" />
+  <version value="2.0" />
   <name value="SfmTask" />
   <title value="sfm-Task" />
   <status value="draft" />
-  <date value="2019-07-01" />
+  <date value="2020-03-10" />
   <description value="sfm-Task is derived from Task." />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
@@ -100,6 +101,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Patient" />
+        <aggregation value="contained" />
       </type>
     </element>
     <element id="Task.encounter">
@@ -120,6 +122,8 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Organization" />
+        <aggregation value="contained" />
       </type>
     </element>
     <element id="Task.location">
