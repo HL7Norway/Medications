@@ -10,7 +10,7 @@
   <name value="SfmMedicationStatement" />
   <title value="sfm-MedicationStatement" />
   <status value="draft" />
-  <date value="2020-02-25" />
+  <date value="2020-03-10" />
   <description value="SFM MedicationStatement derived from no-basis-MedicationStatement" />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
