@@ -56,6 +56,7 @@
     <element id="MedicationStatement.extension:genericSubstitution">
       <path value="MedicationStatement.extension" />
       <sliceName value="genericSubstitution" />
+      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-generic-substitution" />
@@ -64,6 +65,7 @@
     <element id="MedicationStatement.extension:discontinuationinformation">
       <path value="MedicationStatement.extension" />
       <sliceName value="discontinuationinformation" />
+      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://eheles.no/fhir/StructureDefinition/sfm-discontinuation" />
@@ -81,6 +83,8 @@
     <element id="MedicationStatement.extension:reseptInfo">
       <path value="MedicationStatement.extension" />
       <sliceName value="reseptInfo" />
+      <definition value="Information that is relevant for Norwegian e-prescription." />
+      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-reseptamendment" />
@@ -136,7 +140,7 @@
     </element>
     <element id="MedicationStatement.basedOn">
       <path value="MedicationStatement.basedOn" />
-      <definition value="A plan, proposal or order that is fulfilled in whole or in part by this event. Referance to medication statement is used when current statement is a draft and the draft is based on a previous statement. " />
+      <definition value="A plan, proposal or order that is fulfilled in whole or in part by this event. Referance to medication statement is used when current statement is a draft and the draft is based on a previous statement." />
       <max value="1" />
       <type>
         <code value="Reference" />
@@ -151,7 +155,7 @@
       <definition value="A larger event of which this particular event is a component or step. Not used by SFM." />
     </element>
     <element id="MedicationStatement.medication[x]:medicationReference">
-      <path value="MedicationStatement.medication[x]" />
+      <path value="MedicationStatement.medicationReference" />
       <sliceName value="medicationReference" />
       <type>
         <code value="Reference" />
