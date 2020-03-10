@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sfm-dispenseinfo" />
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-dispenseinfo" />
-  <version value="1.0" />
+  <version value="2.0" />
   <name value="SfmDispenseinfo" />
   <title value="sfm-dispenseinfo" />
   <status value="draft" />
-  <date value="2019-09-24" />
+  <date value="2020-03-10" />
   <description value="Information from norwegian dispense message." />
   <fhirVersion value="4.0.0" />
   <mapping>
@@ -28,6 +28,10 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <max value="1" />
+    </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
       <slicing>
@@ -45,7 +49,7 @@
     </element>
     <element id="Extension.extension:prescriptionid.url">
       <path value="Extension.extension.url" />
-      <fixedString value="prescriptionid" />
+      <fixedUri value="prescriptionid" />
     </element>
     <element id="Extension.extension:prescriptionid.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -60,7 +64,7 @@
     </element>
     <element id="Extension.extension:cancelation.url">
       <path value="Extension.extension.url" />
-      <fixedString value="cancelation" />
+      <fixedUri value="cancelation" />
     </element>
     <element id="Extension.extension:cancelation.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -75,7 +79,7 @@
     </element>
     <element id="Extension.extension:concluded.url">
       <path value="Extension.extension.url" />
-      <fixedString value="concluded" />
+      <fixedUri value="concluded" />
     </element>
     <element id="Extension.extension:concluded.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -90,7 +94,7 @@
     </element>
     <element id="Extension.extension:substitutionreservationcustomer.url">
       <path value="Extension.extension.url" />
-      <fixedString value="substitutionreservationcustomer" />
+      <fixedUri value="substitutionreservationcustomer" />
     </element>
     <element id="Extension.extension:substitutionreservationcustomer.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -105,7 +109,7 @@
     </element>
     <element id="Extension.extension:cancelationid.url">
       <path value="Extension.extension.url" />
-      <fixedString value="cancelationid" />
+      <fixedUri value="cancelationid" />
     </element>
     <element id="Extension.extension:cancelationid.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -119,7 +123,7 @@
     </element>
     <element id="Extension.extension:batchnumber.url">
       <path value="Extension.extension.url" />
-      <fixedString value="batchnumber" />
+      <fixedUri value="batchnumber" />
     </element>
     <element id="Extension.extension:batchnumber.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -130,10 +134,11 @@
     <element id="Extension.extension:refcode">
       <path value="Extension.extension" />
       <sliceName value="refcode" />
+      <max value="1" />
     </element>
     <element id="Extension.extension:refcode.url">
       <path value="Extension.extension.url" />
-      <fixedString value="refcode" />
+      <fixedUri value="refcode" />
     </element>
     <element id="Extension.extension:refcode.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -158,10 +163,11 @@
     <element id="Extension.extension:refparagraph">
       <path value="Extension.extension" />
       <sliceName value="refparagraph" />
+      <max value="1" />
     </element>
     <element id="Extension.extension:refparagraph.url">
       <path value="Extension.extension.url" />
-      <fixedString value="refparagraph" />
+      <fixedUri value="refparagraph" />
     </element>
     <element id="Extension.extension:refparagraph.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -175,7 +181,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-dispenseinfo" />
+      <fixedUri value="http://ehelse.no/fhir/StructureDefinition/sfm-dispenseinfo" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
