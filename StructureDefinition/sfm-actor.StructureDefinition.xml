@@ -50,7 +50,7 @@
     </element>
     <element id="Extension.extension:role.url">
       <path value="Extension.extension.url" />
-      <fixedString value="role" />
+      <fixedUri value="role" />
     </element>
     <element id="Extension.extension:role.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -70,7 +70,7 @@
     </element>
     <element id="Extension.extension:practioner.url">
       <path value="Extension.extension.url" />
-      <fixedString value="practioner" />
+      <fixedUri value="practioner" />
     </element>
     <element id="Extension.extension:practioner.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -82,7 +82,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-actor" />
+      <fixedUri value="http://ehelse.no/fhir/StructureDefinition/sfm-actor" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
