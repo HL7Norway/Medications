@@ -56,7 +56,7 @@
     <element id="Extension.extension:reseptdate.value[x]">
       <path value="Extension.extension.value[x]" />
       <type>
-        <code value="dateTime" />
+        <code value="date" />
       </type>
     </element>
     <element id="Extension.extension:expirationdate">
@@ -73,7 +73,7 @@
     <element id="Extension.extension:expirationdate.value[x]">
       <path value="Extension.extension.value[x]" />
       <type>
-        <code value="dateTime" />
+        <code value="date" />
       </type>
     </element>
     <element id="Extension.extension:festUpdate">
@@ -625,7 +625,7 @@
       <path value="Extension.extension" />
       <sliceName value="dispencesummary" />
       <short value="Delivery summary from RF" />
-      <definition value="Information provided from RF. Summary of what has been dispenced on the prescription (resept).&#xD;&#xA;M9.6 information. " />
+      <definition value="Information provided from RF. Summary of what has been dispenced on the prescription (resept).&#xD;&#xA;M9.6 information." />
     </element>
     <element id="Extension.extension:dispencesummary.extension">
       <path value="Extension.extension.extension" />
