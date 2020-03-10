@@ -187,6 +187,7 @@
     <element id="Extension.extension:text">
       <path value="Extension.extension" />
       <sliceName value="text" />
+      <max value="1" />
     </element>
     <element id="Extension.extension:text.url">
       <path value="Extension.extension.url" />
@@ -201,6 +202,7 @@
     <element id="Extension.extension:substitute">
       <path value="Extension.extension" />
       <sliceName value="substitute" />
+      <max value="1" />
     </element>
     <element id="Extension.extension:substitute.url">
       <path value="Extension.extension.url" />
