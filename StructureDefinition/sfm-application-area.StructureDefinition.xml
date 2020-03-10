@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sfm-application-area" />
   <url value="http://example.org/fhir/StructureDefinition/sfm-application-area" />
-  <version value="2.0" />
+  <version value="2.1" />
   <name value="SfmApplicationArea" />
   <title value="sfm-application-area" />
   <status value="draft" />
-  <date value="2019-09-21" />
+  <date value="2020-03-10" />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -32,10 +32,11 @@
       <path value="Extension.extension" />
       <sliceName value="coded" />
       <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.&#xD;&#xA;&#xD;&#xA;urn:oid:2.16.578.1.12.4.1.1.7488" />
+      <max value="1" />
     </element>
     <element id="Extension.extension:coded.url">
       <path value="Extension.extension.url" />
-      <fixedString value="coded" />
+      <fixedUri value="coded" />
     </element>
     <element id="Extension.extension:coded.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -50,10 +51,11 @@
     <element id="Extension.extension:text">
       <path value="Extension.extension" />
       <sliceName value="text" />
+      <max value="1" />
     </element>
     <element id="Extension.extension:text.url">
       <path value="Extension.extension.url" />
-      <fixedString value="text" />
+      <fixedUri value="text" />
     </element>
     <element id="Extension.extension:text.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -63,7 +65,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedString value="http://example.org/fhir/StructureDefinition/sfm-application-area" />
+      <fixedUri value="http://example.org/fhir/StructureDefinition/sfm-application-area" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
