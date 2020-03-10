@@ -62,7 +62,6 @@
     <element id="Basic.extension:generaldispenseinfo">
       <path value="Basic.extension" />
       <sliceName value="generaldispenseinfo" />
-      <min value="1" />
       <max value="1" />
       <type>
         <code value="Extension" />
