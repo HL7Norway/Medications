@@ -6,11 +6,11 @@
     <lastUpdated value="2018-10-03T13:59:51.379+00:00" />
   </meta>
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-reseptamendment" />
-  <version value="2.0" />
+  <version value="2.1" />
   <name value="SfmReseptamendment" />
   <title value="sfm-reseptamendment" />
   <status value="draft" />
-  <date value="2019-09-15" />
+  <date value="2020-03-10" />
   <description value="Information required in Norwegian e-resept (electronic prescription)." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
