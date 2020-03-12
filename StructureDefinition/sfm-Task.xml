@@ -27,8 +27,6 @@
     <element id="Task.identifier">
       <path value="Task.identifier" />
       <definition value="The business identifier for this task. SFM creates the identifier that should be used when refering the task." />
-      <min value="1" />
-      <max value="1" />
     </element>
     <element id="Task.instantiatesCanonical">
       <path value="Task.instantiatesCanonical" />
