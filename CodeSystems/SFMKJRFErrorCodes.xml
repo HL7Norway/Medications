@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSystem>
+    <id value="sfm-kj-rf-error-code.codesystem" />
+    <meta>
+        <versionId value="1" />
+        <lastUpdated value="2019-09-13T00:00:00.000+00:00" />
+    </meta>
+    <url value="http://ehelse.no/fhir/CodeSystem/sfm-kj-rf-error-code" />
+    <version value="1.0.0" />
+    <name value="sfm-kj-rf-error-code.codesystem" />
+    <status value="draft" />
+    <date value="2020-03-12T00:00:00.000+00:00" />
+    <publisher value="Direktoratet for e-helse" />
+    <content value="complete" />
+      <concept>
+        <code value="1" />
+        <display value="KJ ikke tilgjengelig" />
+      </concept>
+      <concept>
+        <code value="2" />
+        <display value="KJ svarer ikke" />
+      </concept>
+	  <concept>
+        <code value="3" />
+        <display value="RF ikke tilgjengelig" />
+      </concept>
+	  <concept>
+        <code value="4" />
+        <display value="RF svarer ikke" />
+      </concept>
+</CodeSystem>
