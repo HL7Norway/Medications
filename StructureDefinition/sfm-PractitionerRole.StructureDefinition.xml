@@ -7,7 +7,7 @@
   <title value="sfm-PractitionerRole" />
   <status value="draft" />
   <date value="2020-03-05" />
-  <description value="Used in SFM to provide relation between Practitioner and organization. " />
+  <description value="Used in SFM to provide relation between Practitioner and organization." />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="v2" />
@@ -43,6 +43,7 @@
         <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Practitioner" />
         <aggregation value="contained" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="PractitionerRole.organization">
       <path value="PractitionerRole.organization" />
@@ -50,6 +51,7 @@
         <code value="Reference" />
         <aggregation value="contained" />
       </type>
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>

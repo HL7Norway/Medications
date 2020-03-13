@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sfm-pllInformation" />
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-pllInformation" />
-  <version value="1.0" />
+  <version value="2.0" />
   <name value="SfmpllInformation" />
   <title value="sfm-pllInformation" />
   <status value="draft" />
-  <date value="2019-09-13" />
+  <date value="2020-03-13" />
   <description value="Describes information provided in PLL/M25 messages" />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
@@ -32,6 +32,8 @@
     <element id="Extension.extension:relatedparties">
       <path value="Extension.extension" />
       <sliceName value="relatedparties" />
+      <short value="Providers with relations to patient" />
+      <definition value="Differnt kind of healthcare providers that have relations to the patient. .eresept: M25:Rolle" />
     </element>
     <element id="Extension.extension:relatedparties.url">
       <path value="Extension.extension.url" />
@@ -48,6 +50,8 @@
     <element id="Extension.extension:deliveryinformation">
       <path value="Extension.extension" />
       <sliceName value="deliveryinformation" />
+      <short value="Delivery information from M25.3" />
+      <definition value="Information provided in M25.3. " />
     </element>
     <element id="Extension.extension:deliveryinformation.extension">
       <path value="Extension.extension.extension" />
@@ -187,6 +191,8 @@
     <element id="Extension.extension:text">
       <path value="Extension.extension" />
       <sliceName value="text" />
+      <short value="General coment in M25.x" />
+      <definition value=".eresept -&gt; M25: Merknad" />
       <max value="1" />
     </element>
     <element id="Extension.extension:text.url">
@@ -202,6 +208,8 @@
     <element id="Extension.extension:substitute">
       <path value="Extension.extension" />
       <sliceName value="substitute" />
+      <short value="Substitute for Multidose doctor" />
+      <definition value="Identifies if doctor is substitute for the multidose doctor. .eresept -&gt;M25.1:Vikar" />
       <max value="1" />
     </element>
     <element id="Extension.extension:substitute.url">
@@ -217,6 +225,8 @@
     <element id="Extension.extension:createPLL">
       <path value="Extension.extension" />
       <sliceName value="createPLL" />
+      <short value="Identifies to create PLL" />
+      <definition value="Identify if SFM should create PLL based on input provided. " />
       <max value="1" />
     </element>
     <element id="Extension.extension:createPLL.url">
@@ -228,6 +238,83 @@
       <type>
         <code value="boolean" />
       </type>
+    </element>
+    <element id="Extension.extension:packinginfo">
+      <path value="Extension.extension" />
+      <sliceName value="packinginfo" />
+      <short value="Packing info from M25.2/3" />
+      <definition value="Information about last packing and latest order date for next packing. " />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:packinginfo.extension">
+      <path value="Extension.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:packinginfo.extension:orderdeadline">
+      <path value="Extension.extension.extension" />
+      <sliceName value="orderdeadline" />
+      <short value="Deadline for ordering new packing" />
+      <definition value=".eresept M25.2/3 -&gt; Bestillingsfrist" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:packinginfo.extension:orderdeadline.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="orderdeadline" />
+    </element>
+    <element id="Extension.extension:packinginfo.extension:orderdeadline.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="Extension.extension:packinginfo.extension:firstdosingdate">
+      <path value="Extension.extension.extension" />
+      <sliceName value="firstdosingdate" />
+      <short value="First date of dosing based on packing" />
+      <definition value=".eresept -&gt; M25.2/3:ForsteDoseringsDato" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:packinginfo.extension:firstdosingdate.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="firstdosingdate" />
+    </element>
+    <element id="Extension.extension:packinginfo.extension:firstdosingdate.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="date" />
+      </type>
+    </element>
+    <element id="Extension.extension:packinginfo.extension:lastdosingdate">
+      <path value="Extension.extension.extension" />
+      <sliceName value="lastdosingdate" />
+      <short value="Last date of dosing based on packing" />
+      <definition value=".eresept -&gt; M25.2/3:SisteDoseringsDato" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:packinginfo.extension:lastdosingdate.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="lastdosingdate" />
+    </element>
+    <element id="Extension.extension:packinginfo.extension:lastdosingdate.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="date" />
+      </type>
+    </element>
+    <element id="Extension.extension:packinginfo.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="packinginfo" />
+    </element>
+    <element id="Extension.extension:packinginfo.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <max value="0" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
