@@ -7,7 +7,7 @@
   <title value="sfm-pllInformation" />
   <status value="draft" />
   <date value="2020-03-13" />
-  <description value="Describes information provided in PLL/M25 messages" />
+  <description value="Describes information provided in PLL/M25 messages." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -51,7 +51,7 @@
       <path value="Extension.extension" />
       <sliceName value="deliveryinformation" />
       <short value="Delivery information from M25.3" />
-      <definition value="Information provided in M25.3. " />
+      <definition value="Information provided in M25.3." />
     </element>
     <element id="Extension.extension:deliveryinformation.extension">
       <path value="Extension.extension.extension" />
@@ -226,7 +226,7 @@
       <path value="Extension.extension" />
       <sliceName value="createPLL" />
       <short value="Identifies to create PLL" />
-      <definition value="Identify if SFM should create PLL based on input provided. " />
+      <definition value="Identify if SFM should create PLL based on input provided." />
       <max value="1" />
     </element>
     <element id="Extension.extension:createPLL.url">
@@ -243,7 +243,7 @@
       <path value="Extension.extension" />
       <sliceName value="packinginfo" />
       <short value="Packing info from M25.2/3" />
-      <definition value="Information about last packing and latest order date for next packing. " />
+      <definition value="Information about last packing and latest order date for next packing." />
       <max value="1" />
     </element>
     <element id="Extension.extension:packinginfo.extension">
