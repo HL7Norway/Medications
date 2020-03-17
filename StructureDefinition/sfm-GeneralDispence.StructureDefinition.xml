@@ -44,11 +44,15 @@
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-substitutioninfo" />
       </type>
     </element>
+    <element id="Basic.extension:substitutioninfo.extension:conferencedpatient">
+      <path value="Basic.extension.extension" />
+      <sliceName value="conferencedpatient" />
+      <definition value="Identified if the patient was requested about the substitution. .eresept-&gt; Byttereservasjonkunde" />
+    </element>
     <element id="Basic.extension:dispenseinfo">
       <path value="Basic.extension" />
       <sliceName value="dispenseinfo" />
       <min value="1" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-dispenseinfo" />

@@ -38,13 +38,13 @@
       <path value="Extension.extension" />
       <sliceName value="product" />
       <short value="Product number" />
-      <definition value="Product number given by FEST." />
+      <definition value="Product number given by FEST. .eresept -&gt; Nr  (naringsmiddel/MedForbMatr)" />
       <min value="1" />
       <max value="1" />
     </element>
     <element id="Extension.extension:product.url">
       <path value="Extension.extension.url" />
-      <fixedString value="product" />
+      <fixedUri value="product" />
     </element>
     <element id="Extension.extension:product.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -56,12 +56,12 @@
       <path value="Extension.extension" />
       <sliceName value="text" />
       <short value="Usage instructions" />
-      <definition value="Information about how to use the delivered product." />
+      <definition value="Information about how to use the delivered product. .eresept -&gt; Bruksveiledning" />
       <max value="1" />
     </element>
     <element id="Extension.extension:text.url">
       <path value="Extension.extension.url" />
-      <fixedString value="text" />
+      <fixedUri value="text" />
     </element>
     <element id="Extension.extension:text.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -73,13 +73,13 @@
       <path value="Extension.extension" />
       <sliceName value="productgroup" />
       <short value="Group the product is registered in" />
-      <definition value="Refunding group that the product is registered in." />
+      <definition value="Refunding group that the product is registered in. .eresept -&gt; ProdGruppe" />
       <min value="1" />
       <max value="1" />
     </element>
     <element id="Extension.extension:productgroup.url">
       <path value="Extension.extension.url" />
-      <fixedString value="productgroup" />
+      <fixedUri value="productgroup" />
     </element>
     <element id="Extension.extension:productgroup.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -95,13 +95,13 @@
       <path value="Extension.extension" />
       <sliceName value="performer" />
       <short value="Who has dispenced the product" />
-      <definition value="Pharmacy or bandage shop dispensing the product." />
+      <definition value="Pharmacy or bandage shop dispensing the product. .eresept -&gt; Utleverer.navn" />
       <min value="1" />
       <max value="1" />
     </element>
     <element id="Extension.extension:performer.url">
       <path value="Extension.extension.url" />
-      <fixedString value="performer" />
+      <fixedUri value="performer" />
     </element>
     <element id="Extension.extension:performer.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -111,7 +111,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-generaldispenseextention" />
+      <fixedUri value="http://ehelse.no/fhir/StructureDefinition/sfm-generaldispenseextention" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
