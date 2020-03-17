@@ -152,10 +152,10 @@
     </element>
     <element id="MedicationStatement.partOf">
       <path value="MedicationStatement.partOf" />
-      <definition value="A larger event of which this particular event is a component or step. Not used by SFM." />
+      <definition value="A larger event of which this particular event is a component or step. " />
     </element>
     <element id="MedicationStatement.medication[x]:medicationReference">
-      <path value="MedicationStatement.medicationReference" />
+      <path value="MedicationStatement.medication[x]" />
       <sliceName value="medicationReference" />
       <type>
         <code value="Reference" />
