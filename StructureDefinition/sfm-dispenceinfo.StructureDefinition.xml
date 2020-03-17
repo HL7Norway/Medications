@@ -45,6 +45,8 @@
     <element id="Extension.extension:prescriptionid">
       <path value="Extension.extension" />
       <sliceName value="prescriptionid" />
+      <short value="Resept-id " />
+      <definition value=".eresept = msgid from M1." />
       <max value="1" />
     </element>
     <element id="Extension.extension:prescriptionid.url">
@@ -60,6 +62,8 @@
     <element id="Extension.extension:cancelation">
       <path value="Extension.extension" />
       <sliceName value="cancelation" />
+      <short value="Annulering" />
+      <definition value="Identifies if this should be understood as replacing another medicationdispence. .eresept: Annullering" />
       <max value="1" />
     </element>
     <element id="Extension.extension:cancelation.url">
@@ -75,6 +79,8 @@
     <element id="Extension.extension:concluded">
       <path value="Extension.extension" />
       <sliceName value="concluded" />
+      <short value="Last delivery done" />
+      <definition value=".eresept = Avsluttet" />
       <max value="1" />
     </element>
     <element id="Extension.extension:concluded.url">
@@ -90,6 +96,8 @@
     <element id="Extension.extension:substitutionreservationcustomer">
       <path value="Extension.extension" />
       <sliceName value="substitutionreservationcustomer" />
+      <short value="restricted substitution" />
+      <definition value="custumer has resticted substitution. .eresept = ByttereservasjonKunde" />
       <max value="1" />
     </element>
     <element id="Extension.extension:substitutionreservationcustomer.url">
@@ -105,6 +113,8 @@
     <element id="Extension.extension:cancelationid">
       <path value="Extension.extension" />
       <sliceName value="cancelationid" />
+      <short value="Pointer to canceled delivery" />
+      <definition value=".eresept = AnnulleringsId" />
       <max value="1" />
     </element>
     <element id="Extension.extension:cancelationid.url">
@@ -120,6 +130,8 @@
     <element id="Extension.extension:batchnumber">
       <path value="Extension.extension" />
       <sliceName value="batchnumber" />
+      <short value="Identifes batch of package" />
+      <definition value=".eresept = Batchnr" />
     </element>
     <element id="Extension.extension:batchnumber.url">
       <path value="Extension.extension.url" />
@@ -134,6 +146,8 @@
     <element id="Extension.extension:refcode">
       <path value="Extension.extension" />
       <sliceName value="refcode" />
+      <short value="Reimbursment code" />
+      <definition value=".eresept = RefKode" />
       <max value="1" />
     </element>
     <element id="Extension.extension:refcode.url">
@@ -163,6 +177,8 @@
     <element id="Extension.extension:refparagraph">
       <path value="Extension.extension" />
       <sliceName value="refparagraph" />
+      <short value="Reimbursment paragraph" />
+      <definition value=".eresept = RefHjemmel" />
       <max value="1" />
     </element>
     <element id="Extension.extension:refparagraph.url">
