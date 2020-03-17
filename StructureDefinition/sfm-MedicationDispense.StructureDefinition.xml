@@ -33,11 +33,6 @@
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-dispenseinfo" />
       </type>
     </element>
-    <element id="MedicationDispense.extension:dispenseinfo.extension:refparagraph">
-      <path value="MedicationDispense.extension.extension" />
-      <sliceName value="refparagraph" />
-      <max value="1" />
-    </element>
     <element id="MedicationDispense.identifier">
       <path value="MedicationDispense.identifier" />
       <definition value="Identifiers associated with this Medication Dispense that are defined by business processes and/or used to refer to it when a direct URL reference to the resource itself is not appropriate. They are business identifiers assigned to this resource by the performer or other systems and remain constant as the resource is updated and propagates from server to server.&#xD;&#xA;&#xD;&#xA;M10-id will be communicated as identifier." />
