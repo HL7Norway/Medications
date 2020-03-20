@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sfm-MedicationComposition" />
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-MedicationComposition" />
-  <version value="1.1.1" />
+  <version value="1.1.2" />
   <name value="SfmMedicationComposition" />
   <title value="sfm-MedicationComposition" />
   <status value="draft" />
@@ -81,7 +81,7 @@
           <path value="code.coding.code" />
         </discriminator>
         <description value="Slicing of this section is done on code.coding.code with use of valueset" />
-        <ordered value="true" />
+        <ordered value="false" />
         <rules value="open" />
       </slicing>
       <short value="Medication list" />
