@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sfm-MedicationComposition" />
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-MedicationComposition" />
-  <version value="1.1" />
+  <version value="1.1.1" />
   <name value="SfmMedicationComposition" />
   <title value="sfm-MedicationComposition" />
   <status value="draft" />
@@ -25,11 +25,13 @@
     <element id="Composition.subject">
       <path value="Composition.subject" />
       <short value="Identification of the patient" />
+      <min value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Patient" />
         <aggregation value="bundled" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Composition.attester">
       <path value="Composition.attester" />
@@ -38,29 +40,33 @@
           <type value="profile" />
           <path value="party.reference" />
         </discriminator>
+        <ordered value="true" />
         <rules value="open" />
       </slicing>
       <definition value="When submitting this composition to SFM: One for the Practitioner and one for the organisation" />
       <max value="2" />
+      <mustSupport value="true" />
     </element>
-    <element id="Composition.attester:sliceAttesterPractitioner">
+    <element id="Composition.attester:attesterPractitioner">
       <path value="Composition.attester" />
-      <sliceName value="sliceAttesterPractitioner" />
-      <max value="2" />
+      <sliceName value="attesterPractitioner" />
+      <max value="1" />
+      <mustSupport value="true" />
     </element>
-    <element id="Composition.attester:sliceAttesterPractitioner.party">
+    <element id="Composition.attester:attesterPractitioner.party">
       <path value="Composition.attester.party" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner" />
       </type>
     </element>
-    <element id="Composition.attester:sliceAttesterOrganisation">
+    <element id="Composition.attester:attesterOrganisation">
       <path value="Composition.attester" />
-      <sliceName value="sliceAttesterOrganisation" />
-      <max value="2" />
+      <sliceName value="attesterOrganisation" />
+      <max value="1" />
+      <mustSupport value="true" />
     </element>
-    <element id="Composition.attester:sliceAttesterOrganisation.party">
+    <element id="Composition.attester:attesterOrganisation.party">
       <path value="Composition.attester.party" />
       <type>
         <code value="Reference" />
@@ -75,11 +81,13 @@
           <path value="code.coding.code" />
         </discriminator>
         <description value="Slicing of this section is done on code.coding.code with use of valueset" />
+        <ordered value="true" />
         <rules value="open" />
       </slicing>
       <short value="Medication list" />
       <definition value="This defined sections of this Composition are defined as slices using codesystem sfm-section-types:&#xD;&#xA;sectionMedication, sectionPLL, sectionPLLinfo, sectionAllergies, sectionOtherPrescriptions, sectionDispense" />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.section:sectionPLLinfo">
       <path value="Composition.section" />
