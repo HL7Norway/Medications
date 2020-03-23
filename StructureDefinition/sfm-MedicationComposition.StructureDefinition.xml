@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sfm-MedicationComposition" />
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-MedicationComposition" />
-  <version value="1.0" />
+  <version value="1.1.2" />
   <name value="SfmMedicationComposition" />
   <title value="sfm-MedicationComposition" />
   <status value="draft" />
-  <date value="2019-09-24" />
+  <date value="2020-03-20" />
   <description value="Bundle for use in SFM API for aggregated medication and prescription info" />
   <purpose value="The purpose of this profile is to define the structure of the SfmMedicationBundle." />
   <fhirVersion value="4.0.0" />
@@ -20,16 +20,18 @@
       <path value="Composition" />
       <short value="Norwegian Composition for PLL and Prescriptions" />
       <definition value="Norwegian Composition for PLL and Prescriptions. A composition for aggregated information provided by SFM to systems consuming the API Basis. The Composition is a result of lookup to national systems for prescription (Reseptformidleren) and medication history from Kjernejounal. The composition is also used for submitting updates to the nationals systems. The PLL (short for Pasientens LegemiddelListe : Patient medication list) is supported by separate identifier in sfmMedicationStatement." />
-      <comment value="The Composition refers to some sfm specific profiles, and other norwegian basis profiles (no-basis). This may change over time untill final specification is published in advance of initial production release of SFM API Basis" />
+      <comment value="The Composition refers to some sfm specific profiles, and other norwegian basis profiles (no-basis). This may change over time untill final specification is published in advance of initial production release of SFM API Basis&#xD;&#xA;All resources refered in this Composition must reside in the outer sfmMedicationBundle where this Composition serves as an index." />
     </element>
     <element id="Composition.subject">
       <path value="Composition.subject" />
       <short value="Identification of the patient" />
+      <min value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Patient" />
         <aggregation value="bundled" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Composition.attester">
       <path value="Composition.attester" />
@@ -38,29 +40,33 @@
           <type value="profile" />
           <path value="party.reference" />
         </discriminator>
+        <ordered value="true" />
         <rules value="open" />
       </slicing>
       <definition value="When submitting this composition to SFM: One for the Practitioner and one for the organisation" />
       <max value="2" />
+      <mustSupport value="true" />
     </element>
-    <element id="Composition.attester:sliceAttesterPractitioner">
+    <element id="Composition.attester:attesterPractitioner">
       <path value="Composition.attester" />
-      <sliceName value="sliceAttesterPractitioner" />
-      <max value="2" />
+      <sliceName value="attesterPractitioner" />
+      <max value="1" />
+      <mustSupport value="true" />
     </element>
-    <element id="Composition.attester:sliceAttesterPractitioner.party">
+    <element id="Composition.attester:attesterPractitioner.party">
       <path value="Composition.attester.party" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner" />
       </type>
     </element>
-    <element id="Composition.attester:sliceAttesterOrganisation">
+    <element id="Composition.attester:attesterOrganisation">
       <path value="Composition.attester" />
-      <sliceName value="sliceAttesterOrganisation" />
-      <max value="2" />
+      <sliceName value="attesterOrganisation" />
+      <max value="1" />
+      <mustSupport value="true" />
     </element>
-    <element id="Composition.attester:sliceAttesterOrganisation.party">
+    <element id="Composition.attester:attesterOrganisation.party">
       <path value="Composition.attester.party" />
       <type>
         <code value="Reference" />
@@ -74,11 +80,14 @@
           <type value="value" />
           <path value="code.coding.code" />
         </discriminator>
+        <description value="Slicing of this section is done on code.coding.code with use of valueset" />
+        <ordered value="false" />
         <rules value="open" />
       </slicing>
       <short value="Medication list" />
-      <definition value="This defined sections of this Composition are defined as slices" />
+      <definition value="This defined sections of this Composition are defined as slices using codesystem sfm-section-types:&#xD;&#xA;sectionMedication, sectionPLL, sectionPLLinfo, sectionAllergies, sectionOtherPrescriptions, sectionDispense" />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.section:sectionPLLinfo">
       <path value="Composition.section" />
@@ -92,6 +101,15 @@
       <min value="1" />
       <max value="1" />
       <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:sectionPLLinfo.code.coding.system">
+      <path value="Composition.section.code.coding.system" />
+      <short value="SFM section types" />
+      <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-section-types" />
+    </element>
+    <element id="Composition.section:sectionPLLinfo.code.coding.code">
+      <path value="Composition.section.code.coding.code" />
+      <fixedCode value="sectionPLLinfo" />
     </element>
     <element id="Composition.section:sectionPLLinfo.entry">
       <path value="Composition.section.entry" />
@@ -116,6 +134,14 @@
       <max value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="Composition.section:sectionMedication.code.coding.system">
+      <path value="Composition.section.code.coding.system" />
+      <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-section-types" />
+    </element>
+    <element id="Composition.section:sectionMedication.code.coding.code">
+      <path value="Composition.section.code.coding.code" />
+      <fixedCode value="sectionMedication" />
+    </element>
     <element id="Composition.section:sectionMedication.entry">
       <path value="Composition.section.entry" />
       <short value="A reference to sfm-MedicationStatemen" />
@@ -139,6 +165,14 @@
       <max value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="Composition.section:sectionOtherPrescriptions.code.coding.system">
+      <path value="Composition.section.code.coding.system" />
+      <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-section-types" />
+    </element>
+    <element id="Composition.section:sectionOtherPrescriptions.code.coding.code">
+      <path value="Composition.section.code.coding.code" />
+      <fixedCode value="sectionOtherPrescriptions" />
+    </element>
     <element id="Composition.section:sectionOtherPrescriptions.entry">
       <path value="Composition.section.entry" />
       <type>
@@ -161,6 +195,14 @@
       <max value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="Composition.section:sectionAllergies.code.coding.system">
+      <path value="Composition.section.code.coding.system" />
+      <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-section-types" />
+    </element>
+    <element id="Composition.section:sectionAllergies.code.coding.code">
+      <path value="Composition.section.code.coding.code" />
+      <fixedCode value="sectionAllergies" />
+    </element>
     <element id="Composition.section:sectionAllergies.entry">
       <path value="Composition.section.entry" />
       <type>
@@ -180,33 +222,20 @@
       <max value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="Composition.section:sectionDispense.code.coding.system">
+      <path value="Composition.section.code.coding.system" />
+      <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-section-types" />
+    </element>
+    <element id="Composition.section:sectionDispense.code.coding.code">
+      <path value="Composition.section.code.coding.code" />
+      <fixedCode value="sectionDispense" />
+    </element>
     <element id="Composition.section:sectionDispense.entry">
       <path value="Composition.section.entry" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-MedicationDispense" />
         <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-GeneralDispense" />
-      </type>
-    </element>
-    <element id="Composition.section:sliceResponse">
-      <path value="Composition.section" />
-      <sliceName value="sliceResponse" />
-      <code>
-        <system value="http://ehelse.no/fhir/CodeSystem/sfm-section-types" />
-        <code value="sectionResponse" />
-      </code>
-      <short value="Section for respons to applications" />
-      <definition value="This section holds the responses to SLV applications." />
-      <max value="1" />
-    </element>
-    <element id="Composition.section:sliceResponse.entry">
-      <path value="Composition.section.entry" />
-      <short value="Application responses" />
-      <definition value="Entry will refere a sfm-SlvResponse" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-SlvResponse" />
-        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Recallinfo" />
       </type>
     </element>
   </differential>
