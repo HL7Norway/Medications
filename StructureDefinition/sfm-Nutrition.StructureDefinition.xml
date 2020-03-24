@@ -23,36 +23,93 @@
       <definition value="this resource is used to represent Nutrition support and medical equipments that can be prescribed." />
     </element>
     <element id="Medication.code">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Medication.code" />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Medication.code.coding:varenummer">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Medication.code.coding" />
       <sliceName value="varenummer" />
       <min value="1" />
       <max value="1" />
     </element>
     <element id="Medication.code.coding:varenummer.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Medication.code.coding.system" />
       <fixedUri value="http://ehelse.no/varenummer" />
     </element>
     <element id="Medication.code.coding:varenummer.code">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Medication.code.coding.code" />
       <short value="Varenummer for the product" />
       <definition value="Nordic product number (Farmalogg varenummer)." />
     </element>
     <element id="Medication.code.coding:varenummer.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
       <path value="Medication.code.coding.display" />
       <short value="Varenavn" />
       <definition value="Name of the product as stated in FEST. If not present in FEST, then as stated in Farmalogg." />
     </element>
+    <element id="Medication.manufacturer">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Medication.manufacturer" />
+      <mustSupport value="true" />
+    </element>
     <element id="Medication.form">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Medication.form" />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Medication.form.coding.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Medication.form.coding.system" />
-      <fixedUri value="http://ehelse.no/7448" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7448" />
     </element>
   </differential>
 </StructureDefinition>

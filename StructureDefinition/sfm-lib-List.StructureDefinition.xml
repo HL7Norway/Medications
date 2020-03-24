@@ -26,34 +26,305 @@
       </slicing>
     </element>
     <element id="List.extension:actor">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="List.extension" />
       <sliceName value="actor" />
       <type>
         <code value="Extension" />
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-actor" />
       </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="List.extension:actor.extension:role">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="List.extension.extension" />
+      <sliceName value="role" />
+      <mustSupport value="true" />
+    </element>
+    <element id="List.extension:actor.extension:practioner">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="List.extension.extension" />
+      <sliceName value="practioner" />
+      <mustSupport value="true" />
     </element>
     <element id="List.extension:metaData">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="List.extension" />
       <sliceName value="metaData" />
       <type>
         <code value="Extension" />
         <profile value="http://example.org/fhir/StructureDefinition/sfm-lib-list-meta-data" />
       </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="List.extension:metaData.extension:approvalstatus">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="List.extension.extension" />
+      <sliceName value="approvalstatus" />
+      <mustSupport value="true" />
+    </element>
+    <element id="List.extension:metaData.extension:generalcomment">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="List.extension.extension" />
+      <sliceName value="generalcomment" />
+      <mustSupport value="true" />
+    </element>
+    <element id="List.extension:metaData.extension:purpose">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="List.extension.extension" />
+      <sliceName value="purpose" />
+      <mustSupport value="true" />
+    </element>
+    <element id="List.extension:metaData.extension:period">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="List.extension.extension" />
+      <sliceName value="period" />
+      <mustSupport value="true" />
+    </element>
+    <element id="List.extension:metaData.extension:medicationreview">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="List.extension.extension" />
+      <sliceName value="medicationreview" />
+      <mustSupport value="true" />
     </element>
     <element id="List.extension:warnings">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="List.extension" />
       <sliceName value="warnings" />
       <type>
         <code value="Extension" />
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-warning" />
       </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="List.extension:warnings.extension:doublePrescription">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="List.extension.extension" />
+      <sliceName value="doublePrescription" />
+      <mustSupport value="true" />
+    </element>
+    <element id="List.extension:warnings.extension:doublePrescription.extension:reference">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="List.extension.extension.extension" />
+      <sliceName value="reference" />
+      <mustSupport value="true" />
+    </element>
+    <element id="List.extension:warnings.extension:doublePrescription.extension:reason">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="List.extension.extension.extension" />
+      <sliceName value="reason" />
+      <mustSupport value="true" />
+    </element>
+    <element id="List.extension:warnings.extension:doublePrescription.extension:codedreason">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="List.extension.extension.extension" />
+      <sliceName value="codedreason" />
+      <mustSupport value="true" />
+    </element>
+    <element id="List.extension:warnings.extension:interaction">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="List.extension.extension" />
+      <sliceName value="interaction" />
+    </element>
+    <element id="List.extension:warnings.extension:interaction.extension:reference">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="List.extension.extension.extension" />
+      <sliceName value="reference" />
+      <mustSupport value="true" />
+    </element>
+    <element id="List.extension:warnings.extension:interaction.extension:reason">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="List.extension.extension.extension" />
+      <sliceName value="reason" />
+      <mustSupport value="true" />
+    </element>
+    <element id="List.extension:warnings.extension:interaction.extension:codedreason">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="List.extension.extension.extension" />
+      <sliceName value="codedreason" />
+      <mustSupport value="true" />
+    </element>
+    <element id="List.extension:warnings.extension:interaction.extension:interactiondata">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="List.extension.extension.extension" />
+      <sliceName value="interactiondata" />
+      <mustSupport value="true" />
+    </element>
+    <element id="List.extension:warnings.extension:allergyIntollerance">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="List.extension.extension" />
+      <sliceName value="allergyIntollerance" />
+    </element>
+    <element id="List.extension:warnings.extension:allergyIntollerance.extension:reference">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="List.extension.extension.extension" />
+      <sliceName value="reference" />
+      <mustSupport value="true" />
+    </element>
+    <element id="List.extension:warnings.extension:allergyIntollerance.extension:reason">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="List.extension.extension.extension" />
+      <sliceName value="reason" />
+      <mustSupport value="true" />
+    </element>
+    <element id="List.extension:warnings.extension:allergyIntollerance.extension:codedreason">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="List.extension.extension.extension" />
+      <sliceName value="codedreason" />
+      <mustSupport value="true" />
+    </element>
+    <element id="List.status">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="List.status" />
+      <mustSupport value="true" />
+    </element>
+    <element id="List.mode">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="List.mode" />
+      <mustSupport value="true" />
     </element>
     <element id="List.title">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="List.title" />
       <max value="0" />
     </element>
     <element id="List.code">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="List.code" />
       <short value="List of prescriptions" />
       <fixedCodeableConcept>
@@ -61,18 +332,63 @@
       </fixedCodeableConcept>
     </element>
     <element id="List.subject">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="List.subject" />
       <max value="0" />
     </element>
     <element id="List.date">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="List.date" />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="List.source">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="List.source" />
       <max value="0" />
     </element>
+    <element id="List.note">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="List.note" />
+      <mustSupport value="true" />
+    </element>
+    <element id="List.entry">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="List.entry" />
+      <mustSupport value="true" />
+    </element>
     <element id="List.entry.item">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="List.entry.item" />
       <type>
         <code value="Reference" />

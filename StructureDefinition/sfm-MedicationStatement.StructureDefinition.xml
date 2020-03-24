@@ -30,39 +30,228 @@
       </slicing>
     </element>
     <element id="MedicationStatement.extension:reginfo">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.extension" />
       <sliceName value="reginfo" />
       <type>
         <code value="Extension" />
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-regInfo" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.extension:comment">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.extension" />
       <sliceName value="comment" />
+      <definition value="Comments and response as trensfered within M25 messages. Must be supported within the SFM Basis API." />
       <type>
         <code value="Extension" />
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-libitemcomment" />
       </type>
     </element>
+    <element id="MedicationStatement.extension:comment.extension:type">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension" />
+      <sliceName value="type" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.extension:comment.extension:merknad">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension" />
+      <sliceName value="merknad" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.extension:comment.extension:Id">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension" />
+      <sliceName value="Id" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.extension:comment.extension:registeredby">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension" />
+      <sliceName value="registeredby" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.extension:comment.extension:receiver">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension" />
+      <sliceName value="receiver" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.extension:comment.extension:response">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension" />
+      <sliceName value="response" />
+      <mustSupport value="true" />
+    </element>
     <element id="MedicationStatement.extension:deliverysummary">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.extension" />
       <sliceName value="deliverysummary" />
+      <definition value="Information about what have been dispenced on identfied prescription (resept). Must be supported within the SFM Basis API." />
       <type>
         <code value="Extension" />
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-deliverysummary" />
       </type>
     </element>
+    <element id="MedicationStatement.extension:deliverysummary.extension:varenummer">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension" />
+      <sliceName value="varenummer" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.extension:deliverysummary.extension:varenavn">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension" />
+      <sliceName value="varenavn" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.extension:deliverysummary.extension:pakningsstr">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension" />
+      <sliceName value="pakningsstr" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.extension:deliverysummary.extension:antallpkntotalt">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension" />
+      <sliceName value="antallpkntotalt" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.extension:deliverysummary.extension:antallpknsiste">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension" />
+      <sliceName value="antallpknsiste" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.extension:deliverysummary.extension:sistutlevert">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension" />
+      <sliceName value="sistutlevert" />
+      <mustSupport value="true" />
+    </element>
     <element id="MedicationStatement.extension:genericSubstitution">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.extension" />
       <sliceName value="genericSubstitution" />
+      <short value="Substitution of drug" />
+      <definition value="Identfies if generic substitution is accepted. Must be supported by SFM Basis API." />
       <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-generic-substitution" />
       </type>
     </element>
+    <element id="MedicationStatement.extension:genericSubstitution.extension:genericSubstitutionAccepted">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension" />
+      <sliceName value="genericSubstitutionAccepted" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.extension:genericSubstitution.extension:reason">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension" />
+      <sliceName value="reason" />
+      <mustSupport value="true" />
+    </element>
     <element id="MedicationStatement.extension:discontinuationinformation">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.extension" />
       <sliceName value="discontinuationinformation" />
       <max value="1" />
@@ -70,8 +259,48 @@
         <code value="Extension" />
         <profile value="http://eheles.no/fhir/StructureDefinition/sfm-discontinuation" />
       </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.extension:discontinuationinformation.extension:timedate">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension" />
+      <sliceName value="timedate" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.extension:discontinuationinformation.extension:reason">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension" />
+      <sliceName value="reason" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.extension:discontinuationinformation.extension:note">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension" />
+      <sliceName value="note" />
+      <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.extension:administrationdetails">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.extension" />
       <sliceName value="administrationdetails" />
       <max value="1" />
@@ -80,17 +309,380 @@
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-administration" />
       </type>
     </element>
+    <element id="MedicationStatement.extension:administrationdetails.extension:administrationofmedication">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension" />
+      <sliceName value="administrationofmedication" />
+    </element>
+    <element id="MedicationStatement.extension:administrationdetails.extension:administrationofmedication.extension:admByWhom">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension.extension" />
+      <sliceName value="admByWhom" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.extension:administrationdetails.extension:administrationofmedication.extension:admWay">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension.extension" />
+      <sliceName value="admWay" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.extension:administrationdetails.extension:administrationofmedication.extension:admBySchema">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension.extension" />
+      <sliceName value="admBySchema" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.extension:administrationdetails.extension:administrationofmedication.extension:admSchema">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension.extension" />
+      <sliceName value="admSchema" />
+      <mustSupport value="true" />
+    </element>
     <element id="MedicationStatement.extension:reseptInfo">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.extension" />
       <sliceName value="reseptInfo" />
-      <definition value="Information that is relevant for Norwegian e-prescription." />
+      <definition value="Information that is relevant for Norwegian e-prescription. Must be supported when using SFM Basis API." />
       <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-reseptamendment" />
       </type>
     </element>
+    <element id="MedicationStatement.extension:reseptInfo.extension:reseptdate">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension" />
+      <sliceName value="reseptdate" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.extension:reseptInfo.extension:expirationdate">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension" />
+      <sliceName value="expirationdate" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.extension:reseptInfo.extension:festUpdate">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension" />
+      <sliceName value="festUpdate" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.extension:reseptInfo.extension:conscription">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension" />
+      <sliceName value="conscription" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.extension:reseptInfo.extension:helfoapplication">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension" />
+      <sliceName value="helfoapplication" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.extension:reseptInfo.extension:guardiantransparencyreservation">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension" />
+      <sliceName value="guardiantransparencyreservation" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.extension:reseptInfo.extension:ownpractice">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension" />
+      <sliceName value="ownpractice" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.extension:reseptInfo.extension:indoctorsname">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension" />
+      <sliceName value="indoctorsname" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.extension:reseptInfo.extension:refnum">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension" />
+      <sliceName value="refnum" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.extension:reseptInfo.extension:dispatchrequest">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension" />
+      <sliceName value="dispatchrequest" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.extension:reseptInfo.extension:earliestdispence">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension" />
+      <sliceName value="earliestdispence" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.extension:reseptInfo.extension:dischargedhospital">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension" />
+      <sliceName value="dischargedhospital" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.extension:reseptInfo.extension:lockedresept">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension" />
+      <sliceName value="lockedresept" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.extension:reseptInfo.extension:itemgroup">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension" />
+      <sliceName value="itemgroup" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.extension:reseptInfo.extension:numberofpackages">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension" />
+      <sliceName value="numberofpackages" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.extension:reseptInfo.extension:reimbursmentparagraph">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension" />
+      <sliceName value="reimbursmentparagraph" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.extension:reseptInfo.extension:reimbursementcode">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension" />
+      <sliceName value="reimbursementcode" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.extension:reseptInfo.extension:plomedicationmanagement">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension" />
+      <sliceName value="plomedicationmanagement" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.extension:reseptInfo.extension:reit">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension" />
+      <sliceName value="reit" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.extension:reseptInfo.extension:amount">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension" />
+      <sliceName value="amount" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.extension:reseptInfo.extension:dssn">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension" />
+      <sliceName value="dssn" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.extension:reseptInfo.extension:rfstatus">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension" />
+      <sliceName value="rfstatus" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.extension:reseptInfo.extension:note">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension" />
+      <sliceName value="note" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.extension:reseptInfo.extension:dispencesummary">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension" />
+      <sliceName value="dispencesummary" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.extension:reseptInfo.extension:recallinfo">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension" />
+      <sliceName value="recallinfo" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.extension:reseptInfo.extension:ereseptdosing">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension" />
+      <sliceName value="ereseptdosing" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.extension:reseptInfo.extension:createeresept">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension" />
+      <sliceName value="createeresept" />
+      <mustSupport value="true" />
+    </element>
     <element id="MedicationStatement.identifier">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.identifier" />
       <slicing>
         <discriminator>
@@ -101,6 +693,12 @@
       </slicing>
     </element>
     <element id="MedicationStatement.identifier:treatmentId">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.identifier" />
       <sliceName value="treatmentId" />
       <short value="treatment identifier" />
@@ -108,10 +706,22 @@
       <max value="1" />
     </element>
     <element id="MedicationStatement.identifier:treatmentId.value">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.identifier.value" />
       <min value="1" />
     </element>
     <element id="MedicationStatement.identifier:reseptid">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.identifier" />
       <sliceName value="reseptid" />
       <short value="reference to related prescription document" />
@@ -119,26 +729,62 @@
       <max value="1" />
     </element>
     <element id="MedicationStatement.identifier:reseptid.use">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.identifier.use" />
       <max value="0" />
     </element>
     <element id="MedicationStatement.identifier:reseptid.type">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.identifier.type" />
       <max value="0" />
     </element>
     <element id="MedicationStatement.identifier:reseptid.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.identifier.system" />
       <max value="0" />
     </element>
     <element id="MedicationStatement.identifier:reseptid.period">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.identifier.period" />
       <max value="0" />
     </element>
     <element id="MedicationStatement.identifier:reseptid.assigner">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.identifier.assigner" />
       <max value="0" />
     </element>
     <element id="MedicationStatement.basedOn">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.basedOn" />
       <definition value="A plan, proposal or order that is fulfilled in whole or in part by this event. Referance to medication statement is used when current statement is a draft and the draft is based on a previous statement." />
       <max value="1" />
@@ -151,44 +797,139 @@
       </type>
     </element>
     <element id="MedicationStatement.partOf">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.partOf" />
-      <definition value="A larger event of which this particular event is a component or step. " />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.status">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.status" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.medication[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.medication[x]" />
+      <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.medication[x]:medicationReference">
-      <path value="MedicationStatement.medication[x]" />
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.medicationReference" />
       <sliceName value="medicationReference" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Medication" />
         <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Magistrell-Medication" />
+        <aggregation value="contained" />
       </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.subject">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.subject" />
+      <type>
+        <code value="Reference" />
+        <aggregation value="contained" />
+      </type>
+      <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.context">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.context" />
       <definition value="The encounter or episode of care that establishes the context for this MedicationStatement. Not used by SFM." />
     </element>
     <element id="MedicationStatement.effective[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.effective[x]" />
       <definition value="The interval of time during which it is being asserted that the patient was taking the medication (or was not taking, when the wasNotGiven element is true). Not used by SFM." />
     </element>
     <element id="MedicationStatement.dateAsserted">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.dateAsserted" />
       <definition value="The date when the medication statement was asserted by the information source. Not in use in SFM." />
     </element>
+    <element id="MedicationStatement.reasonCode">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.reasonCode" />
+      <mustSupport value="true" />
+    </element>
     <element id="MedicationStatement.reasonCode:ICPC2B">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.reasonCode" />
       <sliceName value="ICPC2B" />
       <max value="1" />
     </element>
     <element id="MedicationStatement.reasonCode:ICPC2B.coding.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.reasonCode.coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7171" />
     </element>
     <element id="MedicationStatement.dosage">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="trial-use" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.dosage" />
       <short value="Details of how medication should be taken" />
       <definition value="If more than one dosage instance is registered, then the first instance in the sequence includes general information of the dosage and the following includes exact details for a single dose." />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.dosage.extension">
       <path value="MedicationStatement.dosage.extension" />
@@ -201,6 +942,12 @@
       </slicing>
     </element>
     <element id="MedicationStatement.dosage.extension:applicationarea">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.dosage.extension" />
       <sliceName value="applicationarea" />
       <short value="Describes why medication is needed" />
@@ -210,8 +957,15 @@
         <code value="Extension" />
         <profile value="http://example.org/fhir/StructureDefinition/sfm-application-area" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.dosage.extension:shortdosage">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.dosage.extension" />
       <sliceName value="shortdosage" />
       <definition value="Coded short dosage as defined in FEST. Should only be included in the first instance of dosage." />
@@ -220,8 +974,15 @@
         <code value="Extension" />
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-shortdosage" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.dosage.extension:typeofuse">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.dosage.extension" />
       <sliceName value="typeofuse" />
       <short value="Type of use" />
@@ -231,37 +992,88 @@
         <code value="Extension" />
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-use" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.dosage.sequence">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.dosage.sequence" />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.dosage.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.dosage.text" />
       <definition value="Free text dosage instructions e.g. SIG. Should allways be included in the first instance of dosage, and not in the following instances." />
+      <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.dosage.additionalInstruction">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.dosage.additionalInstruction" />
       <definition value="Supplemental instruction - e.g. &quot;with meals&quot;. Forholdsregel ved inntak." />
     </element>
     <element id="MedicationStatement.dosage.additionalInstruction.coding.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.dosage.additionalInstruction.coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7479" />
     </element>
     <element id="MedicationStatement.dosage.timing.event">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.dosage.timing.event" />
       <definition value="Identifies specific times when the event occurs. If code is provided, then code identifies time of day. If not, time should be folloew as in this attribute." />
       <max value="1" />
     </element>
     <element id="MedicationStatement.dosage.timing.repeat">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.dosage.timing.repeat" />
       <max value="0" />
     </element>
     <element id="MedicationStatement.dosage.timing.code.coding.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.dosage.timing.code.coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.8325" />
     </element>
     <element id="MedicationStatement.dosage.asNeeded[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="MedicationStatement.dosage.asNeeded[x]" />
       <max value="0" />
     </element>

@@ -28,6 +28,12 @@
   <derivation value="constraint" />
   <differential>
     <element id="Extension">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension" />
       <short value="Norwegian resept information" />
       <definition value="Ifnormation that is relevant for Norwegian e-prescription." />
@@ -43,6 +49,12 @@
       </slicing>
     </element>
     <element id="Extension.extension:reseptdate">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension" />
       <sliceName value="reseptdate" />
       <short value="Date the resept was signed" />
@@ -54,12 +66,24 @@
       <fixedUri value="reseptdate" />
     </element>
     <element id="Extension.extension:reseptdate.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="date" />
       </type>
     </element>
     <element id="Extension.extension:expirationdate">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension" />
       <sliceName value="expirationdate" />
       <short value="Last date the pharmacy can deliver" />
@@ -71,12 +95,24 @@
       <fixedUri value="expirationdate" />
     </element>
     <element id="Extension.extension:expirationdate.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="date" />
       </type>
     </element>
     <element id="Extension.extension:festUpdate">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension" />
       <sliceName value="festUpdate" />
       <short value="Version of FEST" />
@@ -89,12 +125,24 @@
       <fixedUri value="festUpdate" />
     </element>
     <element id="Extension.extension:festUpdate.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="dateTime" />
       </type>
     </element>
     <element id="Extension.extension:conscription">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension" />
       <sliceName value="conscription" />
       <short value="Concriptive soldier" />
@@ -106,12 +154,24 @@
       <fixedUri value="conscription" />
     </element>
     <element id="Extension.extension:conscription.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="boolean" />
       </type>
     </element>
     <element id="Extension.extension:helfoapplication">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension" />
       <sliceName value="helfoapplication" />
       <short value="Individuel application to Helfo" />
@@ -123,12 +183,24 @@
       <fixedUri value="helfoapplication" />
     </element>
     <element id="Extension.extension:helfoapplication.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="boolean" />
       </type>
     </element>
     <element id="Extension.extension:freecard">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension" />
       <sliceName value="freecard" />
       <short value="Refund card" />
@@ -140,12 +212,24 @@
       <fixedUri value="freecard" />
     </element>
     <element id="Extension.extension:freecard.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="boolean" />
       </type>
     </element>
     <element id="Extension.extension:guardiantransparencyreservation">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension" />
       <sliceName value="guardiantransparencyreservation" />
       <short value="Guardian transperecy reservation" />
@@ -157,12 +241,24 @@
       <fixedUri value="guardiantransparencyreservation" />
     </element>
     <element id="Extension.extension:guardiantransparencyreservation.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="boolean" />
       </type>
     </element>
     <element id="Extension.extension:ownpractice">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension" />
       <sliceName value="ownpractice" />
       <short value="Identify that the medication is for use in own organisation" />
@@ -174,12 +270,24 @@
       <fixedUri value="ownpractice" />
     </element>
     <element id="Extension.extension:ownpractice.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="boolean" />
       </type>
     </element>
     <element id="Extension.extension:indoctorsname">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension" />
       <sliceName value="indoctorsname" />
       <short value="Resept in doctors name" />
@@ -191,12 +299,24 @@
       <fixedUri value="indoctorsname" />
     </element>
     <element id="Extension.extension:indoctorsname.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="boolean" />
       </type>
     </element>
     <element id="Extension.extension:refnum">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension" />
       <sliceName value="refnum" />
       <short value="Reference number" />
@@ -208,12 +328,24 @@
       <fixedUri value="refnum" />
     </element>
     <element id="Extension.extension:refnum.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="string" />
       </type>
     </element>
     <element id="Extension.extension:speciality">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension" />
       <sliceName value="speciality" />
       <short value="Speciality" />
@@ -224,16 +356,34 @@
       <fixedUri value="speciality" />
     </element>
     <element id="Extension.extension:speciality.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
     <element id="Extension.extension:speciality.value[x].coding.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.7428" />
     </element>
     <element id="Extension.extension:dispatchrequest">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension" />
       <sliceName value="dispatchrequest" />
       <short value="Request for delivery to patient" />
@@ -251,6 +401,12 @@
       </slicing>
     </element>
     <element id="Extension.extension:dispatchrequest.extension:condition">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension" />
       <sliceName value="condition" />
       <min value="1" />
@@ -261,12 +417,24 @@
       <fixedUri value="condition" />
     </element>
     <element id="Extension.extension:dispatchrequest.extension:condition.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.value[x]" />
       <type>
         <code value="boolean" />
       </type>
     </element>
     <element id="Extension.extension:dispatchrequest.extension:metod">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension" />
       <sliceName value="metod" />
       <min value="1" />
@@ -277,6 +445,12 @@
       <fixedUri value="metod" />
     </element>
     <element id="Extension.extension:dispatchrequest.extension:metod.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.value[x]" />
       <type>
         <code value="CodeableConcept" />
@@ -288,6 +462,12 @@
       </fixedCodeableConcept>
     </element>
     <element id="Extension.extension:dispatchrequest.extension:organization">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension" />
       <sliceName value="organization" />
       <min value="1" />
@@ -298,12 +478,24 @@
       <fixedUri value="organization" />
     </element>
     <element id="Extension.extension:dispatchrequest.extension:organization.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.value[x]" />
       <type>
         <code value="string" />
       </type>
     </element>
     <element id="Extension.extension:dispatchrequest.extension:contactperson">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension" />
       <sliceName value="contactperson" />
       <min value="1" />
@@ -314,12 +506,24 @@
       <fixedUri value="contactperson" />
     </element>
     <element id="Extension.extension:dispatchrequest.extension:contactperson.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.value[x]" />
       <type>
         <code value="string" />
       </type>
     </element>
     <element id="Extension.extension:dispatchrequest.extension:note">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension" />
       <sliceName value="note" />
       <max value="1" />
@@ -329,12 +533,24 @@
       <fixedUri value="note" />
     </element>
     <element id="Extension.extension:dispatchrequest.extension:note.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.value[x]" />
       <type>
         <code value="string" />
       </type>
     </element>
     <element id="Extension.extension:dispatchrequest.extension:orgnum">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension" />
       <sliceName value="orgnum" />
       <min value="1" />
@@ -345,12 +561,24 @@
       <fixedUri value="orgnum" />
     </element>
     <element id="Extension.extension:dispatchrequest.extension:orgnum.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.value[x]" />
       <type>
         <code value="string" />
       </type>
     </element>
     <element id="Extension.extension:dispatchrequest.extension:orgname">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension" />
       <sliceName value="orgname" />
       <min value="1" />
@@ -361,12 +589,24 @@
       <fixedUri value="orgname" />
     </element>
     <element id="Extension.extension:dispatchrequest.extension:orgname.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.value[x]" />
       <type>
         <code value="string" />
       </type>
     </element>
     <element id="Extension.extension:dispatchrequest.extension:address">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension" />
       <sliceName value="address" />
       <max value="1" />
@@ -376,6 +616,12 @@
       <fixedUri value="address" />
     </element>
     <element id="Extension.extension:dispatchrequest.extension:address.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.value[x]" />
       <type>
         <code value="Reference" />
@@ -386,10 +632,22 @@
       <fixedUri value="dispatchrequest" />
     </element>
     <element id="Extension.extension:dispatchrequest.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.value[x]" />
       <max value="0" />
     </element>
     <element id="Extension.extension:earliestdispence">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension" />
       <sliceName value="earliestdispence" />
       <short value="Earliest delivery" />
@@ -401,12 +659,24 @@
       <fixedUri value="earliestdispence" />
     </element>
     <element id="Extension.extension:earliestdispence.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="dateTime" />
       </type>
     </element>
     <element id="Extension.extension:dischargedhospital">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension" />
       <sliceName value="dischargedhospital" />
       <short value="Discharged from hosptital" />
@@ -418,12 +688,24 @@
       <fixedUri value="dischargedhospital" />
     </element>
     <element id="Extension.extension:dischargedhospital.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="boolean" />
       </type>
     </element>
     <element id="Extension.extension:lockedresept">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension" />
       <sliceName value="lockedresept" />
       <short value="Locked resept" />
@@ -435,12 +717,24 @@
       <fixedUri value="lockedresept" />
     </element>
     <element id="Extension.extension:lockedresept.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="boolean" />
       </type>
     </element>
     <element id="Extension.extension:itemgroup">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension" />
       <sliceName value="itemgroup" />
       <short value="Type of resept" />
@@ -453,16 +747,34 @@
       <fixedUri value="itemgroup" />
     </element>
     <element id="Extension.extension:itemgroup.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
     <element id="Extension.extension:itemgroup.value[x].coding.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.7402" />
     </element>
     <element id="Extension.extension:numberofpackages">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension" />
       <sliceName value="numberofpackages" />
       <short value="Number of packages" />
@@ -474,12 +786,24 @@
       <fixedUri value="numberofpackages" />
     </element>
     <element id="Extension.extension:numberofpackages.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="decimal" />
       </type>
     </element>
     <element id="Extension.extension:reimbursmentparagraph">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension" />
       <sliceName value="reimbursmentparagraph" />
       <short value="Refund paragraph" />
@@ -491,16 +815,34 @@
       <fixedUri value="reimbursmentparagraph" />
     </element>
     <element id="Extension.extension:reimbursmentparagraph.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
     <element id="Extension.extension:reimbursmentparagraph.value[x].coding.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.7427" />
     </element>
     <element id="Extension.extension:reimbursementcode">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension" />
       <sliceName value="reimbursementcode" />
       <short value="Refund code" />
@@ -512,12 +854,24 @@
       <fixedUri value="reimbursementcode" />
     </element>
     <element id="Extension.extension:reimbursementcode.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
     <element id="Extension.extension:plomedicationmanagement">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension" />
       <sliceName value="plomedicationmanagement" />
       <short value="Patient treated by the municipal" />
@@ -529,12 +883,24 @@
       <fixedUri value="plomedicationmanagement" />
     </element>
     <element id="Extension.extension:plomedicationmanagement.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="string" />
       </type>
     </element>
     <element id="Extension.extension:reit">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension" />
       <sliceName value="reit" />
       <short value="Number of deliveries" />
@@ -546,12 +912,24 @@
       <fixedUri value="reit" />
     </element>
     <element id="Extension.extension:reit.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="string" />
       </type>
     </element>
     <element id="Extension.extension:amount">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension" />
       <sliceName value="amount" />
       <short value="Amount of drug prescribed" />
@@ -563,12 +941,24 @@
       <fixedUri value="amount" />
     </element>
     <element id="Extension.extension:amount.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="Quantity" />
       </type>
     </element>
     <element id="Extension.extension:dssn">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension" />
       <sliceName value="dssn" />
       <definition value="eresept: DosVeilEnkel" />
@@ -579,32 +969,263 @@
       <fixedUri value="dssn" />
     </element>
     <element id="Extension.extension:dssn.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="string" />
       </type>
     </element>
     <element id="Extension.extension:rfstatus">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension" />
       <sliceName value="rfstatus" />
       <short value="Identifies if in RF and status in RF" />
       <max value="1" />
+    </element>
+    <element id="Extension.extension:rfstatus.extension">
+      <path value="Extension.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:rfstatus.extension:status">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension.extension" />
+      <sliceName value="status" />
+      <short value="Status for prescription in RF" />
+      <definition value="Status based on RF/KJ information. If empty, resept is not present in RF." />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:rfstatus.extension:status.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="status" />
+    </element>
+    <element id="Extension.extension:rfstatus.extension:status.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.extension:rfstatus.extension:status.value[x].coding.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension.extension.value[x].coding.system" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7408" />
+    </element>
+    <element id="Extension.extension:rfstatus.extension:nameDispenser">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension.extension" />
+      <sliceName value="nameDispenser" />
+      <short value="Dispenser that are dispensing product" />
+      <definition value="Pharmacy or other dispenser that are curently delivering out the product." />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:rfstatus.extension:nameDispenser.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="nameDispenser" />
+    </element>
+    <element id="Extension.extension:rfstatus.extension:nameDispenser.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:rfstatus.extension:sentSLVDate">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension.extension" />
+      <sliceName value="sentSLVDate" />
+      <short value="Date when application sent to SLV" />
+      <definition value="Date application delivered to SLV." />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:rfstatus.extension:sentSLVDate.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="sentSLVDate" />
+    </element>
+    <element id="Extension.extension:rfstatus.extension:sentSLVDate.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="date" />
+      </type>
+    </element>
+    <element id="Extension.extension:rfstatus.extension:statusSlvApplication">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension.extension" />
+      <sliceName value="statusSlvApplication" />
+      <short value="Status regarding SLV application" />
+      <definition value="Information from M9.6 if RF lookup." />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:rfstatus.extension:statusSlvApplication.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="statusSlvApplication" />
+    </element>
+    <element id="Extension.extension:rfstatus.extension:statusSlvApplication.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.extension:rfstatus.extension:statusSlvApplication.value[x].coding.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension.extension.value[x].coding.system" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7436" />
+    </element>
+    <element id="Extension.extension:rfstatus.extension:recallStatus">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension.extension" />
+      <sliceName value="recallStatus" />
+      <short value="Identify if allredy recalled if RF status is &quot;Under ekspedering&quot;" />
+      <definition value="Only used when RF status is &quot;Under ekspedering&quot;" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:rfstatus.extension:recallStatus.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="recallStatus" />
+    </element>
+    <element id="Extension.extension:rfstatus.extension:recallStatus.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="boolean" />
+      </type>
+    </element>
+    <element id="Extension.extension:rfstatus.extension:recallReason">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension.extension" />
+      <sliceName value="recallReason" />
+      <short value="Reason given for recalling resept" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:rfstatus.extension:recallReason.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="recallReason" />
+    </element>
+    <element id="Extension.extension:rfstatus.extension:recallReason.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.extension:rfstatus.extension:recallReason.value[x].coding.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension.extension.value[x].coding.system" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7500" />
     </element>
     <element id="Extension.extension:rfstatus.url">
       <path value="Extension.extension.url" />
       <fixedUri value="rfstatus" />
     </element>
     <element id="Extension.extension:rfstatus.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.value[x]" />
-      <type>
-        <code value="CodeableConcept" />
-      </type>
-    </element>
-    <element id="Extension.extension:rfstatus.value[x].coding.system">
-      <path value="Extension.extension.value[x].coding.system" />
-      <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.7408" />
+      <max value="0" />
     </element>
     <element id="Extension.extension:note">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension" />
       <sliceName value="note" />
       <short value="Note from prescriber to pharmacy" />
@@ -616,12 +1237,24 @@
       <fixedUri value="note" />
     </element>
     <element id="Extension.extension:note.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="string" />
       </type>
     </element>
     <element id="Extension.extension:dispencesummary">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension" />
       <sliceName value="dispencesummary" />
       <short value="Delivery summary from RF" />
@@ -638,6 +1271,12 @@
       </slicing>
     </element>
     <element id="Extension.extension:dispencesummary.extension:varenummer">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension" />
       <sliceName value="varenummer" />
       <max value="1" />
@@ -647,12 +1286,24 @@
       <fixedUri value="varenummer" />
     </element>
     <element id="Extension.extension:dispencesummary.extension:varenummer.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.value[x]" />
       <type>
         <code value="string" />
       </type>
     </element>
     <element id="Extension.extension:dispencesummary.extension:nameformstrenght">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension" />
       <sliceName value="nameformstrenght" />
       <min value="1" />
@@ -663,12 +1314,24 @@
       <fixedUri value="nameformstrenght" />
     </element>
     <element id="Extension.extension:dispencesummary.extension:nameformstrenght.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.value[x]" />
       <type>
         <code value="string" />
       </type>
     </element>
     <element id="Extension.extension:dispencesummary.extension:packingsize">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension" />
       <sliceName value="packingsize" />
       <max value="1" />
@@ -678,12 +1341,24 @@
       <fixedUri value="packingsize" />
     </element>
     <element id="Extension.extension:dispencesummary.extension:packingsize.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.value[x]" />
       <type>
         <code value="Quantity" />
       </type>
     </element>
     <element id="Extension.extension:dispencesummary.extension:noPackingTotal">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension" />
       <sliceName value="noPackingTotal" />
       <min value="1" />
@@ -694,12 +1369,24 @@
       <fixedUri value="noPackingTotal" />
     </element>
     <element id="Extension.extension:dispencesummary.extension:noPackingTotal.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.value[x]" />
       <type>
         <code value="decimal" />
       </type>
     </element>
     <element id="Extension.extension:dispencesummary.extension:noPackingLast">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension" />
       <sliceName value="noPackingLast" />
       <min value="1" />
@@ -710,12 +1397,24 @@
       <fixedUri value="noPackingLast" />
     </element>
     <element id="Extension.extension:dispencesummary.extension:noPackingLast.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.value[x]" />
       <type>
         <code value="decimal" />
       </type>
     </element>
     <element id="Extension.extension:dispencesummary.extension:lastdeliverydate">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension" />
       <sliceName value="lastdeliverydate" />
       <min value="1" />
@@ -726,6 +1425,12 @@
       <fixedUri value="lastdeliverydate" />
     </element>
     <element id="Extension.extension:dispencesummary.extension:lastdeliverydate.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.value[x]" />
       <type>
         <code value="dateTime" />
@@ -736,10 +1441,22 @@
       <fixedUri value="dispencesummary" />
     </element>
     <element id="Extension.extension:dispencesummary.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.value[x]" />
       <max value="0" />
     </element>
     <element id="Extension.extension:recallinfo">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension" />
       <sliceName value="recallinfo" />
       <short value="Action information for SFM" />
@@ -757,6 +1474,12 @@
       </slicing>
     </element>
     <element id="Extension.extension:recallinfo.extension:recallId">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension" />
       <sliceName value="recallId" />
       <max value="1" />
@@ -766,12 +1489,24 @@
       <fixedUri value="recallId" />
     </element>
     <element id="Extension.extension:recallinfo.extension:recallId.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.value[x]" />
       <type>
         <code value="string" />
       </type>
     </element>
     <element id="Extension.extension:recallinfo.extension:text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension" />
       <sliceName value="text" />
       <max value="1" />
@@ -781,12 +1516,24 @@
       <fixedUri value="text" />
     </element>
     <element id="Extension.extension:recallinfo.extension:text.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.value[x]" />
       <type>
         <code value="string" />
       </type>
     </element>
     <element id="Extension.extension:recallinfo.extension:recallcode">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension" />
       <sliceName value="recallcode" />
       <min value="1" />
@@ -797,6 +1544,12 @@
       <fixedUri value="recallcode" />
     </element>
     <element id="Extension.extension:recallinfo.extension:recallcode.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.value[x]" />
       <type>
         <code value="CodeableConcept" />
@@ -812,10 +1565,22 @@
       <fixedUri value="recallinfo" />
     </element>
     <element id="Extension.extension:recallinfo.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.value[x]" />
       <max value="0" />
     </element>
     <element id="Extension.extension:ereseptdosing">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension" />
       <sliceName value="ereseptdosing" />
       <short value="Dosing as given by e-resept" />
@@ -832,6 +1597,12 @@
       </slicing>
     </element>
     <element id="Extension.extension:ereseptdosing.extension:starttime">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension" />
       <sliceName value="starttime" />
       <short value="The time a dosing period starts" />
@@ -843,12 +1614,24 @@
       <fixedUri value="starttime" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:starttime.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.value[x]" />
       <type>
         <code value="dateTime" />
       </type>
     </element>
     <element id="Extension.extension:ereseptdosing.extension:endtime">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension" />
       <sliceName value="endtime" />
       <short value="The time a dosing period ends" />
@@ -860,12 +1643,24 @@
       <fixedUri value="endtime" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:endtime.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.value[x]" />
       <type>
         <code value="dateTime" />
       </type>
     </element>
     <element id="Extension.extension:ereseptdosing.extension:dosingrule">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension" />
       <sliceName value="dosingrule" />
       <short value="Rule related to dosing" />
@@ -883,6 +1678,12 @@
       </slicing>
     </element>
     <element id="Extension.extension:ereseptdosing.extension:dosingrule.extension:dosebasedon">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.extension" />
       <sliceName value="dosebasedon" />
       <short value="Coding identifying what dose is based on" />
@@ -895,6 +1696,12 @@
       <fixedUri value="dosebasedon" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:dosingrule.extension:dosebasedon.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.extension.value[x]" />
       <type>
         <code value="CodeableConcept" />
@@ -906,6 +1713,12 @@
       </fixedCodeableConcept>
     </element>
     <element id="Extension.extension:ereseptdosing.extension:dosingrule.extension:text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.extension" />
       <sliceName value="text" />
       <max value="1" />
@@ -915,6 +1728,12 @@
       <fixedUri value="text" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:dosingrule.extension:text.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.extension.value[x]" />
       <type>
         <code value="string" />
@@ -925,10 +1744,22 @@
       <fixedUri value="dosingrule" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:dosingrule.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.value[x]" />
       <max value="0" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension" />
       <sliceName value="repeatingdosage" />
       <min value="1" />
@@ -944,6 +1775,12 @@
       </slicing>
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:amount">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.extension" />
       <sliceName value="amount" />
       <min value="1" />
@@ -954,12 +1791,24 @@
       <fixedUri value="amount" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:amount.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.extension.value[x]" />
       <type>
         <code value="Quantity" />
       </type>
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:interval">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.extension" />
       <sliceName value="interval" />
       <max value="1" />
@@ -969,6 +1818,12 @@
       <fixedUri value="interval" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:interval.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.extension.value[x]" />
       <type>
         <code value="CodeableConcept" />
@@ -980,6 +1835,12 @@
       </fixedCodeableConcept>
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:infusionspeed">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.extension" />
       <sliceName value="infusionspeed" />
       <max value="1" />
@@ -995,6 +1856,12 @@
       </slicing>
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:infusionspeed.extension:volum">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.extension.extension" />
       <sliceName value="volum" />
       <min value="1" />
@@ -1005,12 +1872,24 @@
       <fixedUri value="volum" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:infusionspeed.extension:volum.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.extension.extension.value[x]" />
       <type>
         <code value="Quantity" />
       </type>
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:infusionspeed.extension:timeunit">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.extension.extension" />
       <sliceName value="timeunit" />
       <min value="1" />
@@ -1021,6 +1900,12 @@
       <fixedUri value="timeunit" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:infusionspeed.extension:timeunit.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.extension.extension.value[x]" />
       <type>
         <code value="CodeableConcept" />
@@ -1036,10 +1921,22 @@
       <fixedUri value="infusionspeed" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:infusionspeed.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.extension.value[x]" />
       <max value="0" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:time">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.extension" />
       <sliceName value="time" />
       <max value="1" />
@@ -1049,12 +1946,24 @@
       <fixedUri value="time" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:time.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.extension.value[x]" />
       <type>
         <code value="time" />
       </type>
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:timerange">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.extension" />
       <sliceName value="timerange" />
       <max value="1" />
@@ -1064,6 +1973,12 @@
       <fixedUri value="timerange" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:timerange.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.extension.value[x]" />
       <type>
         <code value="CodeableConcept" />
@@ -1075,6 +1990,12 @@
       </fixedCodeableConcept>
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:accurate">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.extension" />
       <sliceName value="accurate" />
       <min value="1" />
@@ -1085,12 +2006,24 @@
       <fixedUri value="accurate" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:accurate.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.extension.value[x]" />
       <type>
         <code value="boolean" />
       </type>
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.extension" />
       <sliceName value="dosingsequence" />
       <max value="1" />
@@ -1106,6 +2039,12 @@
       </slicing>
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence.extension:weekdays">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.extension.extension" />
       <sliceName value="weekdays" />
     </element>
@@ -1114,6 +2053,12 @@
       <fixedUri value="weekdays" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence.extension:weekdays.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.extension.extension.value[x]" />
       <type>
         <code value="CodeableConcept" />
@@ -1125,6 +2070,12 @@
       </fixedCodeableConcept>
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence.extension:dayson">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.extension.extension" />
       <sliceName value="dayson" />
       <max value="1" />
@@ -1134,12 +2085,24 @@
       <fixedUri value="dayson" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence.extension:dayson.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.extension.extension.value[x]" />
       <type>
         <code value="integer" />
       </type>
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence.extension:daysoff">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.extension.extension" />
       <sliceName value="daysoff" />
       <max value="1" />
@@ -1149,6 +2112,12 @@
       <fixedUri value="daysoff" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence.extension:daysoff.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.extension.extension.value[x]" />
       <type>
         <code value="integer" />
@@ -1159,6 +2128,12 @@
       <fixedUri value="dosingsequence" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.extension.value[x]" />
       <max value="0" />
     </element>
@@ -1167,6 +2142,12 @@
       <fixedUri value="repeatingdosage" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.extension.value[x]" />
       <max value="0" />
     </element>
@@ -1175,12 +2156,26 @@
       <fixedUri value="ereseptdosing" />
     </element>
     <element id="Extension.extension:ereseptdosing.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.value[x]" />
       <max value="0" />
     </element>
     <element id="Extension.extension:createeresept">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension" />
       <sliceName value="createeresept" />
+      <short value="Identifes if SFM should generate resept" />
+      <definition value="Used by EPJ to identify if SFM should generate M1 and send to RF." />
       <max value="1" />
     </element>
     <element id="Extension.extension:createeresept.url">
@@ -1188,6 +2183,12 @@
       <fixedUri value="createeresept" />
     </element>
     <element id="Extension.extension:createeresept.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="boolean" />
@@ -1198,6 +2199,12 @@
       <fixedUri value="http://ehelse.no/fhir/StructureDefinition/sfm-reseptamendment" />
     </element>
     <element id="Extension.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.value[x]" />
       <max value="0" />
     </element>
