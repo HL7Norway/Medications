@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sfm-MedicationComposition" />
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-MedicationComposition" />
-  <version value="1.1.2" />
+  <version value="1.1.3" />
   <name value="SfmMedicationComposition" />
   <title value="sfm-MedicationComposition" />
   <status value="draft" />
-  <date value="2020-03-20" />
+  <date value="2020-03-23" />
   <description value="Bundle for use in SFM API for aggregated medication and prescription info" />
   <purpose value="The purpose of this profile is to define the structure of the SfmMedicationBundle." />
   <fhirVersion value="4.0.0" />
@@ -177,8 +177,7 @@
       <path value="Composition.section.entry" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-BandaProduct" />
-        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-NutritionStatement" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-BandaPrescription" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
