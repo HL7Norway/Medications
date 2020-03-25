@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sfm-Medication" />
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-Medication" />
-  <version value="2.0" />
+  <version value="2.1" />
   <name value="SfmMedication" />
   <title value="sfm-Medication" />
   <status value="draft" />
-  <date value="2019-07-05" />
+  <date value="2020-03-25" />
   <description value="SFM Medication derived from no-basis-Medication." />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
