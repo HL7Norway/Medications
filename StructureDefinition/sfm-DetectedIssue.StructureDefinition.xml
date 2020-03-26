@@ -4,7 +4,7 @@
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-DetectedIssue" />
   <version value="1.0" />
   <name value="SfmDetectedIssue" />
-  <title value="SFM-DetectedIssue" />
+  <title value="sfm-DetectedIssue" />
   <status value="draft" />
   <date value="2020-03-05" />
   <description value="Resource to communicate warnings and other issues that has been handeled and communicated within PLL." />
