@@ -6,7 +6,7 @@
   <name value="SfmDetectedIssue" />
   <title value="sfm-DetectedIssue" />
   <status value="draft" />
-  <date value="2020-03-05" />
+  <date value="2020-03-26" />
   <description value="Resource to communicate warnings and other issues that has been handeled and communicated within PLL." />
   <fhirVersion value="4.0.0" />
   <mapping>
