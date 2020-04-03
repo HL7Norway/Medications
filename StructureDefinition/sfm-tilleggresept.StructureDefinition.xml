@@ -2194,6 +2194,125 @@
         <code value="boolean" />
       </type>
     </element>
+    <element id="Extension.extension:slvApplication">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension" />
+      <sliceName value="slvApplication" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:slvApplication.extension">
+      <path value="Extension.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:slvApplication.extension:reason">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension.extension" />
+      <sliceName value="reason" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:slvApplication.extension:reason.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="reason" />
+    </element>
+    <element id="Extension.extension:slvApplication.extension:reason.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:slvApplication.extension:manufacturer">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension.extension" />
+      <sliceName value="manufacturer" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:slvApplication.extension:manufacturer.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="manufacturer" />
+    </element>
+    <element id="Extension.extension:slvApplication.extension:manufacturer.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:slvApplication.extension:directApplication">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension.extension" />
+      <sliceName value="directApplication" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:slvApplication.extension:directApplication.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="directApplication" />
+    </element>
+    <element id="Extension.extension:slvApplication.extension:directApplication.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="boolean" />
+      </type>
+    </element>
+    <element id="Extension.extension:slvApplication.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="slvApplication" />
+    </element>
+    <element id="Extension.extension:slvApplication.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension.value[x]" />
+      <max value="0" />
+    </element>
     <element id="Extension.url">
       <path value="Extension.url" />
       <fixedUri value="http://ehelse.no/fhir/StructureDefinition/sfm-reseptamendment" />
