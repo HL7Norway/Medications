@@ -29,7 +29,7 @@
 	],
 	"description": "This operation provides submitting updated medication and prescription information to Reseptformidleren. Based on changes made in the medication/prescription for a patient SFM will submit PLL and prescription(s) and or recall neccessary prescriptions",
 	"code": "sendMedication",
-	"comment": "This operation is complex, and requier that the Practitioner performing the operation presents a valid HelseID token with identity information, and that the authorisation is available in Helsepersonellregisteret",
+	"comment": "This operation is complex, and require that the Practitioner performing the operation presents a valid HelseID token with identity information, and that the authorisation is available in Helsepersonellregisteret",
 	"resource": [
 		"Patient"
 	],
