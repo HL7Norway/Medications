@@ -51,22 +51,8 @@
 			"min": 0,
 			"max": "*",
 			"documentation": "Refereansenummer assigned to prescriptions sent to RF",
-			"part": [
-				{
-					"name": "reseptID",
-					"min": 1,
-					"max": "1",
-					"documentation": "ReseptID for which the Referansenumber is used",
-					"type": "string"
-				},
-				{
-					"name": "refnum",
-					"min": 1,
-					"max": "1",
-					"documentation": "The actual referansenumber",
-					"type": "string"
-				}
-			]
+			"type": "integer"
+
 		},
 		{
 			"name": "recallCount",
@@ -90,26 +76,7 @@
 			"min": 0,
 			"max": "*",
 			"documentation": "Error for a single prescription operation",
-			"part": [
-				{
-					"name": "reseptId",
-					"min": 1,
-					"max": "1",
-					"documentation": "ReseptID for which the operation occured",
-					"type": "string"
-				},
-				{
-					"name": "errorCode",
-					"min": 1,
-					"max": "1",
-					"documentation": "Forwarded error from Reseptformidleren",
-					"type": "coding",
-					"binding": {
-						"strength": "required",
-						"valueSet": "http://ehelse.no/fhir/ValueSet/sfm-rfkj-lookupcodes"
-					}
-				}
-			]
+			"type": "integer"
 		}
 	]
 }
