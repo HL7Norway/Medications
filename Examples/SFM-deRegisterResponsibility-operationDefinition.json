@@ -1,0 +1,62 @@
+{
+	"resourceType": "OperationDefinition",
+	"id": "SFM-deRegisterResponsibility",
+	"text": {
+		"status": "generated",
+		"div": "<div>Operation definition for SFM specific operation: $deRegisterResponsibility</div>"
+	},
+	"url": "http://hl7.org/fhir/OperationDefinition/SFM-deRegisterResponsibility",
+	"version": "1.0.0",
+	"name": "deRegisterResponsibility",
+	"title": "Operation for deregistering GP or Multidose responsibility in Reseptformidleren",
+	"status": "draft",
+	"kind": "operation",
+	"date": "2020-04-07T13:00:00+02:00",
+	"publisher": "Norsk Helsenett (SFM Project)",
+	"contact": [
+		{
+			"telecom": [
+				{
+					"system": "url",
+					"value": "http://nhn.no/fhir"
+				},
+				{
+					"system": "email",
+					"value": "SFM-Prosjekt@nhn.no"
+				}
+			]
+		}
+	],
+	"description": "This operation deregisters responsibility for the patient for the practitioner performing the operation",
+	"code": "deRegisterResponsibility",
+	"comment": "The operation require that the Practitioner performing the operation presents a valid HelseID token with identity information, and that the authorisation is available in Helsepersonellregisteret",
+	"resource": [
+		"Patient"
+	],
+	"system": false,
+	"type": true,
+	"instance": false,
+	"parameter": [
+				{
+			"name": "type",
+			"use": "in",
+			"min": 1,
+			"max": "1",
+			"documentation": "Representing the type of registration to cancel",
+			"type": "code",
+			"binding": {
+				"strength": "required",
+				"valueSet": "http://ehelse.no/fhir/ValueSet/sfm-registration-type"
+			}
+		},
+		{
+			"name": "patient",
+			"use": "in",
+			"min": 1,
+			"max": "1",
+			"documentation": "SFM patient. Must be present and contain Name, Address and (identifier OR (birthDate + gender))",
+			"type": "Patient"
+		}
+		
+	]
+}
