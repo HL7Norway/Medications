@@ -7,7 +7,7 @@
     </meta>
     <url value="http://ehelse.no/fhir/ValueSet/sfm-registration-type" />
     <version value="1.0.0" />
-    <name value="sfm-kj-consentcodes" />
+    <name value="sfm-registration-type" />
     <title>Registration types used with API operations</title>
     <status value="draft" />
     <date value="2020-04-07T00:00:00.000+00:00" />
