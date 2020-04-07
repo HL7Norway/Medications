@@ -58,7 +58,7 @@
 			"use": "in",
 			"min": 0,
 			"max": "1",
-			"documentation": "If this is nominated, then the resource is validated against this specific profile. If a profile is nominated, and the server cannot validate against the nominated profile, it SHALL return an error",
+			"documentation": "For lookup in Kjernejournal: Indicates timestamp from witch changes shall be returned",
 			"type": "dateTime"
 		},
 		{
@@ -66,11 +66,11 @@
 			"use": "in",
 			"min": 0,
 			"max": "1",
-			"documentation": "If the operation outcome does not list any errors, and a mode was specified, then this is an indication that the operation would be expected to succeed (excepting for transactional integrity issues, see below)",
+			"documentation": "Patient consent type for access to Medication data (HPAKUTT, HPMOTTATTSAMTYKKE, HPUNNTAK)",
 			"type": "code",
 			"binding": {
 				"strength": "required",
-				"valueSet": "TODO: fyll ut for samtykkeverdiene"
+				"valueSet": "http://ehelse.no/fhir/ValueSet/sfm-kj-consentcodes"
 			}
 		},
 		{
@@ -78,11 +78,11 @@
 			"use": "in",
 			"min": 0,
 			"max": "1",
-			"documentation": "If the operation outcome does not list any errors, and a mode was specified, then this is an indication that the operation would be expected to succeed (excepting for transactional integrity issues, see below)",
+			"documentation": "Patient consent type for access to disclosed Medication data (HPAKUTT, HPMOTTATTSAMTYKKE)",
 			"type": "code",
 			"binding": {
 				"strength": "required",
-				"valueSet": "TODO: fyll ut for samtykkeverdiene"
+				"valueSet": "http://ehelse.no/fhir/ValueSet/sfm-kj-consentcodes"
 			}
 		},
 		{
@@ -90,11 +90,11 @@
 			"use": "in",
 			"min": 0,
 			"max": "1",
-			"documentation": "If the operation outcome does not list any errors, and a mode was specified, then this is an indication that the operation would be expected to succeed (excepting for transactional integrity issues, see below)",
+			"documentation": "Patient consent type for access to LÅST RESEPT / locked prescriptions (HPAKUTT, HPMOTTATTSAMTYKKE)",
 			"type": "code",
 			"binding": {
 				"strength": "required",
-				"valueSet": "TODO: fyll ut for samtykkeverdiene"
+				"valueSet": "http://ehelse.no/fhir/ValueSet/sfm-kj-consentcodes"
 			}
 		},
 		{
