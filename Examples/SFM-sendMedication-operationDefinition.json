@@ -1,0 +1,116 @@
+{
+	"resourceType": "OperationDefinition",
+	"id": "SFM-sendMedication",
+	"text": {
+		"status": "generated",
+		"div": "<div>Operation definition for SFM specific operation: $sendMedication</div>"
+	},
+	"url": "http://hl7.org/fhir/OperationDefinition/SFM-sendMedication",
+	"version": "1.0.0",
+	"name": "sendMedication",
+	"title": "Operation for submitting and updating medical and prescription information for a patient",
+	"status": "draft",
+	"kind": "operation",
+	"date": "2020-04-07T14:50:00+02:00",
+	"publisher": "Norsk Helsenett (SFM Project)",
+	"contact": [
+		{
+			"telecom": [
+				{
+					"system": "url",
+					"value": "http://nhn.no/fhir"
+				},
+				{
+					"system": "email",
+					"value": "SFM-Prosjekt@nhn.no"
+				}
+			]
+		}
+	],
+	"description": "This operation provides submitting updated medication and prescription information to Reseptformidleren. Based on changes made in the medication/prescription for a patient SFM will submit PLL and prescription(s) and or recall neccessary prescriptions",
+	"code": "sendMedication",
+	"comment": "This operation is complex, and requier that the Practitioner performing the operation presents a valid HelseID token with identity information, and that the authorisation is available in Helsepersonellregisteret",
+	"resource": [
+		"Patient"
+	],
+	"system": false,
+	"type": true,
+	"instance": false,
+	"parameter": [
+		{
+			"name": "medication",
+			"use": "in",
+			"min": 1,
+			"max": "1",
+			"documentation": "Medication bundle document containing medicatiation and other prescription info. Patient must be present in the bindle, with sufficient info for messages to Reseptformidleren. See $getMedication",
+			"type": "Bundle",
+			"targetProfile": "http://ehelse.no/fhir/StructureDefinition/sfm-MedicationBundle"
+		},
+		{
+			"name": "Referansenummer",
+			"use": "out",
+			"min": 0,
+			"max": "*",
+			"documentation": "Refereansenummer assigned to prescriptions sent to RF",
+			"part": [
+				{
+					"name": "reseptID",
+					"min": 1,
+					"max": "1",
+					"documentation": "ReseptID for which the Referansenumber is used",
+					"type": "string"
+				},
+				{
+					"name": "refnum",
+					"min": 1,
+					"max": "1",
+					"documentation": "The actual referansenumber",
+					"type": "string"
+				}
+			]
+		},
+		{
+			"name": "recallCount",
+			"use": "out",
+			"min": 1,
+			"max": "1",
+			"documentation": "the number of withdrawals sent to Reseptformidleren",
+			"type": "integer"
+		},
+		{
+			"name": "prescriptionCount",
+			"use": "out",
+			"min": 1,
+			"max": "1",
+			"documentation": "the number of prescription signed and sent to Reseptformidleren",
+			"type": "integer"
+		},
+		{
+			"name": "partialError",
+			"use": "out",
+			"min": 0,
+			"max": "*",
+			"documentation": "Error for a single prescription operation",
+			"part": [
+				{
+					"name": "reseptId",
+					"min": 1,
+					"max": "1",
+					"documentation": "ReseptID for which the operation occured",
+					"type": "string"
+				},
+				{
+					"name": "errorCode",
+					"min": 1,
+					"max": "1",
+					"documentation": "Forwarded error from Reseptformidleren",
+					"type": "coding",
+					"binding": {
+						"strength": "required",
+						"valueSet": "http://ehelse.no/fhir/ValueSet/sfm-rfkj-lookupcodes"
+					}
+				}
+			]
+		}
+	]
+}
