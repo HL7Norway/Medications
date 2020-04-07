@@ -51,7 +51,7 @@
 			"min": 0,
 			"max": "*",
 			"documentation": "Refereansenummer assigned to prescriptions sent to RF",
-			"part": {[
+			"part": [
 				{
 					"name": "reseptID",
 					"min": 1,
@@ -67,7 +67,6 @@
 					"type": "string"
 				}
 			]
-			}
 		},
 		{
 			"name": "recallCount",
@@ -91,7 +90,7 @@
 			"min": 0,
 			"max": "*",
 			"documentation": "Error for a single prescription operation",
-			"part": {[
+			"part": [
 				{
 					"name": "reseptId",
 					"min": 1,
@@ -111,7 +110,6 @@
 					}
 				}
 			]
-			}
 		}
 	]
 }
