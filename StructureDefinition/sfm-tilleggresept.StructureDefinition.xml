@@ -625,6 +625,8 @@
       <path value="Extension.extension.extension.value[x]" />
       <type>
         <code value="Reference" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Address" />
+        <aggregation value="bundled" />
       </type>
     </element>
     <element id="Extension.extension:dispatchrequest.url">
