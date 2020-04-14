@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSystem>
+	<id value="sfm-kj-consent-code.codesystem"/>
+	<meta>
+		<versionId value="1"/>
+		<lastUpdated value="2020-04-07T00:00:00.000+00:00"/>
+	</meta>
+	<url value="http://ehelse.no/fhir/CodeSystem/sfm-kj-consent-code"/>
+	<version value="1.0.0"/>
+	<name value="sfm-kj-consent-code.codesystem"/>
+	<title>Kjernejournal consent codes</title>
+	<status value="draft"/>
+	<date value="2020-04-07T00:00:00.000+00:00"/>
+	<publisher value="Direktoratet for e-helse"/>
+	<description>Consent types communicated in SFM API and forwarded to lookup in Kjernejorunal</description>
+	<content value="complete"/>
+	<concept>
+		<code value="HPAKUTT"/>
+		<display value="Akuttsituasjon"/>
+	</concept>
+	<concept>
+		<code value="HPMOTTATTSAMTYKKE"/>
+		<display value="Pasienten har samtykket"/>
+	</concept>
+	<concept>
+		<code value="HPUNNTAK"/>
+		<display value="Unntak for visse helsepersonellgrupper"/>
+	</concept>
+</CodeSystem>
