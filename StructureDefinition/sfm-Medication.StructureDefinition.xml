@@ -40,6 +40,16 @@
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-medicationdetails" />
       </type>
     </element>
+    <element id="Medication.identifier">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Medication.identifier" />
+      <definition value="Business identifier for this medication." />
+    </element>
     <element id="Medication.code">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
@@ -49,6 +59,17 @@
       </extension>
       <path value="Medication.code" />
       <mustSupport value="true" />
+    </element>
+    <element id="Medication.code.coding:FEST-Medication">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Medication.code.coding" />
+      <sliceName value="FEST-Medication" />
+      <definition value="Medication is one of the following types: LegemiddelVirkestoff, LegemiddelMerkevare, Legemiddelpakning, Legemiddeldose. Code is the FEST-id or the &quot;varenummer&quot; for the Medication. FEST-id should be used if available. If not present in FEST, then code is missing and only Display is present." />
     </element>
     <element id="Medication.status">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
