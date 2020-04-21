@@ -3,17 +3,21 @@
     <id value="sfm-kj-rf-error-code.codesystem" />
     <meta>
         <versionId value="1" />
-        <lastUpdated value="2019-09-13T00:00:00.000+00:00" />
+        <lastUpdated value="2020-04-21T00:00:00.000+00:00" />
     </meta>
     <url value="http://ehelse.no/fhir/CodeSystem/sfm-kj-rf-error-code" />
     <version value="1.0.0" />
     <name value="sfm-kj-rf-error-code.codesystem" />
-    <title>Local error codes from SFM for RF and KJ Lookup</title>
+    <title>Local result codes from SFM for RF and KJ Lookup</title>
     <status value="draft" />
-    <date value="2020-03-12T00:00:00.000+00:00" />
+    <date value="2020-04-21T00:00:00.000+00:00" />
     <publisher value="Direktoratet for e-helse" />
-    <description>Local error codes (AND temporarily KJ error codes due to missing codesystem)</description>
+    <description>Local SFM response codes</description>
     <content value="complete" />
+      <concept>
+        <code value="0" />
+        <display value="OK" />
+      </concept>
       <concept>
         <code value="1" />
         <display value="KJ ikke tilgjengelig" />
