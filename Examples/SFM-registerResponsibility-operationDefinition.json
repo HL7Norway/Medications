@@ -52,7 +52,7 @@
 			"max": "1",
 			"documentation": "SFM patient. Must be present and contain Name, Address and (identifier OR (birthDate + gender))",
 			"type": "Patient", 
-			"profile": "http://ehelse.no/fhir/StructureDefinition/sfm-Patient"
+			"targetProfile": "http://ehelse.no/fhir/StructureDefinition/sfm-Patient"
 		}
 		
 	]
