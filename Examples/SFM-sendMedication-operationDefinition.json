@@ -85,6 +85,18 @@
 					"max": "1",
 					"documentation": "The actual referansenumber",
 					"type": "string"
+				},
+				{
+					"name": "resultCode",
+					"use": "out",
+					"min": 1,
+					"max": "1",
+					"documentation": "Ok, or error code from Reseptformidleren or SFM",
+					"type": "Coding",
+					"binding" : {
+						"strength": "required",
+						"valueSet": "http://ehelse.no/fhir/ValueSet/sfm-rfkj-lookupcodes"
+					}
 				}
 			]
 		},
@@ -100,7 +112,7 @@
 					"use": "out",
 					"min": 1,
 					"max": "1",
-					"documentation": "ReseptID for which the Referansenumber is used",
+					"documentation": "ReseptID involved in the operation",
 					"type": "string"
 				},
 				{
@@ -108,7 +120,7 @@
 					"use": "out",
 					"min": 0,
 					"max": "1",
-					"documentation": "The actual referansenumber",
+					"documentation": "Referansenumber assigned to prescription when relevant for M1",
 					"type": "string"
 				},
 				{
@@ -116,7 +128,7 @@
 					"use": "out",
 					"min": 1,
 					"max": "1",
-					"documentation": "The actual referansenumber",
+					"documentation": "Ok, or error code from Reseptformidleren or SFM",
 					"type": "Coding",
 					"binding" : {
 						"strength": "required",
