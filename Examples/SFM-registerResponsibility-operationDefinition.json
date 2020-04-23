@@ -43,7 +43,11 @@
 			"min": 1,
 			"max": "1",
 			"documentation": "Representing the type of registration from valueset sfm-registration-type",
-			"type": "code"
+			"type": "code",
+			"binding" : {
+				"strength": "required",
+				"valueSet": "http://ehelse.no/fhir/ValueSet/sfm-registration-type"
+			}
 		},
 		{
 			"name": "patient",
