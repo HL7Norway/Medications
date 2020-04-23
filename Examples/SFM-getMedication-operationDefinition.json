@@ -11,7 +11,7 @@
 	"title": "Operation for lookup medical and prescription information for a patient",
 	"status": "draft",
 	"kind": "operation",
-	"date": "2020-04-06T14:50:00+02:00",
+	"date": "2020-04-23T11:00:00+02:00",
 	"publisher": "Norsk Helsenett (SFM Project)",
 	"contact": [
 		{
@@ -43,7 +43,9 @@
 			"min": 1,
 			"max": "1",
 			"documentation": "Must be present and contain Name, Address and (identifier OR (birthDate + gender))",
-			"type": "Patient"
+			"type": "Patient",
+			"targetProfile": "http://ehelse.no/fhir/StructureDefinition/sfm-Patient"
+
 		},
 		{
 			"name": "Referansenummer",
