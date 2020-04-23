@@ -6,7 +6,7 @@
 		"div": "<div>Operation definition for SFM specific operation: $registerResponsibility</div>"
 	},
 	"url": "http://nhn.no/sfm/fhir/OperationDefinition/SFM-registerResponsibility",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"name": "registerResponsibility",
 	"title": "Operation for registering GP or Multidose responsibility in Reseptformidleren",
 	"status": "draft",
@@ -37,17 +37,13 @@
 	"type": true,
 	"instance": false,
 	"parameter": [
-				{
+		{
 			"name": "type",
 			"use": "in",
 			"min": 1,
 			"max": "1",
-			"documentation": "Representing the type of registration",
-			"type": "code",
-			"binding": {
-				"strength": "required",
-				"valueSet": "http://ehelse.no/fhir/ValueSet/sfm-registration-type"
-			}
+			"documentation": "Representing the type of registration from valueset sfm-registration-type",
+			"type": "code"
 		},
 		{
 			"name": "patient",
