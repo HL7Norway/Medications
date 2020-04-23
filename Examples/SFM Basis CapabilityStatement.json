@@ -11,7 +11,7 @@
 	"status": "draft",
 	"date": "2020-04-23T15:17:35+00:00",
 	"publisher": "Norsk Helsenett/SFM",
-	"kind": "instance",
+	"kind": "capability",
 	"software": {
 		"name": "SFM Basis API",
 		"version": "0.0.0 Dummy"
@@ -27,13 +27,6 @@
 	],
 	"rest": [
 		{
-			"extension": [
-				{
-					// HVA MED DENNE ???
-					"url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-websocket",
-					"valueUri": "/websocketR4"
-				}
-			],
 			"mode": "server",
 			"resource": [
 				{
