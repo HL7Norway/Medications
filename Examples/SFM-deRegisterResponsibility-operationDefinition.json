@@ -37,14 +37,7 @@
 	"type": true,
 	"instance": false,
 	"parameter": [
-				{
-			"name": "type",
-			"use": "in",
-			"min": 1,
-			"max": "1",
-			"documentation": "Representing the type of registration to cancel from valueset sfm-registration-type",
-			"type": "code"
-		},
+
 		{
 			"name": "patient",
 			"use": "in",
