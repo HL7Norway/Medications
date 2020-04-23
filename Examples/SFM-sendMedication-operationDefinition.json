@@ -5,7 +5,7 @@
 		"status": "generated",
 		"div": "<div>Operation definition for SFM specific operation: $sendMedication</div>"
 	},
-	"url": "http://hl7.org/fhir/OperationDefinition/SFM-sendMedication",
+	"url": "http://nhn.no/sfm/fhir/OperationDefinition/SFM-sendMedication",
 	"version": "1.0.0",
 	"name": "sendMedication",
 	"title": "Operation for submitting and updating medical and prescription information for a patient",

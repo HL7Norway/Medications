@@ -5,7 +5,7 @@
 		"status": "generated",
 		"div": "<div>Operation definition for SFM specific operation: $getMedication</div>"
 	},
-	"url": "http://hl7.org/fhir/OperationDefinition/SFM-getMedication",
+	"url": "http://nhn.no/sfm/fhir/OperationDefinition/SFM-getMedication",
 	"version": "1.0.0",
 	"name": "getMedication",
 	"title": "Operation for lookup medical and prescription information for a patient",

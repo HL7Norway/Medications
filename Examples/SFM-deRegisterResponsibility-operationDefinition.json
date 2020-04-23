@@ -5,13 +5,13 @@
 		"status": "generated",
 		"div": "<div>Operation definition for SFM specific operation: $deRegisterResponsibility</div>"
 	},
-	"url": "http://hl7.org/fhir/OperationDefinition/SFM-deRegisterResponsibility",
+	"url": "http://nhn.no/sfm/fhir/OperationDefinition/SFM-deRegisterResponsibility",
 	"version": "1.0.0",
 	"name": "deRegisterResponsibility",
 	"title": "Operation for deregistering GP or Multidose responsibility in Reseptformidleren",
 	"status": "draft",
 	"kind": "operation",
-	"date": "2020-04-07T13:00:00+02:00",
+	"date": "2020-04-23T13:00:00+02:00",
 	"publisher": "Norsk Helsenett (SFM Project)",
 	"contact": [
 		{
@@ -55,7 +55,8 @@
 			"min": 1,
 			"max": "1",
 			"documentation": "SFM patient. Must be present and contain Name, Address and (identifier OR (birthDate + gender))",
-			"type": "Patient"
+			"type": "Patient", 
+			"profile": "http://ehelse.no/fhir/StructureDefinition/sfm-Patient"
 		}
 		
 	]
