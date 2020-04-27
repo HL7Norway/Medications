@@ -717,17 +717,7 @@
       </extension>
       <path value="MedicationStatement.identifier.type.text" />
       <min value="1" />
-      <fixedString value="PLLid" />
-    </element>
-    <element id="MedicationStatement.identifier:treatmentId.value">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="MedicationStatement.identifier.value" />
-      <min value="1" />
+      <fixedString value="Treatmentid" />
     </element>
     <element id="MedicationStatement.identifier:reseptid">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
