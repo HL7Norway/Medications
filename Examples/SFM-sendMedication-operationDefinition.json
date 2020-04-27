@@ -79,14 +79,6 @@
 					"type": "string"
 				},
 				{
-					"name": "refnum",
-					"use": "out",
-					"min": 1,
-					"max": "1",
-					"documentation": "The actual referansenumber",
-					"type": "string"
-				},
-				{
 					"name": "resultCode",
 					"use": "out",
 					"min": 1,
