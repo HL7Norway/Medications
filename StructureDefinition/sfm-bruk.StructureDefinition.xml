@@ -28,19 +28,24 @@
       <fixedUri value="http://ehelse.no/fhir/StructureDefinition/sfm-use" />
     </element>
     <element id="Extension.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.value[x]" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
-    <element id="Extension.value[x].coding">
-      <path value="Extension.value[x].coding" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="urn:uid:2.16.578.1.12.4.1.1.9101" />
-      </binding>
-    </element>
     <element id="Extension.value[x].coding.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.value[x].coding.system" />
       <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.9101" />
     </element>
