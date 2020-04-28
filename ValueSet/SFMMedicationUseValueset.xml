@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet>
+	<id value="sfm-medicationUse.valueset"/>
+	<meta>
+		<versionId value="1"/>
+		<lastUpdated value="2012-04-27T00:00:00.000+00:00"/>
+	</meta>
+	<url value="http://ehelse.no/fhir/ValueSet/sfm-medication-use"/>
+	<version value="1.0.0"/>
+	<name value="sfm-medication-use"/>
+	<title>Code for type of use for a medication</title>
+	<status value="draft"/>
+	<date value="2020-04-27T00:00:00.000+00:00"/>
+	<publisher value="Direktoratet for e-helse"/>
+	<description>Reference to norwegian codesystems 9101 on Volven: Legemiddelbruk</description>
+	<purpose>Used in SFM for categorization of type of medication use</purpose>
+	<compose>
+		<include>
+			<system value="urn:oid:2.16.578.1.12.4.1.1.9101"/>
+		</include>
+	</compose>
+</ValueSet>
