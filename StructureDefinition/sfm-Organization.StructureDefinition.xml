@@ -197,7 +197,7 @@
       </extension>
       <path value="Organization.identifier.system" />
       <min value="1" />
-      <fixedUri value="urn:oid:2.16.578.1.12.4.1.2.103" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.2" />
     </element>
     <element id="Organization.identifier:HERid.value">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
