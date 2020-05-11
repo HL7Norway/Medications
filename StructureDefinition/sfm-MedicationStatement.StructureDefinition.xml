@@ -44,6 +44,31 @@
       </type>
       <mustSupport value="true" />
     </element>
+    <element id="MedicationStatement.extension:reginfo.extension:helseperson">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension" />
+      <sliceName value="helseperson" />
+    </element>
+    <element id="MedicationStatement.extension:reginfo.extension:helseperson.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.extension.extension.value[x]" />
+      <type>
+        <code value="Reference" />
+        <aggregation value="contained" />
+        <aggregation value="referenced" />
+        <aggregation value="bundled" />
+      </type>
+    </element>
     <element id="MedicationStatement.extension:comment">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
@@ -762,6 +787,9 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
         <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-MedicationStatement" />
+        <aggregation value="contained" />
+        <aggregation value="referenced" />
+        <aggregation value="bundled" />
       </type>
     </element>
     <element id="MedicationStatement.partOf">
@@ -772,6 +800,12 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="MedicationStatement.partOf" />
+      <type>
+        <code value="Reference" />
+        <aggregation value="contained" />
+        <aggregation value="referenced" />
+        <aggregation value="bundled" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.status">
@@ -792,6 +826,15 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="MedicationStatement.medication[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <aggregation value="contained" />
+        <aggregation value="referenced" />
+        <aggregation value="bundled" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.medication[x]:medicationReference">
@@ -822,6 +865,8 @@
       <type>
         <code value="Reference" />
         <aggregation value="contained" />
+        <aggregation value="referenced" />
+        <aggregation value="bundled" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -834,6 +879,12 @@
       </extension>
       <path value="MedicationStatement.context" />
       <definition value="The encounter or episode of care that establishes the context for this MedicationStatement. Not used by SFM." />
+      <type>
+        <code value="Reference" />
+        <aggregation value="contained" />
+        <aggregation value="referenced" />
+        <aggregation value="bundled" />
+      </type>
     </element>
     <element id="MedicationStatement.effective[x]">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
@@ -854,6 +905,36 @@
       </extension>
       <path value="MedicationStatement.dateAsserted" />
       <definition value="The date when the medication statement was asserted by the information source. Not in use in SFM." />
+    </element>
+    <element id="MedicationStatement.informationSource">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.informationSource" />
+      <type>
+        <code value="Reference" />
+        <aggregation value="contained" />
+        <aggregation value="referenced" />
+        <aggregation value="bundled" />
+      </type>
+    </element>
+    <element id="MedicationStatement.derivedFrom">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.derivedFrom" />
+      <type>
+        <code value="Reference" />
+        <aggregation value="contained" />
+        <aggregation value="referenced" />
+        <aggregation value="bundled" />
+      </type>
     </element>
     <element id="MedicationStatement.reasonCode">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
@@ -885,6 +966,21 @@
       </extension>
       <path value="MedicationStatement.reasonCode.coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7171" />
+    </element>
+    <element id="MedicationStatement.reasonReference">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.reasonReference" />
+      <type>
+        <code value="Reference" />
+        <aggregation value="contained" />
+        <aggregation value="referenced" />
+        <aggregation value="bundled" />
+      </type>
     </element>
     <element id="MedicationStatement.dosage">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
