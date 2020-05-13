@@ -36,6 +36,12 @@
   <derivation value="constraint" />
   <differential>
     <element id="PractitionerRole.practitioner">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="PractitionerRole.practitioner" />
       <type>
         <code value="Reference" />
@@ -46,12 +52,38 @@
       <mustSupport value="true" />
     </element>
     <element id="PractitionerRole.organization">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="PractitionerRole.organization" />
       <type>
         <code value="Reference" />
         <aggregation value="contained" />
       </type>
       <mustSupport value="true" />
+    </element>
+    <element id="PractitionerRole.code">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="PractitionerRole.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="PractitionerRole.code.coding.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="PractitionerRole.code.coding.system" />
+      <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.7490" />
     </element>
   </differential>
 </StructureDefinition>
