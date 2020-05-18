@@ -42,6 +42,10 @@
       </concept>
 	  <concept>
         <code value="8" />
+        <display value="Avtalespesialist" />
+      </concept>
+	  <concept>
+        <code value="9" />
         <display value="Annet" />
       </concept>
 </CodeSystem>
