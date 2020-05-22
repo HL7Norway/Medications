@@ -403,6 +403,7 @@
       <path value="Extension.extension.extension.value[x]" />
       <type>
         <code value="Address" />
+        <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-Address" />
       </type>
     </element>
     <element id="Extension.extension:dispatchrequest.url">
