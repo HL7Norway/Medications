@@ -406,6 +406,30 @@
         <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-Address" />
       </type>
     </element>
+    <element id="Extension.extension:dispatchrequest.extension:address.value[x].extension:urbanDistrict">
+      <path value="Extension.extension.extension.value[x].extension" />
+      <sliceName value="urbanDistrict" />
+    </element>
+    <element id="Extension.extension:dispatchrequest.extension:address.value[x].extension:urbanDistrict.value[x].display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.extension.value[x].extension.value[x].display" />
+    </element>
+    <element id="Extension.extension:dispatchrequest.extension:address.value[x].extension:propertyInformation">
+      <path value="Extension.extension.extension.value[x].extension" />
+      <sliceName value="propertyInformation" />
+    </element>
+    <element id="Extension.extension:dispatchrequest.extension:address.value[x].extension:propertyInformation.extension:municipality">
+      <path value="Extension.extension.extension.value[x].extension.extension" />
+      <sliceName value="municipality" />
+    </element>
+    <element id="Extension.extension:dispatchrequest.extension:address.value[x].extension:propertyInformation.extension:municipality.value[x].display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.extension.value[x].extension.extension.value[x].display" />
+    </element>
     <element id="Extension.extension:dispatchrequest.url">
       <path value="Extension.extension.url" />
       <fixedUri value="dispatchrequest" />
@@ -1027,11 +1051,10 @@
       <type>
         <code value="CodeableConcept" />
       </type>
-      <fixedCodeableConcept>
-        <coding>
-          <system value="urn:oid:2.16.578.1.12.4.1.1.7500" />
-        </coding>
-      </fixedCodeableConcept>
+    </element>
+    <element id="Extension.extension:recallinfo.extension:recallcode.value[x].coding.system">
+      <path value="Extension.extension.extension.value[x].coding.system" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7500" />
     </element>
     <element id="Extension.extension:recallinfo.extension:recallcode.value[x].coding.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
