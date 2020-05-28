@@ -47,7 +47,7 @@
     </element>
     <element id="Extension.extension:type.url">
       <path value="Extension.extension.url" />
-      <fixedString value="type" />
+      <fixedUri value="type" />
     </element>
     <element id="Extension.extension:type.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -59,6 +59,18 @@
       <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.7495" />
     </element>
+    <element id="Extension.extension:type.value[x].coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].coding.display" />
+    </element>
+    <element id="Extension.extension:type.value[x].text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].text" />
+    </element>
     <element id="Extension.extension:merknad">
       <path value="Extension.extension" />
       <sliceName value="merknad" />
@@ -68,7 +80,7 @@
     </element>
     <element id="Extension.extension:merknad.url">
       <path value="Extension.extension.url" />
-      <fixedString value="merknad" />
+      <fixedUri value="merknad" />
     </element>
     <element id="Extension.extension:merknad.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -85,7 +97,7 @@
     </element>
     <element id="Extension.extension:Id.url">
       <path value="Extension.extension.url" />
-      <fixedString value="Id" />
+      <fixedUri value="Id" />
     </element>
     <element id="Extension.extension:Id.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -103,7 +115,7 @@
     </element>
     <element id="Extension.extension:registeredby.url">
       <path value="Extension.extension.url" />
-      <fixedString value="registeredby" />
+      <fixedUri value="registeredby" />
     </element>
     <element id="Extension.extension:registeredby.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -120,7 +132,7 @@
     </element>
     <element id="Extension.extension:receiver.url">
       <path value="Extension.extension.url" />
-      <fixedString value="receiver" />
+      <fixedUri value="receiver" />
     </element>
     <element id="Extension.extension:receiver.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -154,7 +166,7 @@
     </element>
     <element id="Extension.extension:response.extension:Id.url">
       <path value="Extension.extension.extension.url" />
-      <fixedString value="Id" />
+      <fixedUri value="Id" />
     </element>
     <element id="Extension.extension:response.extension:Id.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -171,7 +183,7 @@
     </element>
     <element id="Extension.extension:response.extension:responder.url">
       <path value="Extension.extension.extension.url" />
-      <fixedString value="responder" />
+      <fixedUri value="responder" />
     </element>
     <element id="Extension.extension:response.extension:responder.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -188,7 +200,7 @@
     </element>
     <element id="Extension.extension:response.extension:svar.url">
       <path value="Extension.extension.extension.url" />
-      <fixedString value="svar" />
+      <fixedUri value="svar" />
     </element>
     <element id="Extension.extension:response.extension:svar.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -206,7 +218,7 @@
     </element>
     <element id="Extension.extension:response.extension:type.url">
       <path value="Extension.extension.extension.url" />
-      <fixedString value="type" />
+      <fixedUri value="type" />
     </element>
     <element id="Extension.extension:response.extension:type.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -219,9 +231,21 @@
         </coding>
       </fixedCodeableConcept>
     </element>
+    <element id="Extension.extension:response.extension:type.value[x].coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.extension.value[x].coding.display" />
+    </element>
+    <element id="Extension.extension:response.extension:type.value[x].text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.extension.value[x].text" />
+    </element>
     <element id="Extension.extension:response.url">
       <path value="Extension.extension.url" />
-      <fixedString value="response" />
+      <fixedUri value="response" />
     </element>
     <element id="Extension.extension:response.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -229,7 +253,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-libitemcomment" />
+      <fixedUri value="http://ehelse.no/fhir/StructureDefinition/sfm-libitemcomment" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

@@ -293,11 +293,10 @@
       <type>
         <code value="CodeableConcept" />
       </type>
-      <fixedCodeableConcept>
-        <coding>
-          <system value="urn:uid:2.16.578.1.12.4.1.1.7404" />
-        </coding>
-      </fixedCodeableConcept>
+    </element>
+    <element id="Extension.extension:dispatchrequest.extension:metod.value[x].coding.system">
+      <path value="Extension.extension.extension.value[x].coding.system" />
+      <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.7404" />
     </element>
     <element id="Extension.extension:dispatchrequest.extension:metod.value[x].coding.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
@@ -509,7 +508,7 @@
     </element>
     <element id="Extension.extension:itemgroup.value[x].coding.system">
       <path value="Extension.extension.value[x].coding.system" />
-      <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.7402" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7402" />
     </element>
     <element id="Extension.extension:itemgroup.value[x].coding.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
@@ -1160,11 +1159,10 @@
       <type>
         <code value="CodeableConcept" />
       </type>
-      <fixedCodeableConcept>
-        <coding>
-          <system value="urn:oid:2.16.578.1.12.4.1.1.9080" />
-        </coding>
-      </fixedCodeableConcept>
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:dosingrule.extension:dosebasedon.value[x].coding.system">
+      <path value="Extension.extension.extension.extension.value[x].coding.system" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.9080" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:dosingrule.extension:dosebasedon.value[x].coding.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
@@ -1252,11 +1250,10 @@
       <type>
         <code value="CodeableConcept" />
       </type>
-      <fixedCodeableConcept>
-        <coding>
-          <system value="urn:oid:2.16.578.1.12.4.1.1.9088" />
-        </coding>
-      </fixedCodeableConcept>
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:interval.value[x].coding.system">
+      <path value="Extension.extension.extension.extension.value[x].coding.system" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.9088" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:interval.value[x].coding.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
@@ -1322,11 +1319,10 @@
       <type>
         <code value="CodeableConcept" />
       </type>
-      <fixedCodeableConcept>
-        <coding>
-          <system value="urn:oid:2.16.578.1.12.4.1.1.9088" />
-        </coding>
-      </fixedCodeableConcept>
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:infusionspeed.extension:timeunit.value[x].coding.system">
+      <path value="Extension.extension.extension.extension.extension.value[x].coding.system" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.9088" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:infusionspeed.extension:timeunit.value[x].coding.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
@@ -1377,11 +1373,10 @@
       <type>
         <code value="CodeableConcept" />
       </type>
-      <fixedCodeableConcept>
-        <coding>
-          <system value="urn:oid:2.16.578.1.12.4.1.1.8325" />
-        </coding>
-      </fixedCodeableConcept>
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:timerange.value[x].coding.system">
+      <path value="Extension.extension.extension.extension.value[x].coding.system" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.8325" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:timerange.value[x].coding.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
@@ -1439,11 +1434,10 @@
       <type>
         <code value="CodeableConcept" />
       </type>
-      <fixedCodeableConcept>
-        <coding>
-          <system value="urn:oid:2.16.578.1.12.4.1.1.9082" />
-        </coding>
-      </fixedCodeableConcept>
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence.extension:weekdays.value[x].coding.system">
+      <path value="Extension.extension.extension.extension.extension.value[x].coding.system" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.9082" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence.extension:weekdays.value[x].coding.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
