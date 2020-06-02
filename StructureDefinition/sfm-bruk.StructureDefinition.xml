@@ -47,7 +47,7 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Extension.value[x].coding.system" />
-      <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.9101" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.9101" />
     </element>
   </differential>
 </StructureDefinition>

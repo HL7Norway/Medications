@@ -68,7 +68,7 @@
     </element>
     <element id="Extension.extension:administrationofmedication.extension:admByWhom.value[x].coding.system">
       <path value="Extension.extension.extension.value[x].coding.system" />
-      <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.9074" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.9074" />
     </element>
     <element id="Extension.extension:administrationofmedication.extension:admWay">
       <path value="Extension.extension.extension" />
@@ -90,7 +90,7 @@
     </element>
     <element id="Extension.extension:administrationofmedication.extension:admWay.value[x].coding.system">
       <path value="Extension.extension.extension.value[x].coding.system" />
-      <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.9075" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.9075" />
     </element>
     <element id="Extension.extension:administrationofmedication.extension:admBySchema">
       <path value="Extension.extension.extension" />

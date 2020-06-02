@@ -39,7 +39,7 @@
     </element>
     <element id="Extension.value[x].coding.system">
       <path value="Extension.value[x].coding.system" />
-      <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.7404" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7404" />
     </element>
   </differential>
 </StructureDefinition>

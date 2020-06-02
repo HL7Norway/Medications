@@ -231,7 +231,7 @@
     </element>
     <element id="Extension.extension:speciality.value[x].coding.system">
       <path value="Extension.extension.value[x].coding.system" />
-      <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.7428" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7428" />
     </element>
     <element id="Extension.extension:speciality.value[x].coding.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
@@ -296,7 +296,7 @@
     </element>
     <element id="Extension.extension:dispatchrequest.extension:metod.value[x].coding.system">
       <path value="Extension.extension.extension.value[x].coding.system" />
-      <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.7404" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7404" />
     </element>
     <element id="Extension.extension:dispatchrequest.extension:metod.value[x].coding.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
@@ -558,7 +558,7 @@
     </element>
     <element id="Extension.extension:reimbursmentparagraph.value[x].coding.system">
       <path value="Extension.extension.value[x].coding.system" />
-      <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.7427" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7427" />
     </element>
     <element id="Extension.extension:reimbursmentparagraph.value[x].coding.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
