@@ -268,6 +268,38 @@
       <sliceName value="dispatchrequest" />
       <mustSupport value="true" />
     </element>
+    <element id="MedicationStatement.extension:reseptInfo.extension:dispatchrequest.extension:address">
+      <path value="MedicationStatement.extension.extension.extension" />
+      <sliceName value="address" />
+    </element>
+    <element id="MedicationStatement.extension:reseptInfo.extension:dispatchrequest.extension:address.value[x].extension:official">
+      <path value="MedicationStatement.extension.extension.extension.value[x].extension" />
+      <sliceName value="official" />
+    </element>
+    <element id="MedicationStatement.extension:reseptInfo.extension:dispatchrequest.extension:address.value[x].extension:official.value[x]">
+      <path value="MedicationStatement.extension.extension.extension.value[x].extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="MedicationStatement.extension:reseptInfo.extension:dispatchrequest.extension:address.value[x].extension:urbanDistrict">
+      <path value="MedicationStatement.extension.extension.extension.value[x].extension" />
+      <sliceName value="urbanDistrict" />
+    </element>
+    <element id="MedicationStatement.extension:reseptInfo.extension:dispatchrequest.extension:address.value[x].extension:urbanDistrict.value[x]">
+      <path value="MedicationStatement.extension.extension.extension.value[x].extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
     <element id="MedicationStatement.extension:reseptInfo.extension:earliestdispence">
       <path value="MedicationStatement.extension.extension" />
       <sliceName value="earliestdispence" />
@@ -436,13 +468,14 @@
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.medication[x]:medicationReference">
-      <path value="MedicationStatement.medication[x]" />
+      <path value="MedicationStatement.medicationReference" />
       <sliceName value="medicationReference" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Medication" />
         <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Magistrell-Medication" />
         <aggregation value="contained" />
+        <aggregation value="bundled" />
       </type>
       <mustSupport value="true" />
     </element>
