@@ -156,7 +156,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://eheles.no/fhir/StructureDefinition/sfm-discontinuation" />
+        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-discontinuation" />
       </type>
       <mustSupport value="true" />
     </element>

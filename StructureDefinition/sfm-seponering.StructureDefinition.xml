@@ -5,7 +5,7 @@
     <versionId value="2" />
     <lastUpdated value="2018-10-03T14:02:15.733+00:00" />
   </meta>
-  <url value="http://eheles.no/fhir/StructureDefinition/sfm-discontinuation" />
+  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-discontinuation" />
   <version value="1.0" />
   <name value="SfmDiscontinuation" />
   <title value="sfm-discontinuation" />
@@ -42,7 +42,7 @@
     </element>
     <element id="Extension.extension:timedate.url">
       <path value="Extension.extension.url" />
-      <fixedString value="timedate" />
+      <fixedUri value="timedate" />
     </element>
     <element id="Extension.extension:timedate.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -60,7 +60,7 @@
     </element>
     <element id="Extension.extension:reason.url">
       <path value="Extension.extension.url" />
-      <fixedString value="reason" />
+      <fixedUri value="reason" />
     </element>
     <element id="Extension.extension:reason.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -72,6 +72,18 @@
       <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7494" />
     </element>
+    <element id="Extension.extension:reason.value[x].coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].coding.display" />
+    </element>
+    <element id="Extension.extension:reason.value[x].text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].text" />
+    </element>
     <element id="Extension.extension:note">
       <path value="Extension.extension" />
       <sliceName value="note" />
@@ -81,7 +93,7 @@
     </element>
     <element id="Extension.extension:note.url">
       <path value="Extension.extension.url" />
-      <fixedString value="note" />
+      <fixedUri value="note" />
     </element>
     <element id="Extension.extension:note.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -91,7 +103,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedString value="http://eheles.no/fhir/StructureDefinition/sfm-discontinuation" />
+      <fixedUri value="http://ehelse.no/fhir/StructureDefinition/sfm-discontinuation" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
