@@ -26,12 +26,6 @@
       </slicing>
     </element>
     <element id="Basic.extension:metadataPLL">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Basic.extension" />
       <sliceName value="metadataPLL" />
       <type>
@@ -41,187 +35,85 @@
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:metadataPLL.extension:relatedparties">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Basic.extension.extension" />
       <sliceName value="relatedparties" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:metadataPLL.extension:deliveryinformation">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Basic.extension.extension" />
       <sliceName value="deliveryinformation" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:metadataPLL.extension:deliveryinformation.extension:prescriptionId">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Basic.extension.extension.extension" />
       <sliceName value="prescriptionId" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:metadataPLL.extension:deliveryinformation.extension:refM10">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Basic.extension.extension.extension" />
       <sliceName value="refM10" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:metadataPLL.extension:deliveryinformation.extension:repacking">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Basic.extension.extension.extension" />
       <sliceName value="repacking" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:metadataPLL.extension:deliveryinformation.extension:datefirstdose">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Basic.extension.extension.extension" />
       <sliceName value="datefirstdose" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:metadataPLL.extension:deliveryinformation.extension:datelastdose">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Basic.extension.extension.extension" />
       <sliceName value="datelastdose" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:metadataPLL.extension:deliveryinformation.extension:deliverydoc">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Basic.extension.extension.extension" />
       <sliceName value="deliverydoc" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:metadataPLL.extension:text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Basic.extension.extension" />
       <sliceName value="text" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:metadataPLL.extension:substitute">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Basic.extension.extension" />
       <sliceName value="substitute" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:metadataPLL.extension:createPLL">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Basic.extension.extension" />
       <sliceName value="createPLL" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:metadataPLL.extension:packinginfo">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Basic.extension.extension" />
       <sliceName value="packinginfo" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:metadataPLL.extension:packinginfo.extension:orderdeadline">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Basic.extension.extension.extension" />
       <sliceName value="orderdeadline" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:metadataPLL.extension:packinginfo.extension:firstdosingdate">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Basic.extension.extension.extension" />
       <sliceName value="firstdosingdate" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:metadataPLL.extension:packinginfo.extension:lastdosingdate">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Basic.extension.extension.extension" />
       <sliceName value="lastdosingdate" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Basic.code" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.code.coding">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Basic.code.coding" />
       <binding>
         <strength value="extensible" />
@@ -229,12 +121,6 @@
       </binding>
     </element>
     <element id="Basic.code.coding.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Basic.code.coding.system" />
       <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-message-type" />
     </element>
