@@ -1,23 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <ValueSet>
-    <id value="sfm-kj-consentcodes.valueset" />
-    <meta>
-        <versionId value="1" />
-        <lastUpdated value="2020-04-07T00:00:00.000+00:00" />
-    </meta>
-    <url value="http://ehelse.no/fhir/ValueSet/sfm-kj-consentcodes" />
-    <version value="1.0.0" />
-    <name value="sfm-kj-consentcodes" />
-    <title>Consent for KJ lookup</title>
-    <status value="draft" />
-    <date value="2020-04-07T00:00:00.000+00:00" />
-    <publisher value="Direktoratet for e-helse" />
-    <description>Collection of relevant consent codes for SFM lookup in KJ on behalf of Practitioner/organization</description>
-    <purpose>Serves as a common valueset for consent given for Kjernejournal lookup</purpose>
-    <compose>
-        <include>
-            <system value="http://ehelse.no/fhir/CodeSystem/sfm-kj-consent-code" />
-        </include>
-    </compose>
-
+  <id value="sfm-kj-consentcodes.valueset" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2020-04-07T00:00:00.000+00:00" />
+  </meta>
+  <url value="http://ehelse.no/fhir/ValueSet/sfm-kj-consentcodes" />
+  <version value="1.0.0" />
+  <name value="sfm-kj-consentcodes" />
+  <title>Consent for KJ lookup</title>
+  <status value="draft" />
+  <date value="2020-04-07T00:00:00.000+00:00" />
+  <publisher value="Direktoratet for e-helse" />
+  <description>Collection of relevant consent codes for SFM lookup in KJ on behalf of Practitioner/organization</description>
+  <purpose>Serves as a common valueset for consent given for Kjernejournal lookup</purpose>
+  <compose>
+    <include>
+      <system value="http://ehelse.no/fhir/CodeSystem/sfm-kj-consent-code" />
+    </include>
+  </compose>
 </ValueSet>

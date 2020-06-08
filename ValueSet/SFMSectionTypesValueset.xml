@@ -1,19 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <ValueSet>
-    <id value="sfm-section-types.valueset" />
-    <meta>
-        <versionId value="1" />
-        <lastUpdated value="2019-09-13T00:00:00.000+00:00" />
-    </meta>
-    <url value="http://ehelse.no/fhir/ValueSet/sfm-section-types" />
-    <version value="1.0.0" />
-    <name value="sfm-section-types.valueset" />
-    <status value="draft" />
-    <date value="2019-09-13T00:00:00.000+00:00" />
-    <publisher value="Direktoratet for e-helse" />
-    <compose>
-        <include>
-            <system value="http://ehelse.no/fhir/CodeSystem/sfm-section-types" />
-        </include>
-    </compose>
+  <id value="sfm-section-types.valueset" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2019-09-13T00:00:00.000+00:00" />
+  </meta>
+  <url value="http://ehelse.no/fhir/ValueSet/sfm-section-types" />
+  <version value="1.0.0" />
+  <name value="sfm-section-types.valueset" />
+  <status value="draft" />
+  <date value="2019-09-13T00:00:00.000+00:00" />
+  <publisher value="Direktoratet for e-helse" />
+  <compose>
+    <include>
+      <system value="http://ehelse.no/fhir/CodeSystem/sfm-section-types" />
+    </include>
+  </compose>
 </ValueSet>

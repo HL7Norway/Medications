@@ -1,32 +1,30 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <ValueSet>
-	<id value="sfm-rfkj-lookupcodes.valueset"/>
-	<meta>
-		<versionId value="1"/>
-		<lastUpdated value="2012-03-25T00:00:00.000+00:00"/>
-	</meta>
-	<url value="http://ehelse.no/fhir/ValueSet/sfm-rfkj-lookupcodes"/>
-	<version value="1.0.0"/>
-	<name value="sfm-rfkj-lookupcodes"/>
-	<title>Response and error codes from local and remote sources</title>
-	<status value="draft"/>
-	<date value="2020-03-25T00:00:00.000+00:00"/>
-	<publisher value="Direktoratet for e-helse"/>
-	<description>Collection of local codes and codes from norwegian codesystems 7419, 7503 and 8821</description>
-	<purpose>Serves as a common valueset for response from SFM to Reseptformidleren and/or Kjernejournal</purpose>
-	<compose>
-		<include>
-			<system value="http://ehelse.no/fhir/CodeSystem/sfm-kj-rf-error-code"/>
-		</include>
-		<include>
-			<system value="urn:oid:2.16.578.1.12.4.1.1.7419"/>
-		</include>
-		<include>
-			<system value="urn:oid:2.16.578.1.12.4.1.1.7503"/>
-		</include>
-		<include>
-			<system value="urn:oid:2.16.578.1.12.4.1.1.8221"/>
-		</include>
-
-	</compose>
+  <id value="sfm-rfkj-lookupcodes.valueset" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2012-03-25T00:00:00.000+00:00" />
+  </meta>
+  <url value="http://ehelse.no/fhir/ValueSet/sfm-rfkj-lookupcodes" />
+  <version value="1.0.0" />
+  <name value="sfm-rfkj-lookupcodes" />
+  <title>Response and error codes from local and remote sources</title>
+  <status value="draft" />
+  <date value="2020-03-25T00:00:00.000+00:00" />
+  <publisher value="Direktoratet for e-helse" />
+  <description>Collection of local codes and codes from norwegian codesystems 7419, 7503 and 8821</description>
+  <purpose>Serves as a common valueset for response from SFM to Reseptformidleren and/or Kjernejournal</purpose>
+  <compose>
+    <include>
+      <system value="http://ehelse.no/fhir/CodeSystem/sfm-kj-rf-error-code" />
+    </include>
+    <include>
+      <system value="urn:oid:2.16.578.1.12.4.1.1.7419" />
+    </include>
+    <include>
+      <system value="urn:oid:2.16.578.1.12.4.1.1.7503" />
+    </include>
+    <include>
+      <system value="urn:oid:2.16.578.1.12.4.1.1.8221" />
+    </include>
+  </compose>
 </ValueSet>
