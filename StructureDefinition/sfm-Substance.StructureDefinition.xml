@@ -4,8 +4,8 @@
   <version value="2.0" />
   <name value="SfmSubstance" />
   <title value="sfm-Substance" />
-  <status value="draft" />
-  <date value="2019-07-05" />
+  <status value="active" />
+  <date value="2020-06-08" />
   <description value="sfm-Substance derived from no-basis-Substance" />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
@@ -14,59 +14,131 @@
   <baseDefinition value="http://hl7.no/fhir/StructureDefinition/no-basis-Substance" />
   <derivation value="constraint" />
   <differential>
+    <element id="Substance.meta.security.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Substance.meta.security.display" />
+    </element>
+    <element id="Substance.meta.tag.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Substance.meta.tag.display" />
+    </element>
+    <element id="Substance.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Substance.identifier.type.coding.display" />
+    </element>
+    <element id="Substance.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Substance.identifier.type.text" />
+    </element>
+    <element id="Substance.identifier.assigner.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Substance.identifier.assigner.display" />
+    </element>
     <element id="Substance.status">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Substance.status" />
       <mustSupport value="true" />
     </element>
+    <element id="Substance.category.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Substance.category.coding.display" />
+    </element>
+    <element id="Substance.category.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Substance.category.text" />
+    </element>
     <element id="Substance.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Substance.code" />
       <mustSupport value="true" />
     </element>
+    <element id="Substance.code.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Substance.code.coding.display" />
+    </element>
+    <element id="Substance.instance.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Substance.instance.identifier.type.coding.display" />
+    </element>
+    <element id="Substance.instance.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Substance.instance.identifier.type.text" />
+    </element>
+    <element id="Substance.instance.identifier.assigner.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Substance.instance.identifier.assigner.display" />
+    </element>
+    <element id="Substance.instance.quantity.unit">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Substance.instance.quantity.unit" />
+    </element>
     <element id="Substance.ingredient">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Substance.ingredient" />
       <mustSupport value="true" />
     </element>
     <element id="Substance.ingredient.quantity">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Substance.ingredient.quantity" />
       <min value="1" />
     </element>
+    <element id="Substance.ingredient.quantity.numerator.unit">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Substance.ingredient.quantity.numerator.unit" />
+    </element>
+    <element id="Substance.ingredient.quantity.denominator.unit">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Substance.ingredient.quantity.denominator.unit" />
+    </element>
     <element id="Substance.ingredient.substance[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Substance.ingredient.substance[x]" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Substance" />
         <aggregation value="bundled" />
       </type>
+    </element>
+    <element id="Substance.ingredient.substance[x].identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Substance.ingredient.substance[x].identifier.type.coding.display" />
+    </element>
+    <element id="Substance.ingredient.substance[x].identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Substance.ingredient.substance[x].identifier.type.text" />
+    </element>
+    <element id="Substance.ingredient.substance[x].display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Substance.ingredient.substance[x].display" />
     </element>
   </differential>
 </StructureDefinition>

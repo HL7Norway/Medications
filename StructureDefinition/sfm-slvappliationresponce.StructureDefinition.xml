@@ -5,8 +5,8 @@
   <version value="1.0" />
   <name value="SfmSlvappliationresponse" />
   <title value="sfm-slvappliationresponse" />
-  <status value="draft" />
-  <date value="2019-09-25" />
+  <status value="active" />
+  <date value="2020-06-08" />
   <description value="Content of the response from SLV" />
   <fhirVersion value="4.0.0" />
   <mapping>
@@ -42,7 +42,7 @@
     </element>
     <element id="Extension.extension:reseptid.url">
       <path value="Extension.extension.url" />
-      <fixedString value="reseptid" />
+      <fixedUri value="reseptid" />
     </element>
     <element id="Extension.extension:reseptid.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -58,7 +58,7 @@
     </element>
     <element id="Extension.extension:granted.url">
       <path value="Extension.extension.url" />
-      <fixedString value="granted" />
+      <fixedUri value="granted" />
     </element>
     <element id="Extension.extension:granted.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -73,7 +73,7 @@
     </element>
     <element id="Extension.extension:text.url">
       <path value="Extension.extension.url" />
-      <fixedString value="text" />
+      <fixedUri value="text" />
     </element>
     <element id="Extension.extension:text.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -89,7 +89,7 @@
     </element>
     <element id="Extension.extension:caseworker.url">
       <path value="Extension.extension.url" />
-      <fixedString value="caseworker" />
+      <fixedUri value="caseworker" />
     </element>
     <element id="Extension.extension:caseworker.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -99,7 +99,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-slvappliationresponse" />
+      <fixedUri value="http://ehelse.no/fhir/StructureDefinition/sfm-slvappliationresponse" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

@@ -6,10 +6,12 @@
     <lastUpdated value="2018-10-26T04:58:03.208+00:00" />
   </meta>
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-substitute" />
+  <version value="1.0" />
   <name value="SfmSubstitute" />
   <title value="sfm-substitute" />
-  <status value="draft" />
-  <date value="2019-07-01" />
+  <status value="active" />
+  <date value="2020-06-08" />
+  <description value="identifies if possible to substitute medication." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -23,7 +25,7 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-substitute" />
+      <fixedUri value="http://ehelse.no/fhir/StructureDefinition/sfm-substitute" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

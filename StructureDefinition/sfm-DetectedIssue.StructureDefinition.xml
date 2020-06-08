@@ -5,8 +5,8 @@
   <version value="1.0" />
   <name value="SfmDetectedIssue" />
   <title value="sfm-DetectedIssue" />
-  <status value="draft" />
-  <date value="2020-03-26" />
+  <status value="active" />
+  <date value="2020-06-08" />
   <description value="Resource to communicate warnings and other issues that has been handeled and communicated within PLL." />
   <fhirVersion value="4.0.0" />
   <mapping>
@@ -35,53 +35,83 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/DetectedIssue" />
   <derivation value="constraint" />
   <differential>
+    <element id="DetectedIssue.meta.security.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="DetectedIssue.meta.security.display" />
+    </element>
+    <element id="DetectedIssue.meta.tag.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="DetectedIssue.meta.tag.display" />
+    </element>
+    <element id="DetectedIssue.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="DetectedIssue.identifier.type.coding.display" />
+    </element>
+    <element id="DetectedIssue.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="DetectedIssue.identifier.type.text" />
+    </element>
+    <element id="DetectedIssue.identifier.assigner.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="DetectedIssue.identifier.assigner.display" />
+    </element>
     <element id="DetectedIssue.status">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="DetectedIssue.status" />
       <mustSupport value="true" />
     </element>
     <element id="DetectedIssue.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="DetectedIssue.code" />
       <max value="0" />
     </element>
+    <element id="DetectedIssue.code.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="DetectedIssue.code.coding.display" />
+    </element>
+    <element id="DetectedIssue.code.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="DetectedIssue.code.text" />
+    </element>
     <element id="DetectedIssue.severity">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="DetectedIssue.severity" />
       <max value="0" />
     </element>
     <element id="DetectedIssue.patient">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="DetectedIssue.patient" />
       <max value="0" />
     </element>
+    <element id="DetectedIssue.patient.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="DetectedIssue.patient.identifier.type.coding.display" />
+    </element>
+    <element id="DetectedIssue.patient.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="DetectedIssue.patient.identifier.type.text" />
+    </element>
+    <element id="DetectedIssue.patient.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="DetectedIssue.patient.display" />
+    </element>
     <element id="DetectedIssue.identified[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="DetectedIssue.identified[x]" />
       <type>
         <code value="dateTime" />
@@ -89,22 +119,28 @@
       <mustSupport value="true" />
     </element>
     <element id="DetectedIssue.author">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="DetectedIssue.author" />
       <mustSupport value="true" />
     </element>
+    <element id="DetectedIssue.author.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="DetectedIssue.author.identifier.type.coding.display" />
+    </element>
+    <element id="DetectedIssue.author.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="DetectedIssue.author.identifier.type.text" />
+    </element>
+    <element id="DetectedIssue.author.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="DetectedIssue.author.display" />
+    </element>
     <element id="DetectedIssue.implicated">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="DetectedIssue.implicated" />
       <min value="1" />
       <type>
@@ -113,24 +149,30 @@
       </type>
       <mustSupport value="true" />
     </element>
+    <element id="DetectedIssue.implicated.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="DetectedIssue.implicated.identifier.type.coding.display" />
+    </element>
+    <element id="DetectedIssue.implicated.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="DetectedIssue.implicated.identifier.type.text" />
+    </element>
+    <element id="DetectedIssue.implicated.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="DetectedIssue.implicated.display" />
+    </element>
     <element id="DetectedIssue.evidence">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="DetectedIssue.evidence" />
       <max value="1" />
       <mustSupport value="true" />
     </element>
     <element id="DetectedIssue.evidence.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="DetectedIssue.evidence.code" />
       <binding>
         <strength value="extensible" />
@@ -138,114 +180,96 @@
       </binding>
     </element>
     <element id="DetectedIssue.evidence.code.coding.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="DetectedIssue.evidence.code.coding.system" />
       <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-type-of-warning-code" />
     </element>
+    <element id="DetectedIssue.evidence.code.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="DetectedIssue.evidence.code.coding.display" />
+    </element>
+    <element id="DetectedIssue.evidence.code.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="DetectedIssue.evidence.code.text" />
+    </element>
     <element id="DetectedIssue.evidence.detail.reference">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="DetectedIssue.evidence.detail.reference" />
       <short value="Referance to registered drug reaction" />
       <definition value="Used when drug reaction is the source of evidence." />
     </element>
     <element id="DetectedIssue.evidence.detail.identifier">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="DetectedIssue.evidence.detail.identifier" />
       <short value="Identifies interaction that is evidence" />
       <definition value="Used for interactions and identies the FEST id of the interaction." />
     </element>
+    <element id="DetectedIssue.evidence.detail.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="DetectedIssue.evidence.detail.identifier.type.coding.display" />
+    </element>
+    <element id="DetectedIssue.evidence.detail.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="DetectedIssue.evidence.detail.identifier.type.text" />
+    </element>
+    <element id="DetectedIssue.evidence.detail.identifier.assigner.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="DetectedIssue.evidence.detail.identifier.assigner.display" />
+    </element>
+    <element id="DetectedIssue.evidence.detail.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="DetectedIssue.evidence.detail.display" />
+    </element>
     <element id="DetectedIssue.detail">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="DetectedIssue.detail" />
       <max value="0" />
     </element>
     <element id="DetectedIssue.reference">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="DetectedIssue.reference" />
       <max value="0" />
     </element>
     <element id="DetectedIssue.mitigation">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="DetectedIssue.mitigation" />
       <mustSupport value="true" />
     </element>
     <element id="DetectedIssue.mitigation.action">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="DetectedIssue.mitigation.action" />
       <mustSupport value="true" />
     </element>
     <element id="DetectedIssue.mitigation.action.coding">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="DetectedIssue.mitigation.action.coding" />
       <max value="1" />
     </element>
     <element id="DetectedIssue.mitigation.action.coding.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="DetectedIssue.mitigation.action.coding.system" />
       <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-warning-cancelation-code" />
     </element>
+    <element id="DetectedIssue.mitigation.action.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="DetectedIssue.mitigation.action.coding.display" />
+    </element>
+    <element id="DetectedIssue.mitigation.action.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="DetectedIssue.mitigation.action.text" />
+    </element>
     <element id="DetectedIssue.mitigation.date">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="DetectedIssue.mitigation.date" />
       <mustSupport value="true" />
     </element>
     <element id="DetectedIssue.mitigation.author">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="DetectedIssue.mitigation.author" />
       <min value="1" />
       <type>
@@ -256,6 +280,24 @@
         <aggregation value="contained" />
       </type>
       <mustSupport value="true" />
+    </element>
+    <element id="DetectedIssue.mitigation.author.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="DetectedIssue.mitigation.author.identifier.type.coding.display" />
+    </element>
+    <element id="DetectedIssue.mitigation.author.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="DetectedIssue.mitigation.author.identifier.type.text" />
+    </element>
+    <element id="DetectedIssue.mitigation.author.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="DetectedIssue.mitigation.author.display" />
     </element>
   </differential>
 </StructureDefinition>

@@ -9,8 +9,9 @@
   <version value="2.0" />
   <name value="SfmLIbItemComment" />
   <title value="sfm-libitemcomment" />
-  <status value="draft" />
-  <date value="2019-07-01" />
+  <status value="active" />
+  <date value="2020-06-08" />
+  <description value="Comment on a lib item in SFM" />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
   <abstract value="false" />

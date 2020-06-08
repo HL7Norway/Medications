@@ -9,8 +9,9 @@
   <version value="2.0" />
   <name value="SfmGenericSubstitution" />
   <title value="sfm-generic-substitution" />
-  <status value="draft" />
-  <date value="2019-07-01" />
+  <status value="active" />
+  <date value="2020-06-08" />
+  <description value="extention for registering generic substitution." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -41,7 +42,7 @@
     </element>
     <element id="Extension.extension:genericSubstitutionAccepted.url">
       <path value="Extension.extension.url" />
-      <fixedString value="genericSubstitutionAccepted" />
+      <fixedUri value="genericSubstitutionAccepted" />
     </element>
     <element id="Extension.extension:genericSubstitutionAccepted.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -58,7 +59,7 @@
     </element>
     <element id="Extension.extension:reason.url">
       <path value="Extension.extension.url" />
-      <fixedString value="reason" />
+      <fixedUri value="reason" />
     </element>
     <element id="Extension.extension:reason.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -68,7 +69,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-generic-substitution" />
+      <fixedUri value="http://ehelse.no/fhir/StructureDefinition/sfm-generic-substitution" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

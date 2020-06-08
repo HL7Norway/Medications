@@ -5,8 +5,8 @@
   <version value="2.1" />
   <name value="SfmApplicationArea" />
   <title value="sfm-application-area" />
-  <status value="draft" />
-  <date value="2020-03-10" />
+  <status value="active" />
+  <date value="2020-06-08" />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -47,6 +47,18 @@
     <element id="Extension.extension:coded.value[x].coding.system">
       <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7488" />
+    </element>
+    <element id="Extension.extension:coded.value[x].coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].coding.display" />
+    </element>
+    <element id="Extension.extension:coded.value[x].text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].text" />
     </element>
     <element id="Extension.extension:text">
       <path value="Extension.extension" />

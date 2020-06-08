@@ -5,8 +5,8 @@
   <version value="1.0" />
   <name value="SfmOrganization" />
   <title value="sfm-Organization" />
-  <status value="draft" />
-  <date value="2019-08-19" />
+  <status value="active" />
+  <date value="2020-06-08" />
   <description value="Derived from no-basis-Organization. Extended with EPJ vendor and service provider." />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
@@ -15,6 +15,18 @@
   <baseDefinition value="http://hl7.no/fhir/StructureDefinition/no-basis-Organization" />
   <derivation value="constraint" />
   <differential>
+    <element id="Organization.meta.security.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.meta.security.display" />
+    </element>
+    <element id="Organization.meta.tag.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.meta.tag.display" />
+    </element>
     <element id="Organization.extension">
       <path value="Organization.extension" />
       <slicing>
@@ -26,12 +38,6 @@
       </slicing>
     </element>
     <element id="Organization.extension:epjinfo">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Organization.extension" />
       <sliceName value="epjinfo" />
       <short value="Information about epj system" />
@@ -43,189 +49,199 @@
       </type>
     </element>
     <element id="Organization.extension:epjinfo.extension:systeminfo">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Organization.extension.extension" />
       <sliceName value="systeminfo" />
       <mustSupport value="true" />
     </element>
     <element id="Organization.extension:epjinfo.extension:systeminfo.extension:systemcode">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Organization.extension.extension.extension" />
       <sliceName value="systemcode" />
       <mustSupport value="true" />
     </element>
     <element id="Organization.extension:epjinfo.extension:systeminfo.extension:systemname">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Organization.extension.extension.extension" />
       <sliceName value="systemname" />
       <mustSupport value="true" />
     </element>
     <element id="Organization.extension:epjinfo.extension:systeminfo.extension:version">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Organization.extension.extension.extension" />
       <sliceName value="version" />
       <mustSupport value="true" />
     </element>
     <element id="Organization.extension:epjinfo.extension:systeminfo.extension:updatetime">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Organization.extension.extension.extension" />
       <sliceName value="updatetime" />
       <mustSupport value="true" />
     </element>
     <element id="Organization.extension:epjinfo.extension:operationsuplierinfo">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Organization.extension.extension" />
       <sliceName value="operationsuplierinfo" />
       <mustSupport value="true" />
     </element>
     <element id="Organization.extension:epjinfo.extension:operationsuplierinfo.extension:servicevendorname">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Organization.extension.extension.extension" />
       <sliceName value="servicevendorname" />
       <mustSupport value="true" />
     </element>
     <element id="Organization.extension:epjinfo.extension:operationsuplierinfo.extension:contactname">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Organization.extension.extension.extension" />
       <sliceName value="contactname" />
       <mustSupport value="true" />
     </element>
     <element id="Organization.extension:epjinfo.extension:operationsuplierinfo.extension:contactemail">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Organization.extension.extension.extension" />
       <sliceName value="contactemail" />
       <mustSupport value="true" />
     </element>
     <element id="Organization.extension:epjinfo.extension:operationsuplierinfo.extension:contactphone">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Organization.extension.extension.extension" />
       <sliceName value="contactphone" />
       <mustSupport value="true" />
     </element>
     <element id="Organization.identifier">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Organization.identifier" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="Organization.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.identifier.type.coding.display" />
+    </element>
+    <element id="Organization.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.identifier.type.text" />
+    </element>
+    <element id="Organization.identifier.assigner.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.identifier.assigner.display" />
+    </element>
     <element id="Organization.identifier:ENH">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Organization.identifier" />
       <sliceName value="ENH" />
       <min value="1" />
       <max value="1" />
     </element>
+    <element id="Organization.identifier:ENH.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.identifier.type.coding.display" />
+    </element>
+    <element id="Organization.identifier:ENH.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.identifier.type.text" />
+    </element>
+    <element id="Organization.identifier:ENH.assigner.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.identifier.assigner.identifier.type.coding.display" />
+    </element>
+    <element id="Organization.identifier:ENH.assigner.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.identifier.assigner.identifier.type.text" />
+    </element>
+    <element id="Organization.identifier:ENH.assigner.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.identifier.assigner.display" />
+    </element>
+    <element id="Organization.identifier:RSH">
+      <path value="Organization.identifier" />
+      <sliceName value="RSH" />
+    </element>
+    <element id="Organization.identifier:RSH.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.identifier.type.coding.display" />
+    </element>
+    <element id="Organization.identifier:RSH.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.identifier.type.text" />
+    </element>
+    <element id="Organization.identifier:RSH.assigner.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.identifier.assigner.identifier.type.coding.display" />
+    </element>
+    <element id="Organization.identifier:RSH.assigner.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.identifier.assigner.identifier.type.text" />
+    </element>
+    <element id="Organization.identifier:RSH.assigner.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.identifier.assigner.display" />
+    </element>
     <element id="Organization.identifier:HERid">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Organization.identifier" />
       <sliceName value="HERid" />
       <short value="Identifies the id of the communication part." />
       <definition value="Identifies the her-id for a top node organistion. When providing organisation units below the top node, partOf should be included in the resource." />
       <max value="1" />
     </element>
+    <element id="Organization.identifier:HERid.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.identifier.type.coding.display" />
+    </element>
+    <element id="Organization.identifier:HERid.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.identifier.type.text" />
+    </element>
     <element id="Organization.identifier:HERid.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Organization.identifier.system" />
       <min value="1" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.2" />
     </element>
     <element id="Organization.identifier:HERid.value">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Organization.identifier.value" />
       <min value="1" />
     </element>
+    <element id="Organization.identifier:HERid.assigner.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.identifier.assigner.identifier.type.coding.display" />
+    </element>
+    <element id="Organization.identifier:HERid.assigner.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.identifier.assigner.identifier.type.text" />
+    </element>
+    <element id="Organization.identifier:HERid.assigner.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.identifier.assigner.display" />
+    </element>
     <element id="Organization.active">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Organization.active" />
       <mustSupport value="true" />
     </element>
     <element id="Organization.type">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Organization.type" />
       <definition value="The kind(s) of organization that this is. Local codesystem is used." />
       <max value="1" />
@@ -236,59 +252,137 @@
       </binding>
     </element>
     <element id="Organization.type.coding.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Organization.type.coding.system" />
       <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-type-of-organization" />
     </element>
+    <element id="Organization.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.type.coding.display" />
+    </element>
+    <element id="Organization.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.type.text" />
+    </element>
     <element id="Organization.name">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Organization.name" />
       <definition value="A name associated with the organization or organisation unit." />
       <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Organization.telecom">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Organization.telecom" />
       <mustSupport value="true" />
     </element>
     <element id="Organization.address">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Organization.address" />
       <min value="1" />
       <max value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="Organization.address.extension:urbanDistrict">
+      <path value="Organization.address.extension" />
+      <sliceName value="urbanDistrict" />
+    </element>
+    <element id="Organization.address.extension:urbanDistrict.value[x].display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.address.extension.value[x].display" />
+    </element>
+    <element id="Organization.address.extension:propertyInformation">
+      <path value="Organization.address.extension" />
+      <sliceName value="propertyInformation" />
+    </element>
+    <element id="Organization.address.extension:propertyInformation.extension:municipality">
+      <path value="Organization.address.extension.extension" />
+      <sliceName value="municipality" />
+    </element>
+    <element id="Organization.address.extension:propertyInformation.extension:municipality.value[x].display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.address.extension.extension.value[x].display" />
+    </element>
     <element id="Organization.partOf">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Organization.partOf" />
       <definition value="The organization of which this organization forms a part. If partOf is identified, then HERid shuold not be provided." />
       <mustSupport value="true" />
+    </element>
+    <element id="Organization.partOf.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.partOf.identifier.type.coding.display" />
+    </element>
+    <element id="Organization.partOf.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.partOf.identifier.type.text" />
+    </element>
+    <element id="Organization.partOf.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.partOf.display" />
+    </element>
+    <element id="Organization.contact.purpose.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.contact.purpose.coding.display" />
+    </element>
+    <element id="Organization.contact.purpose.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.contact.purpose.text" />
+    </element>
+    <element id="Organization.contact.address.extension:urbanDistrict">
+      <path value="Organization.contact.address.extension" />
+      <sliceName value="urbanDistrict" />
+    </element>
+    <element id="Organization.contact.address.extension:urbanDistrict.value[x].display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.contact.address.extension.value[x].display" />
+    </element>
+    <element id="Organization.contact.address.extension:propertyInformation">
+      <path value="Organization.contact.address.extension" />
+      <sliceName value="propertyInformation" />
+    </element>
+    <element id="Organization.contact.address.extension:propertyInformation.extension:municipality">
+      <path value="Organization.contact.address.extension.extension" />
+      <sliceName value="municipality" />
+    </element>
+    <element id="Organization.contact.address.extension:propertyInformation.extension:municipality.value[x].display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.contact.address.extension.extension.value[x].display" />
+    </element>
+    <element id="Organization.endpoint.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.endpoint.identifier.type.coding.display" />
+    </element>
+    <element id="Organization.endpoint.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.endpoint.identifier.type.text" />
+    </element>
+    <element id="Organization.endpoint.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.endpoint.display" />
     </element>
   </differential>
 </StructureDefinition>

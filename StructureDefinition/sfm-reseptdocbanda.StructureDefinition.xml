@@ -5,8 +5,8 @@
   <version value="1.0" />
   <name value="SfmReseptdocbanda" />
   <title value="sfm-reseptdocbanda" />
-  <status value="draft" />
-  <date value="2019-09-16" />
+  <status value="active" />
+  <date value="2020-06-08" />
   <description value="Prescription details for nutrition and supporting products." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
@@ -37,7 +37,7 @@
     </element>
     <element id="Extension.extension:productgroup.url">
       <path value="Extension.extension.url" />
-      <fixedString value="productgroup" />
+      <fixedUri value="productgroup" />
     </element>
     <element id="Extension.extension:productgroup.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -50,6 +50,18 @@
       <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7403" />
     </element>
+    <element id="Extension.extension:productgroup.value[x].coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].coding.display" />
+    </element>
+    <element id="Extension.extension:productgroup.value[x].text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].text" />
+    </element>
     <element id="Extension.extension:productnumber">
       <path value="Extension.extension" />
       <sliceName value="productnumber" />
@@ -57,7 +69,7 @@
     </element>
     <element id="Extension.extension:productnumber.url">
       <path value="Extension.extension.url" />
-      <fixedString value="productnumber" />
+      <fixedUri value="productnumber" />
     </element>
     <element id="Extension.extension:productnumber.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -67,7 +79,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-reseptdocbanda" />
+      <fixedUri value="http://ehelse.no/fhir/StructureDefinition/sfm-reseptdocbanda" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

@@ -10,7 +10,8 @@
   <name value="SfmRegInfo" />
   <title value="sfm-reginfo" />
   <status value="active" />
-  <date value="2019-07-01" />
+  <date value="2020-06-08" />
+  <description value="info about the registration." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -61,6 +62,18 @@
       <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-performer-roles" />
     </element>
+    <element id="Extension.extension:type.value[x].coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].coding.display" />
+    </element>
+    <element id="Extension.extension:type.value[x].text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].text" />
+    </element>
     <element id="Extension.extension:helseperson">
       <path value="Extension.extension" />
       <sliceName value="helseperson" />
@@ -80,6 +93,24 @@
         <targetProfile value="https://ehelse.no/StructureDefinition/sfm-Practitioner" />
         <aggregation value="bundled" />
       </type>
+    </element>
+    <element id="Extension.extension:helseperson.value[x].identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].identifier.type.coding.display" />
+    </element>
+    <element id="Extension.extension:helseperson.value[x].identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].identifier.type.text" />
+    </element>
+    <element id="Extension.extension:helseperson.value[x].display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].display" />
     </element>
     <element id="Extension.extension:timestamp">
       <path value="Extension.extension" />
@@ -103,7 +134,7 @@
       <path value="Extension.extension" />
       <sliceName value="status" />
       <short value="registration status" />
-      <definition value="This status is showing if the statement is signed by a doctor, doublesigned or only registered by healthperson without rights. " />
+      <definition value="This status is showing if the statement is signed by a doctor, doublesigned or only registered by healthperson without rights." />
       <min value="1" />
       <max value="1" />
     </element>
@@ -120,6 +151,18 @@
     <element id="Extension.extension:status.value[x].coding.system">
       <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-medicationstatement-registration-status" />
+    </element>
+    <element id="Extension.extension:status.value[x].coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].coding.display" />
+    </element>
+    <element id="Extension.extension:status.value[x].text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].text" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />

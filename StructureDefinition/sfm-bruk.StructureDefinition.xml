@@ -9,8 +9,8 @@
   <version value="2.1" />
   <name value="SfmUse" />
   <title value="sfm-use" />
-  <status value="draft" />
-  <date value="2019-09-21" />
+  <status value="active" />
+  <date value="2020-06-08" />
   <description value="Describes regularity of use." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
@@ -28,26 +28,26 @@
       <fixedUri value="http://ehelse.no/fhir/StructureDefinition/sfm-use" />
     </element>
     <element id="Extension.value[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension.value[x]" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
     <element id="Extension.value[x].coding.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.9101" />
+    </element>
+    <element id="Extension.value[x].coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.value[x].coding.display" />
+    </element>
+    <element id="Extension.value[x].text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.value[x].text" />
     </element>
   </differential>
 </StructureDefinition>

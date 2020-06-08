@@ -5,8 +5,8 @@
   <version value="1.0" />
   <name value="SfmInteraction" />
   <title value="sfm-Interaction" />
-  <status value="draft" />
-  <date value="2019-08-07" />
+  <status value="active" />
+  <date value="2020-06-08" />
   <description value="FEST interaction data" />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
@@ -15,6 +15,18 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Basic" />
   <derivation value="constraint" />
   <differential>
+    <element id="Basic.meta.security.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Basic.meta.security.display" />
+    </element>
+    <element id="Basic.meta.tag.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Basic.meta.tag.display" />
+    </element>
     <element id="Basic.extension">
       <path value="Basic.extension" />
       <slicing>
@@ -26,12 +38,6 @@
       </slicing>
     </element>
     <element id="Basic.extension:interacationdata">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Basic.extension" />
       <sliceName value="interacationdata" />
       <type>
@@ -41,133 +47,153 @@
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:interacationdata.extension:relevance">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Basic.extension.extension" />
       <sliceName value="relevance" />
       <mustSupport value="true" />
     </element>
+    <element id="Basic.extension:interacationdata.extension:relevance.value[x].coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Basic.extension.extension.value[x].coding.display" />
+    </element>
+    <element id="Basic.extension:interacationdata.extension:relevance.value[x].text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Basic.extension.extension.value[x].text" />
+    </element>
     <element id="Basic.extension:interacationdata.extension:situationcriterium">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Basic.extension.extension" />
       <sliceName value="situationcriterium" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:interacationdata.extension:clinicalconsequence">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Basic.extension.extension" />
       <sliceName value="clinicalconsequence" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:interacationdata.extension:interactionmechanism">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Basic.extension.extension" />
       <sliceName value="interactionmechanism" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:interacationdata.extension:source">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Basic.extension.extension" />
       <sliceName value="source" />
       <mustSupport value="true" />
     </element>
+    <element id="Basic.extension:interacationdata.extension:source.value[x].coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Basic.extension.extension.value[x].coding.display" />
+    </element>
+    <element id="Basic.extension:interacationdata.extension:source.value[x].text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Basic.extension.extension.value[x].text" />
+    </element>
     <element id="Basic.extension:interacationdata.extension:handling">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Basic.extension.extension" />
       <sliceName value="handling" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:interacationdata.extension:displayrule">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Basic.extension.extension" />
       <sliceName value="displayrule" />
       <mustSupport value="true" />
     </element>
+    <element id="Basic.extension:interacationdata.extension:displayrule.value[x].coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Basic.extension.extension.value[x].coding.display" />
+    </element>
+    <element id="Basic.extension:interacationdata.extension:displayrule.value[x].text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Basic.extension.extension.value[x].text" />
+    </element>
     <element id="Basic.extension:interacationdata.extension:reference">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Basic.extension.extension" />
       <sliceName value="reference" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:interacationdata.extension:substancegroup">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Basic.extension.extension" />
       <sliceName value="substancegroup" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:interacationdata.extension:substancegroup.extension:name">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Basic.extension.extension.extension" />
       <sliceName value="name" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:interacationdata.extension:substancegroup.extension:substance">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Basic.extension.extension.extension" />
       <sliceName value="substance" />
       <mustSupport value="true" />
     </element>
+    <element id="Basic.extension:interacationdata.extension:substancegroup.extension:substance.extension:atc">
+      <path value="Basic.extension.extension.extension.extension" />
+      <sliceName value="atc" />
+    </element>
+    <element id="Basic.extension:interacationdata.extension:substancegroup.extension:substance.extension:atc.value[x].coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Basic.extension.extension.extension.extension.value[x].coding.display" />
+    </element>
+    <element id="Basic.extension:interacationdata.extension:substancegroup.extension:substance.extension:atc.value[x].text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Basic.extension.extension.extension.extension.value[x].text" />
+    </element>
+    <element id="Basic.extension:interacationdata.extension:substancegroup.extension:substance.extension:refsubstance">
+      <path value="Basic.extension.extension.extension.extension" />
+      <sliceName value="refsubstance" />
+    </element>
+    <element id="Basic.extension:interacationdata.extension:substancegroup.extension:substance.extension:refsubstance.value[x].identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Basic.extension.extension.extension.extension.value[x].identifier.type.coding.display" />
+    </element>
+    <element id="Basic.extension:interacationdata.extension:substancegroup.extension:substance.extension:refsubstance.value[x].identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Basic.extension.extension.extension.extension.value[x].identifier.type.text" />
+    </element>
+    <element id="Basic.extension:interacationdata.extension:substancegroup.extension:substance.extension:refsubstance.value[x].display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Basic.extension.extension.extension.extension.value[x].display" />
+    </element>
+    <element id="Basic.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Basic.identifier.type.coding.display" />
+    </element>
+    <element id="Basic.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Basic.identifier.type.text" />
+    </element>
+    <element id="Basic.identifier.assigner.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Basic.identifier.assigner.display" />
+    </element>
     <element id="Basic.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Basic.code" />
       <slicing>
         <discriminator>
@@ -178,66 +204,90 @@
       </slicing>
       <mustSupport value="true" />
     </element>
+    <element id="Basic.code.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Basic.code.coding.display" />
+    </element>
+    <element id="Basic.code.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Basic.code.text" />
+    </element>
     <element id="Basic.code:FEST-Interaction">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Basic.code" />
       <sliceName value="FEST-Interaction" />
     </element>
     <element id="Basic.code:FEST-Interaction.coding.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Basic.code.coding.system" />
       <min value="1" />
       <fixedUri value="http://ehelse.no/fhir/CodeSystem/FEST" />
     </element>
     <element id="Basic.code:FEST-Interaction.coding.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Basic.code.coding.code" />
       <min value="1" />
     </element>
+    <element id="Basic.code:FEST-Interaction.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Basic.code.coding.display" />
+    </element>
+    <element id="Basic.code:FEST-Interaction.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Basic.code.text" />
+    </element>
     <element id="Basic.subject">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Basic.subject" />
       <max value="0" />
     </element>
+    <element id="Basic.subject.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Basic.subject.identifier.type.coding.display" />
+    </element>
+    <element id="Basic.subject.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Basic.subject.identifier.type.text" />
+    </element>
+    <element id="Basic.subject.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Basic.subject.display" />
+    </element>
     <element id="Basic.created">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Basic.created" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.author">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Basic.author" />
       <max value="0" />
+    </element>
+    <element id="Basic.author.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Basic.author.identifier.type.coding.display" />
+    </element>
+    <element id="Basic.author.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Basic.author.identifier.type.text" />
+    </element>
+    <element id="Basic.author.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Basic.author.display" />
     </element>
   </differential>
 </StructureDefinition>

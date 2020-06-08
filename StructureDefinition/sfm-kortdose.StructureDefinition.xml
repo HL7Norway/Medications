@@ -9,8 +9,8 @@
   <version value="1.1" />
   <name value="SfmShortDosage" />
   <title value="sfm-shortdosage" />
-  <status value="draft" />
-  <date value="2019-09-21" />
+  <status value="active" />
+  <date value="2020-06-08" />
   <description value="Short dosage as given in FEST." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />

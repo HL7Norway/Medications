@@ -4,8 +4,8 @@
   <version value="1.0" />
   <name value="SfmLibListMetaData" />
   <title value="sfm-lib-list-meta-data" />
-  <status value="draft" />
-  <date value="2019-08-26" />
+  <status value="active" />
+  <date value="2020-06-08" />
   <description value="Meta data about the LIB list that is presented." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
@@ -41,7 +41,7 @@
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:aprovementstatus.extension">
+    <element id="Extension.extension:approvalstatus.extension">
       <path value="Extension.extension.extension" />
       <slicing>
         <discriminator>
@@ -68,6 +68,18 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+    </element>
+    <element id="Extension.extension:approvalstatus.extension:aproved.value[x].coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.extension.value[x].coding.display" />
+    </element>
+    <element id="Extension.extension:approvalstatus.extension:aproved.value[x].text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.extension.value[x].text" />
     </element>
     <element id="Extension.extension:approvalstatus.extension:signedby">
       <path value="Extension.extension.extension" />
@@ -128,6 +140,18 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+    </element>
+    <element id="Extension.extension:purpose.value[x].coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].coding.display" />
+    </element>
+    <element id="Extension.extension:purpose.value[x].text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].text" />
     </element>
     <element id="Extension.extension:period">
       <path value="Extension.extension" />

@@ -5,8 +5,8 @@
   <version value="1.0" />
   <name value="SfmSubstitutioninfo" />
   <title value="sfm-substitutioninfo" />
-  <status value="draft" />
-  <date value="2019-09-24" />
+  <status value="active" />
+  <date value="2020-06-08" />
   <description value="Norwegian extention for substitution information." />
   <fhirVersion value="4.0.0" />
   <mapping>
@@ -47,7 +47,7 @@
     </element>
     <element id="Extension.extension:conferencedpatient.url">
       <path value="Extension.extension.url" />
-      <fixedString value="conferencedpatient" />
+      <fixedUri value="conferencedpatient" />
     </element>
     <element id="Extension.extension:conferencedpatient.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -64,7 +64,7 @@
     </element>
     <element id="Extension.extension:text.url">
       <path value="Extension.extension.url" />
-      <fixedString value="text" />
+      <fixedUri value="text" />
     </element>
     <element id="Extension.extension:text.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -74,7 +74,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-substitutioninfo" />
+      <fixedUri value="http://ehelse.no/fhir/StructureDefinition/sfm-substitutioninfo" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

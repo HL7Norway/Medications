@@ -9,8 +9,8 @@
   <version value="2.0" />
   <name value="SfmAdministration" />
   <title value="sfm-administration" />
-  <status value="draft" />
-  <date value="2019-08-26" />
+  <status value="active" />
+  <date value="2020-06-08" />
   <description value="Describes detailed information about how a prescription should be administered." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
@@ -70,6 +70,18 @@
       <path value="Extension.extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.9074" />
     </element>
+    <element id="Extension.extension:administrationofmedication.extension:admByWhom.value[x].coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.extension.value[x].coding.display" />
+    </element>
+    <element id="Extension.extension:administrationofmedication.extension:admByWhom.value[x].text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.extension.value[x].text" />
+    </element>
     <element id="Extension.extension:administrationofmedication.extension:admWay">
       <path value="Extension.extension.extension" />
       <sliceName value="admWay" />
@@ -91,6 +103,18 @@
     <element id="Extension.extension:administrationofmedication.extension:admWay.value[x].coding.system">
       <path value="Extension.extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.9075" />
+    </element>
+    <element id="Extension.extension:administrationofmedication.extension:admWay.value[x].coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.extension.value[x].coding.display" />
+    </element>
+    <element id="Extension.extension:administrationofmedication.extension:admWay.value[x].text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.extension.value[x].text" />
     </element>
     <element id="Extension.extension:administrationofmedication.extension:admBySchema">
       <path value="Extension.extension.extension" />
@@ -150,6 +174,18 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+    </element>
+    <element id="Extension.extension:admBy.value[x].coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].coding.display" />
+    </element>
+    <element id="Extension.extension:admBy.value[x].text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].text" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />

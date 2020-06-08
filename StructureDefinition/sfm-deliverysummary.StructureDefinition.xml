@@ -7,10 +7,11 @@
   </meta>
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-deliverysummary" />
   <version value="2.0" />
-  <name value="SFMDeliverySummary" />
+  <name value="SfmDeliverySummary" />
   <title value="sfm-deliverysummary" />
-  <status value="draft" />
-  <date value="2019-07-01" />
+  <status value="active" />
+  <date value="2020-06-08" />
+  <description value="Delivery summary used in SFM." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -46,7 +47,7 @@
     </element>
     <element id="Extension.extension:varenummer.url">
       <path value="Extension.extension.url" />
-      <fixedString value="varenummer" />
+      <fixedUri value="varenummer" />
     </element>
     <element id="Extension.extension:varenummer.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -64,7 +65,7 @@
     </element>
     <element id="Extension.extension:varenavn.url">
       <path value="Extension.extension.url" />
-      <fixedString value="varenavn" />
+      <fixedUri value="varenavn" />
     </element>
     <element id="Extension.extension:varenavn.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -81,13 +82,19 @@
     </element>
     <element id="Extension.extension:pakningsstr.url">
       <path value="Extension.extension.url" />
-      <fixedString value="pakningsstr" />
+      <fixedUri value="pakningsstr" />
     </element>
     <element id="Extension.extension:pakningsstr.value[x]">
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="Quantity" />
       </type>
+    </element>
+    <element id="Extension.extension:pakningsstr.value[x].unit">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].unit" />
     </element>
     <element id="Extension.extension:antallpkntotalt">
       <path value="Extension.extension" />
@@ -99,7 +106,7 @@
     </element>
     <element id="Extension.extension:antallpkntotalt.url">
       <path value="Extension.extension.url" />
-      <fixedString value="antallpkntotalt" />
+      <fixedUri value="antallpkntotalt" />
     </element>
     <element id="Extension.extension:antallpkntotalt.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -117,7 +124,7 @@
     </element>
     <element id="Extension.extension:antallpknsiste.url">
       <path value="Extension.extension.url" />
-      <fixedString value="antallpknsiste" />
+      <fixedUri value="antallpknsiste" />
     </element>
     <element id="Extension.extension:antallpknsiste.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -135,7 +142,7 @@
     </element>
     <element id="Extension.extension:sistutlevert.url">
       <path value="Extension.extension.url" />
-      <fixedString value="sistutlevert" />
+      <fixedUri value="sistutlevert" />
     </element>
     <element id="Extension.extension:sistutlevert.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -145,7 +152,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-deliverysummary" />
+      <fixedUri value="http://ehelse.no/fhir/StructureDefinition/sfm-deliverysummary" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

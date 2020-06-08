@@ -9,8 +9,8 @@
   <version value="2.0" />
   <name value="SfmActor" />
   <title value="sfm-actor" />
-  <status value="draft" />
-  <date value="2019-09-20" />
+  <status value="active" />
+  <date value="2020-06-08" />
   <description value="An actor describes an relation between a patiend and an healthcare provider." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
@@ -62,6 +62,18 @@
       <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7490" />
     </element>
+    <element id="Extension.extension:role.value[x].coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].coding.display" />
+    </element>
+    <element id="Extension.extension:role.value[x].text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].text" />
+    </element>
     <element id="Extension.extension:practioner">
       <path value="Extension.extension" />
       <sliceName value="practioner" />
@@ -79,6 +91,24 @@
         <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner" />
         <aggregation value="bundled" />
       </type>
+    </element>
+    <element id="Extension.extension:practioner.value[x].identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].identifier.type.coding.display" />
+    </element>
+    <element id="Extension.extension:practioner.value[x].identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].identifier.type.text" />
+    </element>
+    <element id="Extension.extension:practioner.value[x].display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].display" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />

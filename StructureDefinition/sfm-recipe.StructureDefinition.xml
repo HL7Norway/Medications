@@ -5,8 +5,8 @@
   <version value="1.0" />
   <name value="SfmRecipe" />
   <title value="sfm-recipe" />
-  <status value="draft" />
-  <date value="2019-09-16" />
+  <status value="active" />
+  <date value="2020-06-08" />
   <description value="Extention for Magistrell medication. Used to describe how to make the Medication (recipe)." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
@@ -26,7 +26,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-recipe" />
+      <fixedUri value="http://ehelse.no/fhir/StructureDefinition/sfm-recipe" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

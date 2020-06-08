@@ -9,8 +9,9 @@
   <version value="2.0" />
   <name value="SfmPatientRelation" />
   <title value="sfm-patientrelation" />
-  <status value="draft" />
-  <date value="2019-07-01" />
+  <status value="active" />
+  <date value="2020-06-08" />
+  <description value="Information about related health care profesionals and institutions." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -39,7 +40,7 @@
     </element>
     <element id="Extension.extension:practionerRelation.url">
       <path value="Extension.extension.url" />
-      <fixedString value="practionerRelation" />
+      <fixedUri value="practionerRelation" />
     </element>
     <element id="Extension.extension:practionerRelation.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -49,6 +50,24 @@
         <aggregation value="bundled" />
       </type>
     </element>
+    <element id="Extension.extension:practionerRelation.value[x].identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].identifier.type.coding.display" />
+    </element>
+    <element id="Extension.extension:practionerRelation.value[x].identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].identifier.type.text" />
+    </element>
+    <element id="Extension.extension:practionerRelation.value[x].display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].display" />
+    </element>
     <element id="Extension.extension:organisationRelation">
       <path value="Extension.extension" />
       <sliceName value="organisationRelation" />
@@ -56,7 +75,7 @@
     </element>
     <element id="Extension.extension:organisationRelation.url">
       <path value="Extension.extension.url" />
-      <fixedString value="organisationRelation" />
+      <fixedUri value="organisationRelation" />
     </element>
     <element id="Extension.extension:organisationRelation.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -66,6 +85,24 @@
         <aggregation value="bundled" />
       </type>
     </element>
+    <element id="Extension.extension:organisationRelation.value[x].identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].identifier.type.coding.display" />
+    </element>
+    <element id="Extension.extension:organisationRelation.value[x].identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].identifier.type.text" />
+    </element>
+    <element id="Extension.extension:organisationRelation.value[x].display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].display" />
+    </element>
     <element id="Extension.extension:relationtype">
       <path value="Extension.extension" />
       <sliceName value="relationtype" />
@@ -74,7 +111,7 @@
     </element>
     <element id="Extension.extension:relationtype.url">
       <path value="Extension.extension.url" />
-      <fixedString value="relationtype" />
+      <fixedUri value="relationtype" />
     </element>
     <element id="Extension.extension:relationtype.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -86,9 +123,21 @@
       <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7490" />
     </element>
+    <element id="Extension.extension:relationtype.value[x].coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].coding.display" />
+    </element>
+    <element id="Extension.extension:relationtype.value[x].text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].text" />
+    </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-patientrelation" />
+      <fixedUri value="http://ehelse.no/fhir/StructureDefinition/sfm-patientrelation" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

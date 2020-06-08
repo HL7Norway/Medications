@@ -9,8 +9,9 @@
   <version value="2.0" />
   <name value="SfmPrescriptionType" />
   <title value="sfm-prescriptiontype" />
-  <status value="draft" />
-  <date value="2019-07-01" />
+  <status value="active" />
+  <date value="2020-06-08" />
+  <description value="Type of prescription." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -29,7 +30,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-prescriptiontype" />
+      <fixedUri value="http://ehelse.no/fhir/StructureDefinition/sfm-prescriptiontype" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
@@ -40,6 +41,18 @@
     <element id="Extension.value[x].coding.system">
       <path value="Extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7404" />
+    </element>
+    <element id="Extension.value[x].coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.value[x].coding.display" />
+    </element>
+    <element id="Extension.value[x].text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.value[x].text" />
     </element>
   </differential>
 </StructureDefinition>

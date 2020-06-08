@@ -5,8 +5,8 @@
   <version value="1.0" />
   <name value="SfmRecalldetails" />
   <title value="sfm-recalldetails" />
-  <status value="draft" />
-  <date value="2019-09-28" />
+  <status value="active" />
+  <date value="2020-06-08" />
   <description value="Details from M7 message." />
   <fhirVersion value="4.0.0" />
   <mapping>
@@ -44,7 +44,7 @@
     </element>
     <element id="Extension.extension:prescriptionId.url">
       <path value="Extension.extension.url" />
-      <fixedString value="prescriptionId" />
+      <fixedUri value="prescriptionId" />
     </element>
     <element id="Extension.extension:prescriptionId.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -61,7 +61,7 @@
     </element>
     <element id="Extension.extension:merknad.url">
       <path value="Extension.extension.url" />
-      <fixedString value="merknad" />
+      <fixedUri value="merknad" />
     </element>
     <element id="Extension.extension:merknad.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -73,13 +73,13 @@
       <path value="Extension.extension" />
       <sliceName value="reason" />
       <short value="Information about the recall reason" />
-      <definition value="Identifies why the recall was done. " />
+      <definition value="Identifies why the recall was done." />
       <min value="1" />
       <max value="1" />
     </element>
     <element id="Extension.extension:reason.url">
       <path value="Extension.extension.url" />
-      <fixedString value="reason" />
+      <fixedUri value="reason" />
     </element>
     <element id="Extension.extension:reason.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -91,16 +91,28 @@
       <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7500" />
     </element>
+    <element id="Extension.extension:reason.value[x].coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].coding.display" />
+    </element>
+    <element id="Extension.extension:reason.value[x].text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].text" />
+    </element>
     <element id="Extension.extension:newprescriptionId">
       <path value="Extension.extension" />
       <sliceName value="newprescriptionId" />
       <short value="Pointer to new resept prescribed" />
-      <definition value="If the prescription has been renewed, then the prescription Id of the new prescription is idenfified here. " />
+      <definition value="If the prescription has been renewed, then the prescription Id of the new prescription is idenfified here." />
       <max value="1" />
     </element>
     <element id="Extension.extension:newprescriptionId.url">
       <path value="Extension.extension.url" />
-      <fixedString value="newprescriptionId" />
+      <fixedUri value="newprescriptionId" />
     </element>
     <element id="Extension.extension:newprescriptionId.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -116,7 +128,7 @@
     </element>
     <element id="Extension.extension:performed.url">
       <path value="Extension.extension.url" />
-      <fixedString value="performed" />
+      <fixedUri value="performed" />
     </element>
     <element id="Extension.extension:performed.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -126,7 +138,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-recalldetails" />
+      <fixedUri value="http://ehelse.no/fhir/StructureDefinition/sfm-recalldetails" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

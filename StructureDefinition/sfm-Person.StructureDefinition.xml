@@ -5,8 +5,8 @@
   <version value="1.0" />
   <name value="SfmPerson" />
   <title value="sfm-Person" />
-  <status value="draft" />
-  <date value="2019-08-19" />
+  <status value="active" />
+  <date value="2020-06-08" />
   <description value="Used in SFM to write non medical users. Derived from no-basis-Person." />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
@@ -15,47 +15,187 @@
   <baseDefinition value="http://hl7.no/fhir/StructureDefinition/no-basis-Person" />
   <derivation value="constraint" />
   <differential>
+    <element id="Person.meta.security.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Person.meta.security.display" />
+    </element>
+    <element id="Person.meta.tag.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Person.meta.tag.display" />
+    </element>
     <element id="Person.identifier">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Person.identifier" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="Person.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Person.identifier.type.coding.display" />
+    </element>
+    <element id="Person.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Person.identifier.type.text" />
+    </element>
+    <element id="Person.identifier.assigner.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Person.identifier.assigner.display" />
+    </element>
+    <element id="Person.identifier:FNR">
+      <path value="Person.identifier" />
+      <sliceName value="FNR" />
+    </element>
+    <element id="Person.identifier:FNR.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Person.identifier.type.coding.display" />
+    </element>
+    <element id="Person.identifier:FNR.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Person.identifier.type.text" />
+    </element>
+    <element id="Person.identifier:FNR.assigner.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Person.identifier.assigner.identifier.type.coding.display" />
+    </element>
+    <element id="Person.identifier:FNR.assigner.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Person.identifier.assigner.identifier.type.text" />
+    </element>
+    <element id="Person.identifier:FNR.assigner.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Person.identifier.assigner.display" />
+    </element>
+    <element id="Person.identifier:DNR">
+      <path value="Person.identifier" />
+      <sliceName value="DNR" />
+    </element>
+    <element id="Person.identifier:DNR.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Person.identifier.type.coding.display" />
+    </element>
+    <element id="Person.identifier:DNR.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Person.identifier.type.text" />
+    </element>
+    <element id="Person.identifier:DNR.assigner.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Person.identifier.assigner.identifier.type.coding.display" />
+    </element>
+    <element id="Person.identifier:DNR.assigner.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Person.identifier.assigner.identifier.type.text" />
+    </element>
+    <element id="Person.identifier:DNR.assigner.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Person.identifier.assigner.display" />
+    </element>
     <element id="Person.name">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Person.name" />
       <mustSupport value="true" />
     </element>
     <element id="Person.name.extension:middlename">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Person.name.extension" />
       <sliceName value="middlename" />
       <mustSupport value="true" />
     </element>
+    <element id="Person.address.extension:urbanDistrict">
+      <path value="Person.address.extension" />
+      <sliceName value="urbanDistrict" />
+    </element>
+    <element id="Person.address.extension:urbanDistrict.value[x].display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Person.address.extension.value[x].display" />
+    </element>
+    <element id="Person.address.extension:propertyInformation">
+      <path value="Person.address.extension" />
+      <sliceName value="propertyInformation" />
+    </element>
+    <element id="Person.address.extension:propertyInformation.extension:municipality">
+      <path value="Person.address.extension.extension" />
+      <sliceName value="municipality" />
+    </element>
+    <element id="Person.address.extension:propertyInformation.extension:municipality.value[x].display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Person.address.extension.extension.value[x].display" />
+    </element>
+    <element id="Person.photo.title">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Person.photo.title" />
+    </element>
+    <element id="Person.managingOrganization.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Person.managingOrganization.identifier.type.coding.display" />
+    </element>
+    <element id="Person.managingOrganization.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Person.managingOrganization.identifier.type.text" />
+    </element>
+    <element id="Person.managingOrganization.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Person.managingOrganization.display" />
+    </element>
     <element id="Person.active">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Person.active" />
       <mustSupport value="true" />
+    </element>
+    <element id="Person.link.target.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Person.link.target.identifier.type.coding.display" />
+    </element>
+    <element id="Person.link.target.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Person.link.target.identifier.type.text" />
+    </element>
+    <element id="Person.link.target.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Person.link.target.display" />
     </element>
   </differential>
 </StructureDefinition>

@@ -5,8 +5,8 @@
   <version value="1.0" />
   <name value="SfmEpjInfo" />
   <title value="sfm-epjinfo" />
-  <status value="draft" />
-  <date value="2019-09-21" />
+  <status value="active" />
+  <date value="2020-06-08" />
   <description value="Info about the epj system" />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
@@ -59,7 +59,7 @@
     </element>
     <element id="Extension.extension:systeminfo.extension:systemcode.url">
       <path value="Extension.extension.extension.url" />
-      <fixedString value="systemcode" />
+      <fixedUri value="systemcode" />
     </element>
     <element id="Extension.extension:systeminfo.extension:systemcode.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -75,7 +75,7 @@
     </element>
     <element id="Extension.extension:systeminfo.extension:systemname.url">
       <path value="Extension.extension.extension.url" />
-      <fixedString value="systemname" />
+      <fixedUri value="systemname" />
     </element>
     <element id="Extension.extension:systeminfo.extension:systemname.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -91,7 +91,7 @@
     </element>
     <element id="Extension.extension:systeminfo.extension:version.url">
       <path value="Extension.extension.extension.url" />
-      <fixedString value="version" />
+      <fixedUri value="version" />
     </element>
     <element id="Extension.extension:systeminfo.extension:version.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -107,13 +107,17 @@
     </element>
     <element id="Extension.extension:systeminfo.extension:updatetime.url">
       <path value="Extension.extension.extension.url" />
-      <fixedString value="updatetime" />
+      <fixedUri value="updatetime" />
     </element>
     <element id="Extension.extension:systeminfo.extension:updatetime.value[x]">
       <path value="Extension.extension.extension.value[x]" />
       <type>
         <code value="dateTime" />
       </type>
+    </element>
+    <element id="Extension.extension:systeminfo.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="systeminfo" />
     </element>
     <element id="Extension.extension:systeminfo.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -144,7 +148,7 @@
     </element>
     <element id="Extension.extension:operationsuplierinfo.extension:servicevendorname.url">
       <path value="Extension.extension.extension.url" />
-      <fixedString value="servicevendorname" />
+      <fixedUri value="servicevendorname" />
     </element>
     <element id="Extension.extension:operationsuplierinfo.extension:servicevendorname.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -159,7 +163,7 @@
     </element>
     <element id="Extension.extension:operationsuplierinfo.extension:contactname.url">
       <path value="Extension.extension.extension.url" />
-      <fixedString value="contactname" />
+      <fixedUri value="contactname" />
     </element>
     <element id="Extension.extension:operationsuplierinfo.extension:contactname.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -175,7 +179,7 @@
     </element>
     <element id="Extension.extension:operationsuplierinfo.extension:contactemail.url">
       <path value="Extension.extension.extension.url" />
-      <fixedString value="contactemail" />
+      <fixedUri value="contactemail" />
     </element>
     <element id="Extension.extension:operationsuplierinfo.extension:contactemail.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -191,7 +195,7 @@
     </element>
     <element id="Extension.extension:operationsuplierinfo.extension:contactphone.url">
       <path value="Extension.extension.extension.url" />
-      <fixedString value="contactphone" />
+      <fixedUri value="contactphone" />
     </element>
     <element id="Extension.extension:operationsuplierinfo.extension:contactphone.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -199,13 +203,17 @@
         <code value="string" />
       </type>
     </element>
+    <element id="Extension.extension:operationsuplierinfo.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="operationsuplierinfo" />
+    </element>
     <element id="Extension.extension:operationsuplierinfo.value[x]">
       <path value="Extension.extension.value[x]" />
       <max value="0" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-epjinfo" />
+      <fixedUri value="http://ehelse.no/fhir/StructureDefinition/sfm-epjinfo" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

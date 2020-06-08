@@ -5,8 +5,8 @@
   <version value="1.0" />
   <name value="SfmInteractiondata" />
   <title value="sfm-interactiondata" />
-  <status value="draft" />
-  <date value="2019-08-07" />
+  <status value="active" />
+  <date value="2020-06-08" />
   <description value="Data describing the interaction between two or more medications." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
@@ -44,7 +44,7 @@
     </element>
     <element id="Extension.extension:relevance.url">
       <path value="Extension.extension.url" />
-      <fixedString value="relevance" />
+      <fixedUri value="relevance" />
     </element>
     <element id="Extension.extension:relevance.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -56,6 +56,18 @@
       <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7483" />
     </element>
+    <element id="Extension.extension:relevance.value[x].coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].coding.display" />
+    </element>
+    <element id="Extension.extension:relevance.value[x].text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].text" />
+    </element>
     <element id="Extension.extension:situationcriterium">
       <path value="Extension.extension" />
       <sliceName value="situationcriterium" />
@@ -64,7 +76,7 @@
     </element>
     <element id="Extension.extension:situationcriterium.url">
       <path value="Extension.extension.url" />
-      <fixedString value="situationcriterium" />
+      <fixedUri value="situationcriterium" />
     </element>
     <element id="Extension.extension:situationcriterium.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -82,7 +94,7 @@
     </element>
     <element id="Extension.extension:clinicalconsequence.url">
       <path value="Extension.extension.url" />
-      <fixedString value="clinicalconsequence" />
+      <fixedUri value="clinicalconsequence" />
     </element>
     <element id="Extension.extension:clinicalconsequence.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -98,7 +110,7 @@
     </element>
     <element id="Extension.extension:interactionmechanism.url">
       <path value="Extension.extension.url" />
-      <fixedString value="interactionmechanism" />
+      <fixedUri value="interactionmechanism" />
     </element>
     <element id="Extension.extension:interactionmechanism.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -116,7 +128,7 @@
     </element>
     <element id="Extension.extension:source.url">
       <path value="Extension.extension.url" />
-      <fixedString value="source" />
+      <fixedUri value="source" />
     </element>
     <element id="Extension.extension:source.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -128,6 +140,18 @@
       <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7485" />
     </element>
+    <element id="Extension.extension:source.value[x].coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].coding.display" />
+    </element>
+    <element id="Extension.extension:source.value[x].text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].text" />
+    </element>
     <element id="Extension.extension:handling">
       <path value="Extension.extension" />
       <sliceName value="handling" />
@@ -136,7 +160,7 @@
     </element>
     <element id="Extension.extension:handling.url">
       <path value="Extension.extension.url" />
-      <fixedString value="handling" />
+      <fixedUri value="handling" />
     </element>
     <element id="Extension.extension:handling.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -152,7 +176,7 @@
     </element>
     <element id="Extension.extension:displayrule.url">
       <path value="Extension.extension.url" />
-      <fixedString value="displayrule" />
+      <fixedUri value="displayrule" />
     </element>
     <element id="Extension.extension:displayrule.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -164,13 +188,25 @@
       <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7442" />
     </element>
+    <element id="Extension.extension:displayrule.value[x].coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].coding.display" />
+    </element>
+    <element id="Extension.extension:displayrule.value[x].text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].text" />
+    </element>
     <element id="Extension.extension:reference">
       <path value="Extension.extension" />
       <sliceName value="reference" />
       <short value="References to background information" />
       <definition value="References to documentation of the interaction." />
     </element>
-    <element id="Extension.extension:reference1.extension">
+    <element id="Extension.extension:reference.extension">
       <path value="Extension.extension.extension" />
       <slicing>
         <discriminator>
@@ -186,7 +222,7 @@
     </element>
     <element id="Extension.extension:reference.extension:source.url">
       <path value="Extension.extension.extension.url" />
-      <fixedString value="source" />
+      <fixedUri value="source" />
     </element>
     <element id="Extension.extension:reference.extension:source.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -200,7 +236,7 @@
     </element>
     <element id="Extension.extension:reference.extension:link.url">
       <path value="Extension.extension.extension.url" />
-      <fixedString value="link" />
+      <fixedUri value="link" />
     </element>
     <element id="Extension.extension:reference.extension:link.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -210,7 +246,7 @@
     </element>
     <element id="Extension.extension:reference.url">
       <path value="Extension.extension.url" />
-      <fixedString value="reference" />
+      <fixedUri value="reference" />
     </element>
     <element id="Extension.extension:reference.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -223,7 +259,7 @@
       <definition value="substances that are identified to interact." />
       <min value="1" />
     </element>
-    <element id="Extension.extension:substancegroup1.extension">
+    <element id="Extension.extension:substancegroup.extension">
       <path value="Extension.extension.extension" />
       <slicing>
         <discriminator>
@@ -240,7 +276,7 @@
     </element>
     <element id="Extension.extension:substancegroup.extension:name.url">
       <path value="Extension.extension.extension.url" />
-      <fixedString value="name" />
+      <fixedUri value="name" />
     </element>
     <element id="Extension.extension:substancegroup.extension:name.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -253,7 +289,7 @@
       <sliceName value="substance" />
       <min value="1" />
     </element>
-    <element id="Extension.extension:substancegroup1.extension:substance1.extension">
+    <element id="Extension.extension:substancegroup.extension:substance.extension">
       <path value="Extension.extension.extension.extension" />
       <slicing>
         <discriminator>
@@ -270,7 +306,7 @@
     </element>
     <element id="Extension.extension:substancegroup.extension:substance.extension:atc.url">
       <path value="Extension.extension.extension.extension.url" />
-      <fixedString value="atc" />
+      <fixedUri value="atc" />
     </element>
     <element id="Extension.extension:substancegroup.extension:substance.extension:atc.value[x]">
       <path value="Extension.extension.extension.extension.value[x]" />
@@ -282,6 +318,18 @@
       <path value="Extension.extension.extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7180" />
     </element>
+    <element id="Extension.extension:substancegroup.extension:substance.extension:atc.value[x].coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.extension.extension.value[x].coding.display" />
+    </element>
+    <element id="Extension.extension:substancegroup.extension:substance.extension:atc.value[x].text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.extension.extension.value[x].text" />
+    </element>
     <element id="Extension.extension:substancegroup.extension:substance.extension:substance">
       <path value="Extension.extension.extension.extension" />
       <sliceName value="substance" />
@@ -290,7 +338,7 @@
     </element>
     <element id="Extension.extension:substancegroup.extension:substance.extension:substance.url">
       <path value="Extension.extension.extension.extension.url" />
-      <fixedString value="substance" />
+      <fixedUri value="substance" />
     </element>
     <element id="Extension.extension:substancegroup.extension:substance.extension:substance.value[x]">
       <path value="Extension.extension.extension.extension.value[x]" />
@@ -304,7 +352,7 @@
     </element>
     <element id="Extension.extension:substancegroup.extension:substance.extension:refsubstance.url">
       <path value="Extension.extension.extension.extension.url" />
-      <fixedString value="refsubstance" />
+      <fixedUri value="refsubstance" />
     </element>
     <element id="Extension.extension:substancegroup.extension:substance.extension:refsubstance.value[x]">
       <path value="Extension.extension.extension.extension.value[x]" />
@@ -312,9 +360,27 @@
         <code value="Reference" />
       </type>
     </element>
+    <element id="Extension.extension:substancegroup.extension:substance.extension:refsubstance.value[x].identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.extension.extension.value[x].identifier.type.coding.display" />
+    </element>
+    <element id="Extension.extension:substancegroup.extension:substance.extension:refsubstance.value[x].identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.extension.extension.value[x].identifier.type.text" />
+    </element>
+    <element id="Extension.extension:substancegroup.extension:substance.extension:refsubstance.value[x].display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.extension.extension.value[x].display" />
+    </element>
     <element id="Extension.extension:substancegroup.extension:substance.url">
       <path value="Extension.extension.extension.url" />
-      <fixedString value="substance" />
+      <fixedUri value="substance" />
     </element>
     <element id="Extension.extension:substancegroup.extension:substance.value[x]">
       <path value="Extension.extension.extension.value[x]" />
@@ -322,7 +388,7 @@
     </element>
     <element id="Extension.extension:substancegroup.url">
       <path value="Extension.extension.url" />
-      <fixedString value="substancegroup" />
+      <fixedUri value="substancegroup" />
     </element>
     <element id="Extension.extension:substancegroup.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -330,7 +396,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sfm-interactiondata" />
+      <fixedUri value="http://ehelse.no/fhir/StructureDefinition/sfm-interactiondata" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
