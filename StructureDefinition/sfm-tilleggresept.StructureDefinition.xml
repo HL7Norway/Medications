@@ -9,8 +9,8 @@
   <version value="2.1" />
   <name value="SfmReseptamendment" />
   <title value="sfm-reseptamendment" />
-  <status value="draft" />
-  <date value="2020-03-10" />
+  <status value="active" />
+  <date value="2020-06-08" />
   <description value="Information required in Norwegian e-resept (electronic prescription)." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
@@ -81,7 +81,6 @@
       <sliceName value="festUpdate" />
       <short value="Version of FEST" />
       <definition value=".eresept: OppdatertFEst" />
-      <min value="1" />
       <max value="1" />
     </element>
     <element id="Extension.extension:festUpdate.url">
