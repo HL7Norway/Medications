@@ -2,14 +2,14 @@
   <id value="sfm-registration-type.valueset" />
   <meta>
     <versionId value="1" />
-    <lastUpdated value="2020-04-07T00:00:00.000+00:00" />
+    <lastUpdated value="2020-06-08T00:00:00.000+00:00" />
   </meta>
   <url value="http://ehelse.no/fhir/ValueSet/sfm-registration-type" />
   <version value="1.0.0" />
   <name value="sfm-registration-type" />
   <title>Registration types used with API operations</title>
-  <status value="draft" />
-  <date value="2020-04-07T00:00:00.000+00:00" />
+  <status value="active" />
+  <date value="2020-06-08T00:00:00.000+00:00" />
   <publisher value="Direktoratet for e-helse" />
   <description>Used with register and deregister operations for Reseptformidleren</description>
   <purpose>All codes from relevant codeset</purpose>
