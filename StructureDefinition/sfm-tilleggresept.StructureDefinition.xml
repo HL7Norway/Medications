@@ -265,6 +265,8 @@
     <element id="Extension.extension:dispatchrequest.extension:condition">
       <path value="Extension.extension.extension" />
       <sliceName value="condition" />
+      <short value="Maps to e-resept Vilkar" />
+      <definition value="See e-resept documentation." />
       <min value="1" />
       <max value="1" />
     </element>
@@ -281,6 +283,8 @@
     <element id="Extension.extension:dispatchrequest.extension:metod">
       <path value="Extension.extension.extension" />
       <sliceName value="metod" />
+      <short value="Maps to e-resept MetodeEkspedering" />
+      <definition value="See e-resept documentation for details." />
       <min value="1" />
       <max value="1" />
     </element>
@@ -313,6 +317,8 @@
     <element id="Extension.extension:dispatchrequest.extension:organization">
       <path value="Extension.extension.extension" />
       <sliceName value="organization" />
+      <short value="Maps to e-resept Utleverer" />
+      <definition value="Her-id for dispatcher should be provided. See eresept documentation" />
       <min value="1" />
       <max value="1" />
     </element>
@@ -329,6 +335,8 @@
     <element id="Extension.extension:dispatchrequest.extension:contactperson">
       <path value="Extension.extension.extension" />
       <sliceName value="contactperson" />
+      <short value="Maps to e-resept Kontaktperson" />
+      <definition value="See e-resept documentation" />
       <min value="1" />
       <max value="1" />
     </element>
@@ -345,6 +353,8 @@
     <element id="Extension.extension:dispatchrequest.extension:note">
       <path value="Extension.extension.extension" />
       <sliceName value="note" />
+      <short value="Maps to e-resept Merkand in Ekspederingsanmodning" />
+      <definition value="See e-resept documentation." />
       <max value="1" />
     </element>
     <element id="Extension.extension:dispatchrequest.extension:note.url">
@@ -360,6 +370,8 @@
     <element id="Extension.extension:dispatchrequest.extension:orgnum">
       <path value="Extension.extension.extension" />
       <sliceName value="orgnum" />
+      <short value="Maps to e-resept OrgNrUtleverer" />
+      <definition value="national organisation number for dispatcher. See e-resept documentation." />
       <min value="1" />
       <max value="1" />
     </element>
@@ -376,6 +388,8 @@
     <element id="Extension.extension:dispatchrequest.extension:orgname">
       <path value="Extension.extension.extension" />
       <sliceName value="orgname" />
+      <short value="Maps to e-resept UtlevererNavn" />
+      <definition value="Organisation name for dispatcher. See e-resept documentation." />
       <min value="1" />
       <max value="1" />
     </element>
