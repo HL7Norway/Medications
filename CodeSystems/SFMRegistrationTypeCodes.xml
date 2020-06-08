@@ -1,25 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?>
 <CodeSystem>
-	<id value="sfm-registration-type.codesystem"/>
-	<meta>
-		<versionId value="1"/>
-		<lastUpdated value="2020-04-07T00:00:00.000+00:00"/>
-	</meta>
-	<url value="http://ehelse.no/fhir/CodeSystem/sfm-registration-type"/>
-	<version value="1.0.0"/>
-	<name value="sfm-registration-type.codesystem"/>
-	<title>Registration types provided in API</title>
-	<status value="draft"/>
-	<date value="2020-04-07T00:00:00.000+00:00"/>
-	<publisher value="Direktoratet for e-helse"/>
-	<description>Used for registration of subscriptions or responsibility in Reseptformidleren</description>
-	<content value="complete"/>
-	<concept>
-		<code value="utleveringfastlege"/>
-		<display value="Abonnement på utleveringsmeldinger som pasientens fastlege"/>
-	</concept>
-	<concept>
-		<code value="multidose"/>
-		<display value="Ansvarlig multidoselege e-multidose"/>
-	</concept>
+  <id value="sfm-registration-type.codesystem" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2020-04-07T00:00:00.000+00:00" />
+  </meta>
+  <url value="http://ehelse.no/fhir/CodeSystem/sfm-registration-type" />
+  <version value="1.0.0" />
+  <name value="sfm-registration-type.codesystem" />
+  <title>Registration types provided in API</title>
+  <status value="draft" />
+  <date value="2020-04-07T00:00:00.000+00:00" />
+  <publisher value="Direktoratet for e-helse" />
+  <description>Used for registration of subscriptions or responsibility in Reseptformidleren</description>
+  <content value="complete" />
+  <concept>
+    <code value="utleveringfastlege" />
+    <display value="Abonnement på utleveringsmeldinger som pasientens fastlege" />
+  </concept>
+  <concept>
+    <code value="multidose" />
+    <display value="Ansvarlig multidoselege e-multidose" />
+  </concept>
 </CodeSystem>

@@ -1,31 +1,30 @@
-<?xml version="1.0" encoding="utf-8"?>
 <CodeSystem>
-    <id value="sfm-message-types.codesystem" />
-    <meta>
-        <versionId value="1" />
-        <lastUpdated value="2019-09-13T00:00:00.000+00:00" />
-    </meta>
-    <url value="http://ehelse.no/fhir/CodeSystem/sfm-message-type" />
-    <version value="1.0.0" />
-    <name value="sfm-message-type.codesystem" />
-    <status value="draft" />
-    <date value="2019-09-13T00:00:00.000+00:00" />
-    <publisher value="Direktoratet for e-helse" />
-    <content value="complete" />
-      <concept>
-        <code value="M25.1" />
-        <display value="PLL" />
-      </concept>
-      <concept>
-        <code value="M25.2" />
-        <display value="Multidose spørremelding fra apotek" />
-      </concept>
-      <concept>
-        <code value="M25.3" />
-        <display value="Multidose utleveringsmelding" />
-      </concept>
-      <concept>
-        <code value="M15" />
-        <display value="Svar fra SLV" />
-      </concept>
+  <id value="sfm-message-types.codesystem" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2019-09-13T00:00:00.000+00:00" />
+  </meta>
+  <url value="http://ehelse.no/fhir/CodeSystem/sfm-message-type" />
+  <version value="1.0.0" />
+  <name value="sfm-message-type.codesystem" />
+  <status value="draft" />
+  <date value="2019-09-13T00:00:00.000+00:00" />
+  <publisher value="Direktoratet for e-helse" />
+  <content value="complete" />
+  <concept>
+    <code value="M25.1" />
+    <display value="PLL" />
+  </concept>
+  <concept>
+    <code value="M25.2" />
+    <display value="Multidose spørremelding fra apotek" />
+  </concept>
+  <concept>
+    <code value="M25.3" />
+    <display value="Multidose utleveringsmelding" />
+  </concept>
+  <concept>
+    <code value="M15" />
+    <display value="Svar fra SLV" />
+  </concept>
 </CodeSystem>

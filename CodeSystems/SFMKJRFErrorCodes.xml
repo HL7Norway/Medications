@@ -1,53 +1,52 @@
-<?xml version="1.0" encoding="utf-8"?>
 <CodeSystem>
-    <id value="sfm-kj-rf-error-code.codesystem" />
-    <meta>
-        <versionId value="1" />
-        <lastUpdated value="2020-04-21T00:00:00.000+00:00" />
-    </meta>
-    <url value="http://ehelse.no/fhir/CodeSystem/sfm-kj-rf-error-code" />
-    <version value="1.0.0" />
-    <name value="sfm-kj-rf-error-code.codesystem" />
-    <title>Local result codes from SFM for RF and KJ Lookup</title>
-    <status value="draft" />
-    <date value="2020-04-21T00:00:00.000+00:00" />
-    <publisher value="Direktoratet for e-helse" />
-    <description>Local SFM response codes</description>
-    <content value="complete" />
-      <concept>
-        <code value="0" />
-        <display value="OK" />
-      </concept>
-      <concept>
-        <code value="1" />
-        <display value="KJ ikke tilgjengelig" />
-      </concept>
-      <concept>
-        <code value="2" />
-        <display value="KJ svarer ikke" />
-      </concept>
-	  <concept>
-        <code value="3" />
-        <display value="RF ikke tilgjengelig" />
-      </concept>
-	  <concept>
-        <code value="4" />
-        <display value="RF svarer ikke" />
-      </concept>
-	  <concept>
-        <code value="KJF-000132" />
-        <display value="Bruker har ingen autorisasjon i HPR" />
-      </concept>
-      	  <concept>
-        <code value="KJF-000168" />
-        <display value="Pasienten har ingen aktiv kjernejournal" />
-      </concept>
-      	  <concept>
-        <code value="KJF-000179" />
-        <display value="Legemidler i kjernejournal er sperret for helsepersonell. Kan overstyres ved å sette SamstykkeSperretLegemidler" />
-      </concept>
-      	  <concept>
-        <code value="KJF-000180" />
-        <display value="Kjernejournal er blokkert for det enkelte helsepersonellet" />
-      </concept>
+  <id value="sfm-kj-rf-error-code.codesystem" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2020-04-21T00:00:00.000+00:00" />
+  </meta>
+  <url value="http://ehelse.no/fhir/CodeSystem/sfm-kj-rf-error-code" />
+  <version value="1.0.0" />
+  <name value="sfm-kj-rf-error-code.codesystem" />
+  <title>Local result codes from SFM for RF and KJ Lookup</title>
+  <status value="draft" />
+  <date value="2020-04-21T00:00:00.000+00:00" />
+  <publisher value="Direktoratet for e-helse" />
+  <description>Local SFM response codes</description>
+  <content value="complete" />
+  <concept>
+    <code value="0" />
+    <display value="OK" />
+  </concept>
+  <concept>
+    <code value="1" />
+    <display value="KJ ikke tilgjengelig" />
+  </concept>
+  <concept>
+    <code value="2" />
+    <display value="KJ svarer ikke" />
+  </concept>
+  <concept>
+    <code value="3" />
+    <display value="RF ikke tilgjengelig" />
+  </concept>
+  <concept>
+    <code value="4" />
+    <display value="RF svarer ikke" />
+  </concept>
+  <concept>
+    <code value="KJF-000132" />
+    <display value="Bruker har ingen autorisasjon i HPR" />
+  </concept>
+  <concept>
+    <code value="KJF-000168" />
+    <display value="Pasienten har ingen aktiv kjernejournal" />
+  </concept>
+  <concept>
+    <code value="KJF-000179" />
+    <display value="Legemidler i kjernejournal er sperret for helsepersonell. Kan overstyres ved å sette SamstykkeSperretLegemidler" />
+  </concept>
+  <concept>
+    <code value="KJF-000180" />
+    <display value="Kjernejournal er blokkert for det enkelte helsepersonellet" />
+  </concept>
 </CodeSystem>

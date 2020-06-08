@@ -1,23 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?>
 <CodeSystem>
-    <id value="sfm-registration-types.codesystem" />
-    <meta>
-        <versionId value="1" />
-        <lastUpdated value="2020-05-06T00:00:00.000+00:00" />
-    </meta>
-    <url value="http://ehelse.no/fhir/CodeSystem/sfm-registration-types" />
-    <version value="1.1.0" />
-    <name value="sfm-registration-types.codesystem" />
-    <status value="draft" />
-    <date value="2020-04-06T00:00:00.000+00:00" />
-    <publisher value="Direktoratet for e-helse" />
-    <content value="complete" />
-      <concept>
-        <code value="utleveringfastlege" />
-        <display value="Registrering for abonnement utleveringsmelding-fastlege på resept" />
-      </concept>
-      <concept>
-        <code value="multidose" />
-        <display value="Registrering av multidoseansvar, e-resept" />
-      </concept>
+  <id value="sfm-registration-types.codesystem" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2020-05-06T00:00:00.000+00:00" />
+  </meta>
+  <url value="http://ehelse.no/fhir/CodeSystem/sfm-registration-types" />
+  <version value="1.1.0" />
+  <name value="sfm-registration-types.codesystem" />
+  <status value="draft" />
+  <date value="2020-04-06T00:00:00.000+00:00" />
+  <publisher value="Direktoratet for e-helse" />
+  <content value="complete" />
+  <concept>
+    <code value="utleveringfastlege" />
+    <display value="Registrering for abonnement utleveringsmelding-fastlege på resept" />
+  </concept>
+  <concept>
+    <code value="multidose" />
+    <display value="Registrering av multidoseansvar, e-resept" />
+  </concept>
 </CodeSystem>

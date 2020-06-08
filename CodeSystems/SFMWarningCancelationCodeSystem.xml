@@ -1,47 +1,46 @@
-<?xml version="1.0" encoding="utf-8"?>
 <CodeSystem>
-    <id value="sfm-cancelation-code.codesystem" />
-    <meta>
-        <versionId value="1" />
-        <lastUpdated value="2019-09-13T00:00:00.000+00:00" />
-    </meta>
-    <url value="http://ehelse.no/fhir/CodeSystem/sfm-warning-cancelation-code" />
-    <version value="1.0.0" />
-    <name value="sfm-cancelation-code.codesystem" />
-    <status value="draft" />
-    <date value="2019-09-21T00:00:00.000+00:00" />
-    <publisher value="Direktoratet for e-helse" />
-    <content value="complete" />
-      <concept>
-        <code value="1" />
-        <display value="Dosejustering" />
-      </concept>
-      <concept>
-        <code value="2" />
-        <display value="Monitorering" />
-      </concept>
-	  <concept>
-        <code value="3" />
-        <display value="Seponering" />
-      </concept>
-	  <concept>
-        <code value="4" />
-        <display value="Oppstartsdosering" />
-      </concept>
-	  <concept>
-        <code value="5" />
-        <display value="Forskjellige legemiddelegenskaper" />
-      </concept>
-	  <concept>
-        <code value="6" />
-        <display value="Ikke relevant" />
-      </concept>
-	  <concept>
-        <code value="7" />
-        <display value="Vurdert - ikke aktuelt" />
-      </concept>
-	  <concept>
-        <code value="8" />
-        <display value="Annet" />
-      </concept>
+  <id value="sfm-cancelation-code.codesystem" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2019-09-13T00:00:00.000+00:00" />
+  </meta>
+  <url value="http://ehelse.no/fhir/CodeSystem/sfm-warning-cancelation-code" />
+  <version value="1.0.0" />
+  <name value="sfm-cancelation-code.codesystem" />
+  <status value="draft" />
+  <date value="2019-09-21T00:00:00.000+00:00" />
+  <publisher value="Direktoratet for e-helse" />
+  <content value="complete" />
+  <concept>
+    <code value="1" />
+    <display value="Dosejustering" />
+  </concept>
+  <concept>
+    <code value="2" />
+    <display value="Monitorering" />
+  </concept>
+  <concept>
+    <code value="3" />
+    <display value="Seponering" />
+  </concept>
+  <concept>
+    <code value="4" />
+    <display value="Oppstartsdosering" />
+  </concept>
+  <concept>
+    <code value="5" />
+    <display value="Forskjellige legemiddelegenskaper" />
+  </concept>
+  <concept>
+    <code value="6" />
+    <display value="Ikke relevant" />
+  </concept>
+  <concept>
+    <code value="7" />
+    <display value="Vurdert - ikke aktuelt" />
+  </concept>
+  <concept>
+    <code value="8" />
+    <display value="Annet" />
+  </concept>
 </CodeSystem>
