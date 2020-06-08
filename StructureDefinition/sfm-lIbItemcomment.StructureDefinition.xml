@@ -226,11 +226,10 @@
       <type>
         <code value="CodeableConcept" />
       </type>
-      <fixedCodeableConcept>
-        <coding>
-          <system value="urn:oid:2.16.578.1.12.4.1.1.7493" />
-        </coding>
-      </fixedCodeableConcept>
+    </element>
+    <element id="Extension.extension:response.extension:type.value[x].coding.system">
+      <path value="Extension.extension.extension.value[x].coding.system" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7493" />
     </element>
     <element id="Extension.extension:response.extension:type.value[x].coding.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">

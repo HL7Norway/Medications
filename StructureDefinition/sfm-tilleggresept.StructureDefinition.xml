@@ -230,7 +230,7 @@
     </element>
     <element id="Extension.extension:speciality.value[x].coding.system">
       <path value="Extension.extension.value[x].coding.system" />
-      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7428" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7426" />
     </element>
     <element id="Extension.extension:speciality.value[x].coding.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
