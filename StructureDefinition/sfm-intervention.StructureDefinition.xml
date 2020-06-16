@@ -53,7 +53,7 @@
     </element>
     <element id="Extension.extension:code.value[x].coding.system">
       <path value="Extension.extension.value[x].coding.system" />
-      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7413" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7412" />
     </element>
     <element id="Extension.extension:code.value[x].coding.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
@@ -87,7 +87,7 @@
     </element>
     <element id="Extension.extension:changeType.value[x].coding.system">
       <path value="Extension.extension.value[x].coding.system" />
-      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7412" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7413" />
     </element>
     <element id="Extension.extension:changeType.value[x].coding.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
