@@ -1,0 +1,43 @@
+{
+  "resourceType": "Parameters",
+  "parameter": [
+    {
+      "name": "type",
+      "valueCode": "multidose"
+    },
+    {
+      "name": "patient",
+      "resource": {
+        "resourceType": "Patient",
+        "meta": {
+          "profile": [
+            "http://ehelse.no/fhir/StructureDefinition/sfm-Patient"
+          ]
+        },
+        "identifier": [
+          {
+            "use": "official",
+            "system": "urn:oid:2.16.578.1.12.4.1.4.1",
+            "value": "09056019860"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Danielsen",
+            "given": [
+              "Emma Gunn"
+            ]
+          }
+        ],
+        "birthDate": "1969-05-09",
+        "address": [
+          {
+            "city": "Oslo",
+            "postalCode": "0876"
+          }
+        ]
+      }
+    }
+  ]
+}
