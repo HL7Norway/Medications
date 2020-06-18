@@ -19,6 +19,10 @@
     <type value="element" />
     <expression value="MedicationDispense" />
   </context>
+  <context>
+    <type value="element" />
+    <expression value="Basic" />
+  </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
@@ -55,18 +59,6 @@
       <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7412" />
     </element>
-    <element id="Extension.extension:code.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Extension.extension:code.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].text" />
-    </element>
     <element id="Extension.extension:changeType">
       <path value="Extension.extension" />
       <sliceName value="changeType" />
@@ -88,18 +80,6 @@
     <element id="Extension.extension:changeType.value[x].coding.system">
       <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7413" />
-    </element>
-    <element id="Extension.extension:changeType.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Extension.extension:changeType.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].text" />
     </element>
     <element id="Extension.extension:confCustomer">
       <path value="Extension.extension" />
