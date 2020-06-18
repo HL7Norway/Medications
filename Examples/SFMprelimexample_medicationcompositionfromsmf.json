@@ -1,0 +1,198 @@
+{
+	"resourceType": "Composition",
+	"id": "f474624d-c8f5-41b4-930f-f4499f61882c",
+	"meta": {
+		"profile": [
+			"http://ehelse.no/fhir/StructureDefinition/sfm-MedicationComposition"
+		]
+	},
+	"identifier": {
+		"value": "74c1ba7c-b2a0-4c3b-8b2b-b2a42bbdb8ea"
+	},
+	"status": "final",
+	"type": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "11503-0",
+				"display": "Medical records"
+			}
+		]
+	},
+	"subject": {
+		"reference": "urn:uuid:0d2accdb-d01f-4889-b262-216384a490f3",
+		"display": "sfm-Patient"
+	},
+	"date": "2020-06-16T15:21:47.9721908+02:00",
+	"author": [
+		{
+			"reference": "urn:uuid:137597855",
+			"display": "sfm-Practitioner"
+		}
+	],
+	"title": "Medication summary",
+	"confidentiality": "N",
+	"section": [
+		{
+			"title": "Medication",
+			"code": {
+				"coding": [
+					{
+						"system": "http://ehelse.no/fhir/CodeSystem/sfm-section-types",
+						"code": "sectionMedication",
+						"display": "List of Medication statements"
+					}
+				]
+			},
+			"text": {
+				"status": "generated",
+				"div": "<xhtml:div xmlns:xhtml=\"http://www.w3.org/1999/xhtml\">List of medications</xhtml:div>"
+			},
+			"entry": [
+				{
+					"reference": "urn:uuid:6281d110-b4e7-44bf-aca1-1a96d7e001a2",
+					"display": "sfm-MedicationStatement"
+				},
+				{
+					"reference": "urn:uuid:4a3f27aa-78cf-4be4-ac72-2bcb1d7717ba",
+					"display": "sfm-MedicationStatement"
+				},
+				{
+					"reference": "urn:uuid:25c2f33c-b90f-4dfd-9048-177b85db53cc",
+					"display": "sfm-MedicationStatement"
+				},
+				{
+					"reference": "urn:uuid:3f85b410-d4eb-401a-a057-2d9ccc63a683",
+					"display": "sfm-MedicationStatement"
+				},
+				{
+					"reference": "urn:uuid:904e982a-7dc8-4f21-a2ac-bc2cc8e68f70",
+					"display": "sfm-MedicationStatement"
+				},
+				{
+					"reference": "urn:uuid:d070b125-118b-494f-8101-424110982479",
+					"display": "sfm-MedicationStatement"
+				},
+				{
+					"reference": "urn:uuid:a28d0e43-49d5-41ec-bab1-b033fcd8a372",
+					"display": "sfm-MedicationStatement"
+				},
+				{
+					"reference": "urn:uuid:7b8f8b1d-3565-4900-bc97-c544c35cf620",
+					"display": "sfm-MedicationStatement"
+				},
+				{
+					"reference": "urn:uuid:4a70798d-ad3e-4683-a9e1-a08a449936a3",
+					"display": "sfm-MedicationStatement"
+				},
+				{
+					"reference": "urn:uuid:ceca33fd-435f-4184-b8c4-20f0ccfa9799",
+					"display": "sfm-MedicationStatement"
+				},
+				{
+					"reference": "urn:uuid:04f6732b-1309-48e6-85e6-736ed986e3e5",
+					"display": "sfm-MedicationStatement"
+				},
+				{
+					"reference": "urn:uuid:caeeef80-5667-49be-aa77-9ddff90ebfdb",
+					"display": "sfm-MedicationStatement"
+				},
+				{
+					"reference": "urn:uuid:15ccb68a-503c-4b47-9259-9146bdc75ac2",
+					"display": "sfm-MedicationStatement"
+				}
+			]
+		},
+		{
+			"title": "PllInfo",
+			"code": {
+				"coding": [
+					{
+						"system": "http://ehelse.no/fhir/CodeSystem/sfm-section-types",
+						"code": "sectionPLLinfo",
+						"display": "PLL Info"
+					}
+				]
+			},
+			"text": {
+				"status": "generated",
+				"div": "<xhtml:div xmlns:xhtml=\"http://www.w3.org/1999/xhtml\">Info read from M25</xhtml:div>"
+			},
+			"entry": [
+				{
+					"reference": "urn:uuid:63a4a7f5-209a-4f98-b2b7-6754bb059404"
+				}
+			]
+		},
+		{
+			"title": "Allergies",
+			"code": {
+				"coding": [
+					{
+						"system": "http://ehelse.no/fhir/CodeSystem/sfm-section-types",
+						"code": "sectionAllergies",
+						"display": "Section allergies"
+					}
+				]
+			},
+			"text": {
+				"status": "generated",
+				"div": "<xhtml:div xmlns:xhtml=\"http://www.w3.org/1999/xhtml\">List of allergies</xhtml:div>"
+			},
+			"entry": [
+				{
+					"reference": "urn:uuid:db62df3d-805c-4147-941a-2ce4da94b063",
+					"display": "KjAllergyIntolerance"
+				}
+			]
+		},
+		{
+			"title": "sectionDispense",
+			"code": {
+				"coding": [
+					{
+						"system": "http://ehelse.no/fhir/CodeSystem/sfm-section-types",
+						"code": "sectionDispense",
+						"display": "Section dispense"
+					}
+				]
+			},
+			"text": {
+				"status": "generated",
+				"div": "<xhtml:div xmlns:xhtml=\"http://www.w3.org/1999/xhtml\">List of dispense messages</xhtml:div>"
+			},
+			"entry": [
+				{
+					"reference": "urn:uuid:2f8bb0b5-6423-421d-8a65-27fede033bd8",
+					"display": "sfm-MedicationDispense"
+				}
+			]
+		},
+		{
+			"title": "Other Prescriptions",
+			"code": {
+				"coding": [
+					{
+						"system": "http://ehelse.no/fhir/CodeSystem/sfm-section-types",
+						"code": "sectionOtherPrescriptions",
+						"display": "List of non medical prescriptions"
+					}
+				]
+			},
+			"text": {
+				"status": "generated",
+				"div": "<xhtml:div xmlns:xhtml=\"http://www.w3.org/1999/xhtml\">List of non medical prescriptions</xhtml:div>"
+			},
+			"entry": [
+				{
+					"reference": "urn:uuid:29b752dd-025c-43b3-bb4c-e5be6589ba00",
+					"display": "sfm-BandaPrescription"
+				},
+				{
+					"reference": "urn:uuid:c6f04d13-32ee-4e78-8a8a-013a7384f3a4",
+					"display": "sfm-BandaPrescription"
+				}
+			]
+		}
+	]
+}
