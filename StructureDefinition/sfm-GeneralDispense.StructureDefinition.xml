@@ -35,27 +35,6 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Basic.extension:substitutioninfo">
-      <path value="Basic.extension" />
-      <sliceName value="substitutioninfo" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-substitutioninfo" />
-      </type>
-      <mustSupport value="true" />
-    </element>
-    <element id="Basic.extension:substitutioninfo.extension:conferencedpatient">
-      <path value="Basic.extension.extension" />
-      <sliceName value="conferencedpatient" />
-      <definition value="Identified if the patient was requested about the substitution. .eresept-&gt; Byttereservasjonkunde" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Basic.extension:substitutioninfo.extension:text">
-      <path value="Basic.extension.extension" />
-      <sliceName value="text" />
-      <mustSupport value="true" />
-    </element>
     <element id="Basic.extension:dispenseinfo">
       <path value="Basic.extension" />
       <sliceName value="dispenseinfo" />
@@ -152,8 +131,6 @@
     <element id="Basic.extension:intervention">
       <path value="Basic.extension" />
       <sliceName value="intervention" />
-      <min value="0" />
-      <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="http://example.org/fhir/StructureDefinition/sfm-Intervention" />
