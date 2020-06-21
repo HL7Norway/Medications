@@ -1,0 +1,277 @@
+{
+	"resourceType": "MedicationStatement",
+	"id": "6281d110-b4e7-44bf-aca1-1a96d7e001a2",
+	"extension": [
+		{
+			"extension": [
+				{
+					"url": "reseptDate",
+					"valueDate": "2020-05-13"
+				},
+				{
+					"url": "expirationdate",
+					"valueDate": "2021-05-13"
+				},
+				{
+					"url": "festUpdate",
+					"valueDateTime": "2020-04-24T09:44:30+02:00"
+				},
+				{
+					"url": "dssn",
+					"valueString": "1 tablett daglig"
+				},
+				{
+					"url": "lockedResept",
+					"valueBoolean": false
+				},
+				{
+					"url": "numberofpackages",
+					"valueDecimal": 1.0
+				},
+				{
+					"url": "reit",
+					"valueString": "3"
+				},
+				{
+					"url": "speciality",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "urn:oid:2.16.578.1.12.4.1.1.7426",
+								"code": "190",
+								"display": "Indremedisin"
+							}
+						]
+					}
+				},
+				{
+					"url": "itemgroup",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "urn:oid:2.16.578.1.12.4.1.1.7402",
+								"code": "L",
+								"display": "Legemiddel"
+							}
+						]
+					}
+				},
+				{
+					"extension": [
+						{
+							"url": "starttime",
+							"valueDateTime": "2020-05-13T02:00:00+02:00"
+						},
+						{
+							"extension": [
+								{
+									"url": "amount",
+									"valueQuantity": {
+										"value": 1.0,
+										"unit": "tablett",
+										"system": "http://unitsofmeasure.org",
+										"code": "tablett"
+									}
+								},
+								{
+									"url": "interval",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "urn:oid:2.16.578.1.12.4.1.1.9088",
+												"code": "1",
+												"display": "Døgn"
+											}
+										]
+									}
+								},
+								{
+									"url": "timerange",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "urn:oid:2.16.578.1.12.4.1.1.8325",
+												"code": "1",
+												"display": "Morgen"
+											}
+										]
+									}
+								},
+								{
+									"url": "accurate",
+									"valueBoolean": false
+								}
+							],
+							"url": "repeatingdosage"
+						}
+					],
+					"url": "ereseptdosing"
+				},
+				{
+					"extension": [
+						{
+							"url": "nameDispenser",
+							"valueString": "Testapotek Monier"
+						},
+						{
+							"url": "recallStatus",
+							"valueBoolean": false
+						},
+						{
+							"url": "status",
+							"valueCodeableConcept": {
+								"coding": [
+									{
+										"system": "urn:oid:2.16.578.1.12.4.1.1.7408",
+										"code": "E",
+										"display": "Ekspederbar"
+									}
+								]
+							}
+						}
+					],
+					"url": "rfstatus"
+				}
+			],
+			"url": "http://ehelse.no/fhir/StructureDefinition/sfm-reseptamendment"
+		},
+		{
+			"extension": [
+				{
+					"url": "pakningsstr",
+					"valueQuantity": {
+						"value": 100.0,
+						"unit": "stk",
+						"system": "http://unitsofmeasure.org",
+						"code": "stk"
+					}
+				},
+				{
+					"url": "varenummer",
+					"valueString": "036320"
+				},
+				{
+					"url": "varenavn",
+					"valueString": "Selo-Zok DEPOTtab 100 mg"
+				},
+				{
+					"url": "antallpkntotalt",
+					"valueDecimal": 1.0
+				},
+				{
+					"url": "antallpknsiste",
+					"valueDecimal": 1.0
+				},
+				{
+					"url": "sistutlevert",
+					"valueDateTime": "2020-06-03T02:00:00+02:00"
+				}
+			],
+			"url": "http://ehelse.no/fhir/StructureDefinition/sfm-deliverysummary"
+		},
+		{
+			"extension": [
+				{
+					"url": "status",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "http://ehelse.no/fhir/CodeSystem/sfm-medicationstatement-registration-status",
+								"code": "3",
+								"display": "Godkjent"
+							}
+						]
+					}
+				},
+				{
+					"url": "type",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "http://ehelse.no/fhir/CodeSystem/sfm-performer-roles",
+								"code": "1",
+								"display": "Forskrevet av"
+							}
+						]
+					}
+				},
+				{
+					"url": "helseperson",
+					"valueReference": {
+						"reference": "urn:uuid:1402057795"
+					}
+				},
+				{
+					"url": "timestamp",
+					"valueDateTime": "2020-05-13T13:03:10.6047487+02:00"
+				}
+			],
+			"url": "http://ehelse.no/fhir/StructureDefinition/sfm-regInfo"
+		}
+	],
+	"identifier": [
+		{
+			"use": "usual",
+			"type": {
+				"text": "PLL"
+			},
+			"value": "1d7e29c7-752e-4360-9970-18e5ad9effb5"
+		},
+		{
+			"use": "usual",
+			"type": {
+				"text": "ReseptId"
+			},
+			"value": "3c013a87-30e7-43a0-8a45-18e5adc6768a"
+		}
+	],
+	"status": "active",
+	"medicationReference": {
+		"reference": "urn:uuid:43270239"
+	},
+	"subject": {
+		"reference": "urn:uuid:0d2accdb-d01f-4889-b262-216384a490f3",
+		"display": "sfm-Patient"
+	},
+	"dosage": [
+		{
+			"extension": [
+				{
+					"extension": [
+						{
+							"url": "text",
+							"valueString": "BLODTRYKKSMEDISIN"
+						}
+					],
+					"url": "http://example.org/fhir/StructureDefinition/sfm-application-area"
+				},
+				{
+					"url": "http://ehelse.no/fhir/StructureDefinition/sfm-shortdosage",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "urn:oid:2.16.578.1.12.4.1.1.7478",
+								"code": "93",
+								"display": "1 daglig"
+							}
+						]
+					}
+				},
+				{
+					"url": "http://ehelse.no/fhir/StructureDefinition/sfm-use",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "urn:oid:2.16.578.1.12.4.1.1.9101",
+								"code": "1",
+								"display": "Fast"
+							}
+						]
+					}
+				}
+			],
+			"sequence": 1,
+			"text": "1 tablett daglig"
+		}
+	]
+}
