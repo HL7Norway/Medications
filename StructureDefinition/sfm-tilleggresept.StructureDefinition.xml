@@ -1021,6 +1021,8 @@
     <element id="Extension.extension:recallinfo.extension:recallId">
       <path value="Extension.extension.extension" />
       <sliceName value="recallId" />
+      <short value="pointer to releated prescription" />
+      <definition value="Used to identify relation between resepts in RF." />
       <max value="1" />
     </element>
     <element id="Extension.extension:recallinfo.extension:recallId.url">
