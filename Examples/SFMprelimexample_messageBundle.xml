@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Preliminary handmade example of message delivered from SFM to Helseplattformen -->
+<Bundle xmlns="http://hl7.org/fhir">
+	<id value="619226"/>
+	<meta>
+		<versionId value="1"/>
+		<lastUpdated value="2020-02-11T18:10:36.218+00:00"/>
+	</meta>
+	<type value="message"/>
+	<timestamp value="2020-03-30T11:15:33+10:00"/>
+	<entry>
+		<fullUrl value="urn:uuid:123b18ce-23bc-4581-9baa-6fada356fe32"/>
+		<resource>
+			<MessageHeader xmlns="http://hl7.org/fhir">
+				<meta>
+					<versionId value="1"/>
+					<lastUpdated value="2020-03-30T18:10:36.218+00:00"/>
+					<source value="urn:uuid:267b18ce-3d37-4581-9baa-6fada338038b"/>
+				</meta>
+				<eventCoding>
+					<system value="urn:oid:2.16.578.1.12.4.1.1.8279"/>
+					<code value="ERM8"/>
+					<display value="Utleveringsrapport fastlege"/>
+				</eventCoding>
+				<destination>
+					<reference value="http://basis-api.forskrivning.no/v1/Practitioner/12345"/>
+				</destination>
+				<destination>
+					<reference value="http://basis-api.forskrivning.no/v1/Organization/54321"/>
+				</destination>
+				<focus>
+					<reference value="urn:uuid:267b18ce-3d37-4581-9baa-6fada338038b"/>
+				</focus>
+			</MessageHeader>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:267b18ce-3d37-4581-9baa-6fada338038b"/>
+		<resource>
+			<MedicationDispense xmlns="http://hl7.org/fhir">
+				<id value="2f8bb0b5-6423-421d-8a65-27fede033bd8"/>
+				<meta>
+					<profile value="http://ehelse.no/fhir/StructureDefinition/sfm-MedicationDispense"/>
+				</meta>
+				<extension url="http://ehelse.no/fhir/StructureDefinition/sfm-dispenseinfo">
+					<extension url="cancelation">
+						<valueBoolean value="false"/>
+					</extension>
+					<extension url="concluded">
+						<valueBoolean value="false"/>
+					</extension>
+					<extension url="prescriptionid">
+						<valueString value="3c013a87-30e7-43a0-8a45-18e5adc6768a"/>
+					</extension>
+				</extension>
+				<identifier>
+					<use value="official"/>
+					<type>
+						<coding>
+							<system value="M10id"/>
+							<code value="2f8bb0b5-6423-421d-8a65-27fede033bd8"/>
+						</coding>
+						<text value="M10id"/>
+					</type>
+					<value value="2f8bb0b5-6423-421d-8a65-27fede033bd8"/>
+				</identifier>
+				<status value="completed"/>
+				<medicationReference>
+					<reference value="43270239"/>
+					<display value="Medication"/>
+				</medicationReference>
+				<subject>
+					<reference value="urn:uuid:0d2accdb-d01f-4889-b262-216384a490f3"/>
+				</subject>
+				<quantity>
+					<value value="100.0"/>
+					<unit value="stykk"/>
+					<code value="stykk"/>
+				</quantity>
+				<whenHandedOver value="2020-06-03"/>
+				<dosageInstruction>
+					<text value="1 tablett daglig"/>
+				</dosageInstruction>
+			</MedicationDispense>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:0d2accdb-d01f-4889-b262-216384a490f3"/>
+		<resource>
+			<Patient>
+				<id value="0d2accdb-d01f-4889-b262-216384a490f3"/>
+				<meta>
+					<profile value="http://ehelse.no/fhir/StructureDefinition/sfm-Patient"/>
+				</meta>
+				<identifier>
+					<use value="official"/>
+					<system value="urn:oid:2.16.578.1.12.4.1.4.1"/>
+					<value value="22110056781"/>
+				</identifier>
+				<active value="true"/>
+				<name>
+					<family value="Iversen"/>
+					<given value="Marcus"/>
+				</name>
+				<gender value="male"/>
+				<address>
+					<use value="home"/>
+					<type value="physical"/>
+					<text value="Testveien 10"/>
+					<city value="Oslo"/>
+					<postalCode value="1234"/>
+				</address>
+			</Patient>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://basis-api.forskrivning.no/v1/Practitioner/12345"/>
+		<resource>
+			<Practitioner xmlns="http://hl7.org/fhir">
+				<id value="12345"/>
+				<meta>
+					<profile>http://ehelse.no/fhir/StructureDefinition/sfm-Practitioner</profile>
+				</meta>
+				<!-- Details omitted -->
+			</Practitioner>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://basis-api.forskrivning.no/v1/Organization/54321"/>
+		<resource>
+			<Organization xmlns="http://hl7.org/fhir">
+				<id value="12345"/>
+				<meta>
+					<profile>http://ehelse.no/fhir/StructureDefinition/sfm-Organization</profile>
+				</meta>
+				<!-- Details omitted -->
+			</Organization>
+		</resource>
+	</entry>
+</Bundle>
