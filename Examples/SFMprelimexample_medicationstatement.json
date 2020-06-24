@@ -1,6 +1,11 @@
 {
 	"resourceType": "MedicationStatement",
 	"id": "6281d110-b4e7-44bf-aca1-1a96d7e001a2",
+	"meta": {
+		"profile": [
+			"http://ehelse.no/fhir/StructureDefinition/sfm-MedicationStatement"
+		]
+	},
 	"extension": [
 		{
 			"extension": [
