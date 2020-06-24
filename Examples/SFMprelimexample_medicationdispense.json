@@ -1,71 +1,68 @@
 {
-	"fullUrl": "urn:uuid:2f8bb0b5-6423-421d-8a65-27fede033bd8",
-	"resource": {
-		"resourceType": "MedicationDispense",
-		"id": "2f8bb0b5-6423-421d-8a65-27fede033bd8",
-		"meta": {
-			 "profile": [
-            "http://ehelse.no/fhir/StructureDefinition/sfm-MedicationDispense"
-          ]
-		},
-		"extension": [
-			{
-				"extension": [
+	"resourceType": "MedicationDispense",
+	"id": "2f8bb0b5-6423-421d-8a65-27fede033bd8",
+	"meta": {
+		"profile": [
+			"http://ehelse.no/fhir/StructureDefinition/sfm-MedicationDispense"
+		]
+	},
+	"extension": [
+		{
+			"extension": [
+				{
+					"url": "cancelation",
+					"valueBoolean": false
+				},
+				{
+					"url": "concluded",
+					"valueBoolean": false
+				},
+				{
+					"url": "prescriptionid",
+					"valueString": "3c013a87-30e7-43a0-8a45-18e5adc6768a"
+				}
+			],
+			"url": "http://ehelse.no/fhir/StructureDefinition/sfm-dispenseinfo"
+		}
+	],
+	"identifier": [
+		{
+			"use": "official",
+			"type": {
+				"coding": [
 					{
-						"url": "cancelation",
-						"valueBoolean": false
-					},
-					{
-						"url": "concluded",
-						"valueBoolean": false
-					},
-					{
-						"url": "prescriptionid",
-						"valueString": "3c013a87-30e7-43a0-8a45-18e5adc6768a"
+						"system": "M10id",
+						"code": "2f8bb0b5-6423-421d-8a65-27fede033bd8"
 					}
 				],
-				"url": "http://ehelse.no/fhir/StructureDefinition/sfm-dispenseinfo"
-			}
-		],
-		"identifier": [
-			{
-				"use": "official",
-				"type": {
-					"coding": [
-						{
-							"system": "M10id",
-							"code": "2f8bb0b5-6423-421d-8a65-27fede033bd8"
-						}
-					],
-					"text": "M10id"
-				},
-				"value": "2f8bb0b5-6423-421d-8a65-27fede033bd8"
-			}
-		],
-		"status": "completed",
-		"medicationReference": {
-			"reference": "43270239",
-			"display": "Medication"
-		},
-		"subject": {
-			"reference": "0d2accdb-d01f-4889-b262-216384a490f3"
-		},
-		"authorizingPrescription": [
-			{
-				"reference": "6281d110-b4e7-44bf-aca1-1a96d7e001a2",
-				"display": "MedicationStatement"
-			}
-		],
-		"quantity": {
-			"value": 100.0,
-			"unit": "stykk",
-			"code": "stykk"
-		},
-		"whenHandedOver": "2020-06-03",
-		"dosageInstruction": [
-			{
-				"text": "1 tablett daglig"
-			}
-		]
-	}
+				"text": "M10id"
+			},
+			"value": "2f8bb0b5-6423-421d-8a65-27fede033bd8"
+		}
+	],
+	"status": "completed",
+	"medicationReference": {
+		"reference": "43270239",
+		"display": "Medication"
+	},
+	"subject": {
+		"reference": "0d2accdb-d01f-4889-b262-216384a490f3"
+	},
+	"authorizingPrescription": [
+		{
+			"reference": "6281d110-b4e7-44bf-aca1-1a96d7e001a2",
+			"display": "MedicationStatement"
+		}
+	],
+	"quantity": {
+		"value": 100.0,
+		"unit": "stykk",
+		"code": "stykk"
+	},
+	"whenHandedOver": "2020-06-03",
+	"dosageInstruction": [
+		{
+			"text": "1 tablett daglig"
+		}
+	]
 }
