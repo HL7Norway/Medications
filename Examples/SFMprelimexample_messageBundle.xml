@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Preliminary handmade example of message delivered from SFM to Helseplattformen -->
 <Bundle xmlns="http://hl7.org/fhir">
 	<id value="619226"/>
 	<meta>
@@ -121,7 +120,17 @@
 				<meta>
 					<profile>http://ehelse.no/fhir/StructureDefinition/sfm-Practitioner</profile>
 				</meta>
-				<!-- Details omitted -->
+				 <identifier>
+                    <use value="official" />
+                    <type>
+                        <coding>
+                            <system value="http://hl7.no/fhir/NamingSystem/HPR" />
+                            <code value="HPR-nummer" />
+                        </coding>
+                    </type>
+                    <system value="urn:oid:2.16.578.1.12.4.1.4.4" />
+                    <value value="001010038" />
+                </identifier>
 			</Practitioner>
 		</resource>
 	</entry>
@@ -133,7 +142,11 @@
 				<meta>
 					<profile>http://ehelse.no/fhir/StructureDefinition/sfm-Organization</profile>
 				</meta>
-				<!-- Details omitted -->
+				 <identifier>
+                    <use value="official" />
+                    <system value="urn:oid:2.16.578.1.12.4.1.4.101" />
+                    <value value="999999999" />
+                </identifier>
 			</Organization>
 		</resource>
 	</entry>
