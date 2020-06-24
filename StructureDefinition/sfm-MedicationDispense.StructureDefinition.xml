@@ -25,15 +25,6 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="MedicationDispense.extension:intervention">
-      <path value="MedicationDispense.extension" />
-      <sliceName value="intervention" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://example.org/fhir/StructureDefinition/sfm-Intervention" />
-      </type>
-      <mustSupport value="true" />
-    </element>
     <element id="MedicationDispense.extension:dispenseinfo">
       <path value="MedicationDispense.extension" />
       <sliceName value="dispenseinfo" />
@@ -81,6 +72,15 @@
     <element id="MedicationDispense.extension:dispenseinfo.extension:refparagraph">
       <path value="MedicationDispense.extension.extension" />
       <sliceName value="refparagraph" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationDispense.extension:intervention">
+      <path value="MedicationDispense.extension" />
+      <sliceName value="intervention" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://example.org/fhir/StructureDefinition/sfm-Intervention" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.identifier">
