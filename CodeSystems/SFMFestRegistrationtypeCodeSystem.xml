@@ -1,0 +1,30 @@
+<CodeSystem>
+  <id value="sfm-festregistrationtype.codesystem" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2020-06-25T00:00:00.000+00:00" />
+  </meta>
+  <url value="http://ehelse.no/fhir/CodeSystem/sfm-festregistrationtype" />
+  <version value="1.0.0" />
+  <name value="sfm-festregistrationtype.codesystem" />
+  <status value="active" />
+  <date value="2020-03-05T00:00:00.000+00:00" />
+  <publisher value="Direktoratet for e-helse" />
+  <content value="complete" />
+  <concept>
+    <code value="1" />
+    <display value="Legemiddelvirkestoff" />
+  </concept>
+  <concept>
+    <code value="2" />
+    <display value="Legemiddelmerkevare" />
+  </concept>
+  <concept>
+    <code value="3" />
+    <display value="Legemiddelpakning" />
+  </concept>
+  <concept>
+    <code value="4" />
+    <display value="Legemiddeldose" />
+  </concept>
+</CodeSystem>

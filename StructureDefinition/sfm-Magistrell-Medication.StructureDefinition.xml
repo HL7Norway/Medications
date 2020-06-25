@@ -102,10 +102,34 @@
       <path value="Medication.ingredient" />
       <mustSupport value="true" />
     </element>
+    <element id="Medication.ingredient.extension">
+      <path value="Medication.ingredient.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Medication.ingredient.extension:adqs">
+      <path value="Medication.ingredient.extension" />
+      <sliceName value="adqs" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-adqs" />
+      </type>
+      <mustSupport value="true" />
+    </element>
     <element id="Medication.ingredient.item[x]">
       <path value="Medication.ingredient.item[x]" />
       <type>
         <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Substance" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Medication" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Excipient" />
         <aggregation value="bundled" />
       </type>
     </element>

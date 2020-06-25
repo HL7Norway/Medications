@@ -232,18 +232,6 @@
       <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7426" />
     </element>
-    <element id="Extension.extension:speciality.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Extension.extension:speciality.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].text" />
-    </element>
     <element id="Extension.extension:dispatchrequest">
       <path value="Extension.extension" />
       <sliceName value="dispatchrequest" />
@@ -300,18 +288,6 @@
     <element id="Extension.extension:dispatchrequest.extension:metod.value[x].coding.system">
       <path value="Extension.extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7404" />
-    </element>
-    <element id="Extension.extension:dispatchrequest.extension:metod.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Extension.extension:dispatchrequest.extension:metod.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.value[x].text" />
     </element>
     <element id="Extension.extension:dispatchrequest.extension:organization">
       <path value="Extension.extension.extension" />
@@ -418,30 +394,6 @@
         <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-Address" />
       </type>
     </element>
-    <element id="Extension.extension:dispatchrequest.extension:address.value[x].extension:urbanDistrict">
-      <path value="Extension.extension.extension.value[x].extension" />
-      <sliceName value="urbanDistrict" />
-    </element>
-    <element id="Extension.extension:dispatchrequest.extension:address.value[x].extension:urbanDistrict.value[x].display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.value[x].extension.value[x].display" />
-    </element>
-    <element id="Extension.extension:dispatchrequest.extension:address.value[x].extension:propertyInformation">
-      <path value="Extension.extension.extension.value[x].extension" />
-      <sliceName value="propertyInformation" />
-    </element>
-    <element id="Extension.extension:dispatchrequest.extension:address.value[x].extension:propertyInformation.extension:municipality">
-      <path value="Extension.extension.extension.value[x].extension.extension" />
-      <sliceName value="municipality" />
-    </element>
-    <element id="Extension.extension:dispatchrequest.extension:address.value[x].extension:propertyInformation.extension:municipality.value[x].display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.value[x].extension.extension.value[x].display" />
-    </element>
     <element id="Extension.extension:dispatchrequest.url">
       <path value="Extension.extension.url" />
       <fixedUri value="dispatchrequest" />
@@ -523,18 +475,6 @@
       <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7402" />
     </element>
-    <element id="Extension.extension:itemgroup.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Extension.extension:itemgroup.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].text" />
-    </element>
     <element id="Extension.extension:numberofpackages">
       <path value="Extension.extension" />
       <sliceName value="numberofpackages" />
@@ -573,18 +513,6 @@
       <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7427" />
     </element>
-    <element id="Extension.extension:reimbursmentparagraph.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Extension.extension:reimbursmentparagraph.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].text" />
-    </element>
     <element id="Extension.extension:reimbursementcode">
       <path value="Extension.extension" />
       <sliceName value="reimbursementcode" />
@@ -601,18 +529,6 @@
       <type>
         <code value="CodeableConcept" />
       </type>
-    </element>
-    <element id="Extension.extension:reimbursementcode.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Extension.extension:reimbursementcode.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].text" />
     </element>
     <element id="Extension.extension:plomedicationmanagement">
       <path value="Extension.extension" />
@@ -664,12 +580,6 @@
       <type>
         <code value="Quantity" />
       </type>
-    </element>
-    <element id="Extension.extension:amount.value[x].unit">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].unit" />
     </element>
     <element id="Extension.extension:dssn">
       <path value="Extension.extension" />
@@ -723,18 +633,6 @@
     <element id="Extension.extension:rfstatus.extension:status.value[x].coding.system">
       <path value="Extension.extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7408" />
-    </element>
-    <element id="Extension.extension:rfstatus.extension:status.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Extension.extension:rfstatus.extension:status.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.value[x].text" />
     </element>
     <element id="Extension.extension:rfstatus.extension:nameDispenser">
       <path value="Extension.extension.extension" />
@@ -791,18 +689,6 @@
       <path value="Extension.extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7436" />
     </element>
-    <element id="Extension.extension:rfstatus.extension:statusSlvApplication.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Extension.extension:rfstatus.extension:statusSlvApplication.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.value[x].text" />
-    </element>
     <element id="Extension.extension:rfstatus.extension:recallStatus">
       <path value="Extension.extension.extension" />
       <sliceName value="recallStatus" />
@@ -839,18 +725,6 @@
     <element id="Extension.extension:rfstatus.extension:recallReason.value[x].coding.system">
       <path value="Extension.extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7500" />
-    </element>
-    <element id="Extension.extension:rfstatus.extension:recallReason.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Extension.extension:rfstatus.extension:recallReason.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.value[x].text" />
     </element>
     <element id="Extension.extension:rfstatus.url">
       <path value="Extension.extension.url" />
@@ -938,12 +812,6 @@
       <type>
         <code value="Quantity" />
       </type>
-    </element>
-    <element id="Extension.extension:dispencesummary.extension:packingsize.value[x].unit">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.value[x].unit" />
     </element>
     <element id="Extension.extension:dispencesummary.extension:noPackingTotal">
       <path value="Extension.extension.extension" />
@@ -1070,18 +938,6 @@
       <path value="Extension.extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7500" />
     </element>
-    <element id="Extension.extension:recallinfo.extension:recallcode.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Extension.extension:recallinfo.extension:recallcode.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.value[x].text" />
-    </element>
     <element id="Extension.extension:recallinfo.url">
       <path value="Extension.extension.url" />
       <fixedUri value="recallinfo" />
@@ -1179,18 +1035,6 @@
       <path value="Extension.extension.extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.9080" />
     </element>
-    <element id="Extension.extension:ereseptdosing.extension:dosingrule.extension:dosebasedon.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Extension.extension:ereseptdosing.extension:dosingrule.extension:dosebasedon.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.extension.value[x].text" />
-    </element>
     <element id="Extension.extension:ereseptdosing.extension:dosingrule.extension:text">
       <path value="Extension.extension.extension.extension" />
       <sliceName value="text" />
@@ -1245,12 +1089,6 @@
         <code value="Quantity" />
       </type>
     </element>
-    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:amount.value[x].unit">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.extension.value[x].unit" />
-    </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:interval">
       <path value="Extension.extension.extension.extension" />
       <sliceName value="interval" />
@@ -1269,18 +1107,6 @@
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:interval.value[x].coding.system">
       <path value="Extension.extension.extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.9088" />
-    </element>
-    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:interval.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:interval.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.extension.value[x].text" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:infusionspeed">
       <path value="Extension.extension.extension.extension" />
@@ -1313,12 +1139,6 @@
         <code value="Quantity" />
       </type>
     </element>
-    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:infusionspeed.extension:volum.value[x].unit">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.extension.extension.value[x].unit" />
-    </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:infusionspeed.extension:timeunit">
       <path value="Extension.extension.extension.extension.extension" />
       <sliceName value="timeunit" />
@@ -1338,18 +1158,6 @@
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:infusionspeed.extension:timeunit.value[x].coding.system">
       <path value="Extension.extension.extension.extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.9088" />
-    </element>
-    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:infusionspeed.extension:timeunit.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:infusionspeed.extension:timeunit.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.extension.extension.value[x].text" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:infusionspeed.url">
       <path value="Extension.extension.extension.extension.url" />
@@ -1392,18 +1200,6 @@
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:timerange.value[x].coding.system">
       <path value="Extension.extension.extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.8325" />
-    </element>
-    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:timerange.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:timerange.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.extension.value[x].text" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:accurate">
       <path value="Extension.extension.extension.extension" />
@@ -1453,18 +1249,6 @@
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence.extension:weekdays.value[x].coding.system">
       <path value="Extension.extension.extension.extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.9082" />
-    </element>
-    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence.extension:weekdays.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence.extension:weekdays.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.extension.extension.value[x].text" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence.extension:dayson">
       <path value="Extension.extension.extension.extension.extension" />
@@ -1607,6 +1391,64 @@
     <element id="Extension.extension:slvApplication.value[x]">
       <path value="Extension.extension.value[x]" />
       <max value="0" />
+    </element>
+    <element id="Extension.extension:lastchanged">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension" />
+      <sliceName value="lastchanged" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:lastchanged.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="lastchanged" />
+    </element>
+    <element id="Extension.extension:lastchanged.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="Extension.extension:typeresept">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension" />
+      <sliceName value="typeresept" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:typeresept.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="typeresept" />
+    </element>
+    <element id="Extension.extension:typeresept.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.extension:typeresept.value[x].coding.system">
+      <path value="Extension.extension.value[x].coding.system" />
+      <min value="1" />
+      <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.7491" />
+    </element>
+    <element id="Extension.extension:typeresept.value[x].coding.code">
+      <path value="Extension.extension.value[x].coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:typeresept.value[x].coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].coding.display" />
+      <min value="1" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />

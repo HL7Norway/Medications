@@ -71,7 +71,6 @@
     <element id="Extension.extension:administrationway">
       <path value="Extension.extension" />
       <sliceName value="administrationway" />
-      <min value="1" />
     </element>
     <element id="Extension.extension:administrationway.url">
       <path value="Extension.extension.url" />
@@ -86,18 +85,6 @@
     <element id="Extension.extension:administrationway.value[x].coding.system">
       <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7477" />
-    </element>
-    <element id="Extension.extension:administrationway.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Extension.extension:administrationway.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].text" />
     </element>
     <element id="Extension.extension:maycrush">
       <path value="Extension.extension" />
@@ -118,18 +105,6 @@
       <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.1103" />
     </element>
-    <element id="Extension.extension:maycrush.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Extension.extension:maycrush.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].text" />
-    </element>
     <element id="Extension.extension:mayopen">
       <path value="Extension.extension" />
       <sliceName value="mayopen" />
@@ -149,18 +124,6 @@
       <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.1103" />
     </element>
-    <element id="Extension.extension:mayopen.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Extension.extension:mayopen.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].text" />
-    </element>
     <element id="Extension.extension:devidable">
       <path value="Extension.extension" />
       <sliceName value="devidable" />
@@ -178,18 +141,6 @@
     <element id="Extension.extension:devidable.value[x].coding.system">
       <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7472" />
-    </element>
-    <element id="Extension.extension:devidable.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Extension.extension:devidable.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].text" />
     </element>
     <element id="Extension.extension:taste">
       <path value="Extension.extension" />
@@ -209,18 +160,6 @@
     <element id="Extension.extension:taste.value[x].coding.system">
       <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7504" />
-    </element>
-    <element id="Extension.extension:taste.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Extension.extension:taste.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].text" />
     </element>
     <element id="Extension.extension:warningtriangle">
       <path value="Extension.extension" />
@@ -256,18 +195,6 @@
       <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7447" />
     </element>
-    <element id="Extension.extension:vaccinationstandard.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Extension.extension:vaccinationstandard.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].text" />
-    </element>
     <element id="Extension.extension:producer">
       <path value="Extension.extension" />
       <sliceName value="producer" />
@@ -286,7 +213,8 @@
     <element id="Extension.extension:name">
       <path value="Extension.extension" />
       <sliceName value="name" />
-      <min value="1" />
+      <short value="Name describing medication" />
+      <definition value="Used in M1 for merkevare." />
       <max value="1" />
     </element>
     <element id="Extension.extension:name.url">
@@ -298,6 +226,157 @@
       <type>
         <code value="string" />
       </type>
+    </element>
+    <element id="Extension.extension:registreringstype">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension" />
+      <sliceName value="registreringstype" />
+      <short value="type of FEST registration" />
+      <definition value="Identifies what catalogue used in FEST to represent medication." />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:registreringstype.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="registreringstype" />
+    </element>
+    <element id="Extension.extension:registreringstype.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.extension:registreringstype.value[x].coding.system">
+      <path value="Extension.extension.value[x].coding.system" />
+      <min value="1" />
+      <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-festregistrationtype" />
+    </element>
+    <element id="Extension.extension:registreringstype.value[x].coding.code">
+      <path value="Extension.extension.value[x].coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:registreringstype.value[x].coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].coding.display" />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:packinginfoprescription">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension" />
+      <sliceName value="packinginfoprescription" />
+      <short value="Packing information" />
+      <definition value="used to describe packing. Used only when prescribing on LegemiddelPakning." />
+    </element>
+    <element id="Extension.extension:packinginfoprescription.extension">
+      <path value="Extension.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:packinginfoprescription.extension:name">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension.extension" />
+      <sliceName value="name" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:packinginfoprescription.extension:name.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="name" />
+    </element>
+    <element id="Extension.extension:packinginfoprescription.extension:name.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:packinginfoprescription.extension:packingsize">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension.extension" />
+      <sliceName value="packingsize" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:packinginfoprescription.extension:packingsize.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="packingsize" />
+    </element>
+    <element id="Extension.extension:packinginfoprescription.extension:packingsize.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:packinginfoprescription.extension:packingunit">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension.extension" />
+      <sliceName value="packingunit" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:packinginfoprescription.extension:packingunit.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="packingunit" />
+    </element>
+    <element id="Extension.extension:packinginfoprescription.extension:packingunit.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.extension:packinginfoprescription.extension:packingunit.value[x].coding.system">
+      <path value="Extension.extension.extension.value[x].coding.system" />
+      <min value="1" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7452" />
+    </element>
+    <element id="Extension.extension:packinginfoprescription.extension:packingunit.value[x].coding.code">
+      <path value="Extension.extension.extension.value[x].coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:packinginfoprescription.extension:packingunit.value[x].coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.extension.value[x].coding.display" />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:packinginfoprescription.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="packinginfoprescription" />
+    </element>
+    <element id="Extension.extension:packinginfoprescription.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <max value="0" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
