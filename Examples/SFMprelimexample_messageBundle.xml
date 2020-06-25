@@ -116,9 +116,9 @@
 		<fullUrl value="urn:uuid:32ab3cb5-24c7-47a6-b024-95b918b6888a"/>
 		<resource>
 			<PractitionerRole xmlns="http://hl7.org/fhir">
-				<practitoner>
+				<practitioner>
 					<reference value="http://basis-api.forskrivning.no/v1/Practitioner/12345"/>
-				</practitoner>
+				</practitioner>
 				<organization>
 					<reference value="http://basis-api.forskrivning.no/v1/Organization/54321"/>
 				</organization>
