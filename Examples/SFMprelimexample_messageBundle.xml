@@ -22,10 +22,10 @@
 					<display value="Utleveringsrapport fastlege"/>
 				</eventCoding>
 				<destination>
-					<reference value="http://basis-api.forskrivning.no/v1/Practitioner/12345"/>
-				</destination>
-				<destination>
-					<reference value="http://basis-api.forskrivning.no/v1/Organization/54321"/>
+					<endpoint value="https://helseplattformen.no/$processmessage"/>
+					<receiver>
+						<reference value="urn:uuid:32ab3cb5-24c7-47a6-b024-95b918b6888a"/>
+					</receiver>
 				</destination>
 				<focus>
 					<reference value="urn:uuid:267b18ce-3d37-4581-9baa-6fada338038b"/>
@@ -113,6 +113,19 @@
 		</resource>
 	</entry>
 	<entry>
+		<fullUrl value="urn:uuid:32ab3cb5-24c7-47a6-b024-95b918b6888a"/>
+		<resource>
+			<PractitionerRole xmlns="http://hl7.org/fhir">
+				<practitioner>
+					<reference value="http://basis-api.forskrivning.no/v1/Practitioner/12345"/>
+				</practitioner>
+				<organization>
+					<reference value="http://basis-api.forskrivning.no/v1/Organization/54321"/>
+				</organization>
+			</PractitionerRole>
+		</resource>
+	</entry>
+	<entry>
 		<fullUrl value="http://basis-api.forskrivning.no/v1/Practitioner/12345"/>
 		<resource>
 			<Practitioner xmlns="http://hl7.org/fhir">
@@ -120,17 +133,17 @@
 				<meta>
 					<profile>http://ehelse.no/fhir/StructureDefinition/sfm-Practitioner</profile>
 				</meta>
-				 <identifier>
-                    <use value="official" />
-                    <type>
-                        <coding>
-                            <system value="http://hl7.no/fhir/NamingSystem/HPR" />
-                            <code value="HPR-nummer" />
-                        </coding>
-                    </type>
-                    <system value="urn:oid:2.16.578.1.12.4.1.4.4" />
-                    <value value="001010038" />
-                </identifier>
+				<identifier>
+					<use value="official"/>
+					<type>
+						<coding>
+							<system value="http://hl7.no/fhir/NamingSystem/HPR"/>
+							<code value="HPR-nummer"/>
+						</coding>
+					</type>
+					<system value="urn:oid:2.16.578.1.12.4.1.4.4"/>
+					<value value="001010038"/>
+				</identifier>
 			</Practitioner>
 		</resource>
 	</entry>
@@ -142,11 +155,11 @@
 				<meta>
 					<profile>http://ehelse.no/fhir/StructureDefinition/sfm-Organization</profile>
 				</meta>
-				 <identifier>
-                    <use value="official" />
-                    <system value="urn:oid:2.16.578.1.12.4.1.4.101" />
-                    <value value="999999999" />
-                </identifier>
+				<identifier>
+					<use value="official"/>
+					<system value="urn:oid:2.16.578.1.12.4.1.4.101"/>
+					<value value="999999999"/>
+				</identifier>
 			</Organization>
 		</resource>
 	</entry>
