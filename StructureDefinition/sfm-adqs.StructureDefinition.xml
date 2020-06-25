@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-adqs" />
+  <version value="1.0" />
   <name value="SfmAdqs" />
+  <title value="sfm-adqs" />
   <status value="active" />
   <date value="2020-06-25" />
   <fhirVersion value="4.0.0" />
