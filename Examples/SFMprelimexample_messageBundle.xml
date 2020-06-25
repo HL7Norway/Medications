@@ -22,10 +22,10 @@
 					<display value="Utleveringsrapport fastlege"/>
 				</eventCoding>
 				<destination>
-					<reference value="http://basis-api.forskrivning.no/v1/Practitioner/12345"/>
-				</destination>
-				<destination>
-					<reference value="http://basis-api.forskrivning.no/v1/Organization/54321"/>
+					<endpoint value="https://helseplattformen.no/$processmessage" />
+					<receiver>
+						<reference value="http://basis-api.forskrivning.no/v1/Organization/54321"/>
+					</receiver>
 				</destination>
 				<focus>
 					<reference value="urn:uuid:267b18ce-3d37-4581-9baa-6fada338038b"/>
