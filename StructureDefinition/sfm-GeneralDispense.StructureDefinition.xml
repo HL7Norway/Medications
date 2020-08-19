@@ -172,6 +172,11 @@
       <path value="Basic.author" />
       <short value="Who dispensed product" />
       <definition value="Indicates who was responsible for dispensing product to customer." />
+      <type>
+        <code value="Reference" />
+        <aggregation value="contained" />
+        <aggregation value="bundled" />
+      </type>
       <mustSupport value="true" />
     </element>
   </differential>

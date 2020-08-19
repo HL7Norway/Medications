@@ -107,6 +107,24 @@
       </extension>
       <path value="Basic.identifier.type.text" />
     </element>
+    <element id="Basic.identifier.assigner.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Basic.identifier.assigner.identifier.type.coding.display" />
+    </element>
+    <element id="Basic.identifier.assigner.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Basic.identifier.assigner.identifier.type.text" />
+    </element>
+    <element id="Basic.identifier.assigner.identifier.assigner.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Basic.identifier.assigner.identifier.assigner.display" />
+    </element>
     <element id="Basic.identifier.assigner.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
@@ -141,6 +159,13 @@
     </element>
     <element id="Basic.subject">
       <path value="Basic.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Patient" />
+        <aggregation value="contained" />
+        <aggregation value="bundled" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="Basic.subject.identifier.type.coding.display">
@@ -155,6 +180,24 @@
       </extension>
       <path value="Basic.subject.identifier.type.text" />
     </element>
+    <element id="Basic.subject.identifier.assigner.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Basic.subject.identifier.assigner.identifier.type.coding.display" />
+    </element>
+    <element id="Basic.subject.identifier.assigner.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Basic.subject.identifier.assigner.identifier.type.text" />
+    </element>
+    <element id="Basic.subject.identifier.assigner.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Basic.subject.identifier.assigner.display" />
+    </element>
     <element id="Basic.subject.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
@@ -163,6 +206,23 @@
     </element>
     <element id="Basic.created">
       <path value="Basic.created" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Basic.author">
+      <path value="Basic.author" />
+      <short value="Who recalled" />
+      <definition value="Indicates who recalled the prescription" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-PractitionerRole" />
+        <aggregation value="contained" />
+        <aggregation value="bundled" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="Basic.author.identifier.type.coding.display">
@@ -176,6 +236,24 @@
         <valueBoolean value="true" />
       </extension>
       <path value="Basic.author.identifier.type.text" />
+    </element>
+    <element id="Basic.author.identifier.assigner.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Basic.author.identifier.assigner.identifier.type.coding.display" />
+    </element>
+    <element id="Basic.author.identifier.assigner.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Basic.author.identifier.assigner.identifier.type.text" />
+    </element>
+    <element id="Basic.author.identifier.assigner.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Basic.author.identifier.assigner.display" />
     </element>
     <element id="Basic.author.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">

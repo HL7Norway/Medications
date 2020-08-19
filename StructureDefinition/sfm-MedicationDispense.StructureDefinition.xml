@@ -117,6 +117,10 @@
       <path value="MedicationDispense.performer" />
       <mustSupport value="true" />
     </element>
+    <element id="MedicationDispense.performer.actor">
+      <path value="MedicationDispense.performer.actor" />
+      <definition value="The pharmacy that delivered dispensed the medication. Use sfm-Organization" />
+    </element>
     <element id="MedicationDispense.authorizingPrescription">
       <path value="MedicationDispense.authorizingPrescription" />
       <type>
