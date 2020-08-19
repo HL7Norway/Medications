@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sfm-BandaPrescription" />
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-BandaPrescription" />
-  <version value="2.1" />
+  <version value="2.2" />
   <name value="SfmBandaPrescription" />
   <title value="sfm-BandaPrescription" />
   <status value="active" />
-  <date value="2020-06-08" />
+  <date value="2020-08-19" />
   <description value="Banda prescription used in SFM, based on Basic." />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
@@ -15,18 +15,6 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Basic" />
   <derivation value="constraint" />
   <differential>
-    <element id="Basic.meta.security.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.meta.security.display" />
-    </element>
-    <element id="Basic.meta.tag.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.meta.tag.display" />
-    </element>
     <element id="Basic.extension">
       <path value="Basic.extension" />
       <slicing>
@@ -37,9 +25,9 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Basic.extension:reseptdetails">
+    <element id="Basic.extension:reseptinfo">
       <path value="Basic.extension" />
-      <sliceName value="reseptdetails" />
+      <sliceName value="reseptinfo" />
       <min value="1" />
       <max value="1" />
       <type>
@@ -48,472 +36,184 @@
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptdetails.extension:reseptdate">
+    <element id="Basic.extension:reseptinfo.extension:reseptdate">
       <path value="Basic.extension.extension" />
       <sliceName value="reseptdate" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptdetails.extension:expirationdate">
+    <element id="Basic.extension:reseptinfo.extension:expirationdate">
       <path value="Basic.extension.extension" />
       <sliceName value="expirationdate" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptdetails.extension:festUpdate">
+    <element id="Basic.extension:reseptinfo.extension:festUpdate">
       <path value="Basic.extension.extension" />
       <sliceName value="festUpdate" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptdetails.extension:helfoapplication">
+    <element id="Basic.extension:reseptinfo.extension:helfoapplication">
       <path value="Basic.extension.extension" />
       <sliceName value="helfoapplication" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptdetails.extension:guardiantransparencyreservation">
+    <element id="Basic.extension:reseptinfo.extension:guardiantransparencyreservation">
       <path value="Basic.extension.extension" />
       <sliceName value="guardiantransparencyreservation" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptdetails.extension:ownpractice">
+    <element id="Basic.extension:reseptinfo.extension:ownpractice">
       <path value="Basic.extension.extension" />
       <sliceName value="ownpractice" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptdetails.extension:indoctorsname">
+    <element id="Basic.extension:reseptinfo.extension:indoctorsname">
       <path value="Basic.extension.extension" />
       <sliceName value="indoctorsname" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptdetails.extension:refnum">
+    <element id="Basic.extension:reseptinfo.extension:refnum">
       <path value="Basic.extension.extension" />
       <sliceName value="refnum" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptdetails.extension:speciality">
-      <path value="Basic.extension.extension" />
-      <sliceName value="speciality" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:speciality.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:speciality.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.extension.extension.value[x].text" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:dispatchrequest">
+    <element id="Basic.extension:reseptinfo.extension:dispatchrequest">
       <path value="Basic.extension.extension" />
       <sliceName value="dispatchrequest" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptdetails.extension:dispatchrequest.extension:condition">
+    <element id="Basic.extension:reseptinfo.extension:dispatchrequest.extension:condition">
       <path value="Basic.extension.extension.extension" />
       <sliceName value="condition" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptdetails.extension:dispatchrequest.extension:metod">
+    <element id="Basic.extension:reseptinfo.extension:dispatchrequest.extension:metod">
       <path value="Basic.extension.extension.extension" />
       <sliceName value="metod" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptdetails.extension:dispatchrequest.extension:metod.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.extension.extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:dispatchrequest.extension:metod.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.extension.extension.extension.value[x].text" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:dispatchrequest.extension:organization">
+    <element id="Basic.extension:reseptinfo.extension:dispatchrequest.extension:organization">
       <path value="Basic.extension.extension.extension" />
       <sliceName value="organization" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptdetails.extension:dispatchrequest.extension:contactperson">
+    <element id="Basic.extension:reseptinfo.extension:dispatchrequest.extension:contactperson">
       <path value="Basic.extension.extension.extension" />
       <sliceName value="contactperson" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptdetails.extension:dispatchrequest.extension:note">
+    <element id="Basic.extension:reseptinfo.extension:dispatchrequest.extension:note">
       <path value="Basic.extension.extension.extension" />
       <sliceName value="note" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptdetails.extension:dispatchrequest.extension:orgnum">
+    <element id="Basic.extension:reseptinfo.extension:dispatchrequest.extension:orgnum">
       <path value="Basic.extension.extension.extension" />
       <sliceName value="orgnum" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptdetails.extension:dispatchrequest.extension:orgname">
+    <element id="Basic.extension:reseptinfo.extension:dispatchrequest.extension:orgname">
       <path value="Basic.extension.extension.extension" />
       <sliceName value="orgname" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptdetails.extension:dispatchrequest.extension:address">
+    <element id="Basic.extension:reseptinfo.extension:dispatchrequest.extension:address">
       <path value="Basic.extension.extension.extension" />
       <sliceName value="address" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptdetails.extension:dispatchrequest.extension:address.value[x].extension:urbanDistrict">
-      <path value="Basic.extension.extension.extension.value[x].extension" />
-      <sliceName value="urbanDistrict" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:dispatchrequest.extension:address.value[x].extension:urbanDistrict.value[x].display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.extension.extension.extension.value[x].extension.value[x].display" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:dispatchrequest.extension:address.value[x].extension:propertyInformation">
-      <path value="Basic.extension.extension.extension.value[x].extension" />
-      <sliceName value="propertyInformation" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:dispatchrequest.extension:address.value[x].extension:propertyInformation.extension:municipality">
-      <path value="Basic.extension.extension.extension.value[x].extension.extension" />
-      <sliceName value="municipality" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:dispatchrequest.extension:address.value[x].extension:propertyInformation.extension:municipality.value[x].display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.extension.extension.extension.value[x].extension.extension.value[x].display" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:earliestdispence">
+    <element id="Basic.extension:reseptinfo.extension:earliestdispence">
       <path value="Basic.extension.extension" />
       <sliceName value="earliestdispence" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptdetails.extension:dischargedhospital">
+    <element id="Basic.extension:reseptinfo.extension:dischargedhospital">
       <path value="Basic.extension.extension" />
       <sliceName value="dischargedhospital" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptdetails.extension:lockedresept">
+    <element id="Basic.extension:reseptinfo.extension:lockedresept">
       <path value="Basic.extension.extension" />
       <sliceName value="lockedresept" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptdetails.extension:itemgroup">
+    <element id="Basic.extension:reseptinfo.extension:itemgroup">
       <path value="Basic.extension.extension" />
       <sliceName value="itemgroup" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptdetails.extension:itemgroup.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:itemgroup.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.extension.extension.value[x].text" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:reimbursmentparagraph">
+    <element id="Basic.extension:reseptinfo.extension:reimbursmentparagraph">
       <path value="Basic.extension.extension" />
       <sliceName value="reimbursmentparagraph" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptdetails.extension:reimbursmentparagraph.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:reimbursmentparagraph.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.extension.extension.value[x].text" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:reimbursementcode">
-      <path value="Basic.extension.extension" />
-      <sliceName value="reimbursementcode" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:reimbursementcode.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:reimbursementcode.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.extension.extension.value[x].text" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:amount">
-      <path value="Basic.extension.extension" />
-      <sliceName value="amount" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:amount.value[x].unit">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.extension.extension.value[x].unit" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:rfstatus">
+    <element id="Basic.extension:reseptinfo.extension:rfstatus">
       <path value="Basic.extension.extension" />
       <sliceName value="rfstatus" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptdetails.extension:rfstatus.extension:status">
-      <path value="Basic.extension.extension.extension" />
-      <sliceName value="status" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:rfstatus.extension:status.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.extension.extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:rfstatus.extension:status.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.extension.extension.extension.value[x].text" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:rfstatus.extension:statusSlvApplication">
-      <path value="Basic.extension.extension.extension" />
-      <sliceName value="statusSlvApplication" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:rfstatus.extension:statusSlvApplication.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.extension.extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:rfstatus.extension:statusSlvApplication.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.extension.extension.extension.value[x].text" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:rfstatus.extension:recallReason">
-      <path value="Basic.extension.extension.extension" />
-      <sliceName value="recallReason" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:rfstatus.extension:recallReason.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.extension.extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:rfstatus.extension:recallReason.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.extension.extension.extension.value[x].text" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:note">
+    <element id="Basic.extension:reseptinfo.extension:note">
       <path value="Basic.extension.extension" />
       <sliceName value="note" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptdetails.extension:dispencesummary">
+    <element id="Basic.extension:reseptinfo.extension:dispencesummary">
       <path value="Basic.extension.extension" />
       <sliceName value="dispencesummary" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptdetails.extension:dispencesummary.extension:varenummer">
+    <element id="Basic.extension:reseptinfo.extension:dispencesummary.extension:varenummer">
       <path value="Basic.extension.extension.extension" />
       <sliceName value="varenummer" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptdetails.extension:dispencesummary.extension:nameformstrenght">
+    <element id="Basic.extension:reseptinfo.extension:dispencesummary.extension:nameformstrenght">
       <path value="Basic.extension.extension.extension" />
       <sliceName value="nameformstrenght" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptdetails.extension:dispencesummary.extension:packingsize">
+    <element id="Basic.extension:reseptinfo.extension:dispencesummary.extension:packingsize">
       <path value="Basic.extension.extension.extension" />
       <sliceName value="packingsize" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptdetails.extension:dispencesummary.extension:packingsize.value[x].unit">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.extension.extension.extension.value[x].unit" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:dispencesummary.extension:noPackingTotal">
+    <element id="Basic.extension:reseptinfo.extension:dispencesummary.extension:noPackingTotal">
       <path value="Basic.extension.extension.extension" />
       <sliceName value="noPackingTotal" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptdetails.extension:dispencesummary.extension:noPackingLast">
+    <element id="Basic.extension:reseptinfo.extension:dispencesummary.extension:noPackingLast">
       <path value="Basic.extension.extension.extension" />
       <sliceName value="noPackingLast" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptdetails.extension:dispencesummary.extension:lastdeliverydate">
+    <element id="Basic.extension:reseptinfo.extension:dispencesummary.extension:lastdeliverydate">
       <path value="Basic.extension.extension.extension" />
       <sliceName value="lastdeliverydate" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptdetails.extension:recallinfo">
+    <element id="Basic.extension:reseptinfo.extension:recallinfo">
       <path value="Basic.extension.extension" />
       <sliceName value="recallinfo" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptdetails.extension:recallinfo.extension:recallId">
+    <element id="Basic.extension:reseptinfo.extension:recallinfo.extension:recallId">
       <path value="Basic.extension.extension.extension" />
       <sliceName value="recallId" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptdetails.extension:recallinfo.extension:text">
+    <element id="Basic.extension:reseptinfo.extension:recallinfo.extension:text">
       <path value="Basic.extension.extension.extension" />
       <sliceName value="text" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptdetails.extension:recallinfo.extension:recallcode">
+    <element id="Basic.extension:reseptinfo.extension:recallinfo.extension:recallcode">
       <path value="Basic.extension.extension.extension" />
       <sliceName value="recallcode" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptdetails.extension:recallinfo.extension:recallcode.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.extension.extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:recallinfo.extension:recallcode.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.extension.extension.extension.value[x].text" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:ereseptdosing">
-      <path value="Basic.extension.extension" />
-      <sliceName value="ereseptdosing" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:ereseptdosing.extension:dosingrule">
-      <path value="Basic.extension.extension.extension" />
-      <sliceName value="dosingrule" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:ereseptdosing.extension:dosingrule.extension:dosebasedon">
-      <path value="Basic.extension.extension.extension.extension" />
-      <sliceName value="dosebasedon" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:ereseptdosing.extension:dosingrule.extension:dosebasedon.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.extension.extension.extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:ereseptdosing.extension:dosingrule.extension:dosebasedon.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.extension.extension.extension.extension.value[x].text" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:ereseptdosing.extension:repeatingdosage">
-      <path value="Basic.extension.extension.extension" />
-      <sliceName value="repeatingdosage" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:ereseptdosing.extension:repeatingdosage.extension:amount">
-      <path value="Basic.extension.extension.extension.extension" />
-      <sliceName value="amount" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:ereseptdosing.extension:repeatingdosage.extension:amount.value[x].unit">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.extension.extension.extension.extension.value[x].unit" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:ereseptdosing.extension:repeatingdosage.extension:interval">
-      <path value="Basic.extension.extension.extension.extension" />
-      <sliceName value="interval" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:ereseptdosing.extension:repeatingdosage.extension:interval.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.extension.extension.extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:ereseptdosing.extension:repeatingdosage.extension:interval.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.extension.extension.extension.extension.value[x].text" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:ereseptdosing.extension:repeatingdosage.extension:infusionspeed">
-      <path value="Basic.extension.extension.extension.extension" />
-      <sliceName value="infusionspeed" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:ereseptdosing.extension:repeatingdosage.extension:infusionspeed.extension:volum">
-      <path value="Basic.extension.extension.extension.extension.extension" />
-      <sliceName value="volum" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:ereseptdosing.extension:repeatingdosage.extension:infusionspeed.extension:volum.value[x].unit">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.extension.extension.extension.extension.extension.value[x].unit" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:ereseptdosing.extension:repeatingdosage.extension:infusionspeed.extension:timeunit">
-      <path value="Basic.extension.extension.extension.extension.extension" />
-      <sliceName value="timeunit" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:ereseptdosing.extension:repeatingdosage.extension:infusionspeed.extension:timeunit.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.extension.extension.extension.extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:ereseptdosing.extension:repeatingdosage.extension:infusionspeed.extension:timeunit.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.extension.extension.extension.extension.extension.value[x].text" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:ereseptdosing.extension:repeatingdosage.extension:timerange">
-      <path value="Basic.extension.extension.extension.extension" />
-      <sliceName value="timerange" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:ereseptdosing.extension:repeatingdosage.extension:timerange.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.extension.extension.extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:ereseptdosing.extension:repeatingdosage.extension:timerange.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.extension.extension.extension.extension.value[x].text" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence">
-      <path value="Basic.extension.extension.extension.extension" />
-      <sliceName value="dosingsequence" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence.extension:weekdays">
-      <path value="Basic.extension.extension.extension.extension.extension" />
-      <sliceName value="weekdays" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence.extension:weekdays.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.extension.extension.extension.extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Basic.extension:reseptdetails.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence.extension:weekdays.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.extension.extension.extension.extension.extension.value[x].text" />
-    </element>
-    <element id="Basic.extension:reseptInfo">
+    <element id="Basic.extension:reseptdetails">
       <path value="Basic.extension" />
-      <sliceName value="reseptInfo" />
+      <sliceName value="reseptdetails" />
       <min value="1" />
       <max value="1" />
       <type>
@@ -522,45 +222,15 @@
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptInfo.extension:productgroup">
+    <element id="Basic.extension:reseptdetails.extension:productgroup">
       <path value="Basic.extension.extension" />
       <sliceName value="productgroup" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptInfo.extension:productgroup.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Basic.extension:reseptInfo.extension:productgroup.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.extension.extension.value[x].text" />
-    </element>
-    <element id="Basic.extension:reseptInfo.extension:productnumber">
+    <element id="Basic.extension:reseptdetails.extension:productnumber">
       <path value="Basic.extension.extension" />
       <sliceName value="productnumber" />
       <mustSupport value="true" />
-    </element>
-    <element id="Basic.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.identifier.type.coding.display" />
-    </element>
-    <element id="Basic.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.identifier.type.text" />
-    </element>
-    <element id="Basic.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.identifier.assigner.display" />
     </element>
     <element id="Basic.code">
       <path value="Basic.code" />
@@ -573,53 +243,33 @@
       <path value="Basic.code.coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7402" />
     </element>
-    <element id="Basic.code.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.code.coding.display" />
+    <element id="Basic.subject">
+      <path value="Basic.subject" />
+      <short value="Identifies the patient" />
+      <definition value="sfm-Patient resource to be used." />
+      <type>
+        <code value="Reference" />
+        <aggregation value="contained" />
+        <aggregation value="bundled" />
+      </type>
+      <mustSupport value="true" />
     </element>
-    <element id="Basic.code.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.code.text" />
-    </element>
-    <element id="Basic.subject.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.subject.identifier.type.coding.display" />
-    </element>
-    <element id="Basic.subject.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.subject.identifier.type.text" />
-    </element>
-    <element id="Basic.subject.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.subject.display" />
-    </element>
-    <element id="Basic.author.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.author.identifier.type.coding.display" />
-    </element>
-    <element id="Basic.author.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.author.identifier.type.text" />
-    </element>
-    <element id="Basic.author.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.author.display" />
+    <element id="Basic.author">
+      <path value="Basic.author" />
+      <short value="Identifies the prescriber" />
+      <definition value="Prescriber and organization are identified using PractitionerRole." />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-PractitionerRole" />
+        <aggregation value="contained" />
+        <aggregation value="bundled" />
+      </type>
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>

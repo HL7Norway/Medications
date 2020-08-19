@@ -6,7 +6,7 @@
   <name value="SfmMedicationDispense" />
   <title value="sfm-MedicationDispense" />
   <status value="active" />
-  <date value="2020-06-08" />
+  <date value="2020-08-19" />
   <description value="Medication dispence information" />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
@@ -104,6 +104,17 @@
     </element>
     <element id="MedicationDispense.subject">
       <path value="MedicationDispense.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Patient" />
+        <aggregation value="contained" />
+        <aggregation value="bundled" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationDispense.performer">
+      <path value="MedicationDispense.performer" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.authorizingPrescription">

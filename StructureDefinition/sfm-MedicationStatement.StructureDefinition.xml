@@ -6,11 +6,11 @@
     <lastUpdated value="2018-10-03T13:58:11.827+00:00" />
   </meta>
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-MedicationStatement" />
-  <version value="2.2" />
+  <version value="2.3" />
   <name value="SfmMedicationStatement" />
   <title value="sfm-MedicationStatement" />
   <status value="active" />
-  <date value="2020-06-08" />
+  <date value="2020-08-19" />
   <description value="SFM MedicationStatement derived from no-basis-MedicationStatement" />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
@@ -478,12 +478,14 @@
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.medication[x]:medicationReference">
-      <path value="MedicationStatement.medication[x]" />
+      <path value="MedicationStatement.medicationReference" />
       <sliceName value="medicationReference" />
+      <definition value="Identifies the medication being administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code that identifies the medication from a known list of medications. sfm-Medication and sfm-Magistrell-Medication should be used." />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Medication" />
         <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Magistrell-Medication" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Medication" />
         <aggregation value="contained" />
         <aggregation value="bundled" />
       </type>
@@ -491,8 +493,10 @@
     </element>
     <element id="MedicationStatement.subject">
       <path value="MedicationStatement.subject" />
+      <definition value="The person who is/was taking the medication. sfm-Patient should be used." />
       <type>
         <code value="Reference" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Patient" />
         <aggregation value="contained" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />

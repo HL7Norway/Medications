@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sfm-GeneralDispense" />
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-GeneralDispense" />
-  <version value="1.0" />
+  <version value="1.1" />
   <name value="SfmGeneralDispense" />
   <title value="sfm-GeneralDispense" />
   <status value="active" />
-  <date value="2020-06-08" />
+  <date value="2020-08-19" />
   <description value="Dispence for nutrition and material." />
   <fhirVersion value="4.0.0" />
   <mapping>
@@ -161,6 +161,18 @@
     <element id="Basic.code.coding.system">
       <path value="Basic.code.coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.8279" />
+    </element>
+    <element id="Basic.subject">
+      <path value="Basic.subject" />
+      <short value="Identifies the patient" />
+      <definition value="Identifies the patient that is the &quot;focus&quot; of this resource." />
+      <mustSupport value="true" />
+    </element>
+    <element id="Basic.author">
+      <path value="Basic.author" />
+      <short value="Who dispensed product" />
+      <definition value="Indicates who was responsible for dispensing product to customer." />
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>

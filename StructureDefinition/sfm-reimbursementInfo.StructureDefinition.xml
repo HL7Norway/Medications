@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-reimbursementInfo" />
+  <version value="1.0" />
+  <name value="SfmReimbursementInfo" />
+  <title value="sfm-reimbursmentInfo" />
+  <status value="draft" />
+  <date value="2020-08-14" />
+  <fhirVersion value="4.0.0" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Patient" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:localworker">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension" />
+      <sliceName value="localworker" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:localworker.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="localworker" />
+    </element>
+    <element id="Extension.extension:localworker.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="boolean" />
+      </type>
+    </element>
+    <element id="Extension.extension:eea">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension" />
+      <sliceName value="eea" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:eea.extension">
+      <path value="Extension.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:eea.extension:eeaDok">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension.extension" />
+      <sliceName value="eeaDok" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:eea.extension:eeaDok.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="eeaDok" />
+    </element>
+    <element id="Extension.extension:eea.extension:eeaDok.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.extension:eea.extension:eeaDok.value[x].coding.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension.extension.value[x].coding.system" />
+      <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.7416" />
+    </element>
+    <element id="Extension.extension:eea.extension:eeaCardId">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension.extension" />
+      <sliceName value="eeaCardId" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:eea.extension:eeaCardId.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="eeaCardId" />
+    </element>
+    <element id="Extension.extension:eea.extension:eeaCardId.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:eea.extension:eeaId">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension.extension" />
+      <sliceName value="eeaId" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:eea.extension:eeaId.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="eeaId" />
+    </element>
+    <element id="Extension.extension:eea.extension:eeaId.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:eea.extension:eeaOffice">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension.extension" />
+      <sliceName value="eeaOffice" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:eea.extension:eeaOffice.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="eeaOffice" />
+    </element>
+    <element id="Extension.extension:eea.extension:eeaOffice.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:eea.extension:eeaOfficeNo">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension.extension" />
+      <sliceName value="eeaOfficeNo" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:eea.extension:eeaOfficeNo.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="eeaOfficeNo" />
+    </element>
+    <element id="Extension.extension:eea.extension:eeaOfficeNo.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:eea.extension:eeavalidfrom">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension.extension" />
+      <sliceName value="eeavalidfrom" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:eea.extension:eeavalidfrom.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="eeavalidfrom" />
+    </element>
+    <element id="Extension.extension:eea.extension:eeavalidfrom.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="date" />
+      </type>
+    </element>
+    <element id="Extension.extension:eea.extension:eeavalidto">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension.extension" />
+      <sliceName value="eeavalidto" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:eea.extension:eeavalidto.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="eeavalidto" />
+    </element>
+    <element id="Extension.extension:eea.extension:eeavalidto.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="date" />
+      </type>
+    </element>
+    <element id="Extension.extension:eea.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="eea" />
+    </element>
+    <element id="Extension.extension:eea.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <max value="0" />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueUrl value="uri" />
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String" />
+      </type>
+      <fixedUri value="http://ehelse.no/fhir/StructureDefinition/sfm-reimbursementInfo" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

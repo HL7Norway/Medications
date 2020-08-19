@@ -10,7 +10,7 @@
   <name value="SfmPatientRelation" />
   <title value="sfm-patientrelation" />
   <status value="active" />
-  <date value="2020-06-08" />
+  <date value="2020-08-19" />
   <description value="Information about related health care profesionals and institutions." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
@@ -46,7 +46,8 @@
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="Reference" />
-        <targetProfile value="no-basis-Practitioner" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Practitioner" />
+        <aggregation value="contained" />
         <aggregation value="bundled" />
       </type>
     </element>
@@ -61,6 +62,24 @@
         <valueBoolean value="true" />
       </extension>
       <path value="Extension.extension.value[x].identifier.type.text" />
+    </element>
+    <element id="Extension.extension:practionerRelation.value[x].identifier.assigner.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].identifier.assigner.identifier.type.coding.display" />
+    </element>
+    <element id="Extension.extension:practionerRelation.value[x].identifier.assigner.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].identifier.assigner.identifier.type.text" />
+    </element>
+    <element id="Extension.extension:practionerRelation.value[x].identifier.assigner.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].identifier.assigner.display" />
     </element>
     <element id="Extension.extension:practionerRelation.value[x].display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
@@ -81,7 +100,8 @@
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="Reference" />
-        <targetProfile value="no-basis-Organization" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Organization" />
+        <aggregation value="contained" />
         <aggregation value="bundled" />
       </type>
     </element>
@@ -96,6 +116,24 @@
         <valueBoolean value="true" />
       </extension>
       <path value="Extension.extension.value[x].identifier.type.text" />
+    </element>
+    <element id="Extension.extension:organisationRelation.value[x].identifier.assigner.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].identifier.assigner.identifier.type.coding.display" />
+    </element>
+    <element id="Extension.extension:organisationRelation.value[x].identifier.assigner.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].identifier.assigner.identifier.type.text" />
+    </element>
+    <element id="Extension.extension:organisationRelation.value[x].identifier.assigner.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].identifier.assigner.display" />
     </element>
     <element id="Extension.extension:organisationRelation.value[x].display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">

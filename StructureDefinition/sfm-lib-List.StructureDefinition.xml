@@ -92,6 +92,24 @@
       </extension>
       <path value="List.extension.extension.value[x].identifier.assigner.identifier.type.text" />
     </element>
+    <element id="List.extension:actor.extension:practioner.value[x].identifier.assigner.identifier.assigner.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="List.extension.extension.value[x].identifier.assigner.identifier.assigner.identifier.type.coding.display" />
+    </element>
+    <element id="List.extension:actor.extension:practioner.value[x].identifier.assigner.identifier.assigner.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="List.extension.extension.value[x].identifier.assigner.identifier.assigner.identifier.type.text" />
+    </element>
+    <element id="List.extension:actor.extension:practioner.value[x].identifier.assigner.identifier.assigner.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="List.extension.extension.value[x].identifier.assigner.identifier.assigner.display" />
+    </element>
     <element id="List.extension:actor.extension:practioner.value[x].identifier.assigner.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
@@ -201,6 +219,24 @@
       </extension>
       <path value="List.extension.extension.extension.value[x].identifier.type.text" />
     </element>
+    <element id="List.extension:warnings.extension:doublePrescription.extension:reference.value[x]:valueReference.identifier.assigner.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="List.extension.extension.extension.value[x].identifier.assigner.identifier.type.coding.display" />
+    </element>
+    <element id="List.extension:warnings.extension:doublePrescription.extension:reference.value[x]:valueReference.identifier.assigner.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="List.extension.extension.extension.value[x].identifier.assigner.identifier.type.text" />
+    </element>
+    <element id="List.extension:warnings.extension:doublePrescription.extension:reference.value[x]:valueReference.identifier.assigner.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="List.extension.extension.extension.value[x].identifier.assigner.display" />
+    </element>
     <element id="List.extension:warnings.extension:doublePrescription.extension:reference.value[x]:valueReference.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
@@ -270,6 +306,24 @@
       </extension>
       <path value="List.extension.extension.extension.value[x].identifier.type.text" />
     </element>
+    <element id="List.extension:warnings.extension:interaction.extension:reference.value[x]:valueReference.identifier.assigner.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="List.extension.extension.extension.value[x].identifier.assigner.identifier.type.coding.display" />
+    </element>
+    <element id="List.extension:warnings.extension:interaction.extension:reference.value[x]:valueReference.identifier.assigner.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="List.extension.extension.extension.value[x].identifier.assigner.identifier.type.text" />
+    </element>
+    <element id="List.extension:warnings.extension:interaction.extension:reference.value[x]:valueReference.identifier.assigner.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="List.extension.extension.extension.value[x].identifier.assigner.display" />
+    </element>
     <element id="List.extension:warnings.extension:interaction.extension:reference.value[x]:valueReference.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
@@ -331,6 +385,24 @@
       </extension>
       <path value="List.extension.extension.extension.value[x].identifier.type.text" />
     </element>
+    <element id="List.extension:warnings.extension:interaction.extension:interactiondata.value[x].identifier.assigner.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="List.extension.extension.extension.value[x].identifier.assigner.identifier.type.coding.display" />
+    </element>
+    <element id="List.extension:warnings.extension:interaction.extension:interactiondata.value[x].identifier.assigner.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="List.extension.extension.extension.value[x].identifier.assigner.identifier.type.text" />
+    </element>
+    <element id="List.extension:warnings.extension:interaction.extension:interactiondata.value[x].identifier.assigner.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="List.extension.extension.extension.value[x].identifier.assigner.display" />
+    </element>
     <element id="List.extension:warnings.extension:interaction.extension:interactiondata.value[x].display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
@@ -361,6 +433,24 @@
         <valueBoolean value="true" />
       </extension>
       <path value="List.extension.extension.extension.value[x].identifier.type.text" />
+    </element>
+    <element id="List.extension:warnings.extension:allergyIntollerance.extension:reference.value[x]:valueReference.identifier.assigner.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="List.extension.extension.extension.value[x].identifier.assigner.identifier.type.coding.display" />
+    </element>
+    <element id="List.extension:warnings.extension:allergyIntollerance.extension:reference.value[x]:valueReference.identifier.assigner.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="List.extension.extension.extension.value[x].identifier.assigner.identifier.type.text" />
+    </element>
+    <element id="List.extension:warnings.extension:allergyIntollerance.extension:reference.value[x]:valueReference.identifier.assigner.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="List.extension.extension.extension.value[x].identifier.assigner.display" />
     </element>
     <element id="List.extension:warnings.extension:allergyIntollerance.extension:reference.value[x]:valueReference.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
@@ -418,6 +508,24 @@
       </extension>
       <path value="List.identifier.type.text" />
     </element>
+    <element id="List.identifier.assigner.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="List.identifier.assigner.identifier.type.coding.display" />
+    </element>
+    <element id="List.identifier.assigner.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="List.identifier.assigner.identifier.type.text" />
+    </element>
+    <element id="List.identifier.assigner.identifier.assigner.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="List.identifier.assigner.identifier.assigner.display" />
+    </element>
     <element id="List.identifier.assigner.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
@@ -471,6 +579,24 @@
       </extension>
       <path value="List.subject.identifier.type.text" />
     </element>
+    <element id="List.subject.identifier.assigner.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="List.subject.identifier.assigner.identifier.type.coding.display" />
+    </element>
+    <element id="List.subject.identifier.assigner.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="List.subject.identifier.assigner.identifier.type.text" />
+    </element>
+    <element id="List.subject.identifier.assigner.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="List.subject.identifier.assigner.display" />
+    </element>
     <element id="List.subject.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
@@ -488,6 +614,24 @@
         <valueBoolean value="true" />
       </extension>
       <path value="List.encounter.identifier.type.text" />
+    </element>
+    <element id="List.encounter.identifier.assigner.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="List.encounter.identifier.assigner.identifier.type.coding.display" />
+    </element>
+    <element id="List.encounter.identifier.assigner.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="List.encounter.identifier.assigner.identifier.type.text" />
+    </element>
+    <element id="List.encounter.identifier.assigner.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="List.encounter.identifier.assigner.display" />
     </element>
     <element id="List.encounter.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
@@ -515,6 +659,24 @@
         <valueBoolean value="true" />
       </extension>
       <path value="List.source.identifier.type.text" />
+    </element>
+    <element id="List.source.identifier.assigner.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="List.source.identifier.assigner.identifier.type.coding.display" />
+    </element>
+    <element id="List.source.identifier.assigner.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="List.source.identifier.assigner.identifier.type.text" />
+    </element>
+    <element id="List.source.identifier.assigner.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="List.source.identifier.assigner.display" />
     </element>
     <element id="List.source.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
@@ -559,9 +721,10 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-MedicationStatement" />
-        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-AllergyIntolerance" />
+        <targetProfile value="http://nhn.no/kj/fhir/StructureDefinition/KjAllergyIntolerance" />
         <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-NutritionStatement" />
         <aggregation value="contained" />
+        <aggregation value="bundled" />
       </type>
     </element>
     <element id="List.entry.item.identifier.type.coding.display">
@@ -575,6 +738,24 @@
         <valueBoolean value="true" />
       </extension>
       <path value="List.entry.item.identifier.type.text" />
+    </element>
+    <element id="List.entry.item.identifier.assigner.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="List.entry.item.identifier.assigner.identifier.type.coding.display" />
+    </element>
+    <element id="List.entry.item.identifier.assigner.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="List.entry.item.identifier.assigner.identifier.type.text" />
+    </element>
+    <element id="List.entry.item.identifier.assigner.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="List.entry.item.identifier.assigner.display" />
     </element>
     <element id="List.entry.item.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">

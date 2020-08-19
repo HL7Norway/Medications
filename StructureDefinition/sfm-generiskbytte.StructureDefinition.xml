@@ -37,7 +37,7 @@
       <path value="Extension.extension" />
       <sliceName value="genericSubstitutionAccepted" />
       <short value="Identifies if prescribed product can be substituted" />
-      <definition value="If value is true, then the prescribed brand, form and strenght should be used." />
+      <definition value="If value is true, then pharmacy may change to other brand." />
       <max value="1" />
     </element>
     <element id="Extension.extension:genericSubstitutionAccepted.url">
