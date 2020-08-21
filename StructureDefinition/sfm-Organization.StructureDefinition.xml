@@ -115,6 +115,24 @@
       </extension>
       <path value="Organization.identifier.type.text" />
     </element>
+    <element id="Organization.identifier.assigner.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.identifier.assigner.identifier.type.coding.display" />
+    </element>
+    <element id="Organization.identifier.assigner.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.identifier.assigner.identifier.type.text" />
+    </element>
+    <element id="Organization.identifier.assigner.identifier.assigner.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.identifier.assigner.identifier.assigner.display" />
+    </element>
     <element id="Organization.identifier.assigner.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
@@ -124,7 +142,6 @@
     <element id="Organization.identifier:ENH">
       <path value="Organization.identifier" />
       <sliceName value="ENH" />
-      <min value="1" />
       <max value="1" />
     </element>
     <element id="Organization.identifier:ENH.type.coding.display">
@@ -150,6 +167,24 @@
         <valueBoolean value="true" />
       </extension>
       <path value="Organization.identifier.assigner.identifier.type.text" />
+    </element>
+    <element id="Organization.identifier:ENH.assigner.identifier.assigner.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.identifier.assigner.identifier.assigner.identifier.type.coding.display" />
+    </element>
+    <element id="Organization.identifier:ENH.assigner.identifier.assigner.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.identifier.assigner.identifier.assigner.identifier.type.text" />
+    </element>
+    <element id="Organization.identifier:ENH.assigner.identifier.assigner.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.identifier.assigner.identifier.assigner.display" />
     </element>
     <element id="Organization.identifier:ENH.assigner.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
@@ -184,6 +219,24 @@
         <valueBoolean value="true" />
       </extension>
       <path value="Organization.identifier.assigner.identifier.type.text" />
+    </element>
+    <element id="Organization.identifier:RSH.assigner.identifier.assigner.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.identifier.assigner.identifier.assigner.identifier.type.coding.display" />
+    </element>
+    <element id="Organization.identifier:RSH.assigner.identifier.assigner.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.identifier.assigner.identifier.assigner.identifier.type.text" />
+    </element>
+    <element id="Organization.identifier:RSH.assigner.identifier.assigner.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.identifier.assigner.identifier.assigner.display" />
     </element>
     <element id="Organization.identifier:RSH.assigner.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
@@ -231,6 +284,24 @@
       </extension>
       <path value="Organization.identifier.assigner.identifier.type.text" />
     </element>
+    <element id="Organization.identifier:HERid.assigner.identifier.assigner.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.identifier.assigner.identifier.assigner.identifier.type.coding.display" />
+    </element>
+    <element id="Organization.identifier:HERid.assigner.identifier.assigner.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.identifier.assigner.identifier.assigner.identifier.type.text" />
+    </element>
+    <element id="Organization.identifier:HERid.assigner.identifier.assigner.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.identifier.assigner.identifier.assigner.display" />
+    </element>
     <element id="Organization.identifier:HERid.assigner.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
@@ -270,7 +341,6 @@
     <element id="Organization.name">
       <path value="Organization.name" />
       <definition value="A name associated with the organization or organisation unit." />
-      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Organization.telecom">
@@ -279,8 +349,6 @@
     </element>
     <element id="Organization.address">
       <path value="Organization.address" />
-      <min value="1" />
-      <max value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Organization.address.extension:urbanDistrict">
@@ -323,6 +391,24 @@
         <valueBoolean value="true" />
       </extension>
       <path value="Organization.partOf.identifier.type.text" />
+    </element>
+    <element id="Organization.partOf.identifier.assigner.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.partOf.identifier.assigner.identifier.type.coding.display" />
+    </element>
+    <element id="Organization.partOf.identifier.assigner.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.partOf.identifier.assigner.identifier.type.text" />
+    </element>
+    <element id="Organization.partOf.identifier.assigner.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.partOf.identifier.assigner.display" />
     </element>
     <element id="Organization.partOf.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
@@ -377,6 +463,24 @@
         <valueBoolean value="true" />
       </extension>
       <path value="Organization.endpoint.identifier.type.text" />
+    </element>
+    <element id="Organization.endpoint.identifier.assigner.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.endpoint.identifier.assigner.identifier.type.coding.display" />
+    </element>
+    <element id="Organization.endpoint.identifier.assigner.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.endpoint.identifier.assigner.identifier.type.text" />
+    </element>
+    <element id="Organization.endpoint.identifier.assigner.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.endpoint.identifier.assigner.display" />
     </element>
     <element id="Organization.endpoint.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
