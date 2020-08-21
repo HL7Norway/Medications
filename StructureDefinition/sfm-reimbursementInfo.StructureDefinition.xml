@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="sfm-reimbursementInfo" />
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-reimbursementInfo" />
   <version value="1.0" />
   <name value="SfmReimbursementInfo" />
   <title value="sfm-reimbursmentInfo" />
   <status value="active" />
   <date value="2020-08-14" />
+  <description value="describes reimbursment info" />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
