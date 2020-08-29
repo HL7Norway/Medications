@@ -33,6 +33,14 @@
     <code value="4" />
     <display value="RF svarer ikke" />
   </concept>
+    <concept>
+    <code value="5" />
+    <display value="Ingen rettighet til KJ oppslag" />
+  </concept>
+  <concept>
+    <code value="6" />
+    <display value="Ingen rettighet til RF oppslag" />
+  </concept>
   <concept>
     <code value="KJF-000132" />
     <display value="Bruker har ingen autorisasjon i HPR" />
