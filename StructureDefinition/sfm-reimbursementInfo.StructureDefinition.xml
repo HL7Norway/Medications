@@ -82,7 +82,19 @@
     </element>
     <element id="Extension.extension:eea.extension:eeaDok.value[x].coding.system">
       <path value="Extension.extension.extension.value[x].coding.system" />
-      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7416" />
+      <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.7416" />
+    </element>
+    <element id="Extension.extension:eea.extension:eeaDok.value[x].coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.extension.value[x].coding.display" />
+    </element>
+    <element id="Extension.extension:eea.extension:eeaDok.value[x].text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.extension.value[x].text" />
     </element>
     <element id="Extension.extension:eea.extension:eeaCardId">
       <path value="Extension.extension.extension" />
@@ -183,6 +195,12 @@
       <max value="0" />
     </element>
     <element id="Extension.extension:konvensjonsland">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension" />
       <sliceName value="konvensjonsland" />
     </element>
@@ -197,6 +215,12 @@
       </type>
     </element>
     <element id="Extension.extension:konvensjonsland.value[x].coding.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.9043" />
     </element>
