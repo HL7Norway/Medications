@@ -1559,7 +1559,7 @@
     <element id="Extension.extension:typeresept.value[x].coding.system">
       <path value="Extension.extension.value[x].coding.system" />
       <min value="1" />
-      <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.7491" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7491" />
     </element>
     <element id="Extension.extension:typeresept.value[x].coding.code">
       <path value="Extension.extension.value[x].coding.code" />
