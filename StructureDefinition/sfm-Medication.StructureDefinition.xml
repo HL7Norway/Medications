@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sfm-Medication" />
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-Medication" />
-  <version value="2.1" />
+  <version value="2.2" />
   <name value="SfmMedication" />
   <title value="sfm-Medication" />
   <status value="active" />
-  <date value="2020-06-08" />
+  <date value="2020-09-16" />
   <description value="SFM Medication derived from no-basis-Medication." />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
@@ -15,38 +15,20 @@
   <baseDefinition value="http://hl7.no/fhir/StructureDefinition/no-basis-Medication" />
   <derivation value="constraint" />
   <differential>
-    <element id="Medication.meta.security.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Medication.meta.security.display" />
-    </element>
-    <element id="Medication.meta.tag.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Medication.meta.tag.display" />
+    <element id="Medication.extension">
+      <path value="Medication.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
     </element>
     <element id="Medication.extension:prescriptiongroup">
       <path value="Medication.extension" />
       <sliceName value="prescriptiongroup" />
       <mustSupport value="true" />
-    </element>
-    <element id="Medication.extension:prescriptiongroup.extension:prescriptiongroup">
-      <path value="Medication.extension.extension" />
-      <sliceName value="prescriptiongroup" />
-    </element>
-    <element id="Medication.extension:prescriptiongroup.extension:prescriptiongroup.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Medication.extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Medication.extension:prescriptiongroup.extension:prescriptiongroup.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Medication.extension.extension.value[x].text" />
     </element>
     <element id="Medication.extension:medicationdetails">
       <path value="Medication.extension" />
@@ -56,134 +38,34 @@
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-medicationdetails" />
       </type>
     </element>
-    <element id="Medication.extension:medicationdetails.extension:administrationway">
-      <path value="Medication.extension.extension" />
-      <sliceName value="administrationway" />
-    </element>
-    <element id="Medication.extension:medicationdetails.extension:administrationway.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Medication.extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Medication.extension:medicationdetails.extension:administrationway.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Medication.extension.extension.value[x].text" />
-    </element>
-    <element id="Medication.extension:medicationdetails.extension:maycrush">
-      <path value="Medication.extension.extension" />
-      <sliceName value="maycrush" />
-    </element>
-    <element id="Medication.extension:medicationdetails.extension:maycrush.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Medication.extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Medication.extension:medicationdetails.extension:maycrush.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Medication.extension.extension.value[x].text" />
-    </element>
-    <element id="Medication.extension:medicationdetails.extension:mayopen">
-      <path value="Medication.extension.extension" />
-      <sliceName value="mayopen" />
-    </element>
-    <element id="Medication.extension:medicationdetails.extension:mayopen.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Medication.extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Medication.extension:medicationdetails.extension:mayopen.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Medication.extension.extension.value[x].text" />
-    </element>
-    <element id="Medication.extension:medicationdetails.extension:devidable">
-      <path value="Medication.extension.extension" />
-      <sliceName value="devidable" />
-    </element>
-    <element id="Medication.extension:medicationdetails.extension:devidable.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Medication.extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Medication.extension:medicationdetails.extension:devidable.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Medication.extension.extension.value[x].text" />
-    </element>
-    <element id="Medication.extension:medicationdetails.extension:taste">
-      <path value="Medication.extension.extension" />
-      <sliceName value="taste" />
-    </element>
-    <element id="Medication.extension:medicationdetails.extension:taste.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Medication.extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Medication.extension:medicationdetails.extension:taste.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Medication.extension.extension.value[x].text" />
-    </element>
-    <element id="Medication.extension:medicationdetails.extension:vaccinationstandard">
-      <path value="Medication.extension.extension" />
-      <sliceName value="vaccinationstandard" />
-    </element>
-    <element id="Medication.extension:medicationdetails.extension:vaccinationstandard.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Medication.extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Medication.extension:medicationdetails.extension:vaccinationstandard.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Medication.extension.extension.value[x].text" />
-    </element>
-    <element id="Medication.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Medication.identifier.type.coding.display" />
-    </element>
-    <element id="Medication.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Medication.identifier.type.text" />
-    </element>
-    <element id="Medication.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Medication.identifier.assigner.display" />
-    </element>
     <element id="Medication.code">
       <path value="Medication.code" />
       <mustSupport value="true" />
-    </element>
-    <element id="Medication.code.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Medication.code.coding.display" />
     </element>
     <element id="Medication.code.coding:FEST-Medication">
       <path value="Medication.code.coding" />
       <sliceName value="FEST-Medication" />
       <definition value="Medication is one of the following types: LegemiddelVirkestoff, LegemiddelMerkevare, Legemiddelpakning, Legemiddeldose. Code is the FEST-id or the &quot;varenummer&quot; for the Medication. FEST-id should be used if available. If not present in FEST, then code is missing and only Display is present." />
+    </element>
+    <element id="Medication.code.coding:type">
+      <path value="Medication.code.coding" />
+      <sliceName value="type" />
+      <max value="1" />
+    </element>
+    <element id="Medication.code.coding:type.system">
+      <path value="Medication.code.coding.system" />
+      <short value="Medicationtype" />
+      <definition value="Identify if medication is vacine or medication. Use information from FEST." />
+      <min value="1" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7424" />
+    </element>
+    <element id="Medication.code.coding:type.code">
+      <path value="Medication.code.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Medication.code.coding:type.display">
+      <path value="Medication.code.coding.display" />
+      <min value="1" />
     </element>
     <element id="Medication.status">
       <path value="Medication.status" />
@@ -193,61 +75,13 @@
       <path value="Medication.manufacturer" />
       <mustSupport value="true" />
     </element>
-    <element id="Medication.manufacturer.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Medication.manufacturer.identifier.type.coding.display" />
-    </element>
-    <element id="Medication.manufacturer.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Medication.manufacturer.identifier.type.text" />
-    </element>
-    <element id="Medication.manufacturer.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Medication.manufacturer.display" />
-    </element>
     <element id="Medication.form">
       <path value="Medication.form" />
       <mustSupport value="true" />
     </element>
-    <element id="Medication.form.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Medication.form.coding.display" />
-    </element>
     <element id="Medication.amount">
       <path value="Medication.amount" />
       <mustSupport value="true" />
-    </element>
-    <element id="Medication.amount.numerator.unit">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Medication.amount.numerator.unit" />
-    </element>
-    <element id="Medication.amount.denominator.unit">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Medication.amount.denominator.unit" />
-    </element>
-    <element id="Medication.ingredient.strength.numerator.unit">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Medication.ingredient.strength.numerator.unit" />
-    </element>
-    <element id="Medication.ingredient.strength.denominator.unit">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Medication.ingredient.strength.denominator.unit" />
     </element>
     <element id="Medication.batch">
       <path value="Medication.batch" />

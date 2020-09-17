@@ -7,7 +7,7 @@
   <title value="sfm-PLL-info" />
   <status value="active" />
   <date value="2020-06-08" />
-  <description value="Meta data from PLL" />
+  <description value="Meta data from PLL." />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
   <abstract value="false" />
@@ -15,18 +15,6 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Basic" />
   <derivation value="constraint" />
   <differential>
-    <element id="Basic.meta.security.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.meta.security.display" />
-    </element>
-    <element id="Basic.meta.tag.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.meta.tag.display" />
-    </element>
     <element id="Basic.extension">
       <path value="Basic.extension" />
       <slicing>
@@ -46,56 +34,40 @@
       </type>
       <mustSupport value="true" />
     </element>
+    <element id="Basic.extension:metadataPLL.extension">
+      <path value="Basic.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
     <element id="Basic.extension:metadataPLL.extension:relatedparties">
       <path value="Basic.extension.extension" />
       <sliceName value="relatedparties" />
       <mustSupport value="true" />
-    </element>
-    <element id="Basic.extension:metadataPLL.extension:relatedparties.value[x].identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.extension.extension.value[x].identifier.type.coding.display" />
-    </element>
-    <element id="Basic.extension:metadataPLL.extension:relatedparties.value[x].identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.extension.extension.value[x].identifier.type.text" />
-    </element>
-    <element id="Basic.extension:metadataPLL.extension:relatedparties.value[x].display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.extension.extension.value[x].display" />
     </element>
     <element id="Basic.extension:metadataPLL.extension:deliveryinformation">
       <path value="Basic.extension.extension" />
       <sliceName value="deliveryinformation" />
       <mustSupport value="true" />
     </element>
+    <element id="Basic.extension:metadataPLL.extension:deliveryinformation.extension">
+      <path value="Basic.extension.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
     <element id="Basic.extension:metadataPLL.extension:deliveryinformation.extension:prescriptionId">
       <path value="Basic.extension.extension.extension" />
       <sliceName value="prescriptionId" />
       <mustSupport value="true" />
-    </element>
-    <element id="Basic.extension:metadataPLL.extension:deliveryinformation.extension:prescriptionId.value[x].identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.extension.extension.extension.value[x].identifier.type.coding.display" />
-    </element>
-    <element id="Basic.extension:metadataPLL.extension:deliveryinformation.extension:prescriptionId.value[x].identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.extension.extension.extension.value[x].identifier.type.text" />
-    </element>
-    <element id="Basic.extension:metadataPLL.extension:deliveryinformation.extension:prescriptionId.value[x].display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.extension.extension.extension.value[x].display" />
     </element>
     <element id="Basic.extension:metadataPLL.extension:deliveryinformation.extension:refM10">
       <path value="Basic.extension.extension.extension" />
@@ -106,18 +78,6 @@
       <path value="Basic.extension.extension.extension" />
       <sliceName value="repacking" />
       <mustSupport value="true" />
-    </element>
-    <element id="Basic.extension:metadataPLL.extension:deliveryinformation.extension:repacking.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.extension.extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Basic.extension:metadataPLL.extension:deliveryinformation.extension:repacking.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.extension.extension.extension.value[x].text" />
     </element>
     <element id="Basic.extension:metadataPLL.extension:deliveryinformation.extension:datefirstdose">
       <path value="Basic.extension.extension.extension" />
@@ -133,24 +93,6 @@
       <path value="Basic.extension.extension.extension" />
       <sliceName value="deliverydoc" />
       <mustSupport value="true" />
-    </element>
-    <element id="Basic.extension:metadataPLL.extension:deliveryinformation.extension:deliverydoc.value[x].identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.extension.extension.extension.value[x].identifier.type.coding.display" />
-    </element>
-    <element id="Basic.extension:metadataPLL.extension:deliveryinformation.extension:deliverydoc.value[x].identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.extension.extension.extension.value[x].identifier.type.text" />
-    </element>
-    <element id="Basic.extension:metadataPLL.extension:deliveryinformation.extension:deliverydoc.value[x].display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.extension.extension.extension.value[x].display" />
     </element>
     <element id="Basic.extension:metadataPLL.extension:text">
       <path value="Basic.extension.extension" />
@@ -172,6 +114,16 @@
       <sliceName value="packinginfo" />
       <mustSupport value="true" />
     </element>
+    <element id="Basic.extension:metadataPLL.extension:packinginfo.extension">
+      <path value="Basic.extension.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
     <element id="Basic.extension:metadataPLL.extension:packinginfo.extension:orderdeadline">
       <path value="Basic.extension.extension.extension" />
       <sliceName value="orderdeadline" />
@@ -187,24 +139,6 @@
       <sliceName value="lastdosingdate" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.identifier.type.coding.display" />
-    </element>
-    <element id="Basic.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.identifier.type.text" />
-    </element>
-    <element id="Basic.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.identifier.assigner.display" />
-    </element>
     <element id="Basic.code">
       <path value="Basic.code" />
       <mustSupport value="true" />
@@ -219,54 +153,6 @@
     <element id="Basic.code.coding.system">
       <path value="Basic.code.coding.system" />
       <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-message-type" />
-    </element>
-    <element id="Basic.code.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.code.coding.display" />
-    </element>
-    <element id="Basic.code.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.code.text" />
-    </element>
-    <element id="Basic.subject.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.subject.identifier.type.coding.display" />
-    </element>
-    <element id="Basic.subject.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.subject.identifier.type.text" />
-    </element>
-    <element id="Basic.subject.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.subject.display" />
-    </element>
-    <element id="Basic.author.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.author.identifier.type.coding.display" />
-    </element>
-    <element id="Basic.author.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.author.identifier.type.text" />
-    </element>
-    <element id="Basic.author.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.author.display" />
     </element>
   </differential>
 </StructureDefinition>
