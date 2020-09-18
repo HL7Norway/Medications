@@ -6,11 +6,11 @@
     <lastUpdated value="2018-10-03T13:58:11.827+00:00" />
   </meta>
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-MedicationStatement" />
-  <version value="2.3" />
+  <version value="2.4" />
   <name value="SfmMedicationStatement" />
   <title value="sfm-MedicationStatement" />
   <status value="active" />
-  <date value="2020-08-19" />
+  <date value="2020-09-18" />
   <description value="SFM MedicationStatement derived from no-basis-MedicationStatement" />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
@@ -38,6 +38,16 @@
       </type>
       <mustSupport value="true" />
     </element>
+    <element id="MedicationStatement.extension:reginfo.extension">
+      <path value="MedicationStatement.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
     <element id="MedicationStatement.extension:reginfo.extension:helseperson">
       <path value="MedicationStatement.extension.extension" />
       <sliceName value="helseperson" />
@@ -59,6 +69,16 @@
         <code value="Extension" />
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-libitemcomment" />
       </type>
+    </element>
+    <element id="MedicationStatement.extension:comment.extension">
+      <path value="MedicationStatement.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
     </element>
     <element id="MedicationStatement.extension:comment.extension:type">
       <path value="MedicationStatement.extension.extension" />
@@ -98,6 +118,16 @@
         <code value="Extension" />
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-deliverysummary" />
       </type>
+    </element>
+    <element id="MedicationStatement.extension:deliverysummary.extension">
+      <path value="MedicationStatement.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
     </element>
     <element id="MedicationStatement.extension:deliverysummary.extension:varenummer">
       <path value="MedicationStatement.extension.extension" />
@@ -140,6 +170,16 @@
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-generic-substitution" />
       </type>
     </element>
+    <element id="MedicationStatement.extension:genericSubstitution.extension">
+      <path value="MedicationStatement.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
     <element id="MedicationStatement.extension:genericSubstitution.extension:genericSubstitutionAccepted">
       <path value="MedicationStatement.extension.extension" />
       <sliceName value="genericSubstitutionAccepted" />
@@ -159,6 +199,16 @@
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-discontinuation" />
       </type>
       <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.extension:discontinuationinformation.extension">
+      <path value="MedicationStatement.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
     </element>
     <element id="MedicationStatement.extension:discontinuationinformation.extension:timedate">
       <path value="MedicationStatement.extension.extension" />
@@ -184,9 +234,29 @@
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-administration" />
       </type>
     </element>
+    <element id="MedicationStatement.extension:administrationdetails.extension">
+      <path value="MedicationStatement.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
     <element id="MedicationStatement.extension:administrationdetails.extension:administrationofmedication">
       <path value="MedicationStatement.extension.extension" />
       <sliceName value="administrationofmedication" />
+    </element>
+    <element id="MedicationStatement.extension:administrationdetails.extension:administrationofmedication.extension">
+      <path value="MedicationStatement.extension.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
     </element>
     <element id="MedicationStatement.extension:administrationdetails.extension:administrationofmedication.extension:admByWhom">
       <path value="MedicationStatement.extension.extension.extension" />
@@ -211,189 +281,10 @@
     <element id="MedicationStatement.extension:reseptInfo">
       <path value="MedicationStatement.extension" />
       <sliceName value="reseptInfo" />
-      <definition value="Information that is relevant for Norwegian e-prescription. Must be supported when using SFM Basis API." />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-reseptamendment" />
       </type>
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:reseptdate">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="reseptdate" />
-      <mustSupport value="true" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:expirationdate">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="expirationdate" />
-      <mustSupport value="true" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:festUpdate">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="festUpdate" />
-      <mustSupport value="true" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:conscription">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="conscription" />
-      <mustSupport value="true" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:helfoapplication">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="helfoapplication" />
-      <mustSupport value="true" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:guardiantransparencyreservation">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="guardiantransparencyreservation" />
-      <mustSupport value="true" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:ownpractice">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="ownpractice" />
-      <mustSupport value="true" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:indoctorsname">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="indoctorsname" />
-      <mustSupport value="true" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:refnum">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="refnum" />
-      <mustSupport value="true" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:dispatchrequest">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="dispatchrequest" />
-      <mustSupport value="true" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:dispatchrequest.extension:address">
-      <path value="MedicationStatement.extension.extension.extension" />
-      <sliceName value="address" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:dispatchrequest.extension:address.value[x].extension:official">
-      <path value="MedicationStatement.extension.extension.extension.value[x].extension" />
-      <sliceName value="official" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:dispatchrequest.extension:address.value[x].extension:official.value[x]">
-      <path value="MedicationStatement.extension.extension.extension.value[x].extension.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:dispatchrequest.extension:address.value[x].extension:urbanDistrict">
-      <path value="MedicationStatement.extension.extension.extension.value[x].extension" />
-      <sliceName value="urbanDistrict" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:dispatchrequest.extension:address.value[x].extension:urbanDistrict.value[x]">
-      <path value="MedicationStatement.extension.extension.extension.value[x].extension.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:earliestdispence">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="earliestdispence" />
-      <mustSupport value="true" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:dischargedhospital">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="dischargedhospital" />
-      <mustSupport value="true" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:lockedresept">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="lockedresept" />
-      <mustSupport value="true" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:itemgroup">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="itemgroup" />
-      <mustSupport value="true" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:numberofpackages">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="numberofpackages" />
-      <mustSupport value="true" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:reimbursmentparagraph">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="reimbursmentparagraph" />
-      <mustSupport value="true" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:reimbursementcode">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="reimbursementcode" />
-      <mustSupport value="true" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:plomedicationmanagement">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="plomedicationmanagement" />
-      <mustSupport value="true" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:reit">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="reit" />
-      <mustSupport value="true" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:amount">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="amount" />
-      <mustSupport value="true" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:dssn">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="dssn" />
-      <mustSupport value="true" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:rfstatus">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="rfstatus" />
-      <mustSupport value="true" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:note">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="note" />
-      <mustSupport value="true" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:dispencesummary">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="dispencesummary" />
-      <mustSupport value="true" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:recallinfo">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="recallinfo" />
-      <mustSupport value="true" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:ereseptdosing">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="ereseptdosing" />
-      <mustSupport value="true" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:createeresept">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="createeresept" />
-      <mustSupport value="true" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:lastchanged">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="lastchanged" />
-      <mustSupport value="true" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo.extension:typeresept">
-      <path value="MedicationStatement.extension.extension" />
-      <sliceName value="typeresept" />
-      <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.identifier">
       <path value="MedicationStatement.identifier" />
@@ -413,9 +304,6 @@
       <max value="1" />
     </element>
     <element id="MedicationStatement.identifier:treatmentId.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
       <path value="MedicationStatement.identifier.type.text" />
       <min value="1" />
       <fixedString value="Treatmentid" />
@@ -428,9 +316,6 @@
       <max value="1" />
     </element>
     <element id="MedicationStatement.identifier:reseptid.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
       <path value="MedicationStatement.identifier.type.text" />
       <min value="1" />
       <fixedString value="ReseptId" />
@@ -478,7 +363,7 @@
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.medication[x]:medicationReference">
-      <path value="MedicationStatement.medicationReference" />
+      <path value="MedicationStatement.medication[x]" />
       <sliceName value="medicationReference" />
       <definition value="Identifies the medication being administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code that identifies the medication from a known list of medications. sfm-Medication and sfm-Magistrell-Medication should be used." />
       <type>
