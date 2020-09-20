@@ -45,6 +45,16 @@
       </type>
       <mustSupport value="true" />
     </element>
+    <element id="Basic.extension:dispenseinfo.extension">
+      <path value="Basic.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
     <element id="Basic.extension:dispenseinfo.extension:prescriptionid">
       <path value="Basic.extension.extension" />
       <sliceName value="prescriptionid" />
@@ -94,38 +104,34 @@
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-generaldispenseextention" />
       </type>
     </element>
-    <element id="Basic.extension:generaldispenseinfo.extension:product">
+    <element id="Basic.extension:generaldispenseinfo.extension">
       <path value="Basic.extension.extension" />
-      <sliceName value="product" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Basic.extension:generaldispenseinfo.extension:product.value[x]">
-      <path value="Basic.extension.extension.value[x]" />
       <slicing>
         <discriminator>
-          <type value="type" />
-          <path value="$this" />
+          <type value="value" />
+          <path value="url" />
         </discriminator>
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Basic.extension:generaldispenseinfo.extension:product.value[x]:valueString">
-      <path value="Basic.extension.extension.value[x]" />
-      <sliceName value="valueString" />
+    <element id="Basic.extension:generaldispenseinfo.extension:product">
+      <path value="Basic.extension.extension" />
+      <sliceName value="product" />
+      <mustSupport value="true" />
     </element>
     <element id="Basic.extension:generaldispenseinfo.extension:text">
       <path value="Basic.extension.extension" />
       <sliceName value="text" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:generaldispenseinfo.extension:productgroup">
-      <path value="Basic.extension.extension" />
-      <sliceName value="productgroup" />
-      <mustSupport value="true" />
-    </element>
     <element id="Basic.extension:generaldispenseinfo.extension:performer">
       <path value="Basic.extension.extension" />
       <sliceName value="performer" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Basic.extension:generaldispenseinfo.extension:productgroup">
+      <path value="Basic.extension.extension" />
+      <sliceName value="productgroup" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:intervention">
