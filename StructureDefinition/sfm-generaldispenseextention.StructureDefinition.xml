@@ -52,23 +52,6 @@
         <code value="string" />
       </type>
     </element>
-    <element id="Extension.extension:text">
-      <path value="Extension.extension" />
-      <sliceName value="text" />
-      <short value="Usage instructions" />
-      <definition value="Information about how to use the delivered product. .eresept -&gt; Bruksveiledning" />
-      <max value="1" />
-    </element>
-    <element id="Extension.extension:text.url">
-      <path value="Extension.extension.url" />
-      <fixedUri value="text" />
-    </element>
-    <element id="Extension.extension:text.value[x]">
-      <path value="Extension.extension.value[x]" />
-      <type>
-        <code value="string" />
-      </type>
-    </element>
     <element id="Extension.extension:productgroup">
       <path value="Extension.extension" />
       <sliceName value="productgroup" />
@@ -91,17 +74,22 @@
       <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7403" />
     </element>
-    <element id="Extension.extension:productgroup.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].coding.display" />
+    <element id="Extension.extension:text">
+      <path value="Extension.extension" />
+      <sliceName value="text" />
+      <short value="Usage instructions" />
+      <definition value="Information about how to use the delivered product. .eresept -&gt; Bruksveiledning" />
+      <max value="1" />
     </element>
-    <element id="Extension.extension:productgroup.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].text" />
+    <element id="Extension.extension:text.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="text" />
+    </element>
+    <element id="Extension.extension:text.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
     </element>
     <element id="Extension.extension:performer">
       <path value="Extension.extension" />
@@ -119,6 +107,39 @@
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:name">
+      <path value="Extension.extension" />
+      <sliceName value="name" />
+      <short value="Name of the product dispensed" />
+      <definition value="Name of the general dispense product." />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:name.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="name" />
+    </element>
+    <element id="Extension.extension:name.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:noofpackages">
+      <path value="Extension.extension" />
+      <sliceName value="noofpackages" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:noofpackages.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="noofpackages" />
+    </element>
+    <element id="Extension.extension:noofpackages.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="decimal" />
       </type>
     </element>
     <element id="Extension.url">
