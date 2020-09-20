@@ -175,18 +175,6 @@
       <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7170" />
     </element>
-    <element id="Extension.extension:refcode.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Extension.extension:refcode.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].text" />
-    </element>
     <element id="Extension.extension:refparagraph">
       <path value="Extension.extension" />
       <sliceName value="refparagraph" />
@@ -208,17 +196,20 @@
       <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7427" />
     </element>
-    <element id="Extension.extension:refparagraph.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].coding.display" />
+    <element id="Extension.extension:prescriber">
+      <path value="Extension.extension" />
+      <sliceName value="prescriber" />
     </element>
-    <element id="Extension.extension:refparagraph.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].text" />
+    <element id="Extension.extension:prescriber.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="prescriber" />
+    </element>
+    <element id="Extension.extension:prescriber.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-PractitionerRole" />
+      </type>
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
