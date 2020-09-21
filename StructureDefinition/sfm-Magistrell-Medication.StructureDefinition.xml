@@ -128,8 +128,6 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Substance" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Medication" />
         <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Excipient" />
-        <aggregation value="contained" />
-        <aggregation value="bundled" />
       </type>
     </element>
   </differential>

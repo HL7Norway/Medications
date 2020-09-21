@@ -35,89 +35,21 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/PractitionerRole" />
   <derivation value="constraint" />
   <differential>
-    <element id="PractitionerRole.meta.security.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="PractitionerRole.meta.security.display" />
-    </element>
-    <element id="PractitionerRole.meta.tag.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="PractitionerRole.meta.tag.display" />
-    </element>
-    <element id="PractitionerRole.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="PractitionerRole.identifier.type.coding.display" />
-    </element>
-    <element id="PractitionerRole.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="PractitionerRole.identifier.type.text" />
-    </element>
-    <element id="PractitionerRole.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="PractitionerRole.identifier.assigner.display" />
-    </element>
     <element id="PractitionerRole.practitioner">
       <path value="PractitionerRole.practitioner" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
         <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Practitioner" />
-        <aggregation value="contained" />
       </type>
       <mustSupport value="true" />
-    </element>
-    <element id="PractitionerRole.practitioner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="PractitionerRole.practitioner.identifier.type.coding.display" />
-    </element>
-    <element id="PractitionerRole.practitioner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="PractitionerRole.practitioner.identifier.type.text" />
-    </element>
-    <element id="PractitionerRole.practitioner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="PractitionerRole.practitioner.display" />
     </element>
     <element id="PractitionerRole.organization">
       <path value="PractitionerRole.organization" />
       <type>
         <code value="Reference" />
-        <aggregation value="contained" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Organization" />
       </type>
       <mustSupport value="true" />
-    </element>
-    <element id="PractitionerRole.organization.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="PractitionerRole.organization.identifier.type.coding.display" />
-    </element>
-    <element id="PractitionerRole.organization.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="PractitionerRole.organization.identifier.type.text" />
-    </element>
-    <element id="PractitionerRole.organization.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="PractitionerRole.organization.display" />
     </element>
     <element id="PractitionerRole.code">
       <path value="PractitionerRole.code" />
@@ -126,84 +58,6 @@
     <element id="PractitionerRole.code.coding.system">
       <path value="PractitionerRole.code.coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7490" />
-    </element>
-    <element id="PractitionerRole.code.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="PractitionerRole.code.coding.display" />
-    </element>
-    <element id="PractitionerRole.code.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="PractitionerRole.code.text" />
-    </element>
-    <element id="PractitionerRole.specialty.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="PractitionerRole.specialty.coding.display" />
-    </element>
-    <element id="PractitionerRole.specialty.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="PractitionerRole.specialty.text" />
-    </element>
-    <element id="PractitionerRole.location.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="PractitionerRole.location.identifier.type.coding.display" />
-    </element>
-    <element id="PractitionerRole.location.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="PractitionerRole.location.identifier.type.text" />
-    </element>
-    <element id="PractitionerRole.location.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="PractitionerRole.location.display" />
-    </element>
-    <element id="PractitionerRole.healthcareService.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="PractitionerRole.healthcareService.identifier.type.coding.display" />
-    </element>
-    <element id="PractitionerRole.healthcareService.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="PractitionerRole.healthcareService.identifier.type.text" />
-    </element>
-    <element id="PractitionerRole.healthcareService.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="PractitionerRole.healthcareService.display" />
-    </element>
-    <element id="PractitionerRole.endpoint.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="PractitionerRole.endpoint.identifier.type.coding.display" />
-    </element>
-    <element id="PractitionerRole.endpoint.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="PractitionerRole.endpoint.identifier.type.text" />
-    </element>
-    <element id="PractitionerRole.endpoint.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="PractitionerRole.endpoint.display" />
     </element>
   </differential>
 </StructureDefinition>

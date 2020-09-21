@@ -392,8 +392,6 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Address" />
-        <aggregation value="contained" />
-        <aggregation value="bundled" />
       </type>
     </element>
     <element id="Extension.extension:dispatchrequest.url">
@@ -836,8 +834,6 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-PractitionerRole" />
-        <aggregation value="contained" />
-        <aggregation value="bundled" />
       </type>
     </element>
     <element id="Extension.extension:recallinfo.url">

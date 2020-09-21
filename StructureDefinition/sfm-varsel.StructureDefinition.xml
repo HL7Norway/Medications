@@ -67,38 +67,10 @@
     </element>
     <element id="Extension.extension:doublePrescription.extension:reference.value[x]">
       <path value="Extension.extension.extension.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="closed" />
-      </slicing>
-    </element>
-    <element id="Extension.extension:doublePrescription.extension:reference.value[x]:valueReference">
-      <path value="Extension.extension.extension.value[x]" />
-      <sliceName value="valueReference" />
       <type>
         <code value="Reference" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-MedicationStatement" />
       </type>
-    </element>
-    <element id="Extension.extension:doublePrescription.extension:reference.value[x]:valueReference.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.value[x].identifier.type.coding.display" />
-    </element>
-    <element id="Extension.extension:doublePrescription.extension:reference.value[x]:valueReference.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.value[x].identifier.type.text" />
-    </element>
-    <element id="Extension.extension:doublePrescription.extension:reference.value[x]:valueReference.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.value[x].display" />
     </element>
     <element id="Extension.extension:doublePrescription.extension:reason">
       <path value="Extension.extension.extension" />
@@ -113,17 +85,6 @@
     </element>
     <element id="Extension.extension:doublePrescription.extension:reason.value[x]">
       <path value="Extension.extension.extension.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="closed" />
-      </slicing>
-    </element>
-    <element id="Extension.extension:doublePrescription.extension:reason.value[x]:valueString">
-      <path value="Extension.extension.extension.value[x]" />
-      <sliceName value="valueString" />
       <type>
         <code value="string" />
       </type>
@@ -140,55 +101,13 @@
     </element>
     <element id="Extension.extension:doublePrescription.extension:codedreason.value[x]">
       <path value="Extension.extension.extension.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="closed" />
-      </slicing>
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
-    <element id="Extension.extension:doublePrescription.extension:codedreason.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Extension.extension:doublePrescription.extension:codedreason.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.value[x].text" />
-    </element>
-    <element id="Extension.extension:doublePrescription.extension:codedreason.value[x]:valueCodeableConcept">
-      <path value="Extension.extension.extension.value[x]" />
-      <sliceName value="valueCodeableConcept" />
-      <type>
-        <code value="CodeableConcept" />
-      </type>
-      <binding>
-        <strength value="extensible" />
-        <valueSet value="http://ehelse.no/fhir/CodeSystem/sfm-warning-cancelation-code|" />
-      </binding>
-    </element>
-    <element id="Extension.extension:doublePrescription.extension:codedreason.value[x]:valueCodeableConcept.coding.system">
+    <element id="Extension.extension:doublePrescription.extension:codedreason.value[x].coding.system">
       <path value="Extension.extension.extension.value[x].coding.system" />
       <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-warning-cancelation-code" />
-    </element>
-    <element id="Extension.extension:doublePrescription.extension:codedreason.value[x]:valueCodeableConcept.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Extension.extension:doublePrescription.extension:codedreason.value[x]:valueCodeableConcept.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.value[x].text" />
     </element>
     <element id="Extension.extension:doublePrescription.url">
       <path value="Extension.extension.url" />
@@ -227,39 +146,10 @@
     </element>
     <element id="Extension.extension:interaction.extension:reference.value[x]">
       <path value="Extension.extension.extension.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="closed" />
-      </slicing>
-    </element>
-    <element id="Extension.extension:interaction.extension:reference.value[x]:valueReference">
-      <path value="Extension.extension.extension.value[x]" />
-      <sliceName value="valueReference" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-MedicationStatement" />
       </type>
-    </element>
-    <element id="Extension.extension:interaction.extension:reference.value[x]:valueReference.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.value[x].identifier.type.coding.display" />
-    </element>
-    <element id="Extension.extension:interaction.extension:reference.value[x]:valueReference.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.value[x].identifier.type.text" />
-    </element>
-    <element id="Extension.extension:interaction.extension:reference.value[x]:valueReference.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.value[x].display" />
     </element>
     <element id="Extension.extension:interaction.extension:reason">
       <path value="Extension.extension.extension" />
@@ -274,17 +164,6 @@
     </element>
     <element id="Extension.extension:interaction.extension:reason.value[x]">
       <path value="Extension.extension.extension.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="closed" />
-      </slicing>
-    </element>
-    <element id="Extension.extension:interaction.extension:reason.value[x]:valueString">
-      <path value="Extension.extension.extension.value[x]" />
-      <sliceName value="valueString" />
       <type>
         <code value="string" />
       </type>
@@ -301,13 +180,6 @@
     </element>
     <element id="Extension.extension:interaction.extension:codedreason.value[x]">
       <path value="Extension.extension.extension.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="closed" />
-      </slicing>
       <type>
         <code value="CodeableConcept" />
       </type>
@@ -315,45 +187,6 @@
     <element id="Extension.extension:interaction.extension:codedreason.value[x].coding.system">
       <path value="Extension.extension.extension.value[x].coding.system" />
       <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-warning-cancelation-code" />
-    </element>
-    <element id="Extension.extension:interaction.extension:codedreason.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Extension.extension:interaction.extension:codedreason.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.value[x].text" />
-    </element>
-    <element id="Extension.extension:interaction.extension:codedreason.value[x]:valueCodeableConcept">
-      <path value="Extension.extension.extension.value[x]" />
-      <sliceName value="valueCodeableConcept" />
-      <type>
-        <code value="CodeableConcept" />
-      </type>
-      <binding>
-        <strength value="extensible" />
-        <valueSet value="http://ehelse.no/fhir/CodeSystem/sfm-warning-cancelation-code" />
-      </binding>
-    </element>
-    <element id="Extension.extension:interaction.extension:codedreason.value[x]:valueCodeableConcept.coding.system">
-      <path value="Extension.extension.extension.value[x].coding.system" />
-      <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-warning-cancelation-code" />
-    </element>
-    <element id="Extension.extension:interaction.extension:codedreason.value[x]:valueCodeableConcept.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Extension.extension:interaction.extension:codedreason.value[x]:valueCodeableConcept.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.value[x].text" />
     </element>
     <element id="Extension.extension:interaction.extension:interactiondata">
       <path value="Extension.extension.extension" />
@@ -370,26 +203,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Interaction" />
-        <aggregation value="contained" />
       </type>
-    </element>
-    <element id="Extension.extension:interaction.extension:interactiondata.value[x].identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.value[x].identifier.type.coding.display" />
-    </element>
-    <element id="Extension.extension:interaction.extension:interactiondata.value[x].identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.value[x].identifier.type.text" />
-    </element>
-    <element id="Extension.extension:interaction.extension:interactiondata.value[x].display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.value[x].display" />
     </element>
     <element id="Extension.extension:interaction.url">
       <path value="Extension.extension.url" />
@@ -429,38 +243,9 @@
     </element>
     <element id="Extension.extension:allergyIntollerance.extension:reference.value[x]">
       <path value="Extension.extension.extension.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="closed" />
-      </slicing>
-    </element>
-    <element id="Extension.extension:allergyIntollerance.extension:reference.value[x]:valueReference">
-      <path value="Extension.extension.extension.value[x]" />
-      <sliceName value="valueReference" />
       <type>
         <code value="Reference" />
       </type>
-    </element>
-    <element id="Extension.extension:allergyIntollerance.extension:reference.value[x]:valueReference.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.value[x].identifier.type.coding.display" />
-    </element>
-    <element id="Extension.extension:allergyIntollerance.extension:reference.value[x]:valueReference.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.value[x].identifier.type.text" />
-    </element>
-    <element id="Extension.extension:allergyIntollerance.extension:reference.value[x]:valueReference.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.value[x].display" />
     </element>
     <element id="Extension.extension:allergyIntollerance.extension:reason">
       <path value="Extension.extension.extension" />
@@ -474,20 +259,6 @@
     </element>
     <element id="Extension.extension:allergyIntollerance.extension:reason.value[x]">
       <path value="Extension.extension.extension.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="closed" />
-      </slicing>
-      <type>
-        <code value="string" />
-      </type>
-    </element>
-    <element id="Extension.extension:allergyIntollerance.extension:reason.value[x]:valueString">
-      <path value="Extension.extension.extension.value[x]" />
-      <sliceName value="valueString" />
       <type>
         <code value="string" />
       </type>
@@ -504,55 +275,13 @@
     </element>
     <element id="Extension.extension:allergyIntollerance.extension:codedreason.value[x]">
       <path value="Extension.extension.extension.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="closed" />
-      </slicing>
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
-    <element id="Extension.extension:allergyIntollerance.extension:codedreason.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Extension.extension:allergyIntollerance.extension:codedreason.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.value[x].text" />
-    </element>
-    <element id="Extension.extension:allergyIntollerance.extension:codedreason.value[x]:valueCodeableConcept">
-      <path value="Extension.extension.extension.value[x]" />
-      <sliceName value="valueCodeableConcept" />
-      <type>
-        <code value="CodeableConcept" />
-      </type>
-      <binding>
-        <strength value="extensible" />
-        <valueSet value="http://ehelse.no/fhir/CodeSystem/sfm-warning-cancelation-code" />
-      </binding>
-    </element>
-    <element id="Extension.extension:allergyIntollerance.extension:codedreason.value[x]:valueCodeableConcept.coding.system">
+    <element id="Extension.extension:allergyIntollerance.extension:codedreason.value[x].coding.system">
       <path value="Extension.extension.extension.value[x].coding.system" />
       <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-warning-cancelation-code" />
-    </element>
-    <element id="Extension.extension:allergyIntollerance.extension:codedreason.value[x]:valueCodeableConcept.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Extension.extension:allergyIntollerance.extension:codedreason.value[x]:valueCodeableConcept.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.value[x].text" />
     </element>
     <element id="Extension.extension:allergyIntollerance.url">
       <path value="Extension.extension.url" />

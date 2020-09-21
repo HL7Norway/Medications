@@ -25,18 +25,6 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Basic" />
   <derivation value="constraint" />
   <differential>
-    <element id="Basic.meta.security.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.meta.security.display" />
-    </element>
-    <element id="Basic.meta.tag.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.meta.tag.display" />
-    </element>
     <element id="Basic.extension">
       <path value="Basic.extension" />
       <slicing>
@@ -58,6 +46,16 @@
       </type>
       <mustSupport value="true" />
     </element>
+    <element id="Basic.extension:slvresponse.extension">
+      <path value="Basic.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
     <element id="Basic.extension:slvresponse.extension:reseptid">
       <path value="Basic.extension.extension" />
       <sliceName value="reseptid" />
@@ -78,42 +76,6 @@
       <sliceName value="caseworker" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.identifier.type.coding.display" />
-    </element>
-    <element id="Basic.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.identifier.type.text" />
-    </element>
-    <element id="Basic.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="Basic.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="Basic.identifier.assigner.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.identifier.assigner.identifier.assigner.display" />
-    </element>
-    <element id="Basic.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.identifier.assigner.display" />
-    </element>
     <element id="Basic.code">
       <path value="Basic.code" />
       <fixedCodeableConcept>
@@ -129,104 +91,17 @@
       <path value="Basic.code.coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.8279" />
     </element>
-    <element id="Basic.code.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.code.coding.display" />
-    </element>
-    <element id="Basic.code.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.code.text" />
-    </element>
     <element id="Basic.subject">
       <path value="Basic.subject" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
         <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Patient" />
-        <aggregation value="contained" />
-        <aggregation value="bundled" />
       </type>
       <mustSupport value="true" />
-    </element>
-    <element id="Basic.subject.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.subject.identifier.type.coding.display" />
-    </element>
-    <element id="Basic.subject.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.subject.identifier.type.text" />
-    </element>
-    <element id="Basic.subject.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.subject.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="Basic.subject.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.subject.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="Basic.subject.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.subject.identifier.assigner.display" />
-    </element>
-    <element id="Basic.subject.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.subject.display" />
     </element>
     <element id="Basic.created">
       <path value="Basic.created" />
       <mustSupport value="true" />
-    </element>
-    <element id="Basic.author.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.author.identifier.type.coding.display" />
-    </element>
-    <element id="Basic.author.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.author.identifier.type.text" />
-    </element>
-    <element id="Basic.author.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.author.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="Basic.author.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.author.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="Basic.author.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.author.identifier.assigner.display" />
-    </element>
-    <element id="Basic.author.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Basic.author.display" />
     </element>
   </differential>
 </StructureDefinition>

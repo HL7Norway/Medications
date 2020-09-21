@@ -175,8 +175,7 @@
       <definition value="Indicates who was responsible for dispensing product to customer." />
       <type>
         <code value="Reference" />
-        <aggregation value="contained" />
-        <aggregation value="bundled" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-PractitionerRole" />
       </type>
       <mustSupport value="true" />
     </element>

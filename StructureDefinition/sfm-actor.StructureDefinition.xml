@@ -62,18 +62,6 @@
       <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7490" />
     </element>
-    <element id="Extension.extension:role.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Extension.extension:role.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].text" />
-    </element>
     <element id="Extension.extension:practioner">
       <path value="Extension.extension" />
       <sliceName value="practioner" />
@@ -89,45 +77,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Practitoner" />
-        <aggregation value="contained" />
-        <aggregation value="bundled" />
       </type>
-    </element>
-    <element id="Extension.extension:practioner.value[x].identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].identifier.type.coding.display" />
-    </element>
-    <element id="Extension.extension:practioner.value[x].identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].identifier.type.text" />
-    </element>
-    <element id="Extension.extension:practioner.value[x].identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="Extension.extension:practioner.value[x].identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="Extension.extension:practioner.value[x].identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].identifier.assigner.display" />
-    </element>
-    <element id="Extension.extension:practioner.value[x].display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].display" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />

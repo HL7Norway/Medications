@@ -24,54 +24,6 @@
       <short value="Actions required in SFM" />
       <definition value="The SFM-Oppgave is used to identify actions that must be taken in SFM." />
     </element>
-    <element id="Task.meta.security.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.meta.security.display" />
-    </element>
-    <element id="Task.meta.tag.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.meta.tag.display" />
-    </element>
-    <element id="Task.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.identifier.type.coding.display" />
-    </element>
-    <element id="Task.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.identifier.type.text" />
-    </element>
-    <element id="Task.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="Task.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="Task.identifier.assigner.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.identifier.assigner.identifier.assigner.display" />
-    </element>
-    <element id="Task.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.identifier.assigner.display" />
-    </element>
     <element id="Task.instantiatesCanonical">
       <path value="Task.instantiatesCanonical" />
       <max value="0" />
@@ -84,121 +36,13 @@
       <path value="Task.basedOn" />
       <max value="0" />
     </element>
-    <element id="Task.basedOn.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.basedOn.identifier.type.coding.display" />
-    </element>
-    <element id="Task.basedOn.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.basedOn.identifier.type.text" />
-    </element>
-    <element id="Task.basedOn.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.basedOn.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="Task.basedOn.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.basedOn.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="Task.basedOn.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.basedOn.identifier.assigner.display" />
-    </element>
-    <element id="Task.basedOn.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.basedOn.display" />
-    </element>
     <element id="Task.groupIdentifier">
       <path value="Task.groupIdentifier" />
       <max value="0" />
     </element>
-    <element id="Task.groupIdentifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.groupIdentifier.type.coding.display" />
-    </element>
-    <element id="Task.groupIdentifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.groupIdentifier.type.text" />
-    </element>
-    <element id="Task.groupIdentifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.groupIdentifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="Task.groupIdentifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.groupIdentifier.assigner.identifier.type.text" />
-    </element>
-    <element id="Task.groupIdentifier.assigner.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.groupIdentifier.assigner.identifier.assigner.display" />
-    </element>
-    <element id="Task.groupIdentifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.groupIdentifier.assigner.display" />
-    </element>
     <element id="Task.partOf">
       <path value="Task.partOf" />
       <max value="0" />
-    </element>
-    <element id="Task.partOf.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.partOf.identifier.type.coding.display" />
-    </element>
-    <element id="Task.partOf.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.partOf.identifier.type.text" />
-    </element>
-    <element id="Task.partOf.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.partOf.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="Task.partOf.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.partOf.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="Task.partOf.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.partOf.identifier.assigner.display" />
-    </element>
-    <element id="Task.partOf.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.partOf.display" />
     </element>
     <element id="Task.status">
       <path value="Task.status" />
@@ -209,33 +53,9 @@
       <path value="Task.statusReason" />
       <max value="0" />
     </element>
-    <element id="Task.statusReason.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.statusReason.coding.display" />
-    </element>
-    <element id="Task.statusReason.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.statusReason.text" />
-    </element>
     <element id="Task.businessStatus">
       <path value="Task.businessStatus" />
       <max value="0" />
-    </element>
-    <element id="Task.businessStatus.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.businessStatus.coding.display" />
-    </element>
-    <element id="Task.businessStatus.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.businessStatus.text" />
     </element>
     <element id="Task.intent">
       <path value="Task.intent" />
@@ -261,17 +81,8 @@
       <min value="1" />
     </element>
     <element id="Task.code.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
       <path value="Task.code.coding.display" />
       <min value="1" />
-    </element>
-    <element id="Task.code.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.code.text" />
     </element>
     <element id="Task.description">
       <path value="Task.description" />
@@ -283,127 +94,17 @@
       <path value="Task.focus" />
       <max value="0" />
     </element>
-    <element id="Task.focus.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.focus.identifier.type.coding.display" />
-    </element>
-    <element id="Task.focus.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.focus.identifier.type.text" />
-    </element>
-    <element id="Task.focus.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.focus.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="Task.focus.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.focus.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="Task.focus.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.focus.identifier.assigner.display" />
-    </element>
-    <element id="Task.focus.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.focus.display" />
-    </element>
     <element id="Task.for">
       <path value="Task.for" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Patient" />
-        <aggregation value="contained" />
-        <aggregation value="bundled" />
       </type>
       <mustSupport value="true" />
-    </element>
-    <element id="Task.for.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.for.identifier.type.coding.display" />
-    </element>
-    <element id="Task.for.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.for.identifier.type.text" />
-    </element>
-    <element id="Task.for.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.for.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="Task.for.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.for.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="Task.for.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.for.identifier.assigner.display" />
-    </element>
-    <element id="Task.for.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.for.display" />
     </element>
     <element id="Task.encounter">
       <path value="Task.encounter" />
       <max value="0" />
-    </element>
-    <element id="Task.encounter.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.encounter.identifier.type.coding.display" />
-    </element>
-    <element id="Task.encounter.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.encounter.identifier.type.text" />
-    </element>
-    <element id="Task.encounter.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.encounter.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="Task.encounter.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.encounter.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="Task.encounter.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.encounter.identifier.assigner.display" />
-    </element>
-    <element id="Task.encounter.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.encounter.display" />
     </element>
     <element id="Task.executionPeriod">
       <path value="Task.executionPeriod" />
@@ -421,57 +122,9 @@
       <path value="Task.requester" />
       <max value="0" />
     </element>
-    <element id="Task.requester.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.requester.identifier.type.coding.display" />
-    </element>
-    <element id="Task.requester.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.requester.identifier.type.text" />
-    </element>
-    <element id="Task.requester.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.requester.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="Task.requester.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.requester.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="Task.requester.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.requester.identifier.assigner.display" />
-    </element>
-    <element id="Task.requester.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.requester.display" />
-    </element>
     <element id="Task.performerType">
       <path value="Task.performerType" />
       <mustSupport value="true" />
-    </element>
-    <element id="Task.performerType.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.performerType.coding.display" />
-    </element>
-    <element id="Task.performerType.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.performerType.text" />
     </element>
     <element id="Task.owner">
       <path value="Task.owner" />
@@ -480,182 +133,24 @@
         <code value="Reference" />
         <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Practitioner" />
         <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Organization" />
-        <aggregation value="contained" />
-        <aggregation value="bundled" />
       </type>
       <mustSupport value="true" />
-    </element>
-    <element id="Task.owner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.owner.identifier.type.coding.display" />
-    </element>
-    <element id="Task.owner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.owner.identifier.type.text" />
-    </element>
-    <element id="Task.owner.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.owner.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="Task.owner.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.owner.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="Task.owner.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.owner.identifier.assigner.display" />
-    </element>
-    <element id="Task.owner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.owner.display" />
     </element>
     <element id="Task.location">
       <path value="Task.location" />
       <max value="0" />
     </element>
-    <element id="Task.location.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.location.identifier.type.coding.display" />
-    </element>
-    <element id="Task.location.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.location.identifier.type.text" />
-    </element>
-    <element id="Task.location.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.location.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="Task.location.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.location.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="Task.location.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.location.identifier.assigner.display" />
-    </element>
-    <element id="Task.location.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.location.display" />
-    </element>
     <element id="Task.reasonCode">
       <path value="Task.reasonCode" />
       <max value="0" />
-    </element>
-    <element id="Task.reasonCode.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.reasonCode.coding.display" />
-    </element>
-    <element id="Task.reasonCode.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.reasonCode.text" />
     </element>
     <element id="Task.reasonReference">
       <path value="Task.reasonReference" />
       <max value="0" />
     </element>
-    <element id="Task.reasonReference.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.reasonReference.identifier.type.coding.display" />
-    </element>
-    <element id="Task.reasonReference.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.reasonReference.identifier.type.text" />
-    </element>
-    <element id="Task.reasonReference.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.reasonReference.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="Task.reasonReference.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.reasonReference.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="Task.reasonReference.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.reasonReference.identifier.assigner.display" />
-    </element>
-    <element id="Task.reasonReference.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.reasonReference.display" />
-    </element>
     <element id="Task.insurance">
       <path value="Task.insurance" />
       <max value="0" />
-    </element>
-    <element id="Task.insurance.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.insurance.identifier.type.coding.display" />
-    </element>
-    <element id="Task.insurance.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.insurance.identifier.type.text" />
-    </element>
-    <element id="Task.insurance.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.insurance.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="Task.insurance.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.insurance.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="Task.insurance.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.insurance.identifier.assigner.display" />
-    </element>
-    <element id="Task.insurance.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.insurance.display" />
     </element>
     <element id="Task.note">
       <path value="Task.note" />
@@ -665,116 +160,17 @@
       <path value="Task.relevantHistory" />
       <max value="0" />
     </element>
-    <element id="Task.relevantHistory.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.relevantHistory.identifier.type.coding.display" />
-    </element>
-    <element id="Task.relevantHistory.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.relevantHistory.identifier.type.text" />
-    </element>
-    <element id="Task.relevantHistory.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.relevantHistory.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="Task.relevantHistory.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.relevantHistory.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="Task.relevantHistory.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.relevantHistory.identifier.assigner.display" />
-    </element>
-    <element id="Task.relevantHistory.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.relevantHistory.display" />
-    </element>
     <element id="Task.restriction">
       <path value="Task.restriction" />
       <max value="0" />
     </element>
-    <element id="Task.restriction.recipient.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.restriction.recipient.identifier.type.coding.display" />
-    </element>
-    <element id="Task.restriction.recipient.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.restriction.recipient.identifier.type.text" />
-    </element>
-    <element id="Task.restriction.recipient.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.restriction.recipient.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="Task.restriction.recipient.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.restriction.recipient.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="Task.restriction.recipient.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.restriction.recipient.identifier.assigner.display" />
-    </element>
-    <element id="Task.restriction.recipient.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.restriction.recipient.display" />
-    </element>
     <element id="Task.input">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
-        <valueString value="Parameter" />
-      </extension>
       <path value="Task.input" />
       <max value="0" />
-    </element>
-    <element id="Task.input.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.input.type.coding.display" />
-    </element>
-    <element id="Task.input.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.input.type.text" />
     </element>
     <element id="Task.output">
       <path value="Task.output" />
       <max value="0" />
-    </element>
-    <element id="Task.output.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.output.type.coding.display" />
-    </element>
-    <element id="Task.output.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Task.output.type.text" />
     </element>
   </differential>
 </StructureDefinition>

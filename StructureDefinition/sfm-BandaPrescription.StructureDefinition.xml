@@ -36,6 +36,16 @@
       </type>
       <mustSupport value="true" />
     </element>
+    <element id="Basic.extension:reseptinfo.extension">
+      <path value="Basic.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
     <element id="Basic.extension:reseptinfo.extension:reseptdate">
       <path value="Basic.extension.extension" />
       <sliceName value="reseptdate" />
@@ -80,6 +90,16 @@
       <path value="Basic.extension.extension" />
       <sliceName value="dispatchrequest" />
       <mustSupport value="true" />
+    </element>
+    <element id="Basic.extension:reseptinfo.extension:dispatchrequest.extension">
+      <path value="Basic.extension.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
     </element>
     <element id="Basic.extension:reseptinfo.extension:dispatchrequest.extension:condition">
       <path value="Basic.extension.extension.extension" />
@@ -156,10 +176,50 @@
       <sliceName value="note" />
       <mustSupport value="true" />
     </element>
+    <element id="Basic.extension:reseptinfo.extension:recallinfo">
+      <path value="Basic.extension.extension" />
+      <sliceName value="recallinfo" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Basic.extension:reseptinfo.extension:recallinfo.extension">
+      <path value="Basic.extension.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Basic.extension:reseptinfo.extension:recallinfo.extension:recallId">
+      <path value="Basic.extension.extension.extension" />
+      <sliceName value="recallId" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Basic.extension:reseptinfo.extension:recallinfo.extension:text">
+      <path value="Basic.extension.extension.extension" />
+      <sliceName value="text" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Basic.extension:reseptinfo.extension:recallinfo.extension:recallcode">
+      <path value="Basic.extension.extension.extension" />
+      <sliceName value="recallcode" />
+      <mustSupport value="true" />
+    </element>
     <element id="Basic.extension:reseptinfo.extension:dispencesummary">
       <path value="Basic.extension.extension" />
       <sliceName value="dispencesummary" />
       <mustSupport value="true" />
+    </element>
+    <element id="Basic.extension:reseptinfo.extension:dispencesummary.extension">
+      <path value="Basic.extension.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
     </element>
     <element id="Basic.extension:reseptinfo.extension:dispencesummary.extension:varenummer">
       <path value="Basic.extension.extension.extension" />
@@ -191,25 +251,9 @@
       <sliceName value="lastdeliverydate" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptinfo.extension:recallinfo">
-      <path value="Basic.extension.extension" />
-      <sliceName value="recallinfo" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Basic.extension:reseptinfo.extension:recallinfo.extension:recallId">
-      <path value="Basic.extension.extension.extension" />
-      <sliceName value="recallId" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Basic.extension:reseptinfo.extension:recallinfo.extension:text">
-      <path value="Basic.extension.extension.extension" />
-      <sliceName value="text" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Basic.extension:reseptinfo.extension:recallinfo.extension:recallcode">
-      <path value="Basic.extension.extension.extension" />
-      <sliceName value="recallcode" />
-      <mustSupport value="true" />
+    <element id="Basic.extension:reseptinfo.extension:dispencesummary.url">
+      <path value="Basic.extension.extension.url" />
+      <fixedUri value="dispencesummary" />
     </element>
     <element id="Basic.extension:reseptdetails">
       <path value="Basic.extension" />
@@ -221,6 +265,16 @@
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-reseptdocbanda" />
       </type>
       <mustSupport value="true" />
+    </element>
+    <element id="Basic.extension:reseptdetails.extension">
+      <path value="Basic.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
     </element>
     <element id="Basic.extension:reseptdetails.extension:productgroup">
       <path value="Basic.extension.extension" />
@@ -249,8 +303,7 @@
       <definition value="sfm-Patient resource to be used." />
       <type>
         <code value="Reference" />
-        <aggregation value="contained" />
-        <aggregation value="bundled" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Patient" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -260,14 +313,7 @@
       <definition value="Prescriber and organization are identified using PractitionerRole." />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
         <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-PractitionerRole" />
-        <aggregation value="contained" />
-        <aggregation value="bundled" />
       </type>
       <mustSupport value="true" />
     </element>

@@ -44,28 +44,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-PractitionerRole" />
-        <aggregation value="contained" />
-        <aggregation value="referenced" />
-        <aggregation value="bundled" />
       </type>
-    </element>
-    <element id="Extension.extension:relatedparties.value[x].identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].identifier.type.coding.display" />
-    </element>
-    <element id="Extension.extension:relatedparties.value[x].identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].identifier.type.text" />
-    </element>
-    <element id="Extension.extension:relatedparties.value[x].display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].display" />
     </element>
     <element id="Extension.extension:deliveryinformation">
       <path value="Extension.extension" />
@@ -99,24 +78,6 @@
         <code value="Reference" />
         <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-MedicationStatement" />
       </type>
-    </element>
-    <element id="Extension.extension:deliveryinformation.extension:prescriptionId.value[x].identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.value[x].identifier.type.coding.display" />
-    </element>
-    <element id="Extension.extension:deliveryinformation.extension:prescriptionId.value[x].identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.value[x].identifier.type.text" />
-    </element>
-    <element id="Extension.extension:deliveryinformation.extension:prescriptionId.value[x].display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.value[x].display" />
     </element>
     <element id="Extension.extension:deliveryinformation.extension:refM10">
       <path value="Extension.extension.extension" />
@@ -152,18 +113,6 @@
           <system value="urn:oid:2.16.578.1.12.4.1.1.7492" />
         </coding>
       </fixedCodeableConcept>
-    </element>
-    <element id="Extension.extension:deliveryinformation.extension:repacking.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Extension.extension:deliveryinformation.extension:repacking.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.value[x].text" />
     </element>
     <element id="Extension.extension:deliveryinformation.extension:datefirstdose">
       <path value="Extension.extension.extension" />
@@ -227,26 +176,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-MedicationDispense" />
-        <aggregation value="bundled" />
       </type>
-    </element>
-    <element id="Extension.extension:deliveryinformation.extension:deliverydoc.value[x].identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.value[x].identifier.type.coding.display" />
-    </element>
-    <element id="Extension.extension:deliveryinformation.extension:deliverydoc.value[x].identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.value[x].identifier.type.text" />
-    </element>
-    <element id="Extension.extension:deliveryinformation.extension:deliverydoc.value[x].display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.extension.value[x].display" />
     </element>
     <element id="Extension.extension:deliveryinformation.url">
       <path value="Extension.extension.url" />

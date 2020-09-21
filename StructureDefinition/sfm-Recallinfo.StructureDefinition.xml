@@ -61,10 +61,7 @@
       <path value="Basic.subject" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
         <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Patient" />
-        <aggregation value="contained" />
-        <aggregation value="bundled" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -78,14 +75,7 @@
       <definition value="Indicates who recalled the prescription" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
         <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-PractitionerRole" />
-        <aggregation value="contained" />
-        <aggregation value="bundled" />
       </type>
       <mustSupport value="true" />
     </element>

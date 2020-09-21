@@ -35,36 +35,6 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/DetectedIssue" />
   <derivation value="constraint" />
   <differential>
-    <element id="DetectedIssue.meta.security.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="DetectedIssue.meta.security.display" />
-    </element>
-    <element id="DetectedIssue.meta.tag.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="DetectedIssue.meta.tag.display" />
-    </element>
-    <element id="DetectedIssue.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="DetectedIssue.identifier.type.coding.display" />
-    </element>
-    <element id="DetectedIssue.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="DetectedIssue.identifier.type.text" />
-    </element>
-    <element id="DetectedIssue.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="DetectedIssue.identifier.assigner.display" />
-    </element>
     <element id="DetectedIssue.status">
       <path value="DetectedIssue.status" />
       <mustSupport value="true" />
@@ -73,18 +43,6 @@
       <path value="DetectedIssue.code" />
       <max value="0" />
     </element>
-    <element id="DetectedIssue.code.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="DetectedIssue.code.coding.display" />
-    </element>
-    <element id="DetectedIssue.code.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="DetectedIssue.code.text" />
-    </element>
     <element id="DetectedIssue.severity">
       <path value="DetectedIssue.severity" />
       <max value="0" />
@@ -92,24 +50,6 @@
     <element id="DetectedIssue.patient">
       <path value="DetectedIssue.patient" />
       <max value="0" />
-    </element>
-    <element id="DetectedIssue.patient.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="DetectedIssue.patient.identifier.type.coding.display" />
-    </element>
-    <element id="DetectedIssue.patient.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="DetectedIssue.patient.identifier.type.text" />
-    </element>
-    <element id="DetectedIssue.patient.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="DetectedIssue.patient.display" />
     </element>
     <element id="DetectedIssue.identified[x]">
       <path value="DetectedIssue.identified[x]" />
@@ -122,24 +62,6 @@
       <path value="DetectedIssue.author" />
       <mustSupport value="true" />
     </element>
-    <element id="DetectedIssue.author.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="DetectedIssue.author.identifier.type.coding.display" />
-    </element>
-    <element id="DetectedIssue.author.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="DetectedIssue.author.identifier.type.text" />
-    </element>
-    <element id="DetectedIssue.author.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="DetectedIssue.author.display" />
-    </element>
     <element id="DetectedIssue.implicated">
       <path value="DetectedIssue.implicated" />
       <min value="1" />
@@ -148,24 +70,6 @@
         <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-MedicationStatement" />
       </type>
       <mustSupport value="true" />
-    </element>
-    <element id="DetectedIssue.implicated.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="DetectedIssue.implicated.identifier.type.coding.display" />
-    </element>
-    <element id="DetectedIssue.implicated.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="DetectedIssue.implicated.identifier.type.text" />
-    </element>
-    <element id="DetectedIssue.implicated.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="DetectedIssue.implicated.display" />
     </element>
     <element id="DetectedIssue.evidence">
       <path value="DetectedIssue.evidence" />
@@ -183,18 +87,6 @@
       <path value="DetectedIssue.evidence.code.coding.system" />
       <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-type-of-warning-code" />
     </element>
-    <element id="DetectedIssue.evidence.code.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="DetectedIssue.evidence.code.coding.display" />
-    </element>
-    <element id="DetectedIssue.evidence.code.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="DetectedIssue.evidence.code.text" />
-    </element>
     <element id="DetectedIssue.evidence.detail.reference">
       <path value="DetectedIssue.evidence.detail.reference" />
       <short value="Referance to registered drug reaction" />
@@ -204,30 +96,6 @@
       <path value="DetectedIssue.evidence.detail.identifier" />
       <short value="Identifies interaction that is evidence" />
       <definition value="Used for interactions and identies the FEST id of the interaction." />
-    </element>
-    <element id="DetectedIssue.evidence.detail.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="DetectedIssue.evidence.detail.identifier.type.coding.display" />
-    </element>
-    <element id="DetectedIssue.evidence.detail.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="DetectedIssue.evidence.detail.identifier.type.text" />
-    </element>
-    <element id="DetectedIssue.evidence.detail.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="DetectedIssue.evidence.detail.identifier.assigner.display" />
-    </element>
-    <element id="DetectedIssue.evidence.detail.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="DetectedIssue.evidence.detail.display" />
     </element>
     <element id="DetectedIssue.detail">
       <path value="DetectedIssue.detail" />
@@ -253,18 +121,6 @@
       <path value="DetectedIssue.mitigation.action.coding.system" />
       <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-warning-cancelation-code" />
     </element>
-    <element id="DetectedIssue.mitigation.action.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="DetectedIssue.mitigation.action.coding.display" />
-    </element>
-    <element id="DetectedIssue.mitigation.action.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="DetectedIssue.mitigation.action.text" />
-    </element>
     <element id="DetectedIssue.mitigation.date">
       <path value="DetectedIssue.mitigation.date" />
       <mustSupport value="true" />
@@ -274,30 +130,9 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole" />
         <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-PractitionerRole" />
-        <aggregation value="contained" />
       </type>
       <mustSupport value="true" />
-    </element>
-    <element id="DetectedIssue.mitigation.author.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="DetectedIssue.mitigation.author.identifier.type.coding.display" />
-    </element>
-    <element id="DetectedIssue.mitigation.author.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="DetectedIssue.mitigation.author.identifier.type.text" />
-    </element>
-    <element id="DetectedIssue.mitigation.author.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="DetectedIssue.mitigation.author.display" />
     </element>
   </differential>
 </StructureDefinition>
