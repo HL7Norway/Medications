@@ -264,6 +264,7 @@
         <code value="Extension" />
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-reseptamendment" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.identifier">
       <path value="MedicationStatement.identifier" />
