@@ -324,7 +324,7 @@
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.medication[x]:medicationReference">
-      <path value="MedicationStatement.medicationReference" />
+      <path value="MedicationStatement.medication[x]" />
       <sliceName value="medicationReference" />
       <definition value="Identifies the medication being administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code that identifies the medication from a known list of medications. sfm-Medication and sfm-Magistrell-Medication should be used." />
       <type>
