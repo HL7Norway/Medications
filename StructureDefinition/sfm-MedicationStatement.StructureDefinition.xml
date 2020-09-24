@@ -202,6 +202,15 @@
       <sliceName value="note" />
       <mustSupport value="true" />
     </element>
+    <element id="MedicationStatement.extension:reseptInfo">
+      <path value="MedicationStatement.extension" />
+      <sliceName value="reseptInfo" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-reseptamendment" />
+      </type>
+    </element>
     <element id="MedicationStatement.extension:administrationdetails">
       <path value="MedicationStatement.extension" />
       <sliceName value="administrationdetails" />
@@ -254,15 +263,6 @@
       <path value="MedicationStatement.extension.extension.extension" />
       <sliceName value="admSchema" />
       <mustSupport value="true" />
-    </element>
-    <element id="MedicationStatement.extension:reseptInfo">
-      <path value="MedicationStatement.extension" />
-      <sliceName value="reseptInfo" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-reseptamendment" />
-      </type>
     </element>
     <element id="MedicationStatement.identifier">
       <path value="MedicationStatement.identifier" />
