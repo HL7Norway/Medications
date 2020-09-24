@@ -258,6 +258,7 @@
     <element id="MedicationStatement.extension:reseptInfo">
       <path value="MedicationStatement.extension" />
       <sliceName value="reseptInfo" />
+      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-reseptamendment" />
