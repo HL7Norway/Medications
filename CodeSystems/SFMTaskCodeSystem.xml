@@ -103,4 +103,8 @@
     <code value="23" />
     <display value="Endring i HPR" />
   </concept>
+    <concept>
+    <code value="24" />
+    <display value="Legemiddelreaksjonregistering er mangelfull" />
+  </concept>
 </CodeSystem>
