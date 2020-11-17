@@ -19,6 +19,10 @@
     <type value="element" />
     <expression value="List" />
   </context>
+  <context>
+    <type value="element" />
+    <expression value="Basic" />
+  </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
@@ -42,7 +46,7 @@
       <path value="Extension.extension" />
       <sliceName value="doublePrescription" />
       <short value="Double prescription" />
-      <definition value="Information about two or more medications that are similar." />
+      <definition value="Information about two or more medications that are similar and reason why using both." />
     </element>
     <element id="Extension.extension:doublePrescription.extension">
       <path value="Extension.extension.extension" />
@@ -107,7 +111,7 @@
     </element>
     <element id="Extension.extension:doublePrescription.extension:codedreason.value[x].coding.system">
       <path value="Extension.extension.extension.value[x].coding.system" />
-      <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-warning-cancelation-code" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7535" />
     </element>
     <element id="Extension.extension:doublePrescription.url">
       <path value="Extension.extension.url" />
@@ -121,7 +125,7 @@
       <path value="Extension.extension" />
       <sliceName value="interaction" />
       <short value="Interaction information" />
-      <definition value="Information about interaction between two or more medicationstatements." />
+      <definition value="Information about interaction between two or more medicationstatements and how interaction has been managed." />
     </element>
     <element id="Extension.extension:interaction.extension">
       <path value="Extension.extension.extension" />
@@ -186,7 +190,7 @@
     </element>
     <element id="Extension.extension:interaction.extension:codedreason.value[x].coding.system">
       <path value="Extension.extension.extension.value[x].coding.system" />
-      <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-warning-cancelation-code" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7535" />
     </element>
     <element id="Extension.extension:interaction.extension:interactiondata">
       <path value="Extension.extension.extension" />
@@ -217,7 +221,7 @@
       <path value="Extension.extension" />
       <sliceName value="allergyIntollerance" />
       <short value="Identified allergy intollerance" />
-      <definition value="Allergy intollerance identified related to medicalstatement." />
+      <definition value="Allergy intollerance identified related to medicalstatement and reason why prescribing anyway." />
     </element>
     <element id="Extension.extension:allergyIntollerance.extension">
       <path value="Extension.extension.extension" />
@@ -281,13 +285,85 @@
     </element>
     <element id="Extension.extension:allergyIntollerance.extension:codedreason.value[x].coding.system">
       <path value="Extension.extension.extension.value[x].coding.system" />
-      <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-warning-cancelation-code" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7535" />
     </element>
     <element id="Extension.extension:allergyIntollerance.url">
       <path value="Extension.extension.url" />
       <fixedUri value="allergyIntollerance" />
     </element>
     <element id="Extension.extension:allergyIntollerance.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <max value="0" />
+    </element>
+    <element id="Extension.extension:reasonMedicalChange">
+      <path value="Extension.extension" />
+      <sliceName value="reasonMedicalChange" />
+      <short value="Reason for last medical change" />
+      <definition value="Type and reason of last medical change performed by prescriber." />
+    </element>
+    <element id="Extension.extension:reasonMedicalChange.extension">
+      <path value="Extension.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:reasonMedicalChange.extension:reference">
+      <path value="Extension.extension.extension" />
+      <sliceName value="reference" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:reasonMedicalChange.extension:reference.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="reference" />
+    </element>
+    <element id="Extension.extension:reasonMedicalChange.extension:reference.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="Reference" />
+      </type>
+    </element>
+    <element id="Extension.extension:reasonMedicalChange.extension:reason">
+      <path value="Extension.extension.extension" />
+      <sliceName value="reason" />
+    </element>
+    <element id="Extension.extension:reasonMedicalChange.extension:reason.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="reason" />
+    </element>
+    <element id="Extension.extension:reasonMedicalChange.extension:reason.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:reasonMedicalChange.extension:typeofchange">
+      <path value="Extension.extension.extension" />
+      <sliceName value="typeofchange" />
+    </element>
+    <element id="Extension.extension:reasonMedicalChange.extension:typeofchange.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="typeofchange" />
+    </element>
+    <element id="Extension.extension:reasonMedicalChange.extension:typeofchange.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.extension:reasonMedicalChange.extension:typeofchange.value[x].coding.system">
+      <path value="Extension.extension.extension.value[x].coding.system" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7536" />
+    </element>
+    <element id="Extension.extension:reasonMedicalChange.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="reasonMedicalChange" />
+    </element>
+    <element id="Extension.extension:reasonMedicalChange.value[x]">
       <path value="Extension.extension.value[x]" />
       <max value="0" />
     </element>

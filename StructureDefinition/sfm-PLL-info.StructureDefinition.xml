@@ -139,6 +139,14 @@
       <sliceName value="lastdosingdate" />
       <mustSupport value="true" />
     </element>
+    <element id="Basic.extension:warning">
+      <path value="Basic.extension" />
+      <sliceName value="warning" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-warning" />
+      </type>
+    </element>
     <element id="Basic.code">
       <path value="Basic.code" />
       <mustSupport value="true" />
