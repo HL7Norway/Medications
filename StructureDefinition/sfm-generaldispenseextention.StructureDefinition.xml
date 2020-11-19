@@ -142,6 +142,22 @@
         <code value="decimal" />
       </type>
     </element>
+    <element id="Extension.extension:whenHandedOver">
+      <path value="Extension.extension" />
+      <sliceName value="whenHandedOver" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:whenHandedOver.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="whenHandedOver" />
+    </element>
+    <element id="Extension.extension:whenHandedOver.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="date" />
+      </type>
+    </element>
     <element id="Extension.url">
       <path value="Extension.url" />
       <fixedUri value="http://ehelse.no/fhir/StructureDefinition/sfm-generaldispenseextention" />
