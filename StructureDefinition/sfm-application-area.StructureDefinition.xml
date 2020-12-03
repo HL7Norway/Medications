@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sfm-application-area" />
-  <url value="http://example.org/fhir/StructureDefinition/sfm-application-area" />
+  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-application-area" />
   <version value="2.1" />
   <name value="SfmApplicationArea" />
   <title value="sfm-application-area" />
@@ -48,18 +48,6 @@
       <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7488" />
     </element>
-    <element id="Extension.extension:coded.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Extension.extension:coded.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].text" />
-    </element>
     <element id="Extension.extension:text">
       <path value="Extension.extension" />
       <sliceName value="text" />
@@ -77,7 +65,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://example.org/fhir/StructureDefinition/sfm-application-area" />
+      <fixedUri value="http://ehelse.no/fhir/StructureDefinition/sfm-application-area" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
