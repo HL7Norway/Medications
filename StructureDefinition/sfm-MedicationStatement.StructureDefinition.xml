@@ -301,7 +301,7 @@
     </element>
     <element id="MedicationStatement.basedOn">
       <path value="MedicationStatement.basedOn" />
-      <definition value="A plan, proposal or order that is fulfilled in whole or in part by this event. Referance to medication statement is used when current statement is a draft and the draft is based on a previous statement." />
+      <definition value="A plan, proposal or order that is fulfilled in whole or in part by this event. Referance to medication statement is used when current statement is a draft and the draft is based on a previous statement. SFM use this to refer to previous versions of this statement." />
       <max value="1" />
       <type>
         <code value="Reference" />
@@ -313,6 +313,16 @@
     </element>
     <element id="MedicationStatement.partOf">
       <path value="MedicationStatement.partOf" />
+      <definition value="A larger event of which this particular event is a component or step. SFM pointer to new version medicationstatement." />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationAdministration" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationDispense" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationStatement" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Procedure" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-MedicationStatement" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.status">
@@ -393,7 +403,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://example.org/fhir/StructureDefinition/sfm-application-area" />
+        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-application-area" />
       </type>
       <mustSupport value="true" />
     </element>
