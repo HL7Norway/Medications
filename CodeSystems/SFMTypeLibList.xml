@@ -1,0 +1,28 @@
+<CodeSystem>
+  <id value="sfm-type-lib-list.codesystem" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2020-04-07T00:00:00.000+00:00" />
+  </meta>
+  <url value="http://ehelse.no/fhir/CodeSystem/sfm-type-lib-list" />
+  <version value="1.0.0" />
+  <name value="sfm-type-lib-list.codesystem" />
+  <title>Type of LIB list requested</title>
+  <status value="active" />
+  <date value="2020-12-21T00:00:00.000+00:00" />
+  <publisher value="Direktoratet for e-helse" />
+  <description>The Lib-list type returned</description>
+  <content value="complete" />
+  <concept>
+    <code value="preview" />
+    <display value="Visning og korrespondanse" />
+  </concept>
+  <concept>
+    <code value="administration" />
+    <display value="Administrasjon av legemidler" />
+  </concept>
+  <concept>
+    <code value="medicationcurve" />
+    <display value="Import i kurvesystem" />
+  </concept>
+</CodeSystem>

@@ -15,6 +15,11 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/List" />
   <derivation value="constraint" />
   <differential>
+    <element id="List">
+      <path value="List" />
+      <short value="LIB list with extended information" />
+      <definition value="LIB erteries and meta data related to medication. May also include correspondance details and html preview for user." />
+    </element>
     <element id="List.extension">
       <path value="List.extension" />
       <slicing>
@@ -59,44 +64,8 @@
       <sliceName value="metaData" />
       <type>
         <code value="Extension" />
-        <profile value="http://example.org/fhir/StructureDefinition/sfm-lib-list-meta-data" />
+        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-lib-list-meta-data" />
       </type>
-      <mustSupport value="true" />
-    </element>
-    <element id="List.extension:metaData.extension">
-      <path value="List.extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="List.extension:metaData.extension:approvalstatus">
-      <path value="List.extension.extension" />
-      <sliceName value="approvalstatus" />
-      <mustSupport value="true" />
-    </element>
-    <element id="List.extension:metaData.extension:generalcomment">
-      <path value="List.extension.extension" />
-      <sliceName value="generalcomment" />
-      <mustSupport value="true" />
-    </element>
-    <element id="List.extension:metaData.extension:purpose">
-      <path value="List.extension.extension" />
-      <sliceName value="purpose" />
-      <mustSupport value="true" />
-    </element>
-    <element id="List.extension:metaData.extension:period">
-      <path value="List.extension.extension" />
-      <sliceName value="period" />
-      <mustSupport value="true" />
-    </element>
-    <element id="List.extension:metaData.extension:medicationreview">
-      <path value="List.extension.extension" />
-      <sliceName value="medicationreview" />
-      <mustSupport value="true" />
     </element>
     <element id="List.extension:warnings">
       <path value="List.extension" />
@@ -228,6 +197,10 @@
       <fixedCodeableConcept>
         <text value="medications" />
       </fixedCodeableConcept>
+    </element>
+    <element id="List.code.coding.system">
+      <path value="List.code.coding.system" />
+      <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-type-lib-list" />
     </element>
     <element id="List.subject">
       <path value="List.subject" />
