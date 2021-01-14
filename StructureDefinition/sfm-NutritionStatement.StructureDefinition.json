@@ -1,0 +1,58 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "sfm-NutritionStatement",
+  "meta": {
+    "lastUpdated": "2018-09-05T11:35:51.829+00:00"
+  },
+  "url": "http://ehelse.no/fhir/StructureDefinition/sfm-NutritionStatement",
+  "version": "1.0",
+  "name": "SfmNutritionStatement",
+  "title": "sfm-NutritionStatement",
+  "status": "active",
+  "date": "2020-06-08",
+  "description": "SFM NutritionStatement derived from MedicationStatement. test",
+  "fhirVersion": "4.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "MedicationStatement",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/MedicationStatement",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "MedicationStatement.status",
+        "path": "MedicationStatement.status",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.medication[x]",
+        "path": "MedicationStatement.medication[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://ehelse.no/fhir/StructureDefinition/sfm-Nutrition"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.subject",
+        "path": "MedicationStatement.subject",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.dateAsserted",
+        "path": "MedicationStatement.dateAsserted",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.dosage",
+        "path": "MedicationStatement.dosage",
+        "max": "1",
+        "mustSupport": true
+      }
+    ]
+  }
+}

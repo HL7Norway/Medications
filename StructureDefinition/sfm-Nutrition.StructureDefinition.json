@@ -1,0 +1,76 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "sfm-Nutrition",
+  "meta": {
+    "lastUpdated": "2018-09-05T11:35:34.192+00:00"
+  },
+  "url": "http://ehelse.no/fhir/StructureDefinition/sfm-Nutrition",
+  "version": "1.0",
+  "name": "SfmNutrition",
+  "title": "sfm-Nutrition",
+  "status": "active",
+  "date": "2020-06-08",
+  "description": "SFM Product derived from Medication.",
+  "fhirVersion": "4.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Medication",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Medication",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Medication",
+        "path": "Medication",
+        "short": "Definition of a Product other than medication",
+        "definition": "this resource is used to represent Nutrition support and medical equipments that can be prescribed."
+      },
+      {
+        "id": "Medication.code",
+        "path": "Medication.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.code.coding:varenummer",
+        "path": "Medication.code.coding",
+        "sliceName": "varenummer",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Medication.code.coding:varenummer.system",
+        "path": "Medication.code.coding.system",
+        "fixedUri": "http://ehelse.no/varenummer"
+      },
+      {
+        "id": "Medication.code.coding:varenummer.code",
+        "path": "Medication.code.coding.code",
+        "short": "Varenummer for the product",
+        "definition": "Nordic product number (Farmalogg varenummer)."
+      },
+      {
+        "id": "Medication.code.coding:varenummer.display",
+        "path": "Medication.code.coding.display",
+        "short": "Varenavn",
+        "definition": "Name of the product as stated in FEST. If not present in FEST, then as stated in Farmalogg."
+      },
+      {
+        "id": "Medication.manufacturer",
+        "path": "Medication.manufacturer",
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.form",
+        "path": "Medication.form",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.form.coding.system",
+        "path": "Medication.form.coding.system",
+        "fixedUri": "urn:oid:2.16.578.1.12.4.1.1.7448"
+      }
+    ]
+  }
+}

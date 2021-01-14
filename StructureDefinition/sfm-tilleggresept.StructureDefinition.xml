@@ -581,6 +581,10 @@
         <code value="Quantity" />
       </type>
     </element>
+    <element id="Extension.extension:amount.value[x].system">
+      <path value="Extension.extension.value[x].system" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7452" />
+    </element>
     <element id="Extension.extension:dssn">
       <path value="Extension.extension" />
       <sliceName value="dssn" />
@@ -987,9 +991,15 @@
         <code value="Quantity" />
       </type>
     </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:amount.value[x].system">
+      <path value="Extension.extension.extension.extension.value[x].system" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7480" />
+    </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:interval">
       <path value="Extension.extension.extension.extension" />
       <sliceName value="interval" />
+      <short value="how often to repeat dosing" />
+      <definition value="identifyes how often to repeat dosing. Normally the unit should be equal to day/døgn." />
       <max value="1" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:interval.url">
@@ -999,11 +1009,11 @@
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:interval.value[x]">
       <path value="Extension.extension.extension.extension.value[x]" />
       <type>
-        <code value="CodeableConcept" />
+        <code value="Quantity" />
       </type>
     </element>
-    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:interval.value[x].coding.system">
-      <path value="Extension.extension.extension.extension.value[x].coding.system" />
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:interval.value[x].system">
+      <path value="Extension.extension.extension.extension.value[x].system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.9088" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:infusionspeed">

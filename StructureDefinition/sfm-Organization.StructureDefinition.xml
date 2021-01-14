@@ -126,6 +126,11 @@
       <sliceName value="ENH" />
       <max value="1" />
     </element>
+    <element id="Organization.identifier:RSH">
+      <path value="Organization.identifier" />
+      <sliceName value="RSH" />
+      <max value="1" />
+    </element>
     <element id="Organization.identifier:HERid">
       <path value="Organization.identifier" />
       <sliceName value="HERid" />
@@ -139,6 +144,20 @@
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.2" />
     </element>
     <element id="Organization.identifier:HERid.value">
+      <path value="Organization.identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="Organization.identifier:SFMid">
+      <path value="Organization.identifier" />
+      <sliceName value="SFMid" />
+      <max value="1" />
+    </element>
+    <element id="Organization.identifier:SFMid.system">
+      <path value="Organization.identifier.system" />
+      <min value="1" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.4.109" />
+    </element>
+    <element id="Organization.identifier:SFMid.value">
       <path value="Organization.identifier.value" />
       <min value="1" />
     </element>

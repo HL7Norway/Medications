@@ -97,6 +97,10 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="Medication.amount.numerator.system">
+      <path value="Medication.amount.numerator.system" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7452" />
+    </element>
     <element id="Medication.ingredient">
       <path value="Medication.ingredient" />
       <mustSupport value="true" />
@@ -129,6 +133,14 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Medication" />
         <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Excipient" />
       </type>
+    </element>
+    <element id="Medication.ingredient.strength.numerator.system">
+      <path value="Medication.ingredient.strength.numerator.system" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.9090" />
+    </element>
+    <element id="Medication.ingredient.strength.denominator.system">
+      <path value="Medication.ingredient.strength.denominator.system" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.9090" />
     </element>
   </differential>
 </StructureDefinition>
