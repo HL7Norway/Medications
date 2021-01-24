@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sfm-amountText" />
-  <url value="http://example.org/fhir/StructureDefinition/sfm-amountText" />
+  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-amountText" />
   <version value="1.0" />
   <name value="SfmAmountText" />
   <title value="sfm-amountText" />
@@ -30,7 +30,7 @@
         </extension>
         <code value="http://hl7.org/fhirpath/System.String" />
       </type>
-      <fixedUri value="http://example.org/fhir/StructureDefinition/sfm-amountText" />
+      <fixedUri value="http://ehelse.no/fhir/StructureDefinition/sfm-amountText" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

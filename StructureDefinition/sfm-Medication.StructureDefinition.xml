@@ -96,10 +96,9 @@
     <element id="Medication.amount.extension:text">
       <path value="Medication.amount.extension" />
       <sliceName value="text" />
-      <short value="Used when PQ not possible to use" />
       <type>
         <code value="Extension" />
-        <profile value="http://example.org/fhir/StructureDefinition/sfm-amountText" />
+        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-amountText" />
       </type>
     </element>
     <element id="Medication.batch">
