@@ -100,6 +100,18 @@
 			}
 		},
 		{
+			"name": "IncludeOriginal",
+			"use": "in",
+			"min": 0,
+			"max": "*",
+			"documentation": "Flag for inclusion of (elements from) original e-resep messages",
+			"type": "code",
+			"binding": {
+				"strength": "required",
+				"valueSet": 	"http://ehelse.no/fhir/ValueSet/sfm-include-binary"
+			}
+		},
+		{
 			"name": "medication",
 			"use": "out",
 			"min": 1,
