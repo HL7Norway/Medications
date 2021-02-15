@@ -22,6 +22,30 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:text">
+      <path value="Extension.extension" />
+      <sliceName value="text" />
+    </element>
+    <element id="Extension.extension:text.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="text" />
+    </element>
+    <element id="Extension.extension:text.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
     <element id="Extension.url">
       <path value="Extension.url" />
       <type>
@@ -34,9 +58,7 @@
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
-      <type>
-        <code value="string" />
-      </type>
+      <max value="0" />
     </element>
   </differential>
 </StructureDefinition>
