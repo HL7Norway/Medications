@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="sfm-amountText" />
+  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-amountText" />
+  <version value="1.0" />
+  <name value="SfmAmountText" />
+  <title value="SFMAmountText" />
+  <status value="active" />
+  <date value="2021-02-15" />
+  <description value="Textual descritpion when PQ not possible." />
+  <fhirVersion value="4.0.0" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="extension" />
+    <expression value="Medication.amount" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+	  <short value="Amout text" />
+	  <definition value="Amout text" />
+    </element>
+      <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://ehelse.no/fhir/StructureDefinition/sfm-amountText" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
