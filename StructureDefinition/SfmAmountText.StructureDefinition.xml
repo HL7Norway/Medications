@@ -12,7 +12,7 @@
   <kind value="complex-type" />
   <abstract value="false" />
   <context>
-    <type value="extension" />
+    <type value="element" />
     <expression value="Medication.amount" />
   </context>
   <type value="Extension" />
@@ -21,18 +21,54 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-	  <short value="Amout text" />
-	  <definition value="Amout text" />
+      <short value="Amout text" />
+      <definition value="Amout text" />
     </element>
-      <element id="Extension.url">
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:amounttext">
+      <path value="Extension.extension" />
+      <sliceName value="amounttext" />
+    </element>
+    <element id="Extension.extension:amounttext.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="amounttext" />
+    </element>
+    <element id="Extension.extension:amounttext.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:quantity">
+      <path value="Extension.extension" />
+      <sliceName value="quantity" />
+    </element>
+    <element id="Extension.extension:quantity.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="quantity" />
+    </element>
+    <element id="Extension.extension:quantity.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="Quantity" />
+      </type>
+    </element>
+    <element id="Extension.url">
       <path value="Extension.url" />
       <fixedUri value="http://ehelse.no/fhir/StructureDefinition/sfm-amountText" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
-      <type>
-        <code value="string" />
-      </type>
+      <max value="0" />
     </element>
   </differential>
 </StructureDefinition>

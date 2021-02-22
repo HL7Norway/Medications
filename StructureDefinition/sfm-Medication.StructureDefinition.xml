@@ -93,9 +93,9 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Medication.amount.extension:text">
+    <element id="Medication.amount.extension:quantity">
       <path value="Medication.amount.extension" />
-      <sliceName value="text" />
+      <sliceName value="quantity" />
       <min value="0" />
       <max value="1" />
       <type>
