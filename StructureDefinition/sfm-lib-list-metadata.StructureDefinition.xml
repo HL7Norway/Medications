@@ -68,6 +68,10 @@
         <code value="CodeableConcept" />
       </type>
     </element>
+    <element id="Extension.extension:approvalstatus.extension:approved.value[x].coding.system">
+      <path value="Extension.extension.extension.value[x].coding.system" />
+      <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-approvalstatus-code" />
+    </element>
     <element id="Extension.extension:approvalstatus.extension:signedby">
       <path value="Extension.extension.extension" />
       <sliceName value="signedby" />
