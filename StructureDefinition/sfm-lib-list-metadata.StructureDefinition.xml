@@ -50,19 +50,19 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Extension.extension:approvalstatus.extension:aproved">
+    <element id="Extension.extension:approvalstatus.extension:approved">
       <path value="Extension.extension.extension" />
-      <sliceName value="aproved" />
+      <sliceName value="approved" />
       <short value="Aprovementinformation" />
       <definition value="Identifies what status the aprovement has." />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:approvalstatus.extension:aproved.url">
+    <element id="Extension.extension:approvalstatus.extension:approved.url">
       <path value="Extension.extension.extension.url" />
-      <fixedUri value="aproved" />
+      <fixedUri value="approved" />
     </element>
-    <element id="Extension.extension:approvalstatus.extension:aproved.value[x]">
+    <element id="Extension.extension:approvalstatus.extension:approved.value[x]">
       <path value="Extension.extension.extension.value[x]" />
       <type>
         <code value="CodeableConcept" />
@@ -82,7 +82,23 @@
     <element id="Extension.extension:approvalstatus.extension:signedby.value[x]">
       <path value="Extension.extension.extension.value[x]" />
       <type>
-        <code value="string" />
+        <code value="Reference" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Practitioner" />
+      </type>
+    </element>
+    <element id="Extension.extension:approvalstatus.extension:timestamp">
+      <path value="Extension.extension.extension" />
+      <sliceName value="timestamp" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:approvalstatus.extension:timestamp.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="timestamp" />
+    </element>
+    <element id="Extension.extension:approvalstatus.extension:timestamp.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="dateTime" />
       </type>
     </element>
     <element id="Extension.extension:approvalstatus.url">
