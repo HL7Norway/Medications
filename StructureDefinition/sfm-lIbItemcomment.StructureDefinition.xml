@@ -99,7 +99,6 @@
       <sliceName value="registeredby" />
       <short value="User that has registered the comment" />
       <definition value="User or organisation that has registered the comment." />
-      <min value="1" />
       <max value="1" />
     </element>
     <element id="Extension.extension:registeredby.url">
@@ -228,12 +227,6 @@
       <max value="0" />
     </element>
     <element id="Extension.extension:timestamp">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension.extension" />
       <sliceName value="timestamp" />
       <min value="1" />
