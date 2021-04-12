@@ -878,6 +878,9 @@
     <element id="Extension.extension:ereseptdosing.extension:starttime.value[x]">
       <path value="Extension.extension.extension.value[x]" />
       <type>
+        <code value="date" />
+      </type>
+      <type>
         <code value="dateTime" />
       </type>
     </element>
@@ -894,6 +897,9 @@
     </element>
     <element id="Extension.extension:ereseptdosing.extension:endtime.value[x]">
       <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="date" />
+      </type>
       <type>
         <code value="dateTime" />
       </type>
