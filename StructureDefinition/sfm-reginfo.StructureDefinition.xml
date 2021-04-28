@@ -62,23 +62,24 @@
       <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-performer-roles" />
     </element>
-    <element id="Extension.extension:helseperson">
+    <element id="Extension.extension:provider">
       <path value="Extension.extension" />
-      <sliceName value="helseperson" />
-      <short value="A person with rights to perform actions" />
-      <definition value="The person responsible for the action regarding status of the medication statement." />
+      <sliceName value="provider" />
+      <short value="A person/organization with rights to perform actions" />
+      <definition value="The person/organization responsible for the action regarding status of the medication statement." />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:helseperson.url">
+    <element id="Extension.extension:provider.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="helseperson" />
+      <fixedUri value="provider" />
     </element>
-    <element id="Extension.extension:helseperson.value[x]">
+    <element id="Extension.extension:provider.value[x]">
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="Reference" />
         <targetProfile value="https://ehelse.no/StructureDefinition/sfm-Practitioner" />
+        <targetProfile value="https://ehelse.no/StructureDefinition/sfm-Organization" />
       </type>
     </element>
     <element id="Extension.extension:timestamp">

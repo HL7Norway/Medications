@@ -168,6 +168,23 @@
         <code value="boolean" />
       </type>
     </element>
+    <element id="Extension.extension:mddispenced">
+      <path value="Extension.extension" />
+      <sliceName value="mddispenced" />
+      <short value="set as true if dispenced last packing" />
+      <definition value="if last M25.3 identifies that it was med dispenced, then value is set to true." />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:mddispenced.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="mddispenced" />
+    </element>
+    <element id="Extension.extension:mddispenced.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="boolean" />
+      </type>
+    </element>
     <element id="Extension.url">
       <path value="Extension.url" />
       <fixedUri value="http://ehelse.no/fhir/StructureDefinition/sfm-administration" />
