@@ -5,8 +5,8 @@
   <version value="1.0" />
   <name value="SfmMedicationBundle" />
   <title value="sfm-MedicationBundle" />
-  <status value="draft" />
-  <date value="2019-09-24" />
+  <status value="active" />
+  <date value="2021-05-01" />
   <description value="Profile on Bundle for use as container for medications and prescription data in SFM API Basis" />
   <purpose value="The purpose of this profile on Bundle is to contain the structure of the service-calls provided by the SFM API Basis" />
   <fhirVersion value="4.0.0" />
@@ -63,7 +63,7 @@
           <type value="value" />
           <path value="resource.meta.profile" />
         </discriminator>
-        <description value="First entry will always be the SfmMedicationComposition. All other entries will be resources referred from this " />
+        <description value="First entry will always be the SfmMedicationComposition. All other entries will be resources referred from this" />
         <rules value="open" />
       </slicing>
     </element>
@@ -72,7 +72,7 @@
       <sliceName value="SfmMedicationComposition" />
       <short value="First entry is a SfmMedicationComposition" />
       <definition value="First entry in Bundle of type &quot;document&quot; is always a Composition" />
-      <comment value="This Composition entry serves as a directory for the document Bundle " />
+      <comment value="This Composition entry serves as a directory for the document Bundle" />
       <min value="1" />
       <max value="1" />
     </element>
