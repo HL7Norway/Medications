@@ -6,7 +6,7 @@
   <name value="SfmReseptdocbanda" />
   <title value="sfm-reseptdocbanda" />
   <status value="active" />
-  <date value="2020-06-08" />
+  <date value="2021-05-01" />
   <description value="Prescription details for nutrition and supporting products." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
@@ -49,18 +49,6 @@
     <element id="Extension.extension:productgroup.value[x].coding.system">
       <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7403" />
-    </element>
-    <element id="Extension.extension:productgroup.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Extension.extension:productgroup.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].text" />
     </element>
     <element id="Extension.extension:productnumber">
       <path value="Extension.extension" />

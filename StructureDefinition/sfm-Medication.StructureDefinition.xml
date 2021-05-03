@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sfm-Medication" />
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-Medication" />
-  <version value="2.3" />
+  <version value="1.0" />
   <name value="SfmMedication" />
   <title value="sfm-Medication" />
   <status value="active" />
-  <date value="2021-01-24" />
+  <date value="2021-05-01" />
   <description value="SFM Medication derived from no-basis-Medication." />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
@@ -96,7 +96,6 @@
     <element id="Medication.amount.extension:quantity">
       <path value="Medication.amount.extension" />
       <sliceName value="quantity" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />

@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="sfm-Excipient" />
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-Excipient" />
+  <version value="1.0" />
   <name value="SfmExcipient" />
   <status value="active" />
-  <date value="2020-06-25" />
+  <date value="2021-05-01" />
+  <description value="Used to represent non active substances within a magistral drug." />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
@@ -27,9 +30,6 @@
   <derivation value="constraint" />
   <differential>
     <element id="Substance.code.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
       <path value="Substance.code.text" />
       <min value="1" />
     </element>

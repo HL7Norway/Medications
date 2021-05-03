@@ -6,11 +6,11 @@
     <lastUpdated value="2018-10-03T13:58:58.251+00:00" />
   </meta>
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-shortdosage" />
-  <version value="1.1" />
+  <version value="1.0" />
   <name value="SfmShortDosage" />
   <title value="sfm-shortdosage" />
   <status value="active" />
-  <date value="2020-06-08" />
+  <date value="2021-05-01" />
   <description value="Short dosage as given in FEST." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
@@ -41,18 +41,6 @@
     <element id="Extension.value[x].coding.system">
       <path value="Extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7478" />
-    </element>
-    <element id="Extension.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.value[x].coding.display" />
-    </element>
-    <element id="Extension.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.value[x].text" />
     </element>
   </differential>
 </StructureDefinition>

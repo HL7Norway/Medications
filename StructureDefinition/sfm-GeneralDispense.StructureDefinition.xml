@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sfm-GeneralDispense" />
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-GeneralDispense" />
-  <version value="1.2" />
+  <version value="1.0" />
   <name value="SfmGeneralDispense" />
   <title value="sfm-GeneralDispense" />
   <status value="active" />
-  <date value="2020-09-20" />
+  <date value="2021-05-01" />
   <description value="Dispence for nutrition and material." />
   <fhirVersion value="4.0.0" />
   <mapping>

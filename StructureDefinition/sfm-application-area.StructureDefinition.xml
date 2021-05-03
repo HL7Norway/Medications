@@ -2,11 +2,12 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sfm-application-area" />
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-application-area" />
-  <version value="2.1" />
+  <version value="1.0" />
   <name value="SfmApplicationArea" />
   <title value="sfm-application-area" />
   <status value="active" />
-  <date value="2020-06-08" />
+  <date value="2021-05-01" />
+  <description value="Describes are of application." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
   <abstract value="false" />

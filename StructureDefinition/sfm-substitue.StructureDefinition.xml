@@ -10,7 +10,7 @@
   <name value="SfmSubstitute" />
   <title value="sfm-substitute" />
   <status value="active" />
-  <date value="2020-06-08" />
+  <date value="2021-05-01" />
   <description value="identifies if possible to substitute medication." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />

@@ -6,7 +6,7 @@
   <name value="SfmRecipe" />
   <title value="sfm-recipe" />
   <status value="active" />
-  <date value="2020-06-08" />
+  <date value="2021-05-01" />
   <description value="Extention for Magistrell medication. Used to describe how to make the Medication (recipe)." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />

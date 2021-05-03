@@ -6,11 +6,11 @@
     <lastUpdated value="2018-10-03T14:00:48.887+00:00" />
   </meta>
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-administration" />
-  <version value="2.0" />
+  <version value="1.0" />
   <name value="SfmAdministration" />
   <title value="sfm-administration" />
   <status value="active" />
-  <date value="2020-06-08" />
+  <date value="2021-05-01" />
   <description value="Describes detailed information about how a prescription should be administered." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />

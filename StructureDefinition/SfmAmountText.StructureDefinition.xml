@@ -6,7 +6,7 @@
   <name value="SfmAmountText" />
   <title value="SFMAmountText" />
   <status value="active" />
-  <date value="2021-02-15" />
+  <date value="2021-05-01" />
   <description value="Textual descritpion when PQ not possible." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />

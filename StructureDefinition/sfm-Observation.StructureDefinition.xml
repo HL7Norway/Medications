@@ -6,11 +6,11 @@
     <lastUpdated value="2018-10-03T16:33:40.291+00:00" />
   </meta>
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-Observation" />
-  <version value="2.0" />
+  <version value="1.0" />
   <name value="SfmObservation" />
   <title value="sfm-Observation" />
   <status value="active" />
-  <date value="2020-06-08" />
+  <date value="2021-05-01" />
   <description value="sfm-Observation is derived from Obsrevation." />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />

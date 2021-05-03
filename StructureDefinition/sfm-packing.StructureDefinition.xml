@@ -6,7 +6,7 @@
   <name value="SfmPacking" />
   <title value="sfm-packing" />
   <status value="active" />
-  <date value="2020-06-08" />
+  <date value="2021-05-01" />
   <description value="Extention to describe what packing a magistrell medication have." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
@@ -53,18 +53,6 @@
     <element id="Extension.extension:packingcoded.value[x].coding.system">
       <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7452" />
-    </element>
-    <element id="Extension.extension:packingcoded.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Extension.extension:packingcoded.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].text" />
     </element>
     <element id="Extension.extension:pumptype">
       <path value="Extension.extension" />

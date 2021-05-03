@@ -6,11 +6,11 @@
     <lastUpdated value="2018-10-03T14:01:56.071+00:00" />
   </meta>
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-deliverysummary" />
-  <version value="2.0" />
+  <version value="1.0" />
   <name value="SfmDeliverySummary" />
   <title value="sfm-deliverysummary" />
   <status value="active" />
-  <date value="2020-06-08" />
+  <date value="2021-05-01" />
   <description value="Delivery summary used in SFM." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
@@ -89,12 +89,6 @@
       <type>
         <code value="Quantity" />
       </type>
-    </element>
-    <element id="Extension.extension:pakningsstr.value[x].unit">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].unit" />
     </element>
     <element id="Extension.extension:antallpkntotalt">
       <path value="Extension.extension" />

@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sfm-BandaPrescription" />
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-BandaPrescription" />
-  <version value="2.2" />
+  <version value="1.0" />
   <name value="SfmBandaPrescription" />
   <title value="sfm-BandaPrescription" />
   <status value="active" />
-  <date value="2020-08-19" />
+  <date value="2021-05-01" />
   <description value="Banda prescription used in SFM, based on Basic." />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />

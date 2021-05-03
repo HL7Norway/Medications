@@ -6,11 +6,11 @@
     <lastUpdated value="2018-10-03T16:02:04.672+00:00" />
   </meta>
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-Task" />
-  <version value="2.0" />
+  <version value="1.0" />
   <name value="SfmTask" />
   <title value="sfm-Task" />
   <status value="active" />
-  <date value="2020-08-19" />
+  <date value="2021-05-01" />
   <description value="sfm-Task is derived from Task." />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />

@@ -6,7 +6,7 @@
   <name value="SfmPractitionerRole" />
   <title value="sfm-PractitionerRole" />
   <status value="active" />
-  <date value="2020-06-08" />
+  <date value="2021-05-01" />
   <description value="Used in SFM to provide relation between Practitioner and organization." />
   <fhirVersion value="4.0.0" />
   <mapping>

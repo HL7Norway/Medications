@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sfm-Intervention" />
-  <url value="http://example.org/fhir/StructureDefinition/sfm-Intervention" />
+  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-Intervention" />
   <version value="1.0" />
   <name value="SfmIntervention" />
   <status value="active" />
-  <date value="2020-06-08" />
+  <date value="2021-05-01" />
   <description value="Intervention information used in SFM." />
   <fhirVersion value="4.0.0" />
   <mapping>
@@ -140,7 +140,7 @@
         </extension>
         <code value="http://hl7.org/fhirpath/System.String" />
       </type>
-      <fixedUri value="http://example.org/fhir/StructureDefinition/sfm-Intervention" />
+      <fixedUri value="http://ehelse.no/fhir/StructureDefinition/sfm-Intervention" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

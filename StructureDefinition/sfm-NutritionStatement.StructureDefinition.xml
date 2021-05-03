@@ -9,7 +9,7 @@
   <name value="SfmNutritionStatement" />
   <title value="sfm-NutritionStatement" />
   <status value="active" />
-  <date value="2020-06-08" />
+  <date value="2021-05-01" />
   <description value="SFM NutritionStatement derived from MedicationStatement." />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />

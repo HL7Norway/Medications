@@ -6,11 +6,11 @@
     <lastUpdated value="2018-10-03T13:58:11.827+00:00" />
   </meta>
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-MedicationStatement" />
-  <version value="2.4" />
+  <version value="1.0" />
   <name value="SfmMedicationStatement" />
   <title value="sfm-MedicationStatement" />
   <status value="active" />
-  <date value="2020-09-18" />
+  <date value="2021-05-01" />
   <description value="SFM MedicationStatement derived from no-basis-MedicationStatement" />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />

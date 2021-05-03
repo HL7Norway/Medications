@@ -6,11 +6,11 @@
     <lastUpdated value="2018-10-03T14:02:30.216+00:00" />
   </meta>
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-actor" />
-  <version value="2.0" />
+  <version value="1.0" />
   <name value="SfmActor" />
   <title value="sfm-actor" />
   <status value="active" />
-  <date value="2020-08-19" />
+  <date value="2021-05-01" />
   <description value="An actor describes an relation between a patiend and an healthcare provider." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />

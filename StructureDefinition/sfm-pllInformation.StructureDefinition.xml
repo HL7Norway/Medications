@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sfm-pllInformation" />
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-pllInformation" />
-  <version value="2.0" />
+  <version value="1.0" />
   <name value="SfmpllInformation" />
   <title value="sfm-pllInformation" />
   <status value="active" />
-  <date value="2020-06-08" />
+  <date value="2021-05-01" />
   <description value="Describes information provided in PLL/M25 messages." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />

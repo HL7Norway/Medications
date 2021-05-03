@@ -6,11 +6,11 @@
     <lastUpdated value="2018-10-03T14:01:22.414+00:00" />
   </meta>
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-warning" />
-  <version value="2.0" />
+  <version value="1.0" />
   <name value="SfmWarning" />
   <title value="sfm-warning" />
   <status value="active" />
-  <date value="2020-06-08" />
+  <date value="2021-05-01" />
   <description value="Medical warning handling documentation." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />

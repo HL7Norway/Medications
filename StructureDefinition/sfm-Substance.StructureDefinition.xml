@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="sfm-Substance" />
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-Substance" />
-  <version value="2.0" />
+  <version value="1.0" />
   <name value="SfmSubstance" />
   <title value="sfm-Substance" />
   <status value="active" />
-  <date value="2020-06-08" />
+  <date value="2021-05-01" />
   <description value="sfm-Substance derived from no-basis-Substance" />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />

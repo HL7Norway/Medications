@@ -5,10 +5,10 @@
     <lastUpdated value="2021-04-06T00:00:00.000+00:00" />
   </meta>
   <url value="http://ehelse.no/fhir/CodeSystem/sfm-approvalstatus-code" />
-  <version value="1.1.0" />
+  <version value="1.0" />
   <name value="sfm-approvalstatus-code.codesystem" />
   <status value="draft" />
-  <date value="2021-04-06T00:00:00.000+00:00" />
+  <date value="2021-05-01T00:00:00.000+00:00" />
   <publisher value="Direktoratet for e-helse" />
   <content value="complete" />
   <concept>

@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sfm-Patient" />
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-Patient" />
-  <version value="2.0" />
+  <version value="1.0" />
   <name value="SfmPatient" />
   <title value="sfm-Patient" />
   <status value="active" />
-  <date value="2020-06-08" />
+  <date value="2021-05-01" />
   <description value="Patient to be used in SFM. It is based on no-basis-Patient." />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
@@ -15,43 +15,35 @@
   <baseDefinition value="http://hl7.no/fhir/StructureDefinition/no-basis-Patient" />
   <derivation value="constraint" />
   <differential>
-    <element id="Patient.meta.security.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.meta.security.display" />
-    </element>
-    <element id="Patient.meta.tag.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.meta.tag.display" />
+    <element id="Patient.extension">
+      <path value="Patient.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
     </element>
     <element id="Patient.extension:citizenship">
       <path value="Patient.extension" />
       <sliceName value="citizenship" />
       <mustSupport value="true" />
     </element>
+    <element id="Patient.extension:citizenship.extension">
+      <path value="Patient.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
     <element id="Patient.extension:citizenship.extension:code">
       <path value="Patient.extension.extension" />
       <sliceName value="code" />
       <mustSupport value="true" />
-    </element>
-    <element id="Patient.extension:citizenship.extension:code.value[x]:valueCodeableConcept">
-      <path value="Patient.extension.extension.value[x]" />
-      <sliceName value="valueCodeableConcept" />
-    </element>
-    <element id="Patient.extension:citizenship.extension:code.value[x]:valueCodeableConcept.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Patient.extension:citizenship.extension:code.value[x]:valueCodeableConcept.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.extension.extension.value[x].text" />
     </element>
     <element id="Patient.extension:citizenship.extension:period">
       <path value="Patient.extension.extension" />
@@ -68,387 +60,25 @@
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="Patient.extension:eea.extension:eea">
-      <path value="Patient.extension.extension" />
-      <sliceName value="eea" />
-    </element>
-    <element id="Patient.extension:eea.extension:eea.extension:eeaDok">
-      <path value="Patient.extension.extension.extension" />
-      <sliceName value="eeaDok" />
-    </element>
-    <element id="Patient.extension:eea.extension:eea.extension:eeaDok.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.extension.extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Patient.extension:eea.extension:eea.extension:eeaDok.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.extension.extension.extension.value[x].text" />
-    </element>
-    <element id="Patient.extension:eea.extension:konvensjonsland">
-      <path value="Patient.extension.extension" />
-      <sliceName value="konvensjonsland" />
-    </element>
-    <element id="Patient.extension:eea.extension:konvensjonsland.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Patient.extension:eea.extension:konvensjonsland.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.extension.extension.value[x].text" />
-    </element>
     <element id="Patient.identifier">
       <path value="Patient.identifier" />
       <mustSupport value="true" />
-    </element>
-    <element id="Patient.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.type.coding.display" />
-    </element>
-    <element id="Patient.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.type.text" />
-    </element>
-    <element id="Patient.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="Patient.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="Patient.identifier.assigner.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="Patient.identifier.assigner.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="Patient.identifier.assigner.identifier.assigner.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.identifier.assigner.identifier.assigner.display" />
-    </element>
-    <element id="Patient.identifier.assigner.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.identifier.assigner.display" />
-    </element>
-    <element id="Patient.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.display" />
-    </element>
-    <element id="Patient.identifier:FNR">
-      <path value="Patient.identifier" />
-      <sliceName value="FNR" />
-    </element>
-    <element id="Patient.identifier:FNR.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.type.coding.display" />
-    </element>
-    <element id="Patient.identifier:FNR.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.type.text" />
-    </element>
-    <element id="Patient.identifier:FNR.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="Patient.identifier:FNR.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="Patient.identifier:FNR.assigner.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="Patient.identifier:FNR.assigner.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="Patient.identifier:FNR.assigner.identifier.assigner.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.identifier.assigner.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="Patient.identifier:FNR.assigner.identifier.assigner.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.identifier.assigner.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="Patient.identifier:FNR.assigner.identifier.assigner.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.identifier.assigner.identifier.assigner.display" />
-    </element>
-    <element id="Patient.identifier:FNR.assigner.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.identifier.assigner.display" />
-    </element>
-    <element id="Patient.identifier:FNR.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.display" />
     </element>
     <element id="Patient.identifier:FHN">
       <path value="Patient.identifier" />
       <sliceName value="FHN" />
       <max value="0" />
     </element>
-    <element id="Patient.identifier:FHN.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.type.coding.display" />
-    </element>
-    <element id="Patient.identifier:FHN.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.type.text" />
-    </element>
-    <element id="Patient.identifier:FHN.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="Patient.identifier:FHN.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="Patient.identifier:FHN.assigner.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="Patient.identifier:FHN.assigner.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="Patient.identifier:FHN.assigner.identifier.assigner.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.identifier.assigner.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="Patient.identifier:FHN.assigner.identifier.assigner.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.identifier.assigner.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="Patient.identifier:FHN.assigner.identifier.assigner.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.identifier.assigner.identifier.assigner.display" />
-    </element>
-    <element id="Patient.identifier:FHN.assigner.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.identifier.assigner.display" />
-    </element>
-    <element id="Patient.identifier:FHN.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.display" />
-    </element>
-    <element id="Patient.identifier:DNR">
-      <path value="Patient.identifier" />
-      <sliceName value="DNR" />
-    </element>
-    <element id="Patient.identifier:DNR.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.type.coding.display" />
-    </element>
-    <element id="Patient.identifier:DNR.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.type.text" />
-    </element>
-    <element id="Patient.identifier:DNR.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="Patient.identifier:DNR.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="Patient.identifier:DNR.assigner.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="Patient.identifier:DNR.assigner.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="Patient.identifier:DNR.assigner.identifier.assigner.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.identifier.assigner.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="Patient.identifier:DNR.assigner.identifier.assigner.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.identifier.assigner.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="Patient.identifier:DNR.assigner.identifier.assigner.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.identifier.assigner.identifier.assigner.display" />
-    </element>
-    <element id="Patient.identifier:DNR.assigner.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.identifier.assigner.display" />
-    </element>
-    <element id="Patient.identifier:DNR.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.display" />
-    </element>
     <element id="Patient.identifier:HNR">
       <path value="Patient.identifier" />
       <sliceName value="HNR" />
       <max value="0" />
-    </element>
-    <element id="Patient.identifier:HNR.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="Patient.identifier:HNR.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="Patient.identifier:HNR.assigner.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="Patient.identifier:HNR.assigner.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="Patient.identifier:HNR.assigner.identifier.assigner.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.identifier.assigner.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="Patient.identifier:HNR.assigner.identifier.assigner.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.identifier.assigner.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="Patient.identifier:HNR.assigner.identifier.assigner.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.identifier.assigner.identifier.assigner.display" />
-    </element>
-    <element id="Patient.identifier:HNR.assigner.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.identifier.assigner.display" />
-    </element>
-    <element id="Patient.identifier:HNR.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.display" />
     </element>
     <element id="Patient.identifier:xxxid">
       <path value="Patient.identifier" />
       <sliceName value="xxxid" />
       <definition value="An identifier for this patient. Should be at Fødselsnummer, D-nummer or locally assigned xxxid" />
       <max value="1" />
-    </element>
-    <element id="Patient.identifier:xxxid.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.type.coding.display" />
-    </element>
-    <element id="Patient.identifier:xxxid.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.type.text" />
     </element>
     <element id="Patient.identifier:xxxid.system">
       <path value="Patient.identifier.system" />
@@ -459,60 +89,6 @@
       <path value="Patient.identifier.value" />
       <min value="1" />
     </element>
-    <element id="Patient.identifier:xxxid.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="Patient.identifier:xxxid.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="Patient.identifier:xxxid.assigner.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="Patient.identifier:xxxid.assigner.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="Patient.identifier:xxxid.assigner.identifier.assigner.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.identifier.assigner.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="Patient.identifier:xxxid.assigner.identifier.assigner.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.identifier.assigner.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="Patient.identifier:xxxid.assigner.identifier.assigner.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.identifier.assigner.identifier.assigner.display" />
-    </element>
-    <element id="Patient.identifier:xxxid.assigner.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.identifier.assigner.display" />
-    </element>
-    <element id="Patient.identifier:xxxid.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.identifier.assigner.display" />
-    </element>
     <element id="Patient.active">
       <path value="Patient.active" />
       <min value="1" />
@@ -522,6 +98,16 @@
       <path value="Patient.name" />
       <max value="1" />
       <mustSupport value="true" />
+    </element>
+    <element id="Patient.name.extension">
+      <path value="Patient.name.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
     </element>
     <element id="Patient.name.extension:middlename">
       <path value="Patient.name.extension" />
@@ -544,316 +130,20 @@
       <path value="Patient.address" />
       <mustSupport value="true" />
     </element>
+    <element id="Patient.address.extension">
+      <path value="Patient.address.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
     <element id="Patient.address.extension:official">
       <path value="Patient.address.extension" />
       <sliceName value="official" />
       <mustSupport value="true" />
-    </element>
-    <element id="Patient.address.extension:urbanDistrict">
-      <path value="Patient.address.extension" />
-      <sliceName value="urbanDistrict" />
-    </element>
-    <element id="Patient.address.extension:urbanDistrict.value[x].display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.address.extension.value[x].display" />
-    </element>
-    <element id="Patient.address.extension:propertyInformation">
-      <path value="Patient.address.extension" />
-      <sliceName value="propertyInformation" />
-    </element>
-    <element id="Patient.address.extension:propertyInformation.extension:municipality">
-      <path value="Patient.address.extension.extension" />
-      <sliceName value="municipality" />
-    </element>
-    <element id="Patient.address.extension:propertyInformation.extension:municipality.value[x].display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.address.extension.extension.value[x].display" />
-    </element>
-    <element id="Patient.maritalStatus.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.maritalStatus.coding.display" />
-    </element>
-    <element id="Patient.maritalStatus.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.maritalStatus.text" />
-    </element>
-    <element id="Patient.photo.title">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.photo.title" />
-    </element>
-    <element id="Patient.contact.relationship.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.contact.relationship.coding.display" />
-    </element>
-    <element id="Patient.contact.relationship.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.contact.relationship.text" />
-    </element>
-    <element id="Patient.contact.address.extension:urbanDistrict">
-      <path value="Patient.contact.address.extension" />
-      <sliceName value="urbanDistrict" />
-    </element>
-    <element id="Patient.contact.address.extension:urbanDistrict.value[x].display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.contact.address.extension.value[x].display" />
-    </element>
-    <element id="Patient.contact.address.extension:propertyInformation">
-      <path value="Patient.contact.address.extension" />
-      <sliceName value="propertyInformation" />
-    </element>
-    <element id="Patient.contact.address.extension:propertyInformation.extension:municipality">
-      <path value="Patient.contact.address.extension.extension" />
-      <sliceName value="municipality" />
-    </element>
-    <element id="Patient.contact.address.extension:propertyInformation.extension:municipality.value[x].display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.contact.address.extension.extension.value[x].display" />
-    </element>
-    <element id="Patient.contact.organization.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.contact.organization.identifier.type.coding.display" />
-    </element>
-    <element id="Patient.contact.organization.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.contact.organization.identifier.type.text" />
-    </element>
-    <element id="Patient.contact.organization.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.contact.organization.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="Patient.contact.organization.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.contact.organization.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="Patient.contact.organization.identifier.assigner.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.contact.organization.identifier.assigner.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="Patient.contact.organization.identifier.assigner.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.contact.organization.identifier.assigner.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="Patient.contact.organization.identifier.assigner.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.contact.organization.identifier.assigner.identifier.assigner.display" />
-    </element>
-    <element id="Patient.contact.organization.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.contact.organization.identifier.assigner.display" />
-    </element>
-    <element id="Patient.contact.organization.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.contact.organization.display" />
-    </element>
-    <element id="Patient.communication.language.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.communication.language.coding.display" />
-    </element>
-    <element id="Patient.communication.language.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.communication.language.text" />
-    </element>
-    <element id="Patient.generalPractitioner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.generalPractitioner.identifier.type.coding.display" />
-    </element>
-    <element id="Patient.generalPractitioner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.generalPractitioner.identifier.type.text" />
-    </element>
-    <element id="Patient.generalPractitioner.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.generalPractitioner.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="Patient.generalPractitioner.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.generalPractitioner.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="Patient.generalPractitioner.identifier.assigner.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.generalPractitioner.identifier.assigner.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="Patient.generalPractitioner.identifier.assigner.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.generalPractitioner.identifier.assigner.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="Patient.generalPractitioner.identifier.assigner.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.generalPractitioner.identifier.assigner.identifier.assigner.display" />
-    </element>
-    <element id="Patient.generalPractitioner.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.generalPractitioner.identifier.assigner.display" />
-    </element>
-    <element id="Patient.generalPractitioner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.generalPractitioner.display" />
-    </element>
-    <element id="Patient.managingOrganization.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.managingOrganization.identifier.type.coding.display" />
-    </element>
-    <element id="Patient.managingOrganization.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.managingOrganization.identifier.type.text" />
-    </element>
-    <element id="Patient.managingOrganization.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.managingOrganization.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="Patient.managingOrganization.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.managingOrganization.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="Patient.managingOrganization.identifier.assigner.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.managingOrganization.identifier.assigner.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="Patient.managingOrganization.identifier.assigner.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.managingOrganization.identifier.assigner.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="Patient.managingOrganization.identifier.assigner.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.managingOrganization.identifier.assigner.identifier.assigner.display" />
-    </element>
-    <element id="Patient.managingOrganization.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.managingOrganization.identifier.assigner.display" />
-    </element>
-    <element id="Patient.managingOrganization.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.managingOrganization.display" />
-    </element>
-    <element id="Patient.link.other.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.link.other.identifier.type.coding.display" />
-    </element>
-    <element id="Patient.link.other.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.link.other.identifier.type.text" />
-    </element>
-    <element id="Patient.link.other.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.link.other.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="Patient.link.other.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.link.other.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="Patient.link.other.identifier.assigner.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.link.other.identifier.assigner.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="Patient.link.other.identifier.assigner.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.link.other.identifier.assigner.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="Patient.link.other.identifier.assigner.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.link.other.identifier.assigner.identifier.assigner.display" />
-    </element>
-    <element id="Patient.link.other.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.link.other.identifier.assigner.display" />
-    </element>
-    <element id="Patient.link.other.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Patient.link.other.display" />
     </element>
     <element id="Patient.link.type">
       <path value="Patient.link.type" />

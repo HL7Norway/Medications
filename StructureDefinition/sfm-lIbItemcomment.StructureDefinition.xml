@@ -6,11 +6,11 @@
     <lastUpdated value="2018-10-03T14:01:39.262+00:00" />
   </meta>
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-libitemcomment" />
-  <version value="2.0" />
+  <version value="1.0" />
   <name value="SfmLIbItemComment" />
   <title value="sfm-libitemcomment" />
   <status value="active" />
-  <date value="2020-06-08" />
+  <date value="2021-05-01" />
   <description value="Comment on a lib item in SFM" />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />

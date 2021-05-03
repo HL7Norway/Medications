@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="sfm-adqs" />
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-adqs" />
   <version value="1.0" />
   <name value="SfmAdqs" />
   <title value="sfm-adqs" />
   <status value="active" />
-  <date value="2020-06-25" />
+  <date value="2021-05-01" />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
@@ -33,12 +34,6 @@
       </slicing>
     </element>
     <element id="Extension.extension:ad">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension.extension" />
       <sliceName value="ad" />
       <short value="Add to get required amount" />
@@ -56,12 +51,6 @@
       </type>
     </element>
     <element id="Extension.extension:qs">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension.extension" />
       <sliceName value="qs" />
       <short value="Needed amount" />

@@ -10,7 +10,8 @@
   <name value="SfmDiscontinuation" />
   <title value="sfm-discontinuation" />
   <status value="active" />
-  <date value="2019-08-26" />
+  <date value="2020-05-01" />
+  <description value="Information of discontinoution." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -71,18 +72,6 @@
     <element id="Extension.extension:reason.value[x].coding.system">
       <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7494" />
-    </element>
-    <element id="Extension.extension:reason.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Extension.extension:reason.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].text" />
     </element>
     <element id="Extension.extension:note">
       <path value="Extension.extension" />

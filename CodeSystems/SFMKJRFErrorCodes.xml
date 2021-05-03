@@ -5,11 +5,11 @@
     <lastUpdated value="2020-04-21T00:00:00.000+00:00" />
   </meta>
   <url value="http://ehelse.no/fhir/CodeSystem/sfm-kj-rf-error-code" />
-  <version value="1.0.0" />
+  <version value="1.0" />
   <name value="sfm-kj-rf-error-code.codesystem" />
   <title>Local result codes from SFM for RF and KJ Lookup</title>
   <status value="draft" />
-  <date value="2020-04-21T00:00:00.000+00:00" />
+  <date value="2021-05-01T00:00:00.000+00:00" />
   <publisher value="Direktoratet for e-helse" />
   <description>Local SFM response codes</description>
   <content value="complete" />

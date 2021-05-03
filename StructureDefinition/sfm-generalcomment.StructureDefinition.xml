@@ -6,11 +6,11 @@
     <lastUpdated value="2018-10-26T04:57:51.449+00:00" />
   </meta>
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-generalcomment" />
-  <version value="2.0" />
+  <version value="1.0" />
   <name value="SfmGeneralComment" />
   <title value="sfm-generalcomment" />
   <status value="active" />
-  <date value="2020-06-08" />
+  <date value="2021-05-01" />
   <description value="genreal comment in PLL." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />

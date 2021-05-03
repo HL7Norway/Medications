@@ -6,11 +6,11 @@
     <lastUpdated value="2018-10-26T04:57:34.381+00:00" />
   </meta>
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-patientrelation" />
-  <version value="2.0" />
+  <version value="1.0" />
   <name value="SfmPatientRelation" />
   <title value="sfm-patientrelation" />
   <status value="active" />
-  <date value="2020-08-19" />
+  <date value="2021-05-01" />
   <description value="Information about related health care profesionals and institutions." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
