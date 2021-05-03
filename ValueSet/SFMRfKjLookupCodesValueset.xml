@@ -2,14 +2,14 @@
   <id value="sfm-rfkj-lookupcodes.valueset" />
   <meta>
     <versionId value="1" />
-    <lastUpdated value="2012-03-25T00:00:00.000+00:00" />
+    <lastUpdated value="2021-05-03T00:00:00.000+00:00" />
   </meta>
   <url value="http://ehelse.no/fhir/ValueSet/sfm-rfkj-lookupcodes" />
-  <version value="1.0.0" />
+  <version value="1.0" />
   <name value="sfm-rfkj-lookupcodes" />
   <title>Response and error codes from local and remote sources</title>
   <status value="active" />
-  <date value="2020-03-25T00:00:00.000+00:00" />
+  <date value="2021-05-01T00:00:00.000+00:00" />
   <publisher value="Direktoratet for e-helse" />
   <description>Collection of local codes and codes from norwegian codesystems 7419, 7503 and 8821</description>
   <purpose>Serves as a common valueset for response from SFM to Reseptformidleren and/or Kjernejournal</purpose>
