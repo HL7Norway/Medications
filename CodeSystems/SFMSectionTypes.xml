@@ -2,12 +2,12 @@
   <id value="sfm-section-types.codesystem" />
   <meta>
     <versionId value="1" />
-    <lastUpdated value="2019-09-13T00:00:00.000+00:00" />
+    <lastUpdated value="2021-05-03T00:00:00.000+00:00" />
   </meta>
   <url value="http://ehelse.no/fhir/CodeSystem/sfm-section-types" />
   <version value="1.0" />
   <name value="sfm-section-types.codesystem" />
-  <status value="draft" />
+  <status value="active" />
   <date value="2021-05-01T00:00:00.000+00:00" />
   <publisher value="Direktoratet for e-helse" />
   <content value="complete" />
