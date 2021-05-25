@@ -492,24 +492,24 @@
         <code value="decimal" />
       </type>
     </element>
-    <element id="Extension.extension:reimbursmentparagraph">
+    <element id="Extension.extension:reimbursementparagraph">
       <path value="Extension.extension" />
-      <sliceName value="reimbursmentparagraph" />
+      <sliceName value="reimbursementparagraph" />
       <short value="Refund paragraph" />
       <definition value=".eresept: RefHjemmel" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:reimbursmentparagraph.url">
+    <element id="Extension.extension:reimbursementparagraph.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="reimbursmentparagraph" />
+      <fixedUri value="reimbursementparagraph" />
     </element>
-    <element id="Extension.extension:reimbursmentparagraph.value[x]">
+    <element id="Extension.extension:reimbursementparagraph.value[x]">
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
-    <element id="Extension.extension:reimbursmentparagraph.value[x].coding.system">
+    <element id="Extension.extension:reimbursementparagraph.value[x].coding.system">
       <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7427" />
     </element>
