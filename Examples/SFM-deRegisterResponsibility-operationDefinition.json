@@ -6,12 +6,12 @@
 		"div": "<div>Operation definition for SFM specific operation: $deRegisterResponsibility</div>"
 	},
 	"url": "http://nhn.no/sfm/fhir/OperationDefinition/SFM-deRegisterResponsibility",
-	"version": "1.0.0",
+	"version": "1.0",
 	"name": "deRegisterResponsibility",
 	"title": "Operation for deregistering GP or Multidose responsibility in Reseptformidleren",
-	"status": "draft",
+	"status": "active",
 	"kind": "operation",
-	"date": "2020-04-23T13:00:00+02:00",
+	"date": "2021-05-01",
 	"publisher": "Norsk Helsenett (SFM Project)",
 	"contact": [
 		{

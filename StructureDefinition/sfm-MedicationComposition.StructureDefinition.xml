@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sfm-MedicationComposition" />
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-MedicationComposition" />
-  <version value="1.1.4" />
+  <version value="1.0" />
   <name value="SfmMedicationComposition" />
   <title value="sfm-MedicationComposition" />
-  <status value="draft" />
-  <date value="2020-04-21" />
+  <status value="active" />
+  <date value="2021-05-01" />
   <description value="Bundle for use in SFM API for aggregated medication and prescription info" />
   <purpose value="The purpose of this profile is to define the structure of the SfmMedicationBundle." />
   <fhirVersion value="4.0.0" />

@@ -7,7 +7,7 @@
   <url value="http://ehelse.no/fhir/CodeSystem/sfm-approvalstatus-code" />
   <version value="1.0" />
   <name value="sfm-approvalstatus-code.codesystem" />
-  <status value="draft" />
+  <status value="active" />
   <date value="2021-05-01T00:00:00.000+00:00" />
   <publisher value="Direktoratet for e-helse" />
   <content value="complete" />

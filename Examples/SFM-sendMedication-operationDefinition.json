@@ -6,12 +6,12 @@
 		"div": "<div>Operation definition for SFM specific operation: $sendMedication</div>"
 	},
 	"url": "http://nhn.no/sfm/fhir/OperationDefinition/SFM-sendMedication",
-	"version": "1.0.0",
+	"version": "1.0",
 	"name": "sendMedication",
 	"title": "Operation for submitting and updating medical and prescription information for a patient",
-	"status": "draft",
+	"status": "active",
 	"kind": "operation",
-	"date": "2020-04-23T11:00:00+02:00",
+	"date": "2021-05-01",
 	"publisher": "Norsk Helsenett (SFM Project)",
 	"contact": [
 		{
