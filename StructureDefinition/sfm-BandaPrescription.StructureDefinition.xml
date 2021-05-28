@@ -161,9 +161,9 @@
       <sliceName value="itemgroup" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptinfo.extension:reimbursmentparagraph">
+    <element id="Basic.extension:reseptinfo.extension:reimbursementparagraph">
       <path value="Basic.extension.extension" />
-      <sliceName value="reimbursmentparagraph" />
+      <sliceName value="reimbursementparagraph" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:reseptinfo.extension:rfstatus">

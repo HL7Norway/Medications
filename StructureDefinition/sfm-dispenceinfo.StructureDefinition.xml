@@ -146,7 +146,7 @@
     <element id="Extension.extension:refcode">
       <path value="Extension.extension" />
       <sliceName value="refcode" />
-      <short value="Reimbursment code" />
+      <short value="Reimbursement code" />
       <definition value=".eresept = RefKode" />
       <max value="1" />
     </element>
