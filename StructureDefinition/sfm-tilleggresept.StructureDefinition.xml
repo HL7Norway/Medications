@@ -416,7 +416,7 @@
     <element id="Extension.extension:earliestdispence.value[x]">
       <path value="Extension.extension.value[x]" />
       <type>
-        <code value="dateTime" />
+        <code value="date" />
       </type>
     </element>
     <element id="Extension.extension:dischargedhospital">
