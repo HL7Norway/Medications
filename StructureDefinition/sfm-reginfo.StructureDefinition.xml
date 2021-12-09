@@ -79,8 +79,8 @@
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://ehelse.no/StructureDefinition/sfm-Practitioner" />
-        <targetProfile value="https://ehelse.no/StructureDefinition/sfm-Organization" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Practitioner" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Organization" />
         <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-PractitionerRole" />
       </type>
     </element>
