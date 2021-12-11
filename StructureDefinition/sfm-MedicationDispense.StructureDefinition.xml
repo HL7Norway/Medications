@@ -89,7 +89,7 @@
       <sliceName value="intervention" />
       <type>
         <code value="Extension" />
-        <profile value="http://example.org/fhir/StructureDefinition/sfm-Intervention" />
+        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-Intervention" />
       </type>
       <mustSupport value="true" />
     </element>
