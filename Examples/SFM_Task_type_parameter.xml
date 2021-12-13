@@ -9,7 +9,7 @@
   <date value="2021-12-13"/> 
   <publisher value="Norsk Helsenett SF"/> 
   <description value="Search parameter to control lookup in national registers"/> 
-  <code value="type"/> 
+  <code value="Type"/> 
   <base value="Task"/> 
   <type value="special"/> 
  </SearchParameter> 
