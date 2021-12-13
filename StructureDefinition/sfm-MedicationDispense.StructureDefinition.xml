@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sfm-MedicationDispense" />
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-MedicationDispense" />
-  <version value="1.0" />
+  <version value="1.1" />
   <name value="SfmMedicationDispense" />
   <title value="sfm-MedicationDispense" />
   <status value="active" />
-  <date value="2021-05-01" />
+  <date value="2021-12-13" />
   <description value="Medication dispence information" />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
@@ -24,10 +24,12 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="0" />
     </element>
     <element id="MedicationDispense.extension:dispenseinfo">
       <path value="MedicationDispense.extension" />
       <sliceName value="dispenseinfo" />
+      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-dispenseinfo" />
@@ -43,50 +45,60 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="0" />
     </element>
     <element id="MedicationDispense.extension:dispenseinfo.extension:prescriptionid">
       <path value="MedicationDispense.extension.extension" />
       <sliceName value="prescriptionid" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.extension:dispenseinfo.extension:cancelation">
       <path value="MedicationDispense.extension.extension" />
       <sliceName value="cancelation" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.extension:dispenseinfo.extension:concluded">
       <path value="MedicationDispense.extension.extension" />
       <sliceName value="concluded" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.extension:dispenseinfo.extension:substitutionreservationcustomer">
       <path value="MedicationDispense.extension.extension" />
       <sliceName value="substitutionreservationcustomer" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.extension:dispenseinfo.extension:cancelationid">
       <path value="MedicationDispense.extension.extension" />
       <sliceName value="cancelationid" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.extension:dispenseinfo.extension:batchnumber">
       <path value="MedicationDispense.extension.extension" />
       <sliceName value="batchnumber" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.extension:dispenseinfo.extension:refcode">
       <path value="MedicationDispense.extension.extension" />
       <sliceName value="refcode" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.extension:dispenseinfo.extension:refparagraph">
       <path value="MedicationDispense.extension.extension" />
       <sliceName value="refparagraph" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.extension:intervention">
       <path value="MedicationDispense.extension" />
       <sliceName value="intervention" />
+      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-Intervention" />
