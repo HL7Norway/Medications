@@ -2,11 +2,11 @@
 <SearchParameter xmlns="http://hl7.org/fhir">
   <id value="SFM_Task_type_parameter"/> 
   <text> <status value="additional"/> <div xmlns="http://www.w3.org/1999/xhtml"><p> SFM serach parameter for the Task type, used to force lookup in national registers</p> </div> </text> 
-  <url value="http://nhn.no/sfm/fhir/SearchParameter/SFM_PID_parameter"/> 
+  <url value="http://nhn.no/sfm/fhir/SearchParameter/SFM_Task_type_parameter"/> 
   <version value="1"/> 
   <name value="TASK-TYPE-SEARCH-PARAMETER"/> 
   <status value="active"/> 
-  <date value="2021-12-13"/> 
+  <date value="2021-12-14"/> 
   <publisher value="Norsk Helsenett SF"/> 
   <description value="Search parameter to control lookup in national registers"/> 
   <code value="Type"/> 
