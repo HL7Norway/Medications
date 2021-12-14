@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sfm-GeneralDispense" />
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-GeneralDispense" />
-  <version value="1.0" />
+  <version value="1.1" />
   <name value="SfmGeneralDispense" />
   <title value="sfm-GeneralDispense" />
   <status value="active" />
-  <date value="2021-05-01" />
+  <date value="2022-01-13" />
   <description value="Dispence for nutrition and material." />
   <fhirVersion value="4.0.0" />
   <mapping>
@@ -34,6 +34,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="1" />
     </element>
     <element id="Basic.extension:dispenseinfo">
       <path value="Basic.extension" />
@@ -54,50 +55,60 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="0" />
     </element>
     <element id="Basic.extension:dispenseinfo.extension:prescriptionid">
       <path value="Basic.extension.extension" />
       <sliceName value="prescriptionid" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:dispenseinfo.extension:cancelation">
       <path value="Basic.extension.extension" />
       <sliceName value="cancelation" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:dispenseinfo.extension:concluded">
       <path value="Basic.extension.extension" />
       <sliceName value="concluded" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:dispenseinfo.extension:substitutionreservationcustomer">
       <path value="Basic.extension.extension" />
       <sliceName value="substitutionreservationcustomer" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:dispenseinfo.extension:cancelationid">
       <path value="Basic.extension.extension" />
       <sliceName value="cancelationid" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:dispenseinfo.extension:batchnumber">
       <path value="Basic.extension.extension" />
       <sliceName value="batchnumber" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:dispenseinfo.extension:refcode">
       <path value="Basic.extension.extension" />
       <sliceName value="refcode" />
+      <min value="0" />
       <max value="0" />
     </element>
     <element id="Basic.extension:dispenseinfo.extension:refparagraph">
       <path value="Basic.extension.extension" />
       <sliceName value="refparagraph" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:generaldispenseinfo">
       <path value="Basic.extension" />
       <sliceName value="generaldispenseinfo" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -113,28 +124,33 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="5" />
     </element>
     <element id="Basic.extension:generaldispenseinfo.extension:product">
       <path value="Basic.extension.extension" />
       <sliceName value="product" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:generaldispenseinfo.extension:text">
       <path value="Basic.extension.extension" />
       <sliceName value="text" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:generaldispenseinfo.extension:performer">
       <path value="Basic.extension.extension" />
       <sliceName value="performer" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:intervention">
       <path value="Basic.extension" />
       <sliceName value="intervention" />
+      <min value="0" />
       <type>
         <code value="Extension" />
-        <profile value="http://example.org/fhir/StructureDefinition/sfm-Intervention" />
+        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-Intervention" />
       </type>
     </element>
     <element id="Basic.identifier">
