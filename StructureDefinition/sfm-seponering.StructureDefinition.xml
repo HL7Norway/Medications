@@ -6,11 +6,11 @@
     <lastUpdated value="2018-10-03T14:02:15.733+00:00" />
   </meta>
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-discontinuation" />
-  <version value="1.0" />
+  <version value="1.1" />
   <name value="SfmDiscontinuation" />
   <title value="sfm-discontinuation" />
   <status value="active" />
-  <date value="2020-05-01" />
+  <date value="2020-12-17" />
   <description value="Information of discontinoution." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
@@ -32,6 +32,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="2" />
     </element>
     <element id="Extension.extension:timedate">
       <path value="Extension.extension" />
@@ -47,6 +48,9 @@
     </element>
     <element id="Extension.extension:timedate.value[x]">
       <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="date" />
+      </type>
       <type>
         <code value="dateTime" />
       </type>
@@ -78,6 +82,7 @@
       <sliceName value="note" />
       <short value="textual note abouth discontinuation" />
       <definition value="optional for user to set why the treatment should stop." />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:note.url">
