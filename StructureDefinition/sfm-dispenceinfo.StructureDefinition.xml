@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sfm-dispenseinfo" />
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-dispenseinfo" />
-  <version value="1.0" />
+  <version value="1.1" />
   <name value="SfmDispenseinfo" />
   <title value="sfm-dispenseinfo" />
   <status value="active" />
-  <date value="2021-05-01" />
+  <date value="2022-02-03" />
   <description value="Information from norwegian dispense message." />
   <fhirVersion value="4.0.0" />
   <mapping>
@@ -41,12 +41,14 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="0" />
     </element>
     <element id="Extension.extension:prescriptionid">
       <path value="Extension.extension" />
       <sliceName value="prescriptionid" />
       <short value="Resept-id" />
       <definition value=".eresept = msgid from M1." />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:prescriptionid.url">
@@ -59,18 +61,19 @@
         <code value="string" />
       </type>
     </element>
-    <element id="Extension.extension:cancelation">
+    <element id="Extension.extension:cancellation">
       <path value="Extension.extension" />
-      <sliceName value="cancelation" />
+      <sliceName value="cancellation" />
       <short value="Annulering" />
       <definition value="Identifies if this should be understood as replacing another medicationdispence. .eresept: Annullering" />
+      <min value="0" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:cancelation.url">
+    <element id="Extension.extension:cancellation.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="cancelation" />
+      <fixedUri value="cancellation" />
     </element>
-    <element id="Extension.extension:cancelation.value[x]">
+    <element id="Extension.extension:cancellation.value[x]">
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="boolean" />
@@ -81,6 +84,7 @@
       <sliceName value="concluded" />
       <short value="Last delivery done" />
       <definition value=".eresept = Avsluttet" />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:concluded.url">
@@ -98,6 +102,7 @@
       <sliceName value="substitutionreservationcustomer" />
       <short value="restricted substitution" />
       <definition value="custumer has resticted substitution. .eresept = ByttereservasjonKunde" />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:substitutionreservationcustomer.url">
@@ -110,18 +115,19 @@
         <code value="boolean" />
       </type>
     </element>
-    <element id="Extension.extension:cancelationid">
+    <element id="Extension.extension:cancellationid">
       <path value="Extension.extension" />
-      <sliceName value="cancelationid" />
+      <sliceName value="cancellationid" />
       <short value="Pointer to canceled delivery" />
       <definition value=".eresept = AnnulleringsId" />
+      <min value="0" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:cancelationid.url">
+    <element id="Extension.extension:cancellationid.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="cancelationid" />
+      <fixedUri value="cancellationid" />
     </element>
-    <element id="Extension.extension:cancelationid.value[x]">
+    <element id="Extension.extension:cancellationid.value[x]">
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="string" />
@@ -132,6 +138,7 @@
       <sliceName value="batchnumber" />
       <short value="Identifes batch of package" />
       <definition value=".eresept = Batchnr" />
+      <min value="0" />
     </element>
     <element id="Extension.extension:batchnumber.url">
       <path value="Extension.extension.url" />
@@ -148,6 +155,7 @@
       <sliceName value="refcode" />
       <short value="Reimbursement code" />
       <definition value=".eresept = RefKode" />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:refcode.url">
@@ -180,6 +188,7 @@
       <sliceName value="refparagraph" />
       <short value="Reimbursment paragraph" />
       <definition value=".eresept = RefHjemmel" />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:refparagraph.url">
@@ -199,6 +208,7 @@
     <element id="Extension.extension:prescriber">
       <path value="Extension.extension" />
       <sliceName value="prescriber" />
+      <min value="0" />
     </element>
     <element id="Extension.extension:prescriber.url">
       <path value="Extension.extension.url" />
