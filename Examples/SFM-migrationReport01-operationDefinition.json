@@ -7,7 +7,7 @@
 	},
 	"url": "http://nhn.no/sfm/fhir/OperationDefinition/SFM-migrationReport01",
 	"version": "1.0",
-	"name": "registerResponsibility",
+	"name": "MigrationReport01",
 	"title": "Query definition for Migration report",
 	"status": "active",
 	"kind": "query",
