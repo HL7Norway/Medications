@@ -21,14 +21,14 @@
       </slicing>
       <min value="0" />
     </element>
-    <element id="Basic.extension:resultData">
+    <element id="Basic.extension:queryResults">
       <path value="Basic.extension" />
-      <sliceName value="resultData" />
+      <sliceName value="queryResults" />
       <min value="0" />
       <max value="*" />
       <type>
         <code value="Extension" />
-        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-resultdata2" />
+        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-queryresultdata" />
       </type>
     </element>
   </differential>
