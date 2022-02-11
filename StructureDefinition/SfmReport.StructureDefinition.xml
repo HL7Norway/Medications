@@ -28,7 +28,7 @@
       <max value="*" />
       <type>
         <code value="Extension" />
-        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-resultdata" />
+        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-resultdata2" />
       </type>
     </element>
   </differential>
