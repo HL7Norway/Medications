@@ -35,7 +35,7 @@
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
       <type>
-        <code value="Base64Binary" />
+        <code value="base64Binary" />
       </type>
     </element>
   </differential>
