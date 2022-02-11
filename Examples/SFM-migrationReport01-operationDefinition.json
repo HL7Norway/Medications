@@ -1,0 +1,53 @@
+{
+	"resourceType": "OperationDefinition",
+	"id": "SFM-migrationReport01",
+	"text": {
+		"status": "generated",
+		"div": "<div>Query definition for Migration report</div>"
+	},
+	"url": "http://nhn.no/sfm/fhir/OperationDefinition/SFM-migrationReport01",
+	"version": "1.0",
+	"name": "registerResponsibility",
+	"title": "Query definition for Migration report",
+	"status": "active",
+	"kind": "query",
+	"date": "2022-02-11",
+	"publisher": "Norsk Helsenett (SFM Project)",
+	"contact": [
+		{
+			"telecom": [
+				{
+					"system": "url",
+					"value": "http://nhn.no/fhir"
+				},
+				{
+					"system": "email",
+					"value": "SFM-Prosjekt@nhn.no"
+				}
+			]
+		}
+	],
+	"description": "This query enables EPJ to ask for detailed migration report to verify status on migration",
+	"code": "MIGRATION_REPORT_01",
+	"comment": "Specific name for corresponding set of queries",
+	"resource": [
+		"Basic"
+	],
+	"system": false,
+	"type": true,
+	"instance": false,
+	"outputProfile": "http://ehelse.no/fhir/StructureDefinition/SfmReport",
+	"parameter": [
+		{
+			"name": "From_time",
+			"use": "in",
+			"min": 0,
+			"max": "1",
+			"documentation": "Timescope for report",
+			"type": "dateTime"
+			
+		}
+		 
+		
+	]
+}
