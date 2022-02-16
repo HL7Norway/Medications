@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="sfm-resultdata" />
+  <meta>
+    <versionId value="3" />
+    <lastUpdated value="2018-10-03T14:00:06.184+00:00" />
+  </meta>
+  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-resultdata" />
+  <version value="1.0" />
+  <name value="SfmResultData" />
+  <title value="sfm-resultdata" />
+  <status value="active" />
+  <date value="2022-02-11" />
+  <description value="Data from query" />
+  <fhirVersion value="4.0.0" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Basic" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Bearer of content from query result" />
+      <max value="1" />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://ehelse.no/fhir/StructureDefinition/sfm-resultdata" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <type>
+        <code value="base64Binary" />
+      </type>
+    </element>
+    <element id="Extension.value[x]:valueBase64Binary">
+      <path value="Extension.valueBase64Binary" />
+      <sliceName value="valueBase64Binary" />
+      <type>
+        <code value="base64Binary" />
+      </type>
+    </element>
+    <element id="Extension.value[x]:valueString">
+      <path value="Extension.valueString" />
+      <sliceName value="valueString" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.value[x]:valueCoding">
+      <path value="Extension.valueCoding" />
+      <sliceName value="valueCoding" />
+      <type>
+        <code value="Coding" />
+      </type>
+    </element>
+    <element id="Extension.value[x]:valueCoding.system">
+      <path value="Extension.valueCoding.system" />
+      <short value="Mime type" />
+      <min value="1" />
+      <fixedUri value="http://hl7.org/fhir/ValueSet/mimetypes" />
+    </element>
+  </differential>
+</StructureDefinition>
