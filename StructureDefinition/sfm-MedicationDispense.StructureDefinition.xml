@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sfm-MedicationDispense" />
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-MedicationDispense" />
-  <version value="1.1" />
+  <version value="1.2" />
   <name value="SfmMedicationDispense" />
   <title value="sfm-MedicationDispense" />
   <status value="active" />
@@ -53,12 +53,6 @@
       <min value="0" />
       <mustSupport value="true" />
     </element>
-    <element id="MedicationDispense.extension:dispenseinfo.extension:cancelation">
-      <path value="MedicationDispense.extension.extension" />
-      <sliceName value="cancelation" />
-      <min value="0" />
-      <mustSupport value="true" />
-    </element>
     <element id="MedicationDispense.extension:dispenseinfo.extension:concluded">
       <path value="MedicationDispense.extension.extension" />
       <sliceName value="concluded" />
@@ -68,12 +62,6 @@
     <element id="MedicationDispense.extension:dispenseinfo.extension:substitutionreservationcustomer">
       <path value="MedicationDispense.extension.extension" />
       <sliceName value="substitutionreservationcustomer" />
-      <min value="0" />
-      <mustSupport value="true" />
-    </element>
-    <element id="MedicationDispense.extension:dispenseinfo.extension:cancelationid">
-      <path value="MedicationDispense.extension.extension" />
-      <sliceName value="cancelationid" />
       <min value="0" />
       <mustSupport value="true" />
     </element>
@@ -92,6 +80,18 @@
     <element id="MedicationDispense.extension:dispenseinfo.extension:refparagraph">
       <path value="MedicationDispense.extension.extension" />
       <sliceName value="refparagraph" />
+      <min value="0" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationDispense.extension:dispenseinfo.extension:cancelation">
+      <path value="MedicationDispense.extension.extension" />
+      <sliceName value="cancelation" />
+      <min value="0" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationDispense.extension:dispenseinfo.extension:cancelationid">
+      <path value="MedicationDispense.extension.extension" />
+      <sliceName value="cancelationid" />
       <min value="0" />
       <mustSupport value="true" />
     </element>
