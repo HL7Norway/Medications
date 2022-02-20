@@ -32,10 +32,12 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="0" />
     </element>
     <element id="Extension.extension:administrationofmedication">
       <path value="Extension.extension" />
       <sliceName value="administrationofmedication" />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:administrationofmedication.extension">
@@ -47,12 +49,14 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="0" />
     </element>
     <element id="Extension.extension:administrationofmedication.extension:admByWhom">
       <path value="Extension.extension.extension" />
       <sliceName value="admByWhom" />
       <short value="Who is administrating the medication" />
       <definition value="Identifies role or patient itselv to adminisration of medication." />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:administrationofmedication.extension:admByWhom.url">
@@ -75,6 +79,7 @@
       <sliceName value="admWay" />
       <short value="how the medication should be taken" />
       <definition value="Identifies the way the drug should be administrated." />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:administrationofmedication.extension:admWay.url">
@@ -97,6 +102,7 @@
       <sliceName value="admBySchema" />
       <short value="identifies if medication should be administrated by schema." />
       <definition value="schema administration." />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:administrationofmedication.extension:admBySchema.url">
@@ -114,6 +120,7 @@
       <sliceName value="admSchema" />
       <short value="Schema to administrate after" />
       <definition value="Identify the schema to follow when administrating after schema." />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:administrationofmedication.extension:admSchema.url">
@@ -139,6 +146,7 @@
       <sliceName value="admBy" />
       <short value="How the medication should be adminstrated" />
       <definition value="Identifies how the and by whom the medication is administrated." />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:admBy.url">
@@ -156,6 +164,7 @@
       <sliceName value="nocombination" />
       <short value="use restriction" />
       <definition value="should not be taken at the excact time as other medications. Follow recomandations from provider." />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:nocombination.url">
@@ -168,18 +177,19 @@
         <code value="boolean" />
       </type>
     </element>
-    <element id="Extension.extension:mddispenced">
+    <element id="Extension.extension:mddispensed">
       <path value="Extension.extension" />
-      <sliceName value="mddispenced" />
+      <sliceName value="mddispensed" />
       <short value="set as true if dispenced last packing" />
       <definition value="if last M25.3 identifies that it was med dispenced, then value is set to true." />
+      <min value="0" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:mddispenced.url">
+    <element id="Extension.extension:mddispensed.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="mddispenced" />
+      <fixedUri value="mddispensed" />
     </element>
-    <element id="Extension.extension:mddispenced.value[x]">
+    <element id="Extension.extension:mddispensed.value[x]">
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="boolean" />
