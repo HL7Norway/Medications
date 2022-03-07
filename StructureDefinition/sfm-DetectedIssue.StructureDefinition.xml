@@ -39,18 +39,6 @@
       <path value="DetectedIssue.status" />
       <mustSupport value="true" />
     </element>
-    <element id="DetectedIssue.code">
-      <path value="DetectedIssue.code" />
-      <max value="0" />
-    </element>
-    <element id="DetectedIssue.severity">
-      <path value="DetectedIssue.severity" />
-      <max value="0" />
-    </element>
-    <element id="DetectedIssue.patient">
-      <path value="DetectedIssue.patient" />
-      <max value="0" />
-    </element>
     <element id="DetectedIssue.identified[x]">
       <path value="DetectedIssue.identified[x]" />
       <type>
@@ -97,14 +85,6 @@
       <short value="Identifies interaction that is evidence" />
       <definition value="Used for interactions and identies the FEST id of the interaction." />
     </element>
-    <element id="DetectedIssue.detail">
-      <path value="DetectedIssue.detail" />
-      <max value="0" />
-    </element>
-    <element id="DetectedIssue.reference">
-      <path value="DetectedIssue.reference" />
-      <max value="0" />
-    </element>
     <element id="DetectedIssue.mitigation">
       <path value="DetectedIssue.mitigation" />
       <mustSupport value="true" />
@@ -119,7 +99,7 @@
     </element>
     <element id="DetectedIssue.mitigation.action.coding.system">
       <path value="DetectedIssue.mitigation.action.coding.system" />
-      <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-warning-cancelation-code" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.8279" />
     </element>
     <element id="DetectedIssue.mitigation.date">
       <path value="DetectedIssue.mitigation.date" />
