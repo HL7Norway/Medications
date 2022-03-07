@@ -99,7 +99,7 @@
     </element>
     <element id="DetectedIssue.mitigation.action.coding.system">
       <path value="DetectedIssue.mitigation.action.coding.system" />
-      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.8279" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7535" />
     </element>
     <element id="DetectedIssue.mitigation.date">
       <path value="DetectedIssue.mitigation.date" />
