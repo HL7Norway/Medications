@@ -40,70 +40,11 @@
       <path value="Basic.extension" />
       <sliceName value="dispenseinfo" />
       <min value="1" />
+      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-dispenseinfo" />
       </type>
-      <mustSupport value="true" />
-    </element>
-    <element id="Basic.extension:dispenseinfo.extension">
-      <path value="Basic.extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
-    <element id="Basic.extension:dispenseinfo.extension:prescriptionid">
-      <path value="Basic.extension.extension" />
-      <sliceName value="prescriptionid" />
-      <min value="0" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Basic.extension:dispenseinfo.extension:cancelation">
-      <path value="Basic.extension.extension" />
-      <sliceName value="cancelation" />
-      <min value="0" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Basic.extension:dispenseinfo.extension:concluded">
-      <path value="Basic.extension.extension" />
-      <sliceName value="concluded" />
-      <min value="0" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Basic.extension:dispenseinfo.extension:substitutionreservationcustomer">
-      <path value="Basic.extension.extension" />
-      <sliceName value="substitutionreservationcustomer" />
-      <min value="0" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Basic.extension:dispenseinfo.extension:cancelationid">
-      <path value="Basic.extension.extension" />
-      <sliceName value="cancelationid" />
-      <min value="0" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Basic.extension:dispenseinfo.extension:batchnumber">
-      <path value="Basic.extension.extension" />
-      <sliceName value="batchnumber" />
-      <min value="0" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Basic.extension:dispenseinfo.extension:refcode">
-      <path value="Basic.extension.extension" />
-      <sliceName value="refcode" />
-      <min value="0" />
-      <max value="0" />
-    </element>
-    <element id="Basic.extension:dispenseinfo.extension:refparagraph">
-      <path value="Basic.extension.extension" />
-      <sliceName value="refparagraph" />
-      <min value="0" />
-      <mustSupport value="true" />
     </element>
     <element id="Basic.extension:generaldispenseinfo">
       <path value="Basic.extension" />
