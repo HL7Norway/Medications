@@ -2,14 +2,13 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sfm-resultdata2" />
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-queryresultdata" />
-  <version value="1.0" />
+  <version value="1.1" />
   <name value="SfmQueryresultdata" />
   <title value="sfm-queryresultdata" />
   <status value="active" />
-  <date value="2022-02-11" />
+  <date value="2022-03-23" />
   <description value="Result from query." />
   <fhirVersion value="4.0.0" />
-  
   <kind value="complex-type" />
   <abstract value="false" />
   <context>
@@ -37,60 +36,52 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="0" />
     </element>
-    
     <element id="Extension.extension:resultname">
       <path value="Extension.extension" />
       <sliceName value="resultname" />
       <short value="Resultname" />
       <definition value="Name of the result data" />
+      <min value="0" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:prescriptionid.url">
+    <element id="Extension.extension:resultname.url">
       <path value="Extension.extension.url" />
       <fixedUri value="resultname" />
     </element>
-    <element id="Extension.extension:prescriptionid.value[x]">
+    <element id="Extension.extension:resultname.value[x]">
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="string" />
       </type>
     </element>
-    
-    <element id="Extension.extension:mimetype">
+    <element id="Extension.extension:contentType">
       <path value="Extension.extension" />
-      <sliceName value="mimetype" />
+      <sliceName value="contentType" />
       <short value="Mime type of encoded data" />
       <definition value="Mime type from IANA" />
+      <min value="0" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:mimetype.url">
+    <element id="Extension.extension:contentType.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="mimetype" />
+      <fixedUri value="contentType" />
     </element>
-    <element id="Extension.extension:mimetype.value[x]">
+    <element id="Extension.extension:contentType.value[x]">
       <path value="Extension.extension.value[x]" />
+      <min value="1" />
       <type>
-        <code value="CodeableConcept" />
+        <code value="code" />
       </type>
-      <fixedCodeableConcept>
-        <coding>
-          <system value="http://hl7.org/fhir/ValueSet/mimetypes" />
-        </coding>
-       </fixedCodeableConcept>
+      <fixedCode value="http://hl7.org/fhir/ValueSet/mimetypes" />
     </element>
-    <element id="Extension.extension:mimetype.value[x].coding.system">
-      <path value="Extension.extension.value[x].coding.system" />
-      <fixedUri value="http://hl7.org/fhir/ValueSet/mimetypes" />
-    </element>
-    
-    
-    
     <element id="Extension.extension:codeddata">
       <path value="Extension.extension" />
       <sliceName value="codeddata" />
       <short value="Encoded data" />
       <definition value="B64 encoded data" />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:codeddata.url">
@@ -99,13 +90,12 @@
     </element>
     <element id="Extension.extension:codeddata.value[x]">
       <path value="Extension.extension.value[x]" />
+      <short value="Query result data" />
+      <min value="1" />
       <type>
         <code value="base64Binary" />
       </type>
     </element>
-    
-    
-     
     <element id="Extension.url">
       <path value="Extension.url" />
       <fixedUri value="http://ehelse.no/fhir/StructureDefinition/sfm-queryresultdata" />
