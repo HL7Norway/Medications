@@ -3,7 +3,7 @@
   <id value="sfm-Task" />
   <meta>
     <versionId value="4" />
-    <lastUpdated value="2018-10-03T16:02:04.672+00:00" />
+    <lastUpdated value="2022-04-12T11:43:28.376184+00:00" />
   </meta>
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-Task" />
   <version value="1.0" />
@@ -120,7 +120,11 @@
     </element>
     <element id="Task.requester">
       <path value="Task.requester" />
-      <max value="0" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-PractitionerRole" />
+      </type>
     </element>
     <element id="Task.performerType">
       <path value="Task.performerType" />
