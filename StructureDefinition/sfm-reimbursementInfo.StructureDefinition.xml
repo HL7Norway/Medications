@@ -6,7 +6,7 @@
   <name value="SfmReimbursementInfo" />
   <title value="sfm-reimbursementInfo" />
   <status value="active" />
-  <date value="2021-05-01" />
+  <date value="2021-05-03" />
   <description value="describes reimbursement info" />
   <fhirVersion value="4.0.0" />
   <mapping>
@@ -33,10 +33,12 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="0" />
     </element>
     <element id="Extension.extension:localworker">
       <path value="Extension.extension" />
       <sliceName value="localworker" />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:localworker.url">
@@ -52,6 +54,7 @@
     <element id="Extension.extension:eea">
       <path value="Extension.extension" />
       <sliceName value="eea" />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:eea.extension">
@@ -63,6 +66,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="1" />
     </element>
     <element id="Extension.extension:eea.extension:eeaDok">
       <path value="Extension.extension.extension" />
@@ -87,6 +91,7 @@
     <element id="Extension.extension:eea.extension:eeaCardId">
       <path value="Extension.extension.extension" />
       <sliceName value="eeaCardId" />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:eea.extension:eeaCardId.url">
@@ -102,6 +107,7 @@
     <element id="Extension.extension:eea.extension:eeaId">
       <path value="Extension.extension.extension" />
       <sliceName value="eeaId" />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:eea.extension:eeaId.url">
@@ -117,6 +123,7 @@
     <element id="Extension.extension:eea.extension:eeaOffice">
       <path value="Extension.extension.extension" />
       <sliceName value="eeaOffice" />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:eea.extension:eeaOffice.url">
@@ -132,6 +139,7 @@
     <element id="Extension.extension:eea.extension:eeaOfficeNo">
       <path value="Extension.extension.extension" />
       <sliceName value="eeaOfficeNo" />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:eea.extension:eeaOfficeNo.url">
@@ -147,6 +155,7 @@
     <element id="Extension.extension:eea.extension:eeavalidfrom">
       <path value="Extension.extension.extension" />
       <sliceName value="eeavalidfrom" />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:eea.extension:eeavalidfrom.url">
@@ -162,6 +171,7 @@
     <element id="Extension.extension:eea.extension:eeavalidto">
       <path value="Extension.extension.extension" />
       <sliceName value="eeavalidto" />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:eea.extension:eeavalidto.url">
@@ -185,6 +195,7 @@
     <element id="Extension.extension:konvensjonsland">
       <path value="Extension.extension" />
       <sliceName value="konvensjonsland" />
+      <min value="0" />
     </element>
     <element id="Extension.extension:konvensjonsland.url">
       <path value="Extension.extension.url" />
