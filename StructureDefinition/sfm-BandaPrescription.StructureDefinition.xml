@@ -141,9 +141,9 @@
       <sliceName value="address" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptinfo.extension:earliestdispence">
+    <element id="Basic.extension:reseptinfo.extension:earliestdispense">
       <path value="Basic.extension.extension" />
-      <sliceName value="earliestdispence" />
+      <sliceName value="earliestdispense" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:reseptinfo.extension:dischargedhospital">
@@ -206,12 +206,12 @@
       <sliceName value="recallcode" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptinfo.extension:dispencesummary">
+    <element id="Basic.extension:reseptinfo.extension:dispensesummary">
       <path value="Basic.extension.extension" />
-      <sliceName value="dispencesummary" />
+      <sliceName value="dispensesummary" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptinfo.extension:dispencesummary.extension">
+    <element id="Basic.extension:reseptinfo.extension:dispensesummary.extension">
       <path value="Basic.extension.extension.extension" />
       <slicing>
         <discriminator>
@@ -221,39 +221,39 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Basic.extension:reseptinfo.extension:dispencesummary.extension:varenummer">
+    <element id="Basic.extension:reseptinfo.extension:dispensesummary.extension:varenummer">
       <path value="Basic.extension.extension.extension" />
       <sliceName value="varenummer" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptinfo.extension:dispencesummary.extension:nameformstrenght">
+    <element id="Basic.extension:reseptinfo.extension:dispensesummary.extension:nameformstrenght">
       <path value="Basic.extension.extension.extension" />
       <sliceName value="nameformstrenght" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptinfo.extension:dispencesummary.extension:packingsize">
+    <element id="Basic.extension:reseptinfo.extension:dispensesummary.extension:packingsize">
       <path value="Basic.extension.extension.extension" />
       <sliceName value="packingsize" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptinfo.extension:dispencesummary.extension:noPackingTotal">
+    <element id="Basic.extension:reseptinfo.extension:dispensesummary.extension:noPackingTotal">
       <path value="Basic.extension.extension.extension" />
       <sliceName value="noPackingTotal" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptinfo.extension:dispencesummary.extension:noPackingLast">
+    <element id="Basic.extension:reseptinfo.extension:dispensesummary.extension:noPackingLast">
       <path value="Basic.extension.extension.extension" />
       <sliceName value="noPackingLast" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptinfo.extension:dispencesummary.extension:lastdeliverydate">
+    <element id="Basic.extension:reseptinfo.extension:dispensesummary.extension:lastdeliverydate">
       <path value="Basic.extension.extension.extension" />
       <sliceName value="lastdeliverydate" />
       <mustSupport value="true" />
     </element>
-    <element id="Basic.extension:reseptinfo.extension:dispencesummary.url">
+    <element id="Basic.extension:reseptinfo.extension:dispensesummary.url">
       <path value="Basic.extension.extension.url" />
-      <fixedUri value="dispencesummary" />
+      <fixedUri value="dispensesummary" />
     </element>
     <element id="Basic.extension:reseptdetails">
       <path value="Basic.extension" />

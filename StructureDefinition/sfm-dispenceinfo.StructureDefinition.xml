@@ -65,7 +65,7 @@
       <path value="Extension.extension" />
       <sliceName value="cancellation" />
       <short value="Annulering" />
-      <definition value="Identifies if this should be understood as replacing another medicationdispence. .eresept: Annullering" />
+      <definition value="Identifies if this should be understood as replacing another medicationdispense. .eresept: Annullering" />
       <min value="0" />
       <max value="1" />
     </element>

@@ -402,18 +402,18 @@
       <path value="Extension.extension.value[x]" />
       <max value="0" />
     </element>
-    <element id="Extension.extension:earliestdispence">
+    <element id="Extension.extension:earliestdispense">
       <path value="Extension.extension" />
-      <sliceName value="earliestdispence" />
+      <sliceName value="earliestdispense" />
       <short value="Earliest delivery" />
       <definition value="The first date the doctor want the pharmacy to deliver the medication to the patient.&#xD;&#xA;eresept: TidligsteUtlevering" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:earliestdispence.url">
+    <element id="Extension.extension:earliestdispense.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="earliestdispence" />
+      <fixedUri value="earliestdispense" />
     </element>
-    <element id="Extension.extension:earliestdispence.value[x]">
+    <element id="Extension.extension:earliestdispense.value[x]">
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="date" />
@@ -742,7 +742,7 @@
       <path value="Extension.extension" />
       <sliceName value="note" />
       <short value="Note from prescriber to pharmacy" />
-      <definition value="Textual information that prescriber has provided for the pharmacy, in order to support the dispence.&#xD;&#xA;eresept: Merknad" />
+      <definition value="Textual information that prescriber has provided for the pharmacy, in order to support the dispense.&#xD;&#xA;eresept: Merknad" />
       <max value="1" />
     </element>
     <element id="Extension.extension:note.url">

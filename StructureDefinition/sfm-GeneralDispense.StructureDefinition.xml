@@ -7,7 +7,7 @@
   <title value="sfm-GeneralDispense" />
   <status value="active" />
   <date value="2022-01-13" />
-  <description value="Dispence for nutrition and material." />
+  <description value="Dispense for nutrition and material." />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />

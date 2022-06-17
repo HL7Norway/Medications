@@ -25,8 +25,8 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="Summary of what has been dispenced" />
-      <definition value="Information about what have been dispenced on identfied prescription (resept)." />
+      <short value="Summary of what has been dispensed" />
+      <definition value="Information about what have been dispensed on identfied prescription (resept)." />
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
@@ -93,8 +93,8 @@
     <element id="Extension.extension:antallpkntotalt">
       <path value="Extension.extension" />
       <sliceName value="antallpkntotalt" />
-      <short value="Total number of packages dispenced to patient" />
-      <definition value="Total number o packages dispenced to patient." />
+      <short value="Total number of packages dispensed to patient" />
+      <definition value="Total number o packages dispensed to patient." />
       <min value="1" />
       <max value="1" />
     </element>
@@ -111,8 +111,8 @@
     <element id="Extension.extension:antallpknsiste">
       <path value="Extension.extension" />
       <sliceName value="antallpknsiste" />
-      <short value="No package dispenced last delivery" />
-      <definition value="Number of packages dispenced on last deliverey to patient." />
+      <short value="No package dispensed last delivery" />
+      <definition value="Number of packages dispensed on last deliverey to patient." />
       <min value="1" />
       <max value="1" />
     </element>
@@ -129,8 +129,8 @@
     <element id="Extension.extension:sistutlevert">
       <path value="Extension.extension" />
       <sliceName value="sistutlevert" />
-      <short value="Time when last dispenced" />
-      <definition value="Date and time when last dispence took place." />
+      <short value="Time when last dispensed" />
+      <definition value="Date and time when last dispense took place." />
       <min value="1" />
       <max value="1" />
     </element>

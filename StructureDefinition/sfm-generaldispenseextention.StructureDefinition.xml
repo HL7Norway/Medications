@@ -94,7 +94,7 @@
     <element id="Extension.extension:performer">
       <path value="Extension.extension" />
       <sliceName value="performer" />
-      <short value="Who has dispenced the product" />
+      <short value="Who has dispensed the product" />
       <definition value="Pharmacy or bandage shop dispensing the product. .eresept -&gt; Utleverer.navn" />
       <min value="1" />
       <max value="1" />

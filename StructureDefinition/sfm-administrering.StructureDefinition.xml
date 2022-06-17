@@ -180,8 +180,8 @@
     <element id="Extension.extension:mddispensed">
       <path value="Extension.extension" />
       <sliceName value="mddispensed" />
-      <short value="set as true if dispenced last packing" />
-      <definition value="if last M25.3 identifies that it was med dispenced, then value is set to true." />
+      <short value="set as true if dispensed last packing" />
+      <definition value="if last M25.3 identifies that it was med dispensed, then value is set to true." />
       <min value="0" />
       <max value="1" />
     </element>

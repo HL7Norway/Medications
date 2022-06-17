@@ -90,7 +90,7 @@
     <element id="MedicationStatement.extension:deliverysummary">
       <path value="MedicationStatement.extension" />
       <sliceName value="deliverysummary" />
-      <definition value="Information about what have been dispenced on identfied prescription (resept). Must be supported within the SFM Basis API." />
+      <definition value="Information about what have been dispensed on identfied prescription (resept). Must be supported within the SFM Basis API." />
       <type>
         <code value="Extension" />
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-deliverysummary" />

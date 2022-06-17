@@ -7,7 +7,7 @@
   <title value="sfm-MedicationDispense" />
   <status value="active" />
   <date value="2021-12-13" />
-  <description value="Medication dispence information" />
+  <description value="Medication dispense information" />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
   <abstract value="false" />
