@@ -3,14 +3,14 @@
   <id value="sfm-MedicationStatement" />
   <meta>
     <versionId value="17" />
-    <lastUpdated value="2018-10-03T13:58:11.827+00:00" />
+    <lastUpdated value="2022-09-05T10:19:29.8980063+00:00" />
   </meta>
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-MedicationStatement" />
-  <version value="1.0" />
+  <version value="1.1" />
   <name value="SfmMedicationStatement" />
   <title value="sfm-MedicationStatement" />
   <status value="active" />
-  <date value="2021-05-01" />
+  <date value="2022-09-05" />
   <description value="SFM MedicationStatement derived from no-basis-MedicationStatement" />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
@@ -28,10 +28,12 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="0" />
     </element>
     <element id="MedicationStatement.extension:reginfo">
       <path value="MedicationStatement.extension" />
       <sliceName value="reginfo" />
+      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-regInfo" />
@@ -42,6 +44,7 @@
       <path value="MedicationStatement.extension" />
       <sliceName value="comment" />
       <definition value="Comments and response as trensfered within M25 messages. Must be supported within the SFM Basis API." />
+      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-libitemcomment" />
@@ -56,41 +59,49 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="2" />
     </element>
     <element id="MedicationStatement.extension:comment.extension:type">
       <path value="MedicationStatement.extension.extension" />
       <sliceName value="type" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.extension:comment.extension:merknad">
       <path value="MedicationStatement.extension.extension" />
       <sliceName value="merknad" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.extension:comment.extension:Id">
       <path value="MedicationStatement.extension.extension" />
       <sliceName value="Id" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.extension:comment.extension:registeredby">
       <path value="MedicationStatement.extension.extension" />
       <sliceName value="registeredby" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.extension:comment.extension:receiver">
       <path value="MedicationStatement.extension.extension" />
       <sliceName value="receiver" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.extension:comment.extension:response">
       <path value="MedicationStatement.extension.extension" />
       <sliceName value="response" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.extension:deliverysummary">
       <path value="MedicationStatement.extension" />
       <sliceName value="deliverysummary" />
       <definition value="Information about what have been dispensed on identfied prescription (resept). Must be supported within the SFM Basis API." />
+      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-deliverysummary" />
@@ -105,35 +116,42 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="4" />
     </element>
     <element id="MedicationStatement.extension:deliverysummary.extension:varenummer">
       <path value="MedicationStatement.extension.extension" />
       <sliceName value="varenummer" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.extension:deliverysummary.extension:varenavn">
       <path value="MedicationStatement.extension.extension" />
       <sliceName value="varenavn" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.extension:deliverysummary.extension:pakningsstr">
       <path value="MedicationStatement.extension.extension" />
       <sliceName value="pakningsstr" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.extension:deliverysummary.extension:antallpkntotalt">
       <path value="MedicationStatement.extension.extension" />
       <sliceName value="antallpkntotalt" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.extension:deliverysummary.extension:antallpknsiste">
       <path value="MedicationStatement.extension.extension" />
       <sliceName value="antallpknsiste" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.extension:deliverysummary.extension:sistutlevert">
       <path value="MedicationStatement.extension.extension" />
       <sliceName value="sistutlevert" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.extension:genericSubstitution">
@@ -141,6 +159,7 @@
       <sliceName value="genericSubstitution" />
       <short value="Substitution of drug" />
       <definition value="Identfies if generic substitution is accepted. Must be supported by SFM Basis API." />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -156,20 +175,24 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="0" />
     </element>
     <element id="MedicationStatement.extension:genericSubstitution.extension:genericSubstitutionAccepted">
       <path value="MedicationStatement.extension.extension" />
       <sliceName value="genericSubstitutionAccepted" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.extension:genericSubstitution.extension:reason">
       <path value="MedicationStatement.extension.extension" />
       <sliceName value="reason" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.extension:discontinuationinformation">
       <path value="MedicationStatement.extension" />
       <sliceName value="discontinuationinformation" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -186,25 +209,30 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="2" />
     </element>
     <element id="MedicationStatement.extension:discontinuationinformation.extension:timedate">
       <path value="MedicationStatement.extension.extension" />
       <sliceName value="timedate" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.extension:discontinuationinformation.extension:reason">
       <path value="MedicationStatement.extension.extension" />
       <sliceName value="reason" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.extension:discontinuationinformation.extension:note">
       <path value="MedicationStatement.extension.extension" />
       <sliceName value="note" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.extension:administrationdetails">
       <path value="MedicationStatement.extension" />
       <sliceName value="administrationdetails" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -220,10 +248,12 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="0" />
     </element>
     <element id="MedicationStatement.extension:administrationdetails.extension:administrationofmedication">
       <path value="MedicationStatement.extension.extension" />
       <sliceName value="administrationofmedication" />
+      <min value="0" />
     </element>
     <element id="MedicationStatement.extension:administrationdetails.extension:administrationofmedication.extension">
       <path value="MedicationStatement.extension.extension.extension" />
@@ -234,30 +264,36 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="0" />
     </element>
     <element id="MedicationStatement.extension:administrationdetails.extension:administrationofmedication.extension:admByWhom">
       <path value="MedicationStatement.extension.extension.extension" />
       <sliceName value="admByWhom" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.extension:administrationdetails.extension:administrationofmedication.extension:admWay">
       <path value="MedicationStatement.extension.extension.extension" />
       <sliceName value="admWay" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.extension:administrationdetails.extension:administrationofmedication.extension:admBySchema">
       <path value="MedicationStatement.extension.extension.extension" />
       <sliceName value="admBySchema" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.extension:administrationdetails.extension:administrationofmedication.extension:admSchema">
       <path value="MedicationStatement.extension.extension.extension" />
       <sliceName value="admSchema" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.extension:reseptInfo">
       <path value="MedicationStatement.extension" />
       <sliceName value="reseptInfo" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -394,12 +430,14 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="0" />
     </element>
     <element id="MedicationStatement.dosage.extension:applicationarea">
       <path value="MedicationStatement.dosage.extension" />
       <sliceName value="applicationarea" />
       <short value="Describes why medication is needed" />
       <definition value="Should allways be included in the first instance of dosage, and not in the following instances." />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -411,6 +449,7 @@
       <path value="MedicationStatement.dosage.extension" />
       <sliceName value="shortdosage" />
       <definition value="Coded short dosage as defined in FEST. Should only be included in the first instance of dosage." />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -423,6 +462,7 @@
       <sliceName value="typeofuse" />
       <short value="Type of use" />
       <definition value="Descirbes if the medication is continous, cure or as needed. Should only be included in first instance of dosage." />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />

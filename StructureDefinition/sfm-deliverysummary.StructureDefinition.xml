@@ -3,14 +3,14 @@
   <id value="sfm-deliverysummary" />
   <meta>
     <versionId value="3" />
-    <lastUpdated value="2018-10-03T14:01:56.071+00:00" />
+    <lastUpdated value="2022-09-05T10:16:38.246013+00:00" />
   </meta>
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-deliverysummary" />
-  <version value="1.0" />
+  <version value="1.1" />
   <name value="SfmDeliverySummary" />
   <title value="sfm-deliverysummary" />
   <status value="active" />
-  <date value="2021-05-01" />
+  <date value="2022-09-05" />
   <description value="Delivery summary used in SFM." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
@@ -37,12 +37,14 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="4" />
     </element>
     <element id="Extension.extension:varenummer">
       <path value="Extension.extension" />
       <sliceName value="varenummer" />
       <short value="Nordic identifier of product" />
       <definition value="Product number as registered on a package." />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:varenummer.url">
@@ -78,6 +80,7 @@
       <sliceName value="pakningsstr" />
       <short value="Size of package" />
       <definition value="Number of units within the package." />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:pakningsstr.url">

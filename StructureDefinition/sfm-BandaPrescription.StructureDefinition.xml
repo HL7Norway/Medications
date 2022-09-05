@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sfm-BandaPrescription" />
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-BandaPrescription" />
-  <version value="1.0" />
+  <version value="1.1" />
   <name value="SfmBandaPrescription" />
   <title value="sfm-BandaPrescription" />
   <status value="active" />
-  <date value="2021-05-01" />
+  <date value="2022-09-05" />
   <description value="Banda prescription used in SFM, based on Basic." />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
@@ -24,6 +24,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="2" />
     </element>
     <element id="Basic.extension:reseptinfo">
       <path value="Basic.extension" />
@@ -45,50 +46,60 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="1" />
     </element>
     <element id="Basic.extension:reseptinfo.extension:reseptdate">
       <path value="Basic.extension.extension" />
       <sliceName value="reseptdate" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:reseptinfo.extension:expirationdate">
       <path value="Basic.extension.extension" />
       <sliceName value="expirationdate" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:reseptinfo.extension:festUpdate">
       <path value="Basic.extension.extension" />
       <sliceName value="festUpdate" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:reseptinfo.extension:helfoapplication">
       <path value="Basic.extension.extension" />
       <sliceName value="helfoapplication" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:reseptinfo.extension:guardiantransparencyreservation">
       <path value="Basic.extension.extension" />
       <sliceName value="guardiantransparencyreservation" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:reseptinfo.extension:ownpractice">
       <path value="Basic.extension.extension" />
       <sliceName value="ownpractice" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:reseptinfo.extension:indoctorsname">
       <path value="Basic.extension.extension" />
       <sliceName value="indoctorsname" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:reseptinfo.extension:refnum">
       <path value="Basic.extension.extension" />
       <sliceName value="refnum" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:reseptinfo.extension:dispatchrequest">
       <path value="Basic.extension.extension" />
       <sliceName value="dispatchrequest" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:reseptinfo.extension:dispatchrequest.extension">
@@ -100,85 +111,102 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="6" />
     </element>
     <element id="Basic.extension:reseptinfo.extension:dispatchrequest.extension:condition">
       <path value="Basic.extension.extension.extension" />
       <sliceName value="condition" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:reseptinfo.extension:dispatchrequest.extension:metod">
       <path value="Basic.extension.extension.extension" />
       <sliceName value="metod" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:reseptinfo.extension:dispatchrequest.extension:organization">
       <path value="Basic.extension.extension.extension" />
       <sliceName value="organization" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:reseptinfo.extension:dispatchrequest.extension:contactperson">
       <path value="Basic.extension.extension.extension" />
       <sliceName value="contactperson" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:reseptinfo.extension:dispatchrequest.extension:note">
       <path value="Basic.extension.extension.extension" />
       <sliceName value="note" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:reseptinfo.extension:dispatchrequest.extension:orgnum">
       <path value="Basic.extension.extension.extension" />
       <sliceName value="orgnum" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:reseptinfo.extension:dispatchrequest.extension:orgname">
       <path value="Basic.extension.extension.extension" />
       <sliceName value="orgname" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:reseptinfo.extension:dispatchrequest.extension:address">
       <path value="Basic.extension.extension.extension" />
       <sliceName value="address" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:reseptinfo.extension:earliestdispense">
       <path value="Basic.extension.extension" />
       <sliceName value="earliestdispense" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:reseptinfo.extension:dischargedhospital">
       <path value="Basic.extension.extension" />
       <sliceName value="dischargedhospital" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:reseptinfo.extension:lockedresept">
       <path value="Basic.extension.extension" />
       <sliceName value="lockedresept" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:reseptinfo.extension:itemgroup">
       <path value="Basic.extension.extension" />
       <sliceName value="itemgroup" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:reseptinfo.extension:reimbursementparagraph">
       <path value="Basic.extension.extension" />
       <sliceName value="reimbursementparagraph" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:reseptinfo.extension:rfstatus">
       <path value="Basic.extension.extension" />
       <sliceName value="rfstatus" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:reseptinfo.extension:note">
       <path value="Basic.extension.extension" />
       <sliceName value="note" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:reseptinfo.extension:recallinfo">
       <path value="Basic.extension.extension" />
       <sliceName value="recallinfo" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:reseptinfo.extension:recallinfo.extension">
@@ -190,25 +218,30 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="1" />
     </element>
     <element id="Basic.extension:reseptinfo.extension:recallinfo.extension:recallId">
       <path value="Basic.extension.extension.extension" />
       <sliceName value="recallId" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:reseptinfo.extension:recallinfo.extension:text">
       <path value="Basic.extension.extension.extension" />
       <sliceName value="text" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:reseptinfo.extension:recallinfo.extension:recallcode">
       <path value="Basic.extension.extension.extension" />
       <sliceName value="recallcode" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:reseptinfo.extension:dispensesummary">
       <path value="Basic.extension.extension" />
       <sliceName value="dispensesummary" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:reseptinfo.extension:dispensesummary.extension">
@@ -220,35 +253,42 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="0" />
     </element>
     <element id="Basic.extension:reseptinfo.extension:dispensesummary.extension:varenummer">
       <path value="Basic.extension.extension.extension" />
       <sliceName value="varenummer" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:reseptinfo.extension:dispensesummary.extension:nameformstrenght">
       <path value="Basic.extension.extension.extension" />
       <sliceName value="nameformstrenght" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:reseptinfo.extension:dispensesummary.extension:packingsize">
       <path value="Basic.extension.extension.extension" />
       <sliceName value="packingsize" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:reseptinfo.extension:dispensesummary.extension:noPackingTotal">
       <path value="Basic.extension.extension.extension" />
       <sliceName value="noPackingTotal" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:reseptinfo.extension:dispensesummary.extension:noPackingLast">
       <path value="Basic.extension.extension.extension" />
       <sliceName value="noPackingLast" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:reseptinfo.extension:dispensesummary.extension:lastdeliverydate">
       <path value="Basic.extension.extension.extension" />
       <sliceName value="lastdeliverydate" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:reseptinfo.extension:dispensesummary.url">
@@ -275,15 +315,18 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="1" />
     </element>
     <element id="Basic.extension:reseptdetails.extension:productgroup">
       <path value="Basic.extension.extension" />
       <sliceName value="productgroup" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:reseptdetails.extension:productnumber">
       <path value="Basic.extension.extension" />
       <sliceName value="productnumber" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.code">
