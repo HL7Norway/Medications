@@ -37,5 +37,21 @@
       </type>
       <isModifier value="false" />
     </element>
+    <element id="Basic.code">
+      <path value="Basic.code" />
+      <fixedCodeableConcept>
+        <coding>
+          <code value="journalnote" />
+        </coding>
+      </fixedCodeableConcept>
+    </element>
+    <element id="Basic.code.text">
+      <path value="Basic.code.text" />
+      <max value="0" />
+    </element>
+    <element id="Basic.subject">
+      <path value="Basic.subject" />
+      <max value="0" />
+    </element>
   </differential>
 </StructureDefinition>
