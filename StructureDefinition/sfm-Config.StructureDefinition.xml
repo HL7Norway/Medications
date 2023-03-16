@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://example.org/fhir/StructureDefinition/sfm-Config" />
+  <id value="sfm-Config" />
+  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-Config" />
+  <version value="1.0.0" />
   <name value="SFMConfig" />
-  <status value="draft" />
-  <fhirVersion value="4.0.1" />
+  <status value="active" />
+  <date value="2023-03-16" />
+  <description value="Used to communicate config information from epj to SFM." />
+  <fhirVersion value="4.0.0" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Basic" />
