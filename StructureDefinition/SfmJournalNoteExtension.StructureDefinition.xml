@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="sfmjournalnoteextension" />
+  <url value="https://example.org/fhir/StructureDefinition/SfmJournalNoteExtension" />
+  <version value="0.8" />
+  <name value="SfmJournalNoteExtension" />
+  <title value="SFM Journal note extension" />
+  <status value="draft" />
+  <description value="Extension for coded journal note canditades from SFM to EHR." />
+  <purpose value="Provide for necessary information on activities perfomed in SFM to the hosting EHR instance." />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Basic" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="4" />
+    </element>
+    <element id="Extension.extension:timestamp">
+      <path value="Extension.extension" />
+      <sliceName value="timestamp" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:timestamp.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="timestamp" />
+    </element>
+    <element id="Extension.extension:timestamp.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="Extension.extension:type">
+      <path value="Extension.extension" />
+      <sliceName value="type" />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:type.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="type" />
+    </element>
+    <element id="Extension.extension:type.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="code" />
+      </type>
+    </element>
+    <element id="Extension.extension:encounter">
+      <path value="Extension.extension" />
+      <sliceName value="encounter" />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:encounter.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="encounter" />
+    </element>
+    <element id="Extension.extension:encounter.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="Reference" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
+    <element id="Extension.extension:encounter.value[x].reference">
+      <path value="Extension.extension.value[x].reference" />
+      <max value="0" />
+    </element>
+    <element id="Extension.extension:encounter.value[x].type">
+      <path value="Extension.extension.value[x].type" />
+      <max value="0" />
+    </element>
+    <element id="Extension.extension:encounter.value[x].identifier">
+      <path value="Extension.extension.value[x].identifier" />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:encounter.value[x].identifier.use">
+      <path value="Extension.extension.value[x].identifier.use" />
+      <max value="0" />
+    </element>
+    <element id="Extension.extension:encounter.value[x].identifier.type">
+      <path value="Extension.extension.value[x].identifier.type" />
+      <max value="0" />
+    </element>
+    <element id="Extension.extension:encounter.value[x].identifier.system">
+      <path value="Extension.extension.value[x].identifier.system" />
+      <max value="0" />
+    </element>
+    <element id="Extension.extension:encounter.value[x].identifier.value">
+      <path value="Extension.extension.value[x].identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:encounter.value[x].identifier.period">
+      <path value="Extension.extension.value[x].identifier.period" />
+      <max value="0" />
+    </element>
+    <element id="Extension.extension:encounter.value[x].identifier.assigner">
+      <path value="Extension.extension.value[x].identifier.assigner" />
+      <max value="0" />
+    </element>
+    <element id="Extension.extension:treatment">
+      <path value="Extension.extension" />
+      <sliceName value="treatment" />
+      <min value="0" />
+    </element>
+    <element id="Extension.extension:treatment.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="treatment" />
+    </element>
+    <element id="Extension.extension:treatment.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="Reference" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
+    <element id="Extension.extension:treatment.value[x].type">
+      <path value="Extension.extension.value[x].type" />
+      <type>
+        <code value="uri" />
+        <profile value="sfm-MedicationStatement" />
+        <profile value="sfm-NutritionStatement" />
+        <profile value="sfm-BandaPrescription" />
+      </type>
+    </element>
+    <element id="Extension.extension:journalnote">
+      <path value="Extension.extension" />
+      <sliceName value="journalnote" />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:journalnote.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="journalnote" />
+    </element>
+    <element id="Extension.extension:journalnote.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://example.org/fhir/StructureDefinition/SfmJournalNoteExtension" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="sfmjournalnote" />
+  <url value="https://example.org/fhir/StructureDefinition/SfmJournalNote" />
+  <version value="0.8" />
+  <name value="SfmJournalNote" />
+  <title value="SFM journal note" />
+  <status value="draft" />
+  <description value="Profile on basic to represent journal note candiates from SFM to EHR" />
+  <purpose value="Support a mecanism for EHR to retrieve information from SFM to documentation in EHR (in norwegian: Løpende journal)" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Basic" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Basic" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Basic.extension">
+      <path value="Basic.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Basic.extension:JournalNote">
+      <path value="Basic.extension" />
+      <sliceName value="JournalNote" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://example.org/fhir/StructureDefinition/SfmJournalNoteExtension" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="Basic.code">
+      <path value="Basic.code" />
+      <fixedCodeableConcept>
+        <coding>
+          <code value="journalnote" />
+        </coding>
+      </fixedCodeableConcept>
+    </element>
+    <element id="Basic.code.text">
+      <path value="Basic.code.text" />
+      <max value="0" />
+    </element>
+    <element id="Basic.subject">
+      <path value="Basic.subject" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>
