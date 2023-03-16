@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://example.org/fhir/StructureDefinition/sfm-Config" />
+  <name value="SFMConfig" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Basic" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Basic" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Basic.code.coding.system">
+      <path value="Basic.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-config" />
+    </element>
+    <element id="Basic.code.coding.code">
+      <path value="Basic.code.coding.code" />
+      <min value="1" />
+    </element>
+  </differential>
+</StructureDefinition>

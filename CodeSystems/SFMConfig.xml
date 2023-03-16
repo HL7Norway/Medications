@@ -1,0 +1,110 @@
+<CodeSystem>
+  <id value="sfm-task-types.codesystem" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2021-05-03T00:00:00.000+00:00" />
+  </meta>
+  <url value="http://ehelse.no/fhir/CodeSystem/sfm-task-types" />
+  <version value="1.0" />
+  <name value="sfm-task-types.codesystem" />
+  <status value="active" />
+  <date value="2021-05-01T00:00:00.000+00:00" />
+  <publisher value="Direktoratet for e-helse" />
+  <content value="complete" />
+  <concept>
+    <code value="1" />
+    <display value="Godkjenn LIB" />
+  </concept>
+  <concept>
+    <code value="2" />
+    <display value="Dobbeltsigner LIB" />
+  </concept>
+  <concept>
+    <code value="3" />
+    <display value="Godkjenn kladd" />
+  </concept>
+  <concept>
+    <code value="4" />
+    <display value="Send klargjort melding" />
+  </concept>
+  <concept>
+    <code value="5" />
+    <display value="Intervensjon" />
+  </concept>
+  <concept>
+    <code value="6" />
+    <display value="Spørsmål fra apotek" />
+  </concept>
+  <concept>
+    <code value="7" />
+    <display value="PLL kommentar" />
+  </concept>
+  <concept>
+    <code value="8" />
+    <display value="Endring på multidosepasient" />
+  </concept>
+  <concept>
+    <code value="9" />
+    <display value="Ny multidosepakking" />
+  </concept>
+  <concept>
+    <code value="10" />
+    <display value="Endring på pasient" />
+  </concept>
+  <concept>
+    <code value="11" />
+    <display value="Nytt varsel fra FEST" />
+  </concept>
+  <concept>
+    <code value="12" />
+    <display value="SFM har blitt oppdatert" />
+  </concept>
+  <concept>
+    <code value="13" />
+    <display value="SFM planlegger nedetid" />
+  </concept>
+  <concept>
+    <code value="14" />
+    <display value="Feil ved sending til RF" />
+  </concept>
+  <concept>
+    <code value="15" />
+    <display value="Utleveringsmelding" />
+  </concept>
+  <concept>
+    <code value="16" />
+    <display value="Mottatt svar på Helfosøknad" />
+  </concept>
+  <concept>
+    <code value="17" />
+    <display value="Mottatt svar på søknad til SLV" />
+  </concept>
+  <concept>
+    <code value="18" />
+    <display value="Melding til PLO" />
+  </concept>
+  <concept>
+    <code value="19" />
+    <display value="Endring i legemiddelreaksjon" />
+  </concept>
+  <concept>
+    <code value="20" />
+    <display value="Ny MD lege påmeldt" />
+  </concept>
+  <concept>
+    <code value="21" />
+    <display value="Revurderingsdato" />
+  </concept>
+  <concept>
+    <code value="22" />
+    <display value="Endring i PID" />
+  </concept>
+  <concept>
+    <code value="23" />
+    <display value="Endring i HPR" />
+  </concept>
+    <concept>
+    <code value="24" />
+    <display value="Legemiddelreaksjonregistering er mangelfull" />
+  </concept>
+</CodeSystem>
