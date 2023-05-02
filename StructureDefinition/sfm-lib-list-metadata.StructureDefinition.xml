@@ -400,7 +400,8 @@
     <element id="Extension.extension:medicationreview.extension:performedby.value[x]">
       <path value="Extension.extension.extension.value[x]" />
       <type>
-        <code value="string" />
+        <code value="Reference" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-PractitionerRole" />
       </type>
     </element>
     <element id="Extension.extension:medicationreview.extension:comment">
