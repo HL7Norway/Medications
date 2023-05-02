@@ -1,0 +1,26 @@
+<CodeSystem>
+  <id value="sfm-typeOfComment-code" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2023-04-10T00:00:00.000+00:00" />
+  </meta>
+  <url value="http://ehelse.no/fhir/CodeSystem/sfm-typeOfComment-code" />
+  <version value="1.0" />
+  <name value="sfm-typeOfComment-code.codesystem" />
+  <status value="active" />
+  <date value="2021-05-01T00:00:00.000+00:00" />
+  <publisher value="Direktoratet for e-helse" />
+  <content value="complete" />
+  <concept>
+    <code value="1" />
+    <display value="M251" />
+  </concept>
+  <concept>
+    <code value="2" />
+    <display value="M252" />
+  </concept>
+  <concept>
+    <code value="3" />
+    <display value="Local" />
+  </concept>
+</CodeSystem>

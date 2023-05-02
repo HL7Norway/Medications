@@ -24,15 +24,18 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="0" />
     </element>
     <element id="Medication.extension:prescriptiongroup">
       <path value="Medication.extension" />
       <sliceName value="prescriptiongroup" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Medication.extension:medicationdetails">
       <path value="Medication.extension" />
       <sliceName value="medicationdetails" />
+      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-medicationdetails" />
@@ -92,10 +95,12 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="0" />
     </element>
     <element id="Medication.amount.extension:quantity">
       <path value="Medication.amount.extension" />
       <sliceName value="quantity" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />

@@ -3,7 +3,7 @@
   <id value="sfm-libitemcomment" />
   <meta>
     <versionId value="3" />
-    <lastUpdated value="2018-10-03T14:01:39.262+00:00" />
+    <lastUpdated value="2023-03-17T07:48:24.7199135+00:00" />
   </meta>
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-libitemcomment" />
   <version value="1.0" />
@@ -37,6 +37,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="2" />
     </element>
     <element id="Extension.extension:type">
       <path value="Extension.extension" />
@@ -65,6 +66,7 @@
       <sliceName value="merknad" />
       <short value="Textual comment" />
       <definition value="Textual information related to the coded information." />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:merknad.url">
@@ -82,6 +84,7 @@
       <sliceName value="Id" />
       <short value="Id of the comment" />
       <definition value="Id that unique identifies the comment." />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:Id.url">
@@ -99,6 +102,7 @@
       <sliceName value="registeredby" />
       <short value="User that has registered the comment" />
       <definition value="User or organisation that has registered the comment." />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:registeredby.url">
@@ -116,6 +120,7 @@
       <sliceName value="receiver" />
       <short value="user that should respond to comment" />
       <definition value="Identifies a user that should respond to the comment." />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:receiver.url">
@@ -133,6 +138,7 @@
       <sliceName value="response" />
       <short value="response to the comment" />
       <definition value="Response from doctor or pharmacy." />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:response.extension">
@@ -144,12 +150,14 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="1" />
     </element>
     <element id="Extension.extension:response.extension:Id">
       <path value="Extension.extension.extension" />
       <sliceName value="Id" />
       <short value="Id of the response" />
       <definition value="Response unique identifier." />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:response.extension:Id.url">
@@ -167,6 +175,7 @@
       <sliceName value="responder" />
       <short value="User that has responded to the comemnt" />
       <definition value="Using HPR or Her-id to identify user." />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:response.extension:responder.url">
@@ -184,6 +193,7 @@
       <sliceName value="svar" />
       <short value="textual response" />
       <definition value="textual response to the comment." />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:response.extension:svar.url">

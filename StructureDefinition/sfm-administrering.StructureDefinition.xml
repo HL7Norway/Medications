@@ -3,14 +3,14 @@
   <id value="sfm-administration" />
   <meta>
     <versionId value="4" />
-    <lastUpdated value="2022-09-05T10:14:34.0231251+00:00" />
+    <lastUpdated value="2023-04-12T05:12:35.1803426+00:00" />
   </meta>
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-administration" />
-  <version value="1.1" />
+  <version value="2.0" />
   <name value="SfmAdministration" />
   <title value="sfm-administration" />
   <status value="active" />
-  <date value="2022-09-05" />
+  <date value="2023-04-12" />
   <description value="Describes detailed information about how a prescription should be administered." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
@@ -159,6 +159,10 @@
         <code value="CodeableConcept" />
       </type>
     </element>
+    <element id="Extension.extension:admBy.value[x].coding.system">
+      <path value="Extension.extension.value[x].coding.system" />
+      <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-admBy-code" />
+    </element>
     <element id="Extension.extension:nocombination">
       <path value="Extension.extension" />
       <sliceName value="nocombination" />
@@ -193,6 +197,89 @@
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="boolean" />
+      </type>
+    </element>
+    <element id="Extension.extension:admFrom">
+      <path value="Extension.extension" />
+      <sliceName value="admFrom" />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:admFrom.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="admFrom" />
+    </element>
+    <element id="Extension.extension:admFrom.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.extension:admFrom.value[x].coding.system">
+      <path value="Extension.extension.value[x].coding.system" />
+      <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-admFrom-code" />
+    </element>
+    <element id="Extension.extension:admProduct">
+      <path value="Extension.extension" />
+      <sliceName value="admProduct" />
+      <min value="0" />
+    </element>
+    <element id="Extension.extension:admProduct.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="admProduct" />
+    </element>
+    <element id="Extension.extension:admProduct.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Medication" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Magistrell-Medication" />
+      </type>
+    </element>
+    <element id="Extension.extension:admComment">
+      <path value="Extension.extension" />
+      <sliceName value="admComment" />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:admComment.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="admComment" />
+    </element>
+    <element id="Extension.extension:admComment.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:nextObservation">
+      <path value="Extension.extension" />
+      <sliceName value="nextObservation" />
+      <min value="0" />
+    </element>
+    <element id="Extension.extension:nextObservation.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="nextObservation" />
+    </element>
+    <element id="Extension.extension:nextObservation.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="date" />
+      </type>
+    </element>
+    <element id="Extension.extension:reassessmentdate">
+      <path value="Extension.extension" />
+      <sliceName value="reassessmentdate" />
+      <min value="0" />
+    </element>
+    <element id="Extension.extension:reassessmentdate.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="reassessmentdate" />
+    </element>
+    <element id="Extension.extension:reassessmentdate.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="date" />
       </type>
     </element>
     <element id="Extension.url">

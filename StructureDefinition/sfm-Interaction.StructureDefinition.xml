@@ -24,10 +24,12 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="0" />
     </element>
     <element id="Basic.extension:interacationdata">
       <path value="Basic.extension" />
       <sliceName value="interacationdata" />
+      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-interactiondata" />
@@ -43,50 +45,60 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="4" />
     </element>
     <element id="Basic.extension:interacationdata.extension:relevance">
       <path value="Basic.extension.extension" />
       <sliceName value="relevance" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:interacationdata.extension:situationcriterium">
       <path value="Basic.extension.extension" />
       <sliceName value="situationcriterium" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:interacationdata.extension:clinicalconsequence">
       <path value="Basic.extension.extension" />
       <sliceName value="clinicalconsequence" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:interacationdata.extension:interactionmechanism">
       <path value="Basic.extension.extension" />
       <sliceName value="interactionmechanism" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:interacationdata.extension:source">
       <path value="Basic.extension.extension" />
       <sliceName value="source" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:interacationdata.extension:handling">
       <path value="Basic.extension.extension" />
       <sliceName value="handling" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:interacationdata.extension:displayrule">
       <path value="Basic.extension.extension" />
       <sliceName value="displayrule" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:interacationdata.extension:reference">
       <path value="Basic.extension.extension" />
       <sliceName value="reference" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:interacationdata.extension:substancegroup">
       <path value="Basic.extension.extension" />
       <sliceName value="substancegroup" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:interacationdata.extension:substancegroup.extension">
@@ -98,15 +110,18 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="1" />
     </element>
     <element id="Basic.extension:interacationdata.extension:substancegroup.extension:name">
       <path value="Basic.extension.extension.extension" />
       <sliceName value="name" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.extension:interacationdata.extension:substancegroup.extension:substance">
       <path value="Basic.extension.extension.extension" />
       <sliceName value="substance" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Basic.code">

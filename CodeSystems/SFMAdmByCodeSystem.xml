@@ -1,0 +1,38 @@
+<CodeSystem>
+  <id value="sfm-admBy-code" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2023-04-10T00:00:00.000+00:00" />
+  </meta>
+  <url value="http://ehelse.no/fhir/CodeSystem/sfm-admBy-code" />
+  <version value="1.0" />
+  <name value="sfm-admBy-code.codesystem" />
+  <status value="active" />
+  <date value="2023-05-12T00:00:00.000+00:00" />
+  <publisher value="Direktoratet for e-helse" />
+  <content value="complete" />
+  <concept>
+    <code value="1" />
+    <display value="PLO" />
+  </concept>
+  <concept>
+    <code value="2" />
+    <display value="Pasient" />
+  </concept>
+  <concept>
+    <code value="3" />
+    <display value="Legekontor" />
+  </concept>
+  <concept>
+    <code value="4" />
+    <display value="Apotek" />
+  </concept>
+  <concept>
+    <code value="5" />
+    <display value="Sykehus" />
+  </concept>
+  <concept>
+    <code value="6" />
+    <display value="Annet" />
+  </concept>
+</CodeSystem>

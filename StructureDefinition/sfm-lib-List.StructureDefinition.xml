@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sfm-lib-List" />
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-lib-List" />
-  <version value="1.0" />
+  <version value="2.0" />
   <name value="SfmLibList" />
   <title value="sfm-lib-List" />
   <status value="active" />
-  <date value="2021-05-01" />
+  <date value="2023-04-12" />
   <description value="LIB items and related warnings for selected patient in a given period." />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
@@ -29,10 +29,12 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="0" />
     </element>
     <element id="List.extension:actor">
       <path value="List.extension" />
       <sliceName value="actor" />
+      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-actor" />
@@ -48,136 +50,39 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="2" />
     </element>
     <element id="List.extension:actor.extension:role">
       <path value="List.extension.extension" />
       <sliceName value="role" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="List.extension:actor.extension:practioner">
       <path value="List.extension.extension" />
       <sliceName value="practioner" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="List.extension:metaData">
       <path value="List.extension" />
       <sliceName value="metaData" />
+      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-lib-list-meta-data" />
       </type>
+      <isModifier value="false" />
     </element>
     <element id="List.extension:warnings">
       <path value="List.extension" />
       <sliceName value="warnings" />
+      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-warning" />
       </type>
-      <mustSupport value="true" />
-    </element>
-    <element id="List.extension:warnings.extension">
-      <path value="List.extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="List.extension:warnings.extension:doublePrescription">
-      <path value="List.extension.extension" />
-      <sliceName value="doublePrescription" />
-      <mustSupport value="true" />
-    </element>
-    <element id="List.extension:warnings.extension:doublePrescription.extension">
-      <path value="List.extension.extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="List.extension:warnings.extension:doublePrescription.extension:reference">
-      <path value="List.extension.extension.extension" />
-      <sliceName value="reference" />
-      <mustSupport value="true" />
-    </element>
-    <element id="List.extension:warnings.extension:doublePrescription.extension:reason">
-      <path value="List.extension.extension.extension" />
-      <sliceName value="reason" />
-      <mustSupport value="true" />
-    </element>
-    <element id="List.extension:warnings.extension:doublePrescription.extension:codedreason">
-      <path value="List.extension.extension.extension" />
-      <sliceName value="codedreason" />
-      <mustSupport value="true" />
-    </element>
-    <element id="List.extension:warnings.extension:interaction">
-      <path value="List.extension.extension" />
-      <sliceName value="interaction" />
-    </element>
-    <element id="List.extension:warnings.extension:interaction.extension">
-      <path value="List.extension.extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="List.extension:warnings.extension:interaction.extension:reference">
-      <path value="List.extension.extension.extension" />
-      <sliceName value="reference" />
-      <mustSupport value="true" />
-    </element>
-    <element id="List.extension:warnings.extension:interaction.extension:reason">
-      <path value="List.extension.extension.extension" />
-      <sliceName value="reason" />
-      <mustSupport value="true" />
-    </element>
-    <element id="List.extension:warnings.extension:interaction.extension:codedreason">
-      <path value="List.extension.extension.extension" />
-      <sliceName value="codedreason" />
-      <mustSupport value="true" />
-    </element>
-    <element id="List.extension:warnings.extension:interaction.extension:interactiondata">
-      <path value="List.extension.extension.extension" />
-      <sliceName value="interactiondata" />
-      <mustSupport value="true" />
-    </element>
-    <element id="List.extension:warnings.extension:allergyIntollerance">
-      <path value="List.extension.extension" />
-      <sliceName value="allergyIntollerance" />
-    </element>
-    <element id="List.extension:warnings.extension:allergyIntollerance.extension">
-      <path value="List.extension.extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="List.extension:warnings.extension:allergyIntollerance.extension:reference">
-      <path value="List.extension.extension.extension" />
-      <sliceName value="reference" />
-      <mustSupport value="true" />
-    </element>
-    <element id="List.extension:warnings.extension:allergyIntollerance.extension:reason">
-      <path value="List.extension.extension.extension" />
-      <sliceName value="reason" />
-      <mustSupport value="true" />
-    </element>
-    <element id="List.extension:warnings.extension:allergyIntollerance.extension:codedreason">
-      <path value="List.extension.extension.extension" />
-      <sliceName value="codedreason" />
-      <mustSupport value="true" />
+      <isModifier value="false" />
     </element>
     <element id="List.status">
       <path value="List.status" />

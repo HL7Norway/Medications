@@ -3,7 +3,7 @@
   <id value="sfm-generic-substitution" />
   <meta>
     <versionId value="4" />
-    <lastUpdated value="2018-10-03T13:59:33.022+00:00" />
+    <lastUpdated value="2023-03-17T07:46:30.0726744+00:00" />
   </meta>
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-generic-substitution" />
   <version value="1.0" />
@@ -32,12 +32,14 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="0" />
     </element>
     <element id="Extension.extension:genericSubstitutionAccepted">
       <path value="Extension.extension" />
       <sliceName value="genericSubstitutionAccepted" />
       <short value="Identifies if prescribed product can be substituted" />
       <definition value="If value is true, then pharmacy may change to other brand." />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:genericSubstitutionAccepted.url">
@@ -55,6 +57,7 @@
       <sliceName value="reason" />
       <short value="Reason for no substitution" />
       <definition value="The prescribers reason for not accepting generic substitution of the medication." />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:reason.url">

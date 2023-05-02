@@ -33,6 +33,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="1" />
     </element>
     <element id="Extension.extension:systeminfo">
       <path value="Extension.extension" />
@@ -50,6 +51,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="4" />
     </element>
     <element id="Extension.extension:systeminfo.extension:systemcode">
       <path value="Extension.extension.extension" />
@@ -128,6 +130,7 @@
       <sliceName value="operationsuplierinfo" />
       <short value="Information about service provider" />
       <definition value="Information about who is the main provider of service on systems." />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:operationsuplierinfo.extension">
@@ -139,6 +142,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="3" />
     </element>
     <element id="Extension.extension:operationsuplierinfo.extension:servicevendorname">
       <path value="Extension.extension.extension" />
@@ -159,6 +163,7 @@
     <element id="Extension.extension:operationsuplierinfo.extension:contactname">
       <path value="Extension.extension.extension" />
       <sliceName value="contactname" />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:operationsuplierinfo.extension:contactname.url">

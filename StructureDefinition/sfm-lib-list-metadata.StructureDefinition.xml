@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sfm-lib-list-meta-data" />
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-lib-list-meta-data" />
-  <version value="1.0" />
+  <version value="2.0" />
   <name value="SfmLibListMetaData" />
   <title value="sfm-lib-list-meta-data" />
   <status value="active" />
-  <date value="2021-05-01" />
+  <date value="2023-04-12" />
   <description value="Meta data about the LIB list that is presented." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
@@ -33,12 +33,14 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="0" />
     </element>
     <element id="Extension.extension:approvalstatus">
       <path value="Extension.extension" />
       <sliceName value="approvalstatus" />
       <short value="Information about the LIB is aproved" />
       <definition value="Gives the status for the LIB. What kind of aprovement is given." />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:approvalstatus.extension">
@@ -50,6 +52,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="1" />
     </element>
     <element id="Extension.extension:approvalstatus.extension:approved">
       <path value="Extension.extension.extension" />
@@ -78,6 +81,7 @@
       <sliceName value="signedby" />
       <short value="Practitioner that aporved" />
       <definition value="Identifier of person that signed the list." />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:approvalstatus.extension:signedby.url">
@@ -94,6 +98,7 @@
     <element id="Extension.extension:approvalstatus.extension:timestamp">
       <path value="Extension.extension.extension" />
       <sliceName value="timestamp" />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:approvalstatus.extension:timestamp.url">
@@ -119,7 +124,58 @@
       <sliceName value="generalcomment" />
       <short value="Comment about the LIB list" />
       <definition value="General comment about the LIB list." />
+      <min value="0" />
+    </element>
+    <element id="Extension.extension:generalcomment.extension">
+      <path value="Extension.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="2" />
+    </element>
+    <element id="Extension.extension:generalcomment.extension:type">
+      <path value="Extension.extension.extension" />
+      <sliceName value="type" />
+      <min value="1" />
       <max value="1" />
+    </element>
+    <element id="Extension.extension:generalcomment.extension:type.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="type" />
+    </element>
+    <element id="Extension.extension:generalcomment.extension:type.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.extension:generalcomment.extension:type.value[x].coding.system">
+      <path value="Extension.extension.extension.value[x].coding.system" />
+      <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-typeOfComment-code" />
+    </element>
+    <element id="Extension.extension:generalcomment.extension:type.value[x].text">
+      <path value="Extension.extension.extension.value[x].text" />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:generalcomment.extension:text">
+      <path value="Extension.extension.extension" />
+      <sliceName value="text" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:generalcomment.extension:text.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="text" />
+    </element>
+    <element id="Extension.extension:generalcomment.extension:text.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
     </element>
     <element id="Extension.extension:generalcomment.url">
       <path value="Extension.extension.url" />
@@ -127,8 +183,153 @@
     </element>
     <element id="Extension.extension:generalcomment.value[x]">
       <path value="Extension.extension.value[x]" />
+      <max value="0" />
+      <type>
+        <code value="base64Binary" />
+      </type>
+      <type>
+        <code value="boolean" />
+      </type>
+      <type>
+        <code value="canonical" />
+      </type>
+      <type>
+        <code value="code" />
+      </type>
+      <type>
+        <code value="date" />
+      </type>
+      <type>
+        <code value="dateTime" />
+      </type>
+      <type>
+        <code value="decimal" />
+      </type>
+      <type>
+        <code value="id" />
+      </type>
+      <type>
+        <code value="instant" />
+      </type>
+      <type>
+        <code value="integer" />
+      </type>
+      <type>
+        <code value="markdown" />
+      </type>
+      <type>
+        <code value="oid" />
+      </type>
+      <type>
+        <code value="positiveInt" />
+      </type>
       <type>
         <code value="string" />
+      </type>
+      <type>
+        <code value="time" />
+      </type>
+      <type>
+        <code value="unsignedInt" />
+      </type>
+      <type>
+        <code value="uri" />
+      </type>
+      <type>
+        <code value="url" />
+      </type>
+      <type>
+        <code value="uuid" />
+      </type>
+      <type>
+        <code value="Address" />
+      </type>
+      <type>
+        <code value="Age" />
+      </type>
+      <type>
+        <code value="Annotation" />
+      </type>
+      <type>
+        <code value="Attachment" />
+      </type>
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <type>
+        <code value="Coding" />
+      </type>
+      <type>
+        <code value="ContactPoint" />
+      </type>
+      <type>
+        <code value="Count" />
+      </type>
+      <type>
+        <code value="Distance" />
+      </type>
+      <type>
+        <code value="Duration" />
+      </type>
+      <type>
+        <code value="HumanName" />
+      </type>
+      <type>
+        <code value="Identifier" />
+      </type>
+      <type>
+        <code value="Money" />
+      </type>
+      <type>
+        <code value="Period" />
+      </type>
+      <type>
+        <code value="Quantity" />
+      </type>
+      <type>
+        <code value="Range" />
+      </type>
+      <type>
+        <code value="Ratio" />
+      </type>
+      <type>
+        <code value="Reference" />
+      </type>
+      <type>
+        <code value="SampledData" />
+      </type>
+      <type>
+        <code value="Signature" />
+      </type>
+      <type>
+        <code value="Timing" />
+      </type>
+      <type>
+        <code value="ContactDetail" />
+      </type>
+      <type>
+        <code value="Contributor" />
+      </type>
+      <type>
+        <code value="DataRequirement" />
+      </type>
+      <type>
+        <code value="Expression" />
+      </type>
+      <type>
+        <code value="ParameterDefinition" />
+      </type>
+      <type>
+        <code value="RelatedArtifact" />
+      </type>
+      <type>
+        <code value="TriggerDefinition" />
+      </type>
+      <type>
+        <code value="UsageContext" />
+      </type>
+      <type>
+        <code value="Dosage" />
       </type>
     </element>
     <element id="Extension.extension:period">
@@ -136,6 +337,7 @@
       <sliceName value="period" />
       <short value="Period the list is showing" />
       <definition value="Period is presented when a period is requested. It is not shown when &quot;current&quot; list is requested." />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:period.url">
@@ -153,6 +355,7 @@
       <sliceName value="medicationreview" />
       <short value="Last medication review performed" />
       <definition value="Information about last medication reivew that was performed." />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:medicationreview.extension">
@@ -164,6 +367,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="2" />
     </element>
     <element id="Extension.extension:medicationreview.extension:timestamp">
       <path value="Extension.extension.extension" />
@@ -202,6 +406,7 @@
     <element id="Extension.extension:medicationreview.extension:comment">
       <path value="Extension.extension.extension" />
       <sliceName value="comment" />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:medicationreview.extension:comment.url">
@@ -227,6 +432,7 @@
       <sliceName value="correpondancedata" />
       <short value="B64 coded structure for correspondanse" />
       <definition value="Includes all lib items that to include in correspondance. The information has the following structure:&#xD;&#xA;&lt;sequence&gt;&lt;element name=&quot;BruksomradeTekst&quot; type=&quot;string&quot; minOccurs=&quot;0&quot;/&gt;&#xD;&#xA;    &lt;element name=&quot;DosVeiledEnkel&quot; type=&quot;string&quot; minOccurs=&quot;0&quot;/&gt;&#xD;&#xA;    &lt;element name=&quot;Nr&quot; type=&quot;string&quot; minOccurs=&quot;0&quot;/&gt;&#xD;&#xA;    &lt;element name=&quot;Navn&quot; type=&quot;string&quot;/&gt;&#xD;&#xA;    &lt;element name=&quot;GeneriskNavn&quot; type=&quot;string&quot; minOccurs=&quot;0&quot;/&gt;&#xD;&#xA;    &lt;element name=&quot;Atc&quot; type=&quot;kith:CS&quot; minOccurs=&quot;0&quot;/&gt;&#xD;&#xA;    &lt;element name=&quot;Legemiddelform&quot; type=&quot;kith:CS&quot; minOccurs=&quot;0&quot;/&gt;&#xD;&#xA;    &lt;element name=&quot;Styrke&quot; type=&quot;kith:PQ&quot; minOccurs=&quot;0&quot;/&gt;&#xD;&#xA;    &lt;element name=&quot;Bruk&quot; type=&quot;kith:CS&quot; minOccurs=&quot;0&quot;/&gt;&#xD;&#xA;    &lt;element name=&quot;DoseringStarttidspunkt&quot; type=&quot;kith:TS&quot; minOccurs=&quot;0&quot;/&gt;&#xD;&#xA;    &lt;element name=&quot;DoseringSluttidspunkt&quot; type=&quot;kith:TS&quot; minOccurs=&quot;0&quot;/&gt;&#xD;&#xA;    &lt;element name=&quot;SkalIkkeTasSammenMedAnnetLegemiddel&quot; type=&quot;boolean&quot; minOccurs=&quot;0&quot;/&gt;&lt;/sequence&gt;&#xD;&#xA;Navn = GeneriskNavn when prescription is on generic substance level." />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:correpondancedata.url">

@@ -32,12 +32,14 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="0" />
     </element>
     <element id="Extension.extension:ad">
       <path value="Extension.extension" />
       <sliceName value="ad" />
       <short value="Add to get required amount" />
       <definition value="Used to identify that the ingridient should be addded to create required amount." />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:ad.url">
@@ -55,6 +57,7 @@
       <sliceName value="qs" />
       <short value="Needed amount" />
       <definition value="Add needed amount to create expected product." />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:qs.url">
@@ -69,12 +72,6 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <type>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
-          <valueUrl value="uri" />
-        </extension>
-        <code value="http://hl7.org/fhirpath/System.String" />
-      </type>
       <fixedUri value="http://ehelse.no/fhir/StructureDefinition/sfm-adqs" />
     </element>
     <element id="Extension.value[x]">

@@ -24,12 +24,14 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="0" />
     </element>
     <element id="Organization.extension:epjinfo">
       <path value="Organization.extension" />
       <sliceName value="epjinfo" />
       <short value="Information about epj system" />
       <definition value="information should only be included when providing top node organisation." />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -45,10 +47,12 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="1" />
     </element>
     <element id="Organization.extension:epjinfo.extension:systeminfo">
       <path value="Organization.extension.extension" />
       <sliceName value="systeminfo" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Organization.extension:epjinfo.extension:systeminfo.extension">
@@ -60,30 +64,36 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="4" />
     </element>
     <element id="Organization.extension:epjinfo.extension:systeminfo.extension:systemcode">
       <path value="Organization.extension.extension.extension" />
       <sliceName value="systemcode" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Organization.extension:epjinfo.extension:systeminfo.extension:systemname">
       <path value="Organization.extension.extension.extension" />
       <sliceName value="systemname" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Organization.extension:epjinfo.extension:systeminfo.extension:version">
       <path value="Organization.extension.extension.extension" />
       <sliceName value="version" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Organization.extension:epjinfo.extension:systeminfo.extension:updatetime">
       <path value="Organization.extension.extension.extension" />
       <sliceName value="updatetime" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Organization.extension:epjinfo.extension:operationsuplierinfo">
       <path value="Organization.extension.extension" />
       <sliceName value="operationsuplierinfo" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Organization.extension:epjinfo.extension:operationsuplierinfo.extension">
@@ -95,25 +105,30 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="3" />
     </element>
     <element id="Organization.extension:epjinfo.extension:operationsuplierinfo.extension:servicevendorname">
       <path value="Organization.extension.extension.extension" />
       <sliceName value="servicevendorname" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Organization.extension:epjinfo.extension:operationsuplierinfo.extension:contactname">
       <path value="Organization.extension.extension.extension" />
       <sliceName value="contactname" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Organization.extension:epjinfo.extension:operationsuplierinfo.extension:contactemail">
       <path value="Organization.extension.extension.extension" />
       <sliceName value="contactemail" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Organization.extension:epjinfo.extension:operationsuplierinfo.extension:contactphone">
       <path value="Organization.extension.extension.extension" />
       <sliceName value="contactphone" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Organization.identifier">

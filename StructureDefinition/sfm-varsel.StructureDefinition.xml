@@ -3,14 +3,14 @@
   <id value="sfm-warning" />
   <meta>
     <versionId value="4" />
-    <lastUpdated value="2018-10-03T14:01:22.414+00:00" />
+    <lastUpdated value="2023-04-12T06:32:02.7942639+00:00" />
   </meta>
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-warning" />
-  <version value="1.0" />
+  <version value="2.0" />
   <name value="SfmWarning" />
   <title value="sfm-warning" />
   <status value="active" />
-  <date value="2021-05-01" />
+  <date value="2023-04-12" />
   <description value="Medical warning handling documentation." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
@@ -41,265 +41,14 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-    </element>
-    <element id="Extension.extension:doublePrescription">
-      <path value="Extension.extension" />
-      <sliceName value="doublePrescription" />
-      <short value="Double prescription" />
-      <definition value="Information about two or more medications that are similar and reason why using both." />
-    </element>
-    <element id="Extension.extension:doublePrescription.extension">
-      <path value="Extension.extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Extension.extension:doublePrescription.extension:reference">
-      <path value="Extension.extension.extension" />
-      <sliceName value="reference" />
-      <short value="Referance to medication statements" />
-      <definition value="Referance between medication statements that are similar." />
-      <min value="1" />
-    </element>
-    <element id="Extension.extension:doublePrescription.extension:reference.url">
-      <path value="Extension.extension.extension.url" />
-      <fixedUri value="reference" />
-    </element>
-    <element id="Extension.extension:doublePrescription.extension:reference.value[x]">
-      <path value="Extension.extension.extension.value[x]" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-MedicationStatement" />
-      </type>
-    </element>
-    <element id="Extension.extension:doublePrescription.extension:reason">
-      <path value="Extension.extension.extension" />
-      <sliceName value="reason" />
-      <short value="Textual reason" />
-      <definition value="Reason for contiuning treatement with similar drugs." />
-      <max value="1" />
-    </element>
-    <element id="Extension.extension:doublePrescription.extension:reason.url">
-      <path value="Extension.extension.extension.url" />
-      <fixedUri value="reason" />
-    </element>
-    <element id="Extension.extension:doublePrescription.extension:reason.value[x]">
-      <path value="Extension.extension.extension.value[x]" />
-      <type>
-        <code value="string" />
-      </type>
-    </element>
-    <element id="Extension.extension:doublePrescription.extension:codedreason">
-      <path value="Extension.extension.extension" />
-      <sliceName value="codedreason" />
-      <short value="coded reason" />
-      <definition value="Coded reason for contuing treatment with simiar drugs." />
-    </element>
-    <element id="Extension.extension:doublePrescription.extension:codedreason.url">
-      <path value="Extension.extension.extension.url" />
-      <fixedUri value="codedreason" />
-    </element>
-    <element id="Extension.extension:doublePrescription.extension:codedreason.value[x]">
-      <path value="Extension.extension.extension.value[x]" />
-      <type>
-        <code value="CodeableConcept" />
-      </type>
-    </element>
-    <element id="Extension.extension:doublePrescription.extension:codedreason.value[x].coding.system">
-      <path value="Extension.extension.extension.value[x].coding.system" />
-      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7535" />
-    </element>
-    <element id="Extension.extension:doublePrescription.url">
-      <path value="Extension.extension.url" />
-      <fixedUri value="doublePrescription" />
-    </element>
-    <element id="Extension.extension:doublePrescription.value[x]">
-      <path value="Extension.extension.value[x]" />
-      <max value="0" />
-    </element>
-    <element id="Extension.extension:interaction">
-      <path value="Extension.extension" />
-      <sliceName value="interaction" />
-      <short value="Interaction information" />
-      <definition value="Information about interaction between two or more medicationstatements and how interaction has been managed." />
-    </element>
-    <element id="Extension.extension:interaction.extension">
-      <path value="Extension.extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Extension.extension:interaction.extension:reference">
-      <path value="Extension.extension.extension" />
-      <sliceName value="reference" />
-      <short value="Reference to MedicationStatement" />
-      <definition value="Reference to medicationstatement that is part of the interaction identified." />
-      <min value="1" />
-    </element>
-    <element id="Extension.extension:interaction.extension:reference.url">
-      <path value="Extension.extension.extension.url" />
-      <fixedUri value="reference" />
-    </element>
-    <element id="Extension.extension:interaction.extension:reference.value[x]">
-      <path value="Extension.extension.extension.value[x]" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-MedicationStatement" />
-      </type>
-    </element>
-    <element id="Extension.extension:interaction.extension:reason">
-      <path value="Extension.extension.extension" />
-      <sliceName value="reason" />
-      <short value="Reason for continue with medication" />
-      <definition value="Textual reason for using medication despit interaction warning." />
-      <max value="1" />
-    </element>
-    <element id="Extension.extension:interaction.extension:reason.url">
-      <path value="Extension.extension.extension.url" />
-      <fixedUri value="reason" />
-    </element>
-    <element id="Extension.extension:interaction.extension:reason.value[x]">
-      <path value="Extension.extension.extension.value[x]" />
-      <type>
-        <code value="string" />
-      </type>
-    </element>
-    <element id="Extension.extension:interaction.extension:codedreason">
-      <path value="Extension.extension.extension" />
-      <sliceName value="codedreason" />
-      <short value="coded reason for contiuing with medication" />
-      <definition value="A coded reason for continuing with medication despit interaction warning." />
-    </element>
-    <element id="Extension.extension:interaction.extension:codedreason.url">
-      <path value="Extension.extension.extension.url" />
-      <fixedUri value="codedreason" />
-    </element>
-    <element id="Extension.extension:interaction.extension:codedreason.value[x]">
-      <path value="Extension.extension.extension.value[x]" />
-      <type>
-        <code value="CodeableConcept" />
-      </type>
-    </element>
-    <element id="Extension.extension:interaction.extension:codedreason.value[x].coding.system">
-      <path value="Extension.extension.extension.value[x].coding.system" />
-      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7535" />
-    </element>
-    <element id="Extension.extension:interaction.extension:interactiondata">
-      <path value="Extension.extension.extension" />
-      <sliceName value="interactiondata" />
-      <short value="Information about the interaction identified" />
-      <definition value="Referance to interaction information that is warned about. Information is bundled." />
-    </element>
-    <element id="Extension.extension:interaction.extension:interactiondata.url">
-      <path value="Extension.extension.extension.url" />
-      <fixedUri value="interactiondata" />
-    </element>
-    <element id="Extension.extension:interaction.extension:interactiondata.value[x]">
-      <path value="Extension.extension.extension.value[x]" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-Interaction" />
-      </type>
-    </element>
-    <element id="Extension.extension:interaction.url">
-      <path value="Extension.extension.url" />
-      <fixedUri value="interaction" />
-    </element>
-    <element id="Extension.extension:interaction.value[x]">
-      <path value="Extension.extension.value[x]" />
-      <max value="0" />
-    </element>
-    <element id="Extension.extension:allergyIntollerance">
-      <path value="Extension.extension" />
-      <sliceName value="allergyIntollerance" />
-      <short value="Identified allergy intollerance" />
-      <definition value="Allergy intollerance identified related to medicalstatement and reason why prescribing anyway." />
-    </element>
-    <element id="Extension.extension:allergyIntollerance.extension">
-      <path value="Extension.extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Extension.extension:allergyIntollerance.extension:reference">
-      <path value="Extension.extension.extension" />
-      <sliceName value="reference" />
-      <short value="referance to medicalstatement" />
-      <definition value="Referance to the medical statement with identified allergy inollerance." />
-      <min value="1" />
-      <max value="1" />
-    </element>
-    <element id="Extension.extension:allergyIntollerance.extension:reference.url">
-      <path value="Extension.extension.extension.url" />
-      <fixedUri value="reference" />
-    </element>
-    <element id="Extension.extension:allergyIntollerance.extension:reference.value[x]">
-      <path value="Extension.extension.extension.value[x]" />
-      <type>
-        <code value="Reference" />
-      </type>
-    </element>
-    <element id="Extension.extension:allergyIntollerance.extension:reason">
-      <path value="Extension.extension.extension" />
-      <sliceName value="reason" />
-      <short value="textual reason for continoue treatment" />
-      <definition value="Argument for why patient should continoue with treatment when identified allergy intollerance." />
-    </element>
-    <element id="Extension.extension:allergyIntollerance.extension:reason.url">
-      <path value="Extension.extension.extension.url" />
-      <fixedUri value="reason" />
-    </element>
-    <element id="Extension.extension:allergyIntollerance.extension:reason.value[x]">
-      <path value="Extension.extension.extension.value[x]" />
-      <type>
-        <code value="string" />
-      </type>
-    </element>
-    <element id="Extension.extension:allergyIntollerance.extension:codedreason">
-      <path value="Extension.extension.extension" />
-      <sliceName value="codedreason" />
-      <short value="coded reason for continoue treatment" />
-      <definition value="coded reason for continoue treatment with allergy inollerance." />
-    </element>
-    <element id="Extension.extension:allergyIntollerance.extension:codedreason.url">
-      <path value="Extension.extension.extension.url" />
-      <fixedUri value="codedreason" />
-    </element>
-    <element id="Extension.extension:allergyIntollerance.extension:codedreason.value[x]">
-      <path value="Extension.extension.extension.value[x]" />
-      <type>
-        <code value="CodeableConcept" />
-      </type>
-    </element>
-    <element id="Extension.extension:allergyIntollerance.extension:codedreason.value[x].coding.system">
-      <path value="Extension.extension.extension.value[x].coding.system" />
-      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7535" />
-    </element>
-    <element id="Extension.extension:allergyIntollerance.url">
-      <path value="Extension.extension.url" />
-      <fixedUri value="allergyIntollerance" />
-    </element>
-    <element id="Extension.extension:allergyIntollerance.value[x]">
-      <path value="Extension.extension.value[x]" />
-      <max value="0" />
+      <min value="0" />
     </element>
     <element id="Extension.extension:reasonMedicalChange">
       <path value="Extension.extension" />
       <sliceName value="reasonMedicalChange" />
       <short value="Reason for last medical change" />
       <definition value="Type and reason of last medical change performed by prescriber." />
+      <min value="0" />
     </element>
     <element id="Extension.extension:reasonMedicalChange.extension">
       <path value="Extension.extension.extension" />
@@ -310,60 +59,333 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="2" />
     </element>
-    <element id="Extension.extension:reasonMedicalChange.extension:reference">
+    <element id="Extension.extension:reasonMedicalChange.extension:treatment_ref">
       <path value="Extension.extension.extension" />
-      <sliceName value="reference" />
+      <sliceName value="treatment_ref" />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:reasonMedicalChange.extension:reference.url">
+    <element id="Extension.extension:reasonMedicalChange.extension:treatment_ref.url">
       <path value="Extension.extension.extension.url" />
-      <fixedUri value="reference" />
+      <fixedUri value="treatment_ref" />
     </element>
-    <element id="Extension.extension:reasonMedicalChange.extension:reference.value[x]">
-      <path value="Extension.extension.extension.value[x]" />
-      <type>
-        <code value="Reference" />
-      </type>
-    </element>
-    <element id="Extension.extension:reasonMedicalChange.extension:reason">
-      <path value="Extension.extension.extension" />
-      <sliceName value="reason" />
-    </element>
-    <element id="Extension.extension:reasonMedicalChange.extension:reason.url">
-      <path value="Extension.extension.extension.url" />
-      <fixedUri value="reason" />
-    </element>
-    <element id="Extension.extension:reasonMedicalChange.extension:reason.value[x]">
+    <element id="Extension.extension:reasonMedicalChange.extension:treatment_ref.value[x]">
       <path value="Extension.extension.extension.value[x]" />
       <type>
         <code value="string" />
       </type>
+      <type>
+        <code value="Reference" />
+      </type>
     </element>
-    <element id="Extension.extension:reasonMedicalChange.extension:typeofchange">
+    <element id="Extension.extension:reasonMedicalChange.extension:typeOfChange">
       <path value="Extension.extension.extension" />
-      <sliceName value="typeofchange" />
+      <sliceName value="typeOfChange" />
+      <min value="1" />
+      <max value="1" />
     </element>
-    <element id="Extension.extension:reasonMedicalChange.extension:typeofchange.url">
+    <element id="Extension.extension:reasonMedicalChange.extension:typeOfChange.url">
       <path value="Extension.extension.extension.url" />
-      <fixedUri value="typeofchange" />
+      <fixedUri value="typeOfChange" />
     </element>
-    <element id="Extension.extension:reasonMedicalChange.extension:typeofchange.value[x]">
+    <element id="Extension.extension:reasonMedicalChange.extension:typeOfChange.value[x]">
       <path value="Extension.extension.extension.value[x]" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
-    <element id="Extension.extension:reasonMedicalChange.extension:typeofchange.value[x].coding.system">
+    <element id="Extension.extension:reasonMedicalChange.extension:typeOfChange.value[x].coding.system">
       <path value="Extension.extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7536" />
+    </element>
+    <element id="Extension.extension:reasonMedicalChange.extension:timestamp">
+      <path value="Extension.extension.extension" />
+      <sliceName value="timestamp" />
+      <min value="0" />
+    </element>
+    <element id="Extension.extension:reasonMedicalChange.extension:timestamp.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="timestamp" />
+    </element>
+    <element id="Extension.extension:reasonMedicalChange.extension:timestamp.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="Extension.extension:reasonMedicalChange.extension:text">
+      <path value="Extension.extension.extension" />
+      <sliceName value="text" />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:reasonMedicalChange.extension:text.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="text" />
+    </element>
+    <element id="Extension.extension:reasonMedicalChange.extension:text.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:reasonMedicalChange.extension:changedBy">
+      <path value="Extension.extension.extension" />
+      <sliceName value="changedBy" />
+      <min value="0" />
+    </element>
+    <element id="Extension.extension:reasonMedicalChange.extension:changedBy.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="changedBy" />
+    </element>
+    <element id="Extension.extension:reasonMedicalChange.extension:changedBy.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-PractitionerRole" />
+      </type>
     </element>
     <element id="Extension.extension:reasonMedicalChange.url">
       <path value="Extension.extension.url" />
       <fixedUri value="reasonMedicalChange" />
     </element>
     <element id="Extension.extension:reasonMedicalChange.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <max value="0" />
+    </element>
+    <element id="Extension.extension:warningHandled">
+      <path value="Extension.extension" />
+      <sliceName value="warningHandled" />
+      <min value="0" />
+    </element>
+    <element id="Extension.extension:warningHandled.extension">
+      <path value="Extension.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="5" />
+    </element>
+    <element id="Extension.extension:warningHandled.extension:treatment_ref">
+      <path value="Extension.extension.extension" />
+      <sliceName value="treatment_ref" />
+      <min value="1" />
+      <max value="2" />
+    </element>
+    <element id="Extension.extension:warningHandled.extension:treatment_ref.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="treatment_ref" />
+    </element>
+    <element id="Extension.extension:warningHandled.extension:treatment_ref.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:warningHandled.extension:Id">
+      <path value="Extension.extension.extension" />
+      <sliceName value="Id" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:warningHandled.extension:Id.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="Id" />
+    </element>
+    <element id="Extension.extension:warningHandled.extension:Id.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:warningHandled.extension:typeWarning">
+      <path value="Extension.extension.extension" />
+      <sliceName value="typeWarning" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:warningHandled.extension:typeWarning.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="typeWarning" />
+    </element>
+    <element id="Extension.extension:warningHandled.extension:typeWarning.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.extension:warningHandled.extension:typeWarning.value[x].coding.system">
+      <path value="Extension.extension.extension.value[x].coding.system" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7538" />
+    </element>
+    <element id="Extension.extension:warningHandled.extension:handlingCode">
+      <path value="Extension.extension.extension" />
+      <sliceName value="handlingCode" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:warningHandled.extension:handlingCode.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="handlingCode" />
+    </element>
+    <element id="Extension.extension:warningHandled.extension:handlingCode.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.extension:warningHandled.extension:handlingCode.value[x].coding.system">
+      <path value="Extension.extension.extension.value[x].coding.system" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7535" />
+    </element>
+    <element id="Extension.extension:warningHandled.extension:text">
+      <path value="Extension.extension.extension" />
+      <sliceName value="text" />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:warningHandled.extension:text.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="text" />
+    </element>
+    <element id="Extension.extension:warningHandled.extension:text.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:warningHandled.extension:timestamp">
+      <path value="Extension.extension.extension" />
+      <sliceName value="timestamp" />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:warningHandled.extension:timestamp.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="timestamp" />
+    </element>
+    <element id="Extension.extension:warningHandled.extension:timestamp.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="Extension.extension:warningHandled.extension:handledBy">
+      <path value="Extension.extension.extension" />
+      <sliceName value="handledBy" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:warningHandled.extension:handledBy.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="handledBy" />
+    </element>
+    <element id="Extension.extension:warningHandled.extension:handledBy.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-PractitionerRole" />
+      </type>
+    </element>
+    <element id="Extension.extension:warningHandled.extension:reference">
+      <path value="Extension.extension.extension" />
+      <sliceName value="reference" />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:warningHandled.extension:reference.extension">
+      <path value="Extension.extension.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="3" />
+    </element>
+    <element id="Extension.extension:warningHandled.extension:reference.extension:Id">
+      <path value="Extension.extension.extension.extension" />
+      <sliceName value="Id" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:warningHandled.extension:reference.extension:Id.url">
+      <path value="Extension.extension.extension.extension.url" />
+      <fixedUri value="Id" />
+    </element>
+    <element id="Extension.extension:warningHandled.extension:reference.extension:Id.value[x]">
+      <path value="Extension.extension.extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:warningHandled.extension:reference.extension:timestamp">
+      <path value="Extension.extension.extension.extension" />
+      <sliceName value="timestamp" />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:warningHandled.extension:reference.extension:timestamp.url">
+      <path value="Extension.extension.extension.extension.url" />
+      <fixedUri value="timestamp" />
+    </element>
+    <element id="Extension.extension:warningHandled.extension:reference.extension:timestamp.value[x]">
+      <path value="Extension.extension.extension.extension.value[x]" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="Extension.extension:warningHandled.extension:reference.extension:type">
+      <path value="Extension.extension.extension.extension" />
+      <sliceName value="type" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:warningHandled.extension:reference.extension:type.url">
+      <path value="Extension.extension.extension.extension.url" />
+      <fixedUri value="type" />
+    </element>
+    <element id="Extension.extension:warningHandled.extension:reference.extension:type.value[x]">
+      <path value="Extension.extension.extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:warningHandled.extension:reference.extension:display">
+      <path value="Extension.extension.extension.extension" />
+      <sliceName value="display" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:warningHandled.extension:reference.extension:display.url">
+      <path value="Extension.extension.extension.extension.url" />
+      <fixedUri value="display" />
+    </element>
+    <element id="Extension.extension:warningHandled.extension:reference.extension:display.value[x]">
+      <path value="Extension.extension.extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:warningHandled.extension:reference.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="reference" />
+    </element>
+    <element id="Extension.extension:warningHandled.extension:reference.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <max value="0" />
+    </element>
+    <element id="Extension.extension:warningHandled.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="warningHandled" />
+    </element>
+    <element id="Extension.extension:warningHandled.value[x]">
       <path value="Extension.extension.value[x]" />
       <max value="0" />
     </element>
