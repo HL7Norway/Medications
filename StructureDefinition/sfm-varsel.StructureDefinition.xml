@@ -3,7 +3,7 @@
   <id value="sfm-warning" />
   <meta>
     <versionId value="4" />
-    <lastUpdated value="2023-04-12T06:32:02.7942639+00:00" />
+    <lastUpdated value="2023-05-15T14:53:04.6304829+00:00" />
   </meta>
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-warning" />
   <version value="2.0" />
@@ -155,9 +155,9 @@
       <path value="Extension.extension.value[x]" />
       <max value="0" />
     </element>
-    <element id="Extension.extension:warningHandled">
+    <element id="Extension.extension:warnings">
       <path value="Extension.extension" />
-      <sliceName value="warningHandled" />
+      <sliceName value="warnings" />
       <min value="0" />
     </element>
     <element id="Extension.extension:warningHandled.extension">
@@ -171,128 +171,128 @@
       </slicing>
       <min value="5" />
     </element>
-    <element id="Extension.extension:warningHandled.extension:treatment_ref">
+    <element id="Extension.extension:warnings.extension:treatment_ref">
       <path value="Extension.extension.extension" />
       <sliceName value="treatment_ref" />
       <min value="1" />
       <max value="2" />
     </element>
-    <element id="Extension.extension:warningHandled.extension:treatment_ref.url">
+    <element id="Extension.extension:warnings.extension:treatment_ref.url">
       <path value="Extension.extension.extension.url" />
       <fixedUri value="treatment_ref" />
     </element>
-    <element id="Extension.extension:warningHandled.extension:treatment_ref.value[x]">
+    <element id="Extension.extension:warnings.extension:treatment_ref.value[x]">
       <path value="Extension.extension.extension.value[x]" />
       <type>
         <code value="string" />
       </type>
     </element>
-    <element id="Extension.extension:warningHandled.extension:Id">
+    <element id="Extension.extension:warnings.extension:Id">
       <path value="Extension.extension.extension" />
       <sliceName value="Id" />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:warningHandled.extension:Id.url">
+    <element id="Extension.extension:warnings.extension:Id.url">
       <path value="Extension.extension.extension.url" />
       <fixedUri value="Id" />
     </element>
-    <element id="Extension.extension:warningHandled.extension:Id.value[x]">
+    <element id="Extension.extension:warnings.extension:Id.value[x]">
       <path value="Extension.extension.extension.value[x]" />
       <type>
         <code value="string" />
       </type>
     </element>
-    <element id="Extension.extension:warningHandled.extension:typeWarning">
+    <element id="Extension.extension:warnings.extension:typeWarning">
       <path value="Extension.extension.extension" />
       <sliceName value="typeWarning" />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:warningHandled.extension:typeWarning.url">
+    <element id="Extension.extension:warnings.extension:typeWarning.url">
       <path value="Extension.extension.extension.url" />
       <fixedUri value="typeWarning" />
     </element>
-    <element id="Extension.extension:warningHandled.extension:typeWarning.value[x]">
+    <element id="Extension.extension:warnings.extension:typeWarning.value[x]">
       <path value="Extension.extension.extension.value[x]" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
-    <element id="Extension.extension:warningHandled.extension:typeWarning.value[x].coding.system">
+    <element id="Extension.extension:warnings.extension:typeWarning.value[x].coding.system">
       <path value="Extension.extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7538" />
     </element>
-    <element id="Extension.extension:warningHandled.extension:handlingCode">
+    <element id="Extension.extension:warnings.extension:handlingCode">
       <path value="Extension.extension.extension" />
       <sliceName value="handlingCode" />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:warningHandled.extension:handlingCode.url">
+    <element id="Extension.extension:warnings.extension:handlingCode.url">
       <path value="Extension.extension.extension.url" />
       <fixedUri value="handlingCode" />
     </element>
-    <element id="Extension.extension:warningHandled.extension:handlingCode.value[x]">
+    <element id="Extension.extension:warnings.extension:handlingCode.value[x]">
       <path value="Extension.extension.extension.value[x]" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
-    <element id="Extension.extension:warningHandled.extension:handlingCode.value[x].coding.system">
+    <element id="Extension.extension:warnings.extension:handlingCode.value[x].coding.system">
       <path value="Extension.extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7535" />
     </element>
-    <element id="Extension.extension:warningHandled.extension:text">
+    <element id="Extension.extension:warnings.extension:text">
       <path value="Extension.extension.extension" />
       <sliceName value="text" />
       <min value="0" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:warningHandled.extension:text.url">
+    <element id="Extension.extension:warnings.extension:text.url">
       <path value="Extension.extension.extension.url" />
       <fixedUri value="text" />
     </element>
-    <element id="Extension.extension:warningHandled.extension:text.value[x]">
+    <element id="Extension.extension:warnings.extension:text.value[x]">
       <path value="Extension.extension.extension.value[x]" />
       <type>
         <code value="string" />
       </type>
     </element>
-    <element id="Extension.extension:warningHandled.extension:timestamp">
+    <element id="Extension.extension:warnings.extension:timestamp">
       <path value="Extension.extension.extension" />
       <sliceName value="timestamp" />
       <min value="0" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:warningHandled.extension:timestamp.url">
+    <element id="Extension.extension:warnings.extension:timestamp.url">
       <path value="Extension.extension.extension.url" />
       <fixedUri value="timestamp" />
     </element>
-    <element id="Extension.extension:warningHandled.extension:timestamp.value[x]">
+    <element id="Extension.extension:warnings.extension:timestamp.value[x]">
       <path value="Extension.extension.extension.value[x]" />
       <type>
         <code value="dateTime" />
       </type>
     </element>
-    <element id="Extension.extension:warningHandled.extension:handledBy">
+    <element id="Extension.extension:warnings.extension:handledBy">
       <path value="Extension.extension.extension" />
       <sliceName value="handledBy" />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:warningHandled.extension:handledBy.url">
+    <element id="Extension.extension:warnings.extension:handledBy.url">
       <path value="Extension.extension.extension.url" />
       <fixedUri value="handledBy" />
     </element>
-    <element id="Extension.extension:warningHandled.extension:handledBy.value[x]">
+    <element id="Extension.extension:warnings.extension:handledBy.value[x]">
       <path value="Extension.extension.extension.value[x]" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-PractitionerRole" />
       </type>
     </element>
-    <element id="Extension.extension:warningHandled.extension:reference">
+    <element id="Extension.extension:warnings.extension:reference">
       <path value="Extension.extension.extension" />
       <sliceName value="reference" />
       <min value="0" />
@@ -309,83 +309,83 @@
       </slicing>
       <min value="3" />
     </element>
-    <element id="Extension.extension:warningHandled.extension:reference.extension:Id">
+    <element id="Extension.extension:warnings.extension:reference.extension:Id">
       <path value="Extension.extension.extension.extension" />
       <sliceName value="Id" />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:warningHandled.extension:reference.extension:Id.url">
+    <element id="Extension.extension:warnings.extension:reference.extension:Id.url">
       <path value="Extension.extension.extension.extension.url" />
       <fixedUri value="Id" />
     </element>
-    <element id="Extension.extension:warningHandled.extension:reference.extension:Id.value[x]">
+    <element id="Extension.extension:warnings.extension:reference.extension:Id.value[x]">
       <path value="Extension.extension.extension.extension.value[x]" />
       <type>
         <code value="string" />
       </type>
     </element>
-    <element id="Extension.extension:warningHandled.extension:reference.extension:timestamp">
+    <element id="Extension.extension:warnings.extension:reference.extension:timestamp">
       <path value="Extension.extension.extension.extension" />
       <sliceName value="timestamp" />
       <min value="0" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:warningHandled.extension:reference.extension:timestamp.url">
+    <element id="Extension.extension:warnings.extension:reference.extension:timestamp.url">
       <path value="Extension.extension.extension.extension.url" />
       <fixedUri value="timestamp" />
     </element>
-    <element id="Extension.extension:warningHandled.extension:reference.extension:timestamp.value[x]">
+    <element id="Extension.extension:warnings.extension:reference.extension:timestamp.value[x]">
       <path value="Extension.extension.extension.extension.value[x]" />
       <type>
         <code value="dateTime" />
       </type>
     </element>
-    <element id="Extension.extension:warningHandled.extension:reference.extension:type">
+    <element id="Extension.extension:warnings.extension:reference.extension:type">
       <path value="Extension.extension.extension.extension" />
       <sliceName value="type" />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:warningHandled.extension:reference.extension:type.url">
+    <element id="Extension.extension:warnings.extension:reference.extension:type.url">
       <path value="Extension.extension.extension.extension.url" />
       <fixedUri value="type" />
     </element>
-    <element id="Extension.extension:warningHandled.extension:reference.extension:type.value[x]">
+    <element id="Extension.extension:warnings.extension:reference.extension:type.value[x]">
       <path value="Extension.extension.extension.extension.value[x]" />
       <type>
         <code value="string" />
       </type>
     </element>
-    <element id="Extension.extension:warningHandled.extension:reference.extension:display">
+    <element id="Extension.extension:warnings.extension:reference.extension:display">
       <path value="Extension.extension.extension.extension" />
       <sliceName value="display" />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:warningHandled.extension:reference.extension:display.url">
+    <element id="Extension.extension:warnings.extension:reference.extension:display.url">
       <path value="Extension.extension.extension.extension.url" />
       <fixedUri value="display" />
     </element>
-    <element id="Extension.extension:warningHandled.extension:reference.extension:display.value[x]">
+    <element id="Extension.extension:warnings.extension:reference.extension:display.value[x]">
       <path value="Extension.extension.extension.extension.value[x]" />
       <type>
         <code value="string" />
       </type>
     </element>
-    <element id="Extension.extension:warningHandled.extension:reference.url">
+    <element id="Extension.extension:warnings.extension:reference.url">
       <path value="Extension.extension.extension.url" />
       <fixedUri value="reference" />
     </element>
-    <element id="Extension.extension:warningHandled.extension:reference.value[x]">
+    <element id="Extension.extension:warnings.extension:reference.value[x]">
       <path value="Extension.extension.extension.value[x]" />
       <max value="0" />
     </element>
-    <element id="Extension.extension:warningHandled.url">
+    <element id="Extension.extension:warnings.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="warningHandled" />
+      <fixedUri value="warnings" />
     </element>
-    <element id="Extension.extension:warningHandled.value[x]">
+    <element id="Extension.extension:warnings.value[x]">
       <path value="Extension.extension.value[x]" />
       <max value="0" />
     </element>
