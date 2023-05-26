@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="SFM_PatientTicket_parameter"/> 
+  <text> <status value="additional"/> <div xmlns="http://www.w3.org/1999/xhtml"><p>SFM serach parameter for selecting individual patients, using the temporary ticket obtained from SFM</p> </div> </text>    
+  <url value="http://nhn.no/sfm/fhir/SearchParameter/SFM_PatientTicket_parameter"/> 
+  <version value="1"/> 
+  <name value="TASK-PATIENTTICKET-PARAMETER"/> 
+  <status value="active"/> 
+  <date value="2023-05-22"/> 
+  <publisher value="Norsk Helsenett SF"/> 
+  <description value="Search parameter providing identifiaction of an individual patient"/> 
+  <code value="patientTicket"/> 
+  <base value="Task"/> 
+  <base value="List"/> 
+  <base value="AllergyIntolerance"/> 
+  <base value="MedicationStatement"/> 
+  <base value="Condition"/> 
+  <base value="Observation"/> 
+  <base value="Basic"/> 
+  <type value="string"/> 
+</SearchParameter> 
