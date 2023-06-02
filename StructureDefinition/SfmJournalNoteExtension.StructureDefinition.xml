@@ -33,6 +33,8 @@
     <element id="Extension.extension:timestamp">
       <path value="Extension.extension" />
       <sliceName value="timestamp" />
+      <short value="Timestamp for the event" />
+      <comment value="" />
       <min value="1" />
       <max value="1" />
     </element>
@@ -50,7 +52,9 @@
     <element id="Extension.extension:type">
       <path value="Extension.extension" />
       <sliceName value="type" />
+      <short value="Defines the category type of the Journal note" />
       <min value="1" />
+      <max value="1" />
     </element>
     <element id="Extension.extension:type.url">
       <path value="Extension.extension.url" />
@@ -60,12 +64,21 @@
       <path value="Extension.extension.value[x]" />
       <min value="1" />
       <type>
-        <code value="code" />
+        <code value="Coding" />
       </type>
+    </element>
+    <element id="Extension.extension:type.value[x].code">
+      <path value="Extension.extension.value[x].code" />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:type.value[x].display">
+      <path value="Extension.extension.value[x].display" />
+      <min value="1" />
     </element>
     <element id="Extension.extension:encounter">
       <path value="Extension.extension" />
       <sliceName value="encounter" />
+      <short value="Identifier indicating the virtual encounter from EPJ" />
       <min value="1" />
     </element>
     <element id="Extension.extension:encounter.url">
@@ -115,23 +128,25 @@
       <path value="Extension.extension.value[x].identifier.assigner" />
       <max value="0" />
     </element>
-    <element id="Extension.extension:treatment">
+    <element id="Extension.extension:item">
       <path value="Extension.extension" />
-      <sliceName value="treatment" />
+      <sliceName value="item" />
+      <short value="Reference to the item(s) (treatment, allergy...) covered by the action" />
+      <definition value="Literal reference to the Resource and suitabe &quot;display&quot; text to include i journal" />
       <min value="0" />
     </element>
-    <element id="Extension.extension:treatment.url">
+    <element id="Extension.extension:item.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="treatment" />
+      <fixedUri value="item" />
     </element>
-    <element id="Extension.extension:treatment.value[x]">
+    <element id="Extension.extension:item.value[x]">
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="Reference" />
         <aggregation value="referenced" />
       </type>
     </element>
-    <element id="Extension.extension:treatment.value[x].type">
+    <element id="Extension.extension:item.value[x].type">
       <path value="Extension.extension.value[x].type" />
       <type>
         <code value="uri" />
@@ -143,6 +158,7 @@
     <element id="Extension.extension:journalnote">
       <path value="Extension.extension" />
       <sliceName value="journalnote" />
+      <short value="One or multiple text strings to incude to the Journal" />
       <min value="1" />
     </element>
     <element id="Extension.extension:journalnote.url">
