@@ -25,16 +25,16 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="1" />
+      <min value="0" />
     </element>
     <element id="Basic.extension:JournalNote">
       <path value="Basic.extension" />
       <sliceName value="JournalNote" />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://example.org/fhir/StructureDefinition/SfmJournalNoteExtension" />
+        <profile value="https://ehelse.no/fhir/StructureDefinition/SfmJournalNoteExtension" />
       </type>
       <isModifier value="false" />
     </element>
