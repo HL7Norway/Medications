@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sfmjournalnoteextension" />
   <url value="https://ehelse.no/fhir/StructureDefinition/SfmJournalNoteExtension" />
-  <version value="0.9" />
+  <version value="0.91" />
   <name value="SfmJournalNoteExtension" />
   <title value="SFM Journal note extension" />
   <status value="draft" />
@@ -29,7 +29,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="4" />
+      <min value="3" />
     </element>
     <element id="Extension.extension:timestamp">
       <path value="Extension.extension" />
@@ -101,10 +101,6 @@
       <path value="Extension.extension.value[x].type" />
       <max value="0" />
     </element>
-    <element id="Extension.extension:encounter.value[x].identifier">
-      <path value="Extension.extension.value[x].identifier" />
-      <min value="1" />
-    </element>
     <element id="Extension.extension:encounter.value[x].identifier.use">
       <path value="Extension.extension.value[x].identifier.use" />
       <max value="0" />
@@ -156,19 +152,50 @@
         <profile value="sfm-BandaPrescription" />
       </type>
     </element>
-    <element id="Extension.extension:journalnote">
+    <element id="Extension.extension:itemname">
       <path value="Extension.extension" />
-      <sliceName value="journalnote" />
-      <short value="One or multiple text strings to incude to the Journal" />
-      <min value="1" />
+      <sliceName value="itemname" />
+      <min value="0" />
+      <max value="1" />
     </element>
-    <element id="Extension.extension:journalnote.url">
+    <element id="Extension.extension:itemname.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="journalnote" />
+      <fixedUri value="itemname" />
     </element>
-    <element id="Extension.extension:journalnote.value[x]">
+    <element id="Extension.extension:itemname.value[x]">
       <path value="Extension.extension.value[x]" />
-      <min value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:dssn">
+      <path value="Extension.extension" />
+      <sliceName value="dssn" />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:dssn.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="dssn" />
+    </element>
+    <element id="Extension.extension:dssn.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:comment">
+      <path value="Extension.extension" />
+      <sliceName value="comment" />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:comment.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="comment" />
+    </element>
+    <element id="Extension.extension:comment.value[x]">
+      <path value="Extension.extension.value[x]" />
       <type>
         <code value="string" />
       </type>

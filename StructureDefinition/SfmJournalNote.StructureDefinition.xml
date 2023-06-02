@@ -25,12 +25,12 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="0" />
+      <min value="1" />
     </element>
     <element id="Basic.extension:JournalNote">
       <path value="Basic.extension" />
       <sliceName value="JournalNote" />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <type>
         <code value="Extension" />
