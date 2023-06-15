@@ -35,7 +35,6 @@
       <path value="Extension.extension" />
       <sliceName value="timestamp" />
       <short value="Timestamp for the event" />
-      <comment value="" />
       <min value="1" />
       <max value="1" />
     </element>
@@ -56,6 +55,11 @@
       <short value="Defines the category type of the Journal note" />
       <min value="1" />
       <max value="1" />
+      <binding>
+        <strength value="extensible" />
+        <description value="Type of event to be registered in journal" />
+        <valueSet value="http://ehelse.no/fhir/CodeSystem/sfm-journalnote-types" />
+      </binding>
     </element>
     <element id="Extension.extension:type.url">
       <path value="Extension.extension.url" />
@@ -68,12 +72,15 @@
         <code value="Coding" />
       </type>
     </element>
+    <element id="Extension.extension:type.value[x].system">
+      <path value="Extension.extension.value[x].system" />
+      <min value="1" />
+      <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-journalnote-types" />
+    </element>
     <element id="Extension.extension:type.value[x].code">
       <path value="Extension.extension.value[x].code" />
-      <min value="1" />
-    </element>
-    <element id="Extension.extension:type.value[x].display">
-      <path value="Extension.extension.value[x].display" />
+      <short value="Code used to filter by event types" />
+      <definition value="Different kind of events causes one or more JournalNotes whith specific types" />
       <min value="1" />
     </element>
     <element id="Extension.extension:encounter">

@@ -46,6 +46,14 @@
         </coding>
       </fixedCodeableConcept>
     </element>
+    <element id="Basic.code.coding">
+      <path value="Basic.code.coding" />
+      <max value="0" />
+    </element>
+    <element id="Basic.code.coding.system">
+      <path value="Basic.code.coding.system" />
+      <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-journalnote-types" />
+    </element>
     <element id="Basic.code.text">
       <path value="Basic.code.text" />
       <max value="0" />
