@@ -1,0 +1,78 @@
+<CodeSystem>
+  <id value="sfm-journalnote-types.codesystem" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2023-06-15T00:00:00.000+00:00" />
+  </meta>
+  <url value="http://ehelse.no/fhir/CodeSystem/sfm-journalnote-types" />
+  <version value="1.0" />
+  <name value="sfm-journalnote-types.codesystem" />
+  <status value="active" />
+  <date value="2023-06-15T00:00:00.000+00:00" />
+  <publisher value="Direktoratet for e-helse" />
+  <content value="complete" />
+  <concept>
+    <code value="Fornyresept" />
+    <display value="Fornyet resept" />
+  </concept>
+  <concept>
+    <code value="Endretbehandling" />
+    <display value="Endret behandling" />
+  </concept>
+  <concept>
+    <code value="Seponertbehandling" />
+    <display value="Seponert behandling" />
+  </concept>
+  <concept>
+    <code value="Opprettetbehandling" />
+    <display value="Opprettet behandling" />
+  </concept>
+  <concept>
+    <code value="Sendtresept" />
+    <display value="Sendt resept" />
+  </concept>
+  <concept>
+    <code value="Bekreftetbehandling" />
+    <display value="Bekreftet bruk av legemiddelbehandling" />
+  </concept>
+  <concept>
+    <code value="SlettetOrdinasjon" />
+    <display value="Slettet siste versjon av ordinasjon" />
+  </concept>
+  <concept>
+    <code value="Legemiddelgjennomgang" />
+    <display value="Gjennomført legemiddelgjennomgang" />
+  </concept>
+  <concept>
+    <code value="OpprettetCAVE" />
+    <display value="Opprettet legemiddelreaksjon" />
+  </concept>
+  <concept>
+    <code value="EndretCAVE" />
+    <display value="Endret legemiddelreaksjonsopplysninger" />
+  </concept>
+  <concept>
+    <code value="AvkreftetCAVE" />
+    <display value="Avkreftet legemiddelreaksjon" />
+  </concept>
+  <concept>
+    <code value="SoknadHelfo" />
+    <display value="Sendt søknad til Helfo" />
+  </concept>
+  <concept>
+    <code value="MDPamelding" />
+    <display value="Registrert multidoseansvar" />
+  </concept>
+  <concept>
+    <code value="MDAvmelding" />
+    <display value="Avregistrert multidoseansvar" />
+  </concept>
+  <concept>
+    <code value="OpprettetPLL" />
+    <display value="Opprettet første PLL" />
+  </concept>
+  <concept>
+    <code value="SendtPLL" />
+    <display value="Sendt PLL" />
+  </concept>
+</CodeSystem>
