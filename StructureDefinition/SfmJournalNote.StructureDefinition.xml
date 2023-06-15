@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sfmjournalnote" />
-  <url value="https://example.org/fhir/StructureDefinition/SfmJournalNote" />
-  <version value="0.8" />
+  <url value="https://ehelse.no/fhir/StructureDefinition/SfmJournalNote" />
+  <version value="0.9" />
   <name value="SfmJournalNote" />
   <title value="SFM journal note" />
   <status value="draft" />
+  <date value="2023-06-01" />
   <description value="Profile on basic to represent journal note candiates from SFM to EHR" />
   <purpose value="Support a mecanism for EHR to retrieve information from SFM to documentation in EHR (in norwegian: Løpende journal)" />
   <fhirVersion value="4.0.1" />
@@ -33,7 +34,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://example.org/fhir/StructureDefinition/SfmJournalNoteExtension" />
+        <profile value="https://ehelse.no/fhir/StructureDefinition/SfmJournalNoteExtension" />
       </type>
       <isModifier value="false" />
     </element>
