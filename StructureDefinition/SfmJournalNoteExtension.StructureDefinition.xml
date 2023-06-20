@@ -97,44 +97,27 @@
     <element id="Extension.extension:encounter.value[x]">
       <path value="Extension.extension.value[x]" />
       <type>
-        <code value="Reference" />
-        <aggregation value="referenced" />
+        <code value="Identifier" />
       </type>
     </element>
-    <element id="Extension.extension:encounter.value[x].reference">
-      <path value="Extension.extension.value[x].reference" />
+    <element id="Extension.extension:encounter.value[x].use">
+      <path value="Extension.extension.value[x].use" />
       <max value="0" />
     </element>
     <element id="Extension.extension:encounter.value[x].type">
       <path value="Extension.extension.value[x].type" />
       <max value="0" />
     </element>
-    <element id="Extension.extension:encounter.value[x].identifier">
-      <path value="Extension.extension.value[x].identifier" />
-      <min value="1" />
-    </element>
-    <element id="Extension.extension:encounter.value[x].identifier.use">
-      <path value="Extension.extension.value[x].identifier.use" />
+    <element id="Extension.extension:encounter.value[x].system">
+      <path value="Extension.extension.value[x].system" />
       <max value="0" />
     </element>
-    <element id="Extension.extension:encounter.value[x].identifier.type">
-      <path value="Extension.extension.value[x].identifier.type" />
+    <element id="Extension.extension:encounter.value[x].period">
+      <path value="Extension.extension.value[x].period" />
       <max value="0" />
     </element>
-    <element id="Extension.extension:encounter.value[x].identifier.system">
-      <path value="Extension.extension.value[x].identifier.system" />
-      <max value="0" />
-    </element>
-    <element id="Extension.extension:encounter.value[x].identifier.value">
-      <path value="Extension.extension.value[x].identifier.value" />
-      <min value="1" />
-    </element>
-    <element id="Extension.extension:encounter.value[x].identifier.period">
-      <path value="Extension.extension.value[x].identifier.period" />
-      <max value="0" />
-    </element>
-    <element id="Extension.extension:encounter.value[x].identifier.assigner">
-      <path value="Extension.extension.value[x].identifier.assigner" />
+    <element id="Extension.extension:encounter.value[x].assigner">
+      <path value="Extension.extension.value[x].assigner" />
       <max value="0" />
     </element>
     <element id="Extension.extension:item">
