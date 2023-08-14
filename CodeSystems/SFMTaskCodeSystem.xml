@@ -93,7 +93,7 @@
   </concept>
   <concept>
     <code value="21" />
-    <display value="Revurderingsdato" />
+    <display value="Revurderingsdato, INR kontroll" />
   </concept>
   <concept>
     <code value="22" />
@@ -107,4 +107,9 @@
     <code value="24" />
     <display value="Legemiddelreaksjonregistering er mangelfull" />
   </concept>
+  <concept>
+    <code value="25" />
+    <display value="Revurderingsdato er satt på legemiddelbehandling" />
+  </concept>
+  <concept>
 </CodeSystem>
