@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sfmjournalnoteextension" />
   <url value="https://ehelse.no/fhir/StructureDefinition/SfmJournalNoteExtension" />
-  <version value="0.91" />
+  <version value="1.0.2" />
   <name value="SfmJournalNoteExtension" />
   <title value="SFM Journal note extension" />
-  <status value="draft" />
-  <date value="2023-06-02" />
+  <status value="active" />
+  <date value="2023-06-20" />
   <description value="Extension for coded journal note canditades from SFM to EHR." />
   <purpose value="Provide for necessary information on activities perfomed in SFM to the hosting EHR instance." />
-  <fhirVersion value="4.0.1" />
+  <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
   <abstract value="false" />
   <context>
@@ -29,13 +29,12 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="3" />
+      <min value="2" />
     </element>
     <element id="Extension.extension:timestamp">
       <path value="Extension.extension" />
       <sliceName value="timestamp" />
       <short value="Timestamp for the event" />
-      <comment value="" />
       <min value="1" />
       <max value="1" />
     </element>
@@ -56,6 +55,11 @@
       <short value="Defines the category type of the Journal note" />
       <min value="1" />
       <max value="1" />
+      <binding>
+        <strength value="extensible" />
+        <description value="Type of event to be registered in journal" />
+        <valueSet value="http://ehelse.no/fhir/CodeSystem/sfm-journalnote-types" />
+      </binding>
     </element>
     <element id="Extension.extension:type.url">
       <path value="Extension.extension.url" />
@@ -68,19 +72,23 @@
         <code value="Coding" />
       </type>
     </element>
+    <element id="Extension.extension:type.value[x].system">
+      <path value="Extension.extension.value[x].system" />
+      <min value="1" />
+      <fixedUri value="http://ehelse.no/fhir/CodeSystem/sfm-journalnote-types" />
+    </element>
     <element id="Extension.extension:type.value[x].code">
       <path value="Extension.extension.value[x].code" />
-      <min value="1" />
-    </element>
-    <element id="Extension.extension:type.value[x].display">
-      <path value="Extension.extension.value[x].display" />
+      <short value="Code used to filter by event types" />
+      <definition value="Different kind of events causes one or more JournalNotes whith specific types" />
       <min value="1" />
     </element>
     <element id="Extension.extension:encounter">
       <path value="Extension.extension" />
       <sliceName value="encounter" />
       <short value="Identifier indicating the virtual encounter from EPJ" />
-      <min value="1" />
+      <min value="0" />
+      <max value="1" />
     </element>
     <element id="Extension.extension:encounter.url">
       <path value="Extension.extension.url" />
@@ -88,41 +96,29 @@
     </element>
     <element id="Extension.extension:encounter.value[x]">
       <path value="Extension.extension.value[x]" />
+      <min value="1" />
       <type>
-        <code value="Reference" />
-        <aggregation value="referenced" />
+        <code value="Identifier" />
       </type>
     </element>
-    <element id="Extension.extension:encounter.value[x].reference">
-      <path value="Extension.extension.value[x].reference" />
+    <element id="Extension.extension:encounter.value[x].use">
+      <path value="Extension.extension.value[x].use" />
       <max value="0" />
     </element>
     <element id="Extension.extension:encounter.value[x].type">
       <path value="Extension.extension.value[x].type" />
       <max value="0" />
     </element>
-    <element id="Extension.extension:encounter.value[x].identifier.use">
-      <path value="Extension.extension.value[x].identifier.use" />
+    <element id="Extension.extension:encounter.value[x].system">
+      <path value="Extension.extension.value[x].system" />
       <max value="0" />
     </element>
-    <element id="Extension.extension:encounter.value[x].identifier.type">
-      <path value="Extension.extension.value[x].identifier.type" />
+    <element id="Extension.extension:encounter.value[x].period">
+      <path value="Extension.extension.value[x].period" />
       <max value="0" />
     </element>
-    <element id="Extension.extension:encounter.value[x].identifier.system">
-      <path value="Extension.extension.value[x].identifier.system" />
-      <max value="0" />
-    </element>
-    <element id="Extension.extension:encounter.value[x].identifier.value">
-      <path value="Extension.extension.value[x].identifier.value" />
-      <min value="1" />
-    </element>
-    <element id="Extension.extension:encounter.value[x].identifier.period">
-      <path value="Extension.extension.value[x].identifier.period" />
-      <max value="0" />
-    </element>
-    <element id="Extension.extension:encounter.value[x].identifier.assigner">
-      <path value="Extension.extension.value[x].identifier.assigner" />
+    <element id="Extension.extension:encounter.value[x].assigner">
+      <path value="Extension.extension.value[x].assigner" />
       <max value="0" />
     </element>
     <element id="Extension.extension:item">
