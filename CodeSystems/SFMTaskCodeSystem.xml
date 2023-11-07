@@ -111,4 +111,8 @@
     <code value="25" />
     <display value="Revurderingsdato er satt på legemiddelbehandling" />
   </concept>
+  <concept>
+    <code value="26" />
+    <display value="E-multidose er ikke startet" />
+  </concept>
 </CodeSystem>
