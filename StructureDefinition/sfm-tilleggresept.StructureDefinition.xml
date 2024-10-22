@@ -3,7 +3,7 @@
   <id value="sfm-reseptamendment" />
   <meta>
     <versionId value="10" />
-    <lastUpdated value="2022-09-05T10:20:25.0028412+00:00" />
+    <lastUpdated value="2024-10-21T15:45:07.639626+00:00" />
   </meta>
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-reseptamendment" />
   <version value="1.1" />
@@ -34,13 +34,6 @@
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
       <min value="1" />
     </element>
     <element id="Extension.extension:reseptdate">
@@ -48,7 +41,6 @@
       <sliceName value="reseptdate" />
       <short value="Date the resept was signed" />
       <definition value=".eresept: Forskrivningsdato" />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:reseptdate.url">
@@ -66,7 +58,6 @@
       <sliceName value="expirationdate" />
       <short value="Last date the pharmacy can deliver" />
       <definition value=".eresept: Utloper" />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:expirationdate.url">
@@ -84,7 +75,6 @@
       <sliceName value="festUpdate" />
       <short value="Version of FEST" />
       <definition value=".eresept: OppdatertFEst" />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:festUpdate.url">
@@ -102,7 +92,6 @@
       <sliceName value="conscription" />
       <short value="Concriptive soldier" />
       <definition value="Boolean that identify if the patient is a soldier. eresept: Vernepliktig" />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:conscription.url">
@@ -120,7 +109,6 @@
       <sliceName value="helfoapplication" />
       <short value="Individuel application to Helfo" />
       <definition value="Request to Helfo for medication cost refund. eresept: SoktIndividRefusjon" />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:helfoapplication.url">
@@ -138,7 +126,6 @@
       <sliceName value="freecard" />
       <short value="Refund card" />
       <definition value="Registration that the patient get all expences refunded by the gouverment. eresept: Frikort" />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:freecard.url">
@@ -156,7 +143,6 @@
       <sliceName value="guardiantransparencyreservation" />
       <short value="Guardian transperecy reservation" />
       <definition value="boolean that states that the patients guardian should not have access to the resept. eresept: Vergeinnsynsreservasjon." />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:guardiantransparencyreservation.url">
@@ -174,7 +160,6 @@
       <sliceName value="ownpractice" />
       <short value="Identify that the medication is for use in own organisation" />
       <definition value=".eresept: TilEgenPraksis" />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:ownpractice.url">
@@ -192,7 +177,6 @@
       <sliceName value="indoctorsname" />
       <short value="Resept in doctors name" />
       <definition value="mechansims to keep the patient name secret to the pharmacy. eresept: RekvLegensNavn" />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:indoctorsname.url">
@@ -210,7 +194,6 @@
       <sliceName value="refnum" />
       <short value="Reference number" />
       <definition value="Used when the resept is locked or when patient do not have norwegian legal identity. erepset: RefNr" />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:refnum.url">
@@ -228,7 +211,6 @@
       <sliceName value="speciality" />
       <short value="Speciality" />
       <definition value="Speciality that the doctor hold. eresept: Spesialitet" />
-      <min value="0" />
     </element>
     <element id="Extension.extension:speciality.url">
       <path value="Extension.extension.url" />
@@ -240,6 +222,9 @@
         <code value="CodeableConcept" />
       </type>
     </element>
+    <element id="Extension.extension:speciality.value[x].coding">
+      <path value="Extension.extension.value[x].coding" />
+    </element>
     <element id="Extension.extension:speciality.value[x].coding.system">
       <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7426" />
@@ -249,18 +234,18 @@
       <sliceName value="dispatchrequest" />
       <short value="Request for delivery to patient" />
       <definition value="Request to a single pharmacy to prepare (or send) the medication to the patient.&#xD;&#xA;eresept: EskpAnm" />
-      <min value="0" />
       <max value="1" />
+    </element>
+    <element id="Extension.extension:dispatchrequest.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="dispatchrequest" />
+    </element>
+    <element id="Extension.extension:dispatchrequest.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <max value="0" />
     </element>
     <element id="Extension.extension:dispatchrequest.extension">
       <path value="Extension.extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
       <min value="6" />
     </element>
     <element id="Extension.extension:dispatchrequest.extension:condition">
@@ -298,6 +283,9 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+    </element>
+    <element id="Extension.extension:dispatchrequest.extension:metod.value[x].coding">
+      <path value="Extension.extension.extension.value[x].coding" />
     </element>
     <element id="Extension.extension:dispatchrequest.extension:metod.value[x].coding.system">
       <path value="Extension.extension.extension.value[x].coding.system" />
@@ -344,7 +332,6 @@
       <sliceName value="note" />
       <short value="Maps to e-resept Merkand in Ekspederingsanmodning" />
       <definition value="See e-resept documentation." />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:dispatchrequest.extension:note.url">
@@ -396,7 +383,6 @@
     <element id="Extension.extension:dispatchrequest.extension:address">
       <path value="Extension.extension.extension" />
       <sliceName value="address" />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:dispatchrequest.extension:address.url">
@@ -410,20 +396,11 @@
         <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-Address" />
       </type>
     </element>
-    <element id="Extension.extension:dispatchrequest.url">
-      <path value="Extension.extension.url" />
-      <fixedUri value="dispatchrequest" />
-    </element>
-    <element id="Extension.extension:dispatchrequest.value[x]">
-      <path value="Extension.extension.value[x]" />
-      <max value="0" />
-    </element>
     <element id="Extension.extension:earliestdispense">
       <path value="Extension.extension" />
       <sliceName value="earliestdispense" />
       <short value="Earliest delivery" />
       <definition value="The first date the doctor want the pharmacy to deliver the medication to the patient.&#xD;&#xA;eresept: TidligsteUtlevering" />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:earliestdispense.url">
@@ -441,7 +418,6 @@
       <sliceName value="dischargedhospital" />
       <short value="Discharged from hosptital" />
       <definition value=".eresept: UtskrevetSykehus" />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:dischargedhospital.url">
@@ -459,7 +435,6 @@
       <sliceName value="lockedresept" />
       <short value="Locked resept" />
       <definition value=".eresept: LastResept" />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:lockedresept.url">
@@ -490,6 +465,9 @@
         <code value="CodeableConcept" />
       </type>
     </element>
+    <element id="Extension.extension:itemgroup.value[x].coding">
+      <path value="Extension.extension.value[x].coding" />
+    </element>
     <element id="Extension.extension:itemgroup.value[x].coding.system">
       <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7402" />
@@ -499,7 +477,6 @@
       <sliceName value="numberofpackages" />
       <short value="Number of packages" />
       <definition value=".eresept: Antall" />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:numberofpackages.url">
@@ -517,7 +494,6 @@
       <sliceName value="reimbursementparagraph" />
       <short value="Refund paragraph" />
       <definition value=".eresept: RefHjemmel" />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:reimbursementparagraph.url">
@@ -530,6 +506,9 @@
         <code value="CodeableConcept" />
       </type>
     </element>
+    <element id="Extension.extension:reimbursementparagraph.value[x].coding">
+      <path value="Extension.extension.value[x].coding" />
+    </element>
     <element id="Extension.extension:reimbursementparagraph.value[x].coding.system">
       <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7427" />
@@ -539,7 +518,6 @@
       <sliceName value="reimbursementcode" />
       <short value="Refund code" />
       <definition value=".Accepted coding systems: 7110, 7170, 7434, 7435.&#xD;&#xA;eresept: RefKode" />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:reimbursementcode.url">
@@ -557,7 +535,6 @@
       <sliceName value="plomedicationmanagement" />
       <short value="Patient treated by the municipal" />
       <definition value=".eresept: KomLegemdlAdm" />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:plomedicationmanagement.url">
@@ -575,7 +552,6 @@
       <sliceName value="reit" />
       <short value="Number of deliveries" />
       <definition value=".eresept: Reiterasjon" />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:reit.url">
@@ -593,7 +569,6 @@
       <sliceName value="amount" />
       <short value="Amount of drug prescribed" />
       <definition value="identifies the number of tablets or amount of liquid that should be delivered to the patient for each REIT.&#xD;&#xA;erepset: Mengde" />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:amount.url">
@@ -614,7 +589,6 @@
       <path value="Extension.extension" />
       <sliceName value="dssn" />
       <definition value="eresept: DosVeilEnkel" />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:dssn.url">
@@ -630,27 +604,23 @@
     <element id="Extension.extension:rfstatus">
       <path value="Extension.extension" />
       <sliceName value="rfstatus" />
-      <short value="Identifies if in RF and status in RF" />
-      <min value="0" />
+      <short value="Status (E Ekspederbar, R Resept avsluttet, U Under eksepdering, T Tilbakekalt) for prescription in RF" />
+      <definition value="Accepted coding systems: 7408. Eresept: Status resept" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:rfstatus.extension">
-      <path value="Extension.extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
+    <element id="Extension.extension:rfstatus.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="rfstatus" />
+    </element>
+    <element id="Extension.extension:rfstatus.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <max value="0" />
     </element>
     <element id="Extension.extension:rfstatus.extension:status">
       <path value="Extension.extension.extension" />
       <sliceName value="status" />
       <short value="Status for prescription in RF" />
       <definition value="Status based on RF/KJ information. If empty, resept is not present in RF." />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:rfstatus.extension:status.url">
@@ -663,6 +633,9 @@
         <code value="CodeableConcept" />
       </type>
     </element>
+    <element id="Extension.extension:rfstatus.extension:status.value[x].coding">
+      <path value="Extension.extension.extension.value[x].coding" />
+    </element>
     <element id="Extension.extension:rfstatus.extension:status.value[x].coding.system">
       <path value="Extension.extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7408" />
@@ -672,7 +645,6 @@
       <sliceName value="nameDispenser" />
       <short value="Dispenser that are dispensing product" />
       <definition value="Pharmacy or other dispenser that are curently delivering out the product." />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:rfstatus.extension:nameDispenser.url">
@@ -690,7 +662,6 @@
       <sliceName value="sentSLVDate" />
       <short value="Date when application sent to SLV" />
       <definition value="Date application delivered to SLV." />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:rfstatus.extension:sentSLVDate.url">
@@ -708,7 +679,6 @@
       <sliceName value="statusSlvApplication" />
       <short value="Status regarding SLV application" />
       <definition value="Information from M9.6 if RF lookup." />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:rfstatus.extension:statusSlvApplication.url">
@@ -721,6 +691,9 @@
         <code value="CodeableConcept" />
       </type>
     </element>
+    <element id="Extension.extension:rfstatus.extension:statusSlvApplication.value[x].coding">
+      <path value="Extension.extension.extension.value[x].coding" />
+    </element>
     <element id="Extension.extension:rfstatus.extension:statusSlvApplication.value[x].coding.system">
       <path value="Extension.extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7436" />
@@ -730,7 +703,6 @@
       <sliceName value="recallStatus" />
       <short value="Identify if allredy recalled if RF status is &quot;Under ekspedering&quot;" />
       <definition value="Only used when RF status is &quot;Under ekspedering&quot;" />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:rfstatus.extension:recallStatus.url">
@@ -747,7 +719,6 @@
       <path value="Extension.extension.extension" />
       <sliceName value="recallReason" />
       <short value="Reason given for recalling resept" />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:rfstatus.extension:recallReason.url">
@@ -760,24 +731,18 @@
         <code value="CodeableConcept" />
       </type>
     </element>
+    <element id="Extension.extension:rfstatus.extension:recallReason.value[x].coding">
+      <path value="Extension.extension.extension.value[x].coding" />
+    </element>
     <element id="Extension.extension:rfstatus.extension:recallReason.value[x].coding.system">
       <path value="Extension.extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7500" />
-    </element>
-    <element id="Extension.extension:rfstatus.url">
-      <path value="Extension.extension.url" />
-      <fixedUri value="rfstatus" />
-    </element>
-    <element id="Extension.extension:rfstatus.value[x]">
-      <path value="Extension.extension.value[x]" />
-      <max value="0" />
     </element>
     <element id="Extension.extension:note">
       <path value="Extension.extension" />
       <sliceName value="note" />
       <short value="Note from prescriber to pharmacy" />
       <definition value="Textual information that prescriber has provided for the pharmacy, in order to support the dispense.&#xD;&#xA;eresept: Merknad" />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:note.url">
@@ -795,18 +760,18 @@
       <sliceName value="recallinfo" />
       <short value="Action information for SFM" />
       <definition value="Instruction from EPJ to SFM regarding what should be done about prescription (resept)." />
-      <min value="0" />
       <max value="1" />
+    </element>
+    <element id="Extension.extension:recallinfo.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="recallinfo" />
+    </element>
+    <element id="Extension.extension:recallinfo.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <max value="0" />
     </element>
     <element id="Extension.extension:recallinfo.extension">
       <path value="Extension.extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
       <min value="1" />
     </element>
     <element id="Extension.extension:recallinfo.extension:recallId">
@@ -814,7 +779,6 @@
       <sliceName value="recallId" />
       <short value="pointer to releated prescription" />
       <definition value="Used to identify relation between resepts in RF." />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:recallinfo.extension:recallId.url">
@@ -830,7 +794,6 @@
     <element id="Extension.extension:recallinfo.extension:text">
       <path value="Extension.extension.extension" />
       <sliceName value="text" />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:recallinfo.extension:text.url">
@@ -859,6 +822,9 @@
         <code value="CodeableConcept" />
       </type>
     </element>
+    <element id="Extension.extension:recallinfo.extension:recallcode.value[x].coding">
+      <path value="Extension.extension.extension.value[x].coding" />
+    </element>
     <element id="Extension.extension:recallinfo.extension:recallcode.value[x].coding.system">
       <path value="Extension.extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7500" />
@@ -866,7 +832,6 @@
     <element id="Extension.extension:recallinfo.extension:recalledby">
       <path value="Extension.extension.extension" />
       <sliceName value="recalledby" />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:recallinfo.extension:recalledby.url">
@@ -880,30 +845,22 @@
         <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-PractitionerRole" />
       </type>
     </element>
-    <element id="Extension.extension:recallinfo.url">
-      <path value="Extension.extension.url" />
-      <fixedUri value="recallinfo" />
-    </element>
-    <element id="Extension.extension:recallinfo.value[x]">
-      <path value="Extension.extension.value[x]" />
-      <max value="0" />
-    </element>
     <element id="Extension.extension:ereseptdosing">
       <path value="Extension.extension" />
       <sliceName value="ereseptdosing" />
       <short value="Dosing as given by e-resept" />
       <definition value="The e-resept documentation identifies how the e-resesept dosing should be used.&#xD;&#xA;eresept: Dosering" />
-      <min value="0" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="ereseptdosing" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <max value="0" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension">
       <path value="Extension.extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
       <min value="1" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:starttime">
@@ -911,7 +868,6 @@
       <sliceName value="starttime" />
       <short value="The time a dosing period starts" />
       <definition value="The time a dosing period starts" />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:starttime.url">
@@ -930,9 +886,8 @@
     <element id="Extension.extension:ereseptdosing.extension:endtime">
       <path value="Extension.extension.extension" />
       <sliceName value="endtime" />
-      <short value="The time a dosing period ends" />
-      <definition value="The time a dosing period ends" />
-      <min value="0" />
+      <short value="The time a dosing period ends. The last day with treatment." />
+      <definition value="Eresept: sluttidspunkt. Note that sluttidspunkt in e-resept is first day without treatment, while endtime in in FHIR is last day with treatment." />
       <max value="1" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:endtime.url">
@@ -953,18 +908,18 @@
       <sliceName value="dosingrule" />
       <short value="Rule related to dosing" />
       <definition value="Rule related to dosing" />
-      <min value="0" />
       <max value="1" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:dosingrule.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="dosingrule" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:dosingrule.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <max value="0" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:dosingrule.extension">
       <path value="Extension.extension.extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
       <min value="1" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:dosingrule.extension:dosebasedon">
@@ -985,6 +940,9 @@
         <code value="CodeableConcept" />
       </type>
     </element>
+    <element id="Extension.extension:ereseptdosing.extension:dosingrule.extension:dosebasedon.value[x].coding">
+      <path value="Extension.extension.extension.extension.value[x].coding" />
+    </element>
     <element id="Extension.extension:ereseptdosing.extension:dosingrule.extension:dosebasedon.value[x].coding.system">
       <path value="Extension.extension.extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.9080" />
@@ -992,7 +950,6 @@
     <element id="Extension.extension:ereseptdosing.extension:dosingrule.extension:text">
       <path value="Extension.extension.extension.extension" />
       <sliceName value="text" />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:dosingrule.extension:text.url">
@@ -1005,28 +962,21 @@
         <code value="string" />
       </type>
     </element>
-    <element id="Extension.extension:ereseptdosing.extension:dosingrule.url">
-      <path value="Extension.extension.extension.url" />
-      <fixedUri value="dosingrule" />
-    </element>
-    <element id="Extension.extension:ereseptdosing.extension:dosingrule.value[x]">
-      <path value="Extension.extension.extension.value[x]" />
-      <max value="0" />
-    </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage">
       <path value="Extension.extension.extension" />
       <sliceName value="repeatingdosage" />
       <min value="1" />
     </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="repeatingdosage" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <max value="0" />
+    </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension">
       <path value="Extension.extension.extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
       <min value="2" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:amount">
@@ -1054,7 +1004,6 @@
       <sliceName value="interval" />
       <short value="how often to repeat dosing" />
       <definition value="identifyes how often to repeat dosing. Normally the unit should be equal to day/døgn." />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:interval.url">
@@ -1074,18 +1023,18 @@
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:infusionspeed">
       <path value="Extension.extension.extension.extension" />
       <sliceName value="infusionspeed" />
-      <min value="0" />
       <max value="1" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:infusionspeed.url">
+      <path value="Extension.extension.extension.extension.url" />
+      <fixedUri value="infusionspeed" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:infusionspeed.value[x]">
+      <path value="Extension.extension.extension.extension.value[x]" />
+      <max value="0" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:infusionspeed.extension">
       <path value="Extension.extension.extension.extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
       <min value="2" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:infusionspeed.extension:volum">
@@ -1120,22 +1069,16 @@
         <code value="CodeableConcept" />
       </type>
     </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:infusionspeed.extension:timeunit.value[x].coding">
+      <path value="Extension.extension.extension.extension.extension.value[x].coding" />
+    </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:infusionspeed.extension:timeunit.value[x].coding.system">
       <path value="Extension.extension.extension.extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.9088" />
     </element>
-    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:infusionspeed.url">
-      <path value="Extension.extension.extension.extension.url" />
-      <fixedUri value="infusionspeed" />
-    </element>
-    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:infusionspeed.value[x]">
-      <path value="Extension.extension.extension.extension.value[x]" />
-      <max value="0" />
-    </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:time">
       <path value="Extension.extension.extension.extension" />
       <sliceName value="time" />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:time.url">
@@ -1151,7 +1094,6 @@
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:timerange">
       <path value="Extension.extension.extension.extension" />
       <sliceName value="timerange" />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:timerange.url">
@@ -1163,6 +1105,9 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:timerange.value[x].coding">
+      <path value="Extension.extension.extension.extension.value[x].coding" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:timerange.value[x].coding.system">
       <path value="Extension.extension.extension.extension.value[x].coding.system" />
@@ -1187,24 +1132,19 @@
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence">
       <path value="Extension.extension.extension.extension" />
       <sliceName value="dosingsequence" />
-      <min value="0" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence.extension">
-      <path value="Extension.extension.extension.extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence.url">
+      <path value="Extension.extension.extension.extension.url" />
+      <fixedUri value="dosingsequence" />
+    </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence.value[x]">
+      <path value="Extension.extension.extension.extension.value[x]" />
+      <max value="0" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence.extension:weekdays">
       <path value="Extension.extension.extension.extension.extension" />
       <sliceName value="weekdays" />
-      <min value="0" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence.extension:weekdays.url">
       <path value="Extension.extension.extension.extension.extension.url" />
@@ -1216,6 +1156,9 @@
         <code value="CodeableConcept" />
       </type>
     </element>
+    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence.extension:weekdays.value[x].coding">
+      <path value="Extension.extension.extension.extension.extension.value[x].coding" />
+    </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence.extension:weekdays.value[x].coding.system">
       <path value="Extension.extension.extension.extension.extension.value[x].coding.system" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.9082" />
@@ -1223,7 +1166,6 @@
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence.extension:dayson">
       <path value="Extension.extension.extension.extension.extension" />
       <sliceName value="dayson" />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence.extension:dayson.url">
@@ -1239,7 +1181,6 @@
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence.extension:daysoff">
       <path value="Extension.extension.extension.extension.extension" />
       <sliceName value="daysoff" />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence.extension:daysoff.url">
@@ -1252,36 +1193,11 @@
         <code value="integer" />
       </type>
     </element>
-    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence.url">
-      <path value="Extension.extension.extension.extension.url" />
-      <fixedUri value="dosingsequence" />
-    </element>
-    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.extension:dosingsequence.value[x]">
-      <path value="Extension.extension.extension.extension.value[x]" />
-      <max value="0" />
-    </element>
-    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.url">
-      <path value="Extension.extension.extension.url" />
-      <fixedUri value="repeatingdosage" />
-    </element>
-    <element id="Extension.extension:ereseptdosing.extension:repeatingdosage.value[x]">
-      <path value="Extension.extension.extension.value[x]" />
-      <max value="0" />
-    </element>
-    <element id="Extension.extension:ereseptdosing.url">
-      <path value="Extension.extension.url" />
-      <fixedUri value="ereseptdosing" />
-    </element>
-    <element id="Extension.extension:ereseptdosing.value[x]">
-      <path value="Extension.extension.value[x]" />
-      <max value="0" />
-    </element>
     <element id="Extension.extension:createeresept">
       <path value="Extension.extension" />
       <sliceName value="createeresept" />
       <short value="Identifes if SFM should generate resept" />
       <definition value="Used by EPJ to identify if SFM should generate M1 and send to RF." />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:createeresept.url">
@@ -1297,18 +1213,18 @@
     <element id="Extension.extension:slvApplication">
       <path value="Extension.extension" />
       <sliceName value="slvApplication" />
-      <min value="0" />
       <max value="1" />
+    </element>
+    <element id="Extension.extension:slvApplication.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="slvApplication" />
+    </element>
+    <element id="Extension.extension:slvApplication.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <max value="0" />
     </element>
     <element id="Extension.extension:slvApplication.extension">
       <path value="Extension.extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
       <min value="3" />
     </element>
     <element id="Extension.extension:slvApplication.extension:reason">
@@ -1359,18 +1275,9 @@
         <code value="boolean" />
       </type>
     </element>
-    <element id="Extension.extension:slvApplication.url">
-      <path value="Extension.extension.url" />
-      <fixedUri value="slvApplication" />
-    </element>
-    <element id="Extension.extension:slvApplication.value[x]">
-      <path value="Extension.extension.value[x]" />
-      <max value="0" />
-    </element>
     <element id="Extension.extension:lastchanged">
       <path value="Extension.extension" />
       <sliceName value="lastchanged" />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:lastchanged.url">
@@ -1386,7 +1293,6 @@
     <element id="Extension.extension:typeresept">
       <path value="Extension.extension" />
       <sliceName value="typeresept" />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:typeresept.url">
@@ -1398,6 +1304,9 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+    </element>
+    <element id="Extension.extension:typeresept.value[x].coding">
+      <path value="Extension.extension.value[x].coding" />
     </element>
     <element id="Extension.extension:typeresept.value[x].coding.system">
       <path value="Extension.extension.value[x].coding.system" />
