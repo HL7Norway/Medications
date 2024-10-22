@@ -3,7 +3,7 @@
   <id value="sfm-regInfo" />
   <meta>
     <versionId value="4" />
-    <lastUpdated value="2018-10-03T13:59:16.561+00:00" />
+    <lastUpdated value="2024-10-21T15:45:13.5228643+00:00" />
   </meta>
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-regInfo" />
   <version value="1.1" />
@@ -23,15 +23,12 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Types: registrertAv, forskrevetAv, seponertAv, instituertAv, signertAv, dobbeltSignertAv, godkjentAv" />
+    </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
       <min value="3" />
     </element>
     <element id="Extension.extension:type">
@@ -89,7 +86,6 @@
       <sliceName value="timestamp" />
       <short value="Time of the registration" />
       <definition value="The time when the action registered within SFM." />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:timestamp.url">
@@ -119,6 +115,9 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+    </element>
+    <element id="Extension.extension:status.value[x].coding">
+      <path value="Extension.extension.value[x].coding" />
     </element>
     <element id="Extension.extension:status.value[x].coding.system">
       <path value="Extension.extension.value[x].coding.system" />
