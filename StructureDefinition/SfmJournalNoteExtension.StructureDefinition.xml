@@ -5,7 +5,7 @@
   <name value="SfmJournalNoteExtension"/>
   <title value="SFM Journal note extension"/>
   <status value="active"/>
-  <date value="2023-06-20"/>
+  <date value="2024-12-06"/>
   <description value="Extension for coded journal note canditades from SFM to EHR."/>
   <purpose value="Provide for necessary information on activities perfomed in SFM to the hosting EHR instance."/>
   <fhirVersion value="4.0.0"/>
