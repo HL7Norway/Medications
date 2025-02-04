@@ -2,12 +2,12 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sfm-SlvResponse" />
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-SlvResponse" />
-  <version value="1.0" />
+  <version value="1.1" />
   <name value="SfmSlvResponse" />
   <title value="sfm-SlvResponse" />
   <status value="active" />
-  <date value="2021-05-01" />
-  <description value="Application response from SLV" />
+  <date value="2025-02-04" />
+  <description value="Application response from  DMP (previously SLV)" />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />

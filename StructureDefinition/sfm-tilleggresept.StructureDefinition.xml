@@ -1,15 +1,15 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sfm-reseptamendment" />
   <meta>
-    <versionId value="10" />
-    <lastUpdated value="2024-10-21T15:45:07.639626+00:00" />
+    <versionId value="10.1" />
+    <lastUpdated value="2025-01-19T23:49:44.1207243+00:00" />
   </meta>
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-reseptamendment" />
-  <version value="1.1" />
+  <version value="1.2" />
   <name value="SfmReseptamendment" />
   <title value="sfm-reseptamendment" />
   <status value="active" />
-  <date value="2022-09-05" />
+  <date value="2025-02-04" />
   <description value="Information required in Norwegian e-resept (electronic prescription)." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
@@ -688,8 +688,8 @@
     <element id="Extension.extension:rfstatus.extension:sentSLVDate">
       <path value="Extension.extension.extension" />
       <sliceName value="sentSLVDate" />
-      <short value="Date when application sent to SLV" />
-      <definition value="Date application delivered to SLV." />
+      <short value="Date when application sent to  DMP (previously SLV)" />
+      <definition value="Date application delivered to  DMP (previously SLV)." />
       <min value="0" />
       <max value="1" />
     </element>
@@ -706,7 +706,7 @@
     <element id="Extension.extension:rfstatus.extension:statusSlvApplication">
       <path value="Extension.extension.extension" />
       <sliceName value="statusSlvApplication" />
-      <short value="Status regarding SLV application" />
+      <short value="Status regarding  DMP (previously SLV) application" />
       <definition value="Information from M9.6 if RF lookup." />
       <min value="0" />
       <max value="1" />
