@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sfm-lib-list-meta-data" />
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-lib-list-meta-data" />
-  <version value="2.1" />
+  <version value="2.1.1" />
   <name value="SfmLibListMetaData" />
   <title value="sfm-lib-list-meta-data" />
   <status value="active" />
-  <date value="2024-05-10" />
+  <date value="2025-03-04" />
   <description value="Meta data about the LIB list that is presented." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
@@ -274,6 +274,68 @@
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="base64Binary" />
+      </type>
+    </element>
+    <element id="Extension.extension:lookupdates">
+      <path value="Extension.extension" />
+      <sliceName value="lookupdates" />
+      <short value="Last successful lookup dates for rf/kj/ki" />
+      <definition value="Information about the last successful lookup dates for rf/kj/ki." />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:lookupdates.extension">
+      <path value="Extension.extension.extension" />
+      <max value="3" />
+    </element>
+    <element id="Extension.extension:lookupdates.extension:rf">
+      <path value="Extension.extension.extension" />
+      <sliceName value="rf" />
+      <short value="Last successful lookup datetime for rf" />
+      <definition value="Last successful lookup datetime for rf" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:lookupdates.extension:rf.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="rf" />
+    </element>
+    <element id="Extension.extension:lookupdates.extension:rf.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="Extension.extension:lookupdates.extension:kj">
+      <path value="Extension.extension.extension" />
+      <sliceName value="kj" />
+      <short value="Last successful lookup datetime for kj" />
+      <definition value="Last successful lookup datetime for kj" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:lookupdates.extension:kj.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="kj" />
+    </element>
+    <element id="Extension.extension:lookupdates.extension:kj.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="Extension.extension:lookupdates.extension:ki">
+      <path value="Extension.extension.extension" />
+      <sliceName value="ki" />
+      <short value="Last successful lookup datetime for ki" />
+      <definition value="Last successful lookup datetime for ki" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:lookupdates.extension:ki.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="ki" />
+    </element>
+    <element id="Extension.extension:lookupdates.extension:ki.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="dateTime" />
       </type>
     </element>
     <element id="Extension.url">
