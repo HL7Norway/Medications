@@ -1315,6 +1315,9 @@
     <element id="Extension.extension:slvApplication">
       <path value="Extension.extension" />
       <sliceName value="slvApplication" />
+      <short value="Application-specific extension for DMP (previously SLV)" />
+      <definition value="This extension is used to represent additional information specific to the DMP (previously SLV) application, which is not part of the basic definition of the element." />
+      <comment value="The use of this extension allows for the inclusion of DMP (previously SLV)-specific data, ensuring that the core FHIR specification remains simple and flexible." />
       <min value="0" />
       <max value="1" />
     </element>
