@@ -3,14 +3,14 @@
   <id value="sfm-DrugReviewInfo"/>
   <meta>
     <versionId value="1"/>
-    <lastUpdated value="2024-10-21T15:45:13.5228643+00:00"/>
+    <lastUpdated value="2025-03-13T17:45:13.5228643+00:00"/>
   </meta>
   <url value="http://hl7.org/fhir/StructureDefinition/SfmDrugReviewInfo"/>
   <version value="1.0"/>
   <name value="SfmDrugReviewInfo"/>
   <title value="Sfm Drug Review Info"/>
   <status value="active"/>
-  <date value="2024-10-21"/>
+  <date value="2025-03-24"/>
   <description value="This profile defines the structure for capturing detailed drug review information for patients within the SFM framework. It is designed to support the DrugReviewInfo endpoint, which provides access to comprehensive drug review data, including the number of treatments, last review date, planned review date, and associated comments. The profile facilitates querying and managing drug review information, ensuring compatibility with FHIR standards while accommodating additional details specific to the SFM system. It is particularly useful for healthcare providers to track and review patient medication plans, ensuring timely and accurate updates to treatment regimens."/>
   <fhirVersion value="4.0.0"/>
   <kind value="complex-type"/>
