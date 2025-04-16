@@ -1,187 +1,187 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="sfm-DrugReviewInfo" />
-  <meta>
-    <versionId value="1" />
-    <lastUpdated value="2025-03-31T14:48:46.7067541+00:00" />
-  </meta>
-  <url value="http://hl7.org/fhir/StructureDefinition/SfmDrugReviewInfo" />
-  <version value="1.0" />
-  <name value="SfmDrugReviewInfo" />
-  <title value="Sfm Drug Review Info" />
-  <status value="active" />
-  <date value="2025-03-31" />
-  <description value="This profile defines the structure for capturing detailed drug review information for patients within the SFM framework. It is designed to support the DrugReviewInfo endpoint, which provides access to comprehensive drug review data, including the number of treatments, last review date, planned review date, and associated comments. The profile facilitates querying and managing drug review information, ensuring compatibility with FHIR standards while accommodating additional details specific to the SFM system. It is particularly useful for healthcare providers to track and review patient medication plans, ensuring timely and accurate updates to treatment regimens." />
-  <fhirVersion value="4.0.0" />
-  <kind value="complex-type" />
-  <abstract value="false" />
-  <context>
-    <type value="element" />
-    <expression value="Basic" />
-  </context>
-  <type value="Extension" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
-  <derivation value="constraint" />
-  <differential>
-    <element id="Extension">
-      <path value="Extension" />
-      <short value="Comprehensive drug review information for a patient" />
-      <definition value="An extension to capture detailed information about a patient's drug review, including treatment counts, review dates, and comments, within the SFM framework." />
-    </element>
-    <element id="Extension.extension">
-      <path value="Extension.extension" />
-      <min value="6" />
-    </element>
-    <element id="Extension.extension:patientFhirId">
-      <path value="Extension.extension" />
-      <sliceName value="patientFhirId" />
-      <short value="Unique FHIR ID of the patient" />
-      <definition value="The unique identifier assigned to the patient within the FHIR system, used to associate drug review information with the correct patient record." />
-      <min value="1" />
-      <max value="1" />
-    </element>
-    <element id="Extension.extension:patientFhirId.extension">
-      <path value="Extension.extension.extension" />
-      <max value="0" />
-    </element>
-    <element id="Extension.extension:patientFhirId.url">
-      <path value="Extension.extension.url" />
-      <fixedUri value="patientFhirId" />
-    </element>
-    <element id="Extension.extension:patientFhirId.value[x]">
-      <path value="Extension.extension.value[x]" />
-      <type>
-        <code value="string" />
-      </type>
-    </element>
-    <element id="Extension.extension:numberOfMedications">
-      <path value="Extension.extension" />
-      <sliceName value="numberOfMedications" />
-      <short value="Total number of medications" />
-      <definition value="The total count of medications currently prescribed to the patient, reflecting the scope of their treatment plan." />
-      <min value="1" />
-      <max value="1" />
-    </element>
-    <element id="Extension.extension:numberOfMedications.extension">
-      <path value="Extension.extension.extension" />
-      <max value="0" />
-    </element>
-    <element id="Extension.extension:numberOfMedications.url">
-      <path value="Extension.extension.url" />
-      <fixedUri value="numberOfMedications" />
-    </element>
-    <element id="Extension.extension:numberOfMedications.value[x]">
-      <path value="Extension.extension.value[x]" />
-      <type>
-        <code value="integer" />
-      </type>
-    </element>
-    <element id="Extension.extension:numberOfFixedUsageMedications">
-      <path value="Extension.extension" />
-      <sliceName value="numberOfFixedUsageMedications" />
-      <short value="Count of fixed usage medications" />
-      <definition value="The number of medications prescribed with a fixed usage regimen, indicating treatments that have specific dosing schedules." />
-      <min value="1" />
-      <max value="1" />
-    </element>
-    <element id="Extension.extension:numberOfFixedUsageMedications.extension">
-      <path value="Extension.extension.extension" />
-      <max value="0" />
-    </element>
-    <element id="Extension.extension:numberOfFixedUsageMedications.url">
-      <path value="Extension.extension.url" />
-      <fixedUri value="numberOfFixedUsageMedications" />
-    </element>
-    <element id="Extension.extension:numberOfFixedUsageMedications.value[x]">
-      <path value="Extension.extension.value[x]" />
-      <type>
-        <code value="integer" />
-      </type>
-    </element>
-    <element id="Extension.extension:lastReview">
-      <path value="Extension.extension" />
-      <sliceName value="lastReview" />
-      <short value="Date of the last drug review" />
-      <definition value="The date and time when the most recent drug review was conducted for the patient, providing a timeline for treatment evaluation." />
-      <min value="1" />
-      <max value="1" />
-    </element>
-    <element id="Extension.extension:lastReview.extension">
-      <path value="Extension.extension.extension" />
-      <max value="0" />
-    </element>
-    <element id="Extension.extension:lastReview.url">
-      <path value="Extension.extension.url" />
-      <fixedUri value="lastReview" />
-    </element>
-    <element id="Extension.extension:lastReview.value[x]">
-      <path value="Extension.extension.value[x]" />
-      <type>
-        <code value="dateTime" />
-      </type>
-    </element>
-    <element id="Extension.extension:lastReviewComment">
-      <path value="Extension.extension" />
-      <sliceName value="lastReviewComment" />
-      <short value="Comments on the last review" />
-      <definition value="A summary or remarks provided by the healthcare provider during the last drug review, offering insights into the patient's response to treatment." />
-      <min value="1" />
-      <max value="1" />
-    </element>
-    <element id="Extension.extension:lastReviewComment.extension">
-      <path value="Extension.extension.extension" />
-      <max value="0" />
-    </element>
-    <element id="Extension.extension:lastReviewComment.url">
-      <path value="Extension.extension.url" />
-      <fixedUri value="lastReviewComment" />
-    </element>
-    <element id="Extension.extension:lastReviewComment.value[x]">
-      <path value="Extension.extension.value[x]" />
-      <type>
-        <code value="string" />
-      </type>
-    </element>
-    <element id="Extension.extension:plannedReview">
-      <path value="Extension.extension" />
-      <sliceName value="plannedReview" />
-      <short value="Scheduled date for the next review" />
-      <definition value="The planned date and time for the patient's upcoming drug review, ensuring regular monitoring and adjustment of treatment plans." />
-      <min value="1" />
-      <max value="1" />
-    </element>
-    <element id="Extension.extension:plannedReview.extension">
-      <path value="Extension.extension.extension" />
-      <max value="0" />
-    </element>
-    <element id="Extension.extension:plannedReview.url">
-      <path value="Extension.extension.url" />
-      <fixedUri value="plannedReview" />
-    </element>
-    <element id="Extension.extension:plannedReview.value[x]">
-      <path value="Extension.extension.value[x]" />
-      <type>
-        <code value="dateTime" />
-      </type>
-    </element>
-    <element id="Extension.url">
-      <path value="Extension.url" />
-      <fixedUri value="http://hl7.org/fhir/StructureDefinition/SfmDrugReviewInfo" />
-    </element>
-    <element id="Extension.value[x]">
-      <path value="Extension.value[x]" />
-      <short value="Value of extension" />
-      <definition value="Value of extension - must be one of a constrained set of the data types." />
-      <min value="0" />
-      <max value="0" />
-      <type>
-        <code value="string" />
-      </type>
-      <type>
-        <code value="integer" />
-      </type>
-      <type>
-        <code value="dateTime" />
-      </type>
-    </element>
-  </differential>
+    <id value="sfm-DrugReviewInfo" />
+    <meta>
+        <versionId value="1" />
+        <lastUpdated value="2025-04-16T14:48:46.7067541+00:00" />
+    </meta>
+    <url value="http://hl7.org/fhir/StructureDefinition/SfmDrugReviewInfo" />
+    <version value="1.0" />
+    <name value="SfmDrugReviewInfo" />
+    <title value="Sfm Drug Review Info" />
+    <status value="active" />
+    <date value="2025-04-16" />
+    <description value="This profile defines the structure for capturing detailed drug review information for patients within the SFM framework. It is designed to support the DrugReviewInfo endpoint, which provides access to comprehensive drug review data, including the number of treatments, last review date, planned review date, and associated comments. The profile facilitates querying and managing drug review information, ensuring compatibility with FHIR standards while accommodating additional details specific to the SFM system. It is particularly useful for healthcare providers to track and review patient medication plans, ensuring timely and accurate updates to treatment regimens." />
+    <fhirVersion value="4.0.0" />
+    <kind value="complex-type" />
+    <abstract value="false" />
+    <context>
+        <type value="element" />
+        <expression value="Basic" />
+    </context>
+    <type value="Extension" />
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+    <derivation value="constraint" />
+    <differential>
+        <element id="Extension">
+            <path value="Extension" />
+            <short value="Comprehensive drug review information for a patient" />
+            <definition value="An extension to capture detailed information about a patient's drug review, including treatment counts, review dates, and comments, within the SFM framework." />
+        </element>
+        <element id="Extension.extension">
+            <path value="Extension.extension" />
+            <min value="6" />
+        </element>
+        <element id="Extension.extension:patient-fhir-id">
+            <path value="Extension.extension" />
+            <sliceName value="patient-fhir-id" />
+            <short value="Unique FHIR ID of the patient" />
+            <definition value="The unique identifier assigned to the patient within the FHIR system, used to associate drug review information with the correct patient record." />
+            <min value="1" />
+            <max value="1" />
+        </element>
+        <element id="Extension.extension:patient-fhir-id.extension">
+            <path value="Extension.extension.extension" />
+            <max value="0" />
+        </element>
+        <element id="Extension.extension:patient-fhir-id.url">
+            <path value="Extension.extension.url" />
+            <fixedUri value="patient-fhir-id" />
+        </element>
+        <element id="Extension.extension:patient-fhir-id.value[x]">
+            <path value="Extension.extension.value[x]" />
+            <type>
+                <code value="string" />
+            </type>
+        </element>
+        <element id="Extension.extension:number-of-medications">
+            <path value="Extension.extension" />
+            <sliceName value="number-of-medications" />
+            <short value="Total number of medications" />
+            <definition value="The total count of medications currently prescribed to the patient, reflecting the scope of their treatment plan." />
+            <min value="1" />
+            <max value="1" />
+        </element>
+        <element id="Extension.extension:number-of-medications.extension">
+            <path value="Extension.extension.extension" />
+            <max value="0" />
+        </element>
+        <element id="Extension.extension:number-of-medications.url">
+            <path value="Extension.extension.url" />
+            <fixedUri value="number-of-medications" />
+        </element>
+        <element id="Extension.extension:number-of-medications.value[x]">
+            <path value="Extension.extension.value[x]" />
+            <type>
+                <code value="integer" />
+            </type>
+        </element>
+        <element id="Extension.extension:number-of-fixed-usage-medications">
+            <path value="Extension.extension" />
+            <sliceName value="number-of-fixed-usage-medications" />
+            <short value="Count of fixed usage medications" />
+            <definition value="The number of medications prescribed with a fixed usage regimen, indicating treatments that have specific dosing schedules." />
+            <min value="1" />
+            <max value="1" />
+        </element>
+        <element id="Extension.extension:number-of-fixed-usage-medications.extension">
+            <path value="Extension.extension.extension" />
+            <max value="0" />
+        </element>
+        <element id="Extension.extension:number-of-fixed-usage-medications.url">
+            <path value="Extension.extension.url" />
+            <fixedUri value="number-of-fixed-usage-medications" />
+        </element>
+        <element id="Extension.extension:number-of-fixed-usage-medications.value[x]">
+            <path value="Extension.extension.value[x]" />
+            <type>
+                <code value="integer" />
+            </type>
+        </element>
+        <element id="Extension.extension:last-drug-review">
+            <path value="Extension.extension" />
+            <sliceName value="last-drug-review" />
+            <short value="Date of the last drug review" />
+            <definition value="The date and time when the most recent drug review was conducted for the patient, providing a timeline for treatment evaluation." />
+            <min value="0" />
+            <max value="1" />
+        </element>
+        <element id="Extension.extension:last-drug-review.extension">
+            <path value="Extension.extension.extension" />
+            <max value="0" />
+        </element>
+        <element id="Extension.extension:last-drug-review.url">
+            <path value="Extension.extension.url" />
+            <fixedUri value="last-drug-review" />
+        </element>
+        <element id="Extension.extension:last-drug-review.value[x]">
+            <path value="Extension.extension.value[x]" />
+            <type>
+                <code value="dateTime" />
+            </type>
+        </element>
+        <element id="Extension.extension:last-review-comment">
+            <path value="Extension.extension" />
+            <sliceName value="last-review-comment" />
+            <short value="Comments on the last review" />
+            <definition value="A summary or remarks provided by the healthcare provider during the last drug review, offering insights into the patient's response to treatment." />
+            <min value="0" />
+            <max value="1" />
+        </element>
+        <element id="Extension.extension:last-review-comment.extension">
+            <path value="Extension.extension.extension" />
+            <max value="0" />
+        </element>
+        <element id="Extension.extension:last-review-comment.url">
+            <path value="Extension.extension.url" />
+            <fixedUri value="last-review-comment" />
+        </element>
+        <element id="Extension.extension:last-review-comment.value[x]">
+            <path value="Extension.extension.value[x]" />
+            <type>
+                <code value="string" />
+            </type>
+        </element>
+        <element id="Extension.extension:planned-drug-review">
+            <path value="Extension.extension" />
+            <sliceName value="planned-drug-review" />
+            <short value="Scheduled date for the next review" />
+            <definition value="The planned date and time for the patient's upcoming drug review, ensuring regular monitoring and adjustment of treatment plans." />
+            <min value="0" />
+            <max value="1" />
+        </element>
+        <element id="Extension.extension:planned-drug-review.extension">
+            <path value="Extension.extension.extension" />
+            <max value="0" />
+        </element>
+        <element id="Extension.extension:planned-drug-review.url">
+            <path value="Extension.extension.url" />
+            <fixedUri value="planned-drug-review" />
+        </element>
+        <element id="Extension.extension:planned-drug-review.value[x]">
+            <path value="Extension.extension.value[x]" />
+            <type>
+                <code value="dateTime" />
+            </type>
+        </element>
+        <element id="Extension.url">
+            <path value="Extension.url" />
+            <fixedUri value="http://ehelse.no/fhir/StructureDefinition/SfmDrugReviewInfoExtension" />
+        </element>
+        <element id="Extension.value[x]">
+            <path value="Extension.value[x]" />
+            <short value="Value of extension" />
+            <definition value="Value of extension - must be one of a constrained set of the data types." />
+            <min value="0" />
+            <max value="0" />
+            <type>
+                <code value="string" />
+            </type>
+            <type>
+                <code value="integer" />
+            </type>
+            <type>
+                <code value="dateTime" />
+            </type>
+        </element>
+    </differential>
 </StructureDefinition>
