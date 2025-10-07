@@ -108,11 +108,19 @@
       <type>
         <code value="CodeableConcept" />
       </type>
-      <fixedCodeableConcept>
-        <coding>
-          <system value="urn:oid:2.16.578.1.12.4.1.1.7492" />
-        </coding>
-      </fixedCodeableConcept>
+    </element>
+    <element id="Extension.extension:deliveryinformation.extension:repacking.value[x].coding.system">
+      <path value="Extension.extension.extension.value[x].coding.system" />
+      <min value="1" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7492" />
+    </element>
+    <element id="Extension.extension:deliveryinformation.extension:repacking.value[x].coding.code">
+      <path value="Extension.extension.extension.value[x].coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:deliveryinformation.extension:repacking.value[x].coding.display">
+      <path value="Extension.extension.extension.value[x].coding.display" />
+      <min value="1" />
     </element>
     <element id="Extension.extension:deliveryinformation.extension:datefirstdose">
       <path value="Extension.extension.extension" />
