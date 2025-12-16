@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="sfm-indicator-patient-pid-extension"/>
+  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-indicator-patient-pid-extension"/>
+  <version value="1.0"/>
+  <name value="SfmIndicatorPatientPidExtension"/>
+  <title value="SFM Indicator Patient PID Extension"/>
+  <status value="active"/>
+  <date value="2025-01-01"/>
+  <description value="Patient identifier (PID) for the patient whose medication data has changed."/>
+  <fhirVersion value="4.0.0"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri
+        value="http://ehelse.no/fhir/StructureDefinition/sfm-indicator-patient-pid-extension"/>
+    </element>
+    <element id="Extension.valueString">
+      <path value="Extension.valueString"/>
+      <min value="1"/>
+      <max value="1"/>
+      <short value="Patient PID"/>
+      <definition value="The patient identifier (PID) for the patient."/>
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="sfm-indicator-events-extension"/>
+  <url value="http://ehelse.no/fhir/StructureDefinition/sfm-indicator-events-extension"/>
+  <version value="1.0"/>
+  <name value="SfmIndicatorEventsExtension"/>
+  <title value="SFM Indicator Events Extension"/>
+  <status value="active"/>
+  <date value="2025-01-01"/>
+  <description value="Event types that triggered the indicator."/>
+  <fhirVersion value="4.0.0"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri
+        value="http://ehelse.no/fhir/StructureDefinition/sfm-indicator-events-extension"/>
+    </element>
+    <element id="Extension.valueString">
+      <path value="Extension.valueString"/>
+      <min value="0"/>
+      <short value="Indicator event"/>
+      <definition value="A single event that triggered the indicator."/>
+    </element>
+  </differential>
+</StructureDefinition>
