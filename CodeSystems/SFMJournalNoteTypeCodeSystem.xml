@@ -1,14 +1,14 @@
 <CodeSystem>
   <id value="sfm-journalnote-types.codesystem" />
   <meta>
-    <versionId value="1" />
-    <lastUpdated value="2023-06-15T00:00:00.000+00:00" />
+    <versionId value="2" />
+    <lastUpdated value="2026-04-17T00:00:00.000+00:00" />
   </meta>
   <url value="http://ehelse.no/fhir/CodeSystem/sfm-journalnote-types" />
-  <version value="1.0" />
+  <version value="1.1" />
   <name value="sfm-journalnote-types.codesystem" />
   <status value="active" />
-  <date value="2023-06-15T00:00:00.000+00:00" />
+  <date value="2026-04-17T00:00:00.000+00:00" />
   <publisher value="Direktoratet for e-helse" />
   <content value="complete" />
   <concept>
@@ -54,6 +54,10 @@
   <concept>
     <code value="AvkreftetCAVE" />
     <display value="Avkreftet legemiddelreaksjon" />
+  </concept>
+  <concept>
+    <code value="SlettetCAVE" />
+    <display value="Slettet legemiddelreaksjon" />
   </concept>
   <concept>
     <code value="SoknadHelfo" />
