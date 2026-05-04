@@ -29,7 +29,7 @@
     <element id="Extension">
       <path value="Extension" />
       <short value="Norwegian resept information" />
-      <definition value="Ifnormation that is relevant for Norwegian e-prescription." />
+      <definition value="Information that is relevant for Norwegian e-prescription." />
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
@@ -911,6 +911,7 @@
       <sliceName value="ereseptdosing" />
       <short value="Dosing as given by e-resept" />
       <definition value="The e-resept documentation identifies how the e-resesept dosing should be used.&#xD;&#xA;eresept: Dosering" />
+      <comment value="Omit the dosingrule slice when sending to Reseptformidleren (RF); RF rejects it." />
       <min value="0" />
     </element>
     <element id="Extension.extension:ereseptdosing.extension">
@@ -971,6 +972,7 @@
       <sliceName value="dosingrule" />
       <short value="Rule related to dosing" />
       <definition value="Rule related to dosing" />
+      <comment value="Should not be used for RF exchange; RF refuses this structure." />
       <min value="0" />
       <max value="1" />
     </element>
