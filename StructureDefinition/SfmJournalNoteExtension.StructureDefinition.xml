@@ -208,6 +208,19 @@
       <path value="Extension.extension.url"/>
       <fixedUri value="discontinuationinformation"/>
     </element>
+    <element id="Extension.extension:hreseptreasoning">
+      <path value="Extension.extension"/>
+      <sliceName value="sfmhreseptreasoning"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://ehelse.no/fhir/StructureDefinition/sfm-hreseptreasoning"/>
+      </type>
+    </element>
+    <element id="Extension.extension:hreseptreasoning.url">
+      <path value="Extension.extension.url"/>
+      <fixedUri value="hreseptreasoning"/>
+    </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
       <fixedUri value="https://ehelse.no/fhir/StructureDefinition/SfmJournalNoteExtension"/>
