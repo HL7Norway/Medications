@@ -1,0 +1,85 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <id value="sfm-hreseptreasoning"/>
+    <meta>
+      <versionId value="2"/>
+      <lastUpdated value="2026-05-24T14:02:15.733+00:00"/>
+    </meta>
+    <url value="http://ehelse.no/fhir/StructureDefinition/sfm-hreseptreasoning"/>
+    <version value="1.1"/>
+    <name value="sfmhreseptreasoning"/>
+    <title value="sfm-hreseptreasoning"/>
+    <status value="active"/>
+    <date value="2020-12-17"/>
+    <description value="Reason for selecting drug outside of recommendation."/>
+    <fhirVersion value="4.0.0"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <context>
+      <type value="element"/>
+      <expression value="MedicationStatement"/>
+    </context>
+    <type value="Extension"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+    <derivation value="constraint"/>
+    <differential>
+      <element id="Extension.extension">
+        <path value="Extension.extension"/>
+        <slicing>
+          <discriminator>
+            <type value="value"/>
+            <path value="url"/>
+          </discriminator>
+          <rules value="open"/>
+        </slicing>
+        <min value="2"/>
+      </element>
+      <element id="Extension.extension:reason">
+        <path value="Extension.extension"/>
+        <sliceName value="reason"/>
+        <short value="Reasons for selecting drug outside of recommendation"/>
+        <definition value="Coded reason why the drug was selected."/>
+        <min value="1"/>
+        <max value="1"/>
+      </element>
+      <element id="Extension.extension:reason.url">
+        <path value="Extension.extension.url"/>
+        <fixedUri value="reason"/>
+      </element>
+      <element id="Extension.extension:reason.value[x]">
+        <path value="Extension.extension.value[x]"/>
+        <type>
+          <code value="CodeableConcept"/>
+        </type>
+      </element>
+      <element id="Extension.extension:reason.value[x].coding.system">
+        <path value="Extension.extension.value[x].coding.system"/>
+        <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7900"/>
+      </element>
+      <element id="Extension.extension:note">
+        <path value="Extension.extension"/>
+        <sliceName value="note"/>
+        <short value="textual note about selecting drug ouside of recommendation"/>
+        <definition value="optional for user to set why the drug was selected."/>
+        <min value="0"/>
+        <max value="1"/>
+      </element>
+      <element id="Extension.extension:note.url">
+        <path value="Extension.extension.url"/>
+        <fixedUri value="note"/>
+      </element>
+      <element id="Extension.extension:note.value[x]">
+        <path value="Extension.extension.value[x]"/>
+        <type>
+          <code value="string"/>
+        </type>
+      </element>
+      <element id="Extension.url">
+        <path value="Extension.url"/>
+        <fixedUri value="http://ehelse.no/fhir/StructureDefinition/sfm-hreseptreasoning"/>
+      </element>
+      <element id="Extension.value[x]">
+        <path value="Extension.value[x]"/>
+        <max value="0"/>
+      </element>
+    </differential>
+  </StructureDefinition>
