@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sfm-pllInformation" />
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-pllInformation" />
-  <version value="1.0" />
+  <version value="1.1" />
   <name value="SfmpllInformation" />
   <title value="sfm-pllInformation" />
   <status value="active" />
-  <date value="2021-05-01" />
+  <date value="2026-10-27" />
   <description value="Describes information provided in PLL/M25 messages." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
@@ -336,6 +336,99 @@
       <type>
         <code value="dateTime" />
       </type>
+    </element>
+    <element id="Extension.extension:medicationreview">
+      <path value="Extension.extension" />
+      <sliceName value="medicationreview" />
+      <short value="Last medication review performed" />
+      <definition value="Information about the last medication review that was performed." />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:medicationreview.extension">
+      <path value="Extension.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="2" />
+    </element>
+    <element id="Extension.extension:medicationreview.extension:timestamp">
+      <path value="Extension.extension.extension" />
+      <sliceName value="timestamp" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:medicationreview.extension:timestamp.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="timestamp" />
+    </element>
+    <element id="Extension.extension:medicationreview.extension:timestamp.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="Extension.extension:medicationreview.extension:performedby">
+      <path value="Extension.extension.extension" />
+      <sliceName value="performedby" />
+      <short value="HPR number" />
+      <definition value="HPR number of caregiver that was responsible for medication review." />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:medicationreview.extension:performedby.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="performedby" />
+    </element>
+    <element id="Extension.extension:medicationreview.extension:performedby.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sfm-PractitionerRole" />
+      </type>
+    </element>
+    <element id="Extension.extension:medicationreview.extension:comment">
+      <path value="Extension.extension.extension" />
+      <sliceName value="comment" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:medicationreview.extension:comment.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="comment" />
+    </element>
+    <element id="Extension.extension:medicationreview.extension:comment.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:medicationreview.extension:next">
+      <path value="Extension.extension.extension" />
+      <sliceName value="next" />
+      <short value="Date for next medication review" />
+      <definition value="The date for next medication review will be set in SFM full and is represented in this field." />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:medicationreview.extension:next.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="next" />
+    </element>
+    <element id="Extension.extension:medicationreview.extension:next.value[x]">
+      <path value="Extension.extension.extension.value[x]" />
+      <type>
+        <code value="date" />
+      </type>
+    </element>
+    <element id="Extension.extension:medicationreview.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="medicationreview" />
+    </element>
+    <element id="Extension.extension:medicationreview.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <max value="0" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
