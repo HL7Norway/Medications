@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sfm-lib-List" />
   <url value="http://ehelse.no/fhir/StructureDefinition/sfm-lib-List" />
-  <version value="2.0" />
+  <version value="2.1.0" />
   <name value="SfmLibList" />
   <title value="sfm-lib-List" />
   <status value="active" />
-  <date value="2023-04-12" />
+  <date value="2026-11-20" />
   <description value="LIB items and related warnings for selected patient in a given period." />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
@@ -18,7 +17,7 @@
     <element id="List">
       <path value="List" />
       <short value="LIB list with extended information" />
-      <definition value="LIB erteries and meta data related to medication. May also include correspondance details and html preview for user." />
+      <definition value="LIB entries and meta data related to medication. May also include an html preview for the user." />
     </element>
     <element id="List.extension">
       <path value="List.extension" />
